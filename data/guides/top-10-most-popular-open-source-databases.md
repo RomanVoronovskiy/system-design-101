@@ -1,6 +1,6 @@
 ---
 title: "Десять популярных баз данных с открытым исходным кодом"
-description: "Изучение 10 ведущих баз данных с открытыми исходными кодами и их влияния."
+description: "Популярные открытые базы данных и их влияние на отрасль."
 image: "https://assets.bytebytego.com/diagrams/0282-top-10-most-popular-open-source-databases.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,17 +13,17 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0282-top-10-most-popular-open-source-databases.png)
 
-Этот перечень основан на таких факторах, как усыновление, влияние промышленности и общая осведомленность сообщества разработчиков о базе данных.
+При составлении списка учитывались распространённость, влияние на отрасль и известность базы данных среди разработчиков.
 
 ## Десять популярных баз данных с открытым исходным кодом
 
-*   МЯСКЛ
-*   ПостгрессQL
-*   Мария-Бар
-*   Апач Кесандра
-*   Нео4j
-*   SQLite
-*   Кокарный банк
-*   Redis
-*   МонгоБР
-*   Коуч-база
+* MySQL
+* PostgreSQL
+* MariaDB
+* Apache Cassandra
+* Neo4j
+* SQLite
+* CockroachDB
+* Redis
+* MongoDB
+* Couchbase

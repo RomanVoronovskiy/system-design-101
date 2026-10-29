@@ -1,5 +1,5 @@
 ---
-title: "Как спроектировать переполнение стека"
+title: "Как спроектировать Stack Overflow"
 description: "Изучите архитектуру Stack Overflow и особенности ее проектирования."
 image: 'https://assets.bytebytego.com/diagrams/0343-stack-overflow-architecture.png'
 createdAt: '2024-02-20'

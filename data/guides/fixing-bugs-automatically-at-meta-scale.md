@@ -1,5 +1,5 @@
 ---
-title: "Автоматическое исправление ошибок на мета-масштабе"
+title: "Автоматическое исправление ошибок в масштабах Meta"
 description: "Подход Meta к автоматическому исправлению ошибок в масштабе с помощью SapFix."
 image: 'https://assets.bytebytego.com/diagrams/0193-fixing-bugs-automatically-at-meta-scale.png'
 createdAt: '2024-02-16'

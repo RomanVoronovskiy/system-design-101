@@ -1,5 +1,5 @@
 ---
-title: "Как большие ключи влияют на сохраняемость Redis"
+title: "Как большие ключи влияют на сохранение данных Redis"
 description: "Изучите влияние больших ключей на режимы сохранения Redis AOF."
 image: "https://assets.bytebytego.com/diagrams/0085-big-keys.png"
 createdAt: "2024-02-17"

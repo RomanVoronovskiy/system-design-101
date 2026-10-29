@@ -1,5 +1,5 @@
 ---
-title: "Дизайн Gmail"
+title: "Как спроектировать Gmail"
 description: "Изучите дизайн Gmail: от отправки до получения электронных писем."
 image: "https://assets.bytebytego.com/diagrams/0184-email.jpg"
 createdAt: "2024-03-01"

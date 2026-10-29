@@ -1,5 +1,5 @@
 ---
-title: "Как TikTok управляет интерфейсом MonoRepo объемом 200 000 файлов"
+title: "Как TikTok управляет монорепозиторием фронтенда из 200 тысяч файлов"
 description: "Стратегия TikTok по управлению большим интерфейсом MonoRepo с 200 тысячами файлов."
 image: 'https://assets.bytebytego.com/diagrams/0226-how-tiktok-manages-a-200k-file-frontend-monorepo.png'
 createdAt: '2024-03-03'

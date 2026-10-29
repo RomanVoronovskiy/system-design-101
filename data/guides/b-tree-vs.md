@@ -1,5 +1,5 @@
 ---
-title: "B-дерево против LSM-дерева"
+title: "B-деревья и LSM-деревья: сравнение"
 description: "Изучите различия между структурами данных B-Tree и LSM-Tree."
 image: "https://assets.bytebytego.com/diagrams/0091-btree-lsm.png"
 createdAt: "2024-02-16"

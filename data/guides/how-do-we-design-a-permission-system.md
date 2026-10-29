@@ -1,5 +1,5 @@
 ---
-title: "Проектирование системы разрешений"
+title: "Проектирование системы прав доступа"
 description: "Изучите распространенные конструкции систем разрешений: ACL, DAC, MAC, ABAC и RBAC."
 image: "https://assets.bytebytego.com/diagrams/0300-permission-systems.png"
 createdAt: "2024-02-13"

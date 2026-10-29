@@ -1,5 +1,5 @@
 ---
-title: "Выберите правильную базу данных для сбора показателей"
+title: "Выбор базы данных для системы сбора метрик"
 description: "Руководство по выбору подходящей базы данных для системы сбора показателей."
 image: "https://assets.bytebytego.com/diagrams/0273-metrics-access-pattern.jpg"
 createdAt: "2024-02-23"

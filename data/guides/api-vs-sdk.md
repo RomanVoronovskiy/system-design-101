@@ -1,5 +1,5 @@
 ---
-title: "API против SDK"
+title: "API и SDK: сравнение"
 description: "Поймите ключевые различия между API и SDK в разработке программного обеспечения."
 image: 'https://assets.bytebytego.com/diagrams/0071-api-vs-sdk.png'
 createdAt: '2024-02-22'

@@ -1,5 +1,5 @@
 ---
-title: "Как создавать документы Google"
+title: "Как спроектировать Google Docs"
 description: "Узнайте, как создавать документы Google, с помощью этого подробного руководства."
 image: "https://assets.bytebytego.com/diagrams/0206-google-doc.png"
 createdAt: "2024-03-07"

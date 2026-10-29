@@ -1,5 +1,5 @@
 ---
-title: "Git против GitHub"
+title: "Git и GitHub: в чём различия?"
 description: "Изучите различия между Git и GitHub для контроля версий."
 image: "https://assets.bytebytego.com/diagrams/0204-git-vs-github.png"
 createdAt: "2024-02-27"

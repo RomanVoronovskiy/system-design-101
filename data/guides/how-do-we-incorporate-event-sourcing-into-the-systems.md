@@ -1,5 +1,5 @@
 ---
-title: "Как мы включаем источники событий в системы?"
+title: "Как внедрить Event Sourcing в систему"
 description: "Изучите возможности использования источников событий: от архивов NYT до микросервисов."
 image: "https://assets.bytebytego.com/diagrams/0037-use-cases-for-event-sourcing.png"
 createdAt: "2024-02-20"

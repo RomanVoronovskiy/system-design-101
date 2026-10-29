@@ -1,5 +1,5 @@
 ---
-title: "DeepSeek 1-пейджер"
+title: "DeepSeek на одной странице"
 description: "Изучите экономичную модель искусственного интеллекта DeepSeek и ее инновационную версию R1."
 image: 'https://assets.bytebytego.com/diagrams/0164-deepseek.png'
 createdAt: '2024-03-11'

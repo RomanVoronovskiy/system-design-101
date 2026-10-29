@@ -1,6 +1,6 @@
 ---
 title: "Шесть инструментов для создания диаграмм из кода"
-description: "Изучить наилучшие инструменты преобразования кода в потрясающие диаграммы."
+description: "Инструменты для преобразования текстового описания и кода в диаграммы."
 image: "https://assets.bytebytego.com/diagrams/0382-top-6-tools-to-turn-code-into-beautiful-diagrams.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,11 +13,11 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0382-top-6-tools-to-turn-code-into-beautiful-diagrams.png)
 
-Вот главные инструменты, чтобы превратить код в диаграммы:
+Вот инструменты для создания диаграмм из кода:
 
-*   Диаграммы
-*   Запустить схемы
-*   Русалочка
-*   Плоскость
-*   Диаграммы ASCII
-*   Маркировка
+* Diagrams
+* Go Diagrams
+* Mermaid
+* PlantUML
+* ASCII diagrams
+* Markmap

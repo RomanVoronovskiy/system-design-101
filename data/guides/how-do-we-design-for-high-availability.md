@@ -1,5 +1,5 @@
 ---
-title: "Как проектировать высокую доступность"
+title: "Как проектировать высокодоступные системы"
 description: "Изучите ключевые стратегии проектирования систем с высокой доступностью."
 image: "https://assets.bytebytego.com/diagrams/0211-high-availability.jpg"
 createdAt: "2024-03-11"

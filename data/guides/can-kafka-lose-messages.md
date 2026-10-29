@@ -1,5 +1,5 @@
 ---
-title: "Может ли Кафка потерять сообщения?"
+title: "Может ли Kafka потерять сообщения?"
 description: "Изучите сценарии потери сообщений Kafka и стратегии предотвращения."
 image: "https://assets.bytebytego.com/diagrams/0130-can-kafka-lose-messages.png"
 createdAt: "2024-02-12"

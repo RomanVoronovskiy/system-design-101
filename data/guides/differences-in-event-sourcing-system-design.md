@@ -1,5 +1,5 @@
 ---
-title: "Различия в конструкции системы источников событий"
+title: "Особенности проектирования систем с Event Sourcing"
 description: "Изучите нюансы проектирования системы источников событий и ее преимущества."
 image: "https://assets.bytebytego.com/diagrams/0188-event-sourcing.jpeg"
 createdAt: "2024-02-08"

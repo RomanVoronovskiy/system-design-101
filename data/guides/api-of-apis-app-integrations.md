@@ -1,5 +1,5 @@
 ---
-title: "API API – интеграция приложений"
+title: "API для работы с другими API: интеграция приложений"
 description: "Изучите API API и интеграцию приложений в этом подробном руководстве."
 image: 'https://assets.bytebytego.com/diagrams/0426-api-of-apis-app-integrations.png'
 createdAt: '2024-02-13'

@@ -1,5 +1,5 @@
 ---
-title: "DevOps против SRE против разработки платформ"
+title: "DevOps, SRE и платформенная инженерия"
 description: "Изучите различия между DevOps, SRE и Platform Engineering."
 image: "https://assets.bytebytego.com/diagrams/0172-devops-sre-platform.png"
 createdAt: "2024-03-09"

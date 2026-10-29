@@ -1,5 +1,5 @@
 ---
-title: "Объяснение HTTPS, SSL-квитирования и шифрования данных"
+title: "HTTPS, рукопожатие SSL и шифрование данных простыми словами"
 description: "Узнайте простым языком о HTTPS, SSL-подтверждении и шифровании данных."
 image: "https://assets.bytebytego.com/diagrams/0409-https-ssl-handshake-and-data-encryption-explained-to-kids.png"
 createdAt: "2024-02-26"

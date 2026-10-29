@@ -1,5 +1,5 @@
 ---
-title: "Как изучить платежи"
+title: "Как разобраться в платёжных системах"
 description: "Руководство по пониманию платежной индустрии и ее ключевых компонентов."
 image: "https://assets.bytebytego.com/diagrams/0254-learn-payment.png"
 createdAt: "2024-03-08"

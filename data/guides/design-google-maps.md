@@ -1,5 +1,5 @@
 ---
-title: "Создайте Google Карты"
+title: "Как спроектировать Google Maps"
 description: "Узнайте, как создать упрощенную версию Google Maps."
 image: "https://assets.bytebytego.com/diagrams/0207-google-maps.png"
 createdAt: "2024-03-09"

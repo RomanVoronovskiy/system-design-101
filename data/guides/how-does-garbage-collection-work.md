@@ -1,5 +1,5 @@
 ---
-title: "Как работает сбор мусора?"
+title: "Как работает сборка мусора?"
 description: "Узнайте, как сбор мусора автоматически освобождает неиспользуемую память."
 image: "https://assets.bytebytego.com/diagrams/0200-garbage-collection-101.png"
 createdAt: "2024-02-17"

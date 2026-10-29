@@ -1,5 +1,5 @@
 ---
-title: "Служба видеомониторинга Amazon Prime"
+title: "Система мониторинга Amazon Prime Video"
 description: "Узнайте, как мониторинг Amazon Prime Video позволил сэкономить 90 % затрат благодаря переходу на монолитное решение."
 image: "https://assets.bytebytego.com/diagrams/0328-serverless-to-monolithic.jpeg"
 createdAt: "2024-02-23"

@@ -1,5 +1,5 @@
 ---
-title: "Как мы выполняем нумерацию страниц в дизайне API?"
+title: "Как реализовать пагинацию в API"
 description: "Узнайте о методах разбиения на страницы API для эффективного поиска данных."
 image: 'https://assets.bytebytego.com/diagrams/0076-api-pagination-101.png'
 createdAt: '2024-03-04'

@@ -1,5 +1,5 @@
 ---
-title: "Большой порядок байтов против младшего байта"
+title: "Порядок байтов: big-endian и little-endian"
 description: "Изучите порядок байтов с прямым и прямым порядком байтов в компьютерной архитектуре."
 image: "https://assets.bytebytego.com/diagrams/0084-big-endian-vs-little-endian.png"
 createdAt: "2024-02-26"

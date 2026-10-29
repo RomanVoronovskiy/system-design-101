@@ -1,5 +1,5 @@
 ---
-title: "Ключевые термины данных"
+title: "Основные термины работы с данными"
 description: "Понимать важную терминологию данных для эффективного управления данными."
 image: 'https://assets.bytebytego.com/diagrams/0158-data-terms.png'
 createdAt: '2024-03-09'

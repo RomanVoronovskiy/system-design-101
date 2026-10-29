@@ -1,5 +1,5 @@
 ---
-title: "IBM MQ -> RabbitMQ -> Kafka -> Pulsar: эволюция очереди сообщений"
+title: "IBM MQ, RabbitMQ, Kafka и Pulsar: эволюция очередей сообщений"
 description: "Изучите эволюцию архитектур очередей сообщений: от IBM MQ до Pulsar."
 image: "https://assets.bytebytego.com/diagrams/0271-message-queue-evolve.png"
 createdAt: "2024-03-05"

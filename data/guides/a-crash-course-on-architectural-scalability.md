@@ -1,5 +1,5 @@
 ---
-title: "Ускоренный курс архитектурной масштабируемости"
+title: "Краткий курс масштабирования архитектуры"
 description: "Узнайте об архитектурной масштабируемости, узких местах и ​​ключевых методах."
 image: "https://assets.bytebytego.com/diagrams/0293-a-crash-course-on-architectural-scalability.png"
 createdAt: "2024-02-10"

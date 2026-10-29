@@ -1,5 +1,5 @@
 ---
-title: "Как Twitter рекомендует хронологию «Для тебя» за 1,5 секунды?"
+title: "Как Twitter формирует ленту «Для вас» за 1,5 секунды?"
 description: "Объяснение системы рекомендаций Twitter «Для вас»."
 image: 'https://assets.bytebytego.com/diagrams/0121-twitter-serving-pipeline.jpeg'
 createdAt: '2024-02-22'

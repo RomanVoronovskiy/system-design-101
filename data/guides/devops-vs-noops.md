@@ -1,5 +1,5 @@
 ---
-title: "DevOps против NoOps: в чем разница?"
+title: "DevOps и NoOps: в чём различия?"
 description: "Как DevOps и NoOps меняют жизненный цикл разработки программного обеспечения (SDLC)?"
 image: "https://assets.bytebytego.com/diagrams/0099-devops-vs-noops.png"
 createdAt: "2024-03-13"

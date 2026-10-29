@@ -1,5 +1,5 @@
 ---
-title: "Как работает Докер?"
+title: "Как работает Docker?"
 description: "Изучите внутреннюю работу Docker: архитектуру и ключевые компоненты."
 image: "https://assets.bytebytego.com/diagrams/0414-how-does-docker-work.png"
 createdAt: "2024-03-15"

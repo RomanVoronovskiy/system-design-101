@@ -1,6 +1,6 @@
 ---
 title: "Общая архитектура Netflix"
-description: "Изучить архитектуру Netflix: от фронта до резервного сервиса."
+description: "Архитектура Netflix: от клиентских приложений до серверных сервисов."
 image: 'https://assets.bytebytego.com/diagrams/0288-netflix-overal-arch.png'
 createdAt: '2024-03-01'
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0288-netflix-overal-arch.png)
 
-Эта статья основана на исследованиях многих блогов Netflix и проектов с открытым исходным кодом. Если вы найдёте какие-либо неточности, пожалуйста, не стесняйтесь сообщить нам.
+Материал подготовлен по инженерным блогам Netflix и открытым проектам компании. Если заметите неточности, сообщите нам.
 
-Мобильный и веб: Netflix принял Swift и Kotlin для создания местных мобильных приложений. Для своего веб-приложения он использует React.
+**Мобильные и веб-приложения:** нативные мобильные приложения разрабатываются на Swift и Kotlin, а веб-приложение — с использованием React.
 
-Связь с передним/сервером: Netflix использует графу QL.
+**Взаимодействие фронтенда и сервера:** Netflix использует GraphQL.
 
-Услуги на основе резервного финансирования: Netflix опирается на ZUUL, Eureka, Spring Boot Framework и другие технологии.
+**Серверные сервисы:** ZUUL, Eureka, Spring Boot и другие технологии.
 
-Базы данных: Netflix использует EV-каче, C4andra, CockroachDB и другие базы данных.
+**Базы данных:** EVCache, Cassandra, CockroachDB и другие решения.
 
-Пересылание/передача сообщений: Netflix использует Apache Kafka и Fink для обмена сообщениями и потоков.
+**Сообщения и потоки:** Apache Kafka и Flink.
 
-В видеохранилище: Netflix используют S3 и Open Connect для видеохранилищ.
+**Хранение видео:** S3 и Open Connect.
 
-Обработка данных: Netflix использует Flink и Spark для обработки данных, которые затем отображаются с помощью Tableau. Для обработки структурированной информации о хранилищах данных используется система " Redchredchange ".
+**Обработка данных:** Flink и Spark. Результаты визуализируются в Tableau. Redshift используется для обработки структурированных данных в хранилище.
 
-CI/CD: Netflix использует различные инструменты, такие как JIARA, Confluence, PagerDuty, Jenkins, Gradle, Chaos Onekey, Spinnaaker, Altas и т.д.
+**CI/CD:** JIRA, Confluence, PagerDuty, Jenkins, Gradle, Chaos Monkey, Spinnaker, Atlas и другие инструменты.

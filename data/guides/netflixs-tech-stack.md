@@ -1,6 +1,6 @@
 ---
 title: "Технологический стек Netflix"
-description: "Изучайте технологии, лежащие в основе инфраструктуры потоков Netflix."
+description: "Технологии, на которых построена потоковая инфраструктура Netflix."
 image: 'https://assets.bytebytego.com/diagrams/0286-netflix-tech-stack.png'
 createdAt: '2024-03-15'
 draft: false
@@ -11,22 +11,15 @@ tags:
   - Streaming
 ---
 
-Эта статья основана на исследованиях многих блогов Netflix и проектов с открытым исходным кодом. Если вы найдёте какие-либо неточности, пожалуйста, не стесняйтесь сообщить нам.
+Материал подготовлен по инженерным блогам Netflix и открытым проектам компании. Если заметите неточности, сообщите нам.
 
 ![](https://assets.bytebytego.com/diagrams/0286-netflix-tech-stack.png)
 
-*   Мобильный и веб: Netflix принял Swift и Kotlin для создания местных мобильных приложений. Для своего веб-приложения он использует React.
-
-*   Передняя связь/сервер: графа QL.
-
-*   Услуги на основе резервного финансирования: Netflix опирается на ZUUL, Eureka, Spring Boot Framework и другие технологии.
-
-*   Базы данных: Netflix использует EV-каче, C4andra, CockroachDB и другие базы данных.
-
-*   Пересылание/передача сообщений: Netflix использует Apache Kafka и Fink для обмена сообщениями и потоков.
-
-*   В видеохранилище: Netflix используют S3 и Open Connect для видеохранилищ.
-
-*   Обработка данных: Netflix использует Flink и Spark для обработки данных, которые затем отображаются с помощью Tableau. Для обработки структурированной информации о хранилищах данных используется система " Redchredchange ".
-
-*   CI/CD: Netflix использует различные инструменты, такие как JIARA, Confluence, PagerDuty, Jenkins, Gradle, Chaos Onekey, Spinnaaker, Altas и т.д.
+* **Мобильные и веб-приложения:** нативные мобильные приложения создаются на Swift и Kotlin, веб-приложение — с помощью React.
+* **Взаимодействие фронтенда и сервера:** GraphQL.
+* **Серверные сервисы:** ZUUL, Eureka, Spring Boot и другие технологии.
+* **Базы данных:** EVCache, Cassandra, CockroachDB и другие решения.
+* **Сообщения и потоки:** Apache Kafka и Flink.
+* **Хранение видео:** S3 и Open Connect.
+* **Обработка данных:** Flink и Spark, с последующей визуализацией в Tableau. Redshift применяется для обработки структурированных данных в хранилище.
+* **CI/CD:** JIRA, Confluence, PagerDuty, Jenkins, Gradle, Chaos Monkey, Spinnaker, Atlas и другие инструменты.

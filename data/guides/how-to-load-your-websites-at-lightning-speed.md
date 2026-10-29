@@ -1,5 +1,5 @@
 ---
-title: "Оптимизация производительности внешнего интерфейса"
+title: "Как ускорить загрузку сайта"
 description: "Увеличьте скорость вашего сайта с помощью этих советов по оптимизации интерфейса."
 image: "https://assets.bytebytego.com/diagrams/0198-frontend-performance-cheatsheet.png"
 createdAt: "2024-03-10"

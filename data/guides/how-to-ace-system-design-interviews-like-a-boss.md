@@ -1,5 +1,5 @@
 ---
-title: "Как пройти собеседование по проектированию систем Ace"
+title: "Как успешно пройти собеседование по системному проектированию"
 description: "7-шаговый процесс, позволяющий преуспеть на собеседованиях по проектированию систем."
 image: "https://assets.bytebytego.com/diagrams/0104-how-to-ace-system-design-interviews-like-a-boss.png"
 createdAt: '2024-03-14'

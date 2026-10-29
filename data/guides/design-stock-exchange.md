@@ -1,5 +1,5 @@
 ---
-title: "Проектная фондовая биржа"
+title: "Как спроектировать фондовую биржу"
 description: "Изучите устройство фондовой биржи и ее ключевые компоненты."
 image: "https://assets.bytebytego.com/diagrams/0344-stock-exchange.png"
 createdAt: "2024-03-11"

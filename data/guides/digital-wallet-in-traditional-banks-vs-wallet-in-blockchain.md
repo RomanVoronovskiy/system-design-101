@@ -1,5 +1,5 @@
 ---
-title: "Цифровые кошельки: банки против блокчейна"
+title: "Цифровые кошельки в банках и блокчейне"
 description: "Узнайте о различиях между цифровыми кошельками в банках и блокчейном."
 image: "https://assets.bytebytego.com/diagrams/0087-blockchains.png"
 createdAt: "2024-02-25"

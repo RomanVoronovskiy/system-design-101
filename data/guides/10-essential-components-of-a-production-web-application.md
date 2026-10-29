@@ -1,5 +1,5 @@
 ---
-title: "10 основных компонентов производственного веб-приложения"
+title: "10 основных компонентов веб-приложения в продакшене"
 description: "Изучите 10 ключевых компонентов для создания надежных веб-приложений."
 image: 'https://assets.bytebytego.com/diagrams/0395-typical-architecture-of-a-web-application.png'
 createdAt: '2024-02-20'

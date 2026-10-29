@@ -1,5 +1,5 @@
 ---
-title: "Дорожная карта полнофункциональной разработки"
+title: "План изучения fullstack-разработки"
 description: "Руководство по технологиям и навыкам, необходимым для полнофункциональной разработки."
 image: "https://assets.bytebytego.com/diagrams/0199-full-stack-developer-roadmap.png"
 createdAt: "2024-02-18"

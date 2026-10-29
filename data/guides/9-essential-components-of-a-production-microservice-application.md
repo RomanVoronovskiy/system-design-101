@@ -1,5 +1,5 @@
 ---
-title: "9 основных компонентов производственного микросервисного приложения"
+title: "9 основных компонентов микросервисного приложения в продакшене"
 description: "Изучите 9 ключевых компонентов для создания надежных микросервисных приложений."
 image: "https://assets.bytebytego.com/diagrams/0020-9-essential-components-of-production-microservice-app.png"
 createdAt: "2024-03-04"

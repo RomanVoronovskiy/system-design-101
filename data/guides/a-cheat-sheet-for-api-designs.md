@@ -1,5 +1,5 @@
 ---
-title: "Шпаргалка по проектам API"
+title: "Шпаргалка по проектированию API"
 description: "Удобная шпаргалка для разработки безопасных и эффективных API."
 image: 'https://assets.bytebytego.com/diagrams/0137-cheat-sheet-for-api-design.png'
 createdAt: '2024-02-14'

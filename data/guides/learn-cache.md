@@ -1,5 +1,5 @@
 ---
-title: "Изучите кэш"
+title: "Основы кеширования"
 description: "Визуальное руководство по пониманию систем кэширования и их ключевых особенностей."
 image: "https://assets.bytebytego.com/diagrams/0004-learn-cache.png"
 createdAt: "2024-03-15"

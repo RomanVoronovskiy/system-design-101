@@ -1,5 +1,5 @@
 ---
-title: "Как системы кэширования могут пойти не так?"
+title: "Какие сбои возникают в системах кеширования?"
 description: "Изучите распространенные ошибки кэша и эффективные стратегии их устранения."
 image: "https://assets.bytebytego.com/diagrams/0038-how-caches-can-go-wrong.png"
 createdAt: "2024-03-01"

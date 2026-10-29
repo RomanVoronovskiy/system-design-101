@@ -1,5 +1,5 @@
 ---
-title: "Инфраструктура как шпаргалка по ландшафту кода"
+title: "Шпаргалка по инструментам «инфраструктура как код»"
 description: "Краткое справочное руководство по ландшафту «Инфраструктура как код»."
 image: "https://assets.bytebytego.com/diagrams/0063-a-cheatsheet-on-infrastructure-as-code-landscape.png"
 createdAt: "2024-02-18"

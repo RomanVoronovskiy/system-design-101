@@ -1,5 +1,5 @@
 ---
-title: "Ускоренный курс по сегментированию базы данных"
+title: "Краткий курс шардинга баз данных"
 description: "Изучите сегментирование базы данных: концепции, методы и реализацию."
 image: "https://assets.bytebytego.com/diagrams/0065-a-crash-course-on-database-sharding.png"
 createdAt: "2024-03-04"

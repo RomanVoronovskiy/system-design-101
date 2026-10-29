@@ -1,5 +1,5 @@
 ---
-title: "Как работает AWS Lambda за кулисами"
+title: "Внутреннее устройство AWS Lambda"
 description: "Изучите внутреннюю работу AWS Lambda и ее бессерверную архитектуру."
 image: "https://assets.bytebytego.com/diagrams/0249-lambda.jpg"
 createdAt: "2024-01-26"

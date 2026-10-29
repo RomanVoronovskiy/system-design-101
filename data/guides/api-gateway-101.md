@@ -1,5 +1,5 @@
 ---
-title: "API-шлюз 101"
+title: "Основы API-шлюзов"
 description: "Изучите основы API-шлюзов: функции, преимущества и многое другое."
 image: 'https://assets.bytebytego.com/diagrams/0074-api-gateway-101.png'
 createdAt: '2024-02-15'

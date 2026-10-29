@@ -1,5 +1,5 @@
 ---
-title: "HTTP-файлы cookie, объясненные с помощью простой диаграммы"
+title: "HTTP-cookie: объяснение с помощью простой схемы"
 description: "Понимайте файлы cookie HTTP с помощью простой схемы и четких объяснений."
 image: "https://assets.bytebytego.com/diagrams/0153-cookies.png"
 createdAt: "2024-02-18"
