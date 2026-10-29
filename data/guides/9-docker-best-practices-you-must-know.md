@@ -1,6 +1,6 @@
 ---
-title: "9 Docker Best Practices You Must Know"
-description: "Learn 9 essential Docker best practices for efficient containerization."
+title: "9 лучших практик Docker, которые вы должны знать"
+description: "Изучите 9 основных лучших практик Docker для эффективной контейнеризации."
 image: "https://assets.bytebytego.com/diagrams/0016-9-docker-best-practices-you-must-know.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0016-9-docker-best-practices-you-must-know.png)
 
-## 1. Use official images
+## 1. Используйте официальные изображения
 
-This ensures security, reliability, and regular updates.
+Это обеспечивает безопасность, надежность и регулярные обновления.
 
-## 2. Use a specific image version
+## 2. Используйте определенную версию изображения
 
-The default latest tag is unpredictable and causes unexpected behavior.
+Последний тег по умолчанию непредсказуем и вызывает неожиданное поведение.
 
-## 3. Multi-Stage builds
+## 3. Многоэтапные сборки
 
-Reduces final image size by excluding build tools and dependencies.
+Уменьшает окончательный размер изображения за счет исключения инструментов сборки и зависимостей.
 
-## 4. Use .dockerignore
+## 4. Используйте .dockerignore
 
-Excludes unnecessary files, speeds up builds, and reduces image size.
+Исключает ненужные файлы, ускоряет сборку и уменьшает размер образа.
 
-## 5. Use the least privileged user
+## 5. Используйте пользователя с наименьшими привилегиями
 
-Enhances security by limiting container privileges.
+Повышает безопасность за счет ограничения привилегий контейнера.
 
-## 6. Use environment variables
+## 6. Используйте переменные среды
 
-Increases flexibility and portability across different environments.
+Повышает гибкость и мобильность в различных средах.
 
-## 7. Order matters for caching
+## 7. Порядок имеет значение для кэширования
 
-Order your steps from least to most frequently changing to optimize caching.
+Упорядочивайте шаги от наименее к наиболее часто меняющимся, чтобы оптимизировать кеширование.
 
-## 8. Label your images
+## 8. Помечайте свои изображения
 
-It improves organization and helps with image management.
+Это улучшает организацию и помогает в управлении изображениями.
 
-## 9. Scan images
+## 9. Сканирование изображений
 
-Find security vulnerabilities before they become bigger problems.
+Найдите уязвимости безопасности, прежде чем они станут более серьезными проблемами.
 
-Over to you: Which other Docker best practices will you add to the list?
+К вам: какие еще лучшие практики Docker вы добавите в список?

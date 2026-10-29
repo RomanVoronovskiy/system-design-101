@@ -1,6 +1,6 @@
 ---
-title: "A cheat sheet for system designs"
-description: "15 core concepts for system design in a handy cheat sheet."
+title: "Шпаргалка по проектированию систем"
+description: "15 основных концепций проектирования систем в удобной шпаргалке."
 image: "https://assets.bytebytego.com/diagrams/0352-a-cheat-sheet-for-system-designs.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0352-a-cheat-sheet-for-system-designs.png)
 
-The diagram below lists 15 core concepts when we design systems. The cheat sheet is straightforward to go through one by one. Save it for future reference!
+На диаграмме ниже перечислены 15 основных концепций, которые мы используем при проектировании систем. Шпаргалку легко пройти один за другим. Сохраните его для дальнейшего использования!
 
-*   Requirement gathering
-*   System architecture
-*   Data design
-*   Domain design
-*   Scalability
-*   Reliability
-*   Availability
-*   Performance
-*   Security
-*   Maintainability
-*   Testing
-*   User experience design
-*   Cost estimation
-*   Documentation
-*   Migration plan
+* Сбор требований
+* Архитектура системы
+* Дизайн данных
+* Дизайн домена
+* Масштабируемость
+* Надежность
+* Наличие
+* Производительность
+* Безопасность
+* Ремонтопригодность
+* Тестирование
+* Дизайн пользовательского опыта
+* Оценка стоимости
+* Документация
+* План миграции

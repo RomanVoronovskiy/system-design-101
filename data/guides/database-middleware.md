@@ -1,6 +1,6 @@
 ---
-title: "Database Middleware"
-description: "Explore database middleware for transparent routing and simplified code."
+title: "Промежуточное программное обеспечение базы данных"
+description: "Изучите промежуточное программное обеспечение базы данных для прозрачной маршрутизации и упрощения кода."
 image: "https://assets.bytebytego.com/diagrams/0276-middleware-png.png"
 createdAt: "2024-02-25"
 draft: false
@@ -13,29 +13,29 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0276-middleware-png.png)
 
-There are two common ways to implement the read replica pattern:
+Существует два распространенных способа реализации шаблона реплики чтения:
 
-1. Embed the routing logic in the application code (explained in the last post).
-2. Use database middleware.
+1. Встроить логику маршрутизации в код приложения (описано в последнем посте).
+2. Используйте промежуточное программное обеспечение базы данных.
 
-We focus on option 2 here. The middleware provides transparent routing between the application and database servers. We can customize the routing logic based on difficult rules such as user, schema, statement, etc.
+Здесь мы сосредоточимся на варианте 2. Промежуточное программное обеспечение обеспечивает прозрачную маршрутизацию между серверами приложений и баз данных. Мы можем настроить логику маршрутизации на основе сложных правил, таких как пользователь, схема, оператор и т. д.
 
-The diagram above illustrates the setup:
+Схема выше иллюстрирует настройку:
 
-1.  When Alice places an order on amazon, the request is sent to Order Service.
-2.  Order Service does not directly interact with the database. Instead, it sends database queries to the database middleware.
-3.  The database middleware routes writes to the primary database. Data is replicated to two replicas.
-4.  Alice views the order details (read). The request is sent through the middleware.
-5.  Alice views the recent order history (read). The request is sent through the middleware.
+1. Когда Алиса размещает заказ на Amazon, запрос отправляется в Службу заказов.
+2. Сервис заказов напрямую с базой данных не взаимодействует. Вместо этого он отправляет запросы к базе данных промежуточному программному обеспечению базы данных.
+3. Промежуточное ПО базы данных направляет запись в основную базу данных. Данные реплицируются на две реплики.
+4. Алиса просматривает детали заказа (читает). Запрос отправляется через промежуточное программное обеспечение.
+5. Алиса просматривает историю последних заказов (читает). Запрос отправляется через промежуточное программное обеспечение.
 
-The database middleware acts as a proxy between the application and databases. It uses standard MySQL network protocol for communication.
+Промежуточное программное обеспечение базы данных действует как прокси-сервер между приложением и базами данных. Для связи он использует стандартный сетевой протокол MySQL.
 
-## Pros
+## Плюсы
 
-*   Simplified application code. The application doesn’t need to be aware of the database topology and manage access to the database directly.
-*   Better compatibility. The middleware uses the MySQL network protocol. Any MySQL compatible client can connect to the middleware easily. This makes database migration easier.
+* Упрощенный код приложения. Приложению не нужно знать топологию базы данных и напрямую управлять доступом к базе данных.
+* Лучшая совместимость. Промежуточное программное обеспечение использует сетевой протокол MySQL. Любой MySQL-совместимый клиент может легко подключиться к промежуточному программному обеспечению. Это упрощает миграцию базы данных.
 
-## Cons
+## Минусы
 
-*   Increased system complexity. A database middleware is a complex system. Since all database queries go through the middleware, it usually requires a high availability setup to avoid a single point of failure.
-*   Additional middleware layer means additional network latency. Therefore, this layer requires excellent performance.
+* Повышенная сложность системы. Промежуточное программное обеспечение базы данных — это сложная система. Поскольку все запросы к базе данных проходят через промежуточное программное обеспечение, обычно требуется настройка высокой доступности, чтобы избежать единой точки отказа.
+* Дополнительный промежуточный уровень означает дополнительную задержку в сети. Поэтому этот слой требует отличной производительности.

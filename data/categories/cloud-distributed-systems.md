@@ -1,9 +1,8 @@
 ---
-title: 'Cloud & Distributed Systems'
-description: 'Learn the fundamental concepts, best practices, and real-world examples of cloud computing and distributed systems.'
+title: "Облачные и распределенные системы"
+description: "Изучите фундаментальные концепции, лучшие практики и реальные примеры облачных вычислений и распределенных систем."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/cloud.png'
 sort: 180
 ---
-
-Cloud computing and distributed systems are the backbone of modern software architecture. They enable us to build scalable, reliable, and high-performance systems. This category covers the fundamental concepts, best practices, and real-world examples of cloud computing and distributed systems.
+Облачные вычисления и распределенные системы являются основой современной архитектуры программного обеспечения. Они позволяют нам создавать масштабируемые, надежные и высокопроизводительные системы. Эта категория охватывает фундаментальные концепции, лучшие практики и реальные примеры облачных вычислений и распределенных систем.

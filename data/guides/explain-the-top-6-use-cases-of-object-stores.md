@@ -1,6 +1,6 @@
 ---
-title: "Explain the Top 6 Use Cases of Object Stores"
-description: "Explore the top 6 use cases of object stores in modern data management."
+title: "Объясните 6 основных случаев использования хранилищ объектов"
+description: "Изучите 6 основных вариантов использования объектных хранилищ в современном управлении данными."
 image: "https://assets.bytebytego.com/diagrams/0117-explain-the-top-6-use-cases-of-object-stores.png"
 createdAt: "2024-02-14"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0117-explain-the-top-6-use-cases-of-object-stores.png)
 
-What is an object store?
+Что такое хранилище объектов?
 
-Object store uses objects to store data. Compared with file storage which uses a hierarchical structure to store files, or block storage which divides files into equal block sizes, object storage stores metadata together with the objects. Typical products include AWS S3, Google Cloud Storage, and Azure Blob Storage.
+Хранилище объектов использует объекты для хранения данных. По сравнению с файловым хранилищем, которое использует иерархическую структуру для хранения файлов, или блочным хранилищем, которое делит файлы на блоки одинакового размера, объектное хранилище хранит метаданные вместе с объектами. Типичные продукты включают AWS S3, Google Cloud Storage и Azure Blob Storage.
 
-An object store provides flexibility in formats and scales easily.
+Хранилище объектов обеспечивает гибкость форматов и легко масштабируется.
 
-## Case 1: Data Archiving
+## Случай 1: Архивирование данных
 
-With the ever-growing amounts of business data, we cannot store all the data in core storage systems. We need to have layers of storage plan. An object store can be used to archive old data that exists for auditing or client statements. This is a cost-effective approach.
+Из-за постоянно растущих объемов бизнес-данных мы не можем хранить все данные в основных системах хранения. Нам нужен многоуровневый план хранения. Хранилище объектов можно использовать для архивирования старых данных, существующих для аудита или запросов клиента. Это экономически эффективный подход.
 
-## Case 2: Unstructured Data Storage
+## Случай 2: Неструктурированное хранилище данных
 
-We often need to deal with unstructured data or semi-structured data. In the past, they were usually stored as blobs in the relational database, which was quite inefficient. An object store is a good match for music, video files, and text documents. Companies like Spotify or Netflix uses object store to persist their media files.
+Нам часто приходится иметь дело с неструктурированными или полуструктурированными данными. Раньше они обычно хранились в виде больших двоичных объектов в реляционной базе данных, что было весьма неэффективно. Хранилище объектов хорошо подходит для музыки, видеофайлов и текстовых документов. Такие компании, как Spotify или Netflix, используют хранилище объектов для сохранения своих медиафайлов.
 
-## Case 3: Cloud Native Storage
+## Случай 3: облачное хранилище
 
-For cloud-native applications, we need the data storage system to be flexible and scalable. Major public cloud providers have easy API access to their object store products and can be used for economical storage choices.
+Для облачных приложений нам нужна гибкая и масштабируемая система хранения данных. Крупнейшие поставщики общедоступных облаков имеют простой доступ через API к своим продуктам хранилища объектов и могут использоваться для экономичного выбора хранилища.
 
-## Case 4: Data Lake
+## Случай 4: Озеро данных
 
-There are many types of data in a distributed system. An object store-backed data lake provides a good place for different business lines to dump their data for later analytics or machine learning. The efficient reads and writes of the object store facilitate more steps down the data processing pipeline, including ETL(Extract-Transform-Load) or constructing a data warehouse.
+В распределенной системе существует множество типов данных. Озеро данных, поддерживаемое хранилищем объектов, предоставляет различным направлениям бизнеса хорошее место для хранения своих данных для последующего анализа или машинного обучения. Эффективное чтение и запись хранилища объектов облегчает выполнение большего количества шагов в конвейере обработки данных, включая ETL (извлечение-преобразование-загрузка) или создание хранилища данных.
 
-## Case 5: Internet of Things (IoT)
+## Случай 5: Интернет вещей (IoT)
 
-IoT sensors produce all kinds of data. An object store can store this type of time series and later run analytics or AI algorithms on them. Major public cloud providers provide pipelines to ingest raw IoT data into the object store.
+Датчики Интернета вещей производят все виды данных. Хранилище объектов может хранить этот тип временных рядов, а затем запускать на них аналитику или алгоритмы искусственного интеллекта. Крупнейшие поставщики общедоступных облаков предоставляют конвейеры для приема необработанных данных Интернета вещей в хранилище объектов.
 
-## Case 6: Backup and Recovery
+## Случай 6: Резервное копирование и восстановление
 
-An object store can be used to store database or file system backups. Later, the backups can be loaded for fast recovery. This improves the system’s availability.
+Хранилище объектов можно использовать для хранения резервных копий базы данных или файловой системы. Позже резервные копии можно загрузить для быстрого восстановления. Это повышает доступность системы.

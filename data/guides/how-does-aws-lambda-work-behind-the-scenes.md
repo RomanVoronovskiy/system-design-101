@@ -1,6 +1,6 @@
 ---
-title: "How AWS Lambda Works Behind the Scenes"
-description: "Explore the inner workings of AWS Lambda and its serverless architecture."
+title: "Как работает AWS Lambda за кулисами"
+description: "Изучите внутреннюю работу AWS Lambda и ее бессерверную архитектуру."
 image: "https://assets.bytebytego.com/diagrams/0249-lambda.jpg"
 createdAt: "2024-01-26"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0249-lambda.jpg)
 
-**Serverless** is one of the hottest topics in cloud services. How does AWS **Lambda** work behind the scenes?
+**Бессерверные** — одна из самых обсуждаемых тем в облачных сервисах. Как AWS **Lambda** работает «за кулисами»?
 
-Lambda is a **serverless** computing service provided by Amazon Web Services (AWS), which runs functions in response to events.
+Lambda — это **бессерверный** вычислительный сервис, предоставляемый Amazon Web Services (AWS), который запускает функции в ответ на события.
 
-## Firecracker MicroVM
+## Фейерверк MicroVM
 
-Firecracker is the engine powering all of the Lambda functions. It is a virtualization technology developed at Amazon and written in Rust.
+Firecracker — это двигатель, обеспечивающий все функции Lambda. Это технология виртуализации, разработанная в Amazon и написанная на Rust.
 
-The diagram below illustrates the isolation model for AWS Lambda Workers.
+На диаграмме ниже показана модель изоляции для рабочих процессов AWS Lambda.
 
-Lambda functions run within a sandbox, which provides a minimal Linux userland, some common libraries and utilities. It creates the Execution environment (worker) on EC2 instances.
+Функции Lambda выполняются в «песочнице», которая предоставляет минимальное пользовательское пространство Linux, некоторые общие библиотеки и утилиты. Он создает среду выполнения (работницу) на экземплярах EC2.
 
-How are lambdas initiated and invoked? There are two ways.
+Как инициируются и вызываются лямбды? Есть два пути.
 
-## Synchronous execution
+## Синхронное выполнение
 
-*   Step1: "The Worker Manager communicates with a Placement Service which is responsible to place a workload on a location for the given host (it’s provisioning the sandbox) and returns that to the Worker Manager".
+* Шаг 1: «Диспетчер рабочих связывается со службой размещения, которая отвечает за размещение рабочей нагрузки в месте для данного хоста (она обеспечивает песочницу) и возвращает ее диспетчеру рабочих».
 
-*   Step 2: "The Worker Manager can then call *Init* to initialize the function for execution by downloading the Lambda package from S3 and setting up the Lambda runtime"
+* Шаг 2: «Диспетчер рабочих может затем вызвать *Init*, чтобы инициализировать функцию для выполнения, загрузив пакет Lambda с S3 и настроив среду выполнения Lambda»
 
-*   Step 3: The Frontend Worker is now able to call *Invoke*.
+* Шаг 3: Frontend Worker теперь может вызывать *Invoke*.
 
-## Asynchronous execution
+## Асинхронное выполнение
 
-*   Step 1: The Application Load Balancer forwards the invocation to an available Frontend which places the event onto an internal queue(SQS).
+* Шаг 1. Балансировщик нагрузки приложения пересылает вызов доступному интерфейсу, который помещает событие во внутреннюю очередь (SQS).
 
-*   Step 2: There is "a set of pollers assigned to this internal queue which are responsible for polling it and moving the event onto a Frontend synchronously. After it’s been placed onto the Frontend it follows the synchronous invocation call pattern which we covered earlier".
+* Шаг 2: Существует «набор опросников, назначенных этой внутренней очереди, которые отвечают за ее опрос и синхронное перемещение события во внешний интерфейс. После того, как событие было помещено во внешний интерфейс, оно следует шаблону синхронного вызова, который мы рассмотрели ранее».

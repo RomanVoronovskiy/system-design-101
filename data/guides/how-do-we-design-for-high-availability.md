@@ -1,6 +1,6 @@
 ---
-title: "How to Design for High Availability"
-description: "Explore key strategies for designing systems with high availability."
+title: "Как проектировать высокую доступность"
+description: "Изучите ключевые стратегии проектирования систем с высокой доступностью."
 image: "https://assets.bytebytego.com/diagrams/0211-high-availability.jpg"
 createdAt: "2024-03-11"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0211-high-availability.jpg)
 
-What does Availability mean when you design a system?
+Что означает доступность при проектировании системы?
 
-In the famous CAP theorem by computer scientist Eric Brewer, Availability means ​​all (non-failing) nodes are available for queries in a distributed system. When you send out requests to the nodes, a non-failing node will return a reasonable response within a reasonable amount of time (with no error or timeout).
+В знаменитой теореме CAP ученого-компьютерщика Эрика Брюэра доступность означает, что все (исправные) узлы доступны для запросов в распределенной системе. Когда вы отправляете запросы узлам, исправный узел вернет разумный ответ в течение разумного периода времени (без ошибок или тайм-аута).
 
-Usually, we design a system for high availability. For example, when we say the design target is 4-9’s, it means the services should be up 99.99% of the time. This also means the services can only be down for 52.5 minutes per year.
+Обычно мы проектируем систему с высокой доступностью. Например, когда мы говорим, что целевой показатель — 4–9, это означает, что услуги должны работать в 99,99% случаев. Это также означает, что услуги могут быть недоступны только на 52,5 минуты в год.
 
-Note that availability only guarantees that we will receive a response; it doesn’t guarantee the data is the most up-to-date.
+Обратите внимание, что доступность только гарантирует, что мы получим ответ; это не гарантирует, что данные самые актуальные.
 
-The diagram below shows how we can turn a single-node “Product Inventory” into a double-node architecture with high availability.
+На диаграмме ниже показано, как мы можем превратить одноузловую «Инвентаризацию продуктов» в двухузловую архитектуру с высокой доступностью.
 
-## High Availability Architectures
+## Архитектуры высокой доступности
 
-*   **Primary-Backup:** the backup node is just a stand-by, and the data is replicated from primary to backup. When the primary fails, we need to manually switch to the backup node.
+* **Основной-резервный:** резервный узел является просто резервным, а данные реплицируются с основного на резервный. При выходе из строя основного узла нам необходимо вручную переключиться на резервный узел.
 
-    The backup node might be a waste of hardware resources.
+Резервный узел может оказаться пустой тратой аппаратных ресурсов.
 
-*   **Primary-Secondary:** this architecture looks similar to primary-backup architecture, but the secondary node can take read requests to balance the reading load. Due to latency when replicating data from primary to secondary, the data read from the secondary may be inconsistent with the primary.
+* **Основной-вторичный:** эта архитектура похожа на архитектуру основного резервного копирования, но вторичный узел может принимать запросы на чтение, чтобы сбалансировать нагрузку чтения. Из-за задержки при репликации данных из основного источника в дополнительный данные, считанные из вторичного сервера, могут быть несовместимы с первичными.
 
-*   **Primary-Primary:** both nodes act as primary nodes, both nodes can handle read/write operations, and the data is replicated between the two nodes. This type of architecture increases the throughput, but it has limited use cases. For example, if both nodes need to update the same product, the final state might be unpredictable. Use this architecture with caution!
+* **Основной-Основной:** оба узла действуют как основные узлы, оба узла могут выполнять операции чтения/записи, и данные реплицируются между двумя узлами. Этот тип архитектуры увеличивает пропускную способность, но имеет ограниченные варианты использования. Например, если обоим узлам необходимо обновить один и тот же продукт, конечное состояние может быть непредсказуемым. Используйте эту архитектуру с осторожностью!
 
-    If we deploy the node on Amazon EC2, which has 90% availability, the double-node architecture will increase availability from 90% to 99%.
+Если мы развернем узел на Amazon EC2, доступность которого составляет 90 %, архитектура с двумя узлами увеличит доступность с 90 % до 99 %.

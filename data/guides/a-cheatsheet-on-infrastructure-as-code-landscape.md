@@ -1,6 +1,6 @@
 ---
-title: "Infrastructure as Code Landscape Cheatsheet"
-description: "A quick reference guide to the Infrastructure as Code landscape."
+title: "Инфраструктура как шпаргалка по ландшафту кода"
+description: "Краткое справочное руководство по ландшафту «Инфраструктура как код»."
 image: "https://assets.bytebytego.com/diagrams/0063-a-cheatsheet-on-infrastructure-as-code-landscape.png"
 createdAt: "2024-02-18"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0063-a-cheatsheet-on-infrastructure-as-code-landscape.png)
 
-Scalable infrastructure provisioning provides several benefits related to availability, scalability, repeatability, and cost-effectiveness.
+Предоставление масштабируемой инфраструктуры обеспечивает ряд преимуществ, связанных с доступностью, масштабируемостью, повторяемостью и экономической эффективностью.
 
-But how do you achieve this?
+Но как этого добиться?
 
-Provisioning infrastructure using code is the key to scalable infra management.
+Обеспечение инфраструктуры с использованием кода является ключом к масштабируемому управлению инфраструктурой.
 
-There are multiple strategies that can help:
+Существует несколько стратегий, которые могут помочь:
 
-*   Containerization is one of the first strategies to make application deployments based on code. Docker is one of the most popular ways to containerize the application.
+* Контейнеризация — одна из первых стратегий развертывания приложений на основе кода. Docker — один из самых популярных способов контейнеризации приложения.
 
-*   Next, container orchestration becomes a necessity when dealing with multiple containers in an application. This is where container orchestration tools like Kubernetes become important.
+* Далее, оркестровка контейнеров становится необходимостью при работе с несколькими контейнерами в приложении. Именно здесь становятся важными инструменты оркестрации контейнеров, такие как Kubernetes.
 
-*   IaC treats infrastructure provisioning and configuration as code, allowing developers to define the application infrastructure in files that can be versioned, tested, and reused. Popular tools such as Terraform, AWS CloudFormation, and Ansible can be used. Ansible is more of a configuration tool.
+* IaC рассматривает предоставление и настройку инфраструктуры как код, что позволяет разработчикам определять инфраструктуру приложений в файлах, которые можно управлять версиями, тестировать и повторно использовать. Можно использовать такие популярные инструменты, как Terraform, AWS CloudFormation и Ansible. Ansible — это скорее инструмент настройки.
 
-*   GitOps leverages a Git workflow combined with CI/CD to automate infrastructure and configuration updates.
+* GitOps использует рабочий процесс Git в сочетании с CI/CD для автоматизации обновлений инфраструктуры и конфигурации.

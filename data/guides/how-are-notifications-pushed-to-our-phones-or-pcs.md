@@ -1,6 +1,6 @@
 ---
-title: "How are Notifications Pushed to Our Phones or PCs?"
-description: "Learn how push notifications work on phones and PCs using FCM."
+title: "Как уведомления передаются на наши телефоны или компьютеры?"
+description: "Узнайте, как push-уведомления работают на телефонах и компьютерах с помощью FCM."
 image: "https://assets.bytebytego.com/diagrams/0309-push-notifiction.jpg"
 createdAt: "2024-03-12"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0309-push-notifiction.jpg)
 
-A messaging solution (Firebase) can be used to support the notification push.
+Для поддержки отправки уведомлений можно использовать решение для обмена сообщениями (Firebase).
 
-The diagram below shows how Firebase Cloud Messaging (FCM) works.
+На диаграмме ниже показано, как работает Firebase Cloud Messaging (FCM).
 
-FCM is a cross-platform messaging solution that can compose, send, queue, and route notifications reliably. It provides a unified API between message senders (app servers) and receivers (client apps). The app developer can use this solution to drive user retention.
+FCM — это кроссплатформенное решение для обмена сообщениями, которое может надежно составлять, отправлять, ставить в очередь и маршрутизировать уведомления. Он предоставляет унифицированный API между отправителями сообщений (серверами приложений) и получателями (клиентскими приложениями). Разработчик приложения может использовать это решение для удержания пользователей.
 
-Steps 1 - 2: When the client app starts for the first time, the client app sends credentials to FCM, including Sender ID, API Key, and App ID. FCM generates Registration Token for the client app instance (so the Registration Token is also called Instance ID). This token must be included in the notifications.
+Шаги 1–2. При первом запуске клиентского приложения оно отправляет в FCM учетные данные, включая идентификатор отправителя, ключ API и идентификатор приложения. FCM генерирует токен регистрации для экземпляра клиентского приложения (поэтому токен регистрации также называется идентификатором экземпляра). Этот токен должен быть включен в уведомления.
 
-Step 3: The client app sends the Registration Token to the app server. The app server caches the token for subsequent communications. Over time, the app server has too many tokens to maintain, so the recommended practice is to store the token with timestamps and to remove stale tokens from time to time.
+Шаг 3. Клиентское приложение отправляет токен регистрации на сервер приложения. Сервер приложений кэширует токен для последующей связи. Со временем на сервере приложений появляется слишком много токенов, которые нужно поддерживать, поэтому рекомендуется хранить токен с метками времени и время от времени удалять устаревшие токены.
 
-Step 4: There are two ways to send messages. One is to compose messages directly in the console GUI (Step 4.1,) and the other is to send the messages from the app server (Step 4.2.) We can use the Firebase Admin SDK or HTTP for the latter.
+Шаг 4: Есть два способа отправки сообщений. Один из них — составлять сообщения непосредственно в графическом интерфейсе консоли (шаг 4.1), а другой — отправлять сообщения с сервера приложений (шаг 4.2). Для последнего мы можем использовать Firebase Admin SDK или HTTP.
 
-Step 5: FCM receives the messages, and queues the messages in the storage if the devices are not online.
+Шаг 5. FCM получает сообщения и помещает их в очередь в хранилище, если устройства не подключены к сети.
 
-Step 6: FCM forwards the messages to platform-level transport. This transport layer handles platform-specific configurations.
+Шаг 6: FCM пересылает сообщения на транспорт уровня платформы. Этот транспортный уровень обрабатывает конфигурации, специфичные для платформы.
 
-Step 7: The messages are routed to the targeted devices. The notifications can be displayed according to the configurations sent from the app server.
+Шаг 7: Сообщения перенаправляются на целевые устройства. Уведомления могут отображаться в соответствии с конфигурациями, отправленными с сервера приложений.

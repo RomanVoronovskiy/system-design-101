@@ -1,6 +1,6 @@
 ---
-title: "Algorithms for System Design Interviews"
-description: "Essential algorithms for system design interviews and software engineers."
+title: "Алгоритмы проведения собеседований по проектированию систем"
+description: "Основные алгоритмы для собеседований по проектированию систем и инженеров-программистов."
 image: "https://assets.bytebytego.com/diagrams/0068-algorithms-geo-hash-linkedin.jpg"
 createdAt: "2024-03-08"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0068-algorithms-geo-hash-linkedin.jpg)
 
-What are some of the algorithms you should know before taking system design interviews?
+Какие алгоритмы вам следует знать, прежде чем проходить собеседование по проектированию систем?
 
-I put together a list and explained why they are important. Those algorithms are not only useful for interviews but good to understand for any software engineer.
+Я составил список и объяснил, почему они важны. Эти алгоритмы не только полезны для собеседований, но и понятны любому инженеру-программисту.
 
-One thing to keep in mind is that understanding “how those algorithms are used in real-world systems” is generally more important than the implementation details in a system design interview.
+Следует иметь в виду, что понимание того, «как эти алгоритмы используются в реальных системах», как правило, более важно, чем детали реализации на собеседовании по проектированию системы.
 
-What do the stars mean in the diagram?
+Что означают звезды на схеме?
 
-It’s very difficult to rank algorithms by importance objectively. I’m open to suggestions and making adjustments.
+Объективно ранжировать алгоритмы по важности очень сложно. Я открыт для предложений и внесения корректировок.
 
-Five-star: Very important. Try to understand how it works and why.
+Пятизвездочный: очень важно. Постарайтесь понять, как это работает и почему.
 
-Three-star: Important to some extent. You may not need to know the implementation details.
+Три звезды: В некоторой степени важно. Возможно, вам не понадобится знать детали реализации.
 
-One-star: Advanced. Good to know for senior candidates.
+Одна звезда: продвинутый. Полезно знать старшим кандидатам.

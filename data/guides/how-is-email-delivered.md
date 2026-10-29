@@ -1,6 +1,6 @@
 ---
-title: "How is Email Delivered?"
-description: "Explore the journey of an email, from sender to receiver, step by step."
+title: "Как доставляется электронная почта?"
+description: "Шаг за шагом изучите путь электронного письма от отправителя к получателю."
 image: "https://assets.bytebytego.com/diagrams/0185-email-deliver.png"
 createdAt: "2024-02-28"
 draft: false
@@ -10,19 +10,18 @@ tags:
   - EmailProtocols
   - EmailDelivery
 ---
+Знаете ли вы, как доставляется электронное письмо?
 
-Do you know how an email is delivered?
-
-When I first learned how similar email is to traditional ‘snail’ mail, I was surprised. Maybe you will be, too. Allow me to explain.
+Когда я впервые узнал, насколько электронная почта похожа на традиционную «улиточную» почту, я был удивлен. Может быть, ты тоже будешь. Позвольте мне объяснить.
 
 ![](https://assets.bytebytego.com/diagrams/0185-email-deliver.png)
 
-In the physical world, if I want to send a postcard to a friend, I would put it in a nearby mailbox. The postal office collects the mail regularly and relays it to the destination postal office. This postal office then puts the postcard in my friend’s mailbox. This process usually takes a few days and my friend receives my gratitude in paper form.
+В физическом мире, если я хочу отправить открытку другу, я бы положил ее в ближайший почтовый ящик. Почтовое отделение регулярно забирает почту и передает ее в почтовое отделение назначения. Затем это почтовое отделение кладет открытку в почтовый ящик моего друга. Этот процесс обычно занимает несколько дней, и мой друг получает мою благодарность в бумажном виде.
 
-Email functions in a similar way. The terminology changes because it is an internet-based solution, but the fundamentals are the same:
+Электронная почта работает аналогичным образом. Терминология меняется, поскольку это интернет-решение, но основы те же:
 
-*   Instead of putting mail in a mailbox, the sender pushes an email to the Sender Mail Server using MUA (mail user agent,) such as Outlook or Gmail.
+* Вместо того, чтобы помещать почту в почтовый ящик, отправитель отправляет электронное письмо на почтовый сервер отправителя с помощью MUA (пользовательский почтовый агент), например Outlook или Gmail.
 
-*   Instead of using postal offices to relay mail, MTA (mail transmission agent) relays the email. It communicates via the SMTP protocol.
+* Вместо использования почтовых отделений для пересылки почты MTA (агент передачи почты) передает электронную почту. Обмен данными осуществляется по протоколу SMTP.
 
-The email is received by the Receiver Mail Server. It stores the email to the Mailbox by using MDA (mail delivery agent.) The receiver uses MUA to retrieve the email using the POP3/IMAP protocol.
+Электронная почта принимается почтовым сервером получателя. Он сохраняет электронную почту в почтовом ящике с помощью MDA (агента доставки почты). Получатель использует MUA для получения электронной почты с использованием протокола POP3/IMAP.

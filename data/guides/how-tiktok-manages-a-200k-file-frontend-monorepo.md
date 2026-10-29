@@ -1,6 +1,6 @@
 ---
-title: How TikTok Manages a 200K File Frontend MonoRepo
-description: TikTok's strategy for managing a large frontend MonoRepo with 200K files.
+title: "Как TikTok управляет интерфейсом MonoRepo объемом 200 000 файлов"
+description: "Стратегия TikTok по управлению большим интерфейсом MonoRepo с 200 тысячами файлов."
 image: 'https://assets.bytebytego.com/diagrams/0226-how-tiktok-manages-a-200k-file-frontend-monorepo.png'
 createdAt: '2024-03-03'
 draft: false
@@ -13,23 +13,23 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0226-how-tiktok-manages-a-200k-file-frontend-monorepo.png)
 
-A MonoRepo, short for a monolithic repository, is a software development strategy where a single repository contains multiple projects, libraries, and services.
+MonoRepo, сокращение от монолитного репозитория, — это стратегия разработки программного обеспечения, при которой один репозиторий содержит несколько проектов, библиотек и сервисов.
 
-The good parts of a MonoRepo are:
+Хорошие стороны MonoRepo:
 
-*   **Better code sharing**
-*   **Simplified dependency management**
-*   **A unified view of the code base**
+* **Улучшенное совместное использование кода**
+* **Упрощенное управление зависимостями**
+* **Единое представление базы кода**
 
-However, the bigger the MonoRepo gets, the slower the various Git operations.
+Однако чем больше становится MonoRepo, тем медленнее выполняются различные операции Git.
 
-TikTok faced a similar change with its frontend TypeScript MonoRepo with 200K files.
+TikTok столкнулся с аналогичным изменением со своим интерфейсом TypeScript MonoRepo с 200 тысячами файлов.
 
-To deal with this, TikTok built a tool named Sparo that optimizes the performance of Git operations for large frontend MonoRepos.
+Чтобы справиться с этой проблемой, TikTok создал инструмент под названием Sparo, который оптимизирует производительность операций Git для больших интерфейсных MonoRepos.
 
-Sparo dramatically improved the performance of Git operations. Some stats are as follows
+Sparo значительно улучшил производительность операций Git. Некоторые статистические данные таковы
 
-*   Git clone time went from 40 mins to just 2 mins.
-*   Checkout went from 1.5 minutes to 30 seconds.
-*   Status went from 7 seconds to 1 second.
-*   Git commit time went from 15 seconds to 11 seconds.
+* Время клонирования Git сократилось с 40 минут до всего 2 минут.
+* Оформление заказа увеличилось с 1,5 минут до 30 секунд.
+* Статус изменился с 7 секунд до 1 секунды.
+* Время фиксации Git уменьшилось с 15 секунд до 11 секунд.

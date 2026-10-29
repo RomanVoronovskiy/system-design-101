@@ -1,6 +1,6 @@
 ---
-title: "How to Design a Secure System"
-description: "A cheat sheet for designing secure systems with key design points."
+title: "Как спроектировать безопасную систему"
+description: "Шпаргалка по проектированию безопасных систем с ключевыми моментами проектирования."
 image: "https://assets.bytebytego.com/diagrams/0138-cheat-sheet-for-designing-secure-systems.png"
 createdAt: "2024-02-21"
 draft: false
@@ -13,21 +13,21 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0138-cheat-sheet-for-designing-secure-systems.png)
 
-Designing secure systems is important for a multitude of reasons, spanning from protecting sensitive information to ensuring the stability and reliability of the infrastructure. As developers, we should design and implement these security guidelines by default.
+Проектирование безопасных систем важно по множеству причин: от защиты конфиденциальной информации до обеспечения стабильности и надежности инфраструктуры. Как разработчики, мы должны разработать и реализовать эти рекомендации по безопасности по умолчанию.
 
-The diagram below is a pragmatic cheat sheet with the use cases and key design points.
+Диаграмма ниже представляет собой прагматичную шпаргалку с вариантами использования и ключевыми моментами проектирования.
 
-## Key Design Points
+## Ключевые моменты проектирования
 
-*   Authentication
-*   Authorization
-*   Encryption
-*   Vulnerability
-*   Audit & Compliance
-*   Network Security
-*   Terminal Security
-*   Emergency Responses
-*   Container Security
-*   API Security
-*   3rd-Party Vendor Management
-*   Disaster Recovery
+* Аутентификация
+* Авторизация
+* Шифрование
+* Уязвимость
+* Аудит и соблюдение требований
+* Сетевая безопасность
+* Безопасность терминала
+* Экстренные меры
+* Контейнерная безопасность
+* Безопасность API
+* Управление сторонними поставщиками
+* Аварийное восстановление

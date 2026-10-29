@@ -1,11 +1,10 @@
 ---
-title: 'API and Web Development'
-description: 'Learn how APIs enable web development by providing standardized protocols for data exchange between different parts of web applications.'
+title: "API и веб-разработка"
+description: "Узнайте, как API позволяют осуществлять веб-разработку, предоставляя стандартизированные протоколы для обмена данными между различными частями веб-приложений."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/api.png'
 sort: 100
 ---
+Веб-разработка включает в себя создание веб-сайтов и приложений путем объединения пользовательского интерфейса, внутренней логики и баз данных. API — это фундаментальные строительные блоки, которые позволяют этим компонентам эффективно взаимодействовать.
 
-Web development involves building websites and applications by combining frontend UI, backend logic, and databases. APIs are the fundamental building blocks that enable these components to communicate effectively.
-
-APIs provide standardized protocols for data exchange between different parts of web applications. Using technologies like REST and GraphQL, APIs allow integration of services, database operations, and interactive features while keeping system components cleanly separated.
+API предоставляют стандартизированные протоколы для обмена данными между различными частями веб-приложений. Используя такие технологии, как REST и GraphQL, API позволяют интегрировать сервисы, операции с базами данных и интерактивные функции, сохраняя при этом четкое разделение системных компонентов.

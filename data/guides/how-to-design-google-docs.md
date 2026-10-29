@@ -1,6 +1,6 @@
 ---
-title: "How to Design Google Docs"
-description: "Learn how to design Google Docs with this detailed guide."
+title: "Как создавать документы Google"
+description: "Узнайте, как создавать документы Google, с помощью этого подробного руководства."
 image: "https://assets.bytebytego.com/diagrams/0206-google-doc.png"
 createdAt: "2024-03-07"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0206-google-doc.png)
 
-1. Clients send document editing operations to the WebSocket Server.
+1. Клиенты отправляют операции редактирования документа на сервер WebSocket.
 
-2. The real-time communication is handled by the WebSocket Server.
+2. Связь в реальном времени осуществляется сервером WebSocket.
 
-3. Documents operations are persisted in the Message Queue.
+3. Операции с документами сохраняются в очереди сообщений.
 
-4. The File Operation Server consumes operations produced by clients and generates transformed operations using collaboration algorithms.
+4. Сервер файловых операций обрабатывает операции, производимые клиентами, и генерирует преобразованные операции с использованием алгоритмов совместной работы.
 
-5. Three types of data are stored: file metadata, file content, and operations.
+5. Хранятся три типа данных: метаданные файла, содержимое файла и операции.
 
-One of the biggest challenges is real-time conflict resolution. Common algorithms include:
+Одной из самых больших проблем является разрешение конфликтов в реальном времени. Общие алгоритмы включают в себя:
 
-*   Operational transformation (OT)
-*   Differential Synchronization (DS)
-*   Conflict-free replicated data type (CRDT)
+* Операционная трансформация (ОТ)
+* Дифференциальная синхронизация (DS)
+* Бесконфликтный реплицируемый тип данных (CRDT).
 
-Google Doc uses OT according to its Wikipedia page and CRDT is an active area of research for real-time concurrent editing.
+Google Doc использует OT, согласно его странице в Википедии, а CRDT является активной областью исследований для одновременного редактирования в реальном времени.

@@ -1,6 +1,6 @@
 ---
-title: "How does Git Work?"
-description: "A handy guide to learning how does Git work."
+title: "Как работает Git?"
+description: "Удобное руководство по изучению того, как работает Git."
 image: "https://assets.bytebytego.com/diagrams/0205-git-workflow.jpg"
 createdAt: "2024-02-25"
 draft: false
@@ -13,6 +13,6 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0205-git-workflow.jpg)
 
-Git is a distributed version control system that allows multiple developers to work on the same project simultaneously. It is widely used in software development to manage source code history.
+Git — это распределенная система контроля версий, которая позволяет нескольким разработчикам одновременно работать над одним проектом. Он широко используется в разработке программного обеспечения для управления историей исходного кода.
 
-The diagram above shows the Git workflow with common commands.
+На диаграмме выше показан рабочий процесс Git с общими командами.

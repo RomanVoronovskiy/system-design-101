@@ -1,6 +1,6 @@
 ---
-title: "Data Transmission Between Applications"
-description: "Explore how data travels between applications in detail."
+title: "Передача данных между приложениями"
+description: "Подробно изучите, как данные передаются между приложениями."
 image: "https://assets.bytebytego.com/diagrams/0159-data-transfer-between-apps.png"
 createdAt: "2024-02-24"
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0159-data-transfer-between-apps.png)
 
-The diagram below shows how a server sends data to another server.
+На диаграмме ниже показано, как сервер отправляет данные на другой сервер.
 
-Assume a chat application running in the user space sends out a chat message. The message is sent to the send buffer in the kernel space. The data then goes through the network stack and is wrapped with a TCP header, an IP header, and a MAC header. The data also goes through qdisc (Queueing Disciplines) for flow control. Then the data is sent to the NIC (Network Interface Card) via a ring buffer.
+Предположим, приложение чата, работающее в пространстве пользователя, отправляет сообщение чата. Сообщение отправляется в буфер отправки в пространстве ядра. Затем данные проходят через сетевой стек и оборачиваются заголовком TCP, заголовком IP и заголовком MAC. Данные также проходят через qdisc (дисциплины организации очереди) для управления потоком. Затем данные отправляются на сетевую карту (сетевую карту) через кольцевой буфер.
 
-The data is sent to the internet via NIC. After many hops among routers and switches, the data arrives at the NIC of the receiving server.
+Данные отправляются в Интернет через сетевой адаптер. После многих переходов между маршрутизаторами и коммутаторами данные поступают на сетевой адаптер принимающего сервера.
 
-The NIC of the receiving server puts the data in the ring buffer and sends a hard interrupt to the CPU. The CPU sends a soft interrupt so that ksoftirqd receives data from the ring buffer. Then the data is unwrapped through the data link layer, network layer and transport layer. Eventually, the data (chat message) is copied to the user space and reaches the chat application on the receiving side.
+Сетевая карта принимающего сервера помещает данные в кольцевой буфер и отправляет жесткое прерывание ЦП. ЦП отправляет мягкое прерывание, чтобы ksoftirqd получил данные из кольцевого буфера. Затем данные разворачиваются через канальный уровень, сетевой уровень и транспортный уровень. В конце концов данные (сообщение чата) копируются в пространство пользователя и достигают приложения чата на принимающей стороне.

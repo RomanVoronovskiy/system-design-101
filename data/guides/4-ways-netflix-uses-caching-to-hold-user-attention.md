@@ -1,6 +1,6 @@
 ---
-title: '4 Ways Netflix Uses Caching'
-description: 'Explore how Netflix uses caching to maintain user engagement.'
+title: "4 способа, которыми Netflix использует кеширование"
+description: "Узнайте, как Netflix использует кеширование для поддержания вовлеченности пользователей."
 image: 'https://assets.bytebytego.com/diagrams/0007-4-ways-netflix-uses-caching.png'
 createdAt: '2024-02-25'
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0007-4-ways-netflix-uses-caching.png)
 
-The goal of Netflix is to keep you streaming for as long as possible. But a user’s typical attention span is just 90 seconds.
+Цель Netflix — обеспечить вам потоковую передачу как можно дольше. Но типичная продолжительность концентрации внимания пользователя составляет всего 90 секунд.
 
-They use EVCache (a distributed key-value store) to reduce latency so that the users don’t lose interest.
+Они используют EVCache (распределенное хранилище значений ключей) для уменьшения задержки и того, чтобы пользователи не теряли интерес.
 
-However, EVCache has multiple use cases at Netflix.
+Однако EVCache имеет несколько вариантов использования в Netflix.
 
-*   **Lookaside Cache**
+* **Обзорный кэш**
 
-    When the application needs some data, it first tries the EVCache client and if the data is not in the cache, it goes to the backend service and the Cassandra database to fetch the data.
+Когда приложению нужны какие-то данные, оно сначала обращается к клиенту EVCache, а если данных нет в кеше, оно обращается к серверной службе и базе данных Cassandra для получения данных.
 
-    The service also keeps the cache updated for future requests.
+Служба также обновляет кеш для будущих запросов.
 
-*   **Transient Data Store**
+* **Хранилище переходных данных**
 
-    Netflix uses EVCache to keep track of transient data such as playback session information.
+Netflix использует EVCache для отслеживания временных данных, таких как информация о сеансе воспроизведения.
 
-    One application service might start the session while the other may update the session followed by a session closure at the very end.
+Одна служба приложений может начать сеанс, а другая может обновить сеанс с последующим закрытием сеанса в самом конце.
 
-*   **Primary Store**
+* **Основной магазин**
 
-    Netflix runs large-scale pre-compute systems every night to compute a brand-new home page for every profile of every user based on watch history and recommendations.
+Netflix запускает крупномасштабные системы предварительных вычислений каждую ночь, чтобы рассчитать новую домашнюю страницу для каждого профиля каждого пользователя на основе истории просмотров и рекомендаций.
 
-    All of that data is written into the EVCache cluster from where the online services read the data and build the homepage.
+Все эти данные записываются в кластер EVCache, откуда онлайн-сервисы считывают данные и создают домашнюю страницу.
 
-*   **High Volume Data**
+* **Большие объемы данных**
 
-    Netflix has data that has a high volume of access and also needs to be highly available. For example, UI strings and translations that are shown on the Netflix home page.
+У Netflix есть данные, к которым имеется большой объем доступа, а также они должны быть высокодоступными. Например, строки пользовательского интерфейса и переводы, которые отображаются на домашней странице Netflix.
 
-    A separate process asynchronously computes and publishes the UI string to EVCache from where the application can read it with low latency and high availability.
+Отдельный процесс асинхронно вычисляет и публикует строку пользовательского интерфейса в EVCache, откуда приложение может прочитать ее с низкой задержкой и высокой доступностью.

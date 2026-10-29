@@ -1,6 +1,6 @@
 ---
-title: "How does Terraform turn Code into Cloud?"
-description: "Explore how Terraform transforms code into cloud infrastructure."
+title: "Как Terraform превращает код в облако?"
+description: "Узнайте, как Terraform преобразует код в облачную инфраструктуру."
 image: "https://assets.bytebytego.com/diagrams/0225-how-terraform-creates-infra-at-scale.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0225-how-terraform-creates-infra-at-scale.png)
 
-There are multiple stages in a Terraform workflow:
+Рабочий процесс Terraform состоит из нескольких этапов:
 
-## Write Infrastructure as Code
+## Запись инфраструктуры как кода
 
-*   Define resources, providers, and configurations in Terraform configuration files.
+* Определите ресурсы, поставщиков и конфигурации в файлах конфигурации Terraform.
 
-*   Use variables, modules, and functions to make the code reusable and maintainable.
+* Используйте переменные, модули и функции, чтобы сделать код пригодным для повторного использования и сопровождения.
 
-*   Integrate with Terraform community registries for ready-to-use modules.
+* Интеграция с реестрами сообщества Terraform для получения готовых к использованию модулей.
 
-## Terraform Plan
+## План терраформирования
 
-Preview the changes Terraform will make to the infrastructure by running “terraform plan”. It can be triggered as part of a CI/CD pipeline.
+Просмотрите изменения, которые Terraform внесет в инфраструктуру, запустив «terraform plan». Его можно запустить как часть конвейера CI/CD.
 
-Terraform compares the desired state defined in the configuration file with the current state in the state file.
+Terraform сравнивает желаемое состояние, определенное в файле конфигурации, с текущим состоянием в файле состояния.
 
-## Terraform Apply
+## Терраформирование Применить
 
-Run “terraform apply” to create, update, or delete resources based on the plan.
+Запустите «terraform apply», чтобы создавать, обновлять или удалять ресурсы в соответствии с планом.
 
-Terraform makes API calls to the specified providers (AWS, Azure, GCP, Kubernetes, etc) to provision the resources.
+Terraform выполняет вызовы API указанным поставщикам (AWS, Azure, GCP, Kubernetes и т. д.) для предоставления ресурсов.
 
-The state file is updated to reflect the new state of the infrastructure.
+Файл состояния обновляется, чтобы отразить новое состояние инфраструктуры.
 
-## Infrastructure Ready
+## Инфраструктура готова
 
-Terraform state file acts as a single source of truth for the current state of the infrastructure.
+Файл состояния Terraform выступает в качестве единого источника достоверной информации о текущем состоянии инфраструктуры.
 
-State file enables version control and collaboration between team members for future changes.
+Файл состояния обеспечивает контроль версий и совместную работу между членами команды для будущих изменений.

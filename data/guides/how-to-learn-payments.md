@@ -1,6 +1,6 @@
 ---
-title: "How to Learn Payments"
-description: "A guide to understanding the payment industry and its key components."
+title: "Как изучить платежи"
+description: "Руководство по пониманию платежной индустрии и ее ключевых компонентов."
 image: "https://assets.bytebytego.com/diagrams/0254-learn-payment.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0254-learn-payment.png)
 
-The mind map below shows an extensive outline of payment knowledge.
+Интеллект-карта ниже показывает обширную схему знаний о платежах.
 
-This gives us 𝐚 𝐭𝐨𝐩-𝐝𝐨𝐰𝐧 𝐯𝐢𝐞𝐰 𝐨𝐟 𝐭𝐡𝐞 𝐢𝐧𝐝𝐮𝐬𝐭𝐫𝐲 and an overview of how the payment systems work.
+Это дает нам 𝐚 𝐭𝐨𝐩-𝐝𝐨𝐰𝐧 𝐯𝐢𝐞𝐰 𝐨𝐟 𝐭𝐡𝐞 𝐢𝐧𝐝𝐮𝐬𝐭𝐫𝐲 и обзор способа оплаты. системы работают.
 
-Notice that different countries have different payment frameworks. But in general, the payment industry is composed of below parts:
+Обратите внимание, что в разных странах действуют разные системы оплаты. Но в целом платежная индустрия состоит из следующих частей:
 
-*   Regulatory Authority
+* Регулирующий орган
 
-*   Central Bank
+* Центральный банк
 
-*   Commercial Banks
+* Коммерческие банки
 
-*   Non-Bank Payment Companies
+* Небанковские платежные компании
 
-*   Payment Systems
+* Платежные системы
 
-*   Clearing Networks
+* Очистка сетей
 
-*   Settlement Systems
+* Системы расчетов
 
-## More Useful Materials
+## Больше полезных материалов
 
-Here are some useful materials for your reference:
+Вот несколько полезных материалов для вашего ознакомления:
 
-*   Payment Systems in the U.S. by GlenBrook
+* Платежные системы в США, автор: GlenBrook.
 
-*   BIS (Bank for International Settlements) Website
+* Веб-сайт BIS (Банка международных расчетов)
 
-*   PayPal documents
+* Документы PayPal
 
-*   Stripe documents
+* Полоса документов
 
-*   SWIFT documents
+* СВИФТ-документы

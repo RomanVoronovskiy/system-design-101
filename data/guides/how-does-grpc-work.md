@@ -1,6 +1,6 @@
 ---
-title: How does gRPC work?
-description: Learn how gRPC works, its data flow, and performance benefits.
+title: "Как работает gRPC?"
+description: "Узнайте, как работает gRPC, его поток данных и преимущества в производительности."
 image: 'https://assets.bytebytego.com/diagrams/0210-grpc.png'
 createdAt: '2024-01-28'
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0210-grpc.png)
 
-RPC (Remote Procedure Call) is called **“remote”** because it enables communications between remote services when services are deployed to different servers under microservice architecture. From the user’s point of view, it acts like a local function call.
+RPC (вызов удаленных процедур) называется ** «удаленным»**, поскольку он обеспечивает связь между удаленными службами, когда службы развертываются на разных серверах в рамках микросервисной архитектуры. С точки зрения пользователя это действует как вызов локальной функции.
 
-The diagram above illustrates the overall data flow for **gRPC.**
+На диаграмме выше показан общий поток данных для **gRPC.**
 
-*   Step 1: A REST call is made from the client. The request body is usually in JSON format.
+* Шаг 1: От клиента выполняется вызов REST. Тело запроса обычно имеет формат JSON.
 
-*   Steps 2 - 4: The order service (gRPC client) receives the REST call, transforms it, and makes an RPC call to the payment service. gPRC encodes the **client stub** into a binary format and sends it to the low-level transport layer.
+* Шаги 2–4. Служба заказов (клиент gRPC) получает вызов REST, преобразует его и отправляет вызов RPC в службу платежей. gPRC кодирует **заглушку клиента** в двоичный формат и отправляет ее на транспортный уровень низкого уровня.
 
-*   Step 5: gRPC sends the packets over the network via HTTP2. Because of binary encoding and network optimizations, gRPC is said to be 5X faster than JSON.
+* Шаг 5: gRPC отправляет пакеты по сети через HTTP2. Говорят, что благодаря двоичному кодированию и оптимизации сети gRPC в 5 раз быстрее, чем JSON.
 
-*   Steps 6 - 8: The payment service (gRPC server) receives the packets from the network, decodes them, and invokes the server application.
+* Шаги 6–8: Служба платежей (сервер gRPC) получает пакеты из сети, декодирует их и вызывает серверное приложение.
 
-*   Steps 9 - 11: The result is returned from the server application, and gets encoded and sent to the transport layer.
+* Шаги 9–11: Результат возвращается из серверного приложения, кодируется и отправляется на транспортный уровень.
 
-*   Steps 12 - 14: The order service receives the packets, decodes them, and sends the result to the client application.
+* Шаги 12–14: Служба заказов получает пакеты, декодирует их и отправляет результат клиентскому приложению.

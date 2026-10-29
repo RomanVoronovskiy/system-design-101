@@ -1,6 +1,6 @@
 ---
-title: "JSON Crack: Visualize JSON Files"
-description: "Visualize and understand complex JSON data with JSON Crack."
+title: "JSON Crack: визуализация файлов JSON"
+description: "Визуализируйте и анализируйте сложные данные JSON с помощью JSON Crack."
 image: "https://assets.bytebytego.com/diagrams/0242-json-crack.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0242-json-crack.png)
 
-If you use JSON files, you'll probably like this tool 👇
+Если вы используете файлы JSON, вам наверняка понравится этот инструмент 👇
 
-Nested JSON files are hard to read.
+Вложенные файлы JSON трудно читать.
 
-JsonCrack generates graph diagrams from JSON files and makes them easy to read.
+JsonCrack генерирует графические диаграммы из файлов JSON и упрощает их чтение.

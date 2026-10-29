@@ -1,6 +1,6 @@
 ---
-title: "A Cheatsheet on Database Performance"
-description: "Concise guide to optimize database performance with key strategies."
+title: "Памятка по производительности базы данных"
+description: "Краткое руководство по оптимизации производительности базы данных с помощью ключевых стратегий."
 image: "https://assets.bytebytego.com/diagrams/0062-a-cheatsheet-on-database-performance.png"
 createdAt: "2024-03-11"
 draft: false
@@ -13,76 +13,76 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0062-a-cheatsheet-on-database-performance.png)
 
-## Database Performance Cheatsheet
+## Памятка по производительности базы данных
 
-Here's a cheatsheet on database performance:
+Вот шпаргалка по производительности базы данных:
 
-### **1. Indexing**
+### **1. Индексирование**
 
-*   **Purpose**: Speed up data retrieval.
-*   **Considerations**:
-    *   Over-indexing can slow down writes.
-    *   Regularly review and optimize indexes.
+* **Цель**: ускорить получение данных.
+* **Соображения**:
+    * Чрезмерная индексация может замедлить запись.
+    * Регулярно просматривайте и оптимизируйте индексы.
 
-### **2. Query Optimization**
+### **2. Оптимизация запросов**
 
-*   **Techniques**:
-    *   Use `EXPLAIN` to analyze query plans.
-    *   Avoid `SELECT *`.
-    *   Write efficient `WHERE` clauses.
+* **Техники**:
+    * Используйте `EXPLAIN` для анализа планов запросов.
+    * Избегайте `SELECT *`.
+    * Напишите эффективные предложения `WHERE`.
 
-### **3. Connection Pooling**
+### **3. Пул соединений**
 
-*   **Benefits**:
-    *   Reduces overhead of establishing new connections.
-    *   Improves response times.
+* **Преимущества**:
+    * Уменьшает накладные расходы на установление новых соединений.
+    * Улучшает время отклика.
 
-### **4. Caching**
+### **4. Кэширование**
 
-*   **Levels**:
-    *   Application-level (e.g., Memcached, Redis).
-    *   Database-level (query cache).
+* **Уровни**:
+    * Уровень приложения (например, Memcached, Redis).
+    * Уровень базы данных (кеш запросов).
 
-### **5. Sharding**
+### **5. Шардинг**
 
-*   **Definition**: Distribute data across multiple databases.
-*   **Use Cases**:
-    *   Handling large datasets.
-    *   Improving write performance.
+* **Определение**: Распределение данных по нескольким базам данных.
+* **Примеры использования**:
+    * Обработка больших наборов данных.
+    * Улучшение производительности записи.
 
-### **6. Replication**
+### **6. Репликация**
 
-*   **Types**:
-    *   Master-slave.
-    *   Master-master.
-*   **Purpose**:
-    *   Read scaling.
-    *   High availability.
+* **Типы**:
+    * Мастер-раб.
+    * Мастер-мастер.
+* **Цель**:
+    * Читать масштабирование.
+    * Высокая доступность.
 
-### **7. Hardware**
+### **7. Аппаратное обеспечение**
 
-*   **Considerations**:
-    *   Sufficient RAM.
-    *   Fast storage (SSD).
-    *   Adequate CPU.
+* **Соображения**:
+    * Достаточный объем оперативной памяти.
+    * Быстрое хранилище (SSD).
+    * Адекватный процессор.
 
-### **8. Monitoring**
+### **8. Мониторинг**
 
-*   **Metrics**:
-    *   Query response times.
-    *   CPU usage.
-    *   Disk I/O.
+* **Показатели**:
+    * Время ответа на запрос.
+    * Использование процессора.
+    * Дисковый ввод-вывод.
 
-### **9. Normalization/Denormalization**
+### **9. Нормализация/Денормализация**
 
-*   **Normalization**: Reduces redundancy.
-*   **Denormalization**: Improves read performance (trade-off with redundancy).
+* **Нормализация**: уменьшает избыточность.
+* **Денормализация**: повышает производительность чтения (компромисс с избыточностью).
 
-### **10. Partitioning**
+### **10. Разделение**
 
-*   **Types**:
-    *   Horizontal.
-    *   Vertical.
-*   **Purpose**:
-    *   Improve query performance.
-    *   Easier data management.
+* **Типы**:
+    * Горизонтальный.
+    * Вертикальный.
+* **Цель**:
+    * Улучшение производительности запросов.
+    * Более простое управление данными.

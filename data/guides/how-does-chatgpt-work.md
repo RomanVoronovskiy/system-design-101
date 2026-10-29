@@ -1,6 +1,6 @@
 ---
-title: How does ChatGPT work?
-description: This article explains how ChatGPT works in detail.
+title: "Как работает ChatGPT?"
+description: "В этой статье подробно объясняется, как работает ChatGPT."
 image: 'https://assets.bytebytego.com/diagrams/0135-chat-gpt.jpeg'
 createdAt: '2024-03-15'
 draft: false
@@ -12,25 +12,25 @@ tags:
 ---
 ![](https://assets.bytebytego.com/diagrams/0135-chat-gpt.jpeg)
 
-Since OpenAI hasn't provided all the details, some parts of the diagram may be inaccurate.
+Поскольку OpenAI не предоставила всех подробностей, некоторые части диаграммы могут быть неточными.
 
-We attempted to explain how it works in the diagram above. The process can be broken down into two parts.
+Мы попытались объяснить, как это работает, на диаграмме выше. Процесс можно разделить на две части.
 
-## Training
+## Обучение
 
-To train a ChatGPT model, there are two stages:
+Обучение модели ChatGPT состоит из двух этапов:
 
-- **Pre-training:** In this stage, we train a GPT model (decoder-only transformer) on a large chunk of internet data. The objective is to train a model that can predict future words given a sentence in a way that is grammatically correct and semantically meaningful similar to the internet data. After the pre-training stage, the model can complete given sentences, but it is not capable of responding to questions.
+– **Предварительное обучение.** На этом этапе мы обучаем модель GPT (преобразователь только для декодера) на большом объеме данных из Интернета. Цель состоит в том, чтобы обучить модель, которая может предсказывать будущие слова в предложении таким образом, чтобы это было грамматически правильно и семантически значимо, подобно данным Интернета. После этапа предварительного обучения модель может завершать заданные предложения, но не способна отвечать на вопросы.
 
-- **Fine-tuning:** This stage is a 3-step process that turns the pre-trained model into a question-answering ChatGPT model:
-  - Collect training data (questions and answers), and fine-tune the pre-trained model on this data. The model takes a question as input and learns to generate an answer similar to the training data. 
-  - Collect more data (question, several answers) and train a reward model to rank these answers from most relevant to least relevant. 
-  - Use reinforcement learning (PPO optimization) to fine-tune the model so the model's answers are more accurate.
+– **Точная настройка**. Этот этап представляет собой трехэтапный процесс, который превращает предварительно обученную модель в модель ChatGPT, отвечающую на вопросы:
+  - Соберите данные обучения (вопросы и ответы) и настройте предварительно обученную модель на основе этих данных. Модель принимает вопрос в качестве входных данных и учится генерировать ответ, аналогичный обучающим данным.
+  - Соберите больше данных (вопрос, несколько ответов) и натренируйте модель вознаграждения, чтобы ранжировать эти ответы от наиболее релевантных до наименее релевантных.
+  - Используйте обучение с подкреплением (оптимизация PPO) для точной настройки модели, чтобы ее ответы были более точными.
 
-## Answer a prompt
+## Ответить на запрос
 
-- Step 1: The user enters the full question, “Explain how a classification algorithm works”.
-- Step 2: The question is sent to a content moderation component. This component ensures that the question does not violate safety guidelines and filters inappropriate questions.
-- Steps 3-4: If the input passes content moderation, it is sent to the chatGPT model. If the input doesn’t pass content moderation, it goes straight to template response generation.
-- Step 5-6: Once the model generates the response, it is sent to a content moderation component again. This ensures the generated response is safe, harmless, unbiased, etc.
-- Step 7: If the input passes content moderation, it is shown to the user. If the input doesn’t pass content moderation, it goes to template response generation and shows a template answer to the user.
+- Шаг 1: Пользователь вводит полный вопрос: «Объясните, как работает алгоритм классификации».
+– Шаг 2. Вопрос передается компоненту модерации контента. Этот компонент гарантирует, что вопрос не нарушает правила безопасности, и фильтрует неуместные вопросы.
+– Шаги 3–4. Если входные данные проходят модерацию контента, они отправляются в модель ChatGPT. Если входные данные не проходят модерацию контента, они сразу переходят к генерации ответа шаблона.
+– Шаг 5–6. Как только модель сгенерирует ответ, он снова отправляется компоненту модерации контента. Это гарантирует, что сгенерированный ответ будет безопасным, безвредным, объективным и т. д.
+– Шаг 7. Если входные данные проходят модерацию контента, они отображаются пользователю. Если ввод не проходит модерацию контента, он переходит к генерации шаблонного ответа и показывает шаблонный ответ пользователю.

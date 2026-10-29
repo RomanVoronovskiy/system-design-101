@@ -1,6 +1,6 @@
 ---
-title: "A Cheat Sheet for Designing Fault-Tolerant Systems"
-description: "Top principles for designing robust, fault-tolerant systems."
+title: "Шпаргалка по проектированию отказоустойчивых систем"
+description: "Основные принципы проектирования надежных, отказоустойчивых систем."
 image: "https://assets.bytebytego.com/diagrams/0139-cheat-sheet-for-fault-tolerant-systems.png"
 createdAt: "2024-02-14"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0139-cheat-sheet-for-fault-tolerant-systems.png)
 
-Designing fault-tolerant systems is crucial for ensuring high availability and reliability in various applications. Here are six top principles of designing fault-tolerant systems:
+Проектирование отказоустойчивых систем имеет решающее значение для обеспечения высокой доступности и надежности в различных приложениях. Вот шесть основных принципов проектирования отказоустойчивых систем:
 
-## Replication
+## Репликация
 
-Replication involves creating multiple copies of data or services across different nodes or locations.
+Репликация предполагает создание нескольких копий данных или служб на разных узлах или в разных местах.
 
-## Redundancy
+## Резервирование
 
-Redundancy refers to having additional components or systems that can take over in case of a failure.
+Резервирование означает наличие дополнительных компонентов или систем, которые могут взять на себя управление в случае сбоя.
 
-## Load Balancing
+## Балансировка нагрузки
 
-Load balancing distributes incoming network traffic across multiple servers to ensure no single server becomes a point of failure.
+Балансировка нагрузки распределяет входящий сетевой трафик между несколькими серверами, чтобы ни один сервер не стал точкой отказа.
 
-## Failover Mechanisms
+## Механизмы аварийного переключения
 
-Failover mechanisms automatically switch to a standby system or component when the primary one fails.
+Механизмы аварийного переключения автоматически переключаются на резервную систему или компонент при выходе из строя основного.
 
-## Graceful Degradation
+## Грамотная деградация
 
-Graceful degradation ensures that a system continues to operate at reduced functionality rather than completely failing when some components fail.
+Плавное ухудшение гарантирует, что система продолжает работать с ограниченной функциональностью, а не полностью выходит из строя при выходе из строя некоторых компонентов.
 
-## Monitoring and Alerting
+## Мониторинг и оповещение
 
-Continuously monitor the system's health and performance, and set up alerts for any anomalies or failures.
+Постоянно контролируйте состояние и производительность системы и настраивайте оповещения о любых аномалиях или сбоях.

@@ -1,6 +1,6 @@
 ---
-title: "4 Ways of QR Code Payment"
-description: "Explore the 4 different methods of QR code payments."
+title: "4 способа оплаты по QR-коду"
+description: "Изучите 4 различных способа оплаты с помощью QR-кода."
 image: "https://assets.bytebytego.com/diagrams/0310-qr-code.jpg"
 createdAt: "2024-03-01"
 draft: false
@@ -13,25 +13,25 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0310-qr-code.jpg)
 
-Payment through scanning QR code is very common, but do you know how many ways there are to do it?
+Оплата посредством сканирования QR-кода очень распространена, но знаете ли вы, сколько способов это сделать?
 
-There are 4 ways, no matter whether you’re using PayPal, Stripe, Paytm, WeChat, or Alipay. Is this surprising to you? To understand this, we will answer two questions.
+Есть 4 способа, независимо от того, используете ли вы PayPal, Stripe, Paytm, WeChat или Alipay. Для вас это удивительно? Чтобы понять это, ответим на два вопроса.
 
-## Who Presents the QR Code?
+## Кто представляет QR-код?
 
-1.  You can present the QR code, and the merchant scans the code for payment. This is called ‘consumer-presented mode,’ and what the merchant does is direct debit your account.
+1. Вы можете предъявить QR-код, и продавец отсканирует код для оплаты. Это называется «режимом, представленным покупателю», и продавец осуществляет прямое дебетование вашего счета.
 
-2.  Obviously, the other way is that the merchant presents the QR code for you to scan to pay the due amount. This is called ‘merchant-presented mode,’ and you grant the direct credit from your account.
+2. Очевидно, что другой способ заключается в том, что продавец предоставляет вам QR-код, который вы можете отсканировать, чтобы оплатить причитающуюся сумму. Это называется «режимом, представленным продавцом», и вы предоставляете прямой кредит со своей учетной записи.
 
-## Is the QR Code Dynamic or Static?
+## Является ли QR-код динамическим или статическим?
 
-1.  A dynamic QR code means the QR code will be generated when you present it, or it will automatically regenerate every few seconds. Because it is dynamically generated, it may contain rich information, such as the amount due, transaction type, etc.
+1. Динамический QR-код означает, что QR-код будет сгенерирован при его предъявлении или будет автоматически обновляться каждые несколько секунд. Поскольку он генерируется динамически, он может содержать обширную информацию, такую ​​как сумма к оплате, тип транзакции и т. д.
 
-2.  A static QR code is generated once and used everywhere. Usually, it only contains the account information.
+2. Статический QR-код генерируется один раз и используется повсеместно. Обычно он содержит только информацию об учетной записи.
 
-So there are 2*2=4 ways to scan a QR code, which are:
+Итак, существует 2*2=4 способа сканирования QR-кода, а именно:
 
-*   Consumer-presented mode + static QR code
-*   Consumer-presented mode + dynamic QR code
-*   Merchant-presented mode + static QR code
-*   Merchant-presented mode + dynamic QR code
+* Режим «Представлено потребителю» + статический QR-код
+* Режим «Представлено потребителю» + динамический QR-код
+* Режим «представлено продавцом» + статический QR-код
+* Режим «представлено продавцом» + динамический QR-код

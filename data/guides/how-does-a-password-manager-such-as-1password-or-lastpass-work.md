@@ -1,6 +1,6 @@
 ---
-title: "How Password Managers Work"
-description: "Learn how password managers like 1Password and LastPass keep passwords safe."
+title: "Как работают менеджеры паролей"
+description: "Узнайте, как менеджеры паролей, такие как 1Password и LastPass, обеспечивают безопасность паролей."
 image: "https://assets.bytebytego.com/diagrams/0297-password-manager.png"
 createdAt: "2024-02-14"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0297-password-manager.png)
 
-How does it keep our passwords safe?
+Как он обеспечивает безопасность наших паролей?
 
-The diagram below shows how a typical password manager works.
+На диаграмме ниже показано, как работает типичный менеджер паролей.
 
-A password manager generates and stores passwords for us. We can use it via application, browser extension, or command line.
+Менеджер паролей генерирует и хранит для нас пароли. Мы можем использовать его через приложение, расширение браузера или командную строку.
 
-Not only does a password manager store passwords for individuals but also it supports password management for teams in small businesses and big enterprises.
+Менеджер паролей не только хранит пароли для отдельных лиц, но также поддерживает управление паролями для групп малого бизнеса и крупных предприятий.
 
-Let’s go through the steps.
+Давайте пройдемся по шагам.
 
-## Step 1
+## Шаг 1
 
-When we sign up for a password manager, we enter our email address and set up an account password. The password manager generates a secret key for us. The 3 fields are used to generate MUK (Master Unlock Key) and SRP-X using the 2SKD algorithm. MUK is used to decrypt vaults that store our passwords. Note that the secret key is stored locally, and will not be sent to the password manager’s server side.
+Когда мы регистрируемся в менеджере паролей, мы вводим свой адрес электронной почты и устанавливаем пароль учетной записи. Менеджер паролей генерирует для нас секретный ключ. Эти 3 поля используются для генерации MUK (главного ключа разблокировки) и SRP-X с использованием алгоритма 2SKD. MUK используется для расшифровки хранилищ, в которых хранятся наши пароли. Обратите внимание, что секретный ключ хранится локально и не будет отправлен на сервер менеджера паролей.
 
-## Step 2
+## Шаг 2
 
-The MUK generated in Step 1 is used to generate the encrypted MP key of the primary keyset.
+MUK, сгенерированный на шаге 1, используется для генерации зашифрованного ключа MP первичного набора ключей.
 
-## Steps 3-5
+## Шаги 3–5
 
-The MP key is then used to generate a private key, which can be used to generate AES keys in other keysets. The private key is also used to generate the vault key. Vault stores a collection of items for us on the server side. The items can be passwords notes etc.
+Затем ключ MP используется для генерации закрытого ключа, который можно использовать для генерации ключей AES в других наборах ключей. Закрытый ключ также используется для создания ключа хранилища. Vault хранит для нас коллекцию предметов на стороне сервера. Этими элементами могут быть заметки с паролями и т. д.
 
-## Step 6
+## Шаг 6
 
-The vault key is used to encrypt the items in the vault.
+Ключ хранилища используется для шифрования элементов в хранилище.
 
-Because of the complex process, the password manager has no way to know the encrypted passwords. We only need to remember one account password, and the password manager will remember the rest.
+Из-за сложности процесса менеджер паролей не имеет возможности узнать зашифрованные пароли. Нам нужно запомнить только один пароль учетной записи, а менеджер паролей запомнит остальные.

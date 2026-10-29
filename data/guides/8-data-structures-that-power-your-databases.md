@@ -1,6 +1,6 @@
 ---
-title: "8 Data Structures That Power Your Databases"
-description: "Explore 8 key data structures that drive database efficiency."
+title: "8 структур данных, которые обеспечивают работу ваших баз данных"
+description: "Изучите 8 ключевых структур данных, которые повышают эффективность базы данных."
 image: "https://assets.bytebytego.com/diagrams/0181-eight-ds-db.jpg"
 createdAt: "2024-03-02"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0181-eight-ds-db.jpg)
 
-The answer will vary depending on your use case. Data can be indexed in memory or on disk. Similarly, data formats vary, such as numbers, strings, geographic coordinates, etc. The system might be write-heavy or read-heavy. All of these factors affect your choice of database index format.
+Ответ будет зависеть от вашего варианта использования. Данные могут индексироваться в памяти или на диске. Точно так же различаются форматы данных, например числа, строки, географические координаты и т. д. Система может быть требовательна к записи или чтению. Все эти факторы влияют на выбор формата индекса базы данных.
 
-The following are some of the most popular data structures used for indexing data:
+Ниже приведены некоторые из наиболее популярных структур данных, используемых для индексации данных:
 
-*   **Skiplist:** a common in-memory index type. Used in Redis
+* **Пропускной список:** распространенный тип индекса в памяти. Используется в Redis
 
-*   **Hash index:** a very common implementation of the “Map” data structure (or “Collection”)
+* **Хеш-индекс:** очень распространенная реализация структуры данных «Карта» (или «Коллекция»).
 
-*   **SSTable:** immutable on-disk “Map” implementation
+* **SSTable:** реализация неизменяемой карты на диске.
 
-*   **LSM tree:** Skiplist + SSTable. High write throughput
+* **Дерево LSM:** Пропускной список + SSTable. Высокая пропускная способность записи
 
-*   **B-tree:** disk-based solution. Consistent read/write performance
+* **B-дерево:** дисковое решение. Стабильная производительность чтения/записи
 
-*   **Inverted index:** used for document indexing. Used in Lucene
+* **Инвертированный индекс:** используется для индексации документов. Используется в Люсене
 
-*   **Suffix tree:** for string pattern search
+* **Дерево суффиксов:** для поиска по шаблону строки.
 
-*   **R-tree:** multi-dimension search, such as finding the nearest neighbor
+* **R-дерево:** многомерный поиск, например поиск ближайшего соседа.
 
-This is not an exhaustive list of all database index types.
+Это не исчерпывающий список всех типов индексов баз данных.

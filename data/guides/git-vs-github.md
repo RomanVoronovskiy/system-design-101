@@ -1,6 +1,6 @@
 ---
-title: "Git vs GitHub"
-description: "Explore the differences between Git and GitHub for version control."
+title: "Git против GitHub"
+description: "Изучите различия между Git и GitHub для контроля версий."
 image: "https://assets.bytebytego.com/diagrams/0204-git-vs-github.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0204-git-vs-github.png)
 
-Git and GitHub are popular tools for version control. They work together and complement each other to provide effective source control management.
+Git и GitHub — популярные инструменты контроля версий. Они работают вместе и дополняют друг друга, обеспечивая эффективное управление системой контроля версий.
 
-On a high level, Git is focused on version control and code sharing, whereas GitHub is focused on centralized source code hosting for sharing with other developers.
+На высоком уровне Git ориентирован на контроль версий и совместное использование кода, тогда как GitHub ориентирован на централизованное размещение исходного кода для совместного использования с другими разработчиками.
 
-However, they have some key differences
+Однако у них есть некоторые ключевые различия
 
-## Key Differences
+## Ключевые различия
 
-*   Git is a free, open-source version control tool. GitHub is a cloud-based, pay-for-use service that runs Git in the cloud.
+* Git — бесплатный инструмент контроля версий с открытым исходным кодом. GitHub — это облачный сервис с оплатой за использование, который запускает Git в облаке.
 
-*   Git is installed locally on a developer’s machine. GitHub is hosted in the cloud.
+* Git устанавливается локально на машине разработчика. GitHub размещается в облаке.
 
-*   The Linux Foundation maintains Git. Microsoft owns GitHub.
+* Linux Foundation поддерживает Git. Microsoft владеет GitHub.
 
-*   Git can manage different versions of edits, made to files in a git repository. GitHub is a space to upload a copy of the Git repository.
+* Git может управлять различными версиями изменений, внесенных в файлы в репозитории git. GitHub — это место для загрузки копии репозитория Git.
 
-*   Git supports version control and source code management. GitHub can be used for hosting code, collaboration, and project management.
+* Git поддерживает контроль версий и управление исходным кодом. GitHub можно использовать для размещения кода, совместной работы и управления проектами.
 
-*   Git has minimal external tool configuration. GitHub provides an active marketplace for tool integration.
+* Git имеет минимальную настройку внешних инструментов. GitHub предоставляет активную площадку для интеграции инструментов.
 
-Lastly, you can use Git without GitHub but you cannot use GitHub without Git.
+Наконец, вы можете использовать Git без GitHub, но не можете использовать GitHub без Git.

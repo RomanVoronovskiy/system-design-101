@@ -1,6 +1,6 @@
 ---
-title: "11 Steps to Go From Junior to Senior Developer"
-description: "Roadmap with steps to transition from junior to senior developer."
+title: "11 шагов на пути от младшего к старшему разработчику"
+description: "Дорожная карта с шагами перехода от младшего к старшему разработчику."
 image: "https://assets.bytebytego.com/diagrams/0243-junior-to-senior-developer-roadmap.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,46 +13,46 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0243-junior-to-senior-developer-roadmap.png)
 
-## 1. Collaboration Tools
+## 1. Инструменты для совместной работы
 
-Software development is a social activity. Learn to use collaboration tools like Jira, Confluence, Slack, MS Teams, Zoom, etc.
+Разработка программного обеспечения — это социальная деятельность. Научитесь использовать инструменты для совместной работы, такие как Jira, Confluence, Slack, MS Teams, Zoom и т. д.
 
-## 2. Programming Languages
+## 2. Языки программирования
 
-Pick and master one or two programming languages. Choose from options like Java, Python, JavaScript, C#, Go, etc.
+Выберите и освойте один или два языка программирования. Выбирайте такие варианты, как Java, Python, JavaScript, C#, Go и т. д.
 
-## 3. API Development
+## 3. Разработка API
 
-Learn the ins and outs of API Development approaches such as REST, GraphQL, and gRPC.
+Изучите все тонкости подходов к разработке API, таких как REST, GraphQL и gRPC.
 
-## 4. Web Servers and Hosting
+## 4. Веб-серверы и хостинг
 
-Know about web servers as well as cloud platforms like AWS, Azure, GCP, and Kubernetes
+Знать о веб-серверах, а также облачных платформах, таких как AWS, Azure, GCP и Kubernetes.
 
-## 5. Authentication and Testing
+## 5. Аутентификация и тестирование
 
-Learn how to secure your applications with authentication techniques such as JWTs, OAuth2, etc. Also, master testing techniques like TDD, E2E Testing, and Performance Testing
+Узнайте, как защитить свои приложения с помощью методов аутентификации, таких как JWT, OAuth2 и т. д. Также освоите методы тестирования, такие как TDD, тестирование E2E и тестирование производительности.
 
-## 6. Databases
+## 6. Базы данных
 
-Learn to work with relational (Postgres, MySQL, and SQLite) and non-relational databases (MongoDB, Cassandra, and Redis).
+Научитесь работать с реляционными (Postgres, MySQL и SQLite) и нереляционными базами данных (MongoDB, Cassandra и Redis).
 
 ## 7. CI/CD
 
-Pick tools like GitHub Actions, Jenkins, or CircleCI to learn about continuous integration and continuous delivery.
+Выбирайте такие инструменты, как GitHub Actions, Jenkins или CircleCI, чтобы узнать о непрерывной интеграции и непрерывной доставке.
 
-## 8. Data Structures and Algorithms
+## 8. Структуры данных и алгоритмы
 
-Master the basics of DSA with topics like Big O Notation, Sorting, Trees, and Graphs.
+Освойте основы DSA с такими темами, как нотация Big O, сортировка, деревья и графики.
 
-## 9. System Design
+## 9. Проектирование системы
 
-Learn System Design concepts such as Networking, Caching, CDNs, Microservices, Messaging, Load Balancing, Replication, Distributed Systems, etc.
+Изучите концепции проектирования систем, такие как сети, кэширование, CDN, микросервисы, обмен сообщениями, балансировка нагрузки, репликация, распределенные системы и т. д.
 
-## 10. Design patterns
+## 10. Шаблоны проектирования
 
-Master the application of design patterns such as dependency injection, factory, proxy, observers, and facade.
+Освойте применение таких шаблонов проектирования, как внедрение зависимостей, фабрика, прокси, наблюдатели и фасад.
 
-## 11. AI Tools
+## 11. Инструменты ИИ
 
-To future-proof your career, learn to leverage AI tools like GitHub Copilot, ChatGPT, Langchain, and Prompt Engineering.
+Чтобы гарантировать будущее своей карьеры, научитесь использовать инструменты искусственного интеллекта, такие как GitHub Copilot, ChatGPT, Langchain и Prompt Engineering.

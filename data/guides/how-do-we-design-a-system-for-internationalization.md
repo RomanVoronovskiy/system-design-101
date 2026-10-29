@@ -1,6 +1,6 @@
 ---
-title: "How to Design a System for Internationalization"
-description: "Learn how to design a system for internationalization effectively."
+title: "Как разработать систему интернационализации"
+description: "Узнайте, как эффективно разработать систему интернационализации."
 image: "https://assets.bytebytego.com/diagrams/0235-internationalization.jpeg"
 createdAt: "2024-03-06"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0235-internationalization.jpeg)
 
-The diagram below shows how we can internationalize a simple e-commerce website.
+На диаграмме ниже показано, как мы можем интернационализировать простой веб-сайт электронной коммерции.
 
-Different countries have differing cultures, values, and habits. When we design an application for international markets, we need to localize the application in several ways:
+В разных странах разные культуры, ценности и привычки. Когда мы разрабатываем приложение для международных рынков, нам необходимо локализовать приложение несколькими способами:
 
-## Language
+## Язык
 
-*   Extract and maintain all texts in a separate system. For example:
+* Извлекайте и сохраняйте все тексты в отдельной системе. Например:
 
-    *   We shouldn’t put any prompts in the source code.
-    *   We should avoid string concatenation in the code.
-    *   We should remove text from graphics.
+* Нам не следует помещать какие-либо подсказки в исходный код.
+    * Нам следует избегать объединения строк в коде.
+    * Нам следует удалить текст из графики.
 
-*   Use complete sentences and avoid dynamic text elements.
-*   Display business data such as currencies in different languages.
+* Используйте полные предложения и избегайте динамических текстовых элементов.
+* Отображение бизнес-данных, таких как валюты, на разных языках.
 
-## Layout
+## Макет
 
-*   Describe text length and reserve enough space around the text for different languages.
-*   Plan for line wrap and truncation.
-*   Keep text labels short on buttons.
-*   Adjust the display for numerals, dates, timestamps, and addresses.
+* Опишите длину текста и оставьте вокруг него достаточно места для разных языков.
+* Планируйте перенос и усечение строк.
+* Текстовые метки на кнопках должны быть короткими.
+* Настройте отображение цифр, дат, временных меток и адресов.
 
-## Time zone
+## Часовой пояс
 
-The time display should be segregated from timestamp storage.
+Отображение времени должно быть отделено от хранилища временных меток.
 
-Common practice is to use the UTC (Coordinated Universal Time) timestamp for the database and backend services and to use the local time zone for the frontend display.
+Обычной практикой является использование временной метки UTC (Всемирное координированное время) для базы данных и серверных служб, а также использование местного часового пояса для внешнего интерфейса.
 
-## Currency
+## Валюта
 
-We need to define the displayed currencies and settlement currency. We also need to design a foreign exchange service for quoting prices.
+Нам необходимо определить отображаемые валюты и валюту расчетов. Нам также необходимо разработать службу обмена иностранной валюты для котирования цен.
 
-## Company entity and accounting
+## Сущность компании и бухгалтерский учет
 
-Since we need to set up different entities for individual countries, and these entities follow different regulations and accounting standards, the system needs to support multiple bookkeeping methods. Company-level treasury management is often needed. We also need to extract business logic to account for different usage habits in different countries or regions.
+Поскольку нам необходимо создать разные организации для отдельных стран, и эти организации следуют разным правилам и стандартам бухгалтерского учета, система должна поддерживать несколько методов бухгалтерского учета. Часто требуется управление казначейством на уровне компании. Нам также необходимо извлечь бизнес-логику, чтобы учесть различные привычки использования в разных странах или регионах.

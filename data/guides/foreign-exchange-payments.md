@@ -1,6 +1,6 @@
 ---
-title: "Foreign Exchange Payments"
-description: "Learn how foreign exchange payments work when buying/selling internationally."
+title: "Валютные платежи"
+description: "Узнайте, как работают валютные платежи при покупке/продаже на международном уровне."
 image: "https://assets.bytebytego.com/diagrams/0194-foreign-exchange.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,23 +13,23 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0194-foreign-exchange.png)
 
-The buyer pays in USD, and the European seller receives euros. How does this work?
+Покупатель платит в долларах США, а европейский продавец получает евро. Как это работает?
 
-This process is called foreign exchange.
+Этот процесс называется валютным обменом.
 
-Suppose Bob (the buyer) needs to pay 100 USD to Alice (the seller), and Alice can only receive EUR. The diagram above illustrates the process.
+Предположим, Бобу (покупателю) нужно заплатить Алисе (продавцу) 100 долларов США, а Алиса может получить только евро. Схема выше иллюстрирует этот процесс.
 
-1.  Bob sends 100 USD via a third-party payment provider. In our example, it is Paypal. The money is transferred from Bob’s bank account (Bank B) to Paypal’s account in Bank P1.
-2.  Paypal needs to convert USD to EUR. It leverages the foreign exchange provider (Bank E). Paypal sends 100 USD to its USD account in Bank E.
-3.  100 USD is sold to Bank E’s funding pool.
-4.  Bank E’s funding pool provides 88 EUR in exchange for 100 USD. The money is put into Paypal’s EUR account in Bank E.
-5.  Paypal’s EUR account in Bank P2 receives 88 EUR.
-6.  88 EUR is paid to Alice’s EUR account in Bank A.
+1. Боб отправляет 100 долларов США через стороннего платежного провайдера. В нашем примере это PayPal. Деньги переводятся с банковского счета Боба (Банк B) на счет Paypal в Банке P1.
+2. Paypal необходимо конвертировать доллары США в евро. Он использует провайдера обмена валюты (Банк E). Paypal отправляет 100 долларов США на свой счет в долларах США в банке E.
+3. 100 долларов США продаются в пул финансирования Банка E.
+4. Пул финансирования Банка E предоставляет 88 евро в обмен на 100 долларов США. Деньги переводятся на счет Paypal в евро в банке E.
+5. На счет Paypal в евро в банке P2 поступает 88 евро.
+6. 88 евро зачисляется на счет Алисы в евро в банке А.
 
-Now let’s take a close look at the foreign exchange (forex) market. It has 3 layers:
+Теперь давайте внимательно рассмотрим валютный рынок (форекс). Он имеет 3 слоя:
 
-*   Retail market. Funding pools are parts of the retail market. To improve efficiency, Paypal usually buys a certain amount of foreign currencies in advance.
-*   Wholesale market. The wholesale business is composed of investment banks, commercial banks, and foreign exchange providers. It usually handles accumulated orders from the retail market.
-*   Top-level participants. They are multinational commercial banks that hold lots of money from different countries.
+* Розничный рынок. Пулы финансирования являются частью розничного рынка. Чтобы повысить эффективность, Paypal обычно заранее покупает определенное количество иностранной валюты.
+*Оптовый рынок. Оптовый бизнес состоит из инвестиционных банков, коммерческих банков и поставщиков иностранной валюты. Обычно он обрабатывает накопленные заказы с розничного рынка.
+* Участники высшего уровня. Это транснациональные коммерческие банки, в которых хранится много денег из разных стран.
 
-When Bank E’s funding pool needs more EUR, it goes upward to the wholesale market to sell USD and buy EUR. When the wholesale market accumulates enough orders, it goes upward to top-level participants. Steps 3.1-3.3 and 4.1-4.3 explain how it works.
+Когда пулу финансирования Банка E требуется больше евро, он переходит на оптовый рынок, чтобы продать доллары США и купить евро. Когда оптовый рынок накапливает достаточное количество заказов, он переходит к участникам высшего уровня. Шаги 3.1–3.3 и 4.1–4.3 объясняют, как это работает.

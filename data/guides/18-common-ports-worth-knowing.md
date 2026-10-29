@@ -1,6 +1,6 @@
 ---
-title: 18 Common Ports Worth Knowing
-description: Learn about 18 common network ports and their uses.
+title: "18 распространенных портов, которые стоит знать"
+description: "Узнайте о 18 распространенных сетевых портах и ​​их использовании."
 image: 'https://assets.bytebytego.com/diagrams/0030-18-common-ports-you-must-know.png'
 createdAt: '2024-02-05'
 draft: false
@@ -13,21 +13,21 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0030-18-common-ports-you-must-know.png)
 
-*   **FTP (File Transfer Protocol):** Uses TCP Port 21
-*   **SSH (Secure Shell for Login):** Uses TCP Port 22
-*   **Telnet:** Uses TCP Port 23 for remote login
-*   **SMTP (Simple Mail Transfer Protocol):** Uses TCP Port 25
-*   **DNS:** Uses UDP or TCP on Port 53 for DNS queries
-*   **DHCP Server:** Uses UDP Port 67
-*   **DHCP Client:** Uses UDP Port 68
-*   **HTTP (Hypertext Transfer Protocol):** Uses TCP Port 80
-*   **POP3 (Post Office Protocol V3):** Uses TCP Port 110
-*   **NTP (Network Time Protocol):** Uses UDP Port 123
-*   **NetBIOS:** Uses TCP Port 139 for NetBIOS service
-*   **IMAP (Internet Message Access Protocol):** Uses TCP Port 143
-*   **HTTPS (Secure HTTP):** Uses TCP Port 443
-*   **SMB (Server Message Block):** Uses TCP Port 445
-*   **Oracle DB:** Uses TCP Port 1521 for Oracle database communication port
-*   **MySQL:** Uses TCP Port 3306 for MySQL database communication port
-*   **RDP:** Uses TCP Port 3389 for Remote Desktop Protocol
-*   **PostgreSQL:** Uses TCP Port 5432 for PostgreSQL database communication
+* **FTP (протокол передачи файлов):** использует TCP-порт 21.
+* **SSH (безопасная оболочка для входа):** использует TCP-порт 22.
+* **Telnet:** использует TCP-порт 23 для удаленного входа в систему.
+* **SMTP (простой протокол передачи почты):** использует TCP-порт 25.
+* **DNS:** использует UDP или TCP на порту 53 для запросов DNS.
+* **DHCP-сервер:** использует UDP-порт 67.
+* **DHCP-клиент:** использует UDP-порт 68.
+* **HTTP (протокол передачи гипертекста):** использует TCP-порт 80.
+* **POP3 (протокол почтового отделения V3):** использует TCP-порт 110.
+* **NTP (протокол сетевого времени):** использует UDP-порт 123.
+* **NetBIOS:** использует TCP-порт 139 для службы NetBIOS.
+* **IMAP (протокол доступа к сообщениям в Интернете):** использует TCP-порт 143.
+* **HTTPS (безопасный HTTP):** использует TCP-порт 443.
+* **SMB (блок сообщений сервера):** использует TCP-порт 445.
+* **Oracle DB:** использует TCP-порт 1521 для порта связи с базой данных Oracle.
+* **MySQL:** использует TCP-порт 3306 в качестве порта связи с базой данных MySQL.
+* **RDP:** использует TCP-порт 3389 для протокола удаленного рабочего стола.
+* **PostgreSQL:** использует TCP-порт 5432 для связи с базой данных PostgreSQL.

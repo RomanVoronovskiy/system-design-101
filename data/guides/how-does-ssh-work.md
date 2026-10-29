@@ -1,6 +1,6 @@
 ---
-title: "How does SSH work?"
-description: "Explore the inner workings of SSH, a secure network protocol."
+title: "Как работает SSH?"
+description: "Изучите внутреннюю работу SSH, безопасного сетевого протокола."
 image: "https://assets.bytebytego.com/diagrams/0224-how-does-ssh-work.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0224-how-does-ssh-work.png)
 
-SSH (Secure Shell) is a network protocol used to securely connect to remote machines over an unsecured network. It encrypts the connection and provides various mechanisms for authentication and data transfer.
+SSH (Secure Shell) — это сетевой протокол, используемый для безопасного подключения к удаленным машинам через незащищенную сеть. Он шифрует соединение и предоставляет различные механизмы аутентификации и передачи данных.
 
-SSH has two versions: SSH-1 and SSH-2. SSH-2 was standardized by the IETF.
+SSH имеет две версии: SSH-1 и SSH-2. SSH-2 был стандартизирован IETF.
 
-It has three main layers: Transport Layer, Authentication Layer, and Connection Layer.
+Он имеет три основных уровня: транспортный уровень, уровень аутентификации и уровень соединения.
 
-## Transport Layer
+## Транспортный уровень
 
-The Transport Layer provides encryption, integrity, and data protection to ensure secure communication between the client and server.
+Транспортный уровень обеспечивает шифрование, целостность и защиту данных для обеспечения безопасной связи между клиентом и сервером.
 
-## Authentication Layer
+## Уровень аутентификации
 
-The Authentication Layer verifies the identity of the client to ensure that only authorized users can access the server.
+Уровень аутентификации проверяет личность клиента, чтобы гарантировать, что только авторизованные пользователи могут получить доступ к серверу.
 
-## Connection Layer
+## Уровень подключения
 
-The Connection Layer multiplexes the encrypted and authenticated communication into multiple logical channels.
+Уровень соединения мультиплексирует зашифрованную и аутентифицированную связь в несколько логических каналов.

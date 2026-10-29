@@ -1,6 +1,6 @@
 ---
-title: "HTTP Cookies Explained With a Simple Diagram"
-description: "Understand HTTP cookies with a simple diagram and clear explanations."
+title: "HTTP-файлы cookie, объясненные с помощью простой диаграммы"
+description: "Понимайте файлы cookie HTTP с помощью простой схемы и четких объяснений."
 image: "https://assets.bytebytego.com/diagrams/0153-cookies.png"
 createdAt: "2024-02-18"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0153-cookies.png)
 
-HTTP, the language of the web, is naturally "stateless." But hey, we all want that seamless, continuous browsing experience, right? Enter the unsung heroes - Cookies!
+HTTP, язык Интернета, естественно, не имеет состояния. Но, эй, мы все хотим беспрепятственного и непрерывного просмотра веб-страниц, не так ли? Введите невоспетых героев - Печенье!
 
-So, here's the scoop in this cookie flyer:
+Итак, вот суть этой листовки о печенье:
 
-*   HTTP is like a goldfish with no memory - it forgets you instantly! But cookies swoop in to the rescue, adding that "session secret sauce" to your web interactions.
+* HTTP похож на золотую рыбку без памяти: он мгновенно вас забывает! Но файлы cookie приходят на помощь, добавляя «секретный соус» к вашим взаимодействиям в Интернете.
 
-*   Cookies? Think of them as little notes you pass to the web server, saying, "Remember me, please!" And yes, they're stored there, like cherished mementos.
+* Печенье? Думайте о них как о маленьких записках, которые вы передаете веб-серверу со словами: «Запомните меня, пожалуйста!» И да, они хранятся там, как заветные сувениры.
 
-*   Browsers are like cookie bouncers, making sure your cookies don't party crash at the wrong website.
+* Браузеры подобны буферам cookie: они следят за тем, чтобы ваши файлы cookie не сработали на неправильном веб-сайте.
 
-*   Finally, meet the cookie celebrities - SameSite, Name, Value, Secure, Domain, and HttpOnly. They're the cool kids setting the rules in the cookie jar!
+* Наконец, познакомьтесь со знаменитостями файлов cookie — SameSite, Name, Value, Secure, Domain и HttpOnly. Они крутые дети, устанавливающие правила в банке с печеньем!

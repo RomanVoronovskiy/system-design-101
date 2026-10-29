@@ -1,6 +1,6 @@
 ---
-title: "How Big Keys Impact Redis Persistence"
-description: "Explore the impact of large keys on Redis AOF persistence modes."
+title: "Как большие ключи влияют на сохраняемость Redis"
+description: "Изучите влияние больших ключей на режимы сохранения Redis AOF."
 image: "https://assets.bytebytego.com/diagrams/0085-big-keys.png"
 createdAt: "2024-02-17"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0085-big-keys.png)
 
-We call a key that contains a large size of data a big key. For example, the size of the key is 5 MB.
+Мы называем ключ, содержащий большой объем данных, большим ключом. Например, размер ключа составляет 5 МБ.
 
-The diagram shows how big keys impact Redis AOF (Append-Only-File) persistence.
+На диаграмме показано, как большие ключи влияют на сохранение Redis AOF (Append-Only-File).
 
-There are three modes when we turn on AOF persistence:
+Когда мы включаем сохранение AOF, существует три режима:
 
-*   Always - synchronously write data to the disk whenever there is a data update in memory.
+* Всегда — синхронно записывать данные на диск всякий раз, когда происходит обновление данных в памяти.
 
-*   EverySec - write to the disk every second.
+* EverySec — запись на диск каждую секунду.
 
-*   No - Redis doesn’t control when the data is written to the disk. Instead, the operating system decides when the data is written to the disk.
+* Нет — Redis не контролирует запись данных на диск. Вместо этого операционная система решает, когда данные записываются на диск.
 
-## How do we analyze the impact of big keys?
+## Как мы анализируем влияние больших ключей?
 
-Redis writes keys into memory first, then calls write() to write the data into the kernel buffer cache. Then fsync() flushes all modified in-core data of the file to the disk device. There are 3 modes.
+Redis сначала записывает ключи в память, а затем вызывает write() для записи данных в буферный кеш ядра. Затем fsync() сбрасывает все измененные внутренние данные файла на дисковое устройство. Есть 3 режима.
 
-In “Always” mode, it calls fsync() synchronously. If we need to update a big key, the main thread will be blocked because it has to wait for the write to complete.
+В режиме «Всегда» функция fsync() вызывается синхронно. Если нам нужно обновить большой ключ, основной поток будет заблокирован, поскольку ему придется ждать завершения записи.
 
-“EveySec” starts a background timer task to call fsync() every second, so big keys have no impact on the Redis main thread.
+«EveySec» запускает задачу фонового таймера для вызова fsync() каждую секунду, поэтому большие ключи не влияют на основной поток Redis.
 
-“No” mode never calls fsync(). It is up to the operating system. Big keys have no impact on the main thread.
+Режим «Нет» никогда не вызывает fsync(). Это зависит от операционной системы. Большие клавиши не влияют на основной поток.

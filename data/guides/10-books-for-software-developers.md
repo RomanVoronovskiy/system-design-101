@@ -1,6 +1,6 @@
 ---
-title: "10 Books for Software Developers"
-description: "A curated list of must-read books for software developers."
+title: "10 книг для разработчиков программного обеспечения"
+description: "Кураторский список книг, которые обязательны к прочтению разработчикам программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0023-10-books-every-software-engineer-should-read.png"
 createdAt: "2024-02-28"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0023-10-books-every-software-engineer-should-read.png)
 
-## General Advice
+## Общие советы
 
-*   **The Pragmatic Programmer** by Andrew Hunt and David Thomas
+* **Программист-прагматик**, Эндрю Хант и Дэвид Томас
 
-*   **Code Complete** by Steve McConnell: Often considered a bible for software developers, this comprehensive book covers all aspects of software development, from design and coding to testing and maintenance.
+* **Code Complete**, Стив МакКоннелл: Эта всеобъемлющая книга, которую часто называют библией для разработчиков программного обеспечения, охватывает все аспекты разработки программного обеспечения, от проектирования и кодирования до тестирования и обслуживания.
 
-## Coding
+## Кодирование
 
-*   **Clean Code** by Robert C. Martin
+* **Чистый код**, Роберт К. Мартин
 
-*   **Refactoring** by Martin Fowler
+* **Рефакторинг** Мартина Фаулера.
 
-## Software Architecture
+## Архитектура программного обеспечения
 
-*   **Designing Data-Intensive Applications** by Martin Kleppmann
+* **Разработка приложений с интенсивным использованием данных**, Мартин Клеппманн
 
-*   **System Design Interview** (our own book :))
+* **Интервью по системному проектированию** (наша собственная книга :))
 
-## Design Patterns
+## Шаблоны проектирования
 
-*   **Design Patterns** by Eric Gamma and Others
+* **Шаблоны проектирования**, Эрик Гамма и другие.
 
-*   **Domain-Driven Design** by Eric Evans
+* **Дизайн на основе предметной области**, Эрик Эванс.
 
-## Data Structures and Algorithms
+## Структуры данных и алгоритмы
 
-*   **Introduction to Algorithms** by Cormen, Leiserson, Rivest, and Stein
+* **Введение в алгоритмы** Кормена, Лейзерсона, Ривеста и Штейна.
 
-*   **Cracking the Coding Interview** by Gayle Laakmann McDowell
+* **Интервью по программированию**, Гейл Лаакманн Макдауэлл

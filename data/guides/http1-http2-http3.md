@@ -1,6 +1,6 @@
 ---
-title: 'HTTP/1 -> HTTP/2 -> HTTP/3'
-description: 'Explore the evolution of HTTP: from HTTP/1 to the latest HTTP/3.'
+title: "HTTP/1 -> HTTP/2 -> HTTP/3"
+description: "Изучите эволюцию HTTP: от HTTP/1 до новейшего HTTP/3."
 image: 'https://assets.bytebytego.com/diagrams/0101-http-1-http-2-http-3.png'
 createdAt: '2024-03-02'
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0101-http-1-http-2-http-3.png)
 
-HTTP 1 started in 1996 followed by HTTP 1.1 the very next year. In 2015, HTTP 2 came about and in 2019 we got HTTP 3.
+HTTP 1 появился в 1996 году, а уже в следующем году последовал HTTP 1.1. В 2015 году появился HTTP 2, а в 2019 году — HTTP 3.
 
-With each iteration, the protocol has evolved in new and interesting ways.
+С каждой итерацией протокол развивался по-новому и интересно.
 
-*   **HTTP 1** (and its sub-versions) introduced features like persistent connections, pipelining, and the concept of headers. The protocol was built on top of TCP and provided a reliable way of communication over the World Wide Web. It is still used despite being over 25 years old.
-*   **HTTP 2** brought new features such as multiplexing, stream prioritization, server push, and HPACK compression. However, it still used TCP as the underlying protocol.
-*   **HTTP 3** uses Google’s QUIC, which is built on top of UDP. In other words, HTTP 3 has moved away from TCP.
+* **HTTP 1** (и его подверсии) представили такие функции, как постоянные соединения, конвейерную обработку и концепцию заголовков. Протокол был построен на основе TCP и обеспечивал надежный способ связи через Всемирную паутину. Он до сих пор используется, несмотря на то, что ему более 25 лет.
+* **HTTP 2** принес новые функции, такие как мультиплексирование, приоритизация потоков, передача данных на сервер и сжатие HPACK. Однако в качестве основного протокола по-прежнему использовался TCP.
+* **HTTP 3** использует QUIC от Google, построенный на основе UDP. Другими словами, HTTP 3 отошел от TCP.

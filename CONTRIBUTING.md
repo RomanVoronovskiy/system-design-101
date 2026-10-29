@@ -1,20 +1,12 @@
-Contributing
-============
+# Участие в работе над русским переводом
 
-Thank you for your interest in contributing! Here are some guidelines to follow when submitting pull requests:
+Спасибо за помощь в улучшении перевода!
 
-## Pull Requests
+* Посвящайте каждый запрос на изменение одной статье или одной теме.
+* Проверяйте точность технических терминов и соответствие оригиналу.
+* Сохраняйте URL, примеры кода, имена файлов и идентификаторы категорий.
+* Заголовки и описания находятся в начале файлов в data/guides и data/categories.
+* После изменения заголовков обновите оглавление: npm run update-readme.
+* Ошибки в оригинальных диаграммах описывайте отдельно; их исходники принадлежат ByteByteGo.
 
-* Each pull request should focus on a single topic or concept.
-* Avoid making changes across multiple topics in the same PR.
-* Give your PR a clear title summarizing the topic you are addressing.
-* If you notice typos or issues in diagrams, please open a separate issue instead of fixing the images directly. We will update the source images and republish fixes.
-* Please do not use AI tools to generate the content.
-
-### GitHub Pull Requests Docs
-
-If you are not familiar with pull requests, review the [pull request docs](https://help.github.com/articles/using-pull-requests/).
-
-## Translations
-
-We are not planning to translate the guides into other languages at this time. Feel free to star/watch the repo if you want to get notified for when we do.
+Правила оригинального проекта: [CONTRIBUTING.md](https://github.com/ByteByteGoHq/system-design-101/blob/main/CONTRIBUTING.md). Они относятся к отправке изменений авторам оригинала. Авторы просят не отправлять им материалы, созданные ИИ, и сообщают, что пока не планируют переводы руководств.

@@ -1,6 +1,6 @@
 ---
-title: "Cloud Database Cheat Sheet"
-description: "A handy guide to cloud databases and their open-source alternatives."
+title: "Памятка по облачной базе данных"
+description: "Удобное руководство по облачным базам данных и их альтернативам с открытым исходным кодом."
 image: "https://assets.bytebytego.com/diagrams/0146-cloud-dbs2.png"
 createdAt: "2024-02-18"
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0146-cloud-dbs2.png)
 
-A cheat sheet of various databases in cloud services, along with their corresponding open-source/3rd-party options.
+Шпаргалка по различным базам данных в облачных сервисах, а также соответствующие им варианты с открытым исходным кодом или сторонние.
 
-Choosing the right database for your project is a complex task. The multitude of database options, each suited to distinct use cases, can quickly lead to decision fatigue.
+Выбор подходящей базы данных для вашего проекта — сложная задача. Множество вариантов баз данных, каждый из которых подходит для различных вариантов использования, может быстро привести к утомлению принятия решений.
 
-We hope this cheat sheet provides the high level direction to pinpoint the right service that aligns with your project's needs and avoid potential pitfalls.
+Мы надеемся, что эта шпаргалка предоставит общее руководство, позволяющее определить правильную услугу, соответствующую потребностям вашего проекта, и избежать потенциальных ошибок.
 
-Note: Google has limited documentation for their database use cases. Even though we did our best to look at what was available and arrived at the best option, some of the entries may be not accurate.
+Примечание. Google имеет ограниченную документацию по вариантам использования своих баз данных. Несмотря на то, что мы приложили все усилия, чтобы просмотреть то, что было доступно, и пришли к лучшему варианту, некоторые записи могут быть неточными.

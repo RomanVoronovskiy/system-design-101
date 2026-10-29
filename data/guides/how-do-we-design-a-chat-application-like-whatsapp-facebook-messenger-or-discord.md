@@ -1,6 +1,6 @@
 ---
-title: "Designing a Chat Application"
-description: "Explore the architecture of chat apps like WhatsApp and Messenger."
+title: "Проектирование приложения чата"
+description: "Изучите архитектуру чат-приложений, таких как WhatsApp и Messenger."
 image: "https://assets.bytebytego.com/diagrams/0134-chat-app.jpeg"
 createdAt: "2024-03-10"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0134-chat-app.jpeg)
 
-The diagram below shows a design for a simplified 1-to-1 chat application.
+На диаграмме ниже показан дизайн упрощенного приложения для общения один на один.
 
-## User Login Flow
+## Процесс входа пользователя
 
-*   Step 1: Alice logs in to the chat application and establishes a web socket connection with the server side.
+* Шаг 1: Алиса входит в приложение чата и устанавливает соединение через веб-сокет со стороной сервера.
 
-*   Steps 2-4: The presence service receives Alice's notification, updates her presence, and notifies Alice's friends about her presence.
+* Шаги 2–4: Служба присутствия получает уведомление Алисы, обновляет информацию о ее присутствии и уведомляет друзей Алисы о ее присутствии.
 
-## Messaging Flow
+## Поток сообщений
 
-*   Steps 1-2: Alice sends a chat message to Bob. The chat message is routed to Chat Service A.
+* Шаги 1–2: Алиса отправляет Бобу сообщение в чате. Сообщение чата направляется в службу чата A.
 
-*   Steps 3-4: The chat message is sent to the sequencing service, which generates a unique ID, and is persisted in the message store.
+* Шаги 3–4. Сообщение чата отправляется в службу виртуализации, которая генерирует уникальный идентификатор и сохраняется в хранилище сообщений.
 
-*   Step 5: The chat message is sent to the message sync queue to sync to Bob’s chat service.
+* Шаг 5. Сообщение чата отправляется в очередь синхронизации сообщений для синхронизации со службой чата Боба.
 
-*   Step 6: Before forwarding the messaging, the message sync service checks Bob’s presence:
+* Шаг 6. Перед пересылкой сообщения служба синхронизации сообщений проверяет присутствие Боба:
 
-    *   If Bob is online, the chat message is sent to chat service B.
+* Если Боб онлайн, сообщение чата отправляется в службу чата B.
 
-    *   If Bob is offline, the message is sent to the push server and pushed to Bob’s device.
+* Если Боб не в сети, сообщение отправляется на push-сервер и передается на устройство Боба.
 
-*   Steps 7-8: If Bob is online, the chat message is pushed to Bob via the web socket.
+* Шаги 7–8: Если Боб онлайн, сообщение чата передается Бобу через веб-сокет.

@@ -1,6 +1,6 @@
 ---
-title: "A Brief History of Programming Languages"
-description: "Explore the evolution of programming languages over the past 70 years."
+title: "Краткая история языков программирования"
+description: "Изучите эволюцию языков программирования за последние 70 лет."
 image: "https://assets.bytebytego.com/diagrams/0305-programming-languages.png"
 createdAt: "2024-03-04"
 draft: false
@@ -10,21 +10,20 @@ tags:
   - programming-languages
   - history
 ---
-
-C, C++, Java, Javascript, Typescript, Golang, Rust, how do programming languages evolve for the past 70 years?
+C, C++, Java, Javascript, Typescript, Golang, Rust — как развивались языки программирования за последние 70 лет?
 
 <img src="https://assets.bytebytego.com/diagrams/0305-programming-languages.png" alt="Programming Languages History">
 
-*   Perforated cards were the first generation of programming languages. Assembly languages, which are machine-oriented, are the second generation of programming language. Third-generation languages, which are human-oriented, have been around since 1957.
+* Перфорированные карты были первым поколением языков программирования. Языки ассемблера, машинно-ориентированные, представляют собой второе поколение языков программирования. Языки третьего поколения, ориентированные на человека, существуют с 1957 года.
 
-*   Early languages like Fortran and LISP proposed garbage collection, recursion, exceptions. These features still exist in modern programming languages.
+* Ранние языки, такие как Fortran и LISP, предлагали сборку мусора, рекурсию и исключения. Эти функции все еще существуют в современных языках программирования.
 
-*   In 1972, two influential languages were born: Smalltalk and C. Smalltalk greatly influenced scripting languages and client-side languages. C language was developed for unix programming.
+* В 1972 году родились два влиятельных языка: Smalltalk и C. Smalltalk оказал большое влияние на языки сценариев и клиентские языки. Язык C был разработан для программирования Unix.
 
-*   In the 1980s, object-oriented languages became popular because of its advantage in graphic user interfaces. Object-C and C++ are two famous ones.
+* В 1980-х годах объектно-ориентированные языки стали популярными из-за их преимуществ в графических пользовательских интерфейсах. Object-C и C++ — два самых известных.
 
-*   In the 1990s, the PCs became cheaper. The programming languages at this stage emphasized on security and simplicity. Python was born in this decade. It was easy to learn and extend and it quickly gained popularity. In 1995, Java, Javascript, PHP and Ruby were born.
+* В 1990-е годы ПК стали дешевле. В языках программирования на этом этапе особое внимание уделялось безопасности и простоте. Python родился в этом десятилетии. Его было легко изучить и расширить, и он быстро завоевал популярность. В 1995 году появились Java, Javascript, PHP и Ruby.
 
-*   In 2000, C# was released by Microsoft. Although it was bundled with .NET framework, this language carried a lot of advanced features.
+* В 2000 году Microsoft выпустила C#. Хотя этот язык был включен в состав .NET Framework, он содержал множество расширенных функций.
 
-*   A number of languages were developed in the 2010s to improve C++ or Java. In the C++ family, we have D, Rust, Zig and most recently Carbon. In the Java family, we have Golang and Kotlin. The use of Flutter made Dart popular, and Typescript was developed to be fully compatible with Javascript. Also, Apple finally released Swift to replace Object-C.
+* В 2010-х годах был разработан ряд языков для улучшения C++ или Java. В семействе C++ есть D, Rust, Zig и совсем недавно Carbon. В семействе Java есть Golang и Kotlin. Использование Flutter сделало Dart популярным, а Typescript был разработан для полной совместимости с Javascript. Кроме того, Apple наконец выпустила Swift для замены Object-C.

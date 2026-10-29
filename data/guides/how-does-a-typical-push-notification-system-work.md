@@ -1,6 +1,6 @@
 ---
-title: How Does a Typical Push Notification System Work?
-description: Explore the architecture of a typical push notification system.
+title: "Как работает типичная система push-уведомлений?"
+description: "Изучите архитектуру типичной системы push-уведомлений."
 image: 'https://assets.bytebytego.com/diagrams/0042-design-a-notification-push-system.png'
 createdAt: '2024-02-24'
 draft: false
@@ -13,17 +13,17 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0042-design-a-notification-push-system.png)
 
-The diagram above shows the architecture of a notification system that covers major notification channels:
+На схеме выше показана архитектура системы уведомлений, которая охватывает основные каналы уведомлений:
 
-*   **In-App notifications**
-*   **Email notifications**
-*   **SMS and OTP notifications**
-*   **Social media pushes**
+* **Уведомления в приложении**
+* **Уведомления по электронной почте**
+* **Уведомления по SMS и OTP**
+* **Реклама в социальных сетях**
 
-Let’s walk through the steps.
+Давайте пройдемся по шагам.
 
-*   Steps 1.1 and 1.2 - The business services send notifications to the notification gateway. The gateway can handle two modes: one mode receives one notification each time, and the other receives notifications in batches.
-*   Steps 2, 2.1, and 2.2 - The notification gateway forwards the notifications to the distribution service, where the messages are validated, formatted, and scheduled based on settings. The notification template repository allows users to pre-define the message format. The channel preference repository allows users to pre-define the preferred delivery channels.
-*   Step 3 - The notifications are then sent to the routers, normally message queues.
-*   Step 4 - The channel services communicate with various internal and external delivery channels, including in-app notifications, email delivery, SMS delivery, and social media apps.
-*   Steps 5 and 6 - The delivery metrics are captured by the notification tracking and analytics service, where the operations team can view the analytical reports and improve user experiences.
+* Шаги 1.1 и 1.2. Бизнес-службы отправляют уведомления на шлюз уведомлений. Шлюз может работать в двух режимах: один режим получает одно уведомление каждый раз, а другой получает уведомления пакетами.
+* Шаги 2, 2.1 и 2.2. Шлюз уведомлений пересылает уведомления в службу распространения, где сообщения проверяются, форматируются и планируются на основе настроек. Репозиторий шаблонов уведомлений позволяет пользователям заранее определить формат сообщения. Репозиторий предпочтений каналов позволяет пользователям заранее определять предпочтительные каналы доставки.
+* Шаг 3. Уведомления затем отправляются на маршрутизаторы, обычно это очереди сообщений.
+* Шаг 4. Канальные службы взаимодействуют с различными внутренними и внешними каналами доставки, включая уведомления в приложениях, доставку по электронной почте, доставку SMS и приложения для социальных сетей.
+* Шаги 5 и 6. Показатели доставки фиксируются службой отслеживания уведомлений и аналитики, где операционная группа может просматривать аналитические отчеты и улучшать взаимодействие с пользователем.

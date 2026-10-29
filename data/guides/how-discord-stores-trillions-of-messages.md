@@ -1,6 +1,6 @@
 ---
-title: How Discord Stores Trillions of Messages
-description: Learn how Discord evolved its message storage to handle trillions.
+title: "Как Discord хранит триллионы сообщений"
+description: "Узнайте, как Discord усовершенствовал свое хранилище сообщений для обработки триллионов сообщений."
 image: 'https://assets.bytebytego.com/diagrams/0174-discord-store-messages.png'
 createdAt: '2024-03-12'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0174-discord-store-messages.png)
 
-The diagram above shows the evolution of message storage at Discord:
+На диаграмме выше показана эволюция хранилища сообщений в Discord:
 
-MongoDB ➡️ Cassandra ➡️ ScyllaDB
+MongoDB ➡️ Кассандра ➡️ ScyllaDB
 
-In 2015, the first version of Discord was built on top of a single MongoDB replica. Around Nov 2015, MongoDB stored 100 million messages and the RAM couldn’t hold the data and index any longer. The latency became unpredictable. Message storage needs to be moved to another database. Cassandra was chosen.
+В 2015 году первая версия Discord была построена на основе одной реплики MongoDB. Примерно в ноябре 2015 года MongoDB хранила 100 миллионов сообщений, и оперативная память больше не могла хранить данные и индексы. Задержка стала непредсказуемой. Хранилище сообщений необходимо переместить в другую базу данных. Была выбрана Кассандра.
 
-In 2017, Discord had 12 Cassandra nodes and stored billions of messages.
+В 2017 году у Discord было 12 узлов Cassandra, на которых хранились миллиарды сообщений.
 
-At the beginning of 2022, it had 177 nodes with trillions of messages. At this point, latency was unpredictable, and maintenance operations became too expensive to run.
+На начало 2022 года у него было 177 узлов с триллионами сообщений. На этом этапе задержка стала непредсказуемой, а выполнение операций по техническому обслуживанию стало слишком дорогим.
 
-There are several reasons for the issue:
+Причин проблемы несколько:
 
-*   Cassandra uses the LSM tree for the internal data structure. The reads are more expensive than the writes. There can be many concurrent reads on a server with hundreds of users, resulting in hotspots.
-*   Maintaining clusters, such as compacting SSTables, impacts performance.
-*   Garbage collection pauses would cause significant latency spikes
+* Cassandra использует дерево LSM для внутренней структуры данных. Чтение обходится дороже, чем запись. На сервере с сотнями пользователей может выполняться множество одновременных операций чтения, что приводит к образованию горячих точек.
+* Поддержание кластеров, например сжатие SSTables, влияет на производительность.
+* Паузы в сборе мусора могут привести к значительному увеличению задержки.
 
-ScyllaDB is Cassandra compatible database written in C++. Discord redesigned its architecture to have a monolithic API, a data service written in Rust, and ScyllaDB-based storage.
+ScyllaDB — это база данных, совместимая с Cassandra, написанная на C++. Discord изменил свою архитектуру, включив в нее монолитный API, службу данных, написанную на Rust, и хранилище на базе ScyllaDB.
 
-The p99 read latency in ScyllaDB is 15ms compared to 40-125ms in Cassandra. The p99 write latency is 5ms compared to 5-70ms in Cassandra.
+Задержка чтения p99 в ScyllaDB составляет 15 мс по сравнению с 40–125 мс в Cassandra. Задержка записи p99 составляет 5 мс по сравнению с 5–70 мс в Cassandra.

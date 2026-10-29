@@ -1,6 +1,6 @@
 ---
-title: "How Scan to Pay Works"
-description: "Explore the mechanics behind scan-to-pay systems and digital wallets."
+title: "Как работает сканирование для оплаты"
+description: "Изучите механику систем сканирования и оплаты и цифровых кошельков."
 image: "https://assets.bytebytego.com/diagrams/0323-scan-to-pay.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,27 +13,27 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0323-scan-to-pay.png)
 
-How do you pay from your digital wallet, such as Paypal, Paytm and Venmo, by scanning the QR code?
+Как вы платите из своего цифрового кошелька, такого как Paypal, Paytm и Venmo, путем сканирования QR-кода?
 
-To understand the process involved, we need to divide the “scan to pay” process into two sub-processes:
+Чтобы понять суть процесса, нам нужно разделить процесс «от сканирования до оплаты» на два подпроцесса:
 
-1. Merchant generates a QR code and displays it on the screen
-2. Consumer scans the QR code and pays
+1. Продавец генерирует QR-код и отображает его на экране.
+2. Потребитель сканирует QR-код и платит.
 
-Here are the steps for generating the QR code:
+Вот шаги для создания QR-кода:
 
-1. When you want to pay for your shopping, the cashier tallies up all the goods and calculates the total amount due, for example, $123.45. The checkout has an order ID of SN129803. The cashier clicks the “checkout” button.
-2. The cashier’s computer sends the order ID and the amount to PSP.
-3. The PSP saves this information to the database and generates a QR code URL.
-4. PSP’s Payment Gateway service reads the QR code URL.
-5. The payment gateway returns the QR code URL to the merchant’s computer.
-6. The merchant’s computer sends the QR code URL (or image) to the checkout counter.
-7. The checkout counter displays the QR code.
+1. Когда вы хотите оплатить покупки, кассир подсчитывает все товары и подсчитывает общую сумму к оплате, например, 123,45 доллара. Касса имеет идентификатор заказа SN129803. Кассир нажимает кнопку «Оформить заказ».
+2. Компьютер кассира отправляет идентификатор заказа и сумму в PSP.
+3. PSP сохраняет эту информацию в базе данных и генерирует URL-адрес QR-кода.
+4. Служба платежного шлюза PSP считывает URL-адрес QR-кода.
+5. Платежный шлюз возвращает URL-адрес QR-кода на компьютер продавца.
+6. Компьютер продавца отправляет URL-адрес QR-кода (или изображение) на кассу.
+7. На кассе отображается QR-код.
 
-These 7 steps complete in less than a second. Now it’s the consumer’s turn to pay from their digital wallet by scanning the QR code:
+Эти 7 шагов выполняются менее чем за секунду. Теперь очередь потребителя оплатить со своего цифрового кошелька, отсканировав QR-код:
 
-1. The consumer opens their digital wallet app to scan the QR code.
-2. After confirming the amount is correct, the client clicks the “pay” button.
-3. The digital wallet App notifies the PSP that the consumer has paid the given QR code.
-4. The PSP payment gateway marks this QR code as paid and returns a success message to the consumer’s digital wallet App.
-5. The PSP payment gateway notifies the merchant that the consumer has paid the given QR code.
+1. Потребитель открывает приложение цифрового кошелька для сканирования QR-кода.
+2. После подтверждения правильности суммы клиент нажимает кнопку «Оплатить».
+3. Приложение цифрового кошелька уведомляет PSP о том, что потребитель оплатил данный QR-код.
+4. Платежный шлюз PSP помечает этот QR-код как оплаченный и возвращает сообщение об успехе в приложение цифрового кошелька потребителя.
+5. Платежный шлюз PSP уведомляет продавца о том, что потребитель оплатил данный QR-код.

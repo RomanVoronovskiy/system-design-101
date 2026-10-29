@@ -1,6 +1,6 @@
 ---
-title: "iQIYI Database Selection Trees"
-description: "Explore iQIYI's database selection process for relational and NoSQL."
+title: "Деревья выбора базы данных iQIYI"
+description: "Изучите процесс выбора базы данных iQIYI для реляционных и NoSQL."
 image: "https://assets.bytebytego.com/diagrams/0215-how-to-choose-db.png"
 createdAt: "2024-03-01"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0215-how-to-choose-db.png)
 
-One picture is worth a thousand words.
+Одна картинка стоит тысячи слов.
 
-iQIYI is one of the largest online video sites in the world, with over 500 million monthly active users. Let's look at how they choose relational and NoSQL databases.
+iQIYI — один из крупнейших сайтов онлайн-видео в мире, который ежемесячно посещают более 500 миллионов активных пользователей. Давайте посмотрим, как они выбирают реляционные и NoSQL базы данных.
 
-The following databases are used at iQIYI:
+В iQIYI используются следующие базы данных:
 
-*   MySQL
-*   Redis
-*   TiDB: a hybrid transactional/analytical processing (HTAP) distributed database
-*   Couchbase: distributed multi-model NoSQL document-oriented database
-*   TokuDB: open-source storage engine for MySQL and MariaDB.
-*   Big data analytical systems, like Hive and Impala
-*   Other databases, like MongoDB, HiGraph, and TiKV
+* MySQL
+* Редис
+* TiDB: распределенная база данных гибридной транзакционной/аналитической обработки (HTAP).
+* Couchbase: распределенная многомодельная документально-ориентированная база данных NoSQL.
+* TokuDB: механизм хранения с открытым исходным кодом для MySQL и MariaDB.
+* Аналитические системы больших данных, такие как Hive и Impala.
+* Другие базы данных, такие как MongoDB, HiGraph и TiKV.
 
-The database selection trees below explain how they choose a database.
+Приведенные ниже деревья выбора базы данных объясняют, как происходит выбор базы данных.

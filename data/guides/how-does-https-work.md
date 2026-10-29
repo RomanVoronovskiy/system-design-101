@@ -1,6 +1,6 @@
 ---
-title: "How does HTTPS work?"
-description: "Learn how HTTPS encrypts data for secure communication over the internet."
+title: "Как работает HTTPS?"
+description: "Узнайте, как HTTPS шифрует данные для безопасной связи через Интернет."
 image: "https://assets.bytebytego.com/diagrams/0220-how-does-https-work.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0220-how-does-https-work.png)
 
-Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP.) HTTPS transmits encrypted data using Transport Layer Security (TLS.) If the data is hijacked online, all the hijacker gets is binary code.
+Безопасный протокол передачи гипертекста (HTTPS) является расширением протокола передачи гипертекста (HTTP). HTTPS передает зашифрованные данные с использованием безопасности транспортного уровня (TLS). Если данные перехвачены в Интернете, все, что получает угонщик, — это двоичный код.
 
-## How is the data encrypted and decrypted?
+## Как данные шифруются и расшифровываются?
 
-Step 1 - The client (browser) and the server establish a TCP connection.
+Шаг 1. Клиент (браузер) и сервер устанавливают TCP-соединение.
 
-Step 2 - The client sends a “client hello” to the server. The message contains a set of necessary encryption algorithms (cipher suites) and the latest TLS version it can support. The server responds with a “server hello” so the browser knows whether it can support the algorithms and TLS version.
+Шаг 2. Клиент отправляет серверу «привет клиента». Сообщение содержит набор необходимых алгоритмов шифрования (наборов шифров) и последнюю поддерживаемую версию TLS. Сервер отвечает «привет сервера», чтобы браузер знал, может ли он поддерживать данные алгоритмы и версию TLS.
 
-The server then sends the SSL certificate to the client. The certificate contains the public key, hostname, expiry dates, etc. The client validates the certificate.
+Затем сервер отправляет сертификат SSL клиенту. Сертификат содержит открытый ключ, имя хоста, дату истечения срока действия и т. д. Клиент проверяет сертификат.
 
-Step 3 - After validating the SSL certificate, the client generates a session key and encrypts it using the public key. The server receives the encrypted session key and decrypts it with the private key.
+Шаг 3. После проверки сертификата SSL клиент генерирует сеансовый ключ и шифрует его с помощью открытого ключа. Сервер получает зашифрованный сеансовый ключ и расшифровывает его с помощью закрытого ключа.
 
-Step 4 - Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.
+Шаг 4. Теперь, когда и клиент, и сервер имеют один и тот же сеансовый ключ (симметричное шифрование), зашифрованные данные передаются по защищенному двунаправленному каналу.
 
-## Why does HTTPS switch to symmetric encryption during data transmission?
+## Почему HTTPS переключается на симметричное шифрование при передаче данных?
 
-There are two main reasons:
+Есть две основные причины:
 
-*   **Security:** The asymmetric encryption goes only one way. This means that if the server tries to send the encrypted data back to the client, anyone can decrypt the data using the public key.
+* **Безопасность:** Асимметричное шифрование работает только в одном направлении. Это означает, что если сервер попытается отправить зашифрованные данные обратно клиенту, любой сможет расшифровать данные с помощью открытого ключа.
 
-*   **Server resources:** The asymmetric encryption adds quite a lot of mathematical overhead. It is not suitable for data transmissions in long sessions.
+* **Ресурсы сервера.** Асимметричное шифрование требует значительных математических затрат. Он не подходит для передачи данных в длительных сеансах.

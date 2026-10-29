@@ -1,6 +1,6 @@
 ---
-title: "Cloud Native Anti-Patterns"
-description: "Avoid common pitfalls in cloud-native development for robust applications."
+title: "Облачные антипаттерны"
+description: "Избегайте распространенных ошибок при облачной разработке надежных приложений."
 image: "https://assets.bytebytego.com/diagrams/0070-cloud-native-anti-patterns.png"
 createdAt: "2024-02-25"
 draft: false
@@ -10,45 +10,44 @@ tags:
   - "Cloud Native"
   - "Anti-Patterns"
 ---
-
-By being aware of these anti-patterns and following cloud-native best practices, you can design, build, and operate more robust, scalable, and cost-efficient cloud-native applications.
+Зная об этих антишаблонах и следуя передовым практикам облачных технологий, вы сможете проектировать, создавать и эксплуатировать более надежные, масштабируемые и экономичные облачные приложения.
 
 ![](https://assets.bytebytego.com/diagrams/0070-cloud-native-anti-patterns.png)
 
-## Monolithic Architecture
+## Монолитная архитектура
 
-One large, tightly coupled application running on the cloud, hindering scalability and agility.
+Одно большое, тесно связанное приложение, работающее в облаке, что затрудняет масштабируемость и гибкость.
 
-## Ignoring Cost Optimization
+## Игнорирование оптимизации затрат
 
-Cloud services can be expensive, and not optimizing costs can result in budget overruns.
+Облачные услуги могут быть дорогими, а отсутствие оптимизации затрат может привести к перерасходу бюджета.
 
-## Mutable Infrastructure
+## Изменяемая инфраструктура
 
-*   Infrastructure components are to be treated as disposable and are never modified in place.
+* Компоненты инфраструктуры следует рассматривать как одноразовые и никогда не модифицировать на месте.
 
-*   Failing to embrace this approach can lead to configuration drift, increased maintenance, and decreased reliability.
+* Несоблюдение этого подхода может привести к смещению конфигурации, увеличению затрат на обслуживание и снижению надежности.
 
-## Inefficient DB Access Patterns
+## Неэффективные шаблоны доступа к БД
 
-Use of overly complex queries or lacking database indexing, can lead to performance degradation and database bottlenecks.
+Использование слишком сложных запросов или отсутствие индексации базы данных может привести к снижению производительности и узким местам базы данных.
 
-## Large Containers or Bloated Images
+## Большие контейнеры или раздутые изображения
 
-Creating large containers or using bloated images can increase deployment times, consume more resources, and slow down application scaling.
+Создание больших контейнеров или использование раздутых образов может увеличить время развертывания, потреблять больше ресурсов и замедлять масштабирование приложения.
 
-## Ignoring CI/CD Pipelines
+## Игнорирование конвейеров CI/CD
 
-Deployments become manual and error-prone, impeding the speed and frequency of software releases.
+Развертывания становятся ручными и подвержены ошибкам, что снижает скорость и частоту выпусков программного обеспечения.
 
-## Shared Resources Dependency
+## Зависимость общих ресурсов
 
-Applications relying on shared resources like databases can create contention and bottlenecks, affecting overall performance.
+Приложения, использующие общие ресурсы, такие как базы данных, могут создавать конфликты и узкие места, влияя на общую производительность.
 
-## Using Too Many Cloud Services Without a Strategy
+## Использование слишком большого количества облачных сервисов без стратегии
 
-While cloud providers offer a vast array of services, using too many of them without a clear strategy can create complexity and make it harder to manage the application.
+Хотя поставщики облачных услуг предлагают широкий спектр услуг, использование слишком большого количества из них без четкой стратегии может усложнить работу и затруднить управление приложением.
 
-## Stateful Components
+## Компоненты с отслеживанием состояния
 
-Relying on persistent state in applications can introduce complexity, hinder scalability, and limit fault tolerance.
+Использование постоянного состояния в приложениях может усложнить работу, затруднить масштабируемость и ограничить отказоустойчивость.

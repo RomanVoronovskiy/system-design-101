@@ -1,6 +1,6 @@
 ---
-title: 'How to Design Stack Overflow'
-description: 'Explore the architecture of Stack Overflow and its design considerations.'
+title: "Как спроектировать переполнение стека"
+description: "Изучите архитектуру Stack Overflow и особенности ее проектирования."
 image: 'https://assets.bytebytego.com/diagrams/0343-stack-overflow-architecture.png'
 createdAt: '2024-02-20'
 draft: false
@@ -13,19 +13,19 @@ tags:
 
 ![Image](https://assets.bytebytego.com/diagrams/0343-stack-overflow-architecture.png)
 
-If your answer is on-premise servers and monolith, you would likely fail the interview, but that's how it is built in reality!
+Если ваш ответ — локальные серверы и монолит, вы, скорее всего, провалите собеседование, но именно так оно и устроено на самом деле!
 
-**What people think it should look like**
-The interviewer is probably expecting something on the left side.
+**Как, по мнению людей, это должно выглядеть**
+Интервьюер, вероятно, ожидает чего-то слева.
 
-*   Microservice is used to decompose the system into small components.
-*   Each service has its own database. Use cache heavily.
-*   The service is sharded.
-*   The services talk to each other asynchronously through message queues.
-*   The service is implemented using Event Sourcing with CQRS.
-*   Showing off knowledge in distributed systems such as eventual consistency, CAP theorem, etc.
+* Микросервис используется для разложения системы на мелкие компоненты.
+* Каждый сервис имеет свою базу данных. Активно используйте кэш.
+* Сервис сегментирован.
+* Службы общаются друг с другом асинхронно через очереди сообщений.
+* Услуга реализована с использованием источников событий с CQRS.
+* Демонстрация знаний в области распределенных систем, таких как итоговая согласованность, теорема CAP и т. д.
 
-**What it actually is**
-Stack Overflow serves all the traffic with only 9 on-premise web servers, and it’s on monolith! It has its own servers and does not run on the cloud.
+**Что это на самом деле**
+Stack Overflow обслуживает весь трафик всего лишь с помощью 9 локальных веб-серверов, и это монолит! Он имеет собственные серверы и не работает в облаке.
 
-This is contrary to all our popular beliefs these days.
+Это противоречит всем нашим распространенным убеждениям в наши дни.

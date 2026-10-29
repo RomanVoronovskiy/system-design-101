@@ -1,6 +1,6 @@
 ---
-title: 'A cheat sheet for API designs'
-description: 'A handy cheat sheet for designing secure and efficient APIs.'
+title: "Шпаргалка по проектам API"
+description: "Удобная шпаргалка для разработки безопасных и эффективных API."
 image: 'https://assets.bytebytego.com/diagrams/0137-cheat-sheet-for-api-design.png'
 createdAt: '2024-02-14'
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0137-cheat-sheet-for-api-design.png)
 
-APIs expose business logic and data to external systems, so designing them securely and efficiently is important.
+API-интерфейсы предоставляют бизнес-логику и данные внешним системам, поэтому важно разрабатывать их безопасно и эффективно.
 
-## API key generation
+## Генерация API-ключа
 
-We normally generate one unique app ID for each client and generate different pairs of public key (access key) and private key (secret key) to cater to different authorizations. For example, we can generate one pair of keys for read-only access and another pair for read-write access.
+Обычно мы генерируем один уникальный идентификатор приложения для каждого клиента и разные пары открытого ключа (ключа доступа) и закрытого ключа (секретного ключа) для разных авторизаций. Например, мы можем сгенерировать одну пару ключей для доступа только для чтения и другую пару для доступа для чтения и записи.
 
-## Signature generation
+## Генерация подписи
 
-Signatures are used to verify the authenticity and integrity of API requests. They are generated using the secret key and typically involve the following steps:
+Подписи используются для проверки подлинности и целостности запросов API. Они генерируются с использованием секретного ключа и обычно включают следующие шаги:
 
-*   Collect parameters
-*   Create a string to sign
-*   Hash the string: Use a cryptographic hash function, like HMAC (Hash-based Message Authentication Code) in combination with SHA-256, to hash the string using the secret key.
-*   Send the requests
+* Сбор параметров
+* Создайте строку для подписи.
+* Хеширование строки: используйте криптографическую хэш-функцию, например HMAC (код аутентификации сообщения на основе хэша) в сочетании с SHA-256, чтобы хешировать строку с использованием секретного ключа.
+* Отправьте запросы
 
-When designing an API, deciding what should be included in HTTP request parameters is crucial. Include the following in the request parameters:
+При разработке API решающее значение имеет решение о том, что следует включать в параметры HTTP-запроса. Включите в параметры запроса следующее:
 
-*   Authentication Credentials
-*   Timestamp: To prevent replay attacks.
-*   Request-specific Data: Necessary to process the request, such as user IDs, transaction details, or search queries.
-*   Nonces: Randomly generated strings included in each request to ensure that each request is unique and to prevent replay attacks.
+* Учетные данные аутентификации
+* Временная метка: для предотвращения повторных атак.
+* Данные, специфичные для запроса: необходимые для обработки запроса, такие как идентификаторы пользователей, сведения о транзакциях или поисковые запросы.
+* Одноразовые номера: случайно генерируемые строки, включенные в каждый запрос, чтобы гарантировать уникальность каждого запроса и предотвратить атаки повторного воспроизведения.
 
-## Security guidelines
+## Рекомендации по безопасности
 
-To safeguard APIs against common vulnerabilities and threats, adhere to these security guidelines.
+Чтобы защитить API от распространенных уязвимостей и угроз, следуйте этим рекомендациям по безопасности.

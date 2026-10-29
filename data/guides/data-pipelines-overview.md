@@ -1,6 +1,6 @@
 ---
-title: Data Pipelines Overview
-description: Learn about the essential phases of data pipelines.
+title: "Обзор конвейеров данных"
+description: "Узнайте об основных этапах работы конвейеров данных."
 image: 'https://assets.bytebytego.com/diagrams/0157-data-pipeline-overview.png'
 createdAt: '2024-03-14'
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0157-data-pipeline-overview.png)
 
-Data pipelines are a fundamental component of managing and processing data efficiently within modern systems. These pipelines typically encompass 5 predominant phases: Collect, Ingest, Store, Compute, and Consume.
+Конвейеры данных являются фундаментальным компонентом эффективного управления и обработки данных в современных системах. Эти конвейеры обычно включают в себя 5 основных этапов: сбор, прием, хранение, вычисление и потребление.
 
-## Collect:
+## Собирать:
 
-Data is acquired from data stores, data streams, and applications, sourced remotely from devices, applications, or business systems.
+Данные собираются из хранилищ данных, потоков данных и приложений, полученных удаленно с устройств, приложений или бизнес-систем.
 
-## Ingest:
+## Прием:
 
-During the ingestion process, data is loaded into systems and organized within event queues.
+В процессе приема данные загружаются в системы и организуются в очередях событий.
 
-## Store:
+## Магазин:
 
-Post ingestion, organized data is stored in data warehouses, data lakes, and data lakehouses, along with various systems like databases, ensuring post-ingestion storage.
+После приема организованные данные хранятся в хранилищах данных, озерах данных и хранилищах данных, а также в различных системах, таких как базы данных, что обеспечивает хранение после приема.
 
-## Compute:
+## Вычислить:
 
-Data undergoes aggregation, cleansing, and manipulation to conform to company standards, including tasks such as format conversion, data compression, and partitioning. This phase employs both batch and stream processing techniques.
+Данные подвергаются агрегированию, очистке и манипуляциям в соответствии со стандартами компании, включая такие задачи, как преобразование формата, сжатие данных и секционирование. На этом этапе используются методы пакетной и потоковой обработки.
 
-## Consume:
+## Потреблять:
 
-Processed data is made available for consumption through analytics and visualization tools, operational data stores, decision engines, user-facing applications, dashboards, data science, machine learning services, business intelligence, and self-service analytics.
+Обработанные данные доступны для потребления через инструменты аналитики и визуализации, хранилища операционных данных, механизмы принятия решений, пользовательские приложения, информационные панели, обработку данных, услуги машинного обучения, бизнес-аналитику и аналитику самообслуживания.
 
-The efficiency and effectiveness of each phase contribute to the overall success of data-driven operations within an organization.
+Эффективность и результативность каждого этапа способствуют общему успеху операций, основанных на данных, в организации.

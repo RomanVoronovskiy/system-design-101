@@ -1,6 +1,6 @@
 ---
-title: "How Does Redis Persist Data?"
-description: "Explore Redis data persistence: AOF, RDB, and mixed approaches."
+title: "Как Redis сохраняет данные?"
+description: "Изучите сохранение данных Redis: AOF, RDB и смешанные подходы."
 image: "https://assets.bytebytego.com/diagrams/0214-how-redis-presists-data.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,31 +13,31 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0214-how-redis-presists-data.png)
 
-Redis is an in-memory database. If the server goes down, the data will be lost.
+Redis — это база данных в памяти. Если сервер выйдет из строя, данные будут потеряны.
 
-The diagram above shows two ways to persist Redis data on disk:
+На диаграмме выше показаны два способа сохранения данных Redis на диске:
 
-1. AOF (Append-Only File)
-2. RDB (Redis Database)
+1. AOF (файл только для добавления)
+2. RDB (база данных Redis)
 
-Note that data persistence is not performed on the critical path and doesn't block the write process in Redis.
+Обратите внимание, что сохранение данных не выполняется на критическом пути и не блокирует процесс записи в Redis.
 
-## AOF (Append-Only File)
+## AOF (файл, доступный только для добавления)
 
-Unlike a write-ahead log, the Redis AOF log is a write-after log. Redis executes commands to modify the data in memory first and then writes it to the log file. AOF log records the commands instead of the data. The event-based design simplifies data recovery. Additionally, AOF records commands after the command has been executed in memory, so it does not block the current write operation.
+В отличие от журнала упреждающей записи, журнал Redis AOF представляет собой журнал с последующей записью. Redis сначала выполняет команды для изменения данных в памяти, а затем записывает их в файл журнала. Журнал AOF записывает команды вместо данных. Основанный на событиях дизайн упрощает восстановление данных. Кроме того, AOF записывает команды после того, как команда была выполнена, в памяти, поэтому не блокирует текущую операцию записи.
 
-## RDB (Redis Database)
+## RDB (база данных Redis)
 
-The restriction of AOF is that it persists commands instead of data. When we use the AOF log for recovery, the whole log must be scanned. When the size of the log is large, Redis takes a long time to recover. So Redis provides another way to persist data - RDB.
+Ограничением AOF является то, что он сохраняет команды вместо данных. Когда мы используем журнал AOF для восстановления, необходимо сканировать весь журнал. Если размер журнала велик, восстановление Redis занимает много времени. Таким образом, Redis предоставляет еще один способ сохранения данных — RDB.
 
-RDB records snapshots of data at specific points in time. When the server needs to be recovered, the data snapshot can be directly loaded into memory for fast recovery.
+RDB записывает снимки данных в определенные моменты времени. Когда сервер необходимо восстановить, снимок данных можно напрямую загрузить в память для быстрого восстановления.
 
-Step 1: The main thread forks the ‘bgsave’ sub-process, which shares all the in-memory data of the main thread. ‘bgsave’ reads the data from the main thread and writes it to the RDB file.
+Шаг 1: Основной поток образует подпроцесс «bgsave», который совместно использует все данные в памяти основного потока. «bgsave» считывает данные из основного потока и записывает их в файл RDB.
 
-Steps 2 and 3: If the main thread modifies data, a copy of the data is created.
+Шаги 2 и 3: Если основной поток изменяет данные, создается копия данных.
 
-Steps 4 and 5: The main thread then operates on the data copy. Meanwhile ‘bgsave’ sub-process continues to write data to the RDB file.
+Шаги 4 и 5: Затем основной поток работает с копией данных. Тем временем подпроцесс bgsave продолжает записывать данные в файл RDB.
 
-## Mixed Approach
+## Смешанный подход
 
-Usually in production systems, we can choose a mixed approach, where we use RDB to record data snapshots from time to time and use AOF to record the commands since the last snapshot.
+Обычно в производственных системах мы можем выбрать смешанный подход, при котором мы используем RDB для записи снимков данных время от времени и используем AOF для записи команд с момента последнего снимка.

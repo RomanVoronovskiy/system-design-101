@@ -1,6 +1,6 @@
 ---
-title: "20 Popular Open Source Projects Started by Big Companies"
-description: "Explore 20 popular open source projects backed by major tech companies."
+title: "20 популярных проектов с открытым исходным кодом, запущенных крупными компаниями"
+description: "Изучите 20 популярных проектов с открытым исходным кодом, поддерживаемых крупными технологическими компаниями."
 image: "https://assets.bytebytego.com/diagrams/0034-20-popular-open-source-projects-by-big-tech.png"
 createdAt: "2024-03-11"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0034-20-popular-open-source-projects-by-big-tech.png)
 
-## 1. Google
+## 1. Гугл
 
-*   Kubernetes
-*   TensorFlow
-*   Go
-*   Angular
+* Кубернетес
+* ТензорФлоу
+* Иди
+* Угловой
 
-## 2. Meta
+## 2. Мета
 
-*   React
-*   PyTorch
-*   GraphQL
-*   Cassandra
+* Реагировать
+* ПиТорч
+* ГрафQL
+* Кассандра
 
-## 3. Microsoft
+## 3. Майкрософт
 
-*   VSCode
-*   TypeScript
-*   Playwright
+* VSCode
+* Типскрипт
+* Драматург
 
-## 4. Netflix
+## 4. Нетфликс
 
-*   Chaos Monkey
-*   Hystrix
-*   Zuul
+* Обезьяна Хаоса
+* Хайстрикс
+* Зуул
 
 ## 5. LinkedIn
 
-*   Kafka
-*   Samza
-*   Pinot
+* Кафка
+* Самза
+* Пино
 
-## 6. RedHat
+## 6. РедХат
 
-*   Ansible
-*   OpenShift
-*   Ceph Storage
+* Анзибль
+* Опеншифт
+* Хранилище Цефов

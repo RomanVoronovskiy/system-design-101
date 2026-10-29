@@ -1,6 +1,6 @@
 ---
-title: "How Does the Domain Name System (DNS) Lookup Work?"
-description: "Learn how DNS translates domain names to IP addresses for web access."
+title: "Как работает поиск в системе доменных имен (DNS)?"
+description: "Узнайте, как DNS преобразует доменные имена в IP-адреса для доступа в Интернет."
 image: "https://assets.bytebytego.com/diagrams/0176-dns-look-up.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0176-dns-look-up.png)
 
-DNS acts as an address book. It translates human-readable domain names ([google.com](http://google.com/)) to machine-readable IP addresses ([142.251.46.238](http://142.251.46.238/)).
+DNS действует как адресная книга. Он преобразует удобочитаемые доменные имена ([google.com](http://google.com/)) в машиночитаемые IP-адреса ([142.251.46.238](http://142.251.46.238/)).
 
-To achieve better scalability, the DNS servers are organized in a hierarchical tree structure.
+Для достижения лучшей масштабируемости DNS-серверы организованы в иерархическую древовидную структуру.
 
-There are 3 basic levels of DNS servers:
+Существует 3 основных уровня DNS-серверов:
 
-*   Root name server (.). It stores the IP addresses of Top Level Domain (TLD) name servers. There are 13 logical root name servers globally.
+* Корневой сервер имен (.). Он хранит IP-адреса серверов имен домена верхнего уровня (TLD). В мире существует 13 логических корневых серверов имен.
 
-*   TLD name server. It stores the IP addresses of authoritative name servers. There are several types of TLD names. For example, generic TLD (.com, .org), country code TLD (.us), test TLD (.test).
+* Сервер имен TLD. Он хранит IP-адреса авторитетных серверов имен. Существует несколько типов имен TLD. Например, общий TLD (.com, .org), TLD с кодом страны (.us), тестовый TLD (.test).
 
-*   Authoritative name server. It provides actual answers to the DNS query. You can register authoritative name servers with domain name registrar such as GoDaddy, Namecheap, etc.
+* Авторитетный сервер имен. Он предоставляет фактические ответы на DNS-запрос. Вы можете зарегистрировать авторитетные серверы имен у регистратора доменных имен, такого как GoDaddy, Namecheap и т. д.
 
-The diagram below illustrates how DNS lookup works under the hood:
+На диаграмме ниже показано, как работает поиск DNS:
 
-1.  [google.com](http://google.com/) is typed into the browser, and the browser sends the domain name to the DNS resolver.
+1. В браузере вводится [google.com](http://google.com/), и браузер отправляет имя домена преобразователю DNS.
 
-2.  The resolver queries a DNS root name server.
+2. Резолвер запрашивает корневой DNS-сервер имен.
 
-3.  The root server responds to the resolver with the address of a TLD DNS server. In this case, it is .com.
+3. Корневой сервер отвечает преобразователю адресом DNS-сервера TLD. В данном случае это .com.
 
-4.  The resolver then makes a request to the .com TLD.
+4. Затем преобразователь отправляет запрос к TLD .com.
 
-5.  The TLD server responds with the IP address of the domain’s name server, [google.com](http://google.com/) (authoritative name server).
+5. Сервер TLD отвечает IP-адресом сервера имен домена, [google.com](http://google.com/) (авторитетный сервер имен).
 
-6.  The DNS resolver sends a query to the domain’s nameserver.
+6. DNS-преобразователь отправляет запрос на сервер имен домена.
 
-7.  The IP address for [google.com](http://google.com/) is then returned to the resolver from the nameserver.
+7. IP-адрес [google.com](http://google.com/) затем возвращается преобразователю с сервера имен.
 
-8.  The DNS resolver responds to the web browser with the IP address ([142.251.46.238](http://142.251.46.238/)) of the domain requested initially.
+8. DNS-преобразователь отвечает веб-браузеру с IP-адресом ([142.251.46.238](http://142.251.46.238/)) первоначально запрошенного домена.
 
-DNS lookups on average take between 20-120 milliseconds to complete (according to YSlow).
+Поиск DNS в среднем занимает от 20 до 120 миллисекунд (по данным YSlow).

@@ -1,6 +1,6 @@
 ---
-title: 'DeepSeek 1-Pager'
-description: "Explore DeepSeek's cost-effective AI model and its innovative R1 release."
+title: "DeepSeek 1-пейджер"
+description: "Изучите экономичную модель искусственного интеллекта DeepSeek и ее инновационную версию R1."
 image: 'https://assets.bytebytego.com/diagrams/0164-deepseek.png'
 createdAt: '2024-03-11'
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![No alt text provided for this image](https://assets.bytebytego.com/diagrams/0164-deepseek.png)
 
-It is said to have developed a powerful AI model at a remarkably low cost, approximately $6 million for the final training run. In January 2025, it is said to have released its latest reasoning-focused model known as DeepSeek R1.
+Сообщается, что компания разработала мощную модель искусственного интеллекта по удивительно низкой цене — примерно 6 миллионов долларов на финальное обучение. Сообщается, что в январе 2025 года компания выпустила свою последнюю модель, ориентированную на рассуждения, известную как DeepSeek R1.
 
-The release made it the No. 1 downloaded free app on the Apple Play Store.
+Этот релиз сделал его бесплатным приложением №1 в Apple Play Store.
 
-Most AI models are trained using supervised fine-tuning, meaning they learn by mimicking large datasets of human-annotated examples. This method has limitations.
+Большинство моделей ИИ обучаются с использованием контролируемой точной настройки, то есть они обучаются, имитируя большие наборы данных примеров, аннотированных человеком. Этот метод имеет ограничения.
 
-DeepSeek R1 overcomes these limitations by using Group Relative Policy Optimization (GRPO), a reinforcement learning technique that improves reasoning efficiency by comparing multiple possible answers within the same context.
+DeepSeek R1 преодолевает эти ограничения, используя оптимизацию групповой относительной политики (GRPO), метод обучения с подкреплением, который повышает эффективность рассуждений за счет сравнения нескольких возможных ответов в одном и том же контексте.
 
-Some facts about DeepSeek’s R1 model are as follows:
+Некоторые факты о модели R1 DeepSeek следующие:
 
-- DeepSeek-R1 uses a Mixture-of-Experts (MoE) architecture with 671 billion total parameters, activating only 37 billion parameters per task.
-- It employs selective parameter activation through MoE for resource optimization.
-- The model is pre-trained on 14.8 trillion tokens across 52 languages.
-- DeepSeek-R1 was trained using just 2000 Nvidia GPUs. By comparison, ChatGPT-4 needed approximately 25K Nvidia GPUs over 90-100 days.
-- The model is 85-90% more cost-effective than competitors.
-- It excels in mathematics, coding, and reasoning tasks.
-- Also, the model has been released as open-source under the MIT license.
+- DeepSeek-R1 использует архитектуру Mixture-of-Experts (MoE) с общим количеством 671 миллиарда параметров, активируя только 37 миллиардов параметров для каждой задачи.
+- Он использует выборочную активацию параметров через MoE для оптимизации ресурсов.
+- Модель предварительно обучена на 14,8 триллионах токенов на 52 языках.
+- DeepSeek-R1 был обучен с использованием всего 2000 графических процессоров Nvidia. Для сравнения, ChatGPT-4 потребовалось около 25 тысяч графических процессоров Nvidia в течение 90–100 дней.
+- Модель на 85-90% экономичнее конкурентов.
+- Он преуспевает в математике, программировании и рассуждениях.
+- Также модель выпущена с открытым исходным кодом под лицензией MIT.

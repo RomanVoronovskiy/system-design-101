@@ -1,6 +1,6 @@
 ---
-title: 'Evolution of Airbnb’s Microservice Architecture'
-description: 'Explore the evolution of Airbnb’s microservice architecture in detail.'
+title: "Эволюция микросервисной архитектуры Airbnb"
+description: "Подробно изучите эволюцию микросервисной архитектуры Airbnb."
 image: 'https://assets.bytebytego.com/diagrams/0014-airbnb-arch.jpg'
 createdAt: '2024-03-05'
 draft: false
@@ -13,33 +13,33 @@ tags:
 
 [![](https://assets.bytebytego.com/diagrams/0014-airbnb-arch.jpg)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7c90c105-a6bf-46f4-b896-73390fcfe60b_3396x1839.jpeg)
 
-Airbnb’s microservice architecture went through 3 main stages. This post is based on the tech talk by Jessica Tai.
+Микросервисная архитектура Airbnb прошла три основных этапа. Этот пост основан на техническом докладе Джессики Тай.
 
-**Monolith** (2008 - 2017)
+**Монолит** (2008–2017)
 
-Airbnb began as a simple marketplace for hosts and guests. This is built in a Ruby on Rails application - the monolith.
+Airbnb начинался как простая торговая площадка для хозяев и гостей. Это встроено в приложение Ruby on Rails — монолит.
 
-**What’s the challenge?**
+**В чем проблема?**
 
-*   Confusing team ownership + unowned code
-*   Slow deployment
+* Непонятное владение командой + бесхозный код.
+* Медленное развертывание
 
-**Microservices** (2017 - 2020)
+**Микросервисы** (2017–2020 гг.)
 
-Microservice aims to solve those challenges. In the microservice architecture, key services include:
+Микросервис призван решить эти проблемы. В микросервисной архитектуре ключевые сервисы включают в себя:
 
-*   Data fetching service
-*   Business logic data service
-*   Write workflow service
-*   UI aggregation service
-*   Each service had one owning team
+* Служба получения данных
+* Служба данных бизнес-логики.
+* Написание службы рабочего процесса
+* Служба агрегирования пользовательского интерфейса
+* У каждого сервиса была одна команда-владелец.
 
-**What’s the challenge?**
+**В чем проблема?**
 
-Hundreds of services and dependencies were difficult for humans to manage.
+Людям было трудно управлять сотнями сервисов и зависимостей.
 
-**Micro + macroservices** (2020 - present)
+**Микро + макросервисы** (2020 – настоящее время)
 
-This is what Airbnb is working on now. The micro and macroservice hybrid model focuses on the unification of APIs.
+Над этим сейчас работает Airbnb. Гибридная модель микро- и макросервисов фокусируется на унификации API.
 
-Reference: [The Human Side of Airbnb’s Microservice Architecture](https://www.infoq.com/presentations/airbnb-culture-soa/)
+Ссылка: [Человеческая сторона микросервисной архитектуры Airbnb] (https://www.infoq.com/presentations/airbnb-culture-soa/)

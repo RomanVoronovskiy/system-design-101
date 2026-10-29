@@ -1,6 +1,6 @@
 ---
-title: "Deployment Strategies"
-description: "Explore risk mitigation strategies for deploying and upgrading services."
+title: "Стратегии развертывания"
+description: "Изучите стратегии снижения рисков при развертывании и обновлении сервисов."
 image: "https://assets.bytebytego.com/diagrams/0166-deployment-strategies.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0166-deployment-strategies.png)
 
-Deploying or upgrading services is risky. In this post, we explore risk mitigation strategies.
+Развертывание или обновление служб сопряжено с риском. В этой статье мы рассмотрим стратегии снижения рисков.
 
-## Multi-Service Deployment
+## Мультисервисное развертывание
 
-In this model, we deploy new changes to multiple services simultaneously. This approach is easy to implement. But since all the services are upgraded at the same time, it is hard to manage and test dependencies. It’s also hard to rollback safely.
+В этой модели мы развертываем новые изменения в нескольких сервисах одновременно. Этот подход легко реализовать. Но поскольку все службы обновляются одновременно, сложно управлять зависимостями и тестировать их. Также сложно безопасно выполнить откат.
 
-## Blue-Green Deployment
+## Сине-зеленое развертывание
 
-With blue-green deployment, we have two identical environments: one is staging (blue) and the other is production (green). The staging environment is one version ahead of production. Once testing is done in the staging environment, user traffic is switched to the staging environment, and the staging becomes the production. This deployment strategy is simple to perform rollback, but having two identical production quality environments could be expensive.
+При сине-зеленом развертывании у нас есть две идентичные среды: одна — промежуточная (синяя), а другая — производственная (зеленая). Промежуточная среда на одну версию опережает производственную. После завершения тестирования в промежуточной среде пользовательский трафик переключается в промежуточную среду, и промежуточная среда становится рабочей. Эту стратегию развертывания легко выполнить откат, но наличие двух одинаковых производственных сред может оказаться дорогостоящим.
 
-## Canary Deployment
+## Канарское развертывание
 
-A canary deployment upgrades services gradually, each time to a subset of users. It is cheaper than blue-green deployment and easy to perform rollback. However, since there is no staging environment, we have to test on production. This process is more complicated because we need to monitor the canary while gradually migrating more and more users away from the old version.
+При канареечном развертывании сервисы обновляются постепенно, каждый раз для определенной группы пользователей. Это дешевле, чем сине-зеленое развертывание, и его легко выполнить откат. Однако, поскольку промежуточной среды нет, нам приходится тестировать на производстве. Этот процесс более сложен, поскольку нам нужно следить за канарейкой, постепенно переводя все больше и больше пользователей со старой версии.
 
-## A/B Test
+## A/B-тест
 
-In the A/B test, different versions of services run in production simultaneously. Each version runs an “experiment” for a subset of users. A/B test is a cheap method to test new features in production. We need to control the deployment process in case some features are pushed to users by accident.
+В тесте A/B разные версии сервисов работают одновременно. Каждая версия проводит «эксперимент» для определенной группы пользователей. A/B-тестирование — дешевый метод тестирования новых функций в производстве. Нам необходимо контролировать процесс развертывания на случай, если некоторые функции будут случайно переданы пользователям.

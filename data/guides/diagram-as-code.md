@@ -1,6 +1,6 @@
 ---
-title: "Diagram as Code"
-description: "Explore Diagram as Code for cloud system architecture prototyping."
+title: "Диаграмма как код"
+description: "Изучите диаграмму как код для прототипирования архитектуры облачной системы."
 image: "https://assets.bytebytego.com/diagrams/0173-diagrams-as-code-twitter.jpeg"
 createdAt: "2024-03-02"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0173-diagrams-as-code-twitter.jpeg)
 
-Would it be nice if the code we wrote automatically turned into architecture diagrams?
+Было бы здорово, если бы написанный нами код автоматически превращался в архитектурные диаграммы?
 
-I recently discovered a Github repo that does exactly this: Diagram as Code for prototyping cloud system architectures.
+Недавно я обнаружил репозиторий Github, который делает именно это: диаграмма как код для прототипирования архитектур облачных систем.
 
-## What does it do?
+## Что он делает?
 
-*   Draw the cloud system architecture in Python code.
+* Нарисуйте архитектуру облачной системы в коде Python.
 
-*   Diagrams can also be rendered directly inside the Jupyter Notebooks.
+* Диаграммы также можно отображать непосредственно в блокнотах Jupyter.
 
-*   No design tools are needed.
+* Никаких инструментов проектирования не требуется.
 
-*   Supports the following providers: AWS, Azure, GCP, Kubernetes, Alibaba Cloud, Oracle Cloud, etc.
+* Поддерживает следующих поставщиков: AWS, Azure, GCP, Kubernetes, Alibaba Cloud, Oracle Cloud и т. д.

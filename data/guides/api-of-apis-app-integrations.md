@@ -1,6 +1,6 @@
 ---
-title: 'API of APIs - App Integrations'
-description: 'Explore API of APIs and app integrations in this detailed guide.'
+title: "API API – интеграция приложений"
+description: "Изучите API API и интеграцию приложений в этом подробном руководстве."
 image: 'https://assets.bytebytego.com/diagrams/0426-api-of-apis-app-integrations.png'
 createdAt: '2024-02-13'
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0426-api-of-apis-app-integrations.png)
 
-No-code tools such as Zapier, IFTTT, etc., allow anyone to build apps and automate workflows using a visual interface.
+Инструменты без кода, такие как Zapier, IFTTT и т. д., позволяют любому создавать приложения и автоматизировать рабочие процессы с помощью визуального интерфейса.
 
-The flowchart below shows how it works.
+На блок-схеме ниже показано, как это работает.
 
-Image source: Paper: IFTTT vs. Zapier: A Comparative Study of Trigger-Action Programming Frameworks
+Источник изображения: Статья: IFTTT против Zapier: сравнительное исследование систем программирования триггерных действий.

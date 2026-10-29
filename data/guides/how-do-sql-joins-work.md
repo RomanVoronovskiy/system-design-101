@@ -1,6 +1,6 @@
 ---
-title: "How do SQL Joins Work?"
-description: "Learn how SQL joins work with detailed explanations and examples."
+title: "Как работают SQL-соединения?"
+description: "Узнайте, как работают соединения SQL, с подробными объяснениями и примерами."
 image: "https://assets.bytebytego.com/diagrams/0367-top-4-types-of-sql-joins.png"
 createdAt: "2024-03-11"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0367-top-4-types-of-sql-joins.png)
 
-The diagram above shows how 4 types of SQL joins work in detail.
+На диаграмме выше показано, как подробно работают 4 типа SQL-соединений.
 
-## INNER JOIN
+## ВНУТРЕННЕЕ СОЕДИНЕНИЕ
 
-Returns matching rows in both tables.
+Возвращает совпадающие строки в обеих таблицах.
 
-## LEFT JOIN
+## ЛЕВОЕ СОЕДИНЕНИЕ
 
-Returns all records from the left table, and the matching records from the right table.
+Возвращает все записи из левой таблицы и соответствующие записи из правой таблицы.
 
-## RIGHT JOIN
+## ПРАВОЕ ПРИСОЕДИНЕНИЕ
 
-Returns all records from the right table, and the matching records from the left table.
+Возвращает все записи из правой таблицы и соответствующие записи из левой таблицы.
 
-## FULL OUTER JOIN
+## ПОЛНОЕ ВНЕШНЕЕ СОЕДИНЕНИЕ
 
-Returns all records where there is a match in either left or right table.
+Возвращает все записи, у которых есть совпадения в левой или правой таблице.

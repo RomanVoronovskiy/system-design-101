@@ -1,6 +1,6 @@
 ---
-title: "9 Best Practices for Building Microservices"
-description: "Best practices for building robust and scalable microservices systems."
+title: "9 лучших практик создания микросервисов"
+description: "Лучшие практики создания надежных и масштабируемых систем микросервисов."
 image: "https://assets.bytebytego.com/diagrams/0019-9-best-practices-for-building-microservices.png"
 createdAt: '2024-03-05'
 draft: false
@@ -13,54 +13,54 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0019-9-best-practices-for-building-microservices.png)
 
-Creating a system using microservices is extremely difficult unless you follow some strong principles.
+Создать систему с использованием микросервисов чрезвычайно сложно, если не следовать некоторым строгим принципам.
 
-## 1. Design For Failure
+## 1. Проектируйте на провал
 
-A distributed system with microservices is going to fail.
+Распределенная система с микросервисами обречена на провал.
 
-You must design the system to tolerate failure at multiple levels such as infrastructure, database, and individual services. Use circuit breakers, bulkheads, or graceful degradation methods to deal with failures.
+Вы должны спроектировать систему так, чтобы она допускала сбои на нескольких уровнях, таких как инфраструктура, база данных и отдельные службы. Для устранения сбоев используйте автоматические выключатели, перегородки или методы плавного снижения производительности.
 
-## 2. Build Small Services
+## 2. Создание небольших сервисов
 
-A microservice should not do multiple things at once.
+Микросервис не должен выполнять несколько задач одновременно.
 
-A good microservice is designed to do one thing well.
+Хороший микросервис предназначен для того, чтобы хорошо выполнять одну задачу.
 
-## 3. Use lightweight protocols for communication
+## 3. Используйте облегченные протоколы для связи
 
-Communication is the core of a distributed system.
+Коммуникация является ядром распределенной системы.
 
-Microservices must talk to each other using lightweight protocols. Options include REST, gRPC, or message brokers.
+Микросервисы должны взаимодействовать друг с другом, используя облегченные протоколы. Варианты включают REST, gRPC или брокеры сообщений.
 
-## 4. Implement service discovery
+## 4. Реализация обнаружения служб
 
-To communicate with each other, microservices need to discover each other over the network.
+Чтобы взаимодействовать друг с другом, микросервисам необходимо обнаруживать друг друга в сети.
 
-Implement service discovery using tools such as Consul, Eureka, or Kubernetes Services
+Реализуйте обнаружение сервисов с помощью таких инструментов, как Consul, Eureka или Kubernetes Services.
 
-## 5. Data Ownership
+## 5. Владение данными
 
-In microservices, data should be owned and managed by the individual services.
+В микросервисах данные должны принадлежать и управляться отдельными сервисами.
 
-The goal should be to reduce coupling between services so that they can evolve independently.
+Целью должно быть уменьшение связанности между сервисами, чтобы они могли развиваться независимо.
 
-## 6. Use resiliency patterns
+## 6. Используйте шаблоны устойчивости
 
-Implement specific resiliency patterns to improve the availability of the services.
+Внедрите специальные шаблоны устойчивости, чтобы улучшить доступность сервисов.
 
-Examples: retry policies, caching, and rate limiting.
+Примеры: политики повторных попыток, кэширование и ограничение скорости.
 
-## 7. Security at all levels
+## 7. Безопасность на всех уровнях
 
-In a microservices-based system, the attack surface is quite large. You must implement security at every level of the service communication path.
+В системе на основе микросервисов поверхность атаки довольно велика. Вы должны реализовать безопасность на каждом уровне пути связи службы.
 
-## 8. Centralized logging
+## 8. Централизованное журналирование
 
-Logs are important to finding issues in a system. With multiple services, they become critical.
+Журналы важны для поиска проблем в системе. При наличии нескольких сервисов они становятся критически важными.
 
-## 9. Use containerization techniques
+## 9. Используйте методы контейнеризации
 
-To deploy microservices in an isolated manner, use containerization techniques.
+Чтобы развернуть микросервисы изолированно, используйте методы контейнеризации.
 
-Tools like Docker and Kubernetes can help with this as they are meant to simplify the scaling and deployment of a microservice.
+В этом могут помочь такие инструменты, как Docker и Kubernetes, поскольку они предназначены для упрощения масштабирования и развертывания микросервиса.

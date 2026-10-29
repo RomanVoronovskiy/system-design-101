@@ -1,6 +1,6 @@
 ---
-title: "Git Merge vs. Git Rebase"
-description: "Understand the difference between Git merge and Git rebase commands."
+title: "Git Merge против Git Rebase"
+description: "Поймите разницу между командами Git merge и Git rebase."
 image: "https://assets.bytebytego.com/diagrams/0203-git-merge-git-rebase.jpg"
 createdAt: "2024-02-28"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0203-git-merge-git-rebase.jpg)
 
-What are the differences?
+В чем различия?
 
-When we 𝐦𝐞𝐫𝐠𝐞 𝐜𝐡𝐚𝐧𝐠𝐞𝐬 from one Git branch to another, we can use ‘git merge’ or ‘git rebase’. The diagram below shows how the two commands work.
+Когда мы переходим из одной ветки Git в другую, мы можем использовать «git merge» или «git rebase». На диаграмме ниже показано, как работают две команды.
 
-## Git Merge
+## Слияние с Git
 
-This creates a new commit G’ in the main branch. G’ ties the histories of both main and feature branches.
+Это создаст новый коммит G’ в основной ветке. G’ связывает истории как основных, так и функциональных ветвей.
 
-Git merge is 𝐧𝐨𝐧-𝐝𝐞𝐬𝐭𝐫𝐮𝐜𝐭𝐢𝐯𝐞. Neither the main nor the feature branch is changed.
+Слияние Git — это 𝐧𝐨𝐧-𝐝𝐞𝐬𝐭𝐫𝐮𝐜𝐭𝐢𝐯𝐞. Ни основная, ни функциональная ветка не изменяются.
 
-## Git Rebase
+## Git-перебазировка
 
-Git rebase moves the feature branch histories to the head of the main branch. It creates new commits E’, F’, and G’ for each commit in the feature branch.
+Git rebase перемещает историю ветвей функций в заголовок основной ветки. Он создает новые коммиты E’, F’ и G’ для каждого коммита в ветке функций.
 
-The benefit of rebase is that it has 𝐥𝐢𝐧𝐞𝐚𝐫 𝐜𝐨𝐦𝐦𝐢𝐭 𝐡𝐢𝐬𝐭𝐨𝐫𝐲.
+Преимущество перебазирования состоит в том, что он имеет 𝐥𝐢𝐧𝐞𝐚𝐫 𝐜𝐨𝐦𝐦𝐢𝐭 𝐡𝐢𝐬𝐭𝐨𝐫𝐲.
 
-Rebase can be dangerous if “the golden rule of git rebase” is not followed.
+Перебазирование может быть опасным, если не соблюдать «золотое правило git rebase».
 
-## The Golden Rule of Git Rebase
+## Золотое правило Git Rebase
 
-Never use it on public branches!
+Никогда не используйте его в публичных ветках!

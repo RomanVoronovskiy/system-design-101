@@ -1,9 +1,8 @@
 ---
-title: 'AI and Machine Learning'
-description: 'Learn the basics of AI and Machine Learning, how they work, and some real-world applications with visual illustrations.'
+title: "ИИ и машинное обучение"
+description: "Изучите основы искусственного интеллекта и машинного обучения, принципы их работы и некоторые реальные приложения с помощью наглядных иллюстраций."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/brain.png'
 sort: 120
 ---
-
-AI and Machine Learning are two of the most popular technologies in the tech industry. They are used in various applications such as recommendation systems, image recognition, natural language processing, and more. In this guide, we will explore the basics of AI and Machine Learning, how they work, and some real-world applications.
+Искусственный интеллект и машинное обучение — две самые популярные технологии в технологической отрасли. Они используются в различных приложениях, таких как системы рекомендаций, распознавание изображений, обработка естественного языка и многое другое. В этом руководстве мы рассмотрим основы искусственного интеллекта и машинного обучения, как они работают, а также некоторые реальные приложения.

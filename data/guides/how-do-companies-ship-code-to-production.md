@@ -1,6 +1,6 @@
 ---
-title: "How do Companies Ship Code to Production?"
-description: "Explore the process companies use to ship code to production efficiently."
+title: "Как компании отправляют код в производство?"
+description: "Изучите процессы, которые компании используют для эффективной доставки кода в производство."
 image: "https://assets.bytebytego.com/diagrams/0334-ship-to-prod.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0334-ship-to-prod.png)
 
-The diagram below illustrates the typical workflow.
+На диаграмме ниже показан типичный рабочий процесс.
 
-Step 1: The process starts with a product owner creating user stories based on requirements.
+Шаг 1. Процесс начинается с того, что владелец продукта создает пользовательские истории на основе требований.
 
-Step 2: The dev team picks up the user stories from the backlog and puts them into a sprint for a two-week dev cycle.
+Шаг 2. Команда разработчиков собирает пользовательские истории из журнала и запускает их в спринт в течение двухнедельного цикла разработки.
 
-Step 3: The developers commit source code into the code repository Git.
+Шаг 3. Разработчики помещают исходный код в репозиторий кода Git.
 
-Step 4: A build is triggered in Jenkins. The source code must pass unit tests, code coverage threshold, and gates in SonarQube.
+Шаг 4: В Jenkins запускается сборка. Исходный код должен пройти модульные тесты, порог покрытия кода и шлюзы в SonarQube.
 
-Step 5: Once the build is successful, the build is stored in artifactory. Then the build is deployed into the dev environment.
+Шаг 5. После успешного завершения сборки она сохраняется в артефакте. Затем сборка развертывается в среде разработки.
 
-Step 6: There might be multiple dev teams working on different features. The features need to be tested independently, so they are deployed to QA1 and QA2.
+Шаг 6. Над разными функциями может работать несколько команд разработчиков. Функции необходимо тестировать независимо, поэтому они развертываются на QA1 и QA2.
 
-Step 7: The QA team picks up the new QA environments and performs QA testing, regression testing, and performance testing.
+Шаг 7. Команда контроля качества выбирает новые среды контроля качества и выполняет тестирование качества, регрессионное тестирование и тестирование производительности.
 
-Step 8: Once the QA builds pass the QA team’s verification, they are deployed to the UAT environment.
+Шаг 8. Как только сборки QA проходят проверку команды QA, они развертываются в среде UAT.
 
-Step 9: If the UAT testing is successful, the builds become release candidates and will be deployed to the production environment on schedule.
+Шаг 9. Если тестирование UAT пройдет успешно, сборки станут кандидатами на выпуск и будут развернуты в производственной среде по графику.
 
-Step 10: SRE (Site Reliability Engineering) team is responsible for prod monitoring.
+Шаг 10. Команда SRE (Site Reliability Engineering) отвечает за мониторинг продукции.

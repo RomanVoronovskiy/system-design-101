@@ -1,6 +1,6 @@
 ---
-title: "0 to 1.5 Billion Guests: Airbnb's Architectural Evolution"
-description: "Explore Airbnb's architectural evolution to support 1.5 billion guests."
+title: "От 0 до 1,5 миллиарда гостей: архитектурная эволюция Airbnb"
+description: "Изучите архитектурную эволюцию Airbnb, чтобы обслуживать 1,5 миллиарда гостей."
 image: 'https://assets.bytebytego.com/diagrams/0427-zero-to-1-5-billion-guests-airbnb-s-architectural-evolution.png'
 createdAt: '2024-02-27'
 draft: false
@@ -13,23 +13,23 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0427-zero-to-1-5-billion-guests-airbnb-s-architectural-evolution.png)
 
-Airbnb operates in 200+ countries and has helped 4 million hosts welcome over 1.5 billion guests across the world.
+Airbnb работает более чем в 200 странах и помог 4 миллионам хозяев принять более 1,5 миллиарда гостей по всему миру.
 
-What powers Airbnb technically?
+Что технически обеспечивает Airbnb?
 
-Airbnb started as a monolithic application. It was built using Ruby-on-Rails and was internally known as the Monorail.
+Airbnb начинался как монолитное приложение. Он был построен с использованием Ruby-on-Rails и внутри страны назывался монорельсовой дорогой.
 
-The monolith was a single-tier unit responsible for both client and server-side functionality.
+Монолит представлял собой одноуровневую единицу, отвечавшую как за клиентскую, так и за серверную функциональность.
 
-However, as Airbnb went into hypergrowth, the Monorail started facing issues. This is when they began a migration journey to move from monolithic to Service-Oriented Architecture.
+Однако по мере того, как Airbnb начал бурно расти, у монорельсовой дороги начались проблемы. Именно тогда они начали путь перехода от монолитной к сервис-ориентированной архитектуре.
 
-For Airbnb, SOA is a network of loosely coupled services where clients make their requests to a gateway and the gateway routes these requests to multiple services and databases.
+Для Airbnb SOA — это сеть слабосвязанных сервисов, в которой клиенты отправляют свои запросы к шлюзу, а шлюз направляет эти запросы к множеству сервисов и баз данных.
 
-Various types of services were built such as:
+Были построены различные типы сервисов, такие как:
 
-*   **Data Service:** This is the bottom layer and acts as the entry point for all read and write operations on the data entities.
-*   **Derived Data Service:** These services read from data services and apply basic business logic.
-*   **Middle Tier Service:** They manage important business logic that doesn’t fit at the data service level or derived data service level.
-*   **Presentation Service:** They aggregate data from all other services and also apply some frontend-specific business logic.
+* **Служба данных:** Это нижний уровень, который действует как точка входа для всех операций чтения и записи объектов данных.
+* **Производная служба данных.** Эти службы считывают данные из служб данных и применяют базовую бизнес-логику.
+* **Служба среднего уровня.** Они управляют важной бизнес-логикой, которая не соответствует уровню службы данных или уровню производной службы данных.
+* **Служба презентаций.** Они объединяют данные из всех других служб, а также применяют определенную бизнес-логику, специфичную для внешнего интерфейса.
 
-After the migration, the Monorail was eliminated and all reads/writes were migrated to the new services.
+После миграции монорельсовая дорога была исключена, а все операции чтения/записи были перенесены на новые службы.

@@ -1,6 +1,6 @@
 ---
-title: "HTTPS, SSL Handshake, and Data Encryption Explained"
-description: "Learn about HTTPS, SSL handshake, and data encryption in simple terms."
+title: "Объяснение HTTPS, SSL-квитирования и шифрования данных"
+description: "Узнайте простым языком о HTTPS, SSL-подтверждении и шифровании данных."
 image: "https://assets.bytebytego.com/diagrams/0409-https-ssl-handshake-and-data-encryption-explained-to-kids.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![HTTPS, SSL Handshake, and Data Encryption Explained](https://assets.bytebytego.com/diagrams/0409-https-ssl-handshake-and-data-encryption-explained-to-kids.png)
 
-HTTPS: Safeguards your data from eavesdroppers and breaches. Understand how encryption and digital certificates create an impregnable shield.
+HTTPS: защищает ваши данные от перехвата и взлома. Узнайте, как шифрование и цифровые сертификаты создают неприступный щит.
 
-SSL Handshake: Behind the Scenes — Witness the cryptographic protocols that establish a secure connection. Experience the intricate exchange of keys and negotiation.
+SSL-квитирование: за кулисами — посмотрите на криптографические протоколы, которые устанавливают безопасное соединение. Испытайте сложный обмен ключами и переговоры.
 
-Secure Data Transmission: Navigating the Tunnel — Journey through the encrypted tunnel forged by HTTPS. Learn how your information travels while shielded from cyber threats.
+Безопасная передача данных: навигация по туннелю. Путешествуйте по зашифрованному туннелю, созданному HTTPS. Узнайте, как передается ваша информация, защищенная от киберугроз.
 
-HTML's Role: Peek into HTML's role in structuring the web. Uncover how hyperlinks and content come together seamlessly. And why is it called HYPER TEXT.
+Роль HTML. Узнайте о роли HTML в структурировании сети. Узнайте, как легко сочетаются гиперссылки и контент. И почему это называется ГИПЕРТЕКСТ.

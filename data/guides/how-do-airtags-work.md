@@ -1,6 +1,6 @@
 ---
-title: "How do AirTags work?"
-description: "Learn how AirTags use Bluetooth and Apple's Find My network to locate items."
+title: "Как работают AirTags?"
+description: "Узнайте, как AirTags используют Bluetooth и сеть Apple Find My для поиска предметов."
 image: "https://assets.bytebytego.com/diagrams/0216-how-airtag-works.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0216-how-airtag-works.png)
 
-AirTags work by leveraging a combination of Bluetooth technology and the vast network of Apple devices to help you locate your lost items.
+AirTags работают, используя сочетание технологии Bluetooth и обширной сети устройств Apple, чтобы помочь вам найти потерянные предметы.
 
-Here's a breakdown of how they function:
+Вот разбивка того, как они функционируют:
 
-*   Bluetooth Signal: Each AirTag emits a secure Bluetooth signal that can be detected by nearby Apple devices (iPhones, iPads, etc.) within the Find My network.
+* Сигнал Bluetooth: каждый AirTag излучает защищенный сигнал Bluetooth, который может быть обнаружен находящимися поблизости устройствами Apple (iPhone, iPad и т. д.) в сети Find My.
 
-*   Find My Network: When an AirTag comes within range of an Apple device in the Find My network, that device anonymously and securely relays the AirTag's location information to iCloud.
+* «Найти мою сеть». Когда AirTag попадает в зону действия устройства Apple в сети «Найти мою», это устройство анонимно и безопасно передает информацию о местоположении AirTag в iCloud.
 
-*   Location Tracking: You can then use the Find My app on your own Apple device to see the approximate location of your AirTag on a map.
+* Отслеживание местоположения: затем вы можете использовать приложение Find My на своем устройстве Apple, чтобы увидеть приблизительное местоположение вашего AirTag на карте.
 
-## Limitations
+## Ограничения
 
-Please note that AirTags rely on Bluetooth technology and the presence of Apple devices within the Find My network. If your AirTag is in an area with few Apple devices, its location may not be updated as frequently or accurately.
+Обратите внимание, что AirTags полагаются на технологию Bluetooth и присутствие устройств Apple в сети Find My. Если ваш AirTag находится в зоне с небольшим количеством устройств Apple, его местоположение может обновляться не так часто и точно.

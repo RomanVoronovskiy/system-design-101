@@ -1,6 +1,6 @@
 ---
-title: "Scaling Websites for Millions of Users"
-description: "Learn how to scale your website architecture to support millions of users."
+title: "Масштабирование веб-сайтов для миллионов пользователей"
+description: "Узнайте, как масштабировать архитектуру вашего веб-сайта для поддержки миллионов пользователей."
 image: "https://assets.bytebytego.com/diagrams/0322-scale-to-million.jpg"
 createdAt: "2024-02-07"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0322-scale-to-million.jpg)
 
-The diagram below illustrates the evolution of a simplified eCommerce website. It goes from a monolithic design on one single server, to a service-oriented/microservice architecture.
+Диаграмма ниже иллюстрирует эволюцию упрощенного веб-сайта электронной коммерции. Он идет от монолитной конструкции на одном сервере к сервис-ориентированной/микросервисной архитектуре.
 
-Suppose we have two services: inventory service (handles product descriptions and inventory management) and user service (handles user information, registration, login, etc.).
+Предположим, у нас есть две службы: служба инвентаризации (обрабатывает описания продуктов и управление запасами) и служба пользователей (обрабатывает информацию о пользователях, регистрацию, вход в систему и т. д.).
 
-## Step 1
+## Шаг 1
 
-With the growth of the user base, one single application server cannot handle the traffic anymore. We put the application server and the database server into two separate servers.
+С ростом базы пользователей один сервер приложений больше не может обрабатывать трафик. Мы разместили сервер приложений и сервер базы данных на двух отдельных серверах.
 
-## Step 2
+## Шаг 2
 
-The business continues to grow, and a single application server is no longer enough. So we deploy a cluster of application servers.
+Бизнес продолжает расти, и одного сервера приложений уже недостаточно. Итак, мы разворачиваем кластер серверов приложений.
 
-## Step 3
+## Шаг 3
 
-Now the incoming requests have to be routed to multiple application servers, how can we ensure each application server gets an even load? The load balancer handles this nicely.
+Теперь входящие запросы должны направляться на несколько серверов приложений. Как мы можем обеспечить равномерную нагрузку на каждый сервер приложений? Балансировщик нагрузки прекрасно с этим справляется.
 
-## Step 4
+## Шаг 4
 
-With the business continuing to grow, the database might become the bottleneck. To mitigate this, we separate reads and writes in a way that frequent read queries go to read replicas. With this setup, the throughput for the database writes can be greatly increased.
+Поскольку бизнес продолжает расти, база данных может стать узким местом. Чтобы смягчить это, мы разделяем операции чтения и записи таким образом, чтобы частые запросы на чтение передавались репликам чтения. При такой настройке пропускная способность записи в базу данных может быть значительно увеличена.
 
-## Step 5
+## Шаг 5
 
-Suppose the business continues to grow. One single database cannot handle the load on both the inventory table and user table. We have a few options:
+Предположим, бизнес продолжает расти. Одна база данных не может справиться с нагрузкой одновременно на таблицу инвентаризации и таблицу пользователей. У нас есть несколько вариантов:
 
-*   **Vertical partition.** Adding more power (CPU, RAM, etc.) to the database server. It has a hard limit.
-*   **Horizontal partition** by adding more database servers.
-*   Adding a caching layer to offload read requests.
+* **Вертикальный раздел.** Увеличение мощности (ЦП, ОЗУ и т. д.) на сервере базы данных. У него есть жесткий предел.
+* **Горизонтальный раздел** за счет добавления дополнительных серверов баз данных.
+* Добавление уровня кэширования для разгрузки запросов на чтение.
 
-## Step 6
+## Шаг 6
 
-Now we can modularize the functions into different services. The architecture becomes service-oriented / microservice.
+Теперь мы можем модульно объединить функции в различные сервисы. Архитектура становится сервис-ориентированной/микросервисной.

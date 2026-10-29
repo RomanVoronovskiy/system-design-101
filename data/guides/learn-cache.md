@@ -1,6 +1,6 @@
 ---
-title: "Learn Cache"
-description: "A visual guide to understanding caching systems and their key considerations."
+title: "Изучите кэш"
+description: "Визуальное руководство по пониманию систем кэширования и их ключевых особенностей."
 image: "https://assets.bytebytego.com/diagrams/0004-learn-cache.png"
 createdAt: "2024-03-15"
 draft: false
@@ -10,17 +10,16 @@ tags:
   - "Caching"
   - "System Design"
 ---
-
-Made a simple visual guide to help everyone understand the key considerations when designing or using caching systems.
+Создал простое визуальное руководство, которое поможет каждому понять ключевые моменты при проектировании или использовании систем кэширования.
 
 ![](https://assets.bytebytego.com/diagrams/0004-learn-cache.png)
 
-*   What is a cache
-*   Why do we need cache
-*   Where is cache used
-*   Cache deployment
-*   Distributed cache
-*   Cache replacement and invalidation
-*   Cache strategies
-*   Caching challenges
-*   And more.
+* Что такое кэш
+* Зачем нам нужен кеш
+* Где используется кеш
+* Развертывание кэша
+* Распределенный кеш
+* Замена и аннулирование кеша
+* Стратегии кэширования
+* Проблемы с кэшированием
+* И многое другое.

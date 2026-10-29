@@ -1,6 +1,6 @@
 ---
-title: "10 System Design Tradeoffs You Cannot Ignore"
-description: "Explore 10 crucial system design tradeoffs for robust architecture."
+title: "10 компромиссов при проектировании системы, которые нельзя игнорировать"
+description: "Изучите 10 важнейших компромиссов при проектировании системы для обеспечения надежной архитектуры."
 image: "https://assets.bytebytego.com/diagrams/0026-10-system-design-trade-offs-you-cannot-ignore.png"
 createdAt: "2024-03-03"
 draft: false
@@ -13,64 +13,64 @@ tags:
 
 ![System Design Tradeoffs](https://assets.bytebytego.com/diagrams/0026-10-system-design-trade-offs-you-cannot-ignore.png)
 
-If you don’t know trade-offs, you DON'T KNOW system design.
+Если вы не знаете компромиссов, вы НЕ ЗНАЕТЕ проектирование системы.
 
-## 1. Vertical vs Horizontal Scaling
+## 1. Вертикальное и горизонтальное масштабирование
 
-Vertical scaling is adding more resources (CPU, RAM) to an existing server.
+Вертикальное масштабирование — это добавление дополнительных ресурсов (ЦП, ОЗУ) к существующему серверу.
 
-Horizontal scaling means adding more servers to the pool.
+Горизонтальное масштабирование означает добавление в пул большего количества серверов.
 
-## 2. SQL vs NoSQL
+## 2. SQL против NoSQL
 
-SQL databases organize data into tables of rows and columns.
+Базы данных SQL организуют данные в таблицы строк и столбцов.
 
-NoSQL is ideal for applications that need a flexible schema.
+NoSQL идеально подходит для приложений, которым нужна гибкая схема.
 
-## 3. Batch vs Stream Processing
+## 3. Пакетная или потоковая обработка
 
-Batch processing involves collecting data and processing it all at once. For example, daily billing processes.
+Пакетная обработка предполагает сбор данных и их одновременную обработку. Например, ежедневные процессы выставления счетов.
 
-Stream processing processes data in real time. For example, fraud detection processes.
+Потоковая обработка обрабатывает данные в реальном времени. Например, процессы обнаружения мошенничества.
 
-## 4. Normalization vs Denormalization
+## 4. Нормализация и денормализация
 
-Normalization splits data into related tables to ensure that each piece of information is stored only once.
+Нормализация разбивает данные на связанные таблицы, чтобы гарантировать, что каждая часть информации сохраняется только один раз.
 
-Denormalization combines data into fewer tables for better query performance.
+Денормализация объединяет данные в меньшее количество таблиц для повышения производительности запросов.
 
-## 5. Consistency vs Availability
+## 5. Согласованность и доступность
 
-Consistency is the assurance of getting the most recent data every single time.
+Согласованность — это гарантия получения самых последних данных каждый раз.
 
-Availability is about ensuring that the system is always up and running, even if some parts are having problems.
+Доступность означает, что система всегда находится в рабочем состоянии, даже если в некоторых частях возникают проблемы.
 
-## 6. Strong vs Eventual Consistency
+## 6. Сильная и возможная согласованность
 
-Strong consistency is when data updates are immediately reflected.
+Сильная согласованность — это когда обновления данных отражаются немедленно.
 
-Eventual consistency is when data updates are delayed before being available across nodes.
+Окончательная согласованность — это когда обновления данных задерживаются, прежде чем они станут доступны на всех узлах.
 
-## 7. REST vs GraphQL
+## 7. REST против GraphQL
 
-With REST endpoints, you gather data by accessing multiple endpoints.
+Используя конечные точки REST, вы собираете данные, обращаясь к нескольким конечным точкам.
 
-With GraphQL, you get more efficient data fetching with specific queries but the design cost is higher.
+С GraphQL вы получаете более эффективную выборку данных по конкретным запросам, но стоимость проектирования выше.
 
-## 8. Stateful vs Stateless
+## 8. С сохранением состояния и без гражданства
 
-A stateful system remembers past interactions.
+Система с состоянием запоминает прошлые взаимодействия.
 
-A stateless system does not keep track of past interactions.
+Система без гражданства не отслеживает прошлые взаимодействия.
 
-## 9. Read-Through vs Write-Through Cache
+## 9. Кэш со сквозным чтением и кэш с записью
 
-A read-through cache loads data from the database in case of a cache miss.
+Кэш со сквозным чтением загружает данные из базы данных в случае промаха в кэше.
 
-A write-through cache simultaneously writes data updates to the cache and storage.
+Кэш со сквозной записью одновременно записывает обновления данных в кэш и хранилище.
 
-## 10. Sync vs Async Processing
+## 10. Синхронизация и асинхронная обработка
 
-In synchronous processing, tasks are performed one after another.
+При синхронной обработке задачи выполняются одна за другой.
 
-In asynchronous processing, tasks can run in the background. New tasks can be started without waiting for a new task.
+При асинхронной обработке задачи могут выполняться в фоновом режиме. Новые задачи можно запускать, не дожидаясь новой задачи.

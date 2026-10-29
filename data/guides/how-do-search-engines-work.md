@@ -1,6 +1,6 @@
 ---
-title: "How Do Search Engines Work?"
-description: "Explore the inner workings of search engines: crawling, indexing, and ranking."
+title: "Как работают поисковые системы?"
+description: "Изучите внутреннюю работу поисковых систем: сканирование, индексирование и ранжирование."
 image: "https://assets.bytebytego.com/diagrams/0103-how-do-search-engines-work.png"
 createdAt: "2024-03-16"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![How Do Search Engines Work?](https://assets.bytebytego.com/diagrams/0103-how-do-search-engines-work.png)
 
-Search engines work through a combination of three core processes:
+Поисковые системы работают посредством комбинации трех основных процессов:
 
-## Crawling
+## Ползание
 
-Search engines use automated programs called "crawlers" to discover and download web pages from the internet. These crawlers start with a list of known web pages (seeds) and follow links on those pages to find new ones, creating a vast network of interconnected content.
+Поисковые системы используют автоматизированные программы, называемые «сканерами», для обнаружения и загрузки веб-страниц из Интернета. Эти сканеры начинают со списка известных веб-страниц (сидов) и переходят по ссылкам на этих страницах, чтобы найти новые, создавая обширную сеть взаимосвязанного контента.
 
-## Indexing
+## Индексирование
 
-The information collected by the crawlers is then analyzed and organized into a massive database called an index. This process involves extracting key elements such as keywords, content type, freshness, language, and other classification signals to understand what each page is about and how relevant it might be to different search queries.
+Информация, собранная сканерами, затем анализируется и организуется в огромную базу данных, называемую индексом. Этот процесс включает в себя извлечение ключевых элементов, таких как ключевые слова, тип контента, свежесть, язык и другие сигналы классификации, чтобы понять, о чем каждая страница и насколько она может быть релевантна различным поисковым запросам.
 
-## Serving Search Results
+## Показ результатов поиска
 
-When a user enters a query, the search engine's algorithm sifts through the index to identify the most relevant and helpful pages. Here's a breakdown of how it works:
+Когда пользователь вводит запрос, алгоритм поисковой системы анализирует индекс, чтобы определить наиболее релевантные и полезные страницы. Вот описание того, как это работает:
 
-*   **Query Analysis:** The search engine analyzes the user's query to understand its meaning and intent. This includes identifying keywords, recognizing synonyms, and interpreting context.
-*   **Retrieval:** The search engine retrieves relevant pages from its vast index based on the query analysis. This involves matching the query's keywords with the indexed content of web pages.
-*   **Ranking:** The retrieved pages are then ranked based on their relevance and other factors.
+* **Анализ запроса.** Поисковая система анализирует запрос пользователя, чтобы понять его значение и цель. Это включает в себя определение ключевых слов, распознавание синонимов и интерпретацию контекста.
+* **Поиск.** Поисковая система извлекает релевантные страницы из своего обширного индекса на основе анализа запросов. Это предполагает сопоставление ключевых слов запроса с проиндексированным содержимым веб-страниц.
+* **Рейтинг:** Полученные страницы затем ранжируются на основе их релевантности и других факторов.

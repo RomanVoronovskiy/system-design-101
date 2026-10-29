@@ -1,6 +1,6 @@
 ---
-title: "How Redis Architecture Evolved"
-description: "Explore the evolution of Redis architecture, from standalone to cluster."
+title: "Как развивалась архитектура Redis"
+description: "Изучите эволюцию архитектуры Redis: от автономной до кластерной."
 image: "https://assets.bytebytego.com/diagrams/0223-how-redis-architecture-evolve.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![Redis Architecture Evolution](https://assets.bytebytego.com/diagrams/0223-how-redis-architecture-evolve.png)
 
-Redis is a popular in-memory cache. How did it evolve to the architecture it is today?
+Redis — популярный кэш в памяти. Как он превратился в архитектуру, которой является сегодня?
 
-## 2010 - Standalone Redis
+## 2010 — Автономный Redis
 
-When Redis 1.0 was released in 2010, the architecture was quite simple. It is usually used as a cache to the business application.
+Когда в 2010 году был выпущен Redis 1.0, архитектура была довольно простой. Обычно он используется в качестве кэша бизнес-приложения.
 
-However, Redis stores data in memory. When we restart Redis, we will lose all the data and the traffic directly hits the database.
+Однако Redis хранит данные в памяти. Когда мы перезапустим Redis, мы потеряем все данные, и трафик напрямую попадет в базу данных.
 
-## 2013 - Persistence
+##2013 - Настойчивость
 
-When Redis 2.8 was released in 2013, it addressed the previous restrictions. Redis introduced RDB in-memory snapshots to persist data. It also supports AOF (Append-Only-File), where each write command is written to an AOF file.
+Когда Redis 2.8 был выпущен в 2013 году, он устранил предыдущие ограничения. Redis представил моментальные снимки RDB в памяти для сохранения данных. Он также поддерживает AOF (Append-Only-File), где каждая команда записи записывается в файл AOF.
 
-## 2013 - Replication
+##2013 - Репликация
 
-Redis 2.8 also added replication to increase availability. The primary instance handles real-time read and write requests, while replica synchronizes the primary's data.
+В Redis 2.8 также добавлена ​​репликация для повышения доступности. Первичный экземпляр обрабатывает запросы на чтение и запись в реальном времени, а реплика синхронизирует данные первичного экземпляра.
 
-## 2013 - Sentinel
+##2013 - Страж
 
-Redis 2.8 introduced Sentinel to monitor the Redis instances in real time. is a system designed to help managing Redis instances. It performs the following four tasks: monitoring, notification, automatic failover and configuration provider.
+В Redis 2.8 появился Sentinel для мониторинга экземпляров Redis в режиме реального времени. — это система, предназначенная для управления экземплярами Redis. Он выполняет следующие четыре задачи: мониторинг, уведомление, автоматическое переключение при сбое и поставщик конфигурации.
 
-## 2015 - Cluster
+##2015 - Кластер
 
-In 2015, Redis 3.0 was released. It added Redis clusters.
+В 2015 году был выпущен Redis 3.0. Он добавил кластеры Redis.
 
-A Redis cluster is a distributed database solution that manages data through sharding. The data is divided into 16384 slots, and each node is responsible for a portion of the slot.
+Кластер Redis — это решение для распределенной базы данных, которое управляет данными посредством сегментирования. Данные разделены на 16384 слота, и каждый узел отвечает за часть слота.
 
-## Looking Ahead
+## Заглядывая в будущее
 
-Redis is popular because of its high performance and rich data structures that dramatically reduce the complexity of developing a business application.
+Redis популярен благодаря своей высокой производительности и богатым структурам данных, которые значительно снижают сложность разработки бизнес-приложений.
 
-In 2017, Redis 5.0 was released, adding the stream data type.
+В 2017 году был выпущен Redis 5.0, в который добавлен тип данных потока.
 
-In 2020, Redis 6.0 was released, introducing the multi-threaded I/O in the network module. Redis model is divided into the network module and the main processing module. The Redis developers the network module tends to become a bottleneck in the system.
+В 2020 году был выпущен Redis 6.0, в котором появился многопоточный ввод-вывод в сетевом модуле. Модель Redis разделена на сетевой модуль и основной модуль обработки. Разработчики Redis считают, что сетевой модуль становится узким местом в системе.

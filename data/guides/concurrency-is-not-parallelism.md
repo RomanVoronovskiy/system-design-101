@@ -1,6 +1,6 @@
 ---
-title: "Concurrency vs Parallelism"
-description: "Understand the difference between concurrency and parallelism in system design."
+title: "Параллелизм против параллелизма"
+description: "Поймите разницу между параллелизмом и параллелизмом при проектировании систем."
 image: "https://assets.bytebytego.com/diagrams/0150-concurrency-is-not-parallelism.png"
 createdAt: "2024-03-11"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0150-concurrency-is-not-parallelism.png)
 
-In system design, it is important to understand the difference between concurrency and parallelism.
+При проектировании системы важно понимать разницу между параллелизмом и параллелизмом.
 
-As Rob Pyke(one of the creators of GoLang) stated:“ Concurrency is about **dealing with** lots of things at once. Parallelism is about **doing** lots of things at once." This distinction emphasizes that concurrency is more about the **design** of a program, while parallelism is about the **execution**.
+Как заявил Роб Пайк (один из создателей GoLang): «Параллелизм — это **работа** с множеством вещей одновременно. Параллелизм — это **делание** множества вещей одновременно». Это различие подчеркивает, что параллелизм больше связан с **проектированием** программы, а параллелизм – с **выполнением**.
 
-Concurrency is about dealing with multiple things at once. It involves structuring a program to handle multiple tasks simultaneously, where the tasks can start, run, and complete in overlapping time periods, but not necessarily at the same instant.
+Параллелизм предполагает работу с несколькими вещами одновременно. Он включает в себя структурирование программы для одновременного выполнения нескольких задач, при этом задачи могут запускаться, выполняться и завершаться в перекрывающиеся периоды времени, но не обязательно в один и тот же момент.
 
-Concurrency is about the composition of independently executing processes and describes a program's ability to manage multiple tasks by making progress on them without necessarily completing one before it starts another.
+Параллелизм представляет собой композицию независимо выполняющихся процессов и описывает способность программы управлять несколькими задачами, добиваясь прогресса в их выполнении, без обязательного завершения одной перед запуском другой.
 
-Parallelism, on the other hand, refers to the simultaneous execution of multiple computations. It is the technique of running two or more tasks or computations at the same time, utilizing multiple processors or cores within a computer to perform several operations concurrently. Parallelism requires hardware with multiple processing units, and its primary goal is to increase the throughput and computational speed of a system.
+С другой стороны, параллелизм означает одновременное выполнение нескольких вычислений. Это метод одновременного выполнения двух или более задач или вычислений с использованием нескольких процессоров или ядер компьютера для одновременного выполнения нескольких операций. Для параллелизма требуется оборудование с несколькими процессорами, и его основная цель — увеличить пропускную способность и скорость вычислений системы.
 
-In practical terms, concurrency enables a program to remain responsive to input, perform background tasks, and handle multiple operations in a seemingly simultaneous manner, even on a single-core processor. It's particularly useful in I/O-bound and high-latency operations where programs need to wait for external events, such as file, network, or user interactions.
+С практической точки зрения параллелизм позволяет программе реагировать на вводимые данные, выполнять фоновые задачи и обрабатывать несколько операций, казалось бы, одновременно, даже на одноядерном процессоре. Это особенно полезно в операциях, связанных с вводом-выводом и высокой задержкой, когда программам необходимо ожидать внешних событий, таких как файлы, сеть или взаимодействия с пользователем.
 
-Parallelism, with its ability to perform multiple operations at the same time, is crucial in CPU-bound tasks where computational speed and throughput are the bottlenecks. Applications that require heavy mathematical computations, data analysis, image processing, and real-time processing can significantly benefit from parallel execution.
+Параллелизм с его способностью выполнять несколько операций одновременно имеет решающее значение в задачах, связанных с ЦП, где скорость вычислений и пропускная способность являются узкими местами. Приложения, требующие тяжелых математических вычислений, анализа данных, обработки изображений и обработки в реальном времени, могут значительно выиграть от параллельного выполнения.

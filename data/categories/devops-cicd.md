@@ -1,11 +1,10 @@
 ---
-title: 'DevOps and CI/CD'
-description: 'Learn all about DevOps, CI/CD, and how they can help you deliver software faster and more reliably. Understand the best practices and tools to implement DevOps and CI/CD in your organization.'
+title: "DevOps и CI/CD"
+description: "Узнайте все о DevOps, CI/CD и о том, как они могут помочь вам быстрее и надежнее доставлять программное обеспечение. Изучите лучшие практики и инструменты для внедрения DevOps и CI/CD в вашей организации."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/refresh.png'
 sort: 200
 ---
+DevOps — это набор практик, сочетающий разработку программного обеспечения (Dev) и ИТ-операции (Ops). Его цель — сократить жизненный цикл разработки систем и обеспечить непрерывную поставку программного обеспечения высокого качества. DevOps дополняет гибкую разработку программного обеспечения; некоторые аспекты DevOps взяты из методологии Agile.
 
-DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology.
-
-CI/CD stands for Continuous Integration and Continuous Delivery. CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.
+CI/CD означает непрерывную интеграцию и непрерывную доставку. CI/CD — это метод частой доставки приложений клиентам за счет автоматизации этапов разработки приложений. Основными концепциями CI/CD являются непрерывная интеграция, непрерывная доставка и непрерывное развертывание.

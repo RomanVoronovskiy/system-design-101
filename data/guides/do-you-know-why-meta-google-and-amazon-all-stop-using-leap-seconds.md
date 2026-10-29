@@ -1,6 +1,6 @@
 ---
-title: "Why Meta, Google, and Amazon Stop Using Leap Seconds"
-description: "Explore why tech giants are moving away from leap seconds."
+title: "Почему Meta, Google и Amazon перестают использовать високосные секунды"
+description: "Узнайте, почему технологические гиганты отказываются от дополнительных секунд."
 image: "https://assets.bytebytego.com/diagrams/0363-do-you-know-why-meta-google-and-amazon-all-stop-using-leap-seconds.jpeg"
 createdAt: "2024-02-04"
 draft: false
@@ -13,6 +13,6 @@ tags:
 
 ![Leap Seconds](https://assets.bytebytego.com/diagrams/0363-do-you-know-why-meta-google-and-amazon-all-stop-using-leap-seconds.jpeg)
 
-Every few years, there is a special phenomenon that the second after “23:59:59” is not “00:00:00” but “23:59:60”. It is called leap second, which could easily cause time-processing bugs if not handled carefully.
+Каждые несколько лет происходит особый феномен: второе после «23:59:59» идет не «00:00:00», а «23:59:60». Это называется дополнительной секундой, которая может легко вызвать ошибки обработки времени, если с ней не обращаться осторожно.
 
-Do we always need to handle leap seconds? It depends on which time representation is used. Commonly used time representations include UTC, GMT, TAI, Unix Timestamp, Epoc time, TrueTime, and GPS time.
+Всегда ли нам нужно обрабатывать дополнительные секунды? Это зависит от того, какое представление времени используется. Обычно используемые представления времени включают UTC, GMT, TAI, временную метку Unix, время Epoc, TrueTime и время GPS.

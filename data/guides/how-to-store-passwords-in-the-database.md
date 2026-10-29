@@ -1,6 +1,6 @@
 ---
-title: "Storing Passwords Safely: A Comprehensive Guide"
-description: "Learn how to securely store and validate passwords in your database."
+title: "Безопасное хранение паролей: подробное руководство"
+description: "Узнайте, как безопасно хранить и проверять пароли в вашей базе данных."
 image: "https://assets.bytebytego.com/diagrams/0321-salt.png"
 createdAt: "2024-02-12"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0321-salt.png)
 
-## Things NOT to do
+## Чего НЕ следует делать
 
-*   Storing passwords in plain text is not a good idea because anyone with internal access can see them.
+* Хранить пароли в виде обычного текста — не лучшая идея, поскольку их может увидеть любой, у кого есть внутренний доступ.
 
-*   Storing password hashes directly is not sufficient because it is prone to precomputation attacks, such as rainbow tables.
+* Непосредственного хранения хэшей паролей недостаточно, поскольку они подвержены атакам с предварительным вычислением, таким как радужные таблицы.
 
-*   To mitigate precomputation attacks, we salt the passwords.
+* Чтобы смягчить атаки с предварительным вычислением, мы солим пароли.
 
-## What is salt?
+## Что такое соль?
 
-According to OWASP guidelines, “a salt is a unique, randomly generated string that is added to each password as part of the hashing process”.
+Согласно рекомендациям OWASP, «соль — это уникальная, случайно сгенерированная строка, которая добавляется к каждому паролю в рамках процесса хеширования».
 
-## How to store a password and salt?
+## Как сохранить пароль и соль?
 
-1.  A salt is not meant to be secret and it can be stored in plain text in the database. It is used to ensure the hash result is unique to each password.
+1. Соль не должна быть секретной и может храниться в базе данных в виде обычного текста. Он используется для обеспечения уникальности результата хеширования для каждого пароля.
 
-2.  The password can be stored in the database using the following format: 𝘩𝘢𝘴𝘩( 𝘱𝘢𝘴𝘴𝘸𝘰𝘳𝘥 + 𝘴𝘢𝘭𝘵).
+2. Пароль может храниться в базе данных в следующем формате: 𝘩𝘢𝘴𝘩( 𝘱𝘢𝘴𝘴𝘸𝘰𝘳𝘥 + 𝘴𝘢𝘭𝘵).
 
-## How to validate a password?
+## Как проверить пароль?
 
-To validate a password, it can go through the following process:
+Чтобы проверить пароль, он может пройти следующий процесс:
 
-1.  A client enters the password.
+1. Клиент вводит пароль.
 
-2.  The system fetches the corresponding salt from the database.
+2. Система извлекает соответствующую соль из базы данных.
 
-3.  The system appends the salt to the password and hashes it. Let’s call the hashed value H1.
+3. Система добавляет соль к паролю и хэширует его. Назовем хешированное значение H1.
 
-4.  The system compares H1 and H2, where H2 is the hash stored in the database. If they are the same, the password is valid.
+4. Система сравнивает H1 и H2, где H2 — хеш, хранящийся в базе данных. Если они одинаковы, пароль действителен.

@@ -1,6 +1,6 @@
 ---
-title: "Handling Hotspot Accounts"
-description: "Learn how to handle hotspot accounts in payment systems effectively."
+title: "Работа с учетными записями точек доступа"
+description: "Узнайте, как эффективно управлять счетами точек доступа в платежных системах."
 image: "https://assets.bytebytego.com/diagrams/0212-hotspot-accounts.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0212-hotspot-accounts.png)
 
-Big accounts, such as Nike, Procter & Gamble & Nintendo, often cause hotspot issues for the payment system.
+Крупные аккаунты, такие как Nike, Procter & Gamble и Nintendo, часто вызывают проблемы с точкой доступа для платежной системы.
 
-A hotspot payment account is an account that has a large number of concurrent operations on it.
+Платежный счет точки доступа — это счет, на котором выполняется большое количество одновременных операций.
 
-For example, when merchant A starts a promotion on Amazon Prime day, it receives many concurrent purchasing orders. In this case, the merchant’s account in the database becomes a hotspot account due to frequent updates.
+Например, когда продавец А запускает акцию в день Amazon Prime, он получает множество одновременных заказов на покупку. В этом случае учетная запись продавца в базе данных становится учетной записью точки доступа из-за частых обновлений.
 
-In normal operations, we put a row lock on the merchant’s balance when it gets updated. However, this locking mechanism leads to low throughput and becomes a system bottleneck.
+В обычных операциях мы блокируем строку баланса продавца при его обновлении. Однако этот механизм блокировки приводит к низкой пропускной способности и становится узким местом системы.
 
-The diagram above shows several optimizations.
+На диаграмме выше показано несколько оптимизаций.
 
-## Optimizations
+## Оптимизации
 
-*   **Rate limit**
+* **Ограничение скорости**
 
-    We can limit the number of requests within a certain period. The remaining requests will be rejected or retried at a later time. It is a simple way to increase the system’s responsiveness for some users, but this can lead to a bad user experience.
+Мы можем ограничить количество запросов в течение определенного периода. Остальные запросы будут отклонены или повторены позже. Это простой способ повысить скорость реагирования системы для некоторых пользователей, но это может привести к ухудшению пользовательского опыта.
 
-*   **Split the balance account into sub-accounts**
+* **Разделить баланс счета на субсчета**
 
-    We can set up sub-accounts for the merchant’s account. In this way, one update request only locks one sub-account, and the rest sub-accounts are still available.
+Мы можем настроить субсчета для учетной записи продавца. Таким образом, один запрос на обновление блокирует только одну суб-учетную запись, а остальные суб-учетные записи по-прежнему доступны.
 
-*   **Use cache to update balance first**
+* **Используйте кеш для обновления баланса в первую очередь**
 
-    We can set up a caching layer to update the merchant’s balance. The detailed statements and balances are updated in the database later asynchronously. The in-memory cache can deal with a much higher throughput than the database.
+Мы можем настроить уровень кэширования для обновления баланса продавца. Подробные отчеты и балансы позднее обновляются в базе данных асинхронно. Кэш в памяти может иметь гораздо более высокую пропускную способность, чем база данных.

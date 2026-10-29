@@ -1,6 +1,6 @@
 ---
-title: "Consistent Hashing Explained"
-description: "Explore consistent hashing: its benefits, and real-world applications."
+title: "Объяснение последовательного хеширования"
+description: "Узнайте о последовательном хешировании: его преимуществах и реальных приложениях."
 image: "https://assets.bytebytego.com/diagrams/0151-consistent-hashing.png"
 createdAt: "2024-03-07"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0151-consistent-hashing.png)
 
-## Algorithm 1: Consistent Hashing
+## Алгоритм 1: последовательное хеширование
 
-What do Amazon DynamoDB, Apache Cassandra, Discord, and Akamai CDN have in common?
+Что общего между Amazon DynamoDB, Apache Cassandra, Discord и Akamai CDN?
 
-They all use consistent hashing. Let’s dive right in.
+Все они используют последовательное хеширование. Давайте сразу погрузимся.
 
-## What’s the issue with simple hashing?
+## В чем проблема с простым хешированием?
 
-In a large-scale distributed system, data does not fit on a single server. They are “distributed” across many machines. This is called horizontal scaling.
+В крупномасштабной распределенной системе данные не помещаются на одном сервере. Они «распределены» по многим машинам. Это называется горизонтальным масштабированием.
 
-To build such a system with predictable performance, it is important to distribute the data evenly across those servers.
+Чтобы построить такую ​​систему с предсказуемой производительностью, важно равномерно распределить данные по этим серверам.
 
-Simple hashing: serverIndex = hash(key) % N, where N is the size of the server pool
+Простое хеширование: serverIndex = hash(key) % N, где N — размер пула серверов.
 
-This approach works well when the size of the cluster is fixed, and the data distribution is even. But when new servers get added to meet new demand, or when existing servers get removed, it triggers a storm of misses and a lot of objects to be moved.
+Этот подход хорошо работает, когда размер кластера фиксирован и данные распределяются равномерно. Но когда для удовлетворения нового спроса добавляются новые серверы или удаляются существующие серверы, это вызывает шквал промахов и необходимость перемещения множества объектов.
 
-## Consistent hashing
+## Согласованное хеширование
 
-Consistent hashing is an effective technique to mitigate this issue.
+Согласованное хеширование — эффективный метод решения этой проблемы.
 
-The goal of consistent hashing is simple. We want almost all objects to stay assigned to the same server even as the number of servers changes.
+Цель последовательного хеширования проста. Мы хотим, чтобы почти все объекты оставались закрепленными за одним и тем же сервером, даже если количество серверов меняется.
 
-As shown in the diagram, using a hash function, we hash each server by its name or IP address, and place the server onto the ring. Next, we hash each object by its key with the same hashing function.
+Как показано на схеме, с помощью хэш-функции мы хэшируем каждый сервер по его имени или IP-адресу и помещаем сервер в кольцо. Далее мы хэшируем каждый объект по его ключу с той же функцией хеширования.
 
-To locate the server for a particular object, we go clockwise from the location of the object key on the ring until a server is found. Continue with our example, key 0 is on server 0, key 1 is on server 1.
+Чтобы найти сервер для конкретного объекта, мы идем по часовой стрелке от места расположения ключа объекта на кольце до тех пор, пока не будет найден сервер. Продолжим наш пример: ключ 0 находится на сервере 0, ключ 1 — на сервере 1.
 
-Now let’s take a look at what happens when we add a server.
+Теперь давайте посмотрим, что происходит, когда мы добавляем сервер.
 
-Here we insert a new server s4 to the left of s0 on the ring. Note that only k0 needs to be moved from s0 to s4. This is because s4 is the first server k0 encounters by going clockwise from k0’s position on the ring. Keys k1, k2, and k3 are not affected.
+Здесь мы вставляем новый сервер s4 слева от s0 на кольце. Обратите внимание, что нужно переместить только k0 из s0 в s4. Это связано с тем, что s4 — первый сервер, с которым сталкивается k0, идя по часовой стрелке от позиции k0 на кольце. Клавиши k1, k2 и k3 не затрагиваются.
 
-## How consistent hashing is used in the real world
+## Как последовательное хеширование используется в реальном мире
 
-*   **Amazon DynamoDB and Apache Cassandra:** minimize data movement during rebalancing
+* **Amazon DynamoDB и Apache Cassandra:** минимизируйте перемещение данных во время ребалансировки.
 
-*   **Content delivery networks like Akamai:** distribute web contents evenly among the edge servers
+* **Сети доставки контента, такие как Akamai:** равномерно распределяют веб-контент между пограничными серверами.
 
-*   **Load balancers like Google Network Load Balancer:** distribute persistent connections evenly across backend servers
+* **Балансировщики нагрузки, такие как Google Network Load Balancer:** равномерно распределяют постоянные соединения между внутренними серверами.

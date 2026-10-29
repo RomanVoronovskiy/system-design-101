@@ -1,6 +1,6 @@
 ---
-title: "How to Learn Elasticsearch"
-description: "Learn about Elasticsearch features, use cases, and core data structures."
+title: "Как изучить Elasticsearch"
+description: "Узнайте о функциях Elasticsearch, вариантах использования и основных структурах данных."
 image: "https://assets.bytebytego.com/diagrams/0182-elastic-search.jpeg"
 createdAt: "2024-03-08"
 draft: false
@@ -13,21 +13,21 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0182-elastic-search.jpeg)
 
-Based on the Lucene library, Elasticsearch provides search capabilities. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. The diagram above shows the outline.
+Основанный на библиотеке Lucene Elasticsearch предоставляет возможности поиска. Он предоставляет распределенную, многоарендную полнотекстовую поисковую систему с веб-интерфейсом HTTP и документами JSON без схемы. На схеме выше показан контур.
 
-## Features of ElasticSearch:
+## Возможности ElasticSearch:
 
-* Real-time full-text search
-* Analytics engine
-* Distributed Lucene
+* Полнотекстовый поиск в реальном времени.
+* Аналитический движок
+* Распределенный люсен
 
-## ElasticSearch use cases:
+## Варианты использования ElasticSearch:
 
-* Product search on an eCommerce website
-* Log analysis
-* Auto completer, spell checker
-* Business intelligence analysis
-* Full-text search on Wikipedia
-* Full-text search on StackOverflow
+* Поиск товаров на сайте электронной коммерции.
+* Анализ журналов
+* Автозаполнение, проверка орфографии
+* Анализ бизнес-аналитики
+* Полнотекстовый поиск в Википедии.
+* Полнотекстовый поиск на StackOverflow.
 
-The core of ElasticSearch lies in the data structure and indexing. It is important to understand how ES builds the **term dictionary** using **LSM Tree** (Log-Strucutured Merge Tree).
+Ядро ElasticSearch лежит в структуре данных и индексировании. Важно понимать, как ES создает **словарь терминов** с использованием **LSM-дерева** (логарифмически структурированного дерева слияния).

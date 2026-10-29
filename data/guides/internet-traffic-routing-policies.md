@@ -1,6 +1,6 @@
 ---
-title: 'Internet Traffic Routing Policies'
-description: 'Explore internet traffic routing policies for efficient network management.'
+title: "Политики маршрутизации интернет-трафика"
+description: "Изучите политики маршрутизации интернет-трафика для эффективного управления сетью."
 image: 'https://assets.bytebytego.com/diagrams/0106-internet-traffic-routing-policies.png'
 createdAt: '2024-01-31'
 draft: false
@@ -13,11 +13,11 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0106-internet-traffic-routing-policies.png)
 
-Internet traffic routing policies (DNS policies) play a crucial role in efficiently managing and directing network traffic. Let's discuss the different types of policies.
+Политики маршрутизации интернет-трафика (политики DNS) играют решающую роль в эффективном управлении и направлении сетевого трафика. Давайте обсудим различные типы политики.
 
-*   **Simple:** Directs all traffic to a single endpoint based on a standard DNS query without any special conditions or requirements.
-*   **Failover:** Routes traffic to a primary endpoint but automatically switches to a secondary endpoint if the primary is unavailable.
-*   **Geolocation:** Distributes traffic based on the geographic location of the requester, aiming to provide localized content or services.
-*   **Latency:** Directs traffic to the endpoint that provides the lowest latency for the requester, enhancing user experience with faster response times.
-*   **Multivalue Answer:** Responds to DNS queries with multiple IP addresses, allowing the client to select an endpoint. However, it should not be considered a replacement for a load balancer.
-*   **Weighted Routing Policy:** Distributes traffic across multiple endpoints with assigned weights, allowing for proportional traffic distribution based on these weights.
+* **Простота:** направляет весь трафик к одной конечной точке на основе стандартного DNS-запроса без каких-либо особых условий или требований.
+* **Отработка отказа:** направляет трафик к основной конечной точке, но автоматически переключается на дополнительную конечную точку, если основная недоступна.
+* **Геолокация.** Распределяет трафик в зависимости от географического местоположения отправителя запроса с целью предоставления локализованного контента или услуг.
+* **Задержка:** направляет трафик к конечной точке, которая обеспечивает минимальную задержку для запрашивающей стороны, повышая удобство работы пользователя за счет более быстрого ответа.
+* **Многозначный ответ:** отвечает на DNS-запросы с несколькими IP-адресами, позволяя клиенту выбрать конечную точку. Однако его не следует рассматривать как замену балансировщика нагрузки.
+* **Политика взвешенной маршрутизации.** Распределяет трафик между несколькими конечными точками с назначенными весами, что обеспечивает пропорциональное распределение трафика на основе этих весов.

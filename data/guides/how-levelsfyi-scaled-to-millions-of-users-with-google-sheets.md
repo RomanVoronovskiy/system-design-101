@@ -1,6 +1,6 @@
 ---
-title: 'How Levelsfyi Scaled to Millions of Users with Google Sheets'
-description: 'Learn how Levelsfyi scaled to millions of users using Google Sheets.'
+title: "Как Levelsfyi охватил миллионы пользователей с помощью Google Sheets"
+description: "Узнайте, как Levelsfyi удалось охватить миллионы пользователей с помощью Google Таблиц."
 image: 'https://assets.bytebytego.com/diagrams/0255-levels-fyi.jpg'
 createdAt: '2024-02-17'
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0255-levels-fyi.jpg)
 
-I read something unbelievable today: Levelsfyi scaled to millions of users using Google Sheets as a backend!
+Сегодня я прочитал нечто невероятное: Levelsfyi масштабируется до миллионов пользователей, использующих Google Таблицы в качестве серверной части!
 
-They started off on Google Forms and Sheets, which helped them reach millions of monthly active users before switching to a proper backend.
+Они начали с Google Forms и Sheets, что помогло им охватить миллионы активных пользователей в месяц, прежде чем переключиться на полноценный бэкэнд.
 
-To be fair, they do use serverless computing, but using Google Sheets as the database is an interesting choice.
+Честно говоря, они используют бессерверные вычисления, но использование Google Таблиц в качестве базы данных — интересный выбор.
 
-Why do they use Google Sheets as a backend? Using their own words: "It seems like a pretty counterintuitive idea for a site with our traffic volume to not have a backend or any fancy infrastructure, but our philosophy to building products has always been, start simple and iterate. This allows us to move fast and focus on what’s important".
+Почему они используют Google Таблицы в качестве серверной части? Говоря их собственными словами: «Кажется, это довольно нелогичная идея для сайта с нашим объемом трафика не иметь серверной части или какой-либо сложной инфраструктуры, но наша философия создания продуктов всегда заключалась в том, чтобы начинать с простого и повторять. Это позволяет нам двигаться быстро и сосредоточиться на том, что важно».

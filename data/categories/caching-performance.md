@@ -1,9 +1,8 @@
 ---
-title: 'Caching & Performance'
-description: 'Learn to improve the performance of your system by caching data with these visual guides.'
+title: "Кэширование и производительность"
+description: "Узнайте, как повысить производительность вашей системы путем кэширования данных с помощью этих визуальных руководств."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/order.png'
 sort: 150
 ---
-
-Caching is a technique that stores a copy of a given resource and serves it back when requested. When a web server renders a web page, it stores the result of the page rendering in a cache. The next time the web page is requested, the server serves the cached page without re-rendering the page. This process reduces the time needed to generate the web page and reduces the load on the server.
+Кэширование — это метод, который сохраняет копию данного ресурса и возвращает ее по запросу. Когда веб-сервер отображает веб-страницу, он сохраняет результат рендеринга страницы в кеше. При следующем запросе веб-страницы сервер обслуживает кэшированную страницу без повторного рендеринга страницы. Этот процесс сокращает время, необходимое для создания веб-страницы, и снижает нагрузку на сервер.

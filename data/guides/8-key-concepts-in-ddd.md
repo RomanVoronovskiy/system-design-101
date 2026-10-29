@@ -1,6 +1,6 @@
 ---
-title: "8 Key Concepts in Domain-Driven Design"
-description: "Explore 8 key concepts in Domain-Driven Design for better software."
+title: "8 ключевых концепций предметно-ориентированного проектирования"
+description: "Изучите 8 ключевых концепций предметно-ориентированного проектирования для улучшения программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0011-8-key-concepts-in-ddd.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0011-8-key-concepts-in-ddd.png)
 
-Domain-driven design advocates driving the design of software through domain modeling.
+Сторонники предметно-ориентированного проектирования продвигают разработку программного обеспечения посредством моделирования предметной области.
 
-Unified language is one of the key concepts of domain-driven design. A domain model is a bridge across the business domains.
+Унифицированный язык — одна из ключевых концепций предметно-ориентированного проектирования. Модель предметной области — это мост между сферами бизнеса.
 
-## Domain Driven Design
+## Дизайн, ориентированный на предметную область
 
-Domain-driven design advocates driving the design of software through domain modeling.
+Сторонники предметно-ориентированного проектирования продвигают разработку программного обеспечения посредством моделирования предметной области.
 
-Unified language is one of the key concepts of domain-driven design. A domain model is a bridge across the business domains.
+Унифицированный язык — одна из ключевых концепций предметно-ориентированного проектирования. Модель предметной области — это мост между сферами бизнеса.
 
-## Business Entities
+## Субъекты предпринимательской деятельности
 
-The use of models can assist in expressing business concepts and knowledge and in guiding further development of software, such as databases, APIs, etc.
+Использование моделей может помочь в выражении бизнес-концепций и знаний, а также в руководстве дальнейшей разработкой программного обеспечения, такого как базы данных, API и т. д.
 
-## Model Boundaries
+## Границы модели
 
-Loose boundaries among sets of domain models are used to model business correlations.
+Слабые границы между наборами моделей предметной области используются для моделирования бизнес-корреляций.
 
-## Aggregation
+## Агрегация
 
-An Aggregate is a cluster of related objects (entities and value objects) that are treated as a single unit for the purpose of data changes.
+Агрегат — это кластер связанных объектов (сущностей и объектов-значений), которые рассматриваются как единое целое с целью изменения данных.
 
-## Entities vs. Value Objects
+## Сущности и объекты-значения
 
-In addition to aggregate roots and entities, there are some models that look like disposable, they don't have their own ID to identify them, but are more as part of some entity that expresses a collection of several fields.
+Помимо совокупных корней и сущностей, существуют некоторые модели, которые выглядят как одноразовые, у них нет собственного идентификатора для их идентификации, а они скорее являются частью некоторой сущности, выражающей коллекцию из нескольких полей.
 
-## Operational Modeling
+## Операционное моделирование
 
-In domain-driven design, in order to manipulate these models, there are a number of objects that act as "operators".
+В предметно-ориентированном проектировании для управления этими моделями существует ряд объектов, которые действуют как «операторы».
 
-## Layering the architecture
+## Многоуровневая архитектура
 
-In order to better organize the various objects in a project, we need to simplify the complexity of complex projects by layering them like a computer network.
+Чтобы лучше организовать различные объекты в проекте, нам необходимо упростить сложные проекты, разложив их по слоям, как в компьютерной сети.
 
-## Build the domain model
+## Построение модели предметной области
 
-Many methods have been invented to extract domain models from business knowledge.
+Было изобретено множество методов извлечения моделей предметной области из бизнес-знаний.

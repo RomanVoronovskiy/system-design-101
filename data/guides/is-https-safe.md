@@ -1,6 +1,6 @@
 ---
-title: "Is HTTPS Safe?"
-description: "Explore HTTPS security, vulnerabilities, and how tools capture packets."
+title: "Безопасен ли HTTPS?"
+description: "Узнайте о безопасности HTTPS, уязвимостях и способах захвата пакетов инструментами."
 image: "https://assets.bytebytego.com/diagrams/0238-is-https-reliable.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0238-is-https-reliable.png)
 
-If HTTPS is safe, how can tools like Fiddler capture network packets sent via HTTPS?
+Если HTTPS безопасен, как такие инструменты, как Fiddler, могут перехватывать сетевые пакеты, отправленные через HTTPS?
 
-The diagram below shows a scenario where a malicious intermediate hijacks the packets.
+На диаграмме ниже показан сценарий, в котором вредоносный промежуточный объект перехватывает пакеты.
 
-Prerequisite: root certificate of the intermediate server is present in the trust-store.
+Предварительное условие: корневой сертификат промежуточного сервера присутствует в хранилище доверенных сертификатов.
 
-## How Packets are Hijacked
+## Как перехватываются пакеты
 
-**Step 1** - The client requests to establish a TCP connection with the server. The request is maliciously routed to an intermediate server, instead of the real backend server. Then, a TCP connection is established between the client and the intermediate server.
+**Шаг 1**. Клиент запрашивает установление TCP-соединения с сервером. Запрос злонамеренно направляется на промежуточный сервер вместо реального внутреннего сервера. Затем между клиентом и промежуточным сервером устанавливается TCP-соединение.
 
-**Step 2** - The intermediate server establishes a TCP connection with the actual server.
+**Шаг 2**. Промежуточный сервер устанавливает TCP-соединение с реальным сервером.
 
-**Step 3** - The intermediate server sends the SSL certificate to the client. The certificate contains the public key, hostname, expiry dates, etc. The client validates the certificate.
+**Шаг 3**. Промежуточный сервер отправляет сертификат SSL клиенту. Сертификат содержит открытый ключ, имя хоста, дату истечения срока действия и т. д. Клиент проверяет сертификат.
 
-**Step 4** - The legitimate server sends its certificate to the intermediate server. The intermediate server validates the certificate.
+**Шаг 4**. Законный сервер отправляет свой сертификат промежуточному серверу. Промежуточный сервер проверяет сертификат.
 
-**Step 5** - The client generates a session key and encrypts it using the public key from the intermediate server. The intermediate server receives the encrypted session key and decrypts it with the private key.
+**Шаг 5**. Клиент генерирует сеансовый ключ и шифрует его, используя открытый ключ с промежуточного сервера. Промежуточный сервер получает зашифрованный сеансовый ключ и расшифровывает его с помощью закрытого ключа.
 
-**Step 6** - The intermediate server encrypts the session key using the public key from the actual server and then sends it there. The legitimate server decrypts the session key with the private key.
+**Шаг 6**. Промежуточный сервер шифрует сеансовый ключ, используя открытый ключ фактического сервера, а затем отправляет его туда. Законный сервер расшифровывает сеансовый ключ с помощью закрытого ключа.
 
-**Steps 7 and 8** - Now, the client and the server can communicate using the session key (symmetric encryption.) The encrypted data is transmitted in a secure bi-directional channel. The intermediate server can always decrypt the data.
+**Шаги 7 и 8**. Теперь клиент и сервер могут взаимодействовать с использованием сеансового ключа (симметричное шифрование). Зашифрованные данные передаются по защищенному двунаправленному каналу. Промежуточный сервер всегда может расшифровать данные.

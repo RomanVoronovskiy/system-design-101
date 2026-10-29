@@ -1,6 +1,6 @@
 ---
-title: "30 Useful AI Apps That Can Help You in 2025"
-description: "Discover 30 AI apps to boost productivity, creativity, and more in 2025."
+title: "30 полезных приложений искусственного интеллекта, которые могут помочь вам в 2025 году"
+description: "Откройте для себя 30 приложений искусственного интеллекта, которые повысят производительность, креативность и многое другое в 2025 году."
 image: "https://assets.bytebytego.com/diagrams/0039-30-useful-ai-apps-that-can-help-you-in-2025.png"
 createdAt: "2024-03-01"
 draft: false
@@ -13,52 +13,52 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0039-30-useful-ai-apps-that-can-help-you-in-2025.png)
 
-AI apps are taking over the world. There’s an AI app for every conceivable use case. Here are some AI apps for different categories:
+Приложения искусственного интеллекта захватывают мир. Для каждого мыслимого варианта использования найдется приложение искусственного интеллекта. Вот несколько приложений AI для разных категорий:
 
-## General Purpose
+## Общего назначения
 
-*   Perplexity
-*   Anthropic Claude
-*   Grok
-*   ChatGPT
-*   Gemini
+* Недоумение
+* Антропный Клод
+* Грок
+* ЧатGPT
+* Близнецы
 
-## Writing Code
+## Написание кода
 
-*   Cursor
-*   Replit
-*   Windsurf AI
-*   Github Copilot
-*   Tabnine
+* Курсор
+* Повторить
+* ИИ для виндсерфинга
+* Второй пилот на Github
+* Табнин
 
-## Productivity
+## Производительность
 
-*   Adobe (PDF Chat)
-*   Gemini for Gmail
-*   Gamma (AI slide deck)
-*   WisprFlow (AI voice dictation)
-*   Granola (AI notetaker)
+* Adobe (чат в формате PDF)
+* Близнецы для Gmail
+* Гамма (слайд-панель AI)
+* WisprFlow (голосовой диктовку с искусственным интеллектом)
+* Гранола (записная книжка с искусственным интеллектом)
 
-## Audience Building
+## Создание аудитории
 
-*   Delphi (AI text, voice)
-*   HeyGen (video translation)
-*   Persona (AI agent builder)
-*   Captions (AI video editing)
-*   OpusClips (Video repurposing)
+* Delphi (текст AI, голос)
+* HeyGen (видео-перевод)
+* Персона (конструктор ИИ-агентов)
+* Титры (редактирование видео AI)
+* OpusClips (перепрофилирование видео)
 
-## Creativity
+## Креативность
 
-*   ElevenLabs (realistic AI voices)
-*   Midjourney
-*   Suno AI (music generation)
-*   Krea (enhance images)
-*   Photoroom (AI image editing)
+* ElevenLabs (реалистичные голоса ИИ)
+* Середина пути
+* Suno AI (генерация музыки)
+* Креа (улучшение изображений)
+* Фотокомната (редактирование изображений AI)
 
-## Learning and Growth
+## Обучение и рост
 
-*   Particle News App
-*   Rosebud (AI journal app)
-*   NotebookLM
-*   GoodInside (parenting co-pilot)
-*   Ash (AI counselor)
+* Приложение новостей частиц
+* Rosebud (приложение для журнала AI)
+* НоутбукLM
+* GoodInside (второй пилот по воспитанию детей)
+* Эш (консультант по искусственному интеллекту)

@@ -1,6 +1,6 @@
 ---
-title: "7 Must-Know Strategies to Scale Your Database"
-description: "Explore 7 key strategies to effectively scale your database."
+title: "7 стратегий масштабирования базы данных, которые необходимо знать"
+description: "Изучите 7 ключевых стратегий для эффективного масштабирования вашей базы данных."
 image: "https://assets.bytebytego.com/diagrams/0161-database-scaling-cheatsheet.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0161-database-scaling-cheatsheet.png)
 
-## 1. Indexing
+## 1. Индексирование
 
-Check the query patterns of your application and create the right indexes.
+Проверьте шаблоны запросов вашего приложения и создайте правильные индексы.
 
-## 2. Materialized Views
+## 2. Материализованные представления
 
-Pre-compute complex query results and store them for faster access.
+Предварительно вычисляйте результаты сложных запросов и сохраняйте их для более быстрого доступа.
 
-## 3. Denormalization
+## 3. Денормализация
 
-Reduce complex joins to improve query performance.
+Уменьшите количество сложных соединений, чтобы повысить производительность запросов.
 
-## 4. Vertical Scaling
+## 4. Вертикальное масштабирование
 
-Boost your database server by adding more CPU, RAM, or storage.
+Увеличьте производительность своего сервера базы данных, добавив больше процессора, оперативной памяти или хранилища.
 
-## 5. Caching
+## 5. Кэширование
 
-Store frequently accessed data in a faster storage layer to reduce database load.
+Храните часто используемые данные на более быстром уровне хранения, чтобы снизить нагрузку на базу данных.
 
-## 6. Replication
+## 6. Репликация
 
-Create replicas of your primary database on different servers for scaling the reads.
+Создайте реплики вашей основной базы данных на разных серверах для масштабирования операций чтения.
 
-## 7. Sharding
+## 7. Шардинг
 
-Split your database tables into smaller pieces and spread them across servers. Used for scaling the writes as well as the reads.
+Разделите таблицы базы данных на более мелкие части и распределите их по серверам. Используется для масштабирования операций записи и чтения.

@@ -1,6 +1,6 @@
 ---
-title: "Retry Strategies for System Failures"
-description: "Explore retry strategies for handling transient errors in distributed systems."
+title: "Стратегии повторных попыток в случае системных сбоев"
+description: "Изучите стратегии повторных попыток для обработки временных ошибок в распределенных системах."
 image: "https://assets.bytebytego.com/diagrams/0229-how-do-we-retry-on-failures.png"
 createdAt: "2024-02-23"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0229-how-do-we-retry-on-failures.png)
 
-In distributed systems and networked applications, retry strategies are crucial for handling transient errors and network instability effectively. The diagram shows 4 common retry strategies.
+В распределенных системах и сетевых приложениях стратегии повторных попыток имеют решающее значение для эффективной обработки временных ошибок и нестабильности сети. На диаграмме показаны 4 распространенные стратегии повторных попыток.
 
-## Linear Backoff
+## Линейный откат
 
-Linear backoff involves waiting for a progressively increasing fixed interval between retry attempts.
+Линейная отсрочка предполагает ожидание постепенно увеличивающегося фиксированного интервала между повторными попытками.
 
-*   **Advantages**: Simple to implement and understand.
+* **Преимущества**: Простота реализации и понимания.
 
-*   **Disadvantages**: May not be ideal under high load or in high-concurrency environments as it could lead to resource contention or "retry storms".
+* **Недостатки**: может быть неидеален при высокой нагрузке или в средах с высоким уровнем параллелизма, поскольку это может привести к конкуренции за ресурсы или «штормам повторных попыток».
 
-## Linear Jitter Backoff
+## Линейный сдвиг джиттера
 
-Linear jitter backoff modifies the linear backoff strategy by introducing randomness to the retry intervals. This strategy still increases the delay linearly but adds a random "jitter" to each interval.
+Линейная отсрочка джиттера изменяет стратегию линейной отсрочки, добавляя случайность в интервалы повторных попыток. Эта стратегия по-прежнему линейно увеличивает задержку, но добавляет случайное «дрожание» к каждому интервалу.
 
-*   **Advantages**: The randomness helps spread out the retry attempts over time, reducing the chance of synchronized retries across instances.
+* **Преимущества**. Случайность помогает распределить повторные попытки во времени, уменьшая вероятность синхронизированных повторных попыток между экземплярами.
 
-*   **Disadvantages**: Although better than simple linear backoff, this strategy might still lead to potential issues with synchronized retries as the base interval increases only linearly.
+* **Недостатки**: хотя эта стратегия и лучше, чем простая линейная отсрочка, она все же может привести к потенциальным проблемам с синхронизированными повторами, поскольку базовый интервал увеличивается только линейно.
 
-## Exponential Backoff
+## Экспоненциальная задержка
 
-Exponential backoff involves increasing the delay between retries exponentially. The interval might start at 1 second, then increase to 2 seconds, 4 seconds, 8 seconds, and so on, typically up to a maximum delay. This approach is more aggressive in spacing out retries than linear backoff.
+Экспоненциальная отсрочка предполагает экспоненциальное увеличение задержки между повторными попытками. Интервал может начинаться с 1 секунды, затем увеличиваться до 2 секунд, 4 секунд, 8 секунд и т. д., обычно до максимальной задержки. Этот подход более агрессивен в распределении повторных попыток, чем линейная отсрочка.
 
-*   **Advantages**: Significantly reduces the load on the system and the likelihood of collision or overlap in retry attempts, making it suitable for high-load environments.
+* **Преимущества**: Значительно снижает нагрузку на систему и вероятность коллизий или перекрытия при повторных попытках, что делает его пригодным для сред с высокой нагрузкой.
 
-*   **Disadvantages**: In situations where a quick retry might resolve the issue, this approach can unnecessarily delay the resolution.
+* **Недостатки**: в ситуациях, когда быстрая повторная попытка может решить проблему, этот подход может излишне задержать решение.
 
-## Exponential Jitter Backoff
+## Экспоненциальная задержка джиттера
 
-Exponential jitter backoff combines exponential backoff with randomness. After each retry, the backoff interval is exponentially increased, and then a random jitter is applied. The jitter can be either additive (adding a random amount to the exponential delay) or multiplicative (multiplying the exponential delay by a random factor).
+Экспоненциальная задержка джиттера сочетает в себе экспоненциальную задержку со случайностью. После каждой повторной попытки интервал отсрочки увеличивается экспоненциально, а затем применяется случайный джиттер. Джиттер может быть аддитивным (добавление случайной величины к экспоненциальной задержке) или мультипликативным (умножение экспоненциальной задержки на случайный коэффициент).
 
-*   **Advantages**: Offers all the benefits of exponential backoff, with the added advantage of reducing retry collisions even further due to the introduction of jitter.
+* **Преимущества**: предлагает все преимущества экспоненциальной задержки с дополнительным преимуществом, заключающимся в дополнительном уменьшении коллизий при повторных попытках из-за появления джиттера.
 
-*   **Disadvantages**: The randomness can sometimes result in longer than necessary delays, especially if the jitter is significant.
+* **Недостатки**: Случайность иногда может привести к более длительным, чем необходимо, задержкам, особенно если джиттер значителен.

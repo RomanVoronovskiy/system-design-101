@@ -1,6 +1,6 @@
 ---
-title: 'GraphQL Adoption Patterns'
-description: 'Explore 4 popular GraphQL adoption patterns for your team.'
+title: "Шаблоны внедрения GraphQL"
+description: "Изучите 4 популярных шаблона внедрения GraphQL для вашей команды."
 image: 'https://assets.bytebytego.com/diagrams/0208-graphql-adoption-patterns.png'
 createdAt: '2024-02-13'
 draft: false
@@ -12,28 +12,28 @@ tags:
 ---
 ![](https://assets.bytebytego.com/diagrams/0208-graphql-adoption-patterns.png)
 
-Typically, teams begin their GraphQL journey with a basic architecture where a client application queries a single GraphQL server.
+Обычно команды начинают свой путь к GraphQL с базовой архитектуры, в которой клиентское приложение запрашивает один сервер GraphQL.
 
-However, multiple patterns are available:
+Однако доступно несколько шаблонов:
 
-*   **Client-based GraphQL**
+* **GraphQL на основе клиента**
 
-    The client wraps existing APIs behind a single GraphQL endpoint. This approach improves the developer experience but the client still bears the performance costs of aggregating data.
+Клиент объединяет существующие API в одну конечную точку GraphQL. Такой подход улучшает работу разработчика, но клиент по-прежнему несет затраты на производительность агрегирования данных.
 
-*   **GraphQL with BFFs**
+* **GraphQL с лучшими друзьями**
 
-    BFF or Backend-for-Frontends adds a new layer where each client has a dedicated BFF service. GraphQL is a natural fit to build a client-focused intermediary layer.
+BFF или Backend-for-Frontends добавляет новый уровень, на котором у каждого клиента есть выделенная служба BFF. GraphQL идеально подходит для создания промежуточного уровня, ориентированного на клиента.
 
-    Performance and developer experience for the clients is improved but there’s a tradeoff in building and maintaining BFFs.
+Производительность и удобство разработки для клиентов улучшаются, но при создании и поддержании лучших друзей приходится идти на компромисс.
 
-*   **The Monolithic GraphQL**
+* **Монолитный GraphQL**
 
-    Multiple teams share one codebase for a GraphQL server used by several clients. Also, a single team owns a GraphQL API that is accessed by multiple client teams.
+Несколько команд используют одну базу кода для сервера GraphQL, используемого несколькими клиентами. Кроме того, одна команда владеет API GraphQL, к которому имеют доступ несколько клиентских команд.
 
-*   **GraphQL Federation**
+* **Федерация GraphQL**
 
-    This involves consolidating multiple graphs into a supergraph.
+Это предполагает объединение нескольких графов в суперграф.
 
-    GraphQL Federated Gateway takes care of routing the requests to the downstream subgraph services that take care of a specific part of the GraphQL schema. This approach maintains ownership of data with the domain team while avoiding duplication of effort.
+GraphQL Federated Gateway заботится о маршрутизации запросов к нижестоящим службам подграфа, которые отвечают за определенную часть схемы GraphQL. При таком подходе право собственности на данные сохраняется за командой предметной области, избегая при этом дублирования усилий.
 
-Over to you: Which GraphQL adoption approach have you seen or used?
+К вам: какой подход к внедрению GraphQL вы видели или использовали?

@@ -1,6 +1,6 @@
 ---
-title: How does Twitter recommend “For You” Timeline in 1.5 seconds?
-description: Twitter's "For You" timeline recommendation system explained.
+title: "Как Twitter рекомендует хронологию «Для тебя» за 1,5 секунды?"
+description: "Объяснение системы рекомендаций Twitter «Для вас»."
 image: 'https://assets.bytebytego.com/diagrams/0121-twitter-serving-pipeline.jpeg'
 createdAt: '2024-02-22'
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0121-twitter-serving-pipeline.jpeg)
 
-We spent a few days analyzing it.
+Мы потратили несколько дней на его анализ.
 
-The diagram above shows the detailed pipeline based on the open-sourced algorithm.
+На диаграмме выше показан подробный конвейер, основанный на алгоритме с открытым исходным кодом.
 
-The process involves 5 stages:
+Процесс включает в себя 5 этапов:
 
-*   **Candidate Sourcing** ~ start with 500 million Tweets
-*   **Global Filtering** ~ down to 1500 candidates
-*   **Scoring & Ranking** ~ 48M parameter neural network, Twitter Blue boost
-*   **Filtering** ~ to achieve author and content diversity
-*   **Mixing** ~ with Ads recommendation and Who to Follow
+* **Набор кандидатов** ~ начните с 500 миллионов твитов.
+* **Глобальная фильтрация** ~ до 1500 кандидатов.
+* **Оценка и ранжирование** ~ Нейронная сеть с 48 млн параметров, усиление Twitter Blue
+* **Фильтрация** ~ для достижения разнообразия авторов и контента.
+* **Смешение** ~ с рекомендациями по рекламе и указанием того, кому следовать.
 
-The post was jointly created by ByteByteGo and [Mem](https://www.linkedin.com/company/memdotai/). Special thanks [Scott Mackie](https://www.linkedin.com/in/ACoAABLDe9kBSK7DsORQHK2G1srZCmM1isaUun8), founding engineer at Mem, for putting this together.
+Пост был создан совместно ByteByteGo и [Mem](https://www.linkedin.com/company/memdotai/). Особая благодарность [Скотту Маки] (https://www.linkedin.com/in/ACoAABLDe9kBSK7DsORQHK2G1srZCmM1isaUun8), инженеру-основателю Mem, за составление всего этого.
 
-Mem is building the world’s first knowledge assistant. In next week’s ByteByteGo guest newsletter, Mem will be sharing lessons they’ve learned from their extensive work with large language models and building AI-native infrastructure.
+Мем создает первого в мире помощника по информационным технологиям. В гостевом информационном бюллетене ByteByteGo на следующей неделе Mem поделится уроками, которые они извлекли из своей обширной работы с большими языковыми моделями и создания собственной инфраструктуры искусственного интеллекта.

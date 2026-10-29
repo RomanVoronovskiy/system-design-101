@@ -1,6 +1,6 @@
 ---
-title: "How Do C++, Java, Python Work?"
-description: "Understanding the inner workings of C++, Java, and Python."
+title: "Как работают C++, Java, Python?"
+description: "Понимание внутренней работы C++, Java и Python."
 image: "https://assets.bytebytego.com/diagrams/0003-how-python-works.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0003-how-python-works.png)
 
-The diagram shows how the compilation and execution work.
+На диаграмме показано, как работают компиляция и выполнение.
 
-Compiled languages are compiled into machine code by the compiler. The machine code can later be executed directly by the CPU. Examples: C, C++, Go.
+Скомпилированные языки компилируются в машинный код компилятором. Машинный код позже может быть выполнен непосредственно процессором. Примеры: C, C++, Go.
 
-A bytecode language like Java, compiles the source code into bytecode first, then the JVM executes the program. Sometimes JIT (Just-In-Time) compiler compiles the source code into machine code to speed up the execution. Examples: Java, C#
+Язык байт-кода, такой как Java, сначала компилирует исходный код в байт-код, а затем JVM выполняет программу. Иногда JIT-компилятор (Just-In-Time) компилирует исходный код в машинный код, чтобы ускорить выполнение. Примеры: Java, C#.
 
-Interpreted languages are not compiled. They are interpreted by the interpreter during runtime. Examples: Python, Javascript, Ruby
+Интерпретируемые языки не компилируются. Они интерпретируются интерпретатором во время выполнения. Примеры: Python, Javascript, Ruby.
 
-Compiled languages in general run faster than interpreted languages.
+Компилируемые языки обычно работают быстрее, чем интерпретируемые.

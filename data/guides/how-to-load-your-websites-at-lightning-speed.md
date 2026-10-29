@@ -1,6 +1,6 @@
 ---
-title: "Frontend Performance Optimization"
-description: "Boost your website's speed with these frontend optimization tips."
+title: "Оптимизация производительности внешнего интерфейса"
+description: "Увеличьте скорость вашего сайта с помощью этих советов по оптимизации интерфейса."
 image: "https://assets.bytebytego.com/diagrams/0198-frontend-performance-cheatsheet.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0198-frontend-performance-cheatsheet.png)
 
-Check out these 8 tips to boost frontend performance:
+Ознакомьтесь с этими 8 советами, которые помогут повысить производительность интерфейса:
 
-* **Compression** Compress files and minimize data size before transmission to reduce network load.
+* **Сжатие** Сжимайте файлы и минимизируйте размер данных перед передачей, чтобы снизить нагрузку на сеть.
 
-* **Selective Rendering/Windowing** Display only visible elements to optimize rendering performance. For example, in a dynamic list, only render visible items.
+* **Выборочный рендеринг/оконирование** Отображение только видимых элементов для оптимизации производительности рендеринга. Например, в динамическом списке визуализируются только видимые элементы.
 
-* **Modular Architecture with Code Splitting** Split a bigger application bundle into multiple smaller bundles for efficient loading.
+* **Модульная архитектура с разделением кода** Разделите большой пакет приложений на несколько меньших пакетов для эффективной загрузки.
 
-* **Priority-Based Loading** Prioritize essential resources and visible (or above-the-fold) content for a better user experience.
+* **Загрузка на основе приоритета** Расставьте приоритеты для основных ресурсов и видимого (или верхнего) контента для лучшего взаимодействия с пользователем.
 
-* **Pre-loading** Fetch resources in advance before they are requested to improve loading speed.
+* **Предварительная загрузка** Получайте ресурсы заранее, прежде чем они будут запрошены, чтобы повысить скорость загрузки.
 
-* **Tree Shaking or Dead Code Removal** Optimize the final JS bundle by removing dead code that will never be used.
+* **Tree Shaking или удаление мертвого кода** Оптимизируйте окончательный пакет JS, удалив мертвый код, который никогда не будет использоваться.
 
-* **Pre-fetching** Proactively fetch or cache resources that are likely to be needed soon.
+* **Предварительная выборка** Упреждающее извлечение или кэширование ресурсов, которые могут понадобиться в ближайшее время.
 
-* **Dynamic Imports** Load code modules dynamically based on user actions to optimize the initial loading times.
+* **Динамический импорт** Модули кода загружаются динамически в зависимости от действий пользователя, что позволяет оптимизировать время начальной загрузки.

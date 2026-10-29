@@ -1,6 +1,6 @@
 ---
-title: "Design Gmail"
-description: "Explore the design of Gmail: from sending to receiving emails."
+title: "Дизайн Gmail"
+description: "Изучите дизайн Gmail: от отправки до получения электронных писем."
 image: "https://assets.bytebytego.com/diagrams/0184-email.jpg"
 createdAt: "2024-03-01"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0184-email.jpg)
 
-One picture is worth more than a thousand words. In this post, we will take a look at what happens when Alice sends an email to Bob.
+Одна картинка стоит больше тысячи слов. В этом посте мы рассмотрим, что происходит, когда Алиса отправляет электронное письмо Бобу.
 
-## Sending an Email: A Step-by-Step Guide
+## Отправка электронного письма: пошаговое руководство
 
-1.  Alice logs in to her Outlook client, composes an email, and presses “send”. The email is sent to the Outlook mail server. The communication protocol between the Outlook client and mail server is SMTP.
+1. Алиса входит в свой клиент Outlook, составляет электронное письмо и нажимает «отправить». Электронное письмо отправляется на почтовый сервер Outlook. Протокол связи между клиентом Outlook и почтовым сервером — SMTP.
 
-2.  Outlook mail server queries the DNS (not shown in the diagram) to find the address of the recipient’s SMTP server. In this case, it is Gmail’s SMTP server. Next, it transfers the email to the Gmail mail server. The communication protocol between the mail servers is SMTP.
+2. Почтовый сервер Outlook запрашивает DNS (не показан на схеме), чтобы найти адрес SMTP-сервера получателя. В данном случае это SMTP-сервер Gmail. Затем он передает электронное письмо на почтовый сервер Gmail. Протокол связи между почтовыми серверами — SMTP.
 
-3.  The Gmail server stores the email and makes it available to Bob, the recipient.
+3. Сервер Gmail сохраняет электронное письмо и предоставляет его получателю Бобу.
 
-4.  Gmail client fetches new emails through the IMAP/POP server when Bob logs in to Gmail.
+4. Клиент Gmail получает новые электронные письма через сервер IMAP/POP, когда Боб входит в систему Gmail.

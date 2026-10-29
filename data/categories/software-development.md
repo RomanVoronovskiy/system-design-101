@@ -1,9 +1,8 @@
 ---
-title: 'Software Development'
-description: 'Visual guides to help you understand different aspects of software development including but not limited to software architecture, design patterns, and software development methodologies.'
+title: "Разработка программного обеспечения"
+description: "Визуальные руководства, которые помогут вам понять различные аспекты разработки программного обеспечения, включая, помимо прочего, архитектуру программного обеспечения, шаблоны проектирования и методологии разработки программного обеспечения."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/code.png'
 sort: 170
 ---
-
-Software Development is the process of designing, coding, testing, and maintaining software. It is a systematic approach to developing software. Software development is a broad field that includes many different disciplines. Some of the most common disciplines in software development include:
+Разработка программного обеспечения — это процесс проектирования, кодирования, тестирования и поддержки программного обеспечения. Это системный подход к разработке программного обеспечения. Разработка программного обеспечения — это обширная область, включающая множество различных дисциплин. Некоторые из наиболее распространенных дисциплин в разработке программного обеспечения включают в себя:

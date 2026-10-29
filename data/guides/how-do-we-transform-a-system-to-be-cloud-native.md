@@ -1,6 +1,6 @@
 ---
-title: "How to Transform a System to be Cloud Native"
-description: "A blueprint for adopting cloud-native architecture in your organization."
+title: "Как преобразовать систему для работы в облаке"
+description: "Схема внедрения облачной архитектуры в вашей организации."
 image: "https://assets.bytebytego.com/diagrams/0149-how-doe-we-adopt-cloud-native.png"
 createdAt: "2024-02-28"
 draft: false
@@ -10,16 +10,15 @@ tags:
   - "cloud-native"
   - "architecture"
 ---
-
-The diagram below shows the action spectrum and adoption roadmap. You can use it as a blueprint for adopting cloud-native in your organization.
+На диаграмме ниже показан спектр действий и план внедрения. Вы можете использовать его в качестве образца для внедрения облачных технологий в вашей организации.
 
 ![](https://assets.bytebytego.com/diagrams/0149-how-doe-we-adopt-cloud-native.png)
 
-For a company to adopt cloud native architecture, there are 6 aspects in the spectrum:
+Чтобы компания внедрила облачную архитектуру, необходимо учитывать 6 аспектов:
 
-*   Application definition development
-*   Orchestration and management
-*   Runtime
-*   Provisioning
-*   Observability
-*   Serverless
+* Разработка определения приложения.
+* Оркестровка и управление.
+* Время выполнения
+* Обеспечение
+* Наблюдательность
+* Бессерверное

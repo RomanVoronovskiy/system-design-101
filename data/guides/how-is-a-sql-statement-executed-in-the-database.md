@@ -1,6 +1,6 @@
 ---
-title: "SQL Statement Execution in Database"
-description: "Explore the steps of SQL statement execution within a database system."
+title: "Выполнение SQL-операторов в базе данных"
+description: "Изучите этапы выполнения операторов SQL в системе баз данных."
 image: "https://assets.bytebytego.com/diagrams/0340-sql-execution-order-in-db.jpeg"
 createdAt: "2024-02-23"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0340-sql-execution-order-in-db.jpeg)
 
-The diagram above shows the process. Note that the architectures for different databases are different, the diagram demonstrates some common designs.
+На диаграмме выше показан процесс. Обратите внимание, что архитектуры для разных баз данных различны, на схеме показаны некоторые общие конструкции.
 
-## Step 1 - Transport Layer
+## Шаг 1 — Транспортный уровень
 
-A SQL statement is sent to the database via a transport layer protocol (e.g. TCP).
+Оператор SQL отправляется в базу данных через протокол транспортного уровня (например, TCP).
 
-## Step 2 - Command Parser
+## Шаг 2 — Анализатор команд
 
-The SQL statement is sent to the command parser, where it goes through syntactic and semantic analysis, and a query tree is generated afterward.
+Оператор SQL отправляется в синтаксический анализатор команд, где он проходит синтаксический и семантический анализ, после чего генерируется дерево запроса.
 
-## Step 3 - Optimizer
+## Шаг 3 — Оптимизатор
 
-The query tree is sent to the optimizer. The optimizer creates an execution plan.
+Дерево запросов отправляется оптимизатору. Оптимизатор создает план выполнения.
 
-## Step 4 - Executor
+## Шаг 4 — Исполнитель
 
-The execution plan is sent to the executor. The executor retrieves data from the execution.
+План выполнения передается исполнителю. Исполнитель извлекает данные из выполнения.
 
-## Step 5 - Access Methods
+## Шаг 5 — Методы доступа
 
-Access methods provide the data fetching logic required for execution, retrieving data from the storage engine.
+Методы доступа обеспечивают логику выборки данных, необходимую для выполнения, извлекая данные из механизма хранения.
 
-## Step 6 - Buffer Manager (Read-Only Queries)
+## Шаг 6. Диспетчер буферов (запросы только для чтения)
 
-Access methods decide whether the SQL statement is read-only. If the query is read-only (SELECT statement), it is passed to the buffer manager for further processing. The buffer manager looks for the data in the cache or data files.
+Методы доступа решают, доступен ли оператор SQL только для чтения. Если запрос доступен только для чтения (оператор SELECT), он передается диспетчеру буферов для дальнейшей обработки. Менеджер буферов ищет данные в кэше или файлах данных.
 
-## Step 7 - Transaction Manager (Update/Insert)
+## Шаг 7 — Диспетчер транзакций (обновление/вставка)
 
-If the statement is an UPDATE or INSERT, it is passed to the transaction manager for further processing.
+Если оператор является UPDATE или INSERT, он передается менеджеру транзакций для дальнейшей обработки.
 
-## Step 8 - Lock Manager
+## Шаг 8 — Менеджер блокировок
 
-During a transaction, the data is in lock mode. This is guaranteed by the lock manager. It also ensures the transaction’s ACID properties.
+Во время транзакции данные находятся в режиме блокировки. Это гарантируется менеджером блокировок. Он также обеспечивает свойства ACID транзакции.

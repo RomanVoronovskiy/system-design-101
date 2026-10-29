@@ -1,6 +1,6 @@
 ---
-title: "AWS Services Cheat Sheet"
-description: "A visual guide to navigate AWS expansive landscape of cloud services."
+title: "Памятка по сервисам AWS"
+description: "Визуальное руководство для навигации по обширному ландшафту облачных сервисов AWS."
 image: "https://assets.bytebytego.com/diagrams/0082-aws-cloud-services-cheat-sheet.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0082-aws-cloud-services-cheat-sheet.png)
 
-AWS grew from an in-house project to the market leader in cloud services, offering so many different services that even experts can find it a lot to take in.
+AWS превратилась из собственного проекта в лидера рынка облачных сервисов, предлагая так много различных сервисов, что даже эксперты могут найти в них много интересного.
 
-The platform not only caters to foundational cloud needs but also stays at the forefront of emerging technologies such as machine learning and IoT, establishing itself as a bedrock for cutting-edge innovation. AWS continuously refines its array of services, ensuring advanced capabilities for security, scalability, and operational efficiency are available.
+Платформа не только удовлетворяет базовые потребности в облачных технологиях, но и остается в авангарде новых технологий, таких как машинное обучение и Интернет вещей, зарекомендовав себя в качестве основы для передовых инноваций. AWS постоянно совершенствует свой набор сервисов, обеспечивая доступность расширенных возможностей для обеспечения безопасности, масштабируемости и эффективности работы.
 
-For those navigating the complex array of options, this AWS Services Guide is a helpful visual aid.
+Для тех, кто ориентируется в сложном наборе опций, это Руководство по сервисам AWS станет полезным наглядным пособием.
 
-It simplifies the exploration of AWS's expansive landscape, making it accessible for users to identify and leverage the right tools for their cloud-based endeavors.
+Это упрощает исследование обширного ландшафта AWS, предоставляя пользователям возможность находить и использовать подходящие инструменты для своих облачных проектов.

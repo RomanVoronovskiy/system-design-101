@@ -1,6 +1,6 @@
 ---
-title: "Hidden Costs of the Cloud"
-description: "Uncover hidden cloud costs and learn how to avoid unexpected expenses."
+title: "Скрытые издержки облака"
+description: "Выявите скрытые затраты на облако и узнайте, как избежать непредвиденных расходов."
 image: "https://assets.bytebytego.com/diagrams/0148-cloud-hidden-costs.png"
 createdAt: '2024-03-01'
 draft: false
@@ -10,29 +10,28 @@ tags:
   - Cloud Cost
   - Cost Optimization
 ---
+Хотя начало работы может быть недорогим или даже бесплатным, сложность часто приводит к скрытым затратам, что приводит к большим счетам за облако.
 
-While it may be inexpensive or even free to get started, the complexity often leads to hidden costs, resulting in large cloud bills.
-
-The purpose of this post is not to discourage using the cloud. I’m a big fan of the cloud. I simply want to raise awareness about this issue, as it's one of the critical topics that isn't often discussed.
+Цель этого поста — не отговаривать от использования облака. Я большой поклонник облаков. Я просто хочу повысить осведомленность об этой проблеме, поскольку это одна из важнейших тем, которая не часто обсуждается.
 
 ![](https://assets.bytebytego.com/diagrams/0148-cloud-hidden-costs.png)
 
-While AWS is used as an example, similar cost structures apply to other cloud providers.
+Хотя AWS используется в качестве примера, аналогичная структура затрат применима и к другим поставщикам облачных услуг.
 
-## Hidden Cloud Costs
+## Скрытые затраты на облако
 
-*   **Free Tier Ambiguity:** AWS offers three different types of free offerings for common services. However, services not included in the free tier can charge you. Even for services that do provide free resources, there's often a limit. Exceeding that limit can result in higher costs than anticipated.
+* **Неоднозначность уровня бесплатного пользования.** AWS предлагает три различных типа бесплатных предложений для общих сервисов. Однако за услуги, не включенные в уровень бесплатного пользования, может взиматься плата. Даже для сервисов, которые предоставляют бесплатные ресурсы, часто существует предел. Превышение этого лимита может привести к более высоким затратам, чем ожидалось.
 
-*   **Elastic IP Addresses:** AWS allows up to five Elastic IP addresses. Exceeding this limit incurs a small hourly rate, which varies depending on the region. This is a recurring charge.
+* **Эластичные IP-адреса.** AWS позволяет использовать до пяти эластичных IP-адресов. За превышение этого лимита взимается небольшая почасовая оплата, которая варьируется в зависимости от региона. Это периодический платеж.
 
-*   **Load Balancers:** They are billed hourly, even if not actively used. Furthermore, you'll face additional charges if data is transferred in and out of the load balancer.
+* **Балансировщики нагрузки.** Плата за них взимается почасово, даже если они не используются активно. Кроме того, вам придется платить дополнительные расходы, если данные передаются в балансировщик нагрузки и из него.
 
-*   **Elastic Block Storage (EBS) Charges:** EBS is billed on a GB-per-month basis. You will be charged for attached and unattached EBS volumes, even if they're not actively used.
+* **Тарифы на эластичное блочное хранилище (EBS):** EBS выставляется на основе ГБ в месяц. С вас будет взиматься плата за подключенные и неприсоединенные тома EBS, даже если они не используются активно.
 
-*   **EBS Snapshots:** Deleting an EBS volume does not automatically remove the associated snapshots. Orphaned EBS snapshots will still appear on your bill.
+* **Снимки EBS:** Удаление тома EBS не приводит к автоматическому удалению связанных с ним снимков. Потерянные снимки EBS по-прежнему будут отображаться в вашем счете.
 
-*   **S3 Access Charges:** While the pricing for S3 storage is generally reasonable, the costs associated with accessing stored objects, such as GET and LIST requests, can sometimes exceed the storage costs.
+* **Стоимость доступа к S3.** Хотя цены на хранилище S3 в целом разумны, затраты, связанные с доступом к хранимым объектам, таким как запросы GET и LIST, иногда могут превышать затраты на хранение.
 
-*   **S3 Partial Uploads:** If you have an unsuccessful multipart upload in S3, you will still be billed for the successfully uploaded parts. It's essential to clean these up to avoid unnecessary costs.
+* **Частичная загрузка S3.** Если вам не удалось загрузить несколько частей в S3, вам все равно будет выставлен счет за успешно загруженные части. Очень важно их очистить, чтобы избежать ненужных затрат.
 
-*   **Data Transfer Costs:** Transferring data to AWS, for instance, from a data center, is free. However, transferring data out of AWS can be significantly more expensive.
+* **Стоимость передачи данных:** Передача данных в AWS, например, из центра обработки данных, бесплатна. Однако перенос данных из AWS может оказаться значительно дороже.

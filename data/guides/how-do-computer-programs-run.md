@@ -1,6 +1,6 @@
 ---
-title: "How Do Computer Programs Run?"
-description: "Explore the execution flow of computer programs from start to finish."
+title: "Как работают компьютерные программы?"
+description: "Изучите поток выполнения компьютерных программ от начала до конца."
 image: "https://assets.bytebytego.com/diagrams/0218-how-do-computer-programs-run.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0218-how-do-computer-programs-run.png)
 
-The diagram shows the steps.
+На схеме показаны этапы.
 
-## User Interaction and Command Initiation
+## Взаимодействие с пользователем и инициирование команд
 
-By double-clicking a program, a user is instructing the operating system to launch an application via the graphical user interface.
+Двойным щелчком по программе пользователь дает указание операционной системе запустить приложение через графический интерфейс пользователя.
 
-## Program Preloading
+## Предварительная загрузка программы
 
-Once the execution request has been initiated, the operating system first retrieves the program's executable file.
+После того как запрос на выполнение был инициирован, операционная система сначала получает исполняемый файл программы.
 
-The operating system locates this file through the file system and loads it into memory in preparation for execution.
+Операционная система находит этот файл в файловой системе и загружает его в память для подготовки к выполнению.
 
-## Dependency Resolution and Loading
+## Разрешение и загрузка зависимостей
 
-Most modern applications rely on a number of shared libraries, such as dynamic link libraries (DLLs).
+Большинство современных приложений полагаются на ряд общих библиотек, таких как библиотеки динамической компоновки (DLL).
 
-## Allocating Memory Space
+## Выделение пространства памяти
 
-The operating system is responsible for allocating space in memory.
+Операционная система отвечает за распределение места в памяти.
 
-## Initializing the Runtime Environment
+## Инициализация среды выполнения
 
-After allocating memory, the operating system and execution environment (e.g., Java's JVM or the .NET Framework) will initialize various resources needed to run the program.
+После выделения памяти операционная система и среда выполнения (например, Java JVM или .NET Framework) инициализируют различные ресурсы, необходимые для запуска программы.
 
-## System Calls and Resource Management
+## Системные вызовы и управление ресурсами
 
-The entry point of a program (usually a function named `main`) is called to begin execution of the code written by the programmer.
+Точка входа программы (обычно функция с именем `main`) вызывается, чтобы начать выполнение кода, написанного программистом.
 
-## Von Neumann Architecture
+## Архитектура Фон Неймана
 
-In the Von Neumann architecture, the CPU executes instructions stored in memory.
+В архитектуре фон Неймана ЦП выполняет инструкции, хранящиеся в памяти.
 
-## Program Termination
+## Прекращение программы
 
-Eventually, when the program has completed its task, or the user actively terminates the application, the program will begin a cleanup phase. This includes closing open file descriptors, freeing up network resources, and returning memory to the system.
+В конце концов, когда программа завершит свою задачу или пользователь активно завершит работу приложения, программа начнет этап очистки. Сюда входит закрытие дескрипторов открытых файлов, освобождение сетевых ресурсов и возврат памяти в систему.

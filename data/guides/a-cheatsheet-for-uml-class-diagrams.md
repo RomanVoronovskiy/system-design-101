@@ -1,6 +1,6 @@
 ---
-title: "UML Class Diagrams Cheatsheet"
-description: "A quick reference guide to UML class diagrams and their components."
+title: "Шпаргалка по диаграммам классов UML"
+description: "Краткое справочное руководство по диаграммам классов UML и их компонентам."
 image: "https://assets.bytebytego.com/diagrams/0399-a-cheatsheet-for-uml-class-diagrams.png"
 createdAt: "2024-02-22"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0399-a-cheatsheet-for-uml-class-diagrams.png)
 
-UML is a standard way to visualize the design of your system and class diagrams are used across the industry.
+UML — это стандартный способ визуализации конструкции вашей системы, а диаграммы классов используются во всей отрасли.
 
-They consist of:
+Они состоят из:
 
-*   **Class**
+*   **Сорт**
 
-    Acts as the blueprint that defines the properties and behavior of an object.
+Действует как план, определяющий свойства и поведение объекта.
 
-*   **Attributes**
+* **Атрибуты**
 
-    Attributes in a UML class diagram represent the data fields of the class.
+Атрибуты в диаграмме классов UML представляют поля данных класса.
 
-*   **Methods**
+* **Методы**
 
-    Methods in a UML class diagram represent the behavior that a class can perform.
+Методы на диаграмме классов UML представляют поведение, которое может выполнять класс.
 
-*   **Interfaces**
+* **Интерфейсы**
 
-    Defines a contract for classes that implement it. Includes a set of methods that the implementing classes must provide.
+Определяет контракт для классов, которые его реализуют. Включает набор методов, которые должны предоставлять реализующие классы.
 
-*   **Enumeration**
+* **Перечисление**
 
-    A special data type that defines a set of named values such as product category or months in a year.
+Специальный тип данных, определяющий набор именованных значений, например категорию продукта или месяцы в году.
 
-*   **Relationships**
+* **Отношения**
 
-    Determines how one class is related to another. Some common relationships are as follows:
+Определяет, как один класс связан с другим. Некоторые общие отношения заключаются в следующем:
 
-    *   Association
-    *   Aggregation
-    *   Composition
-    *   Inheritance
-    *   Implementation
+* Ассоциация
+    * Агрегация
+    * Состав
+    * Наследование
+    * Реализация

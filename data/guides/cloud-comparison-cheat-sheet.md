@@ -1,6 +1,6 @@
 ---
-title: "Cloud Comparison Cheat Sheet"
-description: "A handy cheat sheet comparing different cloud services."
+title: "Шпаргалка по сравнению облаков"
+description: "Удобная шпаргалка для сравнения различных облачных сервисов."
 image: "https://assets.bytebytego.com/diagrams/0093-cloud-comparison-cheat-sheet.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![Cloud Comparison Cheat Sheet](https://assets.bytebytego.com/diagrams/0093-cloud-comparison-cheat-sheet.png)
 
-## Cloud comparison Cheat Sheet
+## Шпаргалка по сравнению облаков
 
-A nice cheat sheet of different cloud services (2023 edition)!
+Хорошая шпаргалка по различным облачным сервисам (выпуск 2023 года)!
 
-Guest post by [Govardhana Miriyala Kannaiah](https://www.linkedin.com/in/govardhana-miriyala-kannaiah/).
+Гостевой пост [Говардхана Мирияла Канная] (https://www.linkedin.com/in/govardhana-miriyala-kannaiah/).

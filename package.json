@@ -1,7 +1,7 @@
 {
   "name": "system-design-101",
   "version": "1.0.0",
-  "description": "Explain complex systems using visuals and simple terms.",
+  "description": "Системное проектирование: наглядные схемы и простые объяснения на русском языке.",
   "scripts": {
     "update-readme": "tsx scripts/readme.ts"
   },

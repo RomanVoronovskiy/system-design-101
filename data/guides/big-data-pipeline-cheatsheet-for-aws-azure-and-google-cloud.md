@@ -1,6 +1,6 @@
 ---
-title: "Big Data Pipeline Cheatsheet for AWS, Azure, and Google Cloud"
-description: "Big data pipeline cheatsheet for AWS, Azure, and Google Cloud."
+title: "Памятка по конвейеру больших данных для AWS, Azure и Google Cloud"
+description: "Памятка по конвейеру больших данных для AWS, Azure и Google Cloud."
 image: "https://assets.bytebytego.com/diagrams/0086-big-data-pipeline-cheatsheet-for-aws-azure-and-gcp.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0086-big-data-pipeline-cheatsheet-for-aws-azure-and-gcp.png)
 
-Each platform offers a comprehensive suite of services that cover the entire lifecycle:
+Каждая платформа предлагает комплексный набор услуг, охватывающий весь жизненный цикл:
 
-*   Ingestion: Collecting data from various sources
+* Прием: сбор данных из различных источников.
 
-*   Data Lake: Storing raw data
+* Озеро данных: хранение необработанных данных.
 
-*   Computation: Processing and analyzing data
+* Вычисления: обработка и анализ данных.
 
-*   Data Warehouse: Storing structured data
+* Хранилище данных: хранение структурированных данных.
 
-*   Presentation: Visualizing and reporting insights
+* Презентация: визуализация и составление отчетов.
 
-AWS uses services like Kinesis for data streaming, S3 for storage, EMR for processing, RedShift for warehousing, and QuickSight for visualization.
+AWS использует такие сервисы, как Kinesis для потоковой передачи данных, S3 для хранения, EMR для обработки, RedShift для хранения и QuickSight для визуализации.
 
-Azure’s pipeline includes Event Hubs for ingestion, Data Lake Store for storage, Databricks for processing, Cosmos DB for warehousing, and Power BI for presentation.
+Конвейер Azure включает в себя концентраторы событий для приема, Data Lake Store для хранения, Databricks для обработки, Cosmos DB для хранения и Power BI для представления.
 
-GCP offers PubSub for data streaming, Cloud Storage for data lakes, DataProc and DataFlow for processing, BigQuery for warehousing, and Data Studio for visualization.
+GCP предлагает PubSub для потоковой передачи данных, Cloud Storage для озер данных, DataProc и DataFlow для обработки, BigQuery для хранения и Data Studio для визуализации.

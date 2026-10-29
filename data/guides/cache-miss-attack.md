@@ -1,6 +1,6 @@
 ---
-title: "Cache Miss Attack"
-description: "Explore cache miss attacks, their impact, and mitigation strategies."
+title: "Кэш промаха атаки"
+description: "Изучите атаки с пропуском кэша, их влияние и стратегии смягчения последствий."
 image: "https://assets.bytebytego.com/diagrams/0128-cache-miss-attack.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0128-cache-miss-attack.png)
 
-Caching is awesome but it doesn’t come without a cost, just like many things in life.
+Кэширование — это здорово, но за него, как и за многие вещи в жизни, приходится платить.
 
-One of the issues is 𝐂𝐚𝐜𝐡𝐞 𝐌𝐢𝐬𝐬 𝐀𝐭𝐭𝐚𝐜𝐤. Please correct me if this is not the right term. It refers to the scenario where data to fetch doesn't exist in the database and the data isn’t cached either. So every request hits the database eventually, defeating the purpose of using a cache. If a malicious user initiates lots of queries with such keys, the database can easily be overloaded.
+Одна из проблем: 𝐂𝐚𝐜𝐡𝐞 𝐌𝐢𝐬𝐬 𝐀𝐭𝐭𝐚𝐜𝐤. Поправьте меня, если это неправильный термин. Это относится к сценарию, когда данные для извлечения не существуют в базе данных и данные также не кэшируются. Таким образом, каждый запрос в конечном итоге попадает в базу данных, что лишает смысла использование кэша. Если злонамеренный пользователь инициирует множество запросов с такими ключами, база данных может быть легко перегружена.
 
-The diagram above illustrates the process.
+Схема выше иллюстрирует этот процесс.
 
-## Solutions
+## Решения
 
-Two approaches are commonly used to solve this problem:
+Для решения этой проблемы обычно используются два подхода:
 
-*   **Cache keys with null value.** Set a short TTL (Time to Live) for keys with null value.
+* **Кэшируйте ключи с нулевым значением.** Установите короткий TTL (время жизни) для ключей с нулевым значением.
 
-*   **Using Bloom filter.** A Bloom filter is a data structure that can rapidly tell us whether an element is present in a set or not. If the key exists, the request first goes to the cache and then queries the database if needed. If the key doesn't exist in the data set, it means the key doesn’t exist in the cache/database. In this case, the query will not hit the cache or database layer.
+* **Использование фильтра Блума.** Фильтр Блума — это структура данных, которая может быстро сообщить нам, присутствует ли элемент в наборе или нет. Если ключ существует, запрос сначала отправляется в кеш, а затем при необходимости запрашивает базу данных. Если ключ не существует в наборе данных, это означает, что ключ не существует в кеше/базе данных. В этом случае запрос не затронет уровень кэша или базы данных.

@@ -1,6 +1,6 @@
 ---
-title: "8 Must-Know Scalability Strategies"
-description: "Explore 8 essential strategies to effectively scale your system."
+title: "8 стратегий масштабирования, которые необходимо знать"
+description: "Изучите 8 основных стратегий эффективного масштабирования вашей системы."
 image: "https://assets.bytebytego.com/diagrams/0013-8-must-know-strategies-to-scale-your-system.png"
 createdAt: "2024-01-27"
 draft: false
@@ -10,41 +10,40 @@ tags:
   - "Scalability"
   - "System Design"
 ---
-
-What do Amazon, Netflix, and Uber have in common? They are extremely good at scaling their system whenever needed.
+Что общего у Amazon, Netflix и Uber? Они чрезвычайно хорошо умеют масштабировать свою систему при необходимости.
 
 ![](https://assets.bytebytego.com/diagrams/0013-8-must-know-strategies-to-scale-your-system.png)
 
-Here are 8 must-know strategies to scale your system.
+Вот 8 обязательных стратегий масштабирования вашей системы.
 
-*   Stateless Services
+* Службы без гражданства
 
-    Design stateless services because they don’t rely on server-specific data and are easier to scale.
+Создавайте сервисы без отслеживания состояния, поскольку они не полагаются на данные, специфичные для сервера, и их легче масштабировать.
 
-*   Horizontal Scaling
+* Горизонтальное масштабирование
 
-    Add more servers so that the workload can be shared.
+Добавьте больше серверов, чтобы можно было разделить рабочую нагрузку.
 
-*   Load Balancing
+* Балансировка нагрузки
 
-    Use a load balancer to distribute incoming requests evenly across multiple servers.
+Используйте балансировщик нагрузки для равномерного распределения входящих запросов между несколькими серверами.
 
-*   Auto Scaling
+* Автоматическое масштабирование
 
-    Implement auto-scaling policies to adjust resources based on real-time traffic.
+Внедрите политики автоматического масштабирования для настройки ресурсов на основе трафика в реальном времени.
 
-*   Caching
+* Кэширование
 
-    Use caching to reduce the load on the database and handle repetitive requests at scale.
+Используйте кэширование, чтобы снизить нагрузку на базу данных и обрабатывать повторяющиеся запросы в любом масштабе.
 
-*   Database Replication
+* Репликация базы данных
 
-    Replicate data across multiple nodes to scale the read operations while improving redundancy.
+Репликация данных на нескольких узлах для масштабирования операций чтения и повышения избыточности.
 
-*   Database Sharding
+* Шардинг базы данных
 
-    Distribute data across multiple instances to scale the writes as well as reads.
+Распределяйте данные по нескольким экземплярам, ​​чтобы масштабировать операции записи и чтения.
 
-*   Async Processing
+* Асинхронная обработка
 
-    Move time-consuming and resource-intensive tasks to background workers using async processing to scale out new requests.
+Передавайте трудоемкие и ресурсоемкие задачи фоновым работникам, используя асинхронную обработку для масштабирования новых запросов.

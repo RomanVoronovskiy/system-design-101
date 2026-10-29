@@ -1,6 +1,6 @@
 ---
-title: "2 Decades of Cloud Evolution"
-description: "Explore the evolution of cloud computing over the past two decades."
+title: "Два десятилетия облачной эволюции"
+description: "Изучите эволюцию облачных вычислений за последние два десятилетия."
 image: "https://assets.bytebytego.com/diagrams/0147-cloud-evolution.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0147-cloud-evolution.png)
 
-IaaS, PaaS, Cloud Native… How do we get here? The diagram below shows two decades of cloud evolution.
+IaaS, PaaS, Cloud Native… Как мы сюда доберемся? На диаграмме ниже показаны два десятилетия эволюции облаков.
 
-## Cloud Evolution Timeline
+## Хронология эволюции облаков
 
-*   2001 - VMWare - Virtualization via hypervisor
+* 2001 — VMWare — Виртуализация через гипервизор
 
-*   2006 - AWS - IaaS (Infrastructure as a Service)
+* 2006 — AWS — IaaS (Инфраструктура как услуга)
 
-*   2009 - Heroku - PaaS (Platform as a Service)
+* 2009 — Heroku — PaaS (Платформа как услуга)
 
-*   2010 - OpenStack - Open-source IaaS
+* 2010 — OpenStack — IaaS с открытым исходным кодом.
 
-*   2011 - CloudFoundry - Open-source PaaS
+* 2011 г. — CloudFoundry — PaaS с открытым исходным кодом.
 
-*   2013 - Docker - Containers
+* 2013 — Докер — Контейнеры
 
-*   2015 - CNCF (Cloud Native Computing Foundation) - Cloud Native
+* 2015 — CNCF (Cloud Native Computing Foundation) — Cloud Native

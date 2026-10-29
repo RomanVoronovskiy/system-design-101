@@ -1,6 +1,6 @@
 ---
-title: '100X Postgres Scaling at Figma'
-description: 'Learn how Figma scaled its Postgres database by 100x.'
+title: "100-кратное масштабирование Postgres в Figma"
+description: "Узнайте, как Figma увеличила свою базу данных Postgres в 100 раз."
 image: 'https://assets.bytebytego.com/diagrams/0048-100x-postgres-scaling-at-figma.png'
 createdAt: '2024-02-12'
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0048-100x-postgres-scaling-at-figma.png)
 
-With 3 million monthly users, Figma’s user base has increased by 200% since 2018.
+С 3 миллионами пользователей в месяц пользовательская база Figma увеличилась на 200% с 2018 года.
 
-As a result, its Postgres database witnessed a whopping 100X growth.
+В результате база данных Postgres выросла в 100 раз.
 
-*   **Vertical Scaling and Replication**
+* **Вертикальное масштабирование и репликация**
 
-    Figma used a single, large Amazon RDS database.
+Figma использовала одну большую базу данных Amazon RDS.
 
-    As a first step, they upgraded to the largest instance available (from r5.12xlarge to r5.24xlarge).
+В качестве первого шага они обновились до самого большого доступного экземпляра (с r5.12xlarge до r5.24xlarge).
 
-    They also created multiple read replicas to scale read traffic and added PgBouncer as a connection pooler to limit the impact of a growing number of connections.
+Они также создали несколько реплик чтения для масштабирования трафика чтения и добавили PgBouncer в качестве пула соединений, чтобы ограничить влияние растущего числа соединений.
 
-*   **Vertical Partitioning**
+* **Вертикальное разделение**
 
-    The next step was vertical partitioning.
+Следующим шагом было вертикальное разбиение.
 
-    They migrated high-traffic tables like “Figma Files” and “Organizations” into their separate databases.
+Они перенесли таблицы с высоким трафиком, такие как «Файлы Figma» и «Организации», в свои отдельные базы данных.
 
-    Multiple PgBouncer instances were used to manage the connections for these separate databases.
+Для управления подключениями к этим отдельным базам данных использовалось несколько экземпляров PgBouncer.
 
-*   **Horizontal Partitioning**
+* **Горизонтальное разделение**
 
-    Over time, some tables crossed several terabytes of data and billions of rows.
+Со временем некоторые таблицы превысили несколько терабайт данных и миллиарды строк.
 
-    Postgres Vacuum became an issue and max IOPS exceeded the limits of Amazon RDS at the time.
+Postgres Vacuum стал проблемой, и максимальное количество операций ввода-вывода в секунду превысило ограничения Amazon RDS на тот момент.
 
-    To solve this, Figma implemented horizontal partitioning by splitting large tables across multiple physical databases.
+Чтобы решить эту проблему, Figma реализовала горизонтальное секционирование путем разделения больших таблиц по нескольким физическим базам данных.
 
-    A new DBProxy service was built to handle routing and query execution.
+Была создана новая служба DBProxy для управления маршрутизацией и выполнением запросов.

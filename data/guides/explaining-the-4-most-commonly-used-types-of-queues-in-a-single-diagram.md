@@ -1,6 +1,6 @@
 ---
-title: "Explaining the 4 Most Commonly Used Types of Queues"
-description: "Learn about the 4 most commonly used types of queues in a single diagram"
+title: "Объяснение 4 наиболее часто используемых типов очередей"
+description: "Узнайте о четырех наиболее часто используемых типах очередей на одной диаграмме."
 image: "https://assets.bytebytego.com/diagrams/0366-types-of-queues.png"
 createdAt: "2024-02-06"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0366-types-of-queues.png)
 
-Queues are popular data structures used widely in the system. The diagram above shows 4 different types of queues we often use.
+Очереди — это популярные структуры данных, широко используемые в системе. На диаграмме выше показаны 4 различных типа очередей, которые мы часто используем.
 
-## Simple FIFO Queue
+## Простая очередь FIFO
 
-A simple queue follows FIFO (First In First Out). A new element is inserted at the tail of the queue, and an element is removed from the head of the queue.
+Простая очередь следует принципу FIFO (первым пришел – первым обслужен). Новый элемент вставляется в конец очереди, а элемент удаляется из начала очереди.
 
-If we would like to send out email notifications to the users whenever we receive a payment response, we can use a FIFO queue. The emails will be sent out in the same order as the payment responses.
+Если мы хотим отправлять пользователям уведомления по электронной почте всякий раз, когда получаем ответ о платеже, мы можем использовать очередь FIFO. Письма будут отправлены в том же порядке, что и ответы на платежи.
 
-## Circular Queue
+## Круговая очередь
 
-A circular queue is also called a circular buffer or a ring buffer. Its last element is linked to the first element. Insertion takes place at the front of the queue and deletion at the end of the queue.
+Циклическую очередь также называют циклическим буфером или кольцевым буфером. Его последний элемент связан с первым элементом. Вставка происходит в начале очереди, а удаление — в конце очереди.
 
-A famous implementation is LMAX’s low-latency ring buffer. Trading components talk to each other via a ring buffer. This is implemented in memory and super fast.
+Известная реализация — кольцевой буфер LMAX с малой задержкой. Торговые компоненты общаются друг с другом через кольцевой буфер. Это реализуется в памяти и очень быстро.
 
-## Priority Queue
+## Приоритетная очередь
 
-The elements in a priority queue have predefined priorities. We take the element with the highest (or lowest) priority from the queue. Under the hood, it is implemented using a max heap or a min heap where the element with the largest or lowest priority is at the root of the heap.
+Элементы в очереди приоритетов имеют заранее определенные приоритеты. Берем из очереди элемент с наивысшим (или наименьшим) приоритетом. Под капотом это реализовано с использованием максимальной или минимальной кучи, где элемент с наибольшим или наименьшим приоритетом находится в корне кучи.
 
-A typical use case is assigning patients with the highest severity to the emergency room while others to the regular rooms.
+Типичный вариант использования — направление пациентов с самой высокой степенью тяжести в отделение неотложной помощи, а остальных — в обычные палаты.
 
-## Deque
+## Дек
 
-Deque is also called double-ended queue. The insertion and deletion can happen at both the head and the tail. Deque supports both FIFO and LIFO (Last In First Out), so we can use it to implement a stack data structure.
+Deque также называется двусторонней очередью. Вставка и удаление могут происходить как в начале, так и в хвосте. Deque поддерживает как FIFO, так и LIFO (Last In First Out), поэтому мы можем использовать его для реализации стековой структуры данных.

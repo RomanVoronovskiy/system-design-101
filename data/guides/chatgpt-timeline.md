@@ -1,6 +1,6 @@
 ---
-title: ChatGPT Timeline
-description: A visual guide to the evolution of ChatGPT and its underlying tech.
+title: "Хронология ChatGPT"
+description: "Визуальное руководство по развитию ChatGPT и лежащей в его основе технологии."
 image: 'https://assets.bytebytego.com/diagrams/0136-chatgpt-how-we-get-here.png'
 createdAt: '2024-03-10'
 draft: false
@@ -10,33 +10,32 @@ tags:
   - AI History
   - NLP
 ---
-
-A picture is worth a thousand words. ChatGPT seems to come out of nowhere. Little did we know that it was built on top of decades of research.
+Картинка стоит тысячи слов. ChatGPT, кажется, появился из ниоткуда. Мало ли мы знали, что он был построен на основе десятилетий исследований.
 
 ![](https://assets.bytebytego.com/diagrams/0136-chatgpt-how-we-get-here.png)
 
-The diagram above shows how we get here.
+На диаграмме выше показано, как мы сюда добираемся.
 
 ## 1950s
 
-In this stage, people still used primitive models that are based on rules.
+На этом этапе люди все еще использовали примитивные модели, основанные на правилах.
 
 ## 1980s
 
-Since the 1980s, machine learning started to pick up and was used for classification. The training was conducted on a small range of data.
+С 1980-х годов машинное обучение начало набирать обороты и стало использоваться для классификации. Обучение проводилось на небольшом диапазоне данных.
 
 ## 1990s - 2000s
 
-Since the 1990s, neural networks started to imitate human brains for labeling and training. There are generally 3 types:
+С 1990-х годов нейронные сети начали имитировать человеческий мозг для маркировки и обучения. Обычно существует 3 типа:
   
-- CNN (Convolutional Neural Network): often used in visual-related tasks.
-- RNN (Recurrent Neural Network): useful in natural language tasks
-- GAN (Generative Adversarial Network): comprised of two networks(Generative and Discriminative). This is a generative model that can generate novel images that look alike.
+- CNN (сверточная нейронная сеть): часто используется в задачах, связанных с визуальными эффектами.
+- RNN (рекуррентная нейронная сеть): полезна в задачах на естественном языке.
+- GAN (Генераторно-состязательная сеть): состоит из двух сетей (генеративной и дискриминационной). Это генеративная модель, которая может генерировать новые, похожие друг на друга изображения.
 
 ## 2017
 
-“Attention is all you need” represents the foundation of generative AI. The transformer model greatly shortens the training time by parallelism.
+«Внимание — это все, что вам нужно» — это основа генеративного ИИ. Модель трансформатора значительно сокращает время обучения за счет параллелизма.
    
-## 2018 - Now
+##2018 - Сейчас
 
-In this stage, due to the major progress of the transformer model, we see various models train on a massive amount of data. Human demonstration becomes the learning content of the model. We’ve seen many AI writers that can write articles, news, technical docs, and even code. This has great commercial value as well and sets off a global whirlwind.
+На этом этапе, благодаря значительному прогрессу модели трансформатора, мы видим, что различные модели обучаются на огромном объеме данных. Человеческая демонстрация становится содержанием обучения модели. Мы видели много авторов ИИ, которые могут писать статьи, новости, техническую документацию и даже код. Это также имеет большую коммерческую ценность и вызывает глобальный вихрь.

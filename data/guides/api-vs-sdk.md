@@ -1,6 +1,6 @@
 ---
-title: 'API vs SDK'
-description: 'Understand the key differences between APIs and SDKs in software development.'
+title: "API против SDK"
+description: "Поймите ключевые различия между API и SDK в разработке программного обеспечения."
 image: 'https://assets.bytebytego.com/diagrams/0071-api-vs-sdk.png'
 createdAt: '2024-02-22'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![API vs SDK](https://assets.bytebytego.com/diagrams/0071-api-vs-sdk.png)
 
-API (Application Programming Interface) and SDK (Software Development Kit) are essential tools in the software development world, but they serve distinct purposes:
+API (интерфейс прикладного программирования) и SDK (комплект разработки программного обеспечения) являются важными инструментами в мире разработки программного обеспечения, но они служат разным целям:
 
 **API:**
 
-An API is a set of rules and protocols that allows different software applications and services to communicate with each other.
+API — это набор правил и протоколов, который позволяет различным программным приложениям и службам взаимодействовать друг с другом.
 
-*   It defines how software components should interact.
-*   Facilitates data exchange and functionality access between software components.
-*   Typically consists of endpoints, requests, and responses.
+* Он определяет, как должны взаимодействовать компоненты программного обеспечения.
+* Облегчает обмен данными и доступ к функциям между программными компонентами.
+* Обычно состоит из конечных точек, запросов и ответов.
 
 **SDK:**
 
-An SDK is a comprehensive package of tools, libraries, sample code, and documentation that assists developers in building applications for a particular platform, framework, or hardware.
+SDK — это комплексный пакет инструментов, библиотек, примеров кода и документации, который помогает разработчикам создавать приложения для конкретной платформы, платформы или оборудования.
 
-*   Offers higher-level abstractions, simplifying development for a specific platform.
-*   Tailored to specific platforms or frameworks, ensuring compatibility and optimal performance on that platform.
-*   Offer access to advanced features and capabilities specific to the platform, which might be otherwise challenging to implement from scratch.
+* Предлагает абстракции более высокого уровня, упрощая разработку для конкретной платформы.
+* Адаптировано к конкретным платформам или платформам, обеспечивая совместимость и оптимальную производительность на этой платформе.
+* Предлагайте доступ к расширенным функциям и возможностям, специфичным для платформы, которые в противном случае было бы сложно реализовать с нуля.
 
-The choice between APIs and SDKs depends on the development goals and requirements of the project.
+Выбор между API и SDK зависит от целей разработки и требований проекта.

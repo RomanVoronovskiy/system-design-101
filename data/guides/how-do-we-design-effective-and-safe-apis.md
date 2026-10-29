@@ -1,6 +1,6 @@
 ---
-title: 'How to Design Effective and Safe APIs'
-description: 'Learn how to design effective and safe APIs with best practices.'
+title: "Как разработать эффективные и безопасные API"
+description: "Узнайте, как разрабатывать эффективные и безопасные API с использованием лучших практик."
 image: 'https://assets.bytebytego.com/diagrams/0180-effective-apis.jpeg'
 createdAt: '2024-03-05'
 draft: false
@@ -13,6 +13,6 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0180-effective-apis.jpeg)
 
-The diagram above shows typical API designs with a shopping cart example.
+На диаграмме выше показаны типичные конструкции API с примером корзины покупок.
 
-Note that API design is not just URL path design. Most of the time, we need to choose the proper resource names, identifiers, and path patterns. It is equally important to design proper HTTP header fields or to design effective rate-limiting rules within the API gateway.
+Обратите внимание, что дизайн API — это не просто дизайн URL-пути. В большинстве случаев нам необходимо выбрать правильные имена ресурсов, идентификаторы и шаблоны путей. Не менее важно разработать правильные поля заголовка HTTP или разработать эффективные правила ограничения скорости внутри шлюза API.

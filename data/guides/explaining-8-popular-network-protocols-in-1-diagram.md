@@ -1,6 +1,6 @@
 ---
-title: "Explaining 8 Popular Network Protocols in 1 Diagram"
-description: "A visual guide to understanding 8 common network protocols."
+title: "Объяснение 8 популярных сетевых протоколов в 1 диаграмме"
+description: "Визуальное руководство по пониманию 8 распространенных сетевых протоколов."
 image: "https://assets.bytebytego.com/diagrams/0292-explaining-8-popular-network-protocols-in-1-diagram.png"
 createdAt: "2024-03-15"
 draft: false
@@ -10,39 +10,38 @@ tags:
   - "Networking"
   - "Protocols"
 ---
-
-Network protocols are standard methods of transferring data between two computers in a network.
+Сетевые протоколы — это стандартные методы передачи данных между двумя компьютерами в сети.
 
 ![](https://assets.bytebytego.com/diagrams/0292-explaining-8-popular-network-protocols-in-1-diagram.png)
 
-## 1. HTTP (HyperText Transfer Protocol)
+## 1. HTTP (протокол передачи гипертекста)
 
-HTTP is a protocol for fetching resources such as HTML documents. It is the foundation of any data exchange on the Web and it is a client-server protocol.
+HTTP — это протокол для получения ресурсов, таких как документы HTML. Это основа любого обмена данными в Интернете и протокол клиент-сервер.
 
 ## 2. HTTP/3
 
-HTTP/3 is the next major revision of the HTTP. It runs on QUIC, a new transport protocol designed for mobile-heavy internet usage. It relies on UDP instead of TCP, which enables faster web page responsiveness. VR applications demand more bandwidth to render intricate details of a virtual scene and will likely benefit from migrating to HTTP/3 powered by QUIC.
+HTTP/3 — следующая основная версия HTTP. Он работает на QUIC, новом транспортном протоколе, разработанном для интенсивного использования мобильного Интернета. Он использует UDP вместо TCP, что обеспечивает более быструю реакцию веб-страницы. Приложения VR требуют большей пропускной способности для визуализации сложных деталей виртуальной сцены и, вероятно, выиграют от перехода на HTTP/3 на базе QUIC.
 
-## 3. HTTPS (HyperText Transfer Protocol Secure)
+## 3. HTTPS (безопасный протокол передачи гипертекста)
 
-HTTPS extends HTTP and uses encryption for secure communications.
+HTTPS расширяет HTTP и использует шифрование для безопасной связи.
 
-## 4. WebSocket
+## 4. Вебсокет
 
-WebSocket is a protocol that provides full-duplex communications over TCP. Clients establish WebSockets to receive real-time updates from the back-end services. Unlike REST, which always “pulls” data, WebSocket enables data to be “pushed”. Applications, like online gaming, stock trading, and messaging apps leverage WebSocket for real-time communication.
+WebSocket — это протокол, обеспечивающий полнодуплексную связь по TCP. Клиенты устанавливают WebSockets для получения обновлений в реальном времени от серверных служб. В отличие от REST, который всегда «извлекает» данные, WebSocket позволяет «пересылать» данные. Такие приложения, как онлайн-игры, торговля акциями и приложения для обмена сообщениями, используют WebSocket для связи в реальном времени.
 
-## 5. TCP (Transmission Control Protocol)
+## 5. TCP (протокол управления передачей)
 
-TCP is designed to send packets across the internet and ensure the successful delivery of data and messages over networks. Many application-layer protocols build on top of TCP.
+TCP предназначен для отправки пакетов через Интернет и обеспечения успешной доставки данных и сообщений по сетям. Многие протоколы прикладного уровня основаны на TCP.
 
-## 6. UDP (User Datagram Protocol)
+## 6. UDP (протокол пользовательских дейтаграмм)
 
-UDP sends packets directly to a target computer, without establishing a connection first. UDP is commonly used in time-sensitive communications where occasionally dropping packets is better than waiting. Voice and video traffic are often sent using this protocol.
+UDP отправляет пакеты непосредственно на целевой компьютер без предварительного установления соединения. UDP обычно используется в чувствительных ко времени соединениях, где иногда лучше отбрасывать пакеты, чем ждать. Голосовой и видеотрафик часто передается по этому протоколу.
 
-## 7. SMTP (Simple Mail Transfer Protocol)
+## 7. SMTP (простой протокол передачи почты)
 
-SMTP is a standard protocol to transfer electronic mail from one user to another.
+SMTP — это стандартный протокол передачи электронной почты от одного пользователя к другому.
 
-## 8. FTP (File Transfer Protocol)
+## 8. FTP (протокол передачи файлов)
 
-FTP is used to transfer computer files between client and server. It has separate connections for the control channel and data channel.
+FTP используется для передачи компьютерных файлов между клиентом и сервером. Он имеет отдельные соединения для канала управления и канала данных.

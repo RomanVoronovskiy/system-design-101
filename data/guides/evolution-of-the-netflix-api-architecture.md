@@ -1,6 +1,6 @@
 ---
-title: 'Evolution of the Netflix API Architecture'
-description: 'Explore the evolution of Netflix API architecture through four stages.'
+title: "Эволюция архитектуры API Netflix"
+description: "Изучите эволюцию архитектуры API Netflix, пройдя четыре этапа."
 image: 'https://assets.bytebytego.com/diagrams/0290-netflix-api.png'
 createdAt: '2024-03-11'
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0290-netflix-api.png)
 
-The Netflix API architecture went through 4 main stages.
+Архитектура Netflix API прошла 4 основных этапа.
 
-**Monolith**. The application is packaged and deployed as a monolith, such as a single Java WAR file, Rails app, etc. Most startups begin with a monolith architecture.
+**Монолит**. Приложение упаковывается и развертывается как монолит, например, один файл Java WAR, приложение Rails и т. д. Большинство стартапов начинаются с монолитной архитектуры.
 
-**Direct access**. In this architecture, a client app can make requests directly to the microservices. With hundreds or even thousands of microservices, exposing all of them to clients is not ideal.
+**Прямой доступ**. В этой архитектуре клиентское приложение может отправлять запросы непосредственно к микросервисам. При наличии сотен или даже тысяч микросервисов предоставление доступа к ним всем клиентам не является идеальным решением.
 
-**Gateway aggregation layer**. Some use cases may span multiple services, we need a gateway aggregation layer. Imagine the Netflix app needs 3 APIs (movie, production, talent) to render the frontend. The gateway aggregation layer makes it possible.
+**Уровень агрегации шлюза**. Некоторые варианты использования могут охватывать несколько сервисов, поэтому нам нужен уровень агрегации шлюзов. Представьте, что приложению Netflix требуется 3 API (кино, производство, талант) для рендеринга интерфейса. Уровень агрегации шлюзов делает это возможным.
 
-**Federated gateway**. As the number of developers grew and domain complexity increased, developing the API aggregation layer became increasingly harder. GraphQL federation allows Netflix to set up a single GraphQL gateway that fetches data from all the other APIs.
+**Федеративный шлюз**. По мере роста числа разработчиков и увеличения сложности предметной области разработка уровня агрегации API становилась все сложнее. Федерация GraphQL позволяет Netflix настроить один шлюз GraphQL, который извлекает данные из всех других API.

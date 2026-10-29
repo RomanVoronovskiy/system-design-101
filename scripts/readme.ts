@@ -53,30 +53,30 @@ function getGuides(): Guide[] {
 function generateMarkdownList() {
   const categories = getCategories()
   const guides = getGuides()
-  
+
   let markdown = ''
-  
+
   categories.forEach(category => {
-    markdown += `* [${category.title}](https://bytebytego.com/guides/${category.id})\n`
-    
+    markdown += `* [${category.title}](data/categories/${category.id}.md)\n`
+
     const categoryGuides = guides.filter(guide => guide.categories.includes(category.id))
     if (categoryGuides.length > 0) {
       categoryGuides.forEach(guide => {
-        markdown += `  * [${guide.title}](https://bytebytego.com/guides/${guide.id})\n`
+        markdown += `  * [${guide.title}](data/guides/${guide.id}.md)\n`
       })
     }
   })
-  
+
   return markdown
 }
 
 function updateReadmeToc() {
   const readmeContent = fs.readFileSync(README_PATH, 'utf8')
-  const tocRegex = /<!-- TOC -->\n([\s\S]*?)\n<!-- \/TOC -->/
+  const tocRegex = /<!-- TOC -->\r?\n([\s\S]*?)\r?\n<!-- \/TOC -->/
   const newToc = `<!-- TOC -->\n\n${generateMarkdownList()}\n\n<!-- /TOC -->`
   const updatedContent = readmeContent.replace(tocRegex, newToc)
   fs.writeFileSync(README_PATH, updatedContent)
-  console.log('TOC updated successfully!')
+  console.log('Оглавление обновлено.')
 }
 
 updateReadmeToc()

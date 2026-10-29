@@ -1,6 +1,6 @@
 ---
-title: "Cookies vs Sessions vs JWT vs PASETO"
-description: "Explore cookies, sessions, JWT, and PASETO for modern authentication."
+title: "Файлы cookie, сеансы, JWT и PASETO"
+description: "Изучите файлы cookie, сеансы, JWT и PASETO для современной аутентификации."
 image: "https://assets.bytebytego.com/diagrams/0155-cookies-vs-sessions-vs-jwt-vs-paseto.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0155-cookies-vs-sessions-vs-jwt-vs-paseto.png)
 
-Authentication ensures that only authorized users gain access to an application’s resources. It answers the question of the user’s identity i.e. “Who are you?”
+Аутентификация гарантирует, что только авторизованные пользователи получат доступ к ресурсам приложения. Он отвечает на вопрос о личности пользователя, например: «Кто вы?»
 
-The modern authentication landscape has multiple approaches: Cookies, Sessions, JWTs, and PASETO. Here’s what they mean:
+В современной среде аутентификации существует несколько подходов: файлы cookie, сеансы, JWT и PASETO. Вот что они означают:
 
-## Cookies and Sessions
+## Файлы cookie и сеансы
 
-Cookies and sessions are authentication mechanisms where session data is stored on the server and referenced via a client-side cookie.
+Файлы cookie и сеансы представляют собой механизмы аутентификации, при которых данные сеанса хранятся на сервере и на них можно ссылаться через файл cookie на стороне клиента.
 
-Sessions are ideal for applications requiring strict server-side control over user data. On the downside, sessions may face scalability challenges in distributed systems.
+Сеансы идеально подходят для приложений, требующих строгого контроля над пользовательскими данными на стороне сервера. С другой стороны, сеансы могут столкнуться с проблемами масштабируемости в распределенных системах.
 
-## JWT
+## ЯВТ
 
-JSON Web Token (JWT) is a stateless, self-contained authentication method that stores all user data within the token.
+JSON Web Token (JWT) — это автономный метод аутентификации без сохранения состояния, в котором все пользовательские данные хранятся в токене.
 
-JWTs are highly scalable but require careful handling to mitigate the chances of token theft and manage token expiration.
+JWT хорошо масштабируемы, но требуют осторожного обращения, чтобы снизить вероятность кражи токенов и контролировать истечение срока действия токенов.
 
-## PASETO
+## ПАСЕТО
 
-Platform-Agnostic Security Tokens or PASETO improve upon JWT by enforcing stronger cryptographic defaults and eliminating algorithmic vulnerabilities.
+Платформо-независимые токены безопасности или PASETO улучшают JWT, обеспечивая более строгие криптографические настройки по умолчанию и устраняя алгоритмические уязвимости.
 
-PASETO simplifies token implementation by avoiding the risks associated with misconfiguration.
+PASETO упрощает внедрение токена, избегая рисков, связанных с неправильной конфигурацией.

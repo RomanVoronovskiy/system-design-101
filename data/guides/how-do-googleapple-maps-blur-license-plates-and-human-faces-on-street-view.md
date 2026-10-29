@@ -1,6 +1,6 @@
 ---
-title: "How Google/Apple Maps Blur License Plates and Faces"
-description: "Explore how Google/Apple Maps blur sensitive data on Street View."
+title: "Как Google/Apple Maps размывают номерные знаки и лица"
+description: "Узнайте, как Google/Apple Maps размывают конфиденциальные данные в Street View."
 image: "https://assets.bytebytego.com/diagrams/0347-street-view-blurring-system.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0347-street-view-blurring-system.png)
 
-The diagram below presents a possible solution that might work in an interview setting.
+На диаграмме ниже показано возможное решение, которое может сработать в условиях собеседования.
 
-The high-level architecture is broken down into three stages:
+Архитектура высокого уровня разбита на три этапа:
 
-*   Data pipeline - prepare the training data set
-*   Blurring pipeline - extract and classify objects and blur relevant objects, for example, license plates and faces.
-*   Serving pipeline - serve blurred street view images to users.
+* Конвейер данных — подготовьте набор обучающих данных.
+* Конвейер размытия — извлекайте и классифицируйте объекты и размытие соответствующих объектов, например номерных знаков и лиц.
+* Конвейер обслуживания: подавайте пользователям размытые изображения с видом на улицу.
 
-## Data Pipeline
+## Конвейер данных
 
-Step 1: We get the annotated dataset for training. The objects are marked in bounding boxes.
+Шаг 1: Мы получаем аннотированный набор данных для обучения. Объекты отмечены в ограничивающих рамках.
 
-Steps 2-4: The dataset goes through preprocessing and augmentation to be normalized and scaled.
+Шаги 2–4: Набор данных проходит предварительную обработку и расширение для нормализации и масштабирования.
 
-Steps 5-6: The annotated dataset is then used to train the machine learning model, which is a 2-stage network.
+Шаги 5–6. Затем аннотированный набор данных используется для обучения модели машинного обучения, которая представляет собой двухэтапную сеть.
 
-## Blurring Pipeline
+## Размытие конвейера
 
-Steps 7-10: The street view images go through preprocessing, and object boundaries are detected in the images. Then sensitive objects are blurred, and the images are stored in an object store.
+Шаги 7–10: Изображения улиц проходят предварительную обработку, и на изображениях обнаруживаются границы объектов. Затем чувствительные объекты размываются, а изображения сохраняются в хранилище объектов.
 
-## Serving Pipeline
+## Обслуживающий конвейер
 
-Step 11: The blurred images can now be retrieved by users.
+Шаг 11: Теперь пользователи могут получить размытые изображения.

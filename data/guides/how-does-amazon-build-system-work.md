@@ -1,6 +1,6 @@
 ---
-title: "Amazon's Build System: Brazil"
-description: "Explore Amazon's Brazil build system for micro-repo driven collaboration."
+title: "Система сборки Amazon: Бразилия"
+description: "Изучите бразильскую систему сборки Amazon для совместной работы на основе микрорепозиториев."
 image: "https://assets.bytebytego.com/diagrams/0069-amazon-build-system.jpeg"
 createdAt: "2024-02-17"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0069-amazon-build-system.jpeg)
 
-Discover Amazon's innovative build system - Brazil.
+Откройте для себя инновационную систему сборки Amazon — Бразилия.
 
-Amazon's ownership model requires each team to manage its own repositories, which allows for more rapid innovation. Amazon has created a unique build system, known as Brazil, to enhance productivity and empower Amazon’s micro-repo driven collaboration. This system is certainly worth examining!
+Модель владения Amazon требует, чтобы каждая команда управляла собственными репозиториями, что позволяет быстрее внедрять инновации. Amazon создала уникальную систему сборки, известную как Brazil, для повышения производительности и расширения возможностей сотрудничества Amazon на основе микрорепозиториев. Эту систему, безусловно, стоит изучить!
 
-With Brazil, developers can focus on developing the code and create a simple-to-understand build configuration file. The build system will then process the output artifact repeatedly and consistently. The build config minimizes the build requirement, including language, versioning, dependencies, major versions, and lastly, how to resolve version conflicts.
+Используя Бразилию, разработчики могут сосредоточиться на разработке кода и создать простой для понимания файл конфигурации сборки. Затем система сборки будет многократно и последовательно обрабатывать выходной артефакт. Конфигурация сборки сводит к минимуму требования к сборке, включая язык, управление версиями, зависимости, основные версии и, наконец, способы разрешения конфликтов версий.
 
-For local builds, the Brazil build tool interprets the build configuration as a Directed Acyclic Graph (DAG), retrieves packages from the myservice’s private space (VersionSet) called myservice-cpp-version-set, generates the language-specific build configuration, and employs the specific build tool to produce the output artifact.
+Для локальных сборок инструмент сборки Brazil интерпретирует конфигурацию сборки как направленный ациклический граф (DAG), извлекает пакеты из частного пространства myservice (VersionSet), называемого myservice-cpp-version-set, генерирует конфигурацию сборки для конкретного языка и использует специальный инструмент сборки для создания выходного артефакта.
 
-A version set is a collection of package versions that offers a private space for the package and its dependencies. When a new package dependency is introduced, it must also be merged into this private space. There is a default version set called "live," which serves as a public space where anyone can publish any version.
+Набор версий — это набор версий пакета, который предоставляет личное пространство для пакета и его зависимостей. Когда появляется новая зависимость пакета, ее также необходимо объединить с этим частным пространством. Существует набор версий по умолчанию, называемый «живой», который служит общедоступным пространством, где каждый может опубликовать любую версию.
 
-Remotely, the package builder service provides an intuitive experience by selecting a version set and building targets. This service supports Amazon Linux on x86, x64, and ARM. Builds can be initiated manually or automatically upon a new commit to the master branch. The package builder guarantees build consistency and reproducibility, with each build process being snapshotted and the output artifact versioned.
+Удаленно служба сборки пакетов обеспечивает интуитивно понятный интерфейс, выбирая набор версий и создавая цели. Этот сервис поддерживает Amazon Linux на платформах x86, x64 и ARM. Сборки могут быть инициированы вручную или автоматически после новой фиксации в основной ветке. Сборщик пакетов гарантирует согласованность и воспроизводимость сборки, при этом каждый процесс сборки создается моментально, а выходной артефакт отслеживается версиями.

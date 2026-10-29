@@ -1,6 +1,6 @@
 ---
-title: "Can Kafka Lose Messages?"
-description: "Explore Kafka's message loss scenarios and prevention strategies."
+title: "Может ли Кафка потерять сообщения?"
+description: "Изучите сценарии потери сообщений Kafka и стратегии предотвращения."
 image: "https://assets.bytebytego.com/diagrams/0130-can-kafka-lose-messages.png"
 createdAt: "2024-02-12"
 draft: false
@@ -10,37 +10,36 @@ tags:
   - "Kafka"
   - "Message Loss"
 ---
+Обработка ошибок — один из наиболее важных аспектов построения надежных систем.
 
-Error handling is one of the most important aspects of building reliable systems.
-
-Today, we will discuss an important topic: Can Kafka lose messages?
+Сегодня мы обсудим важную тему: может ли Кафка терять сообщения?
 
 ![](https://assets.bytebytego.com/diagrams/0130-can-kafka-lose-messages.png)
 
-A common belief among many developers is that Kafka, by its very design, guarantees no message loss. However, understanding the nuances of Kafka's architecture and configuration is essential to truly grasp how and when it might lose messages, and more importantly, how to prevent such scenarios.
+Многие разработчики считают, что Kafka по самой своей конструкции не гарантирует отсутствие потери сообщений. Однако понимание нюансов архитектуры и конфигурации Kafka необходимо для того, чтобы по-настоящему понять, как и когда он может потерять сообщения и, что более важно, как предотвратить такие сценарии.
 
-The diagram above shows how a message can be lost during its lifecycle in Kafka.
+На диаграмме выше показано, как сообщение может быть потеряно во время его жизненного цикла в Kafka.
 
-## Producer
+## Продюсер
 
-When we call producer.send() to send a message, it doesn't get sent to the broker directly. There are two threads and a queue involved in the message-sending process:
+Когда мы вызываем Producer.send() для отправки сообщения, оно не отправляется брокеру напрямую. В процессе отправки сообщения участвуют два потока и очередь:
 
-*   Application thread
-*   Record accumulator
-*   Sender thread (I/O thread)
+* Тема приложения
+* Запись аккумулятора
+* Поток отправителя (поток ввода-вывода)
 
-We need to configure proper ‘acks’ and ‘retries’ for the producer to make sure messages are sent to the broker.
+Нам необходимо настроить правильные «подтверждения» и «повторные попытки» для производителя, чтобы гарантировать отправку сообщений брокеру.
 
-## Broker
+## Брокер
 
-A broker cluster should not lose messages when it is functioning normally. However, we need to understand which extreme situations might lead to message loss:
+Брокерский кластер не должен терять сообщения, когда он работает нормально. Однако нам необходимо понять, какие экстремальные ситуации могут привести к потере сообщения:
 
-*   The messages are usually flushed to the disk asynchronously for higher I/O throughput, so if the instance is down before the flush happens, the messages are lost.
+* Сообщения обычно сбрасываются на диск асинхронно для повышения пропускной способности ввода-вывода, поэтому, если экземпляр выйдет из строя до того, как произойдет сброс, сообщения будут потеряны.
 
-*   The replicas in the Kafka cluster need to be properly configured to hold a valid copy of the data. The determinism in data synchronization is important.
+* Реплики в кластере Kafka должны быть правильно настроены для хранения действительной копии данных. Детерминизм в синхронизации данных важен.
 
-## Consumer
+## Потребитель
 
-Kafka offers different ways to commit messages. Auto-committing might acknowledge the processing of records before they are actually processed. When the consumer is down in the middle of processing, some records may never be processed.
+Kafka предлагает различные способы фиксации сообщений. Автоматическая фиксация может подтвердить обработку записей до их фактической обработки. Когда потребитель не работает в процессе обработки, некоторые записи могут вообще не быть обработаны.
 
-A good practice is to combine both synchronous and asynchronous commits, where we use asynchronous commits in the processing loop for higher throughput and synchronous commits in exception handling to make sure the last offset is always committed.
+Хорошей практикой является объединение синхронных и асинхронных коммитов, при этом мы используем асинхронные фиксации в цикле обработки для более высокой пропускной способности и синхронные фиксации при обработке исключений, чтобы гарантировать, что последнее смещение всегда фиксируется.

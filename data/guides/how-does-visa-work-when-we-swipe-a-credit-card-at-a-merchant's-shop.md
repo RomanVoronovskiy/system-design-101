@@ -1,6 +1,6 @@
 ---
-title: "How VISA Works When Swiping a Credit Card"
-description: "Explore the VISA payment process from authorization to settlement."
+title: "Как работает VISA при использовании кредитной карты"
+description: "Изучите процесс оплаты VISA от авторизации до расчета."
 image: "https://assets.bytebytego.com/diagrams/0403-visa-payment.jpg"
 createdAt: "2024-03-13"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0403-visa-payment.jpg)
 
-VISA, Mastercard, and American Express act as card networks for clearing and settling funds. The card acquiring bank and the card issuing bank can be – and often are – different. If banks were to settle transactions one by one without an intermediary, each bank would have to settle the transactions with all the other banks. This is quite inefficient.
+VISA, Mastercard и American Express действуют как карточные сети для клиринга и расчета денежных средств. Банк-эквайер карты и банк-эмитент карты могут быть разными – и часто являются разными. Если бы банки осуществляли транзакции один за другим без посредника, каждому банку пришлось бы проводить расчеты по транзакциям со всеми остальными банками. Это весьма неэффективно.
 
-The diagram shows VISA’s role in the credit card payment process. There are two flows involved. Authorization flow happens when the customer swipes the credit card. Capture and settlement flow occurs when the merchant wants to get the money at the end of the day.
+На диаграмме показана роль VISA в процессе оплаты кредитной картой. Здесь участвуют два потока. Поток авторизации происходит, когда клиент проводит кредитную карту. Поток захвата и расчетов происходит, когда торговец хочет получить деньги в конце дня.
 
-## Authorization Flow
+## Поток авторизации
 
-*   Step 0: The card issuing bank issues credit cards to its customers.
+* Шаг 0: Банк-эмитент карты выдает кредитные карты своим клиентам.
 
-*   Step 1: The cardholder wants to buy a product and swipes the credit card at the Point of Sale (POS) terminal in the merchant’s shop.
+* Шаг 1: Владелец карты хочет купить товар и предъявляет кредитную карту в терминале торговой точки (POS) в магазине продавца.
 
-*   Step 2: The POS terminal sends the transaction to the acquiring bank, which has provided the POS terminal.
+* Шаг 2: POS-терминал отправляет транзакцию банку-эквайеру, предоставившему POS-терминал.
 
-*   Steps 3 and 4: The acquiring bank sends the transaction to the card network, also called the card scheme. The card network sends the transaction to the issuing bank for approval.
+* Шаги 3 и 4: Банк-эквайер отправляет транзакцию в карточную сеть, также называемую карточной схемой. Карточная сеть отправляет транзакцию в банк-эмитент на одобрение.
 
-*   Steps 4.1, 4.2, and 4.3: The issuing bank freezes the money if the transaction is approved. The approval or rejection is sent back to the acquirer, as well as the POS terminal.
+* Шаги 4.1, 4.2 и 4.3: Банк-эмитент замораживает деньги, если транзакция одобрена. Одобрение или отказ отправляется обратно эквайру, а также на POS-терминал.
 
-## Capture and Settlement Flow
+## Процесс захвата и урегулирования
 
-*   Steps 1 and 2: The merchant wants to collect the money at the end of the day, so they hit ”capture” on the POS terminal. The transactions are sent to the acquirer in batches. The acquirer sends the batch file with transactions to the card network.
+* Шаги 1 и 2: Продавец хочет забрать деньги в конце дня, поэтому он нажимает «захватить» на POS-терминале. Транзакции отправляются эквайеру пакетами. Эквайер отправляет пакетный файл с транзакциями в карточную сеть.
 
-*   Step 3: The card network performs clearing for the transactions collected from different acquirers, and sends the clearing files to different issuing banks.
+* Шаг 3: Сеть карточек выполняет клиринг транзакций, полученных от разных эквайеров, и отправляет файлы клиринга в разные банки-эмитенты.
 
-*   Step 4: The issuing banks confirm the correctness of the clearing files, and transfer money to the relevant acquiring banks.
+* Шаг 4: Банки-эмитенты подтверждают правильность клиринговых файлов и переводят деньги соответствующим банкам-эквайерам.
 
-*   Step 5: The acquiring bank then transfers money to the merchant’s bank.
+* Шаг 5: Банк-эквайер затем переводит деньги в банк продавца.
 
-*   Step 4: The card network clears the transactions from different acquiring banks. Clearing is a process in which mutual offset transactions are netted, so the number of total transactions is reduced.
+* Шаг 4: Карточная сеть очищает транзакции от разных банков-эквайеров. Клиринг — это процесс, при котором взаимозачетные транзакции взаимозачетаются, поэтому общее количество транзакций уменьшается.
 
-In the process, the card network takes on the burden of talking to each bank and receives service fees in return.
+При этом карточная сеть берет на себя бремя общения с каждым банком и получает взамен комиссию за обслуживание.

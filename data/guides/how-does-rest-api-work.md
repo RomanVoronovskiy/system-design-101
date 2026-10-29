@@ -1,6 +1,6 @@
 ---
-title: 'How does REST API work?'
-description: 'Explore REST API principles, methods, constraints, and best practices.'
+title: "Как работает REST API?"
+description: "Изучите принципы, методы, ограничения и лучшие практики REST API."
 image: 'https://assets.bytebytego.com/diagrams/0317-rest-api-authentication-methods.png'
 createdAt: '2024-02-10'
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0317-rest-api-authentication-methods.png)
 
-What are its principles, methods, constraints, and best practices?
+Каковы его принципы, методы, ограничения и лучшие практики?
 
-I hope the diagram above gives you a quick overview.
+Я надеюсь, что диаграмма выше даст вам краткое представление.
 
 ![](https://assets.bytebytego.com/diagrams/0317-rest-api-authentication-methods.png)

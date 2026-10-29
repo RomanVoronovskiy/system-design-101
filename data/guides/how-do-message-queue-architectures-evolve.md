@@ -1,6 +1,6 @@
 ---
-title: "IBM MQ -> RabbitMQ -> Kafka -> Pulsar: Message Queue Evolution"
-description: "Explore the evolution of message queue architectures: IBM MQ to Pulsar."
+title: "IBM MQ -> RabbitMQ -> Kafka -> Pulsar: эволюция очереди сообщений"
+description: "Изучите эволюцию архитектур очередей сообщений: от IBM MQ до Pulsar."
 image: "https://assets.bytebytego.com/diagrams/0271-message-queue-evolve.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![Message Queue Evolution](https://assets.bytebytego.com/diagrams/0271-message-queue-evolve.png)
 
-*   IBM MQ
+* IBM МК
 
-IBM MQ was launched in 1993. It was originally called MQSeries and was renamed WebSphere MQ in 2002. It was renamed to IBM MQ in 2014. IBM MQ is a very successful product widely used in the financial sector. Its revenue still reached 1 billion dollars in 2020.
+IBM MQ был запущен в 1993 году. Первоначально он назывался MQSeries и был переименован в WebSphere MQ в 2002 году. В 2014 году он был переименован в IBM MQ. IBM MQ — очень успешный продукт, широко используемый в финансовом секторе. В 2020 году его выручка все же достигла 1 миллиарда долларов.
 
-*   RabbitMQ
+* КроликMQ
 
-RabbitMQ architecture differs from IBM MQ and is more similar to Kafka concepts. The producer publishes a message to an exchange with a specified exchange type. It can be direct, topic, or fanout. The exchange then routes the message into the queues based on different message attributes and the exchange type. The consumers pick up the message accordingly.
+Архитектура RabbitMQ отличается от IBM MQ и больше похожа на концепции Kafka. Производитель публикует сообщение на бирже с указанным типом обмена. Оно может быть прямым, тематическим или разветвленным. Затем обмен направляет сообщение в очереди на основе различных атрибутов сообщения и типа обмена. Потребители воспринимают сообщение соответствующим образом.
 
-*   Kafka
+* Кафка
 
-In early 2011, LinkedIn open sourced Kafka, which is a distributed event streaming platform. It was named after Franz Kafka. As the name suggested, Kafka is optimized for writing. It offers a high-throughput, low-latency platform for handling real-time data feeds. It provides a unified event log to enable event streaming and is widely used in internet companies.
+В начале 2011 года LinkedIn открыла исходный код Kafka, платформы распределенной потоковой передачи событий. Он был назван в честь Франца Кафки. Как следует из названия, Kafka оптимизирован для письма. Он предлагает платформу с высокой пропускной способностью и низкой задержкой для обработки потоков данных в реальном времени. Он обеспечивает единый журнал событий для обеспечения потоковой передачи событий и широко используется в интернет-компаниях.
 
-Kafka defines producer, broker, topic, partition, and consumer. Its simplicity and fault tolerance allow it to replace previous products like AMQP-based message queues.
+Kafka определяет производителя, брокера, тему, раздел и потребителя. Его простота и отказоустойчивость позволяют ему заменить предыдущие продукты, такие как очереди сообщений на основе AMQP.
 
-*   Pulsar
+* Пульсар
 
-Pulsar, developed originally by Yahoo, is an all-in-one messaging and streaming platform. Compared with Kafka, Pulsar incorporates many useful features from other products and supports a wide range of capabilities. Also, Pulsar architecture is more cloud-native, providing better support for cluster scaling and partition migration, etc.
+Pulsar, первоначально разработанная Yahoo, представляет собой универсальную платформу для обмена сообщениями и потоковой передачи. По сравнению с Kafka, Pulsar включает в себя множество полезных функций других продуктов и поддерживает широкий спектр возможностей. Кроме того, архитектура Pulsar более ориентирована на облако, обеспечивая лучшую поддержку масштабирования кластера, миграции разделов и т. д.
 
-There are two layers in Pulsar architecture: the serving layer and the persistent layer. Pulsar natively supports tiered storage, where we can leverage cheaper object storage like AWS S3 to persist messages for a longer term.
+В архитектуре Pulsar есть два уровня: обслуживающий уровень и постоянный уровень. Pulsar изначально поддерживает многоуровневое хранилище, где мы можем использовать более дешевое объектное хранилище, такое как AWS S3, для хранения сообщений в течение более длительного срока.

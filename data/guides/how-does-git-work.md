@@ -1,6 +1,6 @@
 ---
-title: "How Git Works"
-description: "Understanding the inner workings of Git and its storage locations."
+title: "Как работает Git"
+description: "Понимание внутренней работы Git и мест его хранения."
 image: "https://assets.bytebytego.com/diagrams/0202-git-commands.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0202-git-commands.png)
 
-To begin with, it's essential to identify where our code is stored. The common assumption is that there are only two locations - one on a remote server like Github and the other on our local machine. However, this isn't entirely accurate. Git maintains three local storages on our machine, which means that our code can be found in four places:
+Для начала важно определить, где хранится наш код. Обычно предполагается, что существует только два места — одно на удаленном сервере, таком как Github, а другое на нашем локальном компьютере. Однако это не совсем точно. Git поддерживает три локальных хранилища на нашей машине, а это значит, что наш код можно найти в четырех местах:
 
-*   Working directory: where we edit files
+* Рабочий каталог: где мы редактируем файлы
 
-*   Staging area: a temporary location where files are kept for the next commit
+* Промежуточная область: временное место, где хранятся файлы для следующего коммита.
 
-*   Local repository: contains the code that has been committed
+* Локальный репозиторий: содержит зафиксированный код.
 
-*   Remote repository: the remote server that stores the code
+* Удаленный репозиторий: удаленный сервер, на котором хранится код.
 
-Most Git commands primarily move files between these four locations.
+Большинство команд Git в основном перемещают файлы между этими четырьмя местами.

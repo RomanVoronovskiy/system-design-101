@@ -1,6 +1,6 @@
 ---
-title: 'How Browsers Render Web Pages'
-description: 'Explore how browsers render web pages: from HTML parsing to display.'
+title: "Как браузеры отображают веб-страницы"
+description: "Узнайте, как браузеры отображают веб-страницы: от анализа HTML до отображения."
 image: 'https://assets.bytebytego.com/diagrams/0090-browser-render-page.jpg'
 createdAt: '2024-02-01'
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0090-browser-render-page.jpg)
 
-*   **Parse HTML and generate a Document Object Model (DOM) tree.**
+* **Разобрать HTML и создать дерево объектной модели документа (DOM).**
 
-    When the browser receives the HTML data from the server, it immediately parses it and converts it into a DOM tree.
+Когда браузер получает данные HTML с сервера, он немедленно анализирует их и преобразует в дерево DOM.
 
-*   **Parse CSS and generate CSSOM tree.**
+* **Разбор CSS и создание дерева CSSOM.**
 
-    The styles (CSS files) are loaded and parsed to the CSSOM (CSS Object Model).
+Стили (файлы CSS) загружаются и анализируются в CSSOM (объектная модель CSS).
 
-*   **Combine DOM tree and CSSOM tree to construct the Render Tree.** The render tree maps all DOM structures except invisible elements (such as `<head>` or tags with `display:none;`). In other words, the render tree is a visual representation of the DOM.
+* **Объедините дерево DOM и дерево CSSOM, чтобы построить дерево рендеринга.** Дерево рендеринга отображает все структуры DOM, кроме невидимых элементов (таких как `<head>` или теги с `display:none;`). Другими словами, дерево рендеринга — это визуальное представление DOM.
 
-*   **Layout**
+*   **Макет**
 
-    The content in each element of the rendering tree will be calculated to get the geometric information (position, size), which is called layout.
+Содержимое каждого элемента дерева рендеринга будет рассчитываться для получения геометрической информации (положение, размер), которая называется макетом.
 
-*   **Painting**
+*   **Рисование**
 
-    After the layout is complete, the rendering tree is transformed into the actual content on the screen. This step is called painting. The browser gets the absolute pixels of the content.
+После завершения макета дерево рендеринга преобразуется в реальный контент на экране. Этот этап называется покраской. Браузер получает абсолютные пиксели контента.
 
-*   **Display**
+*   **Отображать**
 
-    Finally, the browser sends the absolute pixels to the GPU and displays them on the page.
+Наконец, браузер отправляет абсолютные пиксели в графический процессор и отображает их на странице.

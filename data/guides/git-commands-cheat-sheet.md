@@ -1,6 +1,6 @@
 ---
-title: "Git Commands Cheat Sheet"
-description: "A handy guide to essential Git commands for developers."
+title: "Шпаргалка по командам Git"
+description: "Удобное руководство по основным командам Git для разработчиков."
 image: "https://assets.bytebytego.com/diagrams/0201-git-commands-cheat-sheet.png"
 createdAt: "2024-02-25"
 draft: false
@@ -13,48 +13,48 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0201-git-commands-cheat-sheet.png)
 
-## Getting Started
+## Начиная
 
-*   **git init**: Initializes a new Git repository.
+* **git init**: инициализирует новый репозиторий Git.
 
-*   **git clone [url]**: Clones a repository from a remote URL.
+* **git clone [url]**: клонирует репозиторий с удаленного URL-адреса.
 
-## Making Changes
+## Внесение изменений
 
-*   **git add [file]**: Adds a file to the staging area.
+* **git add [файл]**: добавляет файл в промежуточную область.
 
-*   **git commit -m "[message]"**: Commits changes with a descriptive message.
+* **git commit -m "[message]"**: фиксирует изменения с описательным сообщением.
 
-*   **git status**: Shows the status of the working directory.
+* **git status**: показывает состояние рабочего каталога.
 
-*   **git diff**: Shows the differences between the working directory and the staging area.
+* **git diff**: показывает различия между рабочим каталогом и промежуточной областью.
 
-## Branching and Merging
+## Ветвление и слияние
 
-*   **git branch**: Lists all local branches.
+* **git Branch**: список всех локальных ветвей.
 
-*   **git branch [branch-name]**: Creates a new branch.
+* **git ветка [имя-ветви]**: Создает новую ветку.
 
-*   **git checkout [branch-name]**: Switches to the specified branch.
+* **git checkout [имя-ветви]**: переключается на указанную ветку.
 
-*   **git merge [branch-name]**: Merges the specified branch into the current branch.
+* **git merge [имя-ветви]**: объединяет указанную ветку с текущей.
 
-*   **git branch -d [branch-name]**: Deletes the specified branch.
+* **git Branch -d [имя-ветви]**: удаляет указанную ветку.
 
-## Remote Repositories
+## Удаленные репозитории
 
-*   **git remote add origin [url]**: Adds a remote repository.
+* **git удаленное добавление источника [url]**: добавляет удаленный репозиторий.
 
-*   **git push origin [branch-name]**: Pushes changes to the remote repository.
+* **git push origin [имя ветки]**: отправляет изменения в удаленный репозиторий.
 
-*   **git pull origin [branch-name]**: Pulls changes from the remote repository.
+* **git pull origin [имя ветки]**: извлекает изменения из удаленного репозитория.
 
-*   **git fetch**: Fetches changes from the remote repository without merging.
+* **git fetch**: извлекает изменения из удаленного репозитория без слияния.
 
-## Undoing Changes
+## Отмена изменений
 
-*   **git reset [file]**: Unstages a file.
+* **git reset [файл]**: удаляет файл из резервной копии.
 
-*   **git checkout -- [file]**: Discards changes to a file.
+* **git checkout -- [файл]**: отменяет изменения в файле.
 
-*   **git revert [commit]**: Creates a new commit that undoes the changes from the specified commit.
+* **git revert [commit]**: создает новый коммит, который отменяет изменения указанного коммита.

@@ -1,6 +1,6 @@
 ---
-title: 'A Cheatsheet on Comparing API Architectural Styles'
-description: 'A quick reference guide comparing popular API architectural styles.'
+title: "Шпаргалка по сравнению архитектурных стилей API"
+description: "Краткое справочное руководство по сравнению популярных архитектурных стилей API."
 image: 'https://assets.bytebytego.com/diagrams/0092-cheatsheet-on-comparing-api-architectural-styles.png'
 createdAt: '2024-02-26'
 draft: false
@@ -13,11 +13,11 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0092-cheatsheet-on-comparing-api-architectural-styles.png)
 
-It covers the 6 most popular API architectural styles:
+Он охватывает 6 самых популярных архитектурных стилей API:
 
-* SOAP
-* REST
-* GraphQL
+* МЫЛО
+* ОТДЫХ
+* ГрафQL
 * gRPC
-* WebSocket
-* Webhook
+* Вебсокет
+* Вебхук

@@ -1,6 +1,6 @@
 ---
-title: "How Can Cache Systems Go Wrong?"
-description: "Explore common cache pitfalls and effective mitigation strategies."
+title: "Как системы кэширования могут пойти не так?"
+description: "Изучите распространенные ошибки кэша и эффективные стратегии их устранения."
 image: "https://assets.bytebytego.com/diagrams/0038-how-caches-can-go-wrong.png"
 createdAt: "2024-03-01"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0038-how-caches-can-go-wrong.png)
 
-The diagram above shows 4 typical cases where caches can go wrong and their solutions.
+На диаграмме выше показаны 4 типичных случая, когда кэши могут работать неправильно, и их решения.
 
-## 1. Thunder Herd Problem
+## 1. Проблема громового стада
 
-This happens when a large number of keys in the cache expire at the same time. Then the query requests directly hit the database, which overloads the database.
+Это происходит, когда срок действия большого количества ключей в кэше истекает одновременно. Тогда запросы запросов напрямую попадают в базу данных, что перегружает базу данных.
 
-There are two ways to mitigate this issue: one is to avoid setting the same expiry time for the keys, adding a random number in the configuration; the other is to allow only the core business data to hit the database and prevent non-core data to access the database until the cache is back up.
+Есть два способа решить эту проблему: один — не устанавливать одинаковый срок действия ключей, добавив в конфигурацию случайное число; другой — разрешить попадание в базу данных только основных бизнес-данных и предотвратить доступ неосновных данных к базе данных до тех пор, пока кэш не будет восстановлен.
 
-## 2. Cache Penetration
+## 2. Проникновение в кэш
 
-This happens when the key doesn’t exist in the cache or the database. The application cannot retrieve relevant data from the database to update the cache. This problem creates a lot of pressure on both the cache and the database.
+Это происходит, когда ключ не существует в кеше или базе данных. Приложение не может получить соответствующие данные из базы данных для обновления кеша. Эта проблема создает большую нагрузку как на кэш, так и на базу данных.
 
-To solve this, there are two suggestions.
-*   Cache a null value for non-existent keys, avoiding hitting the database.
-*   Use a bloom filter to check the key existence first, and if the key doesn’t exist, we can avoid hitting the database.
+Чтобы решить эту проблему, есть два предложения.
+* Кэшируйте нулевое значение для несуществующих ключей, избегая попадания в базу данных.
+* Используйте фильтр Блума, чтобы сначала проверить существование ключа, и если ключ не существует, мы можем избежать обращения к базе данных.
 
-## 3. Cache Breakdown
+## 3. Разбивка кэша
 
-This is similar to the thunder herd problem. It happens when a hot key expires. A large number of requests hit the database.
+Это похоже на проблему громового стада. Это происходит, когда истекает срок действия горячей клавиши. В базу данных попало большое количество запросов.
 
-Since the hot keys take up 80% of the queries, we do not set an expiration time for them.
+Поскольку горячие клавиши занимают 80% запросов, мы не устанавливаем для них срок действия.
 
-## 4. Cache Crash
+## 4. Сбой кэша
 
-This happens when the cache is down and all the requests go to the database.
+Это происходит, когда кеш не работает и все запросы поступают в базу данных.
 
-There are two ways to solve this problem.
-*   Set up a circuit breaker, and when the cache is down, the application services cannot visit the cache or the database.
-*   Set up a cluster for the cache to improve cache availability.
+Есть два способа решить эту проблему.
+* Установите автоматический выключатель, и когда кеш не работает, службы приложений не смогут посещать кеш или базу данных.
+* Настройте кластер для кэша, чтобы улучшить доступность кэша.

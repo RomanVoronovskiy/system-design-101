@@ -1,6 +1,6 @@
 ---
-title: "A Crash Course on Database Sharding"
-description: "Learn database sharding: concepts, techniques, and implementation."
+title: "Ускоренный курс по сегментированию базы данных"
+description: "Изучите сегментирование базы данных: концепции, методы и реализацию."
 image: "https://assets.bytebytego.com/diagrams/0065-a-crash-course-on-database-sharding.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,56 +13,56 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0065-a-crash-course-on-database-sharding.png)
 
-## What is Database Sharding?
+## Что такое сегментирование базы данных?
 
-Database sharding is a type of database partitioning that separates very large databases into smaller, faster, more easily managed parts called data shards. The word shard means a small piece of something bigger.
+Сегментирование базы данных — это тип разделения базы данных, при котором очень большие базы данных разделяются на более мелкие, быстрые и легко управляемые части, называемые фрагментами данных. Слово осколок означает маленький кусочек чего-то большего.
 
-Sharding is also known as horizontal partitioning. Each shard contains a portion of the data, and all shards together contain all of the data.
+Шардинг также известен как горизонтальное секционирование. Каждый сегмент содержит часть данных, а все сегменты вместе содержат все данные.
 
-## Why Sharding?
+## Почему шардинг?
 
-Sharding is implemented to solve these problems:
+Шардинг реализован для решения таких проблем:
 
-*   **Too much data on one machine**: A single database server can only handle so much data.
+* **Слишком много данных на одном компьютере**: один сервер базы данных может обрабатывать только ограниченный объем данных.
 
-*   **Too many requests on one machine**: A single database server can only handle so many requests.
+* **Слишком много запросов на одном компьютере**: один сервер базы данных может обрабатывать только определенное количество запросов.
 
-*   **High Latency**: As data grows, query latency increases.
+* **Высокая задержка**: по мере роста данных задержка запроса увеличивается.
 
-## How Sharding Works
+## Как работает шардинг
 
-Sharding involves splitting a database into multiple, independent parts (shards) and distributing them across different servers or machines. Each shard contains a subset of the data, and all shards collectively hold the entire dataset.
+Шардинг предполагает разделение базы данных на несколько независимых частей (осколков) и распределение их по разным серверам или машинам. Каждый сегмент содержит подмножество данных, а все сегменты в совокупности содержат весь набор данных.
 
-### Sharding Key
+### Шардинговый ключ
 
-A sharding key is a column in the database table that determines how the data is distributed across the shards. The sharding key is used by the sharding algorithm to determine which shard a particular row of data should be stored in.
+Ключ сегментирования — это столбец в таблице базы данных, который определяет, как данные распределяются по сегментам. Ключ сегментирования используется алгоритмом сегментирования для определения того, в каком сегменте должна храниться определенная строка данных.
 
-### Sharding Algorithm
+### Алгоритм шардинга
 
-The sharding algorithm is the logic that determines which shard a particular row of data should be stored in. The sharding algorithm uses the sharding key to make this determination.
+Алгоритм сегментирования — это логика, которая определяет, в каком сегменте должна храниться определенная строка данных. Алгоритм сегментирования использует ключ сегментирования для принятия этого решения.
 
-Here are some common sharding algorithms:
+Вот некоторые распространенные алгоритмы шардинга:
 
-*   **Range-based sharding**: Data is divided into ranges based on the sharding key. For example, users with IDs from 1 to 1000 might be stored in shard 1, users with IDs from 1001 to 2000 in shard 2, and so on.
+* **Сегментирование на основе диапазона**: данные делятся на диапазоны на основе ключа сегментирования. Например, пользователи с идентификаторами от 1 до 1000 могут храниться в сегменте 1, пользователи с идентификаторами от 1001 до 2000 — в сегменте 2 и так далее.
 
-*   **Hash-based sharding**: A hash function is applied to the sharding key to determine the shard. For example, `shard_id = hash(user_id) % num_shards`.
+* **Сегментирование на основе хэша**: к ключу сегментирования применяется хэш-функция для определения сегмента. Например, `shard_id = hash(user_id) % num_shards`.
 
-*   **Directory-based sharding**: A lookup table (or directory) is used to map sharding keys to shard locations.
+* **Сегментирование на основе каталога**: таблица поиска (или каталог) используется для сопоставления ключей сегментирования с местоположениями сегментов.
 
-## Sharding Approaches
+## Подходы к сегментированию
 
-*   **Application-level sharding**: The application is responsible for determining which shard to use for each query.
+* **Сегментирование на уровне приложения**: приложение отвечает за определение того, какой сегмент использовать для каждого запроса.
 
-*   **Middleware sharding**: A middleware layer sits between the application and the database and handles the sharding logic.
+* **Сегментирование промежуточного программного обеспечения**. Уровень промежуточного программного обеспечения находится между приложением и базой данных и управляет логикой сегментирования.
 
-*   **Database-native sharding**: The database system itself provides sharding capabilities.
+* **Сегментирование на основе базы данных**: сама система базы данных предоставляет возможности сегментирования.
 
-## Sharding Challenges
+## Проблемы с шардингом
 
-*   **Increased Complexity**: Sharding adds complexity to the database infrastructure and application code.
+* **Повышенная сложность**: сегментирование усложняет инфраструктуру базы данных и код приложения.
 
-*   **Data Distribution**: Choosing the right sharding key and algorithm is crucial for even data distribution and performance.
+* **Распределение данных**. Выбор правильного ключа и алгоритма сегментирования имеет решающее значение для равномерного распределения данных и производительности.
 
-*   **Joins and Transactions**: Performing joins and transactions across shards can be challenging and may require distributed transaction management.
+* **Объединения и транзакции**. Выполнение объединений и транзакций между сегментами может быть сложной задачей и может потребовать управления распределенными транзакциями.
 
-*   **Resharding**: Changing the sharding scheme after the database has been sharded can be a complex and time-consuming process.
+* **Перешардинг**. Изменение схемы сегментирования после сегментирования базы данных может оказаться сложным и трудоемким процессом.

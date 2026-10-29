@@ -1,6 +1,6 @@
 ---
-title: How to Design Secure Web API Access
-description: Learn how to design secure web API access for your website.
+title: "Как спроектировать безопасный доступ к веб-API"
+description: "Узнайте, как создать безопасный доступ к веб-API для вашего веб-сайта."
 image: 'https://assets.bytebytego.com/diagrams/0325-secure-api.png'
 createdAt: '2024-03-06'
 draft: false
@@ -13,33 +13,33 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0325-secure-api.png)
 
-When we open web API access to users, we need to make sure each API call is authenticated. This means the user must be who they claim to be.
+Когда мы открываем пользователям доступ к веб-API, нам необходимо убедиться, что каждый вызов API аутентифицирован. Это означает, что пользователь должен быть тем, за кого себя выдает.
 
-In this post, we explore two common ways:
+В этом посте мы рассмотрим два распространенных способа:
 
-*   Token based authentication
-*   HMAC (Hash-based Message Authentication Code) authentication
+* Аутентификация на основе токенов
+* Аутентификация HMAC (код аутентификации сообщения на основе хэша)
 
-The diagram above illustrates how they work.
+На диаграмме выше показано, как они работают.
 
-**Token based**
+**На основе токена**
 
-Step 1 - the user enters their password into the client, and the client sends the password to the Authentication Server.
+Шаг 1 — пользователь вводит свой пароль в клиент, и клиент отправляет пароль на сервер аутентификации.
 
-Step 2 - the Authentication Server authenticates the credentials and generates a token with an expiry time.
+Шаг 2. Сервер аутентификации проверяет учетные данные и генерирует токен со сроком действия.
 
-Steps 3 and 4 - now the client can send requests to access server resources with the token in the HTTP header. This access is valid until the token expires.
+Шаги 3 и 4 — теперь клиент может отправлять запросы на доступ к ресурсам сервера с токеном в HTTP-заголовке. Этот доступ действителен до истечения срока действия токена.
 
-**HMAC based**
+**На основе HMAC**
 
-This mechanism generates a Message Authentication Code (signature) by using a hash function (SHA256 or MD5).
+Этот механизм генерирует код аутентификации сообщения (подпись) с помощью хеш-функции (SHA256 или MD5).
 
-Steps 1 and 2 - the server generates two keys, one is Public APP ID (public key) and the other one is API Key (private key).
+Шаги 1 и 2 — сервер генерирует два ключа: один — публичный идентификатор приложения (открытый ключ), а другой — ключ API (закрытый ключ).
 
-Step 3 - we now generate a HMAC signature on the client side (hmac A). This signature is generated with a set of attributes listed in the diagram.
+Шаг 3 — теперь мы генерируем подпись HMAC на стороне клиента (hmac A). Эта подпись создается с помощью набора атрибутов, перечисленных на диаграмме.
 
-Step 4 - the client sends requests to access server resources with hmac A in the HTTP header.
+Шаг 4 — клиент отправляет запросы на доступ к ресурсам сервера с hmac A в HTTP-заголовке.
 
-Step 5 - the server receives the request which contains the request data and the authentication header. It extracts the necessary attributes from the request and uses the API key that’s stored on the server side to generate a signature (hmac B.)
+Шаг 5 – сервер получает запрос, содержащий данные запроса и заголовок аутентификации. Он извлекает необходимые атрибуты из запроса и использует ключ API, хранящийся на стороне сервера, для создания подписи (hmac B.).
 
-Steps 6 and 7 - the server compares hmac A (generated on the client side) and hmac B (generated on the server side). If they are matched, the requested resource will be returned to the client.
+Шаги 6 и 7 — сервер сравнивает hmac A (сгенерированный на стороне клиента) и hmac B (сгенерированный на стороне сервера). Если они совпадают, запрошенный ресурс будет возвращен клиенту.

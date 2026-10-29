@@ -1,6 +1,6 @@
 ---
-title: How do we Perform Pagination in API Design?
-description: Learn about API pagination techniques for efficient data retrieval.
+title: "Как мы выполняем нумерацию страниц в дизайне API?"
+description: "Узнайте о методах разбиения на страницы API для эффективного поиска данных."
 image: 'https://assets.bytebytego.com/diagrams/0076-api-pagination-101.png'
 createdAt: '2024-03-04'
 draft: false
@@ -13,48 +13,48 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0076-api-pagination-101.png)
 
-Pagination is crucial in API design to handle large datasets efficiently and improve performance. Here are six popular pagination techniques:
+Разбивка на страницы имеет решающее значение в разработке API для эффективной обработки больших наборов данных и повышения производительности. Вот шесть популярных методов нумерации страниц:
 
-*   **Offset-based Pagination:**
+* **Разбивка на страницы со смещением:**
 
-    This technique uses an offset and a limit parameter to define the starting point and the number of records to return.
+Этот метод использует смещение и параметр предела для определения начальной точки и количества возвращаемых записей.
 
-    *   Example: GET /orders?offset=0&limit=3
-    *   Pros: Simple to implement and understand.
-    *   Cons: Can become inefficient for large offsets, as it requires scanning and skipping rows.
-*   **Cursor-based Pagination:**
+* Пример: GET /orders?offset=0&limit=3.
+    * Плюсы: Простота реализации и понимания.
+    * Минусы: может стать неэффективным при больших смещениях, поскольку требует сканирования и пропуска строк.
+* **Разбиение на страницы на основе курсора:**
 
-    This technique uses a cursor (a unique identifier) to mark the position in the dataset. Typically, the cursor is an encoded string that points to a specific record.
+Этот метод использует курсор (уникальный идентификатор) для обозначения позиции в наборе данных. Обычно курсор представляет собой закодированную строку, указывающую на определенную запись.
 
-    *   Example: GET /orders?cursor=xxx
-    *   Pros: More efficient for large datasets, as it doesn't require scanning skipped records.
-    *   Cons: Slightly more complex to implement and understand.
-*   **Page-based Pagination:**
+* Пример: GET /orders?cursor=xxx
+    * Плюсы: более эффективен для больших наборов данных, поскольку не требует сканирования пропущенных записей.
+    * Минусы: немного сложнее реализовать и понять.
+* **Разбивка на страницы:**
 
-    This technique specifies the page number and the size of each page.
+Этот метод определяет номер страницы и размер каждой страницы.
 
-    *   Example: GET /items?page=2&size=3
-    *   Pros: Easy to implement and use.
-    *   Cons: Similar performance issues as offset-based pagination for large page numbers.
-*   **Keyset-based Pagination:**
+* Пример: GET /items?page=2&size=3.
+    * Плюсы: Простота реализации и использования.
+    * Минусы: такие же проблемы с производительностью, как и при разбивке на страницы со смещением для больших номеров страниц.
+* **Разбивка на страницы на основе набора ключей:**
 
-    This technique uses a key to filter the dataset, often the primary key or another indexed column.
+Этот метод использует ключ для фильтрации набора данных, часто первичный ключ или другой индексированный столбец.
 
-    *   Example: GET /items?after\_id=102&limit=3
-    *   Pros: Efficient for large datasets and avoids performance issues with large offsets.
-    *   Cons: Requires a unique and indexed key, and can be complex to implement.
-*   **Time-based Pagination:**
+* Пример: GET /items?after\_id=102&limit=3.
+    * Плюсы: эффективен для больших наборов данных и позволяет избежать проблем с производительностью при больших смещениях.
+    * Минусы: требуется уникальный и индексированный ключ, и его может быть сложно реализовать.
+* **Разбивка на страницы по времени:**
 
-    This technique uses a timestamp or date to paginate through records.
+Этот метод использует метку времени или дату для разбиения записей на страницы.
 
-    *   Example: GET /items?start\_time=xxx&end\_time=yyy
-    *   Pros: Useful for datasets ordered by time, ensures no records are missed if new ones are added.
-    *   Cons: Requires a reliable and consistent timestamp.
-*   **Hybrid Pagination:**
+* Пример: GET /items?start\_time=xxx&end\_time=yyy
+    * Плюсы: полезно для наборов данных, упорядоченных по времени, гарантирует, что ни одна запись не будет пропущена при добавлении новых.
+    * Минусы: Требуется надежная и последовательная временная метка.
+* **Гибридная нумерация страниц:**
 
-    This technique combines multiple pagination techniques to leverage their strengths.
+Этот метод сочетает в себе несколько методов нумерации страниц, чтобы максимально использовать их сильные стороны.
 
-    *   Example: Combining cursor and time-based pagination for efficient scrolling through time-ordered records.
-    *   Example: GET /items?cursor=abc&start\_time=xxx&end\_time=yyy
-    *   Pros: Can offer the best performance and flexibility for complex datasets.
-    *   Cons: More complex to implement and requires careful design.
+* Пример: сочетание курсора и нумерации страниц на основе времени для эффективной прокрутки упорядоченных по времени записей.
+    * Пример: GET /items?cursor=abc&start\_time=xxx&end\_time=yyy
+    * Плюсы: может предложить лучшую производительность и гибкость для сложных наборов данных.
+    * Минусы: более сложна в реализации и требует тщательного проектирования.

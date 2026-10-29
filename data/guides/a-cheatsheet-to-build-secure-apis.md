@@ -1,6 +1,6 @@
 ---
-title: A Cheatsheet to Build Secure APIs
-description: Concise strategies for building secure APIs to protect your application.
+title: "Шпаргалка для создания безопасных API"
+description: "Краткие стратегии создания безопасных API для защиты вашего приложения."
 image: https://assets.bytebytego.com/diagrams/0064-a-cheatsheet-to-build-secure-apis.png
 createdAt: '2024-02-23'
 draft: false
@@ -13,33 +13,33 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0064-a-cheatsheet-to-build-secure-apis.png)
 
-An insecure API can compromise your entire application. Follow these strategies to mitigate the risk:
+Небезопасный API может поставить под угрозу все ваше приложение. Следуйте этим стратегиям, чтобы снизить риск:
 
-## Using HTTPS
+## Использование HTTPS
 
-- Encrypts data in transit and protects against man-in-the-middle attacks.
-- This ensures that data hasn’t been tampered with during transmission.
+- Шифрует данные при передаче и защищает от атак «человек посередине».
+- Это гарантирует, что данные не были подделаны во время передачи.
 
-## Rate Limiting and Throttling
-- Rate limiting prevents DoS attacks by limiting requests from a single IP or user.
-- The goal is to ensure fairness and prevent abuse.
+## Ограничение и регулирование скорости
+- Ограничение скорости предотвращает DoS-атаки, ограничивая запросы от одного IP-адреса или пользователя.
+- Цель состоит в том, чтобы обеспечить справедливость и предотвратить злоупотребления.
 
-## Validation of Inputs
-- Defends against injection attacks and unexpected data format.
-- Validate headers, inputs, and payload.
+## Проверка входных данных
+- Защищает от атак путем внедрения и неожиданного формата данных.
+- Проверка заголовков, входных данных и полезной нагрузки.
 
-## Authentication and Authorization
-- Don’t use basic auth for authentication.
-- Instead, use a standard authentication approach like JWTs
-  * Use a random key that is hard to guess as the JWT secret
-  * Make token expiration short
--For authorization, use OAuth
+## Аутентификация и авторизация
+- Не используйте базовую аутентификацию для аутентификации.
+- Вместо этого используйте стандартный подход аутентификации, такой как JWT.
+  * Используйте случайный ключ, который трудно угадать в качестве секрета JWT.
+  * Сделайте срок действия токена коротким
+-Для авторизации используйте OAuth
 
-## Using Role-based Access Control
-- RBAC simplifies access management for APIs and reduces the risk of unauthorized actions.
-- Granular control over user permission based on roles.
+## Использование контроля доступа на основе ролей
+— RBAC упрощает управление доступом к API и снижает риск несанкционированных действий.
+- Детальный контроль над разрешениями пользователей на основе ролей.
 
-## Monitoring
-- Monitoring the APIs is the key to detecting issues and threats early.
-  - Use tools like Kibana, Cloudwatch, Datadog, and Slack for monitoring 
-  - Don’t log sensitive data like credit card info, passwords, credentials, etc.
+## Мониторинг
+- Мониторинг API является ключом к раннему обнаружению проблем и угроз.
+  - Используйте такие инструменты, как Kibana, Cloudwatch, Datadog и Slack для мониторинга.
+  - Не регистрируйте конфиденциальные данные, такие как данные кредитной карты, пароли, учетные данные и т. д.

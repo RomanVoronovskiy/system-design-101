@@ -1,6 +1,6 @@
 ---
-title: "Change Data Capture: Key to Leverage Real-time Data"
-description: "Learn how Change Data Capture (CDC) helps leverage real-time data."
+title: "Сбор измененных данных: ключ к использованию данных в реальном времени"
+description: "Узнайте, как система отслеживания измененных данных (CDC) помогает использовать данные в реальном времени."
 image: "https://assets.bytebytego.com/diagrams/0133-change-data-capture-key-to-leverage-real-time-data.png"
 createdAt: "2024-02-11"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0133-change-data-capture-key-to-leverage-real-time-data.png)
 
-90% of the world’s data was created in the last two years and this growth will only get faster.
+90% мировых данных было создано за последние два года, и этот рост будет только ускоряться.
 
-However, the biggest challenge is to leverage this data in real-time. Constant data changes make databases, data lakes, and data warehouses out of sync.
+Однако самой большой проблемой является использование этих данных в режиме реального времени. Постоянные изменения данных приводят к рассинхронизации баз данных, озер данных и хранилищ данных.
 
-CDC or Change Data Capture can help you overcome this challenge.
+CDC или Change Data Capture могут помочь вам решить эту проблему.
 
-CDC identifies and captures changes made to the data in a database, allowing you to replicate and sync data across multiple systems.
+CDC идентифицирует и фиксирует изменения, внесенные в данные в базе данных, что позволяет реплицировать и синхронизировать данные в нескольких системах.
 
-## How Change Data Capture Works
+## Как работает сбор измененных данных
 
-So, how does Change Data Capture work? Here's a step-by-step breakdown:
+Итак, как же работает система отслеживания измененных данных? Вот пошаговая разбивка:
 
-1. Data Modification: A change is made to the data in the source database. It could be an insert, update, or delete operation on a table.
+1. Модификация данных: в исходную базу данных вносятся изменения. Это может быть операция вставки, обновления или удаления таблицы.
 
-2. Change Capture: A CDC tool monitors the database transaction logs to capture the modifications. It uses the source connector to connect to the database and read the logs.
+2. Отслеживание изменений. Инструмент CDC отслеживает журналы транзакций базы данных, чтобы фиксировать изменения. Он использует исходный соединитель для подключения к базе данных и чтения журналов.
 
-3. Change Processing: The captured changes are processed and transformed into a format suitable for the downstream systems.
+3. Обработка изменений. Собранные изменения обрабатываются и преобразуются в формат, подходящий для последующих систем.
 
-4. Change Propagation: The processed changes are published to a message queue and propagated to the target systems, such as data warehouses, analytics platforms, distributed caches like Redis, and so on.
+4. Распространение изменений. Обработанные изменения публикуются в очереди сообщений и распространяются на целевые системы, такие как хранилища данных, аналитические платформы, распределенные кэши, такие как Redis, и т. д.
 
-5. Real-Time Integration: The CDC tool uses its sink connector to consume the log and update the target systems. The changes are received in real time, allowing for conflict-free data analysis and decision-making.
+5. Интеграция в реальном времени. Инструмент CDC использует свой соединитель-приемник для использования журнала и обновления целевых систем. Изменения поступают в режиме реального времени, что позволяет бесконфликтно анализировать данные и принимать решения.
 
-Users only need to take care of step 1 while all other steps are transparent.
+Пользователям нужно выполнить только шаг 1, а все остальные шаги прозрачны.
 
-A popular CDC solution uses Debezium with Kafka Connect to stream data changes from the source to target systems using Kafka as the broker. Debezium has connectors for most databases such as MySQL, PostgreSQL, Oracle, etc.
+Популярное решение CDC использует Debezium с Kafka Connect для потоковой передачи изменений данных из источника в целевые системы, используя Kafka в качестве брокера. Debezium имеет коннекторы для большинства баз данных, таких как MySQL, PostgreSQL, Oracle и т. д.

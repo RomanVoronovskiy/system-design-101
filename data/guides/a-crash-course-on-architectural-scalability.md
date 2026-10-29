@@ -1,6 +1,6 @@
 ---
-title: "A Crash Course on Architectural Scalability"
-description: "Learn about architectural scalability, bottlenecks, and key techniques."
+title: "Ускоренный курс архитектурной масштабируемости"
+description: "Узнайте об архитектурной масштабируемости, узких местах и ​​ключевых методах."
 image: "https://assets.bytebytego.com/diagrams/0293-a-crash-course-on-architectural-scalability.png"
 createdAt: "2024-02-10"
 draft: false
@@ -13,23 +13,23 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0293-a-crash-course-on-architectural-scalability.png)
 
-Scalability is the ability of a system to handle an increased workload without losing performance.
+Масштабируемость — это способность системы справляться с возросшей рабочей нагрузкой без потери производительности.
 
-However, we can also look at scalability in terms of the scaling strategy.
+Однако мы также можем рассматривать масштабируемость с точки зрения стратегии масштабирования.
 
-Scalability is the system’s ability to handle an increased workload by repeatedly applying a cost-effective strategy. This means it can be difficult to scale a system beyond a certain point if the scaling strategy is not financially viable.
+Масштабируемость — это способность системы справляться с возросшей рабочей нагрузкой путем многократного применения экономически эффективной стратегии. Это означает, что может быть сложно масштабировать систему за пределы определенной точки, если стратегия масштабирования не является финансово жизнеспособной.
 
-Three main bottlenecks to scalability are:
+Три основных узких места масштабируемости:
 
-1. Centralized components: This can become a single point of failure
-2. High Latency Components: These are components that perform time-consuming operations.
-3. Tight Coupling: Makes the components difficult to scale
+1. Централизованные компоненты. Это может стать единой точкой отказа.
+2. Компоненты с высокой задержкой. Это компоненты, выполняющие трудоемкие операции.
+3. Тесная связь: затрудняет масштабирование компонентов.
 
-Therefore, to build a scalable system, we should follow the principles of statelessness, loose coupling, and asynchronous processing.
+Следовательно, чтобы построить масштабируемую систему, мы должны следовать принципам безгражданства, слабой связи и асинхронной обработки.
 
-Some common techniques for improving scalability are as follows:
+Некоторые распространенные методы улучшения масштабируемости следующие:
 
-* Load Balancing: Spread requests across multiple servers to prevent a single server from becoming a bottleneck.
-* Caching: Store the most commonly request information in memory.
-* Event-Driven Processing: Use an async processing approach to process long-running tasks.
-* Sharding: Split a large dataset into smaller subsets called shards for horizontal scalability.
+* Балансировка нагрузки: распределяйте запросы по нескольким серверам, чтобы один сервер не стал узким местом.
+* Кэширование: храните наиболее часто запрашиваемую информацию в памяти.
+* Обработка, управляемая событиями: используйте подход асинхронной обработки для обработки долго выполняющихся задач.
+* Шардинг: разбейте большой набор данных на более мелкие подмножества, называемые осколками, для горизонтального масштабирования.

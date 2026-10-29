@@ -1,6 +1,6 @@
 ---
-title: "A Beginner's Guide to CDN"
-description: "Learn about CDNs: improve performance, reliability, and security."
+title: "Руководство для начинающих по CDN"
+description: "Узнайте о CDN: улучшите производительность, надежность и безопасность."
 image: "https://assets.bytebytego.com/diagrams/0025-a-beginner-s-guide-to-cdn.png"
 createdAt: "2024-02-18"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0025-a-beginner-s-guide-to-cdn.png)
 
-A guest post by Love Sharma. You can read the full article [here](https://blog.devgenius.io/a-beginners-guide-to-cdn-what-it-is-and-how-it-works-f06946288fbb).
+Гостевой пост Лав Шармы. Полную статью можно прочитать [здесь](https://blog.devgenius.io/a-beginners-guide-to-cdn-what-it-is-and-how-it-works-f06946288fbb).
 
-CDNs are distributed server networks that help improve the performance, reliability, and security of content delivery on the internet.
+CDN — это распределенные серверные сети, которые помогают повысить производительность, надежность и безопасность доставки контента в Интернете.
 
-## The Overall CDN Diagram explains:
+## Общая диаграмма CDN объясняет:
 
-*   Edge servers are located closer to the end user than traditional servers, which helps reduce latency and improve website performance.
+* Пограничные серверы расположены ближе к конечному пользователю, чем традиционные серверы, что помогает уменьшить задержку и повысить производительность веб-сайта.
 
-*   Edge computing is a type of computing that processes data closer to the end user rather than in a centralized data center. This helps to reduce latency and improve the performance of applications that require real-time processing, such as video streaming or online gaming.
+* Граничные вычисления — это тип вычислений, при котором данные обрабатываются ближе к конечному пользователю, а не в централизованном центре обработки данных. Это помогает сократить задержку и повысить производительность приложений, требующих обработки в реальном времени, таких как потоковое видео или онлайн-игры.
 
-*   Cloud gaming is online gaming that uses cloud computing to provide users with high-quality, low-latency gaming experiences.
+* Облачные игры — это онлайн-игры, в которых используются облачные вычисления, чтобы предоставить пользователям высококачественные игровые возможности с малой задержкой.
 
-Together, these technologies are transforming how we access and consume digital content. By providing faster, more reliable, and more immersive experiences for users, they are helping to drive the growth of the digital economy and create new opportunities for businesses and consumers alike.
+Вместе эти технологии меняют способы доступа к цифровому контенту и его потребления. Предоставляя пользователям более быстрый, надежный и захватывающий опыт, они помогают стимулировать рост цифровой экономики и создают новые возможности как для бизнеса, так и для потребителей.

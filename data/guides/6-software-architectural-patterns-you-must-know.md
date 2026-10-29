@@ -1,6 +1,6 @@
 ---
-title: "6 Software Architectural Patterns You Must Know"
-description: "Explore 6 key software architectural patterns for efficient problem-solving."
+title: "6 архитектурных шаблонов программного обеспечения, которые вы должны знать"
+description: "Изучите 6 ключевых архитектурных шаблонов программного обеспечения для эффективного решения проблем."
 image: "https://assets.bytebytego.com/diagrams/0008-6-software-architectural-patterns-you-must-know.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![Software Architectural Patterns](https://assets.bytebytego.com/diagrams/0008-6-software-architectural-patterns-you-must-know.png)
 
-Choosing the right software architecture pattern is essential for solving problems efficiently.
+Выбор правильного шаблона архитектуры программного обеспечения имеет важное значение для эффективного решения проблем.
 
-## 1. Layered Architecture
+## 1. Многоуровневая архитектура
 
-Each layer plays a distinct and clear role within the application context.
+Каждый уровень играет отдельную и четкую роль в контексте приложения.
 
-Great for applications that need to be built quickly. On the downside, source code can become unorganized if proper rules aren’t followed.
+Отлично подходит для приложений, которые необходимо создавать быстро. С другой стороны, исходный код может стать неорганизованным, если не соблюдать надлежащие правила.
 
-## 2. Microservices Architecture
+## 2. Микросервисная архитектура
 
-Break down a large system into smaller and more manageable components.
+Разбейте большую систему на более мелкие и более управляемые компоненты.
 
-Systems built with microservices architecture are fault tolerant. Also, each component can be scaled individually. On the downside, it might increase the complexity of the application.
+Системы, построенные на основе микросервисной архитектуры, отказоустойчивы. Также каждый компонент можно масштабировать индивидуально. С другой стороны, это может увеличить сложность приложения.
 
-## 3. Event-Driven Architecture
+## 3. Архитектура, управляемая событиями
 
-Services talk to each other by emitting events that other services may or may not consume.
+Службы взаимодействуют друг с другом, генерируя события, которые другие службы могут или не могут использовать.
 
-This style promotes loose coupling between components. However, testing individual components becomes challenging.
+Этот стиль способствует слабой связи между компонентами. Однако тестирование отдельных компонентов становится сложной задачей.
 
-## 4. Client-Server Architecture
+## 4. Клиент-серверная архитектура
 
-It comprises two main components - clients and servers communicating over a network.
+Он состоит из двух основных компонентов — клиентов и серверов, взаимодействующих по сети.
 
-Great for real-time services. However, servers can become a single point of failure.
+Отлично подходит для услуг в реальном времени. Однако серверы могут стать единой точкой отказа.
 
-## 5. Plugin-based Architecture
+## 5. Архитектура на основе плагинов
 
-This pattern consists of two types of components - a core system and plugins. The plugin modules are independent components providing a specialized functionality.
+Этот шаблон состоит из двух типов компонентов — базовой системы и плагинов. Модули плагина представляют собой независимые компоненты, обеспечивающие специализированную функциональность.
 
-Great for applications that have to be expanded over time like IDEs. However, changing the core is difficult.
+Отлично подходит для приложений, которые со временем необходимо расширять, таких как IDE. Однако изменить ядро ​​сложно.
 
-## 6. Hexagonal Architecture
+## 6. Шестиугольная архитектура
 
-This pattern creates an abstraction layer that protects the core of an application and isolates it from external integrations for better modularity. Also known as ports and adapters architecture.
+Этот шаблон создает уровень абстракции, который защищает ядро ​​приложения и изолирует его от внешних интеграций для повышения модульности. Также известна как архитектура портов и адаптеров.
 
-On the downside, this pattern can lead to increased development time and learning curve.
+С другой стороны, этот шаблон может привести к увеличению времени разработки и кривой обучения.

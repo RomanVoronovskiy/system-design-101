@@ -1,6 +1,6 @@
 ---
-title: "Designing a Permission System"
-description: "Explore common permission system designs: ACL, DAC, MAC, ABAC, and RBAC."
+title: "Проектирование системы разрешений"
+description: "Изучите распространенные конструкции систем разрешений: ACL, DAC, MAC, ABAC и RBAC."
 image: "https://assets.bytebytego.com/diagrams/0300-permission-systems.png"
 createdAt: "2024-02-13"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0300-permission-systems.png)
 
-The diagram below lists 5 common ways.
+На диаграмме ниже перечислены 5 распространенных способов.
 
-## 1. ACL (Access Control List)
+## 1. ACL (список контроля доступа)
 
-ACL is a list of rules that specifies which users are granted or denied access to a particular resource.
+ACL — это список правил, определяющий, каким пользователям разрешен или запрещен доступ к определенному ресурсу.
 
-*   Pros - Easy to understand.
-*   Cons - error-prone, maintenance cost is high
+* Плюсы - Легко понять.
+* Минусы – вероятность ошибок, высокая стоимость обслуживания.
 
-## 2. DAC (Discretionary Access Control)
+## 2. DAC (дискреционный контроль доступа)
 
-This is based on ACL. It grants or restricts object access via an access policy determined by an object's owner group.
+Это основано на ACL. Он разрешает или ограничивает доступ к объекту с помощью политики доступа, определяемой группой владельцев объекта.
 
-*   Pros - Easy and flexible. Linux file system supports DAC.
-*   Cons - Scattered permission control, too much power for the object’s owner group.
+* Плюсы — Простота и гибкость. Файловая система Linux поддерживает DAC.
+* Минусы — разрозненный контроль разрешений, слишком много полномочий для группы владельцев объекта.
 
-## 3. MAC (Mandatory Access Control)
+## 3. MAC (обязательный контроль доступа)
 
-Both resource owners and resources have classification labels. Different labels are granted with different permissions.
+И владельцы ресурсов, и ресурсы имеют метки классификации. Разным меткам предоставляются разные разрешения.
 
-*   Pros - strict and straightforward.
-*   Cons - not flexible.
+* Плюсы – строгий и прямолинейный.
+* Минусы – негибкость.
 
-## 4. ABAC (Attribute-based access control)
+## 4. ABAC (контроль доступа на основе атрибутов)
 
-Evaluate permissions based on attributes of the Resource owner, Action, Resource, and Environment.
+Оценивайте разрешения на основе атрибутов владельца ресурса, действия, ресурса и среды.
 
-*   Pros - flexible
-*   Cons - the rules can be complicated, and the implementation is hard. It is not commonly used.
+* Плюсы - гибкость
+* Минусы – правила могут быть сложными, а реализация затруднена. Это не часто используется.
 
-## 5. RBAC (Role-based Access Control)
+## 5. RBAC (контроль доступа на основе ролей)
 
-Evaluate permissions based on roles
+Оценка разрешений на основе ролей
 
-*   Pros - flexible in assigning roles.
+* Плюсы — гибкость в распределении ролей.

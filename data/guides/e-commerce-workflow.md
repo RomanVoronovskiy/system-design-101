@@ -1,6 +1,6 @@
 ---
-title: "E-commerce Workflow"
-description: "Explore the behind-the-scenes of e-commerce: procurement to delivery."
+title: "Рабочий процесс электронной коммерции"
+description: "Изучите закулисье электронной коммерции: от закупок до доставки."
 image: "https://assets.bytebytego.com/diagrams/0179-e-commerce-works.png"
 createdAt: "2024-02-24"
 draft: false
@@ -10,37 +10,36 @@ tags:
   - "E-commerce"
   - "Supply Chain"
 ---
+Что происходит за кулисами, когда мы совершаем покупки в Интернете?
 
-What happens behind the scenes when we shop online?
-
-Disclaimer: I have limited knowledge of the eCommerce system. The diagram above is based on my research. Please suggest better names for the components or let me know if you spot an error.
+Отказ от ответственности: у меня ограниченные знания о системе электронной коммерции. Диаграмма выше основана на моих исследованиях. Пожалуйста, предложите лучшие названия для компонентов или дайте мне знать, если заметите ошибку.
 
 ![](https://assets.bytebytego.com/diagrams/0179-e-commerce-works.png)
 
-The diagram above shows the 4 key business areas in a typical e-commerce company: procurement, inventory, eComm platform, and transportation.
+На диаграмме выше показаны 4 ключевые области бизнеса типичной компании электронной коммерции: закупки, запасы, платформа eComm и транспорт.
 
-## Procurement
+## Приобретение
 
-*   Step 1 - The procurement department selects suppliers and manages contracts with them.
+* Шаг 1. Отдел закупок выбирает поставщиков и управляет контрактами с ними.
 
-*   Step 2 - The procurement department places orders with suppliers, manages the return of goods, and settles invoices with suppliers.
+* Шаг 2. Отдел закупок размещает заказы у поставщиков, управляет возвратом товаров и оплачивает счета-фактуры поставщикам.
 
-## Inventory
+## Инвентарь
 
-*   Step 3 - The products or goods from suppliers are delivered to a storage facility. All products/goods are managed by inventory management systems.
+* Шаг 3 – Продукция или товары от поставщиков доставляются на склад. Все продукты/товары управляются системами управления запасами.
 
-## EComm platform
+## Платформа EComm
 
-*   Steps 4-7 - The “eComm platform - Product Management” system creates the product info managed by the product system. The pricing system prices the products. Then the products are ready to be listed for sale. The promotion system defines big sale activities, coupons, etc.
+* Шаги 4–7. Система «Платформа eComm — Управление продуктами» создает информацию о продукте, управляемую системой продуктов. Система ценообразования устанавливает цены на продукцию. После этого продукция готова к выставлению на продажу. Система продвижения определяет крупные распродажи, купоны и т. д.
 
-*   Step 8-11 - Consumers can now purchase products on the e-commerce APP. First, users register or log in to the APP. Next, users browse the product list and details, adding products to the shopping cart. They then place purchasing orders.
+* Шаг 8–11. Теперь потребители могут приобретать товары в приложении электронной коммерции. Сначала пользователи регистрируются или входят в приложение. Затем пользователи просматривают список и подробную информацию о продуктах, добавляя продукты в корзину. Затем они размещают заказы на закупку.
 
-*   Steps 12,13 - The order management system reserves stock in the inventory management system. Then the users pay for the product.
+* Шаги 12,13 — Система управления заказами резервирует запасы в системе управления запасами. Затем пользователи платят за продукт.
 
-## Transportation
+## Транспорт
 
-*   Steps 14,15 - The inventory system sends the outbound order to the transportation system, which manages the physical delivery of the goods.
+* Шаги 14,15. Система запасов отправляет исходящий заказ в транспортную систему, которая управляет физической доставкой товаров.
 
-*   Step 16 - Sign for item delivery (optional)
+* Шаг 16. Подпишитесь на доставку товара (необязательно).
 
-Quick question: If a user buys many products, their big order might be divided into several small orders based on warehouse locations, product types, etc. Where would you place the “order splitting” system in the process outlined below?
+Быстрый вопрос: если пользователь покупает много продуктов, его большой заказ может быть разделен на несколько небольших заказов в зависимости от местоположения склада, типа продукта и т. д. Где бы вы разместили систему «разделения заказов» в процессе, описанном ниже?

@@ -1,6 +1,6 @@
 ---
-title: "How does Visa make money?"
-description: "Explore Visa's revenue streams and credit card payment flow economics."
+title: "Как Visa зарабатывает деньги?"
+description: "Изучите потоки доходов Visa и экономику потоков платежей по кредитным картам."
 image: "https://assets.bytebytego.com/diagrams/0041-how-does-visa-make-money.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0041-how-does-visa-make-money.png)
 
-Why is the credit card called “the most profitable product in banks”? How does VISA/Mastercard make money?
+Почему кредитную карту называют «самым выгодным продуктом в банках»? Как VISA/Mastercard зарабатывает деньги?
 
-The diagram above shows the economics of the credit card payment flow.
+На диаграмме выше показана экономика потока платежей по кредитной карте.
 
-- **Step 1.**  The cardholder pays a merchant $100 to buy a product.
+- **Шаг 1.** Владелец карты платит продавцу 100 долларов США за покупку товара.
 
-- **Step 2.**  The merchant benefits from the use of the credit card with higher sales volume and needs to compensate the issuer and the card network for providing the payment service. The acquiring bank sets a fee with the merchant, called the "**merchant discount fee**."
+- **Шаг 2.** Продавец получает выгоду от использования кредитной карты с более высоким объемом продаж и должен компенсировать эмитенту и сети карточек оплату за предоставление платежных услуг. Банк-эквайер устанавливает с продавцом комиссию, которая называется «**комиссия за скидку продавца**».
 
-- **Step 3 - 4.** The acquiring bank keeps $0.25 as the **acquiring markup**, and $1.75 is paid to the issuing bank as the **interchange fee**. The merchant discount fee should cover the interchange fee. The interchange fee is set by the card network because it is less efficient for each issuing bank to negotiate fees with each merchant.
+- **Шаги 3–4.** Банк-эквайер удерживает 0,25 доллара США в качестве **наценки эквайринга**, а 1,75 доллара США выплачиваются банку-эмитенту в качестве **комиссии за обмен**. Комиссия за скидку продавца должна покрывать комиссию за обмен. Комиссия за обмен устанавливается карточной сетью, поскольку каждому банку-эмитенту менее эффективно договариваться о комиссиях с каждым торговцем.
 
-- **Step 5.**  The card network sets up the **network assessments and fees** with each bank, which pays the card network for its services every month. For example, VISA charges a 0.11% assessment, plus a $0.0195 usage fee, for every swipe.
+- **Шаг 5.** Карточная сеть устанавливает **сетевые оценки и комиссии** для каждого банка, который ежемесячно платит карточной сети за ее услуги. Например, VISA взимает комиссию в размере 0,11% плюс комиссию за использование в размере 0,0195 доллара США за каждое проведение.
 
-- **Step 6.**  The cardholder pays the issuing bank for its services.
+- **Шаг 6.** Владелец карты платит банку-эмитенту за его услуги.
 
-## Why should the issuing bank be compensated?
+## Почему банк-эмитент должен получать компенсацию?
 
-*   The issuer pays the merchant even if the cardholder fails to pay the issuer.
+* Эмитент платит продавцу, даже если владелец карты не может заплатить эмитенту.
 
-*   The issuer pays the merchant before the cardholder pays the issuer.
+* Эмитент платит продавцу до того, как владелец карты платит эмитенту.
 
-*   The issuer has other operating costs, including managing customer accounts, providing statements, fraud detection, risk management, clearing & settlement, etc.
+* У эмитента есть другие операционные расходы, включая управление счетами клиентов, предоставление отчетов, обнаружение мошенничества, управление рисками, клиринг и расчеты и т. д.
 
-Over to you: Does the card network charge the same interchange fee for big merchants as for small merchants?
+Вопрос к вам: взимает ли карточная сеть такую ​​же комиссию за обмен с крупных торговцев, как и с мелких торговцев?

@@ -1,6 +1,6 @@
 ---
-title: "Design Stock Exchange"
-description: "Explore the design of a stock exchange and its key components."
+title: "Проектная фондовая биржа"
+description: "Изучите устройство фондовой биржи и ее ключевые компоненты."
 image: "https://assets.bytebytego.com/diagrams/0344-stock-exchange.png"
 createdAt: "2024-03-11"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0344-stock-exchange.png)
 
-Let’s trace the life of an order through various components in the diagram to see how the pieces fit together.
+Давайте проследим жизнь заказа через различные компоненты на диаграмме, чтобы увидеть, как эти части сочетаются друг с другом.
 
-First, we follow the order through the trading flow. This is the critical path with strict latency requirements. Everything has to happen fast in the flow:
+Сначала мы следим за ордером в торговом потоке. Это критический путь со строгими требованиями к задержке. Все должно происходить быстро в потоке:
 
-### Step 1: A client places an order via the broker’s web or mobile app.
+### Шаг 1: Клиент размещает заказ через веб-сайт или мобильное приложение брокера.
 
-### Step 2: The broker sends the order to the exchange.
+### Шаг 2: Брокер отправляет заявку на биржу.
 
-### Step 3: The order enters the exchange through the client gateway. The client gateway performs basic gatekeeping functions such as input validation, rate limiting, authentication, normalization, etc. The client gateway then forwards the order to the order manager.
+### Шаг 3: Заявка поступает на биржу через клиентский шлюз. Клиентский шлюз выполняет основные функции контроля доступа, такие как проверка входных данных, ограничение скорости, аутентификация, нормализация и т. д. Затем клиентский шлюз пересылает заказ менеджеру заказов.
 
-### Step 4 - 5: The order manager performs risk checks based on rules set by the risk manager.
+### Шаг 4–5: Менеджер заказов выполняет проверку рисков на основе правил, установленных менеджером по рискам.
 
-### Step 6: After passing risk checks, the order manager verifies there are sufficient funds in the wallet for the order.
+### Шаг 6: После прохождения проверок рисков менеджер заказов проверяет наличие достаточных средств в кошельке для заказа.
 
-### Step 7 - 9: The order is sent to the matching engine. When a match is found, the matching engine emits two executions, with one each for the buy and sell sides. To guarantee that matching results are deterministic when replayed, both orders and executions are sequenced.
+### Шаг 7–9: Заказ отправляется в соответствующий механизм. Когда совпадение найдено, механизм сопоставления выдает два исполнения, по одному для сторон покупки и продажи. Чтобы гарантировать, что результаты сопоставления будут детерминированными при воспроизведении, как заказы, так и выполнения упорядочиваются.
 
-### Step 10 - 14: The executions are returned to the client.
+### Шаг 10–14: Выполнения возвращаются клиенту.
 
-Note that the trading flow (steps 1 to 14) is on the critical path, while the market data flow and reporting flow are not. They have different latency requirements.
+Обратите внимание, что торговый поток (шаги с 1 по 14) находится на критическом пути, а поток рыночных данных и поток отчетов — нет. У них разные требования к задержке.

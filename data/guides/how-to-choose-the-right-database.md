@@ -1,6 +1,6 @@
 ---
-title: "How to Choose the Right Database"
-description: "A guide to selecting the optimal database for your specific needs."
+title: "Как выбрать правильную базу данных"
+description: "Руководство по выбору оптимальной базы данных для ваших конкретных потребностей."
 image: "https://assets.bytebytego.com/diagrams/0227-how-to-choose-the-right-database.png"
 createdAt: "2024-02-28"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![How to Choose the Right Database](https://assets.bytebytego.com/diagrams/0227-how-to-choose-the-right-database.png)
 
-*   OLTP: For transactional systems requiring strong consistency
+* OLTP: для транзакционных систем, требующих строгой согласованности.
 
-*   OLAP: Optimized for complex queries and data analysis
+* OLAP: оптимизирован для сложных запросов и анализа данных.
 
-*   Full-Text Search: Fast, flexible text search capabilities
+* Полнотекстовый поиск: быстрые и гибкие возможности текстового поиска.
 
-*   Document Stores: JSON-like document storage and querying
+* Хранилища документов: хранилище документов и запросы в формате JSON.
 
-*   Key-Value Stores: High-speed, simple data models
+* Хранилища ключей-значений: высокоскоростные и простые модели данных.
 
-*   Graph Databases: Managing highly connected data
+* Базы данных графов: управление тесно связанными данными.
 
-*   Embeddings: Efficient storage and retrieval of vector representations
+* Вложения: эффективное хранение и извлечение векторных представлений.
 
-*   Geospatial: Specialized for location-based data and queries
+* Геопространственные данные: специализируется на данных и запросах, основанных на местоположении.

@@ -1,6 +1,6 @@
 ---
-title: "9 Best Practices for Developing Microservices"
-description: "Explore 9 key practices for effective microservices development."
+title: "9 лучших практик разработки микросервисов"
+description: "Изучите 9 ключевых практик эффективной разработки микросервисов."
 image: "https://assets.bytebytego.com/diagrams/0275-micro-best-practices.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0275-micro-best-practices.png)
 
-When developing microservices, it's crucial to follow these best practices:
+При разработке микросервисов крайне важно следовать следующим рекомендациям:
 
-## Best Practices
+## Лучшие практики
 
-*   **Use separate data storage for each microservice**
+* **Использовать отдельное хранилище данных для каждого микросервиса**
 
-*   **Keep code at a similar level of maturity**
+* **Сохраняйте код на том же уровне зрелости**
 
-*   **Separate build for each microservice**
+* **Отдельная сборка для каждого микросервиса**
 
-*   **Assign each microservice with a single responsibility**
+* **Назначьте каждому микросервису одну ответственность**
 
-*   **Deploy into containers**
+* **Развертывание в контейнерах**
 
-*   **Design stateless services**
+* **Разработка сервисов без сохранения состояния**
 
-*   **Adopt domain-driven design**
+* **Внедрение доменно-ориентированного дизайна**
 
-*   **Design micro frontend**
+* **Разработка микроинтерфейса**
 
-*   **Orchestrating microservices**
+* **Организация микросервисов**

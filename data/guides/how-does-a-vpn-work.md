@@ -1,6 +1,6 @@
 ---
-title: "How Does a VPN Work?"
-description: "Explore how VPNs create secure connections for online privacy."
+title: "Как работает VPN?"
+description: "Узнайте, как VPN создают безопасные соединения для обеспечения конфиденциальности в Интернете."
 image: "https://assets.bytebytego.com/diagrams/0052-how-a-vpn-works.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0052-how-a-vpn-works.png)
 
-This diagram below shows how we access the internet with and without VPNs.
+На диаграмме ниже показано, как мы получаем доступ к Интернету с VPN и без них.
 
-A VPN, or Virtual Private Network, is a technology that creates a secure, encrypted connection over a less secure network, such as the public internet. The primary purpose of a VPN is to provide privacy and security to data and communications.
+VPN или виртуальная частная сеть — это технология, которая создает безопасное зашифрованное соединение через менее безопасную сеть, например общедоступный Интернет. Основная цель VPN — обеспечить конфиденциальность и безопасность данных и коммуникаций.
 
-A VPN acts as a tunnel through which the encrypted data goes from one location to another. Any external party cannot see the data transferring.
+VPN действует как туннель, по которому зашифрованные данные передаются из одного места в другое. Никакая внешняя сторона не может видеть передачу данных.
 
-A VPN works in 4 steps:
+VPN работает в 4 этапа:
 
-*   Step 1 - Establish a secure tunnel between our device and the VPN server.
+* Шаг 1. Установите безопасный туннель между нашим устройством и VPN-сервером.
 
-*   Step 2 - Encrypt the data transmitted.
+* Шаг 2 – Зашифруйте передаваемые данные.
 
-*   Step 3 - Mask our IP address, so it appears as if our internet activity is coming from the VPN server.
+* Шаг 3. Замаскируйте наш IP-адрес, чтобы казалось, что наша интернет-активность исходит от VPN-сервера.
 
-*   Step 4 - Our internet traffic is routed through the VPN server.
+* Шаг 4. Наш интернет-трафик направляется через VPN-сервер.
 
-## Advantages of a VPN:
+## Преимущества VPN:
 
-*   **Privacy**
-*   **Anonymity**
-*   **Security**
-*   **Encryption**
-*   **Masking the original IP address**
+* **Конфиденциальность**
+* **Анонимность**
+* **Безопасность**
+* **Шифрование**
+* **Маскировка исходного IP-адреса**
 
-## Disadvantages of a VPN:
+## Недостатки VPN:
 
-*   **VPN blocking**
-*   **Slow down connections**
-*   **Trust in VPN provider**
+* **Блокировка VPN**
+* **Замедлить соединение**
+* **Доверьтесь провайдеру VPN**

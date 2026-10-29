@@ -1,6 +1,6 @@
 ---
-title: "How do we manage configurations in a system?"
-description: "Comparing traditional configuration management with Infrastructure as Code (IaC)."
+title: "Как мы управляем конфигурациями в системе?"
+description: "Сравнение традиционного управления конфигурацией с инфраструктурой как кодом (IaC)."
 image: "https://assets.bytebytego.com/diagrams/0056-how-we-manage-configuration.png"
 createdAt: "2024-02-19"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0056-how-we-manage-configuration.png)
 
-The diagram shows a comparison between traditional configuration management and IaC (Infrastructure as Code).
+На диаграмме показано сравнение традиционного управления конфигурацией и IaC (инфраструктура как код).
 
-## Configuration Management
+## Управление конфигурацией
 
-Configuration Management is designed to manage and provision IT infrastructure through systematic and repeatable processes. This is critical for ensuring that the system performs as intended.
+Управление конфигурациями предназначено для управления и обеспечения ИТ-инфраструктуры посредством систематических и повторяемых процессов. Это очень важно для обеспечения правильной работы системы.
 
-Traditional configuration management focuses on maintaining the desired state of the system's configuration items, such as servers, network devices, and applications, after they have been provisioned.
+Традиционное управление конфигурацией направлено на поддержание желаемого состояния элементов конфигурации системы, таких как серверы, сетевые устройства и приложения, после их подготовки.
 
-It usually involves initial manual setup by DevOps. Changes are managed by step-by-step commands.
+Обычно это включает первоначальную ручную настройку DevOps. Изменения управляются пошаговыми командами.
 
-## What is IaC?
+## Что такое IaC?
 
-IaC, on the other hand, represents a shift in how infrastructure is provisioned and managed, treating infrastructure setup and changes as software development practices.
+IaC, с другой стороны, представляет собой сдвиг в способах предоставления и управления инфраструктурой, рассматривая настройку и изменения инфраструктуры как методы разработки программного обеспечения.
 
-IaC automates the provisioning of infrastructure, starting and managing the system through code. It often uses a declarative approach, where the desired state of the infrastructure is described.
+IaC автоматизирует предоставление инфраструктуры, запуск системы и управление ею с помощью кода. Часто используется декларативный подход, где описывается желаемое состояние инфраструктуры.
 
-Tools like Terraform, AWS CloudFormation, Chef, and Puppet are used to define infrastructure in code files that are source controlled.
+Такие инструменты, как Terraform, AWS CloudFormation, Chef и Puppet, используются для определения инфраструктуры в файлах кода с контролем исходного кода.
 
-IaC represents an evolution towards automation, repeatability, and the application of software development practices to infrastructure management.
+IaC представляет собой эволюцию в направлении автоматизации, повторяемости и применения методов разработки программного обеспечения для управления инфраструктурой.

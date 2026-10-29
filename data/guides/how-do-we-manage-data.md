@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Data Management Patterns"
-description: "Explore 6 key data management patterns for efficient data handling."
+title: "6 основных шаблонов управления данными"
+description: "Изучите 6 ключевых шаблонов управления данными для их эффективной обработки."
 image: "https://assets.bytebytego.com/diagrams/0379-top-6-data-management-patterns.png"
 createdAt: "2024-02-04"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0379-top-6-data-management-patterns.png)
 
-### Here are top 6 data management patterns
+### Вот 6 лучших шаблонов управления данными
 
-## Cache Aside
+## Отложить кэш
 
-When an application needs to access data, it first checks the cache. If the data is not present (a cache miss), it fetches the data from the data store, stores it in the cache, and then returns the data to the user. This pattern is particularly useful for scenarios where data is read frequently but updated less often.
+Когда приложению требуется доступ к данным, оно сначала проверяет кеш. Если данные отсутствуют (промах в кэше), он извлекает данные из хранилища данных, сохраняет их в кэше, а затем возвращает данные пользователю. Этот шаблон особенно полезен в сценариях, где данные часто читаются, но обновляются реже.
 
-## Materialized View
+## Материализованное представление
 
-A Materialized View is a database object that contains the results of a query. It is physically stored, meaning the data is actually computed and stored on disk, as opposed to being dynamically generated upon each request. This can significantly speed up query times for complex calculations or aggregations that would otherwise need to be computed on the fly. Materialized views are especially beneficial in data warehousing and business intelligence scenarios where query performance is critical.
+Материализованное представление — это объект базы данных, содержащий результаты запроса. Они хранятся физически, то есть данные фактически вычисляются и сохраняются на диске, а не генерируются динамически при каждом запросе. Это может значительно ускорить время выполнения запросов для сложных вычислений или агрегатов, которые в противном случае пришлось бы вычислять на лету. Материализованные представления особенно полезны в сценариях хранения данных и бизнес-аналитики, где производительность запросов имеет решающее значение.
 
 ## CQRS
 
-CQRS is an architectural pattern that separates the models for reading and writing data. This means that the data structures used for querying data (reads) are separated from the structures used for updating data (writes). This separation allows for optimization of each operation independently, improving performance, scalability, and security. CQRS can be particularly useful in complex systems where the read and write operations have very different requirements.
+CQRS — это архитектурный шаблон, разделяющий модели чтения и записи данных. Это означает, что структуры данных, используемые для запроса данных (чтение), отделены от структур, используемых для обновления данных (запись). Такое разделение позволяет оптимизировать каждую операцию независимо, повышая производительность, масштабируемость и безопасность. CQRS может быть особенно полезен в сложных системах, где операции чтения и записи предъявляют совершенно разные требования.
 
-## Event Sourcing
+## Источник событий
 
-Event Sourcing is a pattern where changes to the application state are stored as a sequence of events. Instead of storing just the current state of data in a domain, Event Sourcing stores a log of all the changes (events) that have occurred over time. This allows the application to reconstruct past states and provides an audit trail of changes. Event Sourcing is beneficial in scenarios requiring complex business transactions, auditability, and the ability to rollback or replay events.
+Источник событий — это шаблон, в котором изменения состояния приложения сохраняются как последовательность событий. Вместо того, чтобы хранить только текущее состояние данных в домене, Event Sourcing хранит журнал всех изменений (событий), произошедших с течением времени. Это позволяет приложению восстанавливать прошлые состояния и обеспечивает контрольный журнал изменений. Источник событий полезен в сценариях, требующих сложных бизнес-транзакций, возможности аудита и возможности отката или воспроизведения событий.
 
-## Index Table
+## Индексная таблица
 
-The Index Table pattern involves creating additional tables in a database that are optimized for specific query operations. These tables act as secondary indexes and are designed to speed up the retrieval of data without requiring a full scan of the primary data store. Index tables are particularly useful in scenarios with large datasets and where certain queries are performed frequently.
+Шаблон индексной таблицы предполагает создание дополнительных таблиц в базе данных, оптимизированных для конкретных операций запроса. Эти таблицы действуют как вторичные индексы и предназначены для ускорения получения данных без необходимости полного сканирования основного хранилища данных. Таблицы индексов особенно полезны в сценариях с большими наборами данных и в тех случаях, когда определенные запросы выполняются часто.
 
-## Sharding
+## Шардинг
 
-Sharding is a data partitioning pattern where data is divided into smaller, more manageable pieces, or "shards", each of which can be stored on different database servers. This pattern is used to distribute the data across multiple machines to improve scalability and performance. Sharding is particularly effective in high-volume applications, as it allows for horizontal scaling, spreading the load across multiple servers to handle more users and transactions.
+Шардинг — это шаблон разделения данных, при котором данные делятся на более мелкие, более управляемые части, или «осколки», каждый из которых может храниться на разных серверах баз данных. Этот шаблон используется для распределения данных между несколькими компьютерами для улучшения масштабируемости и производительности. Шардинг особенно эффективен в приложениях с большим объемом данных, поскольку он позволяет осуществлять горизонтальное масштабирование, распределяя нагрузку между несколькими серверами для обработки большего количества пользователей и транзакций.

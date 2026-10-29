@@ -1,6 +1,6 @@
 ---
-title: "Encoding vs Encryption vs Tokenization"
-description: "Understand encoding, encryption, and tokenization for data handling."
+title: "Кодирование, шифрование и токенизация"
+description: "Понимание кодирования, шифрования и токенизации для обработки данных."
 image: "https://assets.bytebytego.com/diagrams/0033-encoding-vs-encryption-vs-tokenization.png"
 createdAt: "2024-02-11"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0033-encoding-vs-encryption-vs-tokenization.png)
 
-Encoding, encryption, and tokenization are three distinct processes that handle data in different ways for various purposes, including data transmission, security, and compliance.
+Кодирование, шифрование и токенизация — это три отдельных процесса, которые по-разному обрабатывают данные для различных целей, включая передачу данных, безопасность и соответствие требованиям.
 
-In system designs, we need to select the right approach for handling sensitive information.
+При проектировании систем нам необходимо выбрать правильный подход к обработке конфиденциальной информации.
 
-## Encoding
+## Кодирование
 
-Encoding converts data into a different format using a scheme that can be easily reversed. Examples include Base64 encoding, which encodes binary data into ASCII characters, making it easier to transmit data over media that are designed to deal with textual data.
+Кодирование преобразует данные в другой формат, используя схему, которую можно легко обратить. Примеры включают кодировку Base64, которая кодирует двоичные данные в символы ASCII, что упрощает передачу данных по носителям, предназначенным для работы с текстовыми данными.
 
-Encoding is not meant for securing data. The encoded data can be easily decoded using the same scheme without the need for a key.
+Кодирование не предназначено для защиты данных. Закодированные данные можно легко декодировать по той же схеме без необходимости использования ключа.
 
-## Encryption
+## Шифрование
 
-Encryption involves complex algorithms that use keys for transforming data. Encryption can be symmetric (using the same key for encryption and decryption) or asymmetric (using a public key for encryption and a private key for decryption).
+Шифрование включает в себя сложные алгоритмы, использующие ключи для преобразования данных. Шифрование может быть симметричным (с использованием одного и того же ключа для шифрования и дешифрования) или асимметричным (с использованием открытого ключа для шифрования и закрытого ключа для дешифрования).
 
-Encryption is designed to protect data confidentiality by transforming readable data (plaintext) into an unreadable format (ciphertext) using an algorithm and a secret key. Only those with the correct key can decrypt and access the original data.
+Шифрование предназначено для защиты конфиденциальности данных путем преобразования читаемых данных (открытого текста) в нечитаемый формат (зашифрованный текст) с использованием алгоритма и секретного ключа. Только те, у кого есть правильный ключ, могут расшифровать и получить доступ к исходным данным.
 
-## Tokenization
+## Токенизация
 
-Tokenization is the process of substituting sensitive data with non-sensitive placeholders called tokens. The mapping between the original data and the token is stored securely in a token vault. These tokens can be used in various systems and processes without exposing the original data, reducing the risk of data breaches.
+Токенизация — это процесс замены конфиденциальных данных неконфиденциальными заполнителями, называемыми токенами. Сопоставление исходных данных и токена надежно хранится в хранилище токенов. Эти токены можно использовать в различных системах и процессах, не раскрывая исходные данные, что снижает риск утечки данных.
 
-Tokenization is often used for protecting credit card information, personal identification numbers, and other sensitive data. Tokenization is highly secure, as the tokens do not contain any part of the original data and thus cannot be reverse-engineered to reveal the original data. It is particularly useful for compliance with regulations like PCI DSS.
+Токенизация часто используется для защиты информации о кредитных картах, личных идентификационных номеров и других конфиденциальных данных. Токенизация очень безопасна, поскольку токены не содержат никакой части исходных данных и, следовательно, не могут быть подвергнуты обратному проектированию для раскрытия исходных данных. Это особенно полезно для обеспечения соответствия таким нормам, как PCI DSS.

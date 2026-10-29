@@ -1,6 +1,6 @@
 ---
-title: "Cybersecurity 101"
-description: "A concise overview of cybersecurity fundamentals and key concepts."
+title: "Кибербезопасность 101"
+description: "Краткий обзор основ и ключевых концепций кибербезопасности."
 image: "https://assets.bytebytego.com/diagrams/0156-cybersecurity-101-in-one-picture.png"
 createdAt: "2024-03-03"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0156-cybersecurity-101-in-one-picture.png)
 
-## Introduction to Cybersecurity
+## Введение в кибербезопасность
 
-## The CIA Triad
+## Триада ЦРУ
 
-## Common Cybersecurity Threats
+## Распространенные угрозы кибербезопасности
 
-## Basic Defense Mechanisms
+## Основные защитные механизмы
 
-To combat these threats, several basic defense mechanisms are employed:
+Для борьбы с этими угрозами используются несколько основных защитных механизмов:
 
-*   **Firewalls:** Network security devices that monitor and control incoming and outgoing network traffic.
+* **Брандмауэры.** Устройства сетевой безопасности, которые отслеживают и контролируют входящий и исходящий сетевой трафик.
 
-*   **Antivirus Software:** Programs designed to detect and remove malware.
+* **Антивирусное программное обеспечение:** Программы, предназначенные для обнаружения и удаления вредоносного ПО.
 
-*   **Encryption:** The process of converting information into a code to prevent unauthorized access.
+* **Шифрование:** процесс преобразования информации в код для предотвращения несанкционированного доступа.
 
-## Cybersecurity Frameworks
+## Рамки кибербезопасности

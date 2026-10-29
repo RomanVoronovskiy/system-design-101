@@ -1,6 +1,6 @@
 ---
-title: "How does Garbage Collection work?"
-description: "Explore how garbage collection reclaims unused memory automatically."
+title: "Как работает сбор мусора?"
+description: "Узнайте, как сбор мусора автоматически освобождает неиспользуемую память."
 image: "https://assets.bytebytego.com/diagrams/0200-garbage-collection-101.png"
 createdAt: "2024-02-17"
 draft: false
@@ -10,33 +10,32 @@ tags:
   - "garbage collection"
   - "memory management"
 ---
-
-Garbage collection is an automatic memory management feature used in programming languages to reclaim memory no longer used by the program.
+Сбор мусора — это функция автоматического управления памятью, используемая в языках программирования для освобождения памяти, которая больше не используется программой.
 
 ![No alternative text description for this image](https://assets.bytebytego.com/diagrams/0200-garbage-collection-101.png)
 
-## Java
+## Ява
 
-Java provides several garbage collectors, each suited for different use cases:
+Java предоставляет несколько сборщиков мусора, каждый из которых подходит для разных случаев использования:
 
-*   Serial Garbage Collector: Best for single-threaded environments or small applications.
+* Последовательный сборщик мусора: лучше всего подходит для однопоточных сред или небольших приложений.
 
-*   Parallel Garbage Collector: Also known as the "Throughput Collector."
+* Параллельный сборщик мусора: также известен как «Пропускной сборщик».
 
-*   CMS (Concurrent Mark-Sweep) Garbage Collector: Low-latency collector aiming to minimize pause times.
+* CMS (Concurrent Mark-Sweep) Сборщик мусора: сборщик с малой задержкой, направленный на минимизацию времени паузы.
 
-*   G1 (Garbage-First) Garbage Collector: Aims to balance throughput and latency.
+* Сборщик мусора G1 (сначала мусор): предназначен для балансировки пропускной способности и задержки.
 
-*   Z Garbage Collector (ZGC): A low-latency garbage collector designed for applications that require large heap sizes and minimal pause times.
+* Z Garbage Collector (ZGC): сборщик мусора с малой задержкой, предназначенный для приложений, которым требуются большие размеры кучи и минимальное время паузы.
 
-## Python
+## Питон
 
-Python's garbage collection is based on reference counting and a cyclic garbage collector:
+Сборка мусора в Python основана на подсчете ссылок и циклическом сборщике мусора:
 
-*   Reference Counting: Each object has a reference count; when it reaches zero, the memory is freed.
+* Подсчет ссылок: каждый объект имеет счетчик ссылок; когда оно достигает нуля, память освобождается.
 
-*   Cyclic Garbage Collector: Handles circular references that can't be resolved by reference counting.
+* Циклический сборщик мусора: обрабатывает циклические ссылки, которые невозможно разрешить путем подсчета ссылок.
 
-## GoLang
+## ГоЛанг
 
-Concurrent Mark-and-Sweep Garbage Collector: Go's garbage collector operates concurrently with the application, minimizing stop-the-world pauses.
+Параллельный сборщик мусора с маркировкой и очисткой: сборщик мусора Go работает одновременно с приложением, сводя к минимуму паузы, связанные с остановкой мира.

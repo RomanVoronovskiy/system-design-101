@@ -1,6 +1,6 @@
 ---
-title: "How can Redis be used?"
-description: "Explore various use cases of Redis beyond caching."
+title: "Как можно использовать Redis?"
+description: "Изучите различные варианты использования Redis помимо кэширования."
 image: "https://assets.bytebytego.com/diagrams/0388-how-can-redis-be-used.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,46 +13,46 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0388-how-can-redis-be-used.png)
 
-There is more to Redis than just caching.
+Redis — это нечто большее, чем просто кеширование.
 
-Redis can be used in a variety of scenarios as shown in the diagram.
+Redis можно использовать в различных сценариях, как показано на схеме.
 
-*   **Session**
+* **Сеанс**
 
-    We can use Redis to share user session data among different services.
+Мы можем использовать Redis для обмена данными пользовательских сеансов между различными службами.
 
-*   **Cache**
+* **Кэш**
 
-    We can use Redis to cache objects or pages, especially for hotspot data.
+Мы можем использовать Redis для кэширования объектов или страниц, особенно для данных горячих точек.
 
-*   **Distributed lock**
+* **Распределенная блокировка**
 
-    We can use a Redis string to acquire locks among distributed services.
+Мы можем использовать строку Redis для получения блокировок между распределенными службами.
 
-*   **Counter**
+*   **Прилавок**
 
-    We can count how many likes or how many reads for articles.
+Мы можем посчитать, сколько лайков или прочтений статей.
 
-*   **Rate limiter**
+* **Ограничитель скорости**
 
-    We can apply a rate limiter for certain user IPs.
+Мы можем применить ограничитель скорости для определенных IP-адресов пользователей.
 
-*   **Global ID generator**
+* **Генератор глобальных идентификаторов**
 
-    We can use Redis Int for global ID.
+Мы можем использовать Redis Int для глобального идентификатора.
 
-*   **Shopping cart**
+*   **Корзина**
 
-    We can use Redis Hash to represent key-value pairs in a shopping cart.
+Мы можем использовать Redis Hash для представления пар ключ-значение в корзине покупок.
 
-*   **Calculate user retention**
+* **Расчет удержания пользователей**
 
-    We can use Bitmap to represent the user login daily and calculate user retention.
+Мы можем использовать Bitmap для представления ежедневного входа пользователя в систему и расчета удержания пользователей.
 
-*   **Message queue**
+* **Очередь сообщений**
 
-    We can use List for a message queue.
+Мы можем использовать List для очереди сообщений.
 
-*   **Ranking**
+* **Рейтинг**
 
-    We can use ZSet to sort the articles.
+Мы можем использовать ZSet для сортировки статей.

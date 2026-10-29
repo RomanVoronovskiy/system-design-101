@@ -1,6 +1,6 @@
 ---
-title: "CI/CD Simplified Visual Guide"
-description: "A visual guide to understanding and improving CI/CD pipelines."
+title: "Упрощенное визуальное руководство по CI/CD"
+description: "Визуальное руководство по пониманию и улучшению конвейеров CI/CD."
 image: "https://assets.bytebytego.com/diagrams/0141-ci-cd-workflow.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0141-ci-cd-workflow.png)
 
-Whether you're a developer, a DevOps specialist, a tester, or involved in any modern IT role, CI/CD pipelines have become an integral part of the software development process.
+Независимо от того, являетесь ли вы разработчиком, специалистом DevOps, тестировщиком или выполняете какую-либо современную ИТ-должность, конвейеры CI/CD стали неотъемлемой частью процесса разработки программного обеспечения.
 
-## Continuous Integration (CI)
+## Непрерывная интеграция (CI)
 
-Continuous Integration (CI) is a practice where code changes are frequently combined into a shared repository. This process includes automatic checks to ensure the new code works well with the existing code.
+Непрерывная интеграция (CI) — это практика, при которой изменения кода часто объединяются в общий репозиторий. Этот процесс включает в себя автоматические проверки, чтобы убедиться, что новый код хорошо работает с существующим кодом.
 
-## Continuous Deployment (CD)
+## Непрерывное развертывание (CD)
 
-Continuous Deployment (CD) takes care of automatically putting these code changes into real-world use. It makes sure that the process of moving new code to production is smooth and reliable.
+Непрерывное развертывание (CD) обеспечивает автоматическое внедрение этих изменений кода в реальное использование. Это гарантирует, что процесс переноса нового кода в производство будет плавным и надежным.
 
-This visual guide is designed to help you grasp and enhance your methods for creating and delivering software more effectively.
+Это визуальное руководство призвано помочь вам понять и усовершенствовать методы более эффективного создания и доставки программного обеспечения.

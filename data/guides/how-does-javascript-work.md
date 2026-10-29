@@ -1,6 +1,6 @@
 ---
-title: How does Javascript Work?
-description: Learn about Javascript's core features and how it operates.
+title: "Как работает Javascript?"
+description: "Узнайте об основных функциях Javascript и о том, как он работает."
 image: 'https://assets.bytebytego.com/diagrams/0241-javascript-js-explained.png'
 createdAt: '2024-02-07'
 draft: false
@@ -13,25 +13,25 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0241-javascript-js-explained.png)
 
-The cheat sheet below shows the most important characteristics of Javascript.
+В приведенной ниже шпаргалке показаны наиболее важные характеристики Javascript.
 
-*   **Interpreted Language**
-    JavaScript code is executed by the browser or JavaScript engine rather than being compiled into machine language beforehand. This makes it highly portable across different platforms. Modern engines such as V8 utilize Just-In-Time (JIT) technology to compile code into directly executable machine code.
-*   **Function is First-Class Citizen**
-    In JavaScript, functions are treated as first-class citizens, meaning they can be stored in variables, passed as arguments to other functions, and returned from functions.
-*   **Dynamic Typing**
-    JavaScript is a loosely typed or dynamic language, meaning we don't have to declare a variable's type ahead of time, and the type can change at runtime.
-*   **Client-Side Execution**
-    JavaScript supports asynchronous programming, allowing operations like reading files, making HTTP requests, or querying databases to run in the background and trigger callbacks or promises when complete. This is particularly useful in web development for improving performance and user experience.
-*   **Prototype-Based OOP**
-    Unlike class-based object-oriented languages, JavaScript uses prototypes for inheritance. This means that objects can inherit properties and methods from other objects.
-*   **Automatic Garbage Collection**
-    Garbage collection in JavaScript is a form of automatic memory management. The primary goal of garbage collection is to reclaim memory occupied by objects that are no longer in use by the program, which helps prevent memory leaks and optimizes the performance of the application.
-*   **Compared with Other Languages**
-    JavaScript is special compared to programming languages like Python or Java because of its position as a major language for web development.
+* **Язык перевода**
+    Код JavaScript выполняется браузером или движком JavaScript, а не предварительно компилируется в машинный язык. Это делает его легко переносимым на разные платформы. Современные движки, такие как V8, используют технологию Just-In-Time (JIT) для компиляции кода в непосредственно исполняемый машинный код.
+* **Функция — гражданин первого класса**
+    В JavaScript функции рассматриваются как первоклассные элементы, то есть их можно хранить в переменных, передавать в качестве аргументов другим функциям и возвращать из функций.
+* **Динамический ввод**
+    JavaScript — это слабо типизированный или динамический язык, то есть нам не нужно заранее объявлять тип переменной, и этот тип может меняться во время выполнения.
+* **Выполнение на стороне клиента**
+    JavaScript поддерживает асинхронное программирование, позволяя таким операциям, как чтение файлов, выполнение HTTP-запросов или запросов к базам данных, выполняться в фоновом режиме и запускать обратные вызовы или обещания после завершения. Это особенно полезно в веб-разработке для повышения производительности и удобства работы пользователей.
+* **ООП на основе прототипа**
+    В отличие от объектно-ориентированных языков на основе классов, JavaScript использует прототипы для наследования. Это означает, что объекты могут наследовать свойства и методы других объектов.
+* **Автоматическая сборка мусора**
+    Сбор мусора в JavaScript — это форма автоматического управления памятью. Основная цель сборки мусора — освободить память, занятую объектами, которые больше не используются программой, что помогает предотвратить утечки памяти и оптимизирует производительность приложения.
+* **По сравнению с другими языками**
+    JavaScript является особенным по сравнению с такими языками программирования, как Python или Java, поскольку он является основным языком веб-разработки.
 
-    While Python is known to provide good code readability and versatility, and Java is known for its structure and robustness, JavaScript is an interpreted language that runs directly on the browser without compilation, emphasizing flexibility and dynamism.
-*   **Relationship with Typescript**
-    TypeScript is a superset of JavaScript, which means that it extends JavaScript by adding features to the language, most notably type annotations. This relationship allows any valid JavaScript code to also be considered valid TypeScript code.
-*   **Popular Javascript Frameworks**
-    React is known for its flexibility and large number of community-driven plugins, while Vue is clean and intuitive with highly integrated and responsive features. Angular, on the other hand, offers a strict set of development specifications for enterprise-level JS development.
+В то время как Python, как известно, обеспечивает хорошую читаемость кода и универсальность, а Java известен своей структурой и надежностью, JavaScript — это интерпретируемый язык, который запускается непосредственно в браузере без компиляции, что подчеркивает гибкость и динамизм.
+* **Связь с Typescript**
+    TypeScript — это расширенная версия JavaScript, что означает, что он расширяет JavaScript, добавляя в язык функции, в первую очередь аннотации типов. Эта связь позволяет любому допустимому коду JavaScript также считаться допустимым кодом TypeScript.
+* **Популярные фреймворки Javascript**
+    React известен своей гибкостью и большим количеством плагинов, поддерживаемых сообществом, а Vue — чистый и интуитивно понятный интерфейс с высокоинтегрированными и адаптивными функциями. Angular, с другой стороны, предлагает строгий набор спецификаций для разработки JS корпоративного уровня.

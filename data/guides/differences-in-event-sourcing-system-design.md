@@ -1,6 +1,6 @@
 ---
-title: "Differences in Event Sourcing System Design"
-description: "Explore the nuances of event sourcing system design and its benefits."
+title: "Различия в конструкции системы источников событий"
+description: "Изучите нюансы проектирования системы источников событий и ее преимущества."
 image: "https://assets.bytebytego.com/diagrams/0188-event-sourcing.jpeg"
 createdAt: "2024-02-08"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0188-event-sourcing.jpeg)
 
-How do we design a system using the event sourcing paradigm? How is it different from normal system design? What are the benefits? We will talk about it in this post.
+Как спроектировать систему, используя парадигму источника событий? Чем он отличается от обычного проектирования системы? Каковы преимущества? Об этом мы поговорим в этом посте.
 
-The diagram above shows the comparison of a normal CRUD system design with an event sourcing system design. We use an e-commerce system that can place orders and pay for the orders to demonstrate how event sourcing works.
+На диаграмме выше показано сравнение обычного проекта системы CRUD с дизайном системы источника событий. Мы используем систему электронной коммерции, которая позволяет размещать и оплачивать заказы, чтобы продемонстрировать, как работает поиск событий.
 
-The event sourcing paradigm is used to design a system with determinism. This changes the philosophy of normal system designs.
+Парадигма источника событий используется для разработки детерминированной системы. Это меняет философию проектирования обычных систем.

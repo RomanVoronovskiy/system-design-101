@@ -1,6 +1,6 @@
 ---
-title: 'How YouTube Handles Massive Video Uploads'
-description: "Explore YouTube's architecture for handling massive video uploads."
+title: "Как YouTube справляется с массовой загрузкой видео"
+description: "Изучите архитектуру YouTube для обработки массовой загрузки видео."
 image: 'https://assets.bytebytego.com/diagrams/0425-yt-massive-upload.png'
 createdAt: '2024-02-23'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0425-yt-massive-upload.png)
 
-YouTube handles 500+ hours of video content uploads every minute on average. How does it manage this?
+YouTube обрабатывает в среднем более 500 часов видеоконтента каждую минуту. Как ему это удается?
 
-The diagram above shows YouTube’s innovative hardware encoding published in 2021.
+На диаграмме выше показано инновационное аппаратное кодирование YouTube, опубликованное в 2021 году.
 
-*   **Traditional Software Encoding**
+* **Традиционное программное кодирование**
 
-YouTube’s mission is to transcode raw video into different compression rates to adapt to different viewing devices - mobile(720p), laptop(1080p), or high-resolution TV(4k).
+Миссия YouTube — перекодировать необработанное видео в различные степени сжатия для адаптации к различным устройствам просмотра — мобильным (720p), ноутбукам (1080p) или телевизорам с высоким разрешением (4k).
 
-Creators upload a massive amount of video content on YouTube every minute. Especially during the COVID-19 pandemic, video consumption is greatly increased as people are sheltered at home. Software-based encoding became slow and costly. This means there was a need for a specialized processing brain tailored made for video encoding/decoding.
+Создатели каждую минуту загружают огромное количество видеоконтента на YouTube. Особенно во время пандемии COVID-19 потребление видео значительно возросло, поскольку люди находятся дома. Программное кодирование стало медленным и дорогостоящим. Это означает, что возникла необходимость в специализированном обрабатывающем мозге, предназначенном для кодирования/декодирования видео.
 
-*   **YouTube’s Transcoding Brain - VCU**
+* **Мозг перекодирования YouTube — VCU**
 
-Like GPU or TPU was used for graphics or machine learning calculations, YouTube developed VCU (Video transCoding Unit) for warehouse-scale video processing.
+Подобно тому, как графический процессор или TPU использовались для графики или вычислений машинного обучения, YouTube разработал VCU (блок транскодирования видео) для обработки видео в масштабах склада.
 
-Each cluster has a number of VCU accelerated servers. Each server has multiple accelerator trays, each containing multiple VCU cards. Each card has encoders, decoders, etc.
+В каждом кластере имеется несколько серверов с ускорением VCU. Каждый сервер имеет несколько лотков-ускорителей, каждый из которых содержит несколько плат VCU. Каждая карта имеет кодеры, декодеры и т. д.
 
-VCU cluster generates video content with different resolutions and stores it in cloud storage.
+Кластер VCU генерирует видеоконтент с разным разрешением и сохраняет его в облачном хранилище.
 
-This new design brought 20-33x improvements in computing efficiency compared to the previous optimized system.
+Эта новая конструкция позволила повысить эффективность вычислений в 20–33 раза по сравнению с предыдущей оптимизированной системой.

@@ -1,6 +1,6 @@
 ---
-title: "5 Important Components of Linux"
-description: "Explore the core components of the Linux operating system."
+title: "5 важных компонентов Linux"
+description: "Изучите основные компоненты операционной системы Linux."
 image: "https://assets.bytebytego.com/diagrams/0253-learn-linux.png"
 createdAt: "2024-03-09"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0253-learn-linux.png)
 
-Here are the five important components of Linux:
+Вот пять важных компонентов Linux:
 
-*   **System**
+*   **Система**
 
-    In the system component, we need to learn modules like system APIs, device drivers, I/O, buses, etc.
+В системном компоненте нам необходимо изучить такие модули, как системные API, драйверы устройств, ввод-вывод, шины и т. д.
 
-*   **Memory**
+* **Память**
 
-    In memory management, we need to learn modules like physical memory, virtual memory, memory mappings, object allocation, etc.
+При управлении памятью нам необходимо изучить такие модули, как физическая память, виртуальная память, сопоставление памяти, распределение объектов и т. д.
 
-*   **Process**
+*   **Процесс**
 
-    In process management, we need to learn modules like process scheduling, interrupts, threads, synchronization, etc.
+В управлении процессами нам необходимо изучить такие модули, как планирование процессов, прерывания, потоки, синхронизация и т. д.
 
-*   **Network**
+*   **Сеть**
 
-    In the network component, we need to learn important modules like network protocols, sockets, NIC drivers, etc.
+В сетевом компоненте нам необходимо изучить важные модули, такие как сетевые протоколы, сокеты, драйверы сетевых карт и т. д.
 
-*   **Storage**
+*   **Хранилище**
 
-    In system storage management, we need to learn modules like file systems, I/O caches, different storage devices, file system implementations, etc.
+При управлении системным хранилищем нам необходимо изучить такие модули, как файловые системы, кэши ввода-вывода, различные устройства хранения, реализации файловых систем и т. д.

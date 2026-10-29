@@ -1,6 +1,6 @@
 ---
-title: "CAP Theorem: One of the Most Misunderstood Terms"
-description: "Explore the CAP theorem, its implications, and common misunderstandings."
+title: "Теорема CAP: один из наиболее неправильно понимаемых терминов"
+description: "Изучите теорему CAP, ее последствия и распространенные заблуждения."
 image: "https://assets.bytebytego.com/diagrams/0131-cap-theorem.jpeg"
 createdAt: "2024-03-06"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![a close up of text and logo over a white background](https://assets.bytebytego.com/diagrams/0131-cap-theorem.jpeg)
 
-The CAP theorem is one of the most famous terms in computer science, but I bet different developers have different understandings. Let’s examine what it is and why it can be confusing.
+Теорема CAP — один из самых известных терминов в информатике, но я готов поспорить, что разные разработчики понимают ее по-разному. Давайте разберемся, что это такое и почему это может сбивать с толку.
 
-CAP theorem states that a distributed system can't provide more than two of these three guarantees simultaneously.
+Теорема CAP утверждает, что распределенная система не может обеспечить одновременно более двух из этих трех гарантий.
 
-## Consistency
+## Последовательность
 
-Consistency means all clients see the same data at the same time no matter which node they connect to.
+Согласованность означает, что все клиенты одновременно видят одни и те же данные независимо от того, к какому узлу они подключаются.
 
-## Availability
+## Доступность
 
-Availability means any client which requests data gets a response even if some of the nodes are down.
+Доступность означает, что любой клиент, запрашивающий данные, получает ответ, даже если некоторые узлы не работают.
 
-## Partition Tolerance
+## Допуск раздела
 
-Partition tolerance means the system continues to operate despite network partitions.
+Толерантность к разделам означает, что система продолжает работать, несмотря на наличие сетевых разделов.
 
-The “2 of 3” formulation can be useful, but this simplification could be misleading.
+Формулировка «2 из 3» может быть полезной, но такое упрощение может ввести в заблуждение.
 
-*   Picking a database is not easy. Justifying our choice purely based on the CAP theorem is not enough. For example, companies don't choose Cassandra for chat applications simply because it is an AP system. There is a list of good characteristics that make Cassandra a desirable option for storing chat messages. We need to dig deeper.
+* Выбор базы данных непрост. Оправдать наш выбор исключительно теоремой CAP недостаточно. Например, компании не выбирают Cassandra для приложений чата просто потому, что это система AP. Существует список хороших характеристик, которые делают Cassandra желательным вариантом для хранения сообщений чата. Нам нужно копать глубже.
 
-*   “CAP prohibits only a tiny part of the design space: perfect availability and consistency in the presence of partitions, which are rare”. Quoted from the paper: CAP Twelve Years Later: How the “Rules” Have Changed.
+* «CAP запрещает лишь малую часть проектного пространства: идеальная доступность и согласованность при наличии перегородок, которые встречаются редко». Цитата из статьи: CAP «Двенадцать лет спустя: как изменились «правила».
 
-*   The theorem is about 100% availability and consistency. A more realistic discussion would be the trade-offs between latency and consistency when there is no network partition. See PACELC theorem for more details.
+* Теорема о 100% доступности и непротиворечивости. Более реалистичным обсуждением был бы компромисс между задержкой и согласованностью при отсутствии разделения сети. Более подробную информацию см. в теореме PACELC.
 
-## Is the CAP theorem really useful?
+## Действительно ли теорема CAP полезна?
 
-I think it is still useful as it opens our minds to a set of tradeoff discussions, but it is only part of the story. We need to dig deeper when picking the right database.
+Я думаю, что это по-прежнему полезно, поскольку открывает нам ряд дискуссий о компромиссных решениях, но это только часть истории. Нам нужно копнуть глубже, выбирая правильную базу данных.

@@ -1,9 +1,8 @@
 ---
-title: 'Software Architecture'
-description: 'Learn about software architecture, the process of converting software characteristics such as flexibility, scalability, feasibility, reusability, and security into a structured solution that meets the technical and the business expectations.'
+title: "Архитектура программного обеспечения"
+description: "Узнайте об архитектуре программного обеспечения — процессе преобразования таких характеристик программного обеспечения, как гибкость, масштабируемость, осуществимость, возможность повторного использования и безопасность, в структурированное решение, отвечающее техническим и бизнес-ожиданиям."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/image.png'
 sort: 160
 ---
-
-Software architecture is the process of converting software characteristics such as flexibility, scalability, feasibility, reusability, and security into a structured solution that meets the technical and the business expectations. It is the process of defining a structured solution that meets all the technical and operational requirements, while optimizing common quality attributes such as performance, security, and manageability.
+Архитектура программного обеспечения — это процесс преобразования характеристик программного обеспечения, таких как гибкость, масштабируемость, осуществимость, возможность повторного использования и безопасность, в структурированное решение, отвечающее техническим и бизнес-ожиданиям. Это процесс определения структурированного решения, которое отвечает всем техническим и эксплуатационным требованиям, одновременно оптимизируя общие атрибуты качества, такие как производительность, безопасность и управляемость.

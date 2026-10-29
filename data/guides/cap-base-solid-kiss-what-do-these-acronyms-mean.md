@@ -1,6 +1,6 @@
 ---
-title: "CAP, BASE, SOLID, KISS, What do these acronyms mean?"
-description: "Understanding common acronyms in system design: CAP, BASE, SOLID, and KISS."
+title: "CAP, BASE, SOLID, KISS. Что означают эти аббревиатуры?"
+description: "Понимание распространенных сокращений при проектировании систем: CAP, BASE, SOLID и KISS."
 image: "https://assets.bytebytego.com/diagrams/0350-cap-base-solid-kiss.png"
 createdAt: "2024-03-09"
 draft: false
@@ -10,46 +10,45 @@ tags:
   - "System Design"
   - "Software Engineering"
 ---
-
-The diagram below explains the common acronyms in system designs.
+На диаграмме ниже поясняются распространенные сокращения в конструкциях систем.
 
 ![diagram](https://assets.bytebytego.com/diagrams/0350-cap-base-solid-kiss.png)
 
-*   **CAP**
+* **КЕПКА**
 
-    CAP theorem states that any distributed data store can only provide two of the following three guarantees:
+Теорема CAP утверждает, что любое распределенное хранилище данных может обеспечить только две из следующих трех гарантий:
 
-    1.  Consistency - Every read receives the most recent write or an error.
-    2.  Availability - Every request receives a response.
-    3.  Partition tolerance - The system continues to operate in network faults.
+1. Согласованность. Каждое чтение получает самую последнюю запись или ошибку.
+    2. Доступность. На каждый запрос поступает ответ.
+    3. Допуск разделов. Система продолжает работать при сбоях в сети.
 
-    However, this theorem was criticized for being too narrow for distributed systems, and we shouldn’t use it to categorize the databases. Network faults are guaranteed to happen in distributed systems, and we must deal with this in any distributed systems.
+Однако эту теорему критиковали за то, что она слишком узка для распределенных систем, и нам не следует использовать ее для категоризации баз данных. Сетевые сбои гарантированно случаются в распределенных системах, и с этим приходится иметь дело в любых распределенных системах.
 
-    You can read more on this in “Please stop calling databases CP or AP” by Martin Kleppmann.
+Подробнее об этом можно прочитать в статье Мартина Клеппмана «Пожалуйста, прекратите звонить в базы данных CP или AP».
 
-*   **BASE**
+*   **БАЗА**
 
-    The ACID (Atomicity-Consistency-Isolation-Durability) model used in relational databases is too strict for NoSQL databases. The BASE principle offers more flexibility, choosing availability over consistency. It states that the states will eventually be consistent.
+Модель ACID (атомарность-консистенция-изоляция-долговечность), используемая в реляционных базах данных, слишком строга для баз данных NoSQL. Принцип BASE обеспечивает большую гибкость, предпочитая доступность последовательности. В нем говорится, что государства в конечном итоге станут последовательными.
 
-*   **SOLID**
+*   **ТВЕРДЫЙ**
 
-    SOLID principle is quite famous in OOP. There are 5 components to it.
+Принцип SOLID довольно известен в ООП. В нем 5 компонентов.
 
-    1.  SRP (Single Responsibility Principle)
-        Each unit of code should have one responsibility.
+1. SRP (принцип единой ответственности)
+        Каждая единица кода должна иметь одну ответственность.
 
-    2.  OCP (Open Close Principle)
-        Units of code should be open for extension but closed for modification.
+2. OCP (принцип открытия и закрытия)
+        Модули кода должны быть открыты для расширения, но закрыты для модификации.
 
-    3.  LSP (Liskov Substitution Principle)
-        A subclass should be able to be substituted by its base class.
+3. LSP (Принцип замены Лискова)
+        Подкласс должен иметь возможность быть заменен своим базовым классом.
 
-    4.  ISP (Interface Segregation Principle)
-        Expose multiple interfaces with specific responsibilities.
+4. Интернет-провайдер (принцип разделения интерфейсов)
+        Предоставьте несколько интерфейсов с конкретными обязанностями.
 
-    5.  DIP (Dependency Inversion Principle)
-        Use abstractions to decouple dependencies in the system.
+5. DIP (принцип инверсии зависимостей)
+        Используйте абстракции для разделения зависимостей в системе.
 
-*   **KISS**
+*   **ЦЕЛОВАТЬ**
 
-    "Keep it simple, stupid!" is a design principle first noted by the U.S. Navy in 1960. It states that most systems work best if they are kept simple.
+«Будь проще, глупый!» — это принцип проектирования, впервые отмеченный ВМС США в 1960 году. Он гласит, что большинство систем работают лучше всего, если они остаются простыми.

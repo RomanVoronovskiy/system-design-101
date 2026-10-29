@@ -1,6 +1,6 @@
 ---
-title: Evolution of Uber's API Layer
-description: Learn about the evolution of Uber's API layer.
+title: "Эволюция уровня API Uber"
+description: "Узнайте об эволюции уровня API Uber."
 image: 'https://assets.bytebytego.com/diagrams/0397-uber-api-layer.png'
 createdAt: '2024-03-14'
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0397-uber-api-layer.png)
 
-Uber’s API gateway went through 3 main stages.
+API-шлюз Uber прошел три основных этапа.
 
-First gen: the organic evolution. Uber's architecture in 2014 would have two key services: dispatch and API. A dispatch service connects a rider with a driver, while an API service stores the long-term data of users and trips.
+Первое поколение: органическая эволюция. В архитектуре Uber в 2014 году будет два ключевых сервиса: диспетчеризация и API. Диспетчерская служба связывает пассажира с водителем, а служба API хранит долгосрочные данные о пользователях и поездках.
 
-Second gen: the all-encompassing gateway. Uber adopted a microservice architecture very early on. By 2019, Uber's products were powered by 2,200+ microservices as a result of this architectural decision.
+Второе поколение: всеобъемлющий шлюз. Uber очень рано принял микросервисную архитектуру. В результате этого архитектурного решения к 2019 году продукты Uber были оснащены более чем 2200 микросервисами.
 
-Third gen: self-service, decentralized, and layered. As of early 2018, Uber had completely new business lines and numerous new applications. Freight, ATG, Elevate, groceries, and more are among the growing business lines. With a new set of goals comes the third generation.
+Третье поколение: самообслуживание, децентрализованное и многоуровневое. По состоянию на начало 2018 года у Uber появились совершенно новые направления бизнеса и множество новых приложений. Грузовые перевозки, ATG, Elevate, бакалейные товары и многое другое входят в число растущих направлений бизнеса. С новым набором целей приходит третье поколение.

@@ -1,6 +1,6 @@
 ---
-title: "Is PassKey Shaping a Passwordless Future?"
-description: "Exploring PassKey's potential to revolutionize online security."
+title: "PassKey формирует будущее без паролей?"
+description: "Исследование потенциала PassKey, способного произвести революцию в онлайн-безопасности."
 image: "https://assets.bytebytego.com/diagrams/0296-is-passkey-shaping-a-passwordless-future.png"
 createdAt: "2024-02-15"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0296-is-passkey-shaping-a-passwordless-future.png)
 
-Google recently announced PassKey support for both Android and Chrome.
+Google недавно объявил о поддержке PassKey как для Android, так и для Chrome.
 
-Passkey, also backed by Apple and Microsoft, is claimed to be a significantly **safer replacement** for passwords.
+Passkey, также поддерживаемый Apple и Microsoft, считается значительно **более безопасной** заменой паролям.
 
-## How PassKeys Work
+## Как работают ключи доступа
 
-*   **Step 1 - Create PassKeys**
+* **Шаг 1. Создайте ключи доступа**
 
-    The end-user needs to confirm the account information and present their credentials (face ID, touch ID, etc.).
+Конечному пользователю необходимо подтвердить данные учетной записи и предоставить свои учетные данные (идентификатор лица, сенсорный идентификатор и т. д.).
 
-    A private key is generated based on the public key provided by the website. The private key is stored on the device.
+Закрытый ключ генерируется на основе открытого ключа, предоставленного веб-сайтом. Закрытый ключ хранится на устройстве.
 
-*   **Step 2 - Sign in with PassKeys on devices**
+* **Шаг 2. Войдите в систему с помощью PassKeys на устройствах**
 
-    When the user tries to sign in to a website, they use the generated private key. Just select the account information and present the credentials to unlock the private key.
+Когда пользователь пытается войти на веб-сайт, он использует сгенерированный закрытый ключ. Просто выберите информацию об учетной записи и предоставьте учетные данные, чтобы разблокировать закрытый ключ.
 
-Consequently, there is no risk of password leakage since no passwords are stored in the websites' databases.
+Следовательно, риск утечки паролей отсутствует, поскольку пароли не хранятся в базах данных веб-сайтов.
 
-Passkeys are built on **industry standards**, and it works across different platforms and browsers - including Windows, macOS and iOS, and ChromeOS, with a **uniform user experience**.
+Ключи доступа созданы на основе **отраслевых стандартов** и работают на разных платформах и браузерах, включая Windows, macOS и iOS, а также ChromeOS, обеспечивая **унифицированный пользовательский интерфейс**.

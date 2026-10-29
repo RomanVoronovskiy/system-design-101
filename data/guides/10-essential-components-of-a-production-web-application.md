@@ -1,6 +1,6 @@
 ---
-title: '10 Essential Components of a Production Web Application'
-description: 'Explore 10 key components for building robust web applications.'
+title: "10 основных компонентов производственного веб-приложения"
+description: "Изучите 10 ключевых компонентов для создания надежных веб-приложений."
 image: 'https://assets.bytebytego.com/diagrams/0395-typical-architecture-of-a-web-application.png'
 createdAt: '2024-02-20'
 draft: false
@@ -13,13 +13,13 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0395-typical-architecture-of-a-web-application.png)
 
-1. It all starts with CI/CD pipelines that deploy code to the server instances. Tools like Jenkins and GitHub help over here.
-2. The user requests originate from the web browser. After DNS resolution, the requests reach the app servers.
-3. Load balancers and reverse proxies (such as Nginx & HAProxy) distribute user requests evenly across the web application servers.
-4. The requests can also be served by a Content Delivery Network (CDN).
-5. The web app communicates with backend services via APIs.
-6. The backend services interact with database servers or distributed caches to provide the data.
-7. Resource-intensive and long-running tasks are sent to job workers using a job queue.
-8. The full-text search service supports the search functionality. Tools like Elasticsearch and Apache Solr can help here.
-9. Monitoring tools (such as Sentry, Grafana, and Prometheus) store logs and help analyze data to ensure everything works fine.
-10. In case of issues, alerting services notify developers through platforms like Slack for quick resolution.
+1. Все начинается с конвейеров CI/CD, которые развертывают код на экземплярах сервера. Здесь помогут такие инструменты, как Jenkins и GitHub.
+2. Запросы пользователя исходят из веб-браузера. После разрешения DNS запросы достигают серверов приложений.
+3. Балансировщики нагрузки и обратные прокси (такие как Nginx и HAProxy) равномерно распределяют запросы пользователей по серверам веб-приложений.
+4. Запросы также могут обслуживаться сетью доставки контента (CDN).
+5. Веб-приложение взаимодействует с серверными службами через API.
+6. Серверные службы взаимодействуют с серверами баз данных или распределенными кэшами для предоставления данных.
+7. Ресурсоемкие и длительные задачи отправляются работникам с помощью очереди заданий.
+8. Служба полнотекстового поиска поддерживает функцию поиска. Здесь могут помочь такие инструменты, как Elasticsearch и Apache Solr.
+9. Инструменты мониторинга (такие как Sentry, Grafana и Prometheus) хранят журналы и помогают анализировать данные, чтобы убедиться, что все работает нормально.
+10. В случае возникновения проблем службы оповещения уведомляют разработчиков через такие платформы, как Slack, для быстрого решения.

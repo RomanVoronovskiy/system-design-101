@@ -1,6 +1,6 @@
 ---
-title: "10 Key Data Structures We Use Every Day"
-description: "Explore 10 essential data structures used daily in software development."
+title: "10 ключевых структур данных, которые мы используем каждый день"
+description: "Изучите 10 основных структур данных, которые ежедневно используются при разработке программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0024-10-data-structures-used-in-daily-life.png"
 createdAt: "2024-03-03"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0024-10-data-structures-used-in-daily-life.png)
 
-Here are 10 key data structures we use every day:
+Вот 10 ключевых структур данных, которые мы используем каждый день:
 
-*   **List**: Keep your Twitter feeds
+* **Список**: сохраняйте свои ленты в Твиттере.
 
-*   **Stack**: Support undo/redo of the word editor
+* **Стек**: поддержка отмены и повтора действий в текстовом редакторе.
 
-*   **Queue**: Keep printer jobs, or send user actions in-game
+* **Очередь**: сохраняйте задания принтера или отправляйте действия пользователя в игру.
 
-*   **Hash Table**: Caching systems
+* **Хеш-таблица**: системы кэширования.
 
-*   **Array**: Math operations
+* **Массив**: математические операции.
 
-*   **Heap**: Task scheduling
+* **Куча**: планирование задач.
 
-*   **Tree**: Keep the HTML document, or for AI decision
+* **Дерево**: сохраните HTML-документ или на усмотрение ИИ.
 
-*   **Suffix Tree**: For searching string in a document
+* **Дерево суффиксов**: для поиска строки в документе.
 
-*   **Graph**: For tracking friendship, or path finding
+* **График**: для отслеживания дружбы или поиска пути.
 
-*   **R-Tree**: For finding the nearest neighbor
+* **R-Tree**: для поиска ближайшего соседа.
 
-*   **Vertex Buffer**: For sending data to GPU for rendering
+* **Буфер вершин**: для отправки данных в графический процессор для рендеринга.

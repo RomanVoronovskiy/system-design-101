@@ -1,6 +1,6 @@
 ---
-title: "B-Tree vs. LSM-Tree"
-description: "Explore the differences between B-Tree and LSM-Tree data structures."
+title: "B-дерево против LSM-дерева"
+description: "Изучите различия между структурами данных B-Tree и LSM-Tree."
 image: "https://assets.bytebytego.com/diagrams/0091-btree-lsm.png"
 createdAt: "2024-02-16"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![a close up of a chart](https://assets.bytebytego.com/diagrams/0091-btree-lsm.png)
 
-## B-Tree
+## B-дерево
 
-B-Tree is the most widely used indexing data structure in almost all relational databases.
+B-Tree — наиболее широко используемая структура индексируемых данных практически во всех реляционных базах данных.
 
-The basic unit of information storage in B-Tree is usually called a “page”. Looking up a key traces down the range of keys until the actual value is found.
+Базовую единицу хранения информации в B-дереве обычно называют «страницей». Поиск ключа отслеживает диапазон ключей до тех пор, пока не будет найдено фактическое значение.
 
-## LSM-Tree
+## LSM-дерево
 
-LSM-Tree (Log-Structured Merge Tree) is widely used by many NoSQL databases, such as Cassandra, LevelDB, and RocksDB.
+LSM-Tree (дерево слияния с журнальной структурой) широко используется во многих базах данных NoSQL, таких как Cassandra, LevelDB и RocksDB.
 
-LSM-trees maintain key-value pairs and are persisted to disk using a Sorted Strings Table (SSTable), in which the keys are sorted.
+LSM-деревья поддерживают пары ключ-значение и сохраняются на диске с помощью таблицы сортированных строк (SSTable), в которой сортируются ключи.
 
-Level 0 segments are periodically merged into Level 1 segments. This process is called **compaction.**
+Сегменты уровня 0 периодически объединяются с сегментами уровня 1. Этот процесс называется **уплотнением.**
 
-The biggest difference is probably this:
+Самая большая разница, вероятно, в следующем:
 
-*   B-Tree enables faster reads
+* B-дерево обеспечивает более быстрое чтение.
 
-*   LSM-Tree enables fast writes
+* LSM-Tree обеспечивает быструю запись.

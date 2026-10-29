@@ -1,6 +1,6 @@
 ---
-title: 'API Gateway 101'
-description: 'Learn the fundamentals of API Gateways: functions, benefits, and more.'
+title: "API-шлюз 101"
+description: "Изучите основы API-шлюзов: функции, преимущества и многое другое."
 image: 'https://assets.bytebytego.com/diagrams/0074-api-gateway-101.png'
 createdAt: '2024-02-15'
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0074-api-gateway-101.png)
 
-An API gateway is a server that acts as an API front-end, receiving API requests, enforcing throttling and security policies, passing requests to the back-end service, and then returning the appropriate result to the client.
+Шлюз API — это сервер, который действует как внешний интерфейс API, получая запросы API, применяя политики регулирования и безопасности, передавая запросы внутренней службе, а затем возвращая соответствующий результат клиенту.
 
-It is essentially a middleman between the client and the server, managing and optimizing API traffic.
+По сути, это посредник между клиентом и сервером, управляющий и оптимизирующий трафик API.
 
-**Key Functions of an API Gateway**
+**Основные функции API-шлюза**
 
-*   **Request Routing:** Directs incoming API requests to the appropriate backend service.
-*   **Load Balancing:** Distributes requests across multiple servers to ensure no single server is overwhelmed.
-*   **Security:** Implements security measures like authentication, authorization, and data encryption.
-*   **Rate Limiting and Throttling:** Controls the number of requests a client can make within a certain period.
-*   **API Composition:** Combines multiple backend API requests into a single frontend request to optimize performance.
-*   **Caching:** Stores responses temporarily to reduce the need for repeated processing.
+* **Маршрутизация запросов:** направляет входящие запросы API в соответствующую серверную службу.
+* **Балансировка нагрузки.** Распределяет запросы между несколькими серверами, чтобы ни один сервер не был перегружен.
+* **Безопасность:** реализует меры безопасности, такие как аутентификация, авторизация и шифрование данных.
+* **Ограничение и регулирование скорости:** контролирует количество запросов, которые клиент может сделать в течение определенного периода.
+* **Состав API:** объединяет несколько запросов серверного API в один запрос внешнего интерфейса для оптимизации производительности.
+* **Кэширование:** ответы временно сохраняются, чтобы уменьшить необходимость повторной обработки.

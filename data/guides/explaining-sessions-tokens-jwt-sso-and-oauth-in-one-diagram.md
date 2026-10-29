@@ -1,6 +1,6 @@
 ---
-title: "Sessions, Tokens, JWT, SSO, and OAuth Explained"
-description: "Understanding sessions, tokens, JWT, SSO, and OAuth concepts."
+title: "Объяснение сессий, токенов, JWT, SSO и OAuth"
+description: "Понимание сессий, токенов, концепций JWT, SSO и OAuth."
 image: "https://assets.bytebytego.com/diagrams/0330-session-square.png"
 createdAt: "2024-02-20"
 draft: false
@@ -13,6 +13,6 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0330-session-square.png)
 
-Understanding these backstage maneuvers helps us build secure, seamless experiences.
+Понимание этих закулисных маневров помогает нам создавать безопасный и бесперебойный опыт.
 
-How do you see the evolution of web session management impacting the future of web applications and user experiences?
+Как, по вашему мнению, эволюция управления веб-сессиями повлияет на будущее веб-приложений и взаимодействие с пользователем?

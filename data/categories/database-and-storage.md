@@ -1,9 +1,8 @@
 ---
-title: 'Database and Storage'
-description: 'Understand the different types of databases and storage solutions and how to choose the right one for your application.'
+title: "База данных и хранилище"
+description: "Узнайте о различных типах баз данных и решений для хранения данных и о том, как выбрать наиболее подходящее для вашего приложения."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/database.png'
 sort: 130
 ---
-
-Databases are the backbone of most modern applications since they store and manage the data that powers the application. There are many types of databases, including relational databases, NoSQL databases, in-memory databases, and key-value stores. Each type of database has its own strengths and weaknesses, and the best choice depends on the specific requirements of the application.
+Базы данных являются основой большинства современных приложений, поскольку они хранят и управляют данными, лежащими в основе приложения. Существует множество типов баз данных, включая реляционные базы данных, базы данных NoSQL, базы данных в памяти и хранилища «ключ-значение». Каждый тип базы данных имеет свои сильные и слабые стороны, и лучший выбор зависит от конкретных требований приложения.

@@ -1,6 +1,6 @@
 ---
-title: "How to Ace System Design Interviews"
-description: "A 7-step process to excel in system design interviews."
+title: "Как пройти собеседование по проектированию систем Ace"
+description: "7-шаговый процесс, позволяющий преуспеть на собеседованиях по проектированию систем."
 image: "https://assets.bytebytego.com/diagrams/0104-how-to-ace-system-design-interviews-like-a-boss.png"
 createdAt: '2024-03-14'
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![System Design Interviews](https://assets.bytebytego.com/diagrams/0104-how-to-ace-system-design-interviews-like-a-boss.png)
 
-Follow this 7-step process to do well in a System Design Round
+Следуйте этому 7-шаговому процессу, чтобы преуспеть в раунде проектирования системы.
 
-## 1. Requirements Clarification
+## 1. Разъяснение требований
 
-In the first step, clarify functional and non-functional requirements. Ask questions to understand the core features of the system as well as non-functional aspects such as data volume, availability, scale, etc.
+На первом этапе уточните функциональные и нефункциональные требования. Задавайте вопросы, чтобы понять основные функции системы, а также нефункциональные аспекты, такие как объем данных, доступность, масштаб и т. д.
 
-## 2. Capacity Estimation
+## 2. Оценка мощности
 
-Next, estimate the capacity of the system. Focus on attributes like the number of users, traffic, storage/memory needs, and compute and networking requirements.
+Далее оцените мощность системы. Сосредоточьтесь на таких атрибутах, как количество пользователей, трафик, потребности в хранилище/памяти, а также требования к вычислительным ресурсам и сети.
 
-## 3. Create High-Level Design
+## 3. Создайте высокоуровневый дизайн
 
-Break down the system into components such as client apps, servers, load balancers, databases, etc.
+Разбейте систему на такие компоненты, как клиентские приложения, серверы, балансировщики нагрузки, базы данных и т. д.
 
-Start with drawing a simple block diagram that shows these components and their potential interaction with each other. Focus on the data flow.
+Начните с рисования простой блок-схемы, показывающей эти компоненты и их потенциальное взаимодействие друг с другом. Сосредоточьтесь на потоке данных.
 
-## 4. Database Design
+## 4. Проектирование базы данных
 
-Model the data and choose the right database type for the system. Once done, focus on the database schema.
+Смоделируйте данные и выберите правильный тип базы данных для системы. После этого сосредоточьтесь на схеме базы данных.
 
-## 5. Interface Design
+## 5. Дизайн интерфейса
 
-Next, focus on the interfaces to the system. This could be API endpoints or event models exchanged between the various components of the system. Also, choose a communication approach such as REST, GraphQL, gRPC, or an event-driven
+Далее сосредоточьтесь на интерфейсах системы. Это могут быть конечные точки API или модели событий, которыми обмениваются различные компоненты системы. Кроме того, выберите подход к коммуникации, например REST, GraphQL, gRPC или событийно-ориентированный подход.
 
-## 6. Scalability and Performance
+## 6. Масштабируемость и производительность
 
-Address the scalability, performance, and latency aspects of the system by suggesting techniques that will be used. For example, vertical and horizontal scaling, caching, indexing, denormalizing, sharding, replication, CDNs, etc.
+Устраните аспекты масштабируемости, производительности и задержки системы, предложив методы, которые будут использоваться. Например, вертикальное и горизонтальное масштабирование, кэширование, индексирование, денормализация, шардинг, репликация, CDN и т. д.
 
-## 7. Reliability and Resiliency
+## 7. Надежность и отказоустойчивость
 
-Lastly, address the reliability and resiliency of the design. Identify single points of failure and mitigate their impact.
+Наконец, обратите внимание на надежность и отказоустойчивость конструкции. Выявите отдельные точки сбоя и смягчите их влияние.

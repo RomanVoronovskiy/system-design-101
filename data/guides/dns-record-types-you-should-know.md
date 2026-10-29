@@ -1,6 +1,6 @@
 ---
-title: "DNS Record Types You Should Know"
-description: "Learn about the most common and important DNS record types."
+title: "Типы записей DNS, которые вы должны знать"
+description: "Узнайте о наиболее распространенных и важных типах записей DNS."
 image: "https://assets.bytebytego.com/diagrams/0175-dns-record-types-you-should-know.png"
 createdAt: "2024-03-09"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0175-dns-record-types-you-should-know.png)
 
-Here are the 8 most commonly used DNS Record Types.
+Вот 8 наиболее часто используемых типов записей DNS.
 
-## A (Address) Record
+## A (адресная) запись
 
-Maps a domain name to an IPv4 address. It is one of the most essential records for translating human-readable domain names into IP addresses.
+Сопоставляет доменное имя с адресом IPv4. Это одна из наиболее важных записей для перевода удобочитаемых доменных имен в IP-адреса.
 
-## CNAME (Canonical Name) Record
+## Запись CNAME (каноническое имя)
 
-Used to alias one domain name to another. Often used for subdomains, pointing them to the main domain while keeping the actual domain name hidden.
+Используется для присвоения псевдонима одному доменному имени другому. Часто используется для субдоменов, указывая их на основной домен, сохраняя при этом фактическое имя домена скрытым.
 
-## AAAA Record
+## АААА-запись
 
-Similar to an A record but maps a domain name to an IPv6 address. They are used for websites and services that support the IPv6 protocol.
+Аналогично записи A, но сопоставляет доменное имя с адресом IPv6. Они используются для веб-сайтов и сервисов, поддерживающих протокол IPv6.
 
-## PTR Record
+## PTR-запись
 
-Provides reverse DNS lookup, mapping an IP address back to a domain name. It is commonly used in verifying the authenticity of a server.
+Обеспечивает обратный поиск DNS, сопоставляя IP-адрес обратно с именем домена. Он обычно используется для проверки подлинности сервера.
 
-## MX Record
+## MX-запись
 
-Directs email traffic to the correct mail server.
+Направляет трафик электронной почты на правильный почтовый сервер.
 
-## NS (Name Server) Record
+## NS (сервер имен) запись
 
-Specifies the authoritative DNS servers for the domain. These records help direct queries to the correct DNS servers for further lookups.
+Указывает авторитетные DNS-серверы для домена. Эти записи помогают направлять запросы на правильные DNS-серверы для дальнейшего поиска.
 
-## SRV (Service) Record
+## SRV (служебная) запись
 
-SRV record specifies a host and port for specific services such as VoIP. They are used in conjunction with A records.
+Запись SRV определяет хост и порт для определенных служб, таких как VoIP. Они используются вместе с записями A.
 
-## TXT (Text) Record
+## TXT (текстовая) запись
 
-Allows the administrator to add human-readable text to the DNS records. It is used to include verification records, like SPF, for email security.
+Позволяет администратору добавлять удобочитаемый текст в записи DNS. Он используется для включения записей проверки, таких как SPF, для обеспечения безопасности электронной почты.

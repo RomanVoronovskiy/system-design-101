@@ -1,6 +1,6 @@
 ---
-title: 'How NAT Enabled the Internet'
-description: 'Explore how NAT facilitated the expansion of the internet.'
+title: "Как NAT сделал возможным Интернет"
+description: "Узнайте, как NAT способствовал распространению Интернета."
 image: 'https://assets.bytebytego.com/diagrams/0231-http-header.png'
 createdAt: '2024-01-29'
 draft: false
@@ -13,19 +13,19 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0231-http-header.png)
 
-Network Address Translation (NAT) is the process that has made the growth of the Internet possible.
+Трансляция сетевых адресов (NAT) — это процесс, который сделал возможным развитие Интернета.
 
-But how does it work?
+Но как это работает?
 
-1. In a corporate or home setting, multiple devices (phones, computers, etc.) share one router with a single public IP address.
-2. When a device wants to access the internet, it sends a request to your router. The request contains the device's private IP address.
-3. The router’s NAT process replaces the private IP with the router’s public IP.
-4. The modified request is sent to the internet.
-5. When the response comes back, NAT checks its record and replaces the public IP with the correct private IP. It sends the response to the right device.
+1. В корпоративной или домашней обстановке несколько устройств (телефоны, компьютеры и т. д.) используют один маршрутизатор с одним общедоступным IP-адресом.
+2. Когда устройству требуется доступ к Интернету, оно отправляет запрос на ваш маршрутизатор. Запрос содержит частный IP-адрес устройства.
+3. Процесс NAT маршрутизатора заменяет частный IP-адрес общедоступным IP-адресом маршрутизатора.
+4. Измененный запрос отправляется в Интернет.
+5. Когда приходит ответ, NAT проверяет свою запись и заменяет общедоступный IP-адрес правильным частным IP-адресом. Он отправляет ответ на нужное устройство.
 
-NAT has several important uses:
+NAT имеет несколько важных применений:
 
-*   **Conserves public IP addresses:** Without NAT, IPv4 addresses would have been depleted much faster, severely limiting the growth of the Internet.
-*   **Allows sharing:** It allows sharing a single public IP address across multiple devices.
-*   **Acts as a basic firewall:** NAT acts as a basic firewall that hides internal IP addresses.
-*   **Eases network management:** NAT also makes it easy to manage large networks.
+* **Сохраняет общедоступные IP-адреса.** Без NAT адреса IPv4 исчерпались бы гораздо быстрее, что серьезно ограничило бы рост Интернета.
+* **Разрешает совместное использование.** Позволяет использовать один общедоступный IP-адрес на нескольких устройствах.
+* **Действует как базовый брандмауэр:** NAT действует как базовый брандмауэр, скрывающий внутренние IP-адреса.
+* **Упрощение управления сетью.** NAT также упрощает управление большими сетями.

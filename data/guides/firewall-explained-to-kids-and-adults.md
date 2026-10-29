@@ -1,6 +1,6 @@
 ---
-title: "Firewall Explained to Kids and Adults"
-description: "Learn about firewalls: network security, types, and how they protect us."
+title: "Брандмауэр, объясненный детям и взрослым"
+description: "Узнайте о брандмауэрах: сетевой безопасности, типах и о том, как они нас защищают."
 image: "https://assets.bytebytego.com/diagrams/0191-firewall.jpeg"
 createdAt: "2024-02-16"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0191-firewall.jpeg)
 
-A firewall is a network security system that controls and filters network traffic, acting as a watchman between a private network and the public Internet.
+Брандмауэр — это система сетевой безопасности, которая контролирует и фильтрует сетевой трафик, выступая в роли сторожа между частной сетью и общедоступным Интернетом.
 
-They come in two broad categories:
+Они делятся на две большие категории:
 
-*   Software-based: installed on individual devices for protection
+* Программное обеспечение: устанавливается на отдельные устройства для защиты.
 
-*   Hardware-based: stand-alone devices that safeguard an entire network.
+* Аппаратное обеспечение: автономные устройства, защищающие всю сеть.
 
-Firewalls have several types, each designed for specific security needs:
+Брандмауэры бывают нескольких типов, каждый из которых предназначен для конкретных задач безопасности:
 
-### Packet Filtering Firewalls
+### Межсетевые экраны с фильтрацией пакетов
 
-Examines packets of data, accepting or rejecting based on source, destination, or protocols.
+Проверяет пакеты данных, принимая или отклоняя их в зависимости от источника, места назначения или протоколов.
 
-### Circuit-level Gateways
+### Шлюзы уровня цепи
 
-Monitors TCP handshake between packets to determine session legitimacy.
+Отслеживает TCP-квитирование между пакетами для определения легитимности сеанса.
 
-### Application-level Gateways (Proxy Firewalls)
+### Шлюзы прикладного уровня (прокси-брандмауэры)
 
-Filters incoming traffic between your network and traffic source, offering a protective shield against untrusted networks.
+Фильтрует входящий трафик между вашей сетью и источником трафика, обеспечивая защиту от ненадежных сетей.
 
-### Stateful Inspection Firewalls
+### Брандмауэры с проверкой состояния
 
-Tracks active connections to determine which packets to allow, analyzing in the context of their place in a data stream.
+Отслеживает активные соединения, чтобы определить, какие пакеты разрешить, анализируя их место в потоке данных.
 
-### Next-Generation Firewalls (NGFWs)
+### Межсетевые экраны нового поколения (NGFW)
 
-Advanced firewalls that integrate traditional methods with functionalities like intrusion prevention systems, deep packet analysis, and application awareness.
+Усовершенствованные межсетевые экраны, которые объединяют традиционные методы с такими функциями, как системы предотвращения вторжений, глубокий анализ пакетов и осведомленность о приложениях.

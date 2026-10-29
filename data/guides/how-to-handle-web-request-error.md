@@ -1,6 +1,6 @@
 ---
-title: "How to Handle Web Request Errors"
-description: "Learn how to handle HTTP errors on both the client and server sides."
+title: "Как обрабатывать ошибки веб-запросов"
+description: "Узнайте, как обрабатывать ошибки HTTP как на стороне клиента, так и на стороне сервера."
 image: "https://assets.bytebytego.com/diagrams/0144-client-handle-error.png"
 createdAt: "2024-02-13"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![Web Request Error Handling](https://assets.bytebytego.com/diagrams/0144-client-handle-error.png)
 
-How do we properly deal with HTTP errors on the browser side? And how do we handle them correctly on the server side when the client side is at fault?
+Как правильно бороться с ошибками HTTP на стороне браузера? И как нам правильно обрабатывать их на стороне сервера, если виновата клиентская сторона?
 
-From the browser's point of view, the easiest thing to do is to try again and hope the error just goes away. This is a good idea in a distributed network, but we also have to be very careful not to make things worse. Here’s two general rules:
+С точки зрения браузера проще всего попробовать еще раз и надеяться, что ошибка исчезнет. Это хорошая идея для распределенной сети, но мы также должны быть очень осторожны, чтобы не ухудшить ситуацию. Вот два общих правила:
 
-*   For 4XX HTTP error code, do not retry.
+* При коде ошибки HTTP 4XX не повторяйте попытку.
 
-*   For 5XX HTTP error code, try again carefully.
+* При коде ошибки HTTP 5XX повторите попытку.
 
-So which things should we do carefully in the browser? We definitely should not overwhelm the server with retried requests. An algorithm named exponential backoff might be able to help. It controls two things:
+Итак, какие вещи нам следует делать осторожно в браузере? Нам определенно не следует перегружать сервер повторными запросами. Алгоритм под названием «экспоненциальная отсрочка» мог бы помочь. Он контролирует две вещи:
 
-*   The latency between two retries. The latency will increase exponentially.
+* Задержка между двумя повторными попытками. Задержка будет увеличиваться в геометрической прогрессии.
 
-*   The number of retries is usually capped.
+* Количество повторов обычно ограничено.
 
-Will all browsers handle their retry logic in a graceful way? Most likely not. So the server has to take care of its own safety. A common way to control the flow of HTTP requests is to set up a flow control gateway in front of the server. This provides two useful tools:
+Все ли браузеры будут корректно обрабатывать логику повторов? Скорее всего нет. Поэтому серверу приходится заботиться о собственной безопасности. Распространенным способом управления потоком HTTP-запросов является установка шлюза управления потоком перед сервером. Это предоставляет два полезных инструмента:
 
-*   **Rate limiter:** which limits how often a request can be made. It has two slightly different choices; the token bucket and the leaky bucket.
+* **Ограничитель скорости:** ограничивает частоту выполнения запроса. У него есть два немного разных варианта; ведро токенов и дырявое ведро.
 
-*   **Circuit breaker:** This will stop the HTTP flow immediately when the error threshold is exceeded. After a set amount of time, it will only let a limited amount of HTTP traffic through. If everything works well, it will slowly let all HTTP traffic through.
+* **Прерыватель цепи:** поток HTTP будет немедленно остановлен при превышении порога ошибки. По истечении заданного времени он будет пропускать только ограниченный объем HTTP-трафика. Если все работает хорошо, он будет медленно пропускать весь HTTP-трафик.
 
-We should be able to handle intermittent errors effectively with exponential backoff in the browser and with a flow control gateway on the server side. Any remaining issues are real errors that need to be fixed carefully.
+Мы должны иметь возможность эффективно обрабатывать периодические ошибки с помощью экспоненциальной задержки в браузере и шлюза управления потоком на стороне сервера. Любые оставшиеся проблемы — это настоящие ошибки, которые необходимо тщательно исправлять.

@@ -1,6 +1,6 @@
 ---
-title: "Erasure Coding"
-description: "Explore erasure coding: enhancing data durability in object storage."
+title: "Стирающее кодирование"
+description: "Изучите стирающее кодирование: повышение надежности данных в объектном хранилище."
 image: "https://assets.bytebytego.com/diagrams/0187-erasure-coding.png"
 createdAt: "2024-02-09"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0187-erasure-coding.png)
 
-A really cool technique that’s commonly used in object storage such as S3 to improve durability is called **Erasure Coding**. Let’s take a look at how it works.
+Действительно классный метод, который обычно используется в объектных хранилищах, таких как S3, для повышения долговечности, называется **Erasure Coding**. Давайте посмотрим, как это работает.
 
-Erasure coding deals with data durability differently from replication. It chunks data into smaller pieces (placed on different servers) and creates parities for redundancy. In the event of failures, we can use chunk data and parities to reconstruct the data. Let’s take a look at a concrete example (4 + 2 erasure coding) as shown in Figure 1.
+Стирающее кодирование обеспечивает долговечность данных иначе, чем репликация. Он разбивает данные на более мелкие части (размещаемые на разных серверах) и создает четность для избыточности. В случае сбоев мы можем использовать данные фрагментов и четности для восстановления данных. Давайте посмотрим на конкретный пример (стиранное кодирование 4 + 2), как показано на рисунке 1.
 
-*   Data is broken up into four even-sized data chunks d1, d2, d3, and d4.
+* Данные разбиваются на четыре фрагмента данных четного размера d1, d2, d3 и d4.
 
-*   The mathematical formula is used to calculate the parities p1 and p2. To give a much simplified example, p1 = d1 + 2\*d2 - d3 + 4\*d4 and p2 = -d1 + 5\*d2 + d3 - 3\*d4.
+* Математическая формула используется для расчета паритетов p1 и p2. Если привести очень упрощенный пример, p1 = d1 + 2\*d2 - d3 + 4\*d4 и p2 = -d1 + 5\*d2 + d3 - 3\*d4.
 
-*   Data d3 and d4 are lost due to node crashes.
+* Данные d3 и d4 потеряны из-за сбоев узла.
 
-*   The mathematical formula is used to reconstruct lost data d3 and d4, using the known values of d1, d2, p1, and p2.
+* Математическая формула используется для восстановления потерянных данных d3 и d4 с использованием известных значений d1, d2, p1 и p2.
 
-How much extra space does erasure coding need? For every two chunks of data, we need one parity block, so the storage overhead is 50% (Figure 2). While in 3-copy replication, the storage overhead is 200% (Figure 2).
+Сколько дополнительного места требуется для стирающего кодирования? Для каждых двух фрагментов данных нам нужен один блок четности, поэтому накладные расходы на хранение составляют 50 % (рис. 2). При репликации с тремя копиями накладные расходы на хранилище составляют 200 % (рис. 2).
 
-Does erasure coding increase data durability? Let’s assume a node has a 0.81% annual failure rate. According to the calculation done by Backblaze, erasure coding can achieve 11 nines durability vs 3-copy replication can achieve 6 nines durability.
+Увеличивает ли стирающее кодирование долговечность данных? Предположим, что уровень отказов узла составляет 0,81% в год. Согласно расчетам, проведенным Backblaze, стирающее кодирование может достичь долговечности в 11 девяток, тогда как репликация с тремя копиями может достичь долговечности в 6 девяток.

@@ -1,6 +1,6 @@
 ---
-title: "15 Open-Source Projects That Changed the World"
-description: "Explore 15 open-source projects that revolutionized software development."
+title: "15 проектов с открытым исходным кодом, которые изменили мир"
+description: "Изучите 15 проектов с открытым исходным кодом, которые произвели революцию в разработке программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0029-15-open-source-projects-that-changed-the-world.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,44 +13,44 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0029-15-open-source-projects-that-changed-the-world.png)
 
-To come up with the list, we tried to look at the overall impact these projects have created on the industry and related technologies. Also, we’ve focused on projects that have led to a big change in the day-to-day lives of many software developers across the world.
+Чтобы составить список, мы попытались оценить общее влияние этих проектов на отрасль и связанные с ней технологии. Кроме того, мы сосредоточились на проектах, которые привели к большим изменениям в повседневной жизни многих разработчиков программного обеспечения по всему миру.
 
-## Web Development
+## Веб-разработка
 
-*   **Node.js:** The cross-platform server-side Javascript runtime that brought JS to server-side development
+* **Node.js:** Кроссплатформенная среда выполнения Javascript на стороне сервера, которая позволила использовать JS в разработке на стороне сервера.
 
-*   **React:** The library that became the foundation of many web development frameworks.
+* **React:** библиотека, ставшая основой многих сред веб-разработки.
 
-*   **Apache HTTP Server:** The highly versatile web server loved by enterprises and startups alike. Served as inspiration for many other web servers over the years.
+* **Http-сервер Apache:** Универсальный веб-сервер, любимый как предприятиями, так и стартапами. На протяжении многих лет служил источником вдохновения для многих других веб-серверов.
 
-## Data Management
+## Управление данными
 
-*   **PostgreSQL:** An open-source relational database management system that provided a high-quality alternative to costly systems
+* **PostgreSQL:** система управления реляционными базами данных с открытым исходным кодом, предоставляющая высококачественную альтернативу дорогостоящим системам.
 
-*   **Redis:** The super versatile data store that can be used a cache, message broker and even general-purpose storage
+* **Redis:** Сверхуниверсальное хранилище данных, которое можно использовать в качестве кэша, брокера сообщений и даже хранилища общего назначения.
 
-*   **Elasticsearch:** A scale solution to search, analyze and visualize large volumes of data
+* **Elasticsearch**: масштабируемое решение для поиска, анализа и визуализации больших объемов данных.
 
-## Developer Tools
+## Инструменты разработчика
 
-*   **Git:** Free and open-source version control tool that allows developer collaboration across the globe.
+* **Git:** Бесплатный инструмент управления версиями с открытым исходным кодом, позволяющий сотрудничать разработчикам по всему миру.
 
-*   **VSCode:** One of the most popular source code editors in the world
+* **VSCode:** Один из самых популярных редакторов исходного кода в мире.
 
-*   **Jupyter Notebook:** The web application that lets developers share live code, equations, visualizations and narrative text.
+* **Jupyter Notebook:** Веб-приложение, позволяющее разработчикам обмениваться живым кодом, уравнениями, визуализациями и повествовательным текстом.
 
-## Machine Learning & Big Data
+## Машинное обучение и большие данные
 
-*   **Tensorflow:** The leading choice to leverage machine learning techniques
+* **Tensorflow:** лучший выбор для использования методов машинного обучения.
 
-*   **Apache Spark:** Standard tool for big data processing and analytics platforms
+* **Apache Spark:** Стандартный инструмент для платформ обработки больших данных и анализа.
 
-*   **Kafka:** Standard platform for building real-time data pipelines and applications.
+* **Kafka:** Стандартная платформа для создания конвейеров данных и приложений в реальном времени.
 
-## DevOps & Containerization
+## DevOps и контейнеризация
 
-*   **Docker:** The open source solution that allows developers to package and deploy applications in a consistent and portable way.
+* **Docker:** решение с открытым исходным кодом, которое позволяет разработчикам упаковывать и развертывать приложения согласованным и переносимым способом.
 
-*   **Kubernetes:** The heart of Cloud-Native architecture and a platform to manage multiple containers
+* **Kubernetes:** сердце облачной архитектуры и платформа для управления несколькими контейнерами.
 
-*   **Linux:** The OS that democratized the world of software development.
+* **Linux:** ОС, которая демократизировала мир разработки программного обеспечения.

@@ -1,6 +1,6 @@
 ---
-title: "How do we incorporate Event Sourcing into systems?"
-description: "Explore incorporating Event Sourcing: from NYT archives to microservices."
+title: "Как мы включаем источники событий в системы?"
+description: "Изучите возможности использования источников событий: от архивов NYT до микросервисов."
 image: "https://assets.bytebytego.com/diagrams/0037-use-cases-for-event-sourcing.png"
 createdAt: "2024-02-20"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0037-use-cases-for-event-sourcing.png)
 
-Event sourcing changes the programming paradigm from persisting states to persisting events. The event store is the source of truth. Let's look at three examples.
+Источник событий меняет парадигму программирования от постоянных состояний к постоянным событиям. Хранилище событий является источником истины. Давайте рассмотрим три примера.
 
-## New York Times
+## Нью-Йорк Таймс
 
-The newspaper website stores every article, image, and byline since 1851 in an event store. The raw data is then denormalized into different views and fed into different ElasticSearch nodes for website searches.
+Веб-сайт газеты хранит все статьи, изображения и подписи с 1851 года в магазине мероприятий. Затем необработанные данные денормализуются в разные представления и передаются в разные узлы ElasticSearch для поиска на веб-сайте.
 
-## CDC (Change Data Capture)
+## CDC (отслеживание измененных данных)
 
-A CDC connector pulls data from the tables and transforms it into events. These events are pushed to Kafka and other sinks consume events from Kafka.
+Коннектор CDC извлекает данные из таблиц и преобразует их в события. Эти события передаются в Kafka, а другие приемники потребляют события из Kafka.
 
-## Microservice Connector
+## Коннектор микросервиса
 
-We can also use event event-sourcing paradigm for transmitting events among microservices. For example, the shopping cart service generates various events for adding or removing items from the cart. Kafka broker acts as the event store, and other services including the fraud service, billing service, and email service consume events from the event store. Since events are the source of truth, each service can determine the domain model on its own.
+Мы также можем использовать парадигму источника событий для передачи событий между микросервисами. Например, служба корзины покупок генерирует различные события для добавления или удаления товаров из корзины. Брокер Kafka действует как хранилище событий, а другие службы, включая службу мошенничества, службу выставления счетов и службу электронной почты, используют события из хранилища событий. Поскольку события являются источником истины, каждый сервис может самостоятельно определять модель предметной области.

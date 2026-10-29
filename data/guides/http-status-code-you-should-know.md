@@ -1,6 +1,6 @@
 ---
-title: 'HTTP Status Codes You Should Know'
-description: 'Understand HTTP status codes: categories and common examples.'
+title: "Коды состояния HTTP, которые вы должны знать"
+description: "Понимание кодов состояния HTTP: категории и распространенные примеры."
 image: 'https://assets.bytebytego.com/diagrams/0233-http-status-code.png'
 createdAt: '2024-02-24'
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0233-http-status-code.png)
 
-The response codes for HTTP are divided into five categories:
+Коды ответа для HTTP разделены на пять категорий:
 
-*   **Informational (100-199)**
-*   **Success (200-299)**
-*   **Redirection (300-399)**
-*   **Client Error (400-499)**
-*   **Server Error (500-599)**
+* **Информационный (100-199)**
+* **Успех (200-299)**
+* **Перенаправление (300–399)**
+* **Ошибка клиента (400–499)**
+* **Ошибка сервера (500–599)**

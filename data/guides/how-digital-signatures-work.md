@@ -1,6 +1,6 @@
 ---
-title: "How Digital Signatures Work"
-description: "Learn how digital signatures work to secure electronic documents."
+title: "Как работают цифровые подписи"
+description: "Узнайте, как цифровые подписи защищают электронные документы."
 image: "https://assets.bytebytego.com/diagrams/0219-how-digital-signatures-work.png"
 createdAt: "2024-02-24"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0219-how-digital-signatures-work.png)
 
-A digital signature is a specific kind of electronic signature to sign and secure electronically transmitted documents.
+Цифровая подпись — это особый вид электронной подписи, используемый для подписания и защиты документов, передаваемых в электронном виде.
 
-Digital signatures are similar to physical signatures since they are unique to every person. They identify the identity of the signer.
+Цифровые подписи аналогичны физическим подписям, поскольку они уникальны для каждого человека. Они идентифицируют личность подписавшего.
 
-Here’s an example of the working process of a digital signature with Alice as the sender and John as the recipient:
+Вот пример рабочего процесса цифровой подписи с Алисой в качестве отправителя и Джоном в качестве получателя:
 
-1. Alice generates a cryptographic key pair consisting of a private key and a corresponding public key. The private key remains confidential and is known only to the signer, while the public key can be shared openly.
+1. Алиса генерирует пару криптографических ключей, состоящую из закрытого ключа и соответствующего открытого ключа. Закрытый ключ остается конфиденциальным и известен только подписавшему, а открытый ключ может быть передан открыто.
 
-2. The signer (Alice) uses a hash function to create a unique fixed-length string of numbers and letters, called a hash, from the document. This hash value represents the contents of the document.
+2. Подписывающая сторона (Алиса) использует хеш-функцию для создания из документа уникальной строки цифр и букв фиксированной длины, называемой хешем. Это хеш-значение представляет содержимое документа.
 
-3. Alice uses their private key to encrypt the hash value of the message. This hash value is known as the digital signature.
+3. Алиса использует свой закрытый ключ для шифрования хеш-значения сообщения. Это хеш-значение известно как цифровая подпись.
 
-4. The digital signature is attached to the original document, creating a digitally signed document. It is transmitted over the network to the recipient.
+4. Цифровая подпись прикрепляется к исходному документу, создавая документ с цифровой подписью. Он передается по сети получателю.
 
-5. The recipient (John) extracts both the digital signature and the original hash value from the document.
+5. Получатель (Джон) извлекает из документа цифровую подпись и исходное значение хеш-функции.
 
-6. The recipient uses Alice’s public key to decrypt the digital signature. This produces a hash value that was originally encrypted with the private key.
+6. Получатель использует открытый ключ Алисы для расшифровки цифровой подписи. В результате получается хэш-значение, которое изначально было зашифровано с помощью закрытого ключа.
 
-7. The recipient calculates a new hash value for the received message using the same hashing algorithm as the signer. They then compare this recalculated hash with the decrypted hash value obtained from the digital signature.
+7. Получатель вычисляет новое значение хеш-функции для полученного сообщения, используя тот же алгоритм хеширования, что и подписывающая сторона. Затем они сравнивают этот пересчитанный хэш с расшифрованным значением хеш-функции, полученным из цифровой подписи.
 
-8. If the hash values are equal, the digital signature is valid, and it is determined that the document has not been tampered with or altered.
+8. Если значения хеш-функции равны, цифровая подпись действительна и определяется, что документ не был подделан или изменен.

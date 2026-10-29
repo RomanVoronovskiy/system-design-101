@@ -1,6 +1,6 @@
 ---
-title: "Amazon Prime Video Monitoring Service"
-description: "Learn how Amazon Prime Video monitoring saved 90% cost by moving to monolith."
+title: "Служба видеомониторинга Amazon Prime"
+description: "Узнайте, как мониторинг Amazon Prime Video позволил сэкономить 90 % затрат благодаря переходу на монолитное решение."
 image: "https://assets.bytebytego.com/diagrams/0328-serverless-to-monolithic.jpeg"
 createdAt: "2024-02-23"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0328-serverless-to-monolithic.jpeg)
 
-Why did Amazon Prime Video monitoring move **from serverless to monolithic**? How can it save 90% cost?
+Почему мониторинг Amazon Prime Video перешёл **от бессерверного к монолитному**? Как это может сэкономить 90% стоимости?
 
-The diagram above shows the architecture comparison before and after the migration.
+На диаграмме выше показано сравнение архитектуры до и после миграции.
 
-## What is Amazon Prime Video Monitoring Service?
+## Что такое служба видеомониторинга Amazon Prime?
 
-Prime Video service needs to monitor the quality of thousands of live streams. The monitoring tool automatically analyzes the streams in real time and identifies quality issues like block corruption, video freeze, and sync problems. This is an important process for customer satisfaction.
+Сервису Prime Video необходимо следить за качеством тысяч прямых трансляций. Инструмент мониторинга автоматически анализирует потоки в режиме реального времени и выявляет проблемы с качеством, такие как повреждение блоков, зависание видео и проблемы с синхронизацией. Это важный процесс для удовлетворения клиентов.
 
-There are 3 steps: media converter, defect detector, and real-time notification.
+Есть 3 этапа: медиаконвертер, детектор дефектов и уведомление в реальном времени.
 
-*   What is the problem with the old architecture?
+* В чем проблема старой архитектуры?
 
-    The old architecture was based on Amazon Lambda, which was good for building services quickly. However, it was not cost-effective when running the architecture at a high scale. The two most expensive operations are:
+Старая архитектура была основана на Amazon Lambda, который подходил для быстрого создания сервисов. Однако это было нерентабельно при использовании архитектуры в больших масштабах. Две самые дорогостоящие операции:
 
-    1.  The orchestration workflow - AWS step functions charge users by state transitions and the orchestration performs multiple state transitions every second.
+1. Рабочий процесс оркестрации: пошаговые функции AWS взимают с пользователей плату за переходы состояний, а оркестрация выполняет несколько переходов состояний каждую секунду.
 
-    2.  Data passing between distributed components - the intermediate data is stored in Amazon S3 so that the next stage can download. The download can be costly when the volume is high.
+2. Передача данных между распределенными компонентами — промежуточные данные хранятся в Amazon S3, чтобы их можно было загрузить на следующем этапе. Загрузка может быть дорогостоящей, если объем большой.
 
-*   Monolithic architecture saves 90% cost
+* Монолитная архитектура экономит 90% затрат.
 
-    A monolithic architecture is designed to address the cost issues. There are still 3 components, but the media converter and defect detector are deployed in the same process, saving the cost of passing data over the network. Surprisingly, this approach to deployment architecture change led to 90% cost savings!
+Монолитная архитектура предназначена для решения проблем стоимости. Компонентов по-прежнему 3, но медиаконвертер и детектор дефектов развертываются в одном процессе, что экономит затраты на передачу данных по сети. Удивительно, но такой подход к изменению архитектуры развертывания привел к экономии средств на 90 %!
 
-    This is an interesting and unique case study because microservices have become a go-to and fashionable choice in the tech industry. It's good to see that we are having more discussions about evolving the architecture and having more honest discussions about its pros and cons. Decomposing components into distributed microservices comes with a cost.
+Это интересный и уникальный пример, поскольку микросервисы стали популярным и модным выбором в технологической индустрии. Приятно видеть, что мы проводим больше дискуссий о развитии архитектуры и более честно обсуждаем ее плюсы и минусы. Разложение компонентов на распределенные микросервисы сопряжено с определенными затратами.
 
-*   What did Amazon leaders say about this?
+* Что сказали по этому поводу лидеры Amazon?
 
-    Amazon CTO Werner Vogels: “Building **evolvable software systems** is a strategy, not a religion. And revisiting your architectures with an open mind is a must.”
+Технический директор Amazon Вернер Фогельс: "Создание **развивающихся программных систем** — это стратегия, а не религия. И пересмотр вашей архитектуры с непредвзятостью является обязательным".
 
-    Ex Amazon VP Sustainability Adrian Cockcroft: “The Prime Video team had followed a path I call **Serverless First**…I don’t advocate **Serverless Only**”.
+Бывший вице-президент Amazon по устойчивому развитию Адриан Кокрофт: «Команда Prime Video следовала по пути, который я называю **Сначала безсерверные**… Я не сторонник **Только безсерверных устройств**».

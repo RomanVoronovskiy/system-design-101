@@ -1,6 +1,6 @@
 ---
-title: "18 Key Design Patterns Every Developer Should Know"
-description: "Explore 18 essential design patterns for efficient software development."
+title: "18 ключевых шаблонов проектирования, которые должен знать каждый разработчик"
+description: "Изучите 18 основных шаблонов проектирования для эффективной разработки программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0032-oo-patterns-you-should-know.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0032-oo-patterns-you-should-know.png)
 
-Patterns are reusable solutions to common design problems, resulting in a smoother, more efficient development process. They serve as blueprints for building better software structures. These are some of the most popular patterns:
+Шаблоны — это многократно используемые решения распространенных проблем проектирования, что позволяет сделать процесс разработки более плавным и эффективным. Они служат образцом для создания более совершенных структур программного обеспечения. Вот некоторые из самых популярных моделей:
 
-*   **Abstract Factory:** Family Creator - Makes groups of related items.
+* **Абстрактная фабрика:** Создатель семей — создает группы связанных предметов.
 
-*   **Builder:** Lego Master - Builds objects step by step, keeping creation and appearance separate.
+* **Строитель:** Lego Master — строит объекты шаг за шагом, разделяя создание и внешний вид.
 
-*   **Prototype:** Clone Maker - Creates copies of fully prepared examples.
+* **Прототип:** Clone Maker — создает копии полностью подготовленных примеров.
 
-*   **Singleton:** One and Only - A special class with just one instance.
+* **Singleton:** One and Only — специальный класс, имеющий только один экземпляр.
 
-*   **Adapter:** Universal Plug - Connects things with different interfaces.
+* **Адаптер:** Универсальная вилка — соединяет устройства с различными интерфейсами.
 
-*   **Bridge:** Function Connector - Links how an object works to what it does.
+* **Мост:** Соединитель функций: связывает работу объекта с тем, что он делает.
 
-*   **Composite:** Tree Builder - Forms tree-like structures of simple and complex parts.
+* **Композит:** Построитель деревьев — формирует древовидные структуры из простых и сложных частей.
 
-*   **Decorator:** Customizer - Adds features to objects without changing their core.
+* **Декоратор:** Настройщик: добавляет свойства объектам без изменения их ядра.
 
-*   **Facade:** One-Stop-Shop - Represents a whole system with a single, simplified interface.
+* **Фасад:** «Единое окно» — представляет собой целую систему с единым упрощенным интерфейсом.
 
-*   **Flyweight:** Space Saver - Shares small, reusable items efficiently.
+* **Легкий вес:** Экономия места: эффективно распределяет небольшие предметы многоразового использования.
 
-*   **Proxy:** Stand-In Actor - Represents another object, controlling access or actions.
+* **Прокси:** Замещающий актер — представляет другой объект, контролирующий доступ или действия.
 
-*   **Chain of Responsibility:** Request Relay - Passes a request through a chain of objects until handled.
+* **Цепочка ответственности:** Реле запросов — передает запрос через цепочку объектов до тех пор, пока он не будет обработан.
 
-*   **Command:** Task Wrapper - Turns a request into an object, ready for action.
+* **Команда:** Обертка задачи — превращает запрос в объект, готовый к действию.
 
-*   **Iterator:** Collection Explorer - Accesses elements in a collection one by one.
+* **Итератор:** Обозреватель коллекций — осуществляет доступ к элементам коллекции один за другим.
 
-*   **Mediator:** Communication Hub - Simplifies interactions between different classes.
+* **Медиатор:** Коммуникационный центр — упрощает взаимодействие между различными классами.
 
-*   **Memento:** Time Capsule - Captures and restores an object's state.
+* **Memento:** Time Capsule — фиксирует и восстанавливает состояние объекта.
 
-*   **Observer:** News Broadcaster - Notifies classes about changes in other objects.
+* **Наблюдатель:** Радиовещатель новостей — уведомляет классы об изменениях в других объектах.
 
-*   **Visitor:** Skillful Guest - Adds new operations to a class without altering it.
+* **Посетитель:** Умелый гость — добавляет новые операции в класс, не изменяя его.

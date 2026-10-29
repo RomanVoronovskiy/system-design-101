@@ -1,6 +1,6 @@
 ---
-title: "Azure Services Cheat Sheet"
-description: "A concise guide to Microsoft Azure services and their applications."
+title: "Памятка по службам Azure"
+description: "Краткое руководство по сервисам Microsoft Azure и их приложениям."
 image: "https://assets.bytebytego.com/diagrams/0083-azure-cloud-services-cheat-sheet.png"
 createdAt: "2024-03-07"
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0083-azure-cloud-services-cheat-sheet.png)
 
-Launched in 2010, Microsoft Azure has quickly grown to hold the No. 2 position in market share by evolving from basic offerings to a comprehensive, flexible cloud ecosystem.
+Запущенная в 2010 году платформа Microsoft Azure быстро выросла и заняла второе место по доле рынка, превратившись из базовых предложений в комплексную гибкую облачную экосистему.
 
-Today, Azure not only supports traditional cloud applications but also caters to emerging technologies such as AI, IoT, and blockchain, making it a crucial platform for innovation and development.
+Сегодня Azure не только поддерживает традиционные облачные приложения, но и обслуживает новые технологии, такие как искусственный интеллект, Интернет вещей и блокчейн, что делает его важной платформой для инноваций и развития.
 
-As it evolves, Azure continues to enhance its capabilities to provide advanced solutions for security, scalability, and efficiency, meeting the demands of modern enterprises and startups alike. This expansion allows organizations to adapt and thrive in a rapidly changing digital landscape.
+По мере своего развития Azure продолжает расширять свои возможности, предоставляя передовые решения для обеспечения безопасности, масштабируемости и эффективности, отвечающие потребностям как современных предприятий, так и стартапов. Такое расширение позволяет организациям адаптироваться и процветать в быстро меняющемся цифровом мире.
 
-The attached illustration can serve as both an introduction and a quick reference for anyone aiming to understand Azure.
+Прилагаемая иллюстрация может служить как введением, так и кратким справочником для всех, кто хочет разобраться в Azure.

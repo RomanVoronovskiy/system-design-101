@@ -1,6 +1,6 @@
 ---
-title: "10 Good Coding Principles to Improve Code Quality"
-description: "Improve code quality with these 10 essential coding principles."
+title: "10 хороших принципов кодирования для улучшения качества кода"
+description: "Улучшите качество кода с помощью этих 10 основных принципов кодирования."
 image: "https://assets.bytebytego.com/diagrams/0051-10-good-coding-principles.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,44 +13,44 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0051-10-good-coding-principles.png)
 
-Software development requires good system designs and coding standards. We list 10 good coding principles in the diagram below.
+Разработка программного обеспечения требует хорошего проектирования систем и стандартов кодирования. Мы перечисляем 10 хороших принципов кодирования на диаграмме ниже.
 
-## 1. Follow Code Specifications
+## 1. Следуйте спецификациям кода
 
-When we write code, it is important to follow the industry's well-established norms, like “PEP 8”, “Google Java Style”. Adhering to a set of agreed-upon code specifications ensures that the quality of the code is consistent and readable.
+Когда мы пишем код, важно следовать общепринятым в отрасли нормам, таким как «PEP 8» и «Стиль Google Java». Соблюдение набора согласованных спецификаций кода гарантирует, что качество кода будет стабильным и читаемым.
 
-## 2. Documentation and Comments
+## 2. Документация и комментарии
 
-Good code should be clearly documented and commented to explain complex logic and decisions. Comments should explain why a certain approach was taken (“Why”) rather than what exactly is being done (“What”). Documentation and comments should be clear, concise, and continuously updated.
+Хороший код должен быть четко документирован и прокомментирован для объяснения сложной логики и решений. Комментарии должны объяснять, почему был принят тот или иной подход («Почему»), а не что именно делается («Что»). Документация и комментарии должны быть четкими, краткими и постоянно обновляться.
 
-## 3. Robustness
+## 3. Надежность
 
-Good code should be able to handle a variety of unexpected situations and inputs without crashing or producing unpredictable results. Most common approach is to catch and handle exceptions.
+Хороший код должен быть в состоянии обрабатывать множество неожиданных ситуаций и входных данных без сбоев и непредсказуемых результатов. Наиболее распространенный подход — перехват и обработка исключений.
 
-## 4. Follow the SOLID principle
+## 4. Следуйте принципу SOLID
 
-“Single Responsibility”, “Open/Closed”, “Liskov Substitution”, “Interface Segregation”, and “Dependency Inversion” - these five principles (SOLID for short) are the cornerstones of writing code that scales and is easy to maintain.
+«Единая ответственность», «Открытость/закрытость», «Подмена Лискова», «Сегрегация интерфейса» и «Инверсия зависимостей» — эти пять принципов (сокращенно SOLID) являются краеугольными камнями написания кода, который масштабируется и прост в обслуживании.
 
-## 5. Make Testing Easy
+## 5. Сделайте тестирование простым
 
-Testability of software is particularly important. Good code should be easy to test, both by trying to reduce the complexity of each component, and by supporting automated testing to ensure that it behaves as expected.
+Тестируемость программного обеспечения особенно важна. Хороший код должен легко тестироваться как за счет снижения сложности каждого компонента, так и за счет поддержки автоматического тестирования, гарантирующего, что он ведет себя должным образом.
 
-## 6. Abstraction
+## 6. Абстракция
 
-Abstraction requires us to extract the core logic and hide the complexity, thus making the code more flexible and generic. Good code should have a moderate level of abstraction, neither over-designed nor neglecting long-term expandability and maintainability.
+Абстракция требует от нас извлечь основную логику и скрыть сложность, что делает код более гибким и универсальным. Хороший код должен иметь умеренный уровень абстракции, не быть чрезмерно продуманным и не пренебрегать долгосрочными возможностями расширения и сопровождения.
 
-## 7. Utilize Design Patterns, but don't over-design
+## 7. Используйте шаблоны проектирования, но не переусердствуйте
 
-Design patterns can help us solve some common problems. However, every pattern has its applicable scenarios. Overusing or misusing design patterns may make your code more complex and difficult to understand.
+Шаблоны проектирования могут помочь нам решить некоторые распространенные проблемы. Однако у каждого шаблона есть свои применимые сценарии. Чрезмерное или неправильное использование шаблонов проектирования может сделать ваш код более сложным и трудным для понимания.
 
-## 8. Reduce Global Dependencies
+## 8. Уменьшите глобальные зависимости
 
-We can get bogged down in dependencies and confusing state management if we use global variables and instances. Good code should rely on localized state and parameter passing. Functions should be side-effect free.
+Мы можем увязнуть в зависимостях и запутать управление состоянием, если будем использовать глобальные переменные и экземпляры. Хороший код должен полагаться на локализованное состояние и передачу параметров. Функции не должны иметь побочных эффектов.
 
-## 9. Continuous Refactoring
+## 9. Непрерывный рефакторинг
 
-Good code is maintainable and extensible. Continuous refactoring reduces technical debt by identifying and fixing problems as early as possible.
+Хороший код легко поддерживать и расширять. Непрерывный рефакторинг сокращает технический долг за счет выявления и устранения проблем как можно раньше.
 
-## 10. Security is a Top Priority
+## 10. Безопасность — главный приоритет
 
-Good code should avoid common security vulnerabilities.
+Хороший код должен избегать распространенных уязвимостей безопасности.

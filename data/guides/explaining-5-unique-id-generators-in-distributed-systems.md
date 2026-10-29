@@ -1,6 +1,6 @@
 ---
-title: "Explaining 5 Unique ID Generators"
-description: "Explore 5 unique ID generators and their pros and cons in distributed systems."
+title: "Объяснение 5 генераторов уникальных идентификаторов"
+description: "Изучите 5 уникальных генераторов идентификаторов, их плюсы и минусы в распределенных системах."
 image: "https://assets.bytebytego.com/diagrams/0006-explaining-5-unique-id-generators-in-distributed-systems.png"
 createdAt: "2024-02-22"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0006-explaining-5-unique-id-generators-in-distributed-systems.png)
 
-The diagram below shows how they work. Each generator has its pros and cons.
+На диаграмме ниже показано, как они работают. У каждого генератора есть свои плюсы и минусы.
 
 ## UUID
 
-A UUID has 128 bits. It is simple to generate and no need to call another service. However, it is not sequential and inefficient for database indexing. Additionally, UUID doesn’t guarantee global uniqueness. We need to be careful with ID conflicts (although the chances are slim.)
+UUID имеет 128 бит. Его просто сгенерировать, и нет необходимости вызывать другую службу. Однако он не является последовательным и неэффективным для индексации базы данных. Кроме того, UUID не гарантирует глобальную уникальность. Нам нужно быть осторожными с конфликтами идентификаторов (хотя вероятность этого невелика).
 
-## Snowflake
+## Снежинка
 
-Snowflake’s ID generation process has multiple components: timestamp, machine ID, and serial number. The first bit is unused to ensure positive IDs. This generator doesn’t need to talk to an ID generator via the network, so is fast and scalable.
+Процесс генерации идентификатора Snowflake состоит из нескольких компонентов: отметки времени, идентификатора машины и серийного номера. Первый бит не используется для обеспечения положительных идентификаторов. Этому генератору не нужно взаимодействовать с генератором идентификаторов через сеть, поэтому он быстрый и масштабируемый.
 
-Snowflake implementations vary. For example, data center ID can be added to the “MachineID” component to guarantee global uniqueness.
+Реализации снежинок различаются. Например, идентификатор центра обработки данных можно добавить к компоненту MachineID, чтобы гарантировать глобальную уникальность.
 
-## DB auto-increment
+## Автоинкремент БД
 
-Most database products offer auto-increment identity columns. Since this is supported in the database, we can leverage its transaction management to handle concurrent visits to the ID generator. This guarantees uniqueness in one table. However, this involves network communications and may expose sensitive business data to the outside. For example, if we use this as a user ID, our business competitors will have a rough idea of the total number of users registered on our website.
+Большинство продуктов баз данных предлагают столбцы идентификаторов с автоматическим приращением. Поскольку это поддерживается в базе данных, мы можем использовать управление транзакциями для обработки одновременных посещений генератора идентификаторов. Это гарантирует уникальность в одной таблице. Однако это предполагает сетевое взаимодействие и может привести к раскрытию конфиденциальных бизнес-данных извне. Например, если мы используем его в качестве идентификатора пользователя, наши бизнес-конкуренты будут иметь приблизительное представление об общем количестве пользователей, зарегистрированных на нашем веб-сайте.
 
-## DB segment
+## сегмент БД
 
-An alternative approach is to retrieve IDs from the database in batches and cache them in the ID servers, each ID server handling a segment of IDs. This greatly saves the I/O pressure on the database.
+Альтернативный подход заключается в пакетном извлечении идентификаторов из базы данных и их кэшировании на серверах идентификаторов, при этом каждый сервер идентификаторов обрабатывает сегмент идентификаторов. Это значительно снижает нагрузку на базу данных при вводе-выводе.
 
-## Redis
+## Редис
 
-We can also use Redis key-value pair to generate unique IDs. Redis stores data in memory, so this approach offers better performance than the database.
+Мы также можем использовать пару ключ-значение Redis для генерации уникальных идентификаторов. Redis хранит данные в памяти, поэтому этот подход обеспечивает более высокую производительность, чем база данных.

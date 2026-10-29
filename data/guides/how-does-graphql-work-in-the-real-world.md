@@ -1,6 +1,6 @@
 ---
-title: How GraphQL Works at LinkedIn
-description: Learn how LinkedIn uses GraphQL to improve its development workflow.
+title: "Как работает GraphQL в LinkedIn"
+description: "Узнайте, как LinkedIn использует GraphQL для улучшения рабочего процесса разработки."
 image: 'https://assets.bytebytego.com/diagrams/0209-graphql-linkedin.jpeg'
 createdAt: '2024-02-12'
 draft: false
@@ -13,31 +13,31 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0209-graphql-linkedin.jpeg)
 
-The diagram above shows how LinkedIn adopts GraphQL.
+На диаграмме выше показано, как LinkedIn использует GraphQL.
 
-“Moving to GraphQL was a huge initiative that changed the development workflow for thousands of engineers...” \[1\]
+«Переход на GraphQL стал огромной инициативой, которая изменила рабочий процесс разработки для тысяч инженеров...» \[1\]
 
-The overall workflow after adopting GraphQL has 3 parts:
+Общий рабочий процесс после внедрения GraphQL состоит из 3 частей:
 
-## Part 1 - Edit and Test a Query
+## Часть 1. Редактирование и тестирование запроса
 
-**Steps 1-2:** The client-side developer develops a query and tests with backend services.
+**Шаги 1–2.** Разработчик клиентской части разрабатывает запрос и тестирует его с помощью серверных служб.
 
-## Part 2 - Register a Query
+## Часть 2. Регистрация запроса
 
-**Steps 3-4:** The client-side developer commits the query and publishes the query to the query registry.
+**Шаги 3–4.** Разработчик на стороне клиента фиксирует запрос и публикует его в реестре запросов.
 
-## Part 3 - Use in Production
+## Часть 3 – Использование в производстве
 
-**Step 5:** The query is released together with the client code.
+**Шаг 5.** Запрос публикуется вместе с клиентским кодом.
 
-**Steps 6-7:** The routing metadata is included with each registered query. The metadata is used at the traffic routing tier to route the incoming requests to the correct service cluster.
+**Шаги 6–7.** Метаданные маршрутизации включаются в каждый зарегистрированный запрос. Метаданные используются на уровне маршрутизации трафика для маршрутизации входящих запросов в правильный кластер служб.
 
-**Step 8:** The registered queries are cached at service runtime.
+**Шаг 8.** Зарегистрированные запросы кэшируются во время выполнения службы.
 
-**Step 9:** The sample query goes to the identity service first to retrieve members and then goes to the organization service to retrieve company information.
+**Шаг 9.** Пример запроса сначала отправляется в службу идентификации для получения данных об участниках, а затем в службу организации для получения информации о компании.
 
-LinkedIn doesn’t deploy a GraphQL gateway for two reasons:
+LinkedIn не развертывает шлюз GraphQL по двум причинам:
 
-1.  Prevent an additional network hop
-2.  Avoid single point of failure
+1. Предотвратите дополнительный сетевой переход
+2. Избегайте единой точки отказа

@@ -1,6 +1,6 @@
 ---
-title: "CI/CD Pipeline Explained in Simple Terms"
-description: "Learn about CI/CD pipelines, their stages, and benefits in software delivery."
+title: "Конвейер CI/CD, объясненный простыми словами"
+description: "Узнайте о конвейерах CI/CD, их этапах и преимуществах при доставке программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0140-ci-cd-pipeline.png"
 createdAt: "2024-03-16"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![diagram](https://assets.bytebytego.com/diagrams/0140-ci-cd-pipeline.png)
 
-## SDLC with CI/CD
+## SDLC с CI/CD
 
-The software development life cycle (SDLC) consists of several key stages: development, testing, deployment, and maintenance. CI/CD automates and integrates these stages to enable faster, more reliable releases.
+Жизненный цикл разработки программного обеспечения (SDLC) состоит из нескольких ключевых этапов: разработка, тестирование, развертывание и обслуживание. CI/CD автоматизирует и интегрирует эти этапы, чтобы обеспечить более быстрые и надежные выпуски.
 
-When code is pushed to a git repository, it triggers an automated build and test process. End-to-end (e2e) test cases are run to validate the code. If tests pass, the code can be automatically deployed to staging/production. If issues are found, the code is sent back to development for bug fixing. This automation provides fast feedback to developers and reduces risk of bugs in production.
+Когда код отправляется в репозиторий git, он запускает автоматический процесс сборки и тестирования. Сквозные тестовые сценарии (e2e) запускаются для проверки кода. Если тесты пройдены, код можно автоматически развернуть в промежуточной/производственной среде. Если обнаруживаются проблемы, код отправляется обратно в разработку для исправления ошибок. Эта автоматизация обеспечивает быструю обратную связь с разработчиками и снижает риск ошибок в производстве.
 
-## Difference between CI and CD
+## Разница между CI и CD
 
-Continuous Integration (CI) automates the build, test, and merge process. It runs tests whenever code is committed to detect integration issues early. This encourages frequent code commits and rapid feedback.
+Непрерывная интеграция (CI) автоматизирует процессы сборки, тестирования и слияния. Он запускает тесты всякий раз, когда код используется для раннего обнаружения проблем интеграции. Это поощряет частые коммиты кода и быструю обратную связь.
 
-Continuous Delivery (CD) automates release processes like infrastructure changes and deployment. It ensures software can be released reliably at any time through automated workflows. CD may also automate the manual testing and approval steps required before production deployment.
+Непрерывная доставка (CD) автоматизирует процессы выпуска, такие как изменения инфраструктуры и развертывание. Это гарантирует, что программное обеспечение может быть надежно выпущено в любое время посредством автоматизированных рабочих процессов. CD также может автоматизировать этапы ручного тестирования и утверждения, необходимые перед развертыванием в рабочей среде.
 
-## CI/CD Pipeline
+## Конвейер CI/CD
 
-A typical CI/CD pipeline has several connected stages:
+Типичный конвейер CI/CD состоит из нескольких связанных между собой этапов:
 
-*   Developer commits code changes to source control
+* Разработчик фиксирует изменения кода в системе контроля версий.
 
-*   CI server detects changes and triggers build
+* CI-сервер обнаруживает изменения и запускает сборку.
 
-*   Code is compiled, tested (unit, integration tests)
+* Код скомпилирован, протестирован (юнит, интеграционные тесты)
 
-*   Test results reported to developer
+* Результаты испытаний сообщаются разработчику
 
-*   On success, artifacts are deployed to staging environments
+* В случае успеха артефакты развертываются в промежуточной среде.
 
-*   Further testing may be done on staging before release
+* Дальнейшее тестирование может быть проведено на этапе подготовки перед выпуском.
 
-*   CD system deploys approved changes to production
+* Система компакт-дисков внедряет утвержденные изменения в производство.

@@ -1,6 +1,6 @@
 ---
-title: "How do we manage sensitive data in a system?"
-description: "A cheat sheet for managing sensitive data in a system."
+title: "Как мы управляем конфиденциальными данными в системе?"
+description: "Шпаргалка по управлению конфиденциальными данными в системе."
 image: "https://assets.bytebytego.com/diagrams/0058-cheatsheet-for-managing-sensitive-data.png"
 createdAt: "2024-02-25"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0058-cheatsheet-for-managing-sensitive-data.png)
 
-The cheat sheet below shows a list of guidelines.
+В шпаргалке ниже показан список рекомендаций.
 
-## What is Sensitive Data?
+## Что такое конфиденциальные данные?
 
-Personal Identifiable Information (PII), health information, intellectual property, financial information, education and legal records are all sensitive data.
+Информация, позволяющая установить личность (PII), информация о здоровье, интеллектуальная собственность, финансовая информация, данные об образовании и юридические данные — все это конфиденциальные данные.
 
-Most countries have laws and regulations that require the protection of sensitive data. For example, the General Data Protection Regulation (GDPR) in the European Union sets stringent rules for data protection and privacy. Non-compliance with such regulations can result in hefty fines, legal actions, and sanctions against the violating entity.
+В большинстве стран действуют законы и правила, требующие защиты конфиденциальных данных. Например, Общий регламент по защите данных (GDPR) в Европейском Союзе устанавливает строгие правила защиты данных и конфиденциальности. Несоблюдение таких правил может привести к крупным штрафам, судебным искам и санкциям против нарушившей организации.
 
-When we design systems, we need to design for data protection.
+Когда мы проектируем системы, нам необходимо проектировать защиту данных.
 
-## Encryption & Key Management
+## Шифрование и управление ключами
 
-The data transmission needs to be encrypted using SSL. Passwords shouldn’t be stored in plain text.
+Передача данных должна быть зашифрована с использованием SSL. Пароли не следует хранить в виде обычного текста.
 
-For key storage, we design different roles including password applicant, password manager and auditor, all holding one piece of the key. We will need all three keys to open a lock.
+Для хранения ключей мы разрабатываем различные роли, включая подателя пароля, менеджера паролей и аудитора, каждый из которых владеет одной частью ключа. Нам понадобятся все три ключа, чтобы открыть замок.
 
-## Data Desensitization
+## Десенсибилизация данных
 
-Data desensitization, also known as data anonymization or data sanitization, refers to the process of removing or modifying personal information from a dataset so that individuals cannot be readily identified. This practice is crucial in protecting individuals' privacy and ensuring compliance with data protection laws and regulations. Data desensitization is often used when sharing data externally, such as for research or statistical analysis, or even internally within an organization, to limit access to sensitive information.
+Десенсибилизация данных, также известная как анонимизация данных или очистка данных, относится к процессу удаления или изменения личной информации из набора данных, чтобы люди не могли быть легко идентифицированы. Эта практика имеет решающее значение для защиты частной жизни людей и обеспечения соблюдения законов и правил о защите данных. Десенсибилизация данных часто используется при обмене данными извне, например, для исследований или статистического анализа, или даже внутри организации, чтобы ограничить доступ к конфиденциальной информации.
 
-Algorithms like GCM store cipher data and keys separately so that hackers are not able to decipher the user data.
+Алгоритмы, такие как GCM, хранят данные шифрования и ключи отдельно, чтобы хакеры не могли расшифровать пользовательские данные.
 
-## Minimal Data Permissions
+## Минимальные права доступа к данным
 
-To protect sensitive data, we should grant minimal permissions to the users. Often we design Role-Based Access Control (RBAC) to restrict access to authorized users based on their roles within an organization. It is a widely used access control mechanism that simplifies the management of user permissions, ensuring that users have access to only the information and resources necessary for their roles.
+Чтобы защитить конфиденциальные данные, мы должны предоставлять пользователям минимальные разрешения. Часто мы разрабатываем управление доступом на основе ролей (RBAC), чтобы ограничить доступ авторизованным пользователям в зависимости от их ролей в организации. Это широко используемый механизм контроля доступа, который упрощает управление разрешениями пользователей, гарантируя, что пользователи имеют доступ только к той информации и ресурсам, которые необходимы для их ролей.
 
-## Data Lifecycle Management
+## Управление жизненным циклом данных
 
-When we develop data products like reports or data feeds, we need to design a process to maintain data quality. Data developers should be granted with necessary permissions during development. After the data is online, they should be revoked from the data access.
+Когда мы разрабатываем продукты данных, такие как отчеты или каналы данных, нам необходимо разработать процесс поддержания качества данных. Разработчикам данных должны быть предоставлены необходимые разрешения во время разработки. После того, как данные будут в сети, они должны быть отозваны из доступа к данным.

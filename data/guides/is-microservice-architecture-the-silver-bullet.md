@@ -1,6 +1,6 @@
 ---
-title: "Is Microservice Architecture the Silver Bullet?"
-description: "Explore when microservices aren't the best choice for your architecture."
+title: "Является ли микросервисная архитектура «серебряной пулей»?"
+description: "Узнайте, когда микросервисы не являются лучшим выбором для вашей архитектуры."
 image: "https://assets.bytebytego.com/diagrams/0278-monolithic-arch-use-cases.jpg"
 createdAt: "2024-02-24"
 draft: false
@@ -10,17 +10,16 @@ tags:
   - "microservices"
   - "architecture patterns"
 ---
-
-The diagram above shows why **real-time gaming** and **low-latency trading** applications should not use microservice architecture.
+На диаграмме выше показано, почему приложениям **игр в реальном времени** и **торговли с малой задержкой** не следует использовать микросервисную архитектуру.
 
 ![](https://assets.bytebytego.com/diagrams/0278-monolithic-arch-use-cases.jpg)
 
-There are some common features of these applications, which make them choose monolithic architecture:
+Есть некоторые общие черты этих приложений, которые заставляют их выбирать монолитную архитектуру:
 
-*   These applications are very **latency-sensitive**. For real-time gaming, the latency should be at the milli-second level; for low-latency trading, the latency should be at the micro-second level. We cannot separate the services into different processes because the network latency is unbearable.
+* Эти приложения очень **чувствительны к задержке**. Для игр в реальном времени задержка должна составлять миллисекунды; для торговли с малой задержкой задержка должна быть на уровне микросекунд. Мы не можем разделить службы на разные процессы, потому что задержка в сети невыносима.
 
-*   Microservice architecture is usually **stateless**, and the states are persisted in the database. Real-time gaming and low-latency trading need to **store the states in memory** for quick updates. For example, when a character is injured in a game, we don’t want to see the update 3 seconds later. This kind of user experience can kill a game.
+* Архитектура микросервисов обычно **без сохранения состояния**, и состояния сохраняются в базе данных. Игры в реальном времени и торговля с низкой задержкой требуют **хранения состояний в памяти** для быстрого обновления. Например, когда персонаж получает травму в игре, мы не хотим видеть обновление через 3 секунды. Такой пользовательский опыт может убить игру.
 
-*   Real-time gaming and low-latency trading need to talk to the server in high frequency, and the requests need to go to the same running instance. So **web socket** connections and **sticky routing** are needed.
+* Игры в реальном времени и торговля с малой задержкой должны взаимодействовать с сервером на высокой частоте, а запросы должны поступать в один и тот же работающий экземпляр. Поэтому необходимы соединения **веб-сокетов** и **привязанная маршрутизация**.
 
-So microservice architecture is designed to solve problems for certain domains. We need to think about “why” when designing applications.
+Итак, микросервисная архитектура предназначена для решения проблем определенных доменов. Нам нужно думать о том, «почему» при разработке приложений.

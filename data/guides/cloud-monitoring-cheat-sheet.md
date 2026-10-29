@@ -1,6 +1,6 @@
 ---
-title: "Cloud Monitoring Cheat Sheet"
-description: "A handy guide to cloud monitoring across major providers and tools."
+title: "Памятка по облачному мониторингу"
+description: "Удобное руководство по облачному мониторингу основных поставщиков и инструментов."
 image: "https://assets.bytebytego.com/diagrams/0095-cloud-monitoring-cheat-sheet.png"
 createdAt: "2024-02-24"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0095-cloud-monitoring-cheat-sheet.png)
 
-A nice cheat sheet of different monitoring infrastructure in cloud services.
+Хорошая шпаргалка по различной инфраструктуре мониторинга в облачных сервисах.
 
-This cheat sheet offers a concise yet comprehensive comparison of key monitoring elements across the three major cloud providers and open-source / 3rd party tools.
+В этой шпаргалке представлено краткое, но всестороннее сравнение ключевых элементов мониторинга трех основных поставщиков облачных услуг и инструментов с открытым исходным кодом и сторонних инструментов.
 
-Let's delve into the essential monitoring aspects covered:
+Давайте углубимся в основные рассматриваемые аспекты мониторинга:
 
-*   **Data Collection:** Gather information from diverse sources to enhance decision-making.
+* **Сбор данных.** Собирайте информацию из различных источников для повышения эффективности принятия решений.
 
-*   **Data Storage:** Safely store and manage data for future analysis and reference.
+* **Хранение данных:** безопасно храните данные и управляйте ими для будущего анализа и использования.
 
-*   **Data Analysis:** Extract valuable insights from data to drive informed actions.
+* **Анализ данных.** Извлекайте из данных ценную информацию для принятия обоснованных мер.
 
-*   **Alerting:** Receive real-time notifications about critical events or anomalies.
+* **Оповещение:** Получайте уведомления в режиме реального времени о критических событиях или аномалиях.
 
-*   **Visualization:** Present data in a visually comprehensible format for better understanding.
+* **Визуализация.** Представляйте данные в визуально понятном формате для лучшего понимания.
 
-*   **Reporting and Compliance:** Generate reports and ensure adherence to regulatory standards.
+* **Отчетность и соблюдение требований.** Создавайте отчеты и обеспечивайте соблюдение нормативных стандартов.
 
-*   **Automation:** Streamline processes and tasks through automated workflows.
+* **Автоматизация.** Оптимизируйте процессы и задачи с помощью автоматизированных рабочих процессов.
 
-*   **Integration:** Seamlessly connect and exchange data between different systems or tools.
+* **Интеграция.** Легко подключайтесь и обменивайтесь данными между различными системами и инструментами.
 
-*   **Feedback Loops:** Continuously refine strategies based on feedback and performance analysis.
+* **Пети обратной связи.** Постоянно совершенствуйте стратегии на основе отзывов и анализа эффективности.

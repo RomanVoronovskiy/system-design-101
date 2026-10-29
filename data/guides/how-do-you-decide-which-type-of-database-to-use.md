@@ -1,6 +1,6 @@
 ---
-title: "How to Decide Which Type of Database to Use"
-description: "A guide to choosing the right database for your specific needs."
+title: "Как решить, какой тип базы данных использовать"
+description: "Руководство по выбору базы данных, соответствующей вашим конкретным потребностям."
 image: "https://assets.bytebytego.com/diagrams/0160-database-types.jpg"
 createdAt: "2024-02-17"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0160-database-types.jpg)
 
-There are hundreds or even thousands of databases available today, such as Oracle, MySQL, MariaDB, SQLite, PostgreSQL, Redis, ClickHouse, MongoDB, S3, Ceph, etc. How do you select the architecture for your system? My short summary is as follows:
+Сегодня доступны сотни или даже тысячи баз данных, таких как Oracle, MySQL, MariaDB, SQLite, PostgreSQL, Redis, ClickHouse, MongoDB, S3, Ceph и т. д. Как вы выбираете архитектуру для своей системы? Мое краткое резюме таково:
 
-## Database Types
+## Типы баз данных
 
-*   Relational database: Almost anything could be solved by them.
+* Реляционная база данных: с их помощью можно решить практически все.
 
-*   In-memory store: Their speed and limited data size make them ideal for fast operations.
+* Хранение в памяти: их скорость и ограниченный размер данных делают их идеальными для быстрых операций.
 
-*   Time-series database: Store and manage time-stamped data.
+* База данных временных рядов: храните и управляйте данными с отметками времени.
 
-*   Graph database: It is suitable for complex relationships between unstructured objects.
+* База данных графов: подходит для сложных отношений между неструктурированными объектами.
 
-*   Document store: They are good for large immutable data.
+* Хранилище документов: они хороши для больших неизменяемых данных.
 
-*   Wide column store: They are usually used for big data, analytics, reporting, etc., which needs denormalized data.
+* Хранилище с широкими столбцами. Обычно они используются для больших данных, аналитики, отчетности и т. д., для которых требуются денормализованные данные.

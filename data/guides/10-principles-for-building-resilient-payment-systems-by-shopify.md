@@ -1,6 +1,6 @@
 ---
-title: '10 Principles for Building Resilient Payment Systems'
-description: '10 principles for building resilient payment systems based on Shopify.'
+title: "10 принципов построения устойчивых платежных систем"
+description: "10 принципов построения устойчивых платежных систем на основе Shopify."
 image: 'https://assets.bytebytego.com/diagrams/0336-shopify.png'
 createdAt: '2024-03-07'
 draft: false
@@ -13,44 +13,44 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0336-shopify.png)
 
-Shopify has some precious tips for building resilient payment systems.
+В Shopify есть несколько ценных советов по созданию устойчивых платежных систем.
 
-### Lower the timeouts, and let the service fail early
+### Уменьшите таймауты и позвольте службе выйти из строя раньше
 
-The default timeout is 60 seconds. Based on Shopify’s experiences, read timeout of 5 seconds and write timeout of 1 second are decent setups.
+Тайм-аут по умолчанию составляет 60 секунд. Судя по опыту Shopify, тайм-аут чтения в 5 секунд и тайм-аут записи в 1 секунду являются достойными настройками.
 
-### Install circuit breaks
+### Установите автоматические выключатели
 
-Shopify developed Semian to protect Net::HTTP, MySQL, Redis, and gRPC services with a circuit breaker in Ruby.
+Shopify разработала Semian для защиты сервисов Net::HTTP, MySQL, Redis и gRPC с помощью автоматического выключателя в Ruby.
 
-### Capacity management
+### Управление емкостью
 
-If we have 50 requests arrive in our queue and it takes an average of 100 milliseconds to process a request, our throughput is 500 requests per second.
+Если в нашу очередь поступает 50 запросов и обработка запроса занимает в среднем 100 миллисекунд, наша пропускная способность составит 500 запросов в секунду.
 
-### Add monitoring and alerting
+### Добавьте мониторинг и оповещения
 
-Google’s site reliability engineering (SRE) book lists four golden signals a user-facing system should be monitored for: latency, traffic, errors, and saturation.
+В книге Google по обеспечению надежности сайтов (SRE) перечислены четыре золотых сигнала, которые следует отслеживать в системе, работающей с пользователем: задержка, трафик, ошибки и насыщение.
 
-### Implement structured logging
+### Внедрение структурированного журналирования
 
-We store logs in a centralized place and make them easily searchable.
+Мы храним журналы централизованно и упрощаем их поиск.
 
-### Use idempotency keys
+### Используйте ключи идемпотентности
 
-Use the Universally Unique Lexicographically Sortable Identifier (ULID) for these idempotency keys instead of a random version 4 UUID.
+Используйте универсальный уникальный идентификатор лексикографической сортировки (ULID) для этих ключей идемпотентности вместо случайного UUID версии 4.
 
-### Be consistent with reconciliation
+### Будьте последовательны в примирении
 
-Store the reconciliation breaks with Shopify’s financial partners in the database.
+Сохраните разрывы сверки с финансовыми партнерами Shopify в базе данных.
 
-### Incorporate load testing
+### Включите нагрузочное тестирование
 
-Shopify regularly simulates the large volume flash sales to get the benchmark results.
+Shopify регулярно моделирует большие объемы флэш-продаж, чтобы получить результаты тестов.
 
-### Get on top of incident management
+### Получите контроль над управлением инцидентами
 
-Each incident channel has 3 roles: Incident Manager on Call (IMOC), Support Response Manager (SRM), and service owners.
+Каждый канал инцидентов имеет 3 роли: диспетчер инцидентов по вызову (IMOC), менеджер реагирования службы поддержки (SRM) и владельцы услуг.
 
-### Organize incident retrospectives
+### Организация ретроспективы инцидентов
 
-For each incident, 3 questions are asked at Shopify: What exactly happened? What incorrect assumptions did we hold about our systems? What we can do to prevent this from happening?
+По каждому инциденту в Shopify задают 3 вопроса: Что именно произошло? Какие неверные предположения мы имели о наших системах? Что мы можем сделать, чтобы этого не произошло?

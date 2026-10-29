@@ -1,6 +1,6 @@
 ---
-title: "How do Apple Pay and Google Pay work?"
-description: "Explore the mechanics of Apple Pay and Google Pay for secure transactions."
+title: "Как работают Apple Pay и Google Pay?"
+description: "Изучите механизмы Apple Pay и Google Pay для обеспечения безопасных транзакций."
 image: "https://assets.bytebytego.com/diagrams/0002-apple-pay.jpg"
 createdAt: "2024-03-12"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0002-apple-pay.jpg)
 
-The diagram above shows the differences. Both approaches are very secure, but the implementations are different. To understand the difference, we break down the process into two flows.
+На диаграмме выше показаны различия. Оба подхода очень безопасны, но реализации разные. Чтобы понять разницу, мы разобьем процесс на два потока.
 
-## Registering your credit card flow
+## Регистрация потока вашей кредитной карты
 
-## Basic payment flow
+## Основной поток платежей
 
-1.  The registration flow is represented by steps 1~3 for both cases. The difference is:
+1. Процесс регистрации в обоих случаях представлен шагами 1–3. Разница в следующем:
 
-*   **Apple Pay:** Apple doesn’t store any card info. It passes the card info to the bank. Bank returns a token called DAN (device account number) to the iPhone. iPhone then stores DAN into a special hardware chip.
+* **Apple Pay:** Apple не хранит данные карты. Он передает данные карты в банк. Банк возвращает на iPhone токен под названием DAN (номер учетной записи устройства). Затем iPhone сохраняет DAN в специальный аппаратный чип.
 
-*   **Google Pay:** When you register the credit card with Google Pay, the card info is stored in the Google server. Google returns a payment token to the phone.
+* **Google Pay.** Когда вы регистрируете кредитную карту в Google Pay, данные карты сохраняются на сервере Google. Google возвращает на телефон платежный токен.
 
-2.  When you click the “Pay” button on your phone, the basic payment flow starts. Here are the differences:
+2. Когда вы нажимаете кнопку «Оплатить» на своем телефоне, запускается основной процесс оплаты. Вот различия:
 
-*   **Apple Pay:** For iPhone, the e-commerce server passes the DAN to the bank.
+* **Apple Pay:** для iPhone сервер электронной коммерции передает DAN в банк.
 
-*   **Google Pay:** In the Google Pay case, the e-commerce server passes the payment token to the Google server. Google server looks up the credit card info and passes it to the bank.
+* **Google Pay.** В случае Google Pay сервер электронной коммерции передает платежный токен на сервер Google. Сервер Google ищет информацию о кредитной карте и передает ее в банк.
 
-In the diagram, the red arrow means the credit card info is available on the public network, although it is encrypted.
+На схеме красная стрелка означает, что информация о кредитной карте доступна в общедоступной сети, хотя и зашифрована.
 
-References:
+Ссылки:
 
-[1] [Apple Pay security and privacy overview](https://support.apple.com/en-us/101554)
+[1] [Обзор безопасности и конфиденциальности Apple Pay](https://support.apple.com/en-us/101554)
 
-[2] [Google Pay for Payments](https://developers.google.com/pay/api/android/overview)
+[2] [Google Pay для платежей](https://developers.google.com/pay/api/android/overview)
 
-[3] [Apple Pay vs. Google Pay: How They Work](https://www.investopedia.com/articles/personal-finance/010215/apple-pay-vs-google-wallet-how-they-work.asp)
+[3] [Apple Pay против Google Pay: как они работают](https://www.investopedia.com/articles/personal-finance/010215/apple-pay-vs-google-wallet-how-they-work.asp)

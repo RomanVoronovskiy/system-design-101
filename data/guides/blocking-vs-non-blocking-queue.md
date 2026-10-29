@@ -1,6 +1,6 @@
 ---
-title: "Blocking vs Non-Blocking Queue"
-description: "Explore blocking vs non-blocking queues, differences, and implementation."
+title: "Блокирующая и неблокирующая очередь"
+description: "Изучите блокирующие и неблокирующие очереди, различия и реализацию."
 image: "https://assets.bytebytego.com/diagrams/0088-blocking-noblocking-queue.jpeg"
 createdAt: "2024-02-25"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0088-blocking-noblocking-queue.jpeg)
 
-How do we implement a **non-blocking** queue? What are the differences between blocking and non-blocking algorithms?
+Как реализовать **неблокирующую** очередь? В чем разница между блокирующими и неблокирующими алгоритмами?
 
-The terms we use when discussing blocking and non-blocking algorithms can be confusing, so let’s start by reviewing the terminology in the concurrency area with a diagram.
+Термины, которые мы используем при обсуждении блокирующих и неблокирующих алгоритмов, могут сбить с толку, поэтому давайте начнем с обзора терминологии в области параллелизма с помощью диаграммы.
 
-## Blocking vs Non-Blocking Algorithms
+## Блокирующие и неблокирующие алгоритмы
 
-*   **Blocking**
+* **Блокировка**
 
-    The blocking algorithm uses locks. Thread A acquires the lock first, and Thread B might wait for arbitrary lengthy periods if Thread A gets suspended while holding the lock. This algorithm may cause Thread B to starve.
+Алгоритм блокировки использует блокировки. Поток A первым получает блокировку, а поток B может ждать произвольно долгие периоды, если поток A будет приостановлен во время удержания блокировки. Этот алгоритм может привести к голоданию потока B.
 
-*   **Non-blocking**
+* **Неблокируемый**
 
-    The non-blocking algorithm allows Thread A to access the queue, but Thread A must complete a task in a certain number of steps. Other threads like Thread B may still starve due to the rejections.
+Неблокирующий алгоритм позволяет потоку A получить доступ к очереди, но поток A должен выполнить задачу за определенное количество шагов. Другие потоки, такие как поток B, могут по-прежнему «голодать» из-за отклонений.
 
-This is the main **difference** between blocking and non-blocking algorithms: The blocking algorithm blocks Thread B until the lock is released. A non-blocking algorithm notifies Thread B that access is rejected.
+В этом заключается основное **различие** между блокирующими и неблокирующими алгоритмами: алгоритм блокировки блокирует поток B до тех пор, пока блокировка не будет снята. Неблокирующий алгоритм уведомляет поток B о том, что доступ отклонен.
 
-*   **Starvation-free**
+* **Без голодания**
 
-    Thread Starvation means a thread cannot acquire access to certain shared resources and cannot proceed. Starvation-free means this situation does not occur.
+Отсутствие потока означает, что поток не может получить доступ к определенным общим ресурсам и не может продолжить работу. Отсутствие голодания означает, что такой ситуации не произойдет.
 
-*   **Wait-free**
+* **Без ожидания**
 
-    All threads can complete the tasks within a finite number of steps.
+Все потоки могут выполнить задачи за конечное число шагов.
 
 𝘞𝘢𝘪𝘵-𝘧𝘳𝘦𝘦 = 𝘕𝘰𝘯-𝘉𝘭𝘰𝘤𝘬𝘪𝘯𝘨 + 𝘚𝘵𝘢𝘳𝘷𝘢𝘵𝘪𝘰𝘯-𝘧𝘳𝘦𝘦
 
-## Non-Blocking Queue Implementation
+## Реализация неблокирующей очереди
 
-We can use Compare and Swap (CAS) to implement a non-blocking queue. The diagram below illustrates the algorithm.
+Мы можем использовать сравнение и обмен (CAS) для реализации неблокирующей очереди. На диаграмме ниже показан алгоритм.
 
-## Benefits
+## Преимущества
 
-1.  No thread suspension. Thread B can get a response immediately and then decide what to do next. In this way, the thread latency is greatly reduced.
+1. Нет подвески нити. Поток B может получить ответ немедленно, а затем решить, что делать дальше. Таким образом, задержка потока значительно снижается.
 
-2.  No deadlocks. Threads A and B do not wait for the lock to release, meaning that there is no possibility of a deadlock occurring.
+2. Никаких тупиков. Потоки A и B не ждут снятия блокировки, а это означает, что вероятность возникновения взаимоблокировки исключена.

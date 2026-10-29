@@ -1,6 +1,6 @@
 ---
-title: "AWS Services Evolution"
-description: "Explore the evolution of AWS from its early days to a comprehensive cloud platform."
+title: "Эволюция сервисов AWS"
+description: "Узнайте об эволюции AWS с первых дней ее существования до комплексной облачной платформы."
 image: "https://assets.bytebytego.com/diagrams/0081-aws-services-evolution.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 [![AWS Services Evolution](https://assets.bytebytego.com/diagrams/0081-aws-services-evolution.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb384f75-2fbb-4c5b-9d5e-b97557d02f33_1572x1894.png)
 
-How did AWS grow from just a few services in 2006 to over 200 fully-featured services? Let's take a look.
+Как AWS выросла с нескольких сервисов в 2006 году до более чем 200 полнофункциональных сервисов? Давайте посмотрим.
 
-Since 2006, it has become a cloud computing leader, offering foundational infrastructure, platforms, and advanced capabilities like serverless computing and AI.
+С 2006 года она стала лидером в области облачных вычислений, предлагая базовую инфраструктуру, платформы и расширенные возможности, такие как бессерверные вычисления и искусственный интеллект.
 
-This expansion empowered innovation, allowing complex applications without extensive hardware management. AWS also explored edge and quantum computing, staying at tech's forefront.
+Это расширение дало толчок инновациям, позволив создавать сложные приложения без необходимости тщательного управления оборудованием. AWS также исследовала периферийные и квантовые вычисления, оставаясь в авангарде технологий.
 
-This evolution mirrors cloud computing's shift from niche to essential, benefiting global businesses with efficiency and scalability.
+Эта эволюция отражает переход облачных вычислений от нишевых к базовым, обеспечивая глобальным предприятиям эффективность и масштабируемость.
 
-Happy to present the curated list of AWS services introduced over the years below.
+Рад представить ниже тщательно подобранный список сервисов AWS, представленных за последние годы.
 
-Note:
+Примечание:
 
-*   The announcement or preview year differs from the public release year for certain services. In these cases, we've noted the service under the release year
+* Год анонса или предварительной версии отличается от года публичного выпуска некоторых услуг. В таких случаях мы отмечаем услугу под годом выпуска.
 
-*   Unreleased services noted in announcement years
+* Невыпущенные услуги отмечены в годы анонса.

@@ -1,9 +1,8 @@
 ---
-title: 'Security'
-description: 'Guides on security concepts and best practices for system design. Learn how to protect your system from unauthorized access, data breaches, and other security threats.'
+title: "Безопасность"
+description: "Руководства по концепциям безопасности и лучшим практикам проектирования систем. Узнайте, как защитить вашу систему от несанкционированного доступа, утечки данных и других угроз безопасности."
 image: 'https://github.com/ByteByteGoHq/system-design-101/raw/main/images/oAuth2.jpg'
 icon: '/icons/lock.png'
 sort: 210
 ---
-
-Security is a critical aspect of system design. It is essential to protect the system from unauthorized access, data breaches, and other security threats. In this set of guides, we will explore some of the key security concepts and best practices that you should consider when designing a system.
+Безопасность является важнейшим аспектом проектирования системы. Крайне важно защитить систему от несанкционированного доступа, утечки данных и других угроз безопасности. В этом наборе руководств мы рассмотрим некоторые ключевые концепции безопасности и лучшие практики, которые следует учитывать при проектировании системы.

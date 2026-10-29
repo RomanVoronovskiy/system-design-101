@@ -1,6 +1,6 @@
 ---
-title: "Design Patterns Cheat Sheet"
-description: "Concise guide to design patterns with examples and use cases."
+title: "Шпаргалка по шаблонам проектирования"
+description: "Краткое руководство по шаблонам проектирования с примерами и вариантами использования."
 image: "https://assets.bytebytego.com/diagrams/0167-design-patterns-cheat-sheet-part-2.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,13 +13,13 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0167-design-patterns-cheat-sheet-part-2.png)
 
-The cheat sheet briefly explains each pattern and how to use it.
+В шпаргалке кратко объясняется каждый шаблон и способы его использования.
 
-What's included?
+Что включено?
 
-*   Factory
-*   Builder
-*   Prototype
-*   Singleton
-*   Chain of Responsibility
-*   And many more!
+* Фабрика
+* Строитель
+* Прототип
+* Синглтон
+* Цепочка ответственности
+* И многое другое!

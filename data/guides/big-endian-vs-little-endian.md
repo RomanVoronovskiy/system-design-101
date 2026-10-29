@@ -1,6 +1,6 @@
 ---
-title: "Big Endian vs Little Endian"
-description: "Explore big endian vs little endian byte ordering in computer architecture."
+title: "Большой порядок байтов против младшего байта"
+description: "Изучите порядок байтов с прямым и прямым порядком байтов в компьютерной архитектуре."
 image: "https://assets.bytebytego.com/diagrams/0084-big-endian-vs-little-endian.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0084-big-endian-vs-little-endian.png)
 
-Microprocessor architectures commonly use two different methods to store the individual bytes in memory. This difference is referred to as “byte ordering” or “endian nature”.
+В микропроцессорных архитектурах обычно используются два разных метода хранения отдельных байтов в памяти. Это различие называется «порядком байтов» или «порядком байтов».
 
-## Little Endian
+## Маленький эндиан
 
-Intel x86 processors store a two-byte integer with the least significant byte first, followed by the most significant byte. This is called little-endian byte ordering.
+Процессоры Intel x86 хранят двухбайтовое целое число, сначала младший байт, а затем старший байт. Это называется упорядочиванием байтов с прямым порядком байтов.
 
-## Big Endian
+## Большой порядок байтов
 
-In big endian byte order, the most significant byte is stored at the lowest memory address, and the least significant byte is stored at the highest memory address. Older PowerPC and Motorola 68k architectures often use big endian. In network communications and file storage, we also use big endian.
+В порядке байтов с прямым порядком байтов наиболее значимый байт хранится по наименьшему адресу памяти, а наименее значащий байт хранится по старшему адресу памяти. В более старых архитектурах PowerPC и Motorola 68k часто используется обратный порядок байтов. В сетевых коммуникациях и хранении файлов мы также используем обратный порядок байтов.
 
-The byte ordering becomes significant when data is transferred between systems or processed by systems with different endianness. It's important to handle byte order correctly to interpret data consistently across diverse systems.
+Порядок байтов становится важным, когда данные передаются между системами или обрабатываются системами с разным порядком байтов. Важно правильно обрабатывать порядок байтов, чтобы последовательно интерпретировать данные в различных системах.

@@ -1,6 +1,6 @@
 ---
-title: How Netflix Really Uses Java
-description: Explore Netflix's extensive use of Java in its microservices architecture.
+title: "Как Netflix на самом деле использует Java"
+description: "Узнайте, как Netflix широко использует Java в своей архитектуре микросервисов."
 image: 'https://assets.bytebytego.com/diagrams/0102-how-netflix-really-uses-java.png'
 createdAt: '2024-03-04'
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0102-how-netflix-really-uses-java.png)
 
-Netflix is predominantly a Java shop.
+Netflix — это преимущественно магазин Java.
 
-Every backend application (including internal apps, streaming, and movie production apps) at Netflix is a Java application.
+Каждое серверное приложение (включая внутренние приложения, приложения для потоковой передачи и производства фильмов) в Netflix является Java-приложением.
 
-However, the Java stack is not static and has gone through multiple iterations over the years.
+Однако стек Java не статичен и за прошедшие годы претерпел множество итераций.
 
-Here are the details of those iterations:
+Вот подробности этих итераций:
 
-*   **API Gateway**
+* **API-шлюз**
 
-    Netflix follows a microservices architecture. Every piece of functionality and data is owned by a microservice built using Java (initially version 8)
+Netflix следует архитектуре микросервисов. Каждая часть функциональности и данных принадлежит микросервису, созданному с использованием Java (первоначально версия 8).
 
-*   **BFFs with Groovy & RxJava**
+* **Лучшие друзья с Groovy и RxJava**
 
-    Using a single gateway for multiple clients was a problem for Netflix because each client (such as TV, mobile apps, or web browser) had subtle differences.
+Использование одного шлюза для нескольких клиентов было проблемой для Netflix, поскольку каждый клиент (например, телевидение, мобильные приложения или веб-браузер) имел небольшие различия.
 
-    To handle this, Netflix used the Backend-for-Frontend (BFF) pattern. Zuul was moved to the role of a proxy
+Чтобы справиться с этим, Netflix использовал шаблон Backend-for-Frontend (BFF). Зуул переведен на роль прокси
 
-*   **GraphQL Federation**
+* **Федерация GraphQL**
 
-    The Groovy and RxJava approach required more work from the UI developers in creating the Groovy scripts. Also, reactive programming is generally hard.
+Подход Groovy и RxJava потребовал от разработчиков пользовательского интерфейса дополнительной работы по созданию сценариев Groovy. Кроме того, реактивное программирование, как правило, сложно.

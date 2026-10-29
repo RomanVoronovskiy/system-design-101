@@ -1,6 +1,6 @@
 ---
-title: "Delivery Semantics"
-description: "Understand at-most once, at-least once, and exactly once delivery semantics."
+title: "Семантика доставки"
+description: "Поймите семантику доставки «не более одного», «хотя бы один» и «ровно один раз»."
 image: "https://assets.bytebytego.com/diagrams/0165-delivery-semantics.png"
 createdAt: "2024-02-10"
 draft: false
@@ -13,29 +13,29 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0165-delivery-semantics.png)
 
-In modern architecture, systems are broken up into small and independent building blocks with well-defined interfaces between them. Message queues provide communication and coordination for those building blocks. Today, let’s discuss different delivery semantics: at-most once, at-least once, and exactly once.
+В современной архитектуре системы разбиты на небольшие и независимые строительные блоки с четко определенными интерфейсами между ними. Очереди сообщений обеспечивают связь и координацию этих строительных блоков. Сегодня давайте обсудим различные семантики доставки: не более одного раза, не более одного раза и ровно один раз.
 
-## At-most once
+## Максимум один раз
 
-As the name suggests, at-most once means a message will be delivered not more than once. Messages may be lost but are not redelivered. This is how at-most once delivery works at the high level.
+Как следует из названия, «максимум один раз» означает, что сообщение будет доставлено не более одного раза. Сообщения могут быть потеряны, но не доставлены повторно. Вот так максимум один раз доставка работает на высоком уровне.
 
-### Use cases:
+### Варианты использования:
 
-*   It is suitable for use cases like monitoring metrics, where a small amount of data loss is acceptable.
+* Подходит для таких случаев использования, как мониторинг показателей, где допустима небольшая потеря данных.
 
-## At-least once
+## Хотя бы один раз
 
-With this data delivery semantic, it’s acceptable to deliver a message more than once, but no message should be lost.
+При такой семантике доставки данных допускается доставить сообщение более одного раза, но ни одно сообщение не должно быть потеряно.
 
-### Use cases:
+### Варианты использования:
 
-*   With at-least once, messages won’t be lost but the same message might be delivered multiple times. While not ideal from a user perspective, at-least once delivery semantics are usually good enough for use cases where data duplication is not a big issue or deduplication is possible on the consumer side.
-*   For example, with a unique key in each message, a message can be rejected when writing duplicate data to the database.
+* Если хотя бы один раз сообщения не будут потеряны, но одно и то же сообщение может быть доставлено несколько раз. Хотя это и не идеально с точки зрения пользователя, семантика по крайней мере однократной доставки обычно достаточно хороша для случаев использования, когда дублирование данных не является большой проблемой или дедупликация возможна на стороне потребителя.
+* Например, при наличии уникального ключа в каждом сообщении сообщение может быть отклонено при записи дублирующихся данных в базу данных.
 
-## Exactly once
+## Ровно один раз
 
-Exactly once is the most difficult delivery semantic to implement. It is friendly to users, but it has a high cost for the system’s performance and complexity.
+Ровно один раз — это самая сложная для реализации семантика доставки. Он удобен для пользователей, но имеет высокую цену за производительность и сложность системы.
 
-### Use cases:
+### Варианты использования:
 
-*   Financial-related use cases (payment, trading, accounting, etc.). Exactly once is especially important when duplication is not acceptable and the downstream service or third party doesn’t support idempotency.
+* Варианты использования, связанные с финансами (платежи, торговля, бухгалтерский учет и т. д.). Ровно один раз особенно важно, когда дублирование неприемлемо, а нижестоящая служба или третья сторона не поддерживают идемпотентность.
