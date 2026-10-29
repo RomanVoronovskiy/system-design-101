@@ -1,6 +1,6 @@
 ---
-title: "What is a Stop-Loss Order and How Does it Work?"
-description: "Learn about stop-loss orders and how they help minimize investment losses."
+title: "Что такое стоп-лосс и как он работает?"
+description: "Узнайте о заказах на остановку потерь и о том, как они помогают свести к минимуму инвестиционные потери."
 image: "https://assets.bytebytego.com/diagrams/0345-stop-loss.jpg"
 createdAt: "2024-02-26"
 draft: false
@@ -13,24 +13,24 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0345-stop-loss.jpg)
 
-A stop-loss order allows us to set a price called the ‘stop-loss price’ of a stock or a share. This is a value the investor chooses, at which they will sell it to minimize their loss on the investment.
+Порядок остановок позволяет нам установить цену, называемую " ценой остановок, стоимости акций или акций ". Это то значение, которое инвестор выбирает, и по которому он будет продавать его, чтобы свести к минимуму свои убытки от инвестиций.
 
-When the price of the stock hits the stop-loss point, the stop-loss order is triggered and it turns into a market order to sell at the current market price.
+Когда цена акций попадает в точку остановки, то заказ на остановку начинается и превращается в рыночный порядок продажи по текущей рыночной цене.
 
-For example, let's say an investor has 100 shares in ABC Inc., and the current price is $40 per share. The investor wants to sell the stock if the market price falls to or below $36, in order to limit their loss.
+Например, скажем, инвестор имеет 100 акций в ABC Inc., и текущая цена составляет 40 долларов за акции. Инвестор хочет продать акции, если рыночная цена опускается до 36 долл. США или ниже, чтобы ограничить их потерю.
 
-The diagram above illustrates how a stop-loss order is executed by a trading system.
+На приведенной выше диаграмме показано, как система торговли исполняет приказ о прекращении потерь.
 
-## Stop-Loss Order Execution
+## Приказ о прекращении службы
 
-*   The investor submits a stop-loss order to the trading system with 100 shares, to sell for $36.
+*   Инвестор представляет в торговую систему заказ на прекращение производства 100 акций, с тем чтобы продать его за 36 долл. США.
 
-*   Upon receiving the order request, the trading engine creates the stop-loss order.
+*   По получении запроса торговая система создает заказ на остановку.
 
-*   The trading engine subscribes to the market data of ABC Inc. from the exchange and monitors its real-time market price.
+*   Торговый движок подписывается на данные о рынке компании " АБС инк. " с биржи и контролирует ее рыночную цену в режиме реального времени.
 
-*   If the trading engine detects that the market price of ABC Inc. falls to, say, $35, it immediately creates a market order and then submits it to the exchange to sell the 100 shares for the current best market price.
+*   Если торговый двигатель обнаруживает, что рыночная цена ABC Inc., скажем, составляет 35 долл. США, он немедленно создает рыночный порядок и затем представляет его на биржу для продажи 100 акций по текущей наилучшей рыночной цене.
 
-*   The order is filled (i.e. matched to the best buy orders in the market,) usually instantaneously. Then the trading engine receives from the exchange a ‘fill report’ stating the shares have been sold for, say, $35.5 per share.
+*   Заказ заполнен (т.е. соответствует наилучшим заказ-нарядам на рынке), как правило, мгновенно. Затем торговый двигатель получает от биржи отчет о заполнении, в котором указывается, что акции были проданы, скажем, за 35,5 долл. США за долю.
 
-*   The trading system notifies the investor that the 100 shares have been sold for $35.5 per share.
+*   В торговой системе инвестор уведомляется о том, что 100 акций были проданы за 35,5 долл. США за долю.

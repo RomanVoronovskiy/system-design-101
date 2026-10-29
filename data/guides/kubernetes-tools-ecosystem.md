@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes Tools Ecosystem"
-description: "Explore the Kubernetes tools ecosystem for efficient container management."
+title: "Экосистема инструментов Kubernetes"
+description: "Исследуйте экосистему инструментов Kubernetes для эффективного управления контейнерами."
 image: "https://assets.bytebytego.com/diagrams/0109-kubernetes-tools-ecosystem.png"
 createdAt: "2024-02-28"
 draft: false
@@ -11,17 +11,17 @@ tags:
   - DevOps
 ---
 
-![No alternative text description for this image](https://assets.bytebytego.com/diagrams/0109-kubernetes-tools-ecosystem.png)
+![Экосистема инструментов Kubernetes](https://assets.bytebytego.com/diagrams/0109-kubernetes-tools-ecosystem.png)
 
-Kubernetes, the leading container orchestration platform, boasts a vast ecosystem of tools and components that collectively empower organizations to efficiently deploy, manage, and scale containerized applications.
+Kubernetes, ведущая платформа для оркестрации контейнеров, может похвастаться огромной экосистемой инструментов и компонентов, которые совместно дают возможность организациям эффективно развертывать, управлять и масштабировать контейнерные приложения.
 
-Kubernetes practitioners need to be well-versed in these tools to ensure the reliability, security, and performance of containerized applications within Kubernetes clusters.
+Практикующим Kubernetes необходимо хорошо знать эти инструменты, чтобы обеспечить надежность, безопасность и производительность контейнерных приложений в кластерах Kubernetes.
 
-To introduce a holistic view of the Kubernetes ecosystem, we've created an illustration covering the aspects of:
+Чтобы представить целостный взгляд на экосистему Kubernetes, мы создали иллюстрацию, охватывающую аспекты:
 
-*   Security
-*   Networking
-*   Container Runtime
-*   Cluster Management
-*   Monitoring and Observability
-*   Infrastructure Orchestration
+*   Безопасность
+*   Сетевые связи
+*   Время работы контейнеров
+*   Управление кластерами
+*   Следование и наблюдение
+*   Оркестрация инфраструктуры

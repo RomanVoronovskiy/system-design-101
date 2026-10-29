@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes Command Cheatsheet"
-description: "Your go-to guide for essential Kubernetes commands."
+title: "Шпаргалка по командам Kubernetes"
+description: "Ваш гид по основным командам Kubernetes."
 image: "https://assets.bytebytego.com/diagrams/0248-kubernetes-command-cheatsheet.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0248-kubernetes-command-cheatsheet.png)
 
-Kubernetes is an open-source container orchestration platform. It automates the deployment, scaling, and management of containerized applications.
+Kubernetes — платформа для оркестра открытых контейнеров. Он автоматизирует развертывание, масштабирование и управление контейнерными приложениями.
 
-Initially developed by Google, Kubernetes is now maintained by CNCF (Cloud Native Computing Foundation).
+Первоначально разработанный Google, Kubernetes теперь поддерживается CNCF (Cloud Foundation Foundation для местных вычислительных компаний).
 
-This cheat sheet contains the most important Kubernetes commands for different purposes:
+Этот лист изменников содержит самые важные команды Kubernetes для различных целей:
 
-*   Kubernetes Setup
+*   Настройка Kubernetes
 
-*   General Cluster Management
+*   Общее управление кластерами
 
-*   Kubernetes Deployments
+*   Развертывание
 
-*   Kubernetes Pod Inspection
+*   Инспекция подопытных Kubernetes
 
-*   Troubleshooting and Configuration
+*   Проблемы и конфигурация
 
-*   Miscellaneous commands related to services, config maps, and managing ingresses.
+*   Разные команды, связанные с услугами, картами на основе конусов и управлением gresses.

@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Elasticsearch Use Cases"
-description: "Explore the top 6 use cases of Elasticsearch in various applications."
+title: "Шесть сценариев использования Elasticsearch"
+description: "Изучение 6 самых популярных примеров поиска Эластика в различных прикладных программах."
 image: "https://assets.bytebytego.com/diagrams/0380-top-6-elasticsearch-use-cases.png"
 createdAt: "2024-03-02"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0380-top-6-elasticsearch-use-cases.png)
 
-Elasticsearch is widely used for its powerful and versatile search capabilities. The diagram above shows the top 6 use cases:
+Поиски в целях элистики широко используются для их мощного и многоцелевого поиска. На диаграмме выше показаны шесть наиболее часто используемых вариантов:
 
-## Full-Text Search
+## Полнотекстовый поиск
 
-Elasticsearch excels in full-text search scenarios due to its robust, scalable, and fast search capabilities. It allows users to perform complex queries with near real-time responses.
+Электрический поиск превосходит всетекстовые сценарии поиска благодаря его прочным, масштабируемым и быстрым поисковым возможностям. Она позволяет пользователям выполнять сложные запросы с ответами в режиме почти реального времени.
 
-## Real-Time Analytics
+## Анализ в реальном масштабе времени
 
-Elasticsearch's ability to perform analytics in real-time makes it suitable for dashboards that track live data, such as user activity, transactions, or sensor outputs.
+Способность Elastic Search проводить анализы в реальном времени делает его подходящим для приборных досок, отслеживающих данные в режиме реального времени, такие как активность пользователя, операции или выход датчиков.
 
-## Machine Learning
+## Машиновое обучение
 
-With the addition of the machine learning feature in X-Pack, Elasticsearch can automatically detect anomalies, patterns, and trends in the data.
+С добавлением в X-Pack функции машинного обучения, Elastic Search может автоматически выявлять аномалии, модели и тенденции в данных.
 
-## Geo-Data Applications
+## Применение геоданных
 
-Elasticsearch supports geo-data through geospatial indexing and searching capabilities. This is useful for applications that need to manage and visualize geographical information, such as mapping and location-based services.
+Электрические исследования поддерживают геоданные, используя геопространственный индекс и возможности поиска. Это полезно для прикладных программ, которые должны обеспечивать управление географической информацией и ее визуализацию, таких, как картографические и географические услуги.
 
-## Log and Event Data Analysis
+## Анализ данных журнала и событий
 
-Organizations use Elasticsearch to aggregate, monitor, and analyze logs and event data from various sources. It's a key component of the ELK stack (Elasticsearch, Logstash, Kibana), which is popular for managing system and application logs to identify issues and monitor system health.
+Организации используют результаты исследований по вопросам элистики для агрегирования, мониторинга и анализа данных по журналам и событиям из различных источников. Это ключевой компонент ELK-татуса (Elastic Exploring, Logstash, Kibana), который популярен для управления системой и прикладных журналов для выявления проблем и мониторинга здоровья системы.
 
-## Security Information and Event Management (SIEM)
+## Управление информацией и мероприятиями по вопросам безопасности (СИЕМ)
 
-Elasticsearch can be used as a tool for SIEM, helping organizations to analyze security events in real time.
+Поиски в рамках программы " Эластик " могут использоваться в качестве инструмента для СИЕМ, помогающего организациям анализировать события в области безопасности в реальном времени.

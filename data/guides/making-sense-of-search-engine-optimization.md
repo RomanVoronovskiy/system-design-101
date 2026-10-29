@@ -1,6 +1,6 @@
 ---
-title: "Making Sense of Search Engine Optimization"
-description: "Understand how search engines rank websites and optimize your website."
+title: "Разбираемся в поисковой оптимизации"
+description: "Понимать, как поисковые системы ранжируют веб-сайты и оптимизировать ваш сайт."
 image: "https://assets.bytebytego.com/diagrams/0326-seo.jpg"
 createdAt: "2024-03-06"
 draft: false
@@ -13,42 +13,42 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0326-seo.jpg)
 
-You have just developed a new website. What does it take to be ranked at the top?
+Вы только что разработали новый сайт. Что нужно, чтобы быть в первом месте?
 
-We need to understand how search engines rank websites and optimize our website to be search engine-friendly. This is called SEO (Search Engine Optimization).
+Нам нужно понять, как поисковые системы ранжируют веб-сайты и оптимизировать наш сайт, чтобы он был дружественным для поисковых систем. Это называется SEO (Search Engine Optimization).
 
-A search engine works in 3 stages:
+Поисковая система работает в 3 этапа:
 
-*   The crawler reads the page content (HTML code) and follows the hyperlink to read more web pages.
+*   Проверкачи читают содержание страницы (HTML-код) и следуют за гиперссылкой, чтобы прочитать больше веб-страниц.
 
-*   The preprocessor also works in 3 steps:
+*   Предпроцессор также работает в 3 этапах:
 
-    *   It removes HTML tags and ‘Stop’ words, which are words like ‘a’ or ‘an’ or ‘the.’ It also removes other noise that is not relevant to the web page's content, for example, the disclaimer.
+    *   Он удаляет теги HTML и слова Stop, которые являются такими словами, как a или an или the. Он также удаляет другие шумы, не имеющие отношения к содержанию веб-страницы, например, отказ от ответственности.
 
-    *   Then the keywords form structured indices, called forward indices and inverted indices.
+    *   Затем ключевые слова образуют структурированные индексы, называемые переходными индексами и перевернутыми индексами.
 
-    *   The preprocessor calculates the hyperlink relationships, for example, how many hyperlinks are on the web page and how many hyperlinks point to it.
+    *   Препроцессор рассчитывает гиперссылки, например, сколько гиперссылк на веб-странице и сколько гиперссылк указывает на нее.
 
-*   When a user types in a search term, the search engine uses the indices and ranking algorithms to rank the web pages and presents the search results to the user.
+*   Когда пользователь вводит поисковый термин, поисковая система использует индексы и алгоритмы ранжирования для ранжирования веб-страниц и представляет результаты поиска пользователю.
 
-How do we make our website rank higher in search results? The diagram below shows some ways to do this.
+Как сделать наш сайт более высоким в результатах поиска? Ниже приведенная схема показывает некоторые способы сделать это.
 
-## Optimize website structure:
+## Оптимизировать структуру сайта:
 
-We need to make it easier for the crawler to crawl our website. Remove anything the crawler cannot read, including flash, frames, and dynamic URLs. Make the website hierarchy less deep, so the web pages are less distant from the main home page.
+Нам нужно облегчить сканерскому сканированию нашего сайта. Удалить все, что сканер не может прочитать, включая флеш, кадры и динамические URL-адреса. Сделайте иерархию сайта менее глубокой, чтобы веб-страницы были менее удалены от главной домашней страницы.
 
-The URLs must be short and descriptive. Try to include keywords in the URLs, as well. It will also help to use HTTPS. But don’t use underscore in the URL because that will screw up the tokenization.
+URL-адреса должны быть короткими и описательными. Постарайтесь включить ключевые слова в URL-адреса. Это также поможет использовать HTTPS. Но не используйте подчерк в URL, потому что это испортит токенызацию.
 
-## Choose the keywords to optimize for:
+## Выберите ключевые слова для оптимизации для:
 
-Keywords must be relevant to what the website is selling, and they must have business values. For example, a keyword is considered valuable if it’s a popular search, but has fewer search results.
+Ключевые слова должны быть актуальны для того, что продает сайт, и они должны иметь деловые ценности. Например, ключевое слово считается ценным, если оно является популярным поиском, но имеет меньше результатов поиска.
 
-## Optimize the web page
+## Оптимизировать веб-страницу
 
-The crawler crawls the HTML contents. Therefore the title and description should be optimized to include keywords and be concise. The body of the web page should include relevant keywords.
+Проверка просканирует содержание HTML. Поэтому название и описание должны быть оптимизированы для включения ключевых слов и быть краткими. В состав веб-страницы должны быть соответствующие ключевые слова.
 
-Another aspect is the user experience. In May 2020, Google published Core Web Vitals, officially listing user experience as an important factor of page ranking algorithms.
+Еще один аспект - пользовательский опыт. В мае 2020 года Google опубликовал Core Web Vitals, официально перечисляя опыт пользователя как важный фактор алгоритмов ранжирования страниц.
 
-## External link
+## Внешняя связь
 
-If our website is referenced by a highly-ranked website, it will increase our website’s ranking. So carefully building external links is important. Publishing high-quality content on your website which is useful to other users, is a good way to attract external links.
+Если наш сайт будет ссылаться на высокопоставленный сайт, это увеличит рейтинг нашего сайта. Поэтому важно тщательно строить внешние связи. Публикация на своем сайте качественного контента, полезного для других пользователей, является хорошим способом привлечения внешних ссылок.

@@ -11,7 +11,7 @@ tags:
   - DeepSeek
 ---
 
-![No alt text provided for this image](https://assets.bytebytego.com/diagrams/0164-deepseek.png)
+![DeepSeek 1-пейджер](https://assets.bytebytego.com/diagrams/0164-deepseek.png)
 
 Сообщается, что компания разработала мощную модель искусственного интеллекта по удивительно низкой цене — примерно 6 миллионов долларов на финальное обучение. Сообщается, что в январе 2025 года компания выпустила свою последнюю модель, ориентированную на рассуждения, известную как DeepSeek R1.
 

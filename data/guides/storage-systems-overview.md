@@ -1,6 +1,6 @@
 ---
-title: "Storage Systems Overview"
-description: "A detailed overview of block, file, and object storage systems."
+title: "Обзор систем хранения данных"
+description: "Подробный обзор систем хранения блоков, файлов и объектов."
 image: "https://assets.bytebytego.com/diagrams/0346-storage-system.png"
 createdAt: "2024-02-13"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0346-storage-system.png)
 
-# **Storage systems overview**
+# **Обзор систем хранения данных**
 
-Let's review the storage systems in general.
+Давайте проверим системы хранения в целом.
 
-Storage systems fall into three broad categories:
+Системы хранения делятся на три широкие категории:
 
-*   Block storage
-*   File storage
-*   Object storage
+*   Блочное хранение
+*   Файловое хранение
+*   Объектное хранение
 
-The diagram above illustrates the comparison of different storage systems.
+На приведенной выше диаграмме показано сопоставление различных систем хранения.
 
-## Block Storage
+## Блочное хранение
 
-Block storage came first, in the 1960s. Common storage devices like hard disk drives (HDD) and solid-state drives (SSD) that are physically attached to servers are all considered as block storage.
+Кладовка была первой, в 1960-х. Общие устройства хранения, такие как жесткие дисковые диски (ГДД) и твердотельные дисковые диски (SD), которые физически прикреплены к серверам, рассматриваются как блок-хранилище.
 
-Block storage presents the raw blocks to the server as a volume. This is the most flexible and versatile form of storage. The server can format the raw blocks and use them as a file system, or it can hand control of those blocks to an application. Some applications like a database or a virtual machine engine manage these blocks directly in order to squeeze every drop of performance out of them.
+Блок-хранилище представляет первичные блоки сервера в виде объема. Это самая гибкая и разнородная форма хранения. Сервер может форматировать первичные блоки и использовать их как файловую систему, или он может передать управление этими блоками в приложение. Некоторые приложения, такие как база данных или виртуальный машинный двигатель, непосредственно управляют этими блоками, чтобы выжать из них каждую каплю эффективности.
 
-Block storage is not limited to physically attached storage. Block storage could be connected to a server over a high-speed network or over industry-standard connectivity protocols like Fibre Channel (FC) and iSCSI. Conceptually, the network-attached block storage still presents raw blocks. To the servers, it works the same as physically attached block storage. Whether to a network or physically attached, block storage is fully owned by a single server. It is not a shared resource.
+Блокировка не ограничивается физически привязанным хранением. Блок-хранилище может быть подключено к серверу через высокоскоростную сеть или через отраслевые стандартные протоколы подключения, такие как Fibre Channel (FC) и iSCSI. Концептуально, сетевое хранилище блоков все еще представляет собой неочищенные блоки. К серверам он работает так же, как физически прикрепленный блок-хранилище. Независимо от того, подключена ли сеть или физически, блок-хранилище полностью принадлежит одному серверу. Это не общий ресурс.
 
-## File storage
+## Файловое хранение
 
-File storage is built on top of block storage. It provides a higher-level abstraction to make it easier to handle files and directories. Data is stored as files under a hierarchical directory structure. File storage is the most common general-purpose storage solution. File storage could be made accessible by a large number of servers using common file-level network protocols like SMB/CIFS and NFS. The servers accessing file storage do not need to deal with the complexity of managing the blocks, formatting volume, etc. The simplicity of file storage makes it a great solution for sharing a large number of files and folders within an organization.
+Файловое хранение построено на крыше блок-хранилища. Он обеспечивает более высокий уровень абстракции, чтобы облегчить обработку файлов и справочников. Данные хранятся в качестве файлов в иерархической структуре каталогов. Ведение файлов является наиболее распространенным решением для хранения общего назначения. К хранению файлов можно было бы обеспечить с помощью большого числа серверов, использующих общие сетевые протоколы на уровне файлов, такие как SMB/CIFS и NFS. Серверы, имеющие доступ к архиву файлов, не должны решать сложные вопросы управления блоками, форматирования объема и т.д. Простота хранения файлов делает его прекрасным решением для обмена большим количеством файлов и папок в организации.
 
-## Object storage
+## Объектное хранение
 
-Object storage is new. It makes a very deliberate tradeoff to sacrifice performance for high durability, vast scale, and low cost. It targets relatively “cold” data and is mainly used for archival and backup. Object storage stores all data as objects in a flat structure. There is no hierarchical directory structure. Data access is normally provided via a RESTful API. It is relatively slow compared to other storage types. Most public cloud service providers have an object storage offering, such as AWS S3, Google block storage, and Azure blob storage.
+Хранение объекта - это что-то новое. Это очень преднамеренная компромиссная сделка, чтобы пожертвовать результатами ради высокой долговечности, огромных масштабов и низких затрат. Она предназначена для сравнительного, холодного использования данных и используется главным образом для архивирования и резервного копирования. Объект хранит все данные как объекты в плоской конструкции. Не существует иерархической структуры каталогов. Доступ к данным обычно обеспечивается через ПЭСТФул API. Он относительно медленен по сравнению с другими типами хранения. Большинство поставщиков услуг по облачным системам имеют предложение по хранению объектов, таких как AWS S3, Google Block хранилище и Azure blob.

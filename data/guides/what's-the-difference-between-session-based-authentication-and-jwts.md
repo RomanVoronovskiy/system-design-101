@@ -1,6 +1,6 @@
 ---
-title: "Session-based Authentication vs. JWT"
-description: "Understand the key differences between session and JWT authentication."
+title: "Аутентификация с помощью сессий и JWT"
+description: "Уяснить основные различия между аутентификацией сессии и СВТ."
 image: "https://assets.bytebytego.com/diagrams/0333-what-s-the-difference-between-session-based-authentication-and-jwts.png"
 createdAt: "2024-02-28"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0333-what-s-the_difference-between-session-based-authentication-and-jwts.png)
 
-Here’s a simple breakdown for both approaches:
+Вот простая разбивка обоих подходов:
 
-## Session-Based Authentication
+## Сессионная аутентификация
 
-In this approach, you store the session information in a database or session store and hand over a session ID to the user.
+При таком подходе вы храните информацию о сеансах в базе данных или в сессионном магазине и передаете пользовательу идентификатор сеанса.
 
-Think of it like a passenger getting just the Ticket ID of their flight while all other details are stored in the airline’s database.
+Подумайте об этом, как о пассажире, получающем только ID Тикета своего рейса, пока все остальные детали хранятся в авиакомпании, база данных.
 
-Here’s how it works:
+Вот, как это работает:
 
-*   The user makes a login request and the frontend app sends the request to the backend server.
-*   The backend creates a session using a secret key and stores the data in session storage.
-*   The server sends a cookie back to the client with the unique session ID.
-*   The user makes a new request and the browser sends the session ID along with the request.
-*   The server authenticates the user using the session ID.
+*   Пользователь делает запрос на вход, и приложение с прикрытием отправляет запрос на сервер.
+*   В этом случае создается сеанс с использованием секретного ключа и хранятся данные в сессионном архиве.
+*   Сервер отправляет печенье клиенту с уникальным ID сеанса.
+*   Пользователь делает новый запрос, и браузер направляет идентификатор сеанса вместе с запросом.
+*   Сервер аутентизирует пользователя с помощью ID сеанса.
 
-## JWT-Based Authentication
+## Удостоверение на основе СВТ
 
-In the JWT-based approach, you don’t store the session information in the session store.
+В рамках подхода, основанного на СВТ, вы не храните информацию о сеансах в сессионном магазине.
 
-The entire information is available within the token.
+Вся информация доступна в знаке.
 
-Think of it like getting the flight ticket along with all the details available on the ticket but encoded.
+Подумай, как получить билет на самолет вместе со всеми деталями, которые есть на билете, но закодированы.
 
-Here’s how it works:
+Вот, как это работает:
 
-*   The user makes a login request and it goes to the backend server.
-*   The server verifies the credentials and issues a JWT. The JWT is signed using a private key and no session storage is involved.
-*   The JWT is passed to the client, either as a cookie or in the response body. Both approaches have their pros and cons but we’ve gone with the cookie approach.
-*   For every subsequent request, the browser sends the cookie with the JWT.
-*   The server verifies the JWT using the secret private key and extracts the user info.
+*   Пользователь делает запрос на вход и он направляется на сервер.
+*   Сервер проверяет полномочия и выдает JWT. СВТ подписывается с использованием частного ключа, и никакого сессионного хранения не предусматривается.
+*   JWT передается клиенту либо в виде печенья, либо в виде ответного тела. У обоих подходов есть свои плюсы и минусы, но мы, мы пошли на печенье.
+*   Для каждого последующего запроса браузер отправляет печенье с JWT.
+*   Сервер проверяет JWT с использованием секретного частного ключа и выписывает пользователь ХII.

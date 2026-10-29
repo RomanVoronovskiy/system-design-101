@@ -1,6 +1,6 @@
 ---
-title: "What is Kubernetes (k8s)?"
-description: "Learn about Kubernetes, a container orchestration system for deployment."
+title: "Что такое Kubernetes — k8s?"
+description: "Узнайте о Kubernetes, о системе оркестра контейнеров для развертывания."
 image: "https://assets.bytebytego.com/diagrams/0245-k8s.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 [![k8s](https://assets.bytebytego.com/diagrams/0245-k8s.png)](https://assets.bytebytego.com/diagrams/0245-k8s.png)
 
-k8s is a container orchestration system. It is used for container deployment and management. Its design is greatly impacted by Google’s internal system Borg.
+k8s - система оркестра контейнеров. Он используется для доставки контейнеров и управления ими. На дизайн сильно влияет система Google, внутренняя система Борг.
 
-A k8s cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node. \[1]
+Кластер k8s состоит из набора рабочих машин, называемых узлами, которые используют контейнерные приложения. В каждом блоке есть по крайней мере один рабочий узел. \[1]
 
-The worker node(s) host the Pods that are the components of the application workload. The control plane manages the worker nodes and the Pods in the cluster. In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault tolerance and high availability. \[1]
+Узлы рабочих, являющиеся компонентами рабочей нагрузки, являются принимающей стороной (управляющими) рабочего узла (управлений). управляющая плоскость управляет рабочими узлами и подопытными в кластере. В производственной среде управляющая плоскость обычно проходит через несколько компьютеров, а кластер обычно работает на нескольких узлах, обеспечивая допуск к неисправности и высокую доступность. \[1]
 
-## Control Plane Components
+## Компоненты контроля
 
-*   **API Server**
+*   **API сервер**
 
-    The API server talks to all the components in the k8s cluster. All the operations on pods are executed by talking to the API server.
+    Сервер API говорит со всеми компонентами блока k8s. Все операции на капсулах осуществляются путем разговора с сервером API.
 
-*   **Scheduler**
+*   **График**
 
-    The scheduler watches the workloads on pods and assigns loads on newly created pods.
+    Наборщик следит за объемом работы на капсулах и распределяет нагрузку на вновь созданные капсулы.
 
-*   **Controller Manager**
+*   **Контролер**
 
-    The controller manager runs the controllers, including Node Controller, Job Controller, EndpointSlice Controller, and ServiceAccount Controller.
+    Управляющий контроллером руководит деятельностью контроллеров, включая контролера узла, контролера рабочих мест, контролера системы " EndpointSlice " и контролера сервисного счета.
 
-*   **etcd**
+*   **и т.д.**
 
-    etcd is a key-value store used as Kubernetes' backing store for all cluster data.
+    , и т.д. - магазин ключевых ценностей, используемый в качестве резервного хранилища Kubernetes для всех данных по кластерам.
 
-## Nodes
+## Узлы
 
-*   **Pods**
+*   **Подопытные**
 
-    A pod is a group of containers and is the smallest unit that k8s administers. Pods have a single IP address applied to every container within the pod.
+    Стручка представляет собой группу контейнеров и является самым маленьким блоком, который управляется K8s. У пододов есть один IP-адрес, применяемый к каждому контейнеру внутри стручки.
 
-*   **Kubelet**
+*   **Кубеле**
 
-    An agent that runs on each node in the cluster. It ensures containers are running in a Pod. \[1]
+    Агент, который работает на каждом узле в кластере. Он обеспечивает движение контейнеров в бод. \[1]
 
-*   **Kube Proxy**
+*   **Куб.**
 
-    kube-proxy is a network proxy that runs on each node in your cluster. It routes traffic coming into a node from the service. It forwards requests for work to the correct containers.
+    Куб-прокси — сетевой прокси, который работает на каждом узле в вашем скоплении. Он направляет движение, которое попадает в узел с сервиса. Она направляет запросы на работу в надлежащие контейнеры.

@@ -11,7 +11,7 @@ tags:
   - "Security"
 ---
 
-![diagram](https://assets.bytebytego.com/diagrams/0107-explaining-json-web-token-jwt-to-a-10-year-old-kid.png)
+![Объяснение веб-токена JSON (JWT) 10-летнему ребенку](https://assets.bytebytego.com/diagrams/0107-explaining-json-web-token-jwt-to-a-10-year-old-kid.png)
 
 Представьте, что у вас есть специальный ящик под названием JWT. Внутри этого поля есть три части: заголовок, полезные данные и подпись.
 

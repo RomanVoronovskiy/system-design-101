@@ -1,6 +1,6 @@
 ---
-title: 'The Evolving Landscape of API Protocols in 2023'
-description: 'Explore the evolving landscape of API protocols in 2023.'
+title: "Развитие протоколов API в 2023 году"
+description: "Изучение меняющегося ландшафта протоколов API в 2023 году."
 image: 'https://assets.bytebytego.com/diagrams/0077-api-protocols.png'
 createdAt: '2024-03-15'
 draft: false
@@ -11,10 +11,10 @@ tags:
   - Protocols
 ---
 
-This is a brief summary of the blog post I wrote for Postman.
+Это краткое резюме блога, который я написала для почтальона.
 
 ![](https://assets.bytebytego.com/diagrams/0077-api-protocols.png)
 
-In this blog post, I cover the six most popular API protocols: REST, Webhooks, GraphQL, SOAP, WebSocket, and gRPC. The discussion includes the benefits and challenges associated with each protocol.
+В этом блоге я освещаю шесть самых популярных протоколов API: REST, Webhooks, GraphQL, SOAP, WebSocket и gRPC. В ходе обсуждения были рассмотрены преимущества и проблемы, связанные с каждым протоколом.
 
-You can read the [full blog post here](https://blog.postman.com/api-protocols-in-2023/).
+Ты можешь читать [Полный блог здесь](https://blog.postman.com/api-protocols-in-2023/).

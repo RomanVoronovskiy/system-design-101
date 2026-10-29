@@ -11,7 +11,7 @@ tags:
   - "Web Requests"
 ---
 
-![Web Request Error Handling](https://assets.bytebytego.com/diagrams/0144-client-handle-error.png)
+![Как обрабатывать ошибки веб-запросов](https://assets.bytebytego.com/diagrams/0144-client-handle-error.png)
 
 Как правильно бороться с ошибками HTTP на стороне браузера? И как нам правильно обрабатывать их на стороне сервера, если виновата клиентская сторона?
 

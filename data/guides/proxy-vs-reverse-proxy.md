@@ -1,6 +1,6 @@
 ---
-title: 'Proxy vs Reverse Proxy'
-description: 'Understanding the differences between forward and reverse proxies.'
+title: "Прямой и обратный прокси"
+description: "Различия между прямым и обратным прокси."
 image: 'https://assets.bytebytego.com/diagrams/0196-forward-proxy-vs-reverse-proxy.png'
 createdAt: '2024-03-01'
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0196-forward-proxy-vs-reverse-proxy.png)
 
-A forward proxy is a server that sits between user devices and the internet. A forward proxy is commonly used for:
+Прямой прокси — сервер между устройствами пользователей и интернетом. Обычно он используется для следующих задач:
 
-*   **Protect clients**
-*   **Avoid browsing restrictions**
-*   **Block access to certain content**
+* **Защита клиентов**
+* **Обход ограничений на просмотр сайтов**
+* **Блокировка доступа к определённому контенту**
 
-A reverse proxy is a server that accepts a request from the client, forwards the request to web servers, and returns the results to the client as if the proxy server had processed the request. A reverse proxy is good for:
+Обратный прокси принимает запрос клиента, перенаправляет его веб-серверам и возвращает результат клиенту так, словно сам обработал запрос. Он подходит для следующих задач:
 
-*   **Protect servers**
-*   **Load balancing**
-*   **Cache static contents**
-*   **Encrypt and decrypt SSL communications**
+* **Защита серверов**
+* **Балансировка нагрузки**
+* **Кеширование статического контента**
+* **Шифрование и расшифровка соединений SSL**

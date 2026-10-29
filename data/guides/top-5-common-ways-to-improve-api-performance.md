@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Common Ways to Improve API Performance"
-description: "Explore 5 common ways to boost your API's performance effectively."
+title: "Пять способов повысить производительность API"
+description: "Изучайте 5 общих способов эффективного повышения эффективности API."
 image: "https://assets.bytebytego.com/diagrams/0001-how-to-improve-api-performance.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0001-how-to-improve-api-performance.png)
 
-## 1. Result Pagination:
+## 1. Результат:
 
-This method is used to optimize large result sets by streaming them back to the client, enhancing service responsiveness and user experience.
+Этот метод используется для оптимизации крупных наборов результатов путем их направления обратно клиенту, повышения оперативности обслуживания и расширения опыта пользователей.
 
-## 2. Asynchronous Logging:
+## 2. Асинхронный лес:
 
-This approach involves sending logs to a lock-free buffer and returning immediately, rather than dealing with the disk on every call. Logs are periodically flushed to the disk, significantly reducing I/O overhead.
+Такой подход предполагает направление бревен в буфер, свободный от блокировок, и немедленное возвращение, а не рассмотрение диска на каждом вызове. Журналы периодически сбрасываются на диск, что значительно снижает накладные расходы.
 
-## 3. Data Caching:
+## 3. Копирование данных:
 
-Frequently accessed data can be stored in a cache to speed up retrieval. Clients check the cache before querying the database, with data storage solutions like Redis offering faster access due to in-memory storage.
+Часто доступные данные можно хранить в кэше, чтобы ускорить поиск. Клиенты проверяют кэш, прежде чем запрашивать базу данных, при этом такие решения, как Redis, предлагают более быстрый доступ благодаря внутреннему хранению данных.
 
-## 4. Payload Compression:
+## 4. Компрессия нагрузки:
 
-To reduce data transmission time, requests and responses can be compressed (e.g., using gzip), making the upload and download processes quicker.
+Для сокращения времени передачи данных можно сократить запросы и ответы (например, с использованием gzip), что позволяет быстрее загружать и загружать данные.
 
-## 5. Connection Pooling:
+## 5. Объединение:
 
-This technique involves using a pool of open connections to manage database interaction, which reduces the overhead associated with opening and closing connections each time data needs to be loaded. The pool manages the lifecycle of connections for efficient resource use.
+Этот метод предусматривает использование пула открытых каналов связи для управления взаимодействием с базой данных, что позволяет снизить накладные расходы, связанные с подключением к системе открытия и закрытия, при каждом загрузке данных. Этот пул управляет жизненным циклом подключения для эффективного использования ресурсов.

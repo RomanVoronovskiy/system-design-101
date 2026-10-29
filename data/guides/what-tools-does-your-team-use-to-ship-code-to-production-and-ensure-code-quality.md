@@ -1,6 +1,6 @@
 ---
-title: "Tools for Shipping Code to Production"
-description: "Explore tools for shipping code to production and ensuring code quality."
+title: "Инструменты для выпуска кода в продакшен"
+description: "Изучение инструментов для отгрузочного кода при производстве и обеспечение качества кода."
 image: "https://assets.bytebytego.com/diagrams/0335-ship-to-prod-tools.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0335-ship-to-prod-tools.png)
 
-The approach generally depends on the size of the company. There is no one-size-fits-all solution, but we try to provide a general overview.
+Такой подход, как правило, зависит от размера компании. Единого решения не существует, но мы пытаемся дать общий обзор.
 
-## 1-10 employees
+## 1-10 работников
 
-In the early stages of a company, the focus is on finding a product-market fit. The emphasis is primarily on delivery and experimentation. Utilizing existing free or low-cost tools, developers handle testing and deployment. They also pay close attention to customer feedback and reports.
+На ранних этапах деятельности компании основное внимание уделяется поиску подходящего рынка товаров. Основное внимание уделяется вопросам осуществления и экспериментирования. Используя существующие бесплатные или недорогостоящие инструменты, разработчики проводят испытания и ввод в эксплуатацию. Они также уделяют пристальное внимание обратной связи с клиентами и их отчетности.
 
-## 10-100 employees
+## 10 100 работников
 
-Once the product-market fit is found, companies strive to scale. They are able to invest more in quality for critical functionalities and can create rapid evolution processes, such as scheduled deployments and testing procedures. Companies also proactively establish customer support processes to handle customer issues and provide proactive alerts.
+Как только будет найдена пригодность рынка товаров, компании стремятся к расширению масштабов. Они могут вкладывать больше средств в повышение качества в критически важные функциональные подразделения и могут создавать процессы быстрого развития, такие, как запланированные мероприятия и процедуры тестирования. Компании также активно внедряют процедуры поддержки клиентов для решения проблем клиентов и обеспечения их готовности к действиям.
 
-## 100-1,000 employees
+## 100-1000 работников
 
-When a company's go-to-market strategy proves successful, and the product scales and grows rapidly, it starts to optimize its engineering efficiency. More commercial tools can be purchased, such as Atlassian products. A certain level of standardization across tools is introduced, and automation comes into play.
+Когда стратегия перехода компании на рынок оказывается успешной, а объем продукции быстро растет, она начинает оптимизировать свою инженерную эффективность. Можно приобрести больше коммерческих инструментов, таких, как Атласские продукты. Вводится определенный уровень стандартизации различных инструментов, и вводится автоматизация.
 
-## 1,000-10,000+ employees
+## 1 000-10 000 работников
 
-Large tech companies build experimental tooling and automation to ensure quality and gather customer feedback at scale. Netflix, for example, is well known for its "Test in Production" strategy, which conducts everything through experiments.
+Крупные технологические компании создают экспериментальные инструменты и автоматизацию для обеспечения качества и сбора отзывов клиентов в масштабах. Например, Netflix хорошо известен своей стратегией "Испытания в производстве", которая проводит все через эксперименты.

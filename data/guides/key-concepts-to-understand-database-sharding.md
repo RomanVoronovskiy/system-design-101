@@ -1,6 +1,6 @@
 ---
-title: "Key Concepts to Understand Database Sharding"
-description: "Explore key concepts of database sharding with vertical/horizontal strategies."
+title: "Основные понятия шардинга баз данных"
+description: "Изучите ключевые концепции сегментирования базы данных с помощью вертикальных/горизонтальных стратегий."
 image: "https://assets.bytebytego.com/diagrams/0096-dbshards.png"
 createdAt: "2024-03-09"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0096-dbshards.png)
 
-In this concise and visually engaging resource, we break down the key concepts of database partitioning, explaining both vertical and horizontal strategies.
+В этом кратком и наглядном ресурсе мы разбираем ключевые концепции секционирования базы данных, объясняя как вертикальные, так и горизонтальные стратегии.
 
-## Range-Based Sharding
+## Шардинг по диапазонам
 
-Splitting your data into distinct ranges. Think of it as organizing your books by genre on separate shelves.
+Разделяем ваши данные на разные диапазоны. Представьте, что вы организуете свои книги по жанрам на отдельных полках.
 
-## Key-Based Sharding (with a dash of %3 hash)
+## Шардинг по ключу (с хешированием по модулю 3)
 
-Imagine each piece of data having a unique key, and we distribute them based on a specific rule. It's like sorting your playing cards by suit and number.
+Представьте, что у каждого из этих данных есть уникальный ключ, и мы распределяем их на основе конкретного правила. Это как сортировка игровых карт по номеру и костюму.
 
-## Directory-Based Sharding
+## Шардинг с использованием каталога
 
-A directory, like a phone book, helps you quickly find the information you need. Similarly, this technique uses a directory to route data efficiently.
+Справочник, как телефонный справочник, помогает быстро найти нужную информацию. Аналогично, эта техника использует каталог для эффективного маршрутизации данных.

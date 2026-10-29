@@ -1,6 +1,6 @@
 ---
-title: "Reconciliation in Payment"
-description: "Explore payment reconciliation: challenges, solutions, and its importance."
+title: "Сверка платежей"
+description: "Изучение вопроса о согласовании платежей: проблемы, решения и их значение."
 image: "https://assets.bytebytego.com/diagrams/0298-payment-reconciliation.jpg"
 createdAt: "2024-03-03"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0298-payment-reconciliation.jpg)
 
-Reconciliation might be the most painful process in a payment system. It is the process of comparing records in different systems to make sure the amounts match each other.
+Примирение может быть самым болезненным процессом в системе платежей. Это процесс сопоставления записей в различных системах, чтобы убедиться, что суммы совпадают друг с другом.
 
-For example, if you pay $200 to buy a watch with Paypal:
+Например, если вы платите 200 долларов за покупку часов с Paypal:
 
-*   The eCommerce website should have a record of the $200 purchase order.
+*   На веб-сайте электронной торговли должна быть сделана запись о заказе на покупку в размере 200 долл. США.
 
-*   There should be a transaction record of $200 in Paypal (marked with 2 in the diagram).
+*   В Paypal должна быть зарегистрирована операция в размере 200 долл. США (на диаграмме 2).
 
-*   The Ledger should record a debit of $200 dollars for the buyer, and a credit of $200 for the seller. This is called double-entry bookkeeping (see the table below).
+*   Компания должна записать дебет покупателя в размере 200 долл. США, а продавец должен получить кредит в размере 200 долл. США. Это называется ведением двухразового учета (см. таблицу ниже).
 
-Let’s take a look at some pain points and how we can address them:
+Давайте посмотрим на некоторые точки боли и на то, как мы можем их преодолеть:
 
-## Problem 1: Data normalization
+## Проблема 1: приведение данных к единому формату
 
-When comparing records in different systems, they come in different formats. For example, the timestamp can be “2022/01/01” in one system and “Jan 1, 2022” in another.
+При сопоставлении записей в различных системах они появляются в разных форматах. Например, время может быть,2022/01/01, в одной системе и,,,,,, 2022, в другой.
 
-### Possible solution
+### Возможное решение
 
-We can add a layer to transform different formats into the same format.
+Мы можем добавить слой, чтобы преобразовать различные форматы в один формат.
 
-## Problem 2: Massive data volume
+## Проблема 2: огромный объём данных
 
-### Possible solution
+### Возможное решение
 
-We can use big data processing techniques to speed up data comparisons. If we need near real-time reconciliation, a streaming platform such as Flink is used; otherwise, end-of-day batch processing such as Hadoop is enough.
+Мы можем использовать технологии обработки больших данных для ускорения сопоставления данных. Если нам нужно сверка в режиме почти реального времени, то используется ручная платформа, такая как Flink; в противном случае достаточно обработки партии, такой, как Hadoop, в конце дня.
 
-## Problem 3: Cut-off time issue
+## Проблема 3: несовпадение времени отсечения
 
-For example, if we choose 00:00:00 as the daily cut-off time, one record is stamped with 23:59:55 in the internal system, but might be stamped 00:00:30 in the external system (Paypal), which is the next day. In this case, we couldn’t find this record in today’s Paypal records. It causes a discrepancy.
+Например, если мы выберем 00:00 в качестве ежедневного отсечения времени, то одна запись будет напечатана на 23:59:55 в внутренней системе, но может быть нанесена на 00:00:30 во внешней системе (Paypal), которая будет на следующий день. В этом случае, мы не смогли найти эту запись в сегодняшнем, записях Пейпла. Это вызывает несоответствие.
 
-### Possible solution
+### Возможное решение
 
-We need to categorize this break as a “temporary break” and run it later against the next day’s Paypal records. If we find a match in the next day’s Paypal records, the break is cleared, and no more action is needed.
+Нам нужно отвести этот перерыв к, временной перерыв, и запустить его позже по данным Paypal. Если мы найдем совпадение на следующий день, записи Paypal, перерыв будет разрешен, и больше не нужно никаких действий.
 
-You may argue that if we have exactly-once semantics in the system, there shouldn’t be any discrepancies. But the truth is, there are so many places that can go wrong. Having a reconciliation system is always necessary. It is like having a safety net to keep you sleeping well at night.
+Вы можете утверждать, что если у нас есть семантика, то в системе не должно быть никаких расхождений. Но правда в том, что есть так много мест, где может пойти не так. Всегда необходимо иметь систему примирения. Это как иметь систему защиты, чтобы ты спокойно спал по ночам.

@@ -1,6 +1,6 @@
 ---
-title: What is CSS (Cascading Style Sheets)?
-description: CSS is a markup language for describing the presentation of web pages.
+title: "Что такое каскадные таблицы стилей — CSS?"
+description: "CSS является разметкой для описания формата вебстраниц."
 image: 'https://assets.bytebytego.com/diagrams/0408-what-is-css-cascading-style-sheets.png'
 createdAt: '2024-02-03'
 draft: false
@@ -13,29 +13,29 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0408-what-is-css-cascading-style-sheets.png)
 
-Front-end development requires not only content presentation, but also good-looking. CSS is a markup language used to describe how elements on a web page should be rendered.
+Для разработки на переднем плане требуется не только представление содержания, но и красивое представление. CSS - это язык разметки, используемый для описания того, как следует размещать элементы на веб-странице.
 
-*   **What CSS does**
-    CSS separates the content and presentation of a document. In the early days of web development, HTML acted as both content and style.
+*   **Что делает ССС**
+    СКС отделяет содержание и представление документа. В первые дни разработки веб-сайта HTML действовал как контент, так и стиль.
 
-    CSS divides structure (HTML) and style (CSS). This has many benefits, for example, when we change the color scheme of a web page, all we need to do is to tweak the CSS file.
-*   **How CSS works**
-    CSS consists of a selector and a set of properties, which can be thought of as individual rules. Selectors are used to locate HTML elements that we want to change the style of, and properties are the specific style descriptions for those elements, such as color, size, position, etc.
+    СКС разделяет структуру (ГТМ) и стиль (КСС). Это имеет много преимуществ, например, когда мы меняем цветовую схему веб-страницы, все, что нам нужно сделать, это подделать файл CSS.
+*   **Как работает ССС**
+    ККС состоит из соответствующего лица и набора свойств, которые можно рассматривать как индивидуальные правила. Выборщики используются для поиска элементов HTML, которые мы хотим изменить стиль, и свойства являются специфическими описаниями стиля для этих элементов, такими как цвет, размер, положение и т.д.
 
-    For example, if we want to make all the text in a paragraph blue, we write CSS code like this:
-    p { color: blue; }
-    Here “p” is the selector and “color: blue” is the attribute that declares the color of the paragraph text to be blue.
-*   **Cascading in CSS**
-    The concept of cascading is crucial to understanding CSS.
+    Например, если мы хотим сделать весь текст в пункте синим, мы напишем код CSS вот так:
+    p {цвет: синий;}
+    Здесь,p,,,,,, : y: rone, это атрибут, который указывает цвет текста пункта, что он синий.
+*   **Каскадирование в ССЗ**
+    Концепция каскадирования имеет решающее значение для понимания КПС.
 
-    When multiple style rules conflict, the browser needs to decide which rule to use based on a specific prioritization rule. The one with the highest weight wins. The weight can be determined by a variety of factors, including selector type and the order of the source.
-*   **Powerful Layout Capabilities of CSS**
-    In the past, CSS was only used for simple visual effects such as text colors, font styles, or backgrounds. Today, CSS has evolved into a powerful layout tool capable of handling complex design layouts.
+    Когда правила с использованием нескольких стилей противоречат, браузере нужно решить, какое правило использовать на основе конкретного правила приоритизации. Тот, у кого самый высокий вес, выигрывает. Вес может определяться по целому ряду факторов, включая тип переключателя и порядок источника.
+*   **Широкие возможности CSS для построения макетов**
+    В прошлом CSS использовалась только для простых визуальных эффектов, таких как цвета текстов, шрифты или фоны. Сегодня СКС превратилась в мощный инструмент макетирования, способный управлять сложными проектными схемами.
 
-    The “Flexbox” and “Grid” layout modules are two popular CSS layout modules that make it easy to create responsive designs and precise placement of web elements, so web developers no longer have to rely on complex tables or floating layouts.
-*   **CSS Animation**
-    Animation and interactive elements can greatly enhance the user experience.
+    Flexbox и Grid, компоновочные модули — это два популярных модуля компоновки CSS, которые облегчают создание гибких дизайнов и точное размещение веб-элементов, поэтому разработчикам веб-технологий больше не приходится полагаться на сложные таблицы или плавучие компоновки.
+*   **ССЗ Анимация**
+    Анимационные и интерактивные элементы могут значительно повысить эффективность опыта пользователей.
 
-    CSS3 introduces animation features that allow us to transform and animate elements without using JavaScript. For example, “@keyframes” rule defines animation sequences, and the `transition` property can be used to set animated transitions from one state to another.
-*   **Responsive Design**
-    CSS allows the layout and style of a website to be adapted to different screen sizes and resolutions, so that we can provide an optimized browsing experience for different devices such as cell phones, tablets and computers.
+    CSS3 вводит анимационные функции, которые позволяют нам преобразовывать и анимировать элементы без использования JavaScript. Например,,@keyframs, правило определяет последовательности анимации, и `transition` - собственность может использоваться для анимации перехода от одного состояния к другому.
+*   **Реактивный дизайн**
+    CSS позволяет адаптировать формат и стиль веб-сайта к различным размерам экрана и разрешениям, с тем чтобы мы могли обеспечить оптимальный опыт просмотра различных устройств, таких, как мобильные телефоны, таблетки и компьютеры.

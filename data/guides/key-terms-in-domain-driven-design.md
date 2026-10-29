@@ -1,6 +1,6 @@
 ---
-title: "Key Terms in Domain-Driven Design"
-description: "Understand key concepts in Domain-Driven Design for better software."
+title: "Основные термины предметно-ориентированного проектирования"
+description: "Основные понятия предметно-ориентированного проектирования для разработки программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0163-ddd.png"
 createdAt: "2024-02-28"
 draft: false
@@ -11,28 +11,28 @@ tags:
   - "Software Design"
 ---
 
-Have you heard of Domain-Driven Design (DDD), a major software design approach?
+Слышали о предметно-ориентированном проектировании (Domain-Driven Design, DDD) — одном из важных подходов к проектированию программного обеспечения?
 
 ![](https://assets.bytebytego.com/diagrams/0163-ddd.png)
 
-DDD was introduced in Eric Evans’ classic book “Domain-Driven Design: Tackling Complexity in the Heart of Software”. It explained a methodology to model a complex business. In this book, there is a lot of content, so I'll summarize the basics.
+DDD был представлен в классической книге Эрика Эванса «Domain-Driven Design: Tackling Complexity in the Heart of Software». В ней описана методология моделирования сложной предметной области бизнеса. Книга объёмная, поэтому здесь кратко изложены основные понятия.
 
-## The composition of domain objects:
+## Из чего состоят объекты предметной области
 
-*   **Entity:** a domain object that has ID and life cycle.
+* **Сущность (Entity):** объект предметной области с идентификатором и жизненным циклом.
 
-*   **Value Object:** a domain object without ID. It is used to describe the property of Entity.
+* **Объект-значение (Value Object):** объект без собственного идентификатора. Используется для описания свойств сущности.
 
-*   **Aggregate:** a collection of Entities that are bounded together by Aggregate Root (which is also an entity). It is the unit of storage.
+* **Агрегат (Aggregate):** группа связанных сущностей, объединённых корнем агрегата (Aggregate Root), который также является сущностью. Агрегат выступает единицей хранения.
 
-## The life cycle of domain objects:
+## Жизненный цикл объектов предметной области
 
-*   **Repository:** storing and loading the Aggregate.
+* **Репозиторий (Repository):** отвечает за сохранение и загрузку агрегата.
 
-*   **Factory:** handling the creation of the Aggregate.
+* **Фабрика (Factory):** отвечает за создание агрегата.
 
-## Behavior of domain objects:
+## Поведение объектов предметной области
 
-*   **Domain Service:** orchestrate multiple Aggregate.
+* **Доменный сервис (Domain Service):** координирует взаимодействие нескольких агрегатов.
 
-*   **Domain Event:** a description of what has happened to the Aggregate. The publication is made public so others can consume and reconstruct it.
+* **Доменное событие (Domain Event):** описывает то, что произошло с агрегатом. Событие публикуется, чтобы другие компоненты могли получить его и восстановить информацию о произошедшем изменении.

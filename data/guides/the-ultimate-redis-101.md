@@ -1,6 +1,6 @@
 ---
-title: "The Ultimate Redis 101"
-description: "Learn the fundamentals of Redis with these simple steps."
+title: "Основы Redis: подробное руководство"
+description: "Основы Redis: восемь простых шагов для знакомства с системой."
 image: "https://assets.bytebytego.com/diagrams/0009-steps-to-learn-the-fundamentals-of-redis-101.png"
 createdAt: "2024-02-19"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0009-steps-to-learn-the-fundamentals-of-redis-101.png)
 
-Redis is one of the most popular data stores in the world and is packed with features.
+Redis — одно из самых популярных хранилищ данных в мире, которое предлагает множество возможностей.
 
-Here are 8 simple steps that can help you understand the fundamentals of Redis.
+Эти восемь простых шагов помогут разобраться в основах Redis.
 
-## What is Redis?
+## Что такое Redis?
 
-Redis (Remote Dictionary Server) is a multi-modal database that provides sub-millisecond latency. The core idea behind Redis is that a cache can also act as a full-fledged database.
+Redis (Remote Dictionary Server) — многомодельная база данных с задержками менее миллисекунды. Её ключевая идея заключается в том, что кеш может одновременно выступать полноценной базой данных.
 
-## Redis Adoption
+## Кто использует Redis
 
-High-traffic internet websites like Airbnb, Uber, Slack, and many others have adopted Redis in their technology stack.
+Сайты с высокой посещаемостью, включая Airbnb, Uber и Slack, используют Redis в своём технологическом стеке.
 
-## How Redis Changed the Database Game?
+## Как Redis изменил подход к базам данных
 
-Redis supports main memory read/writes while still supporting fully durable storage. Read and writes are served from the main memory but the data is also persisted to the disk. This is done using snapshots (RDB) and AOF.
+Redis обслуживает чтение и запись из оперативной памяти, одновременно поддерживая надёжное долговременное хранение. Данные сохраняются на диск с помощью снимков RDB и журнала AOF.
 
-## Redis Data Structures
+## Структуры данных Redis
 
-Redis stores data in key-value format. It supports various data structures such as strings, bitmaps, lists, sets, sorted sets, hash, JSON, etc.
+Redis хранит данные в формате «ключ — значение». Поддерживаются различные структуры: строки, битовые карты, списки, множества, упорядоченные множества, хеши, JSON и другие.
 
-## Basic Redis Commands
+## Основные команды Redis
 
-Some of the most used Redis commands are SET, GET, DELETE, INCR, HSET, etc. There are many more commands available.
+В числе часто используемых команд — SET, GET, DELETE, INCR и HSET. Помимо них доступно множество других команд.
 
-## Redis Modules
+## Модули Redis
 
-Redis modules are add-ons that extend Redis functionality beyond its core features. Some prominent modules are RediSearch, RedisJSON, RedisGraph, RedisBloom, RedisAI, RedisTimeSeries, RedisGears, RedisML, and so on.
+Модули расширяют возможности Redis за пределы базовых функций. Среди известных модулей — RediSearch, RedisJSON, RedisGraph, RedisBloom, RedisAI, RedisTimeSeries, RedisGears и RedisML.
 
-## Redis Pub/Sub
+## Публикация и подписка в Redis
 
-Redis also supports even-driven architecture using a publish-subscribe communication model.
+Redis поддерживает событийную архитектуру с моделью взаимодействия «публикация — подписка» (Pub/Sub).
 
-## Redis Use Cases
+## Сценарии использования Redis
 
-Top Redis use cases are Distributed Caching, Session Storage, Message Queue, Rate Limiting, High-Speed Database, etc.
+Redis применяют для распределённого кеширования, хранения сессий, очередей сообщений, ограничения частоты запросов, работы в качестве высокоскоростной базы данных и других задач.

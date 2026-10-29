@@ -1,6 +1,6 @@
 ---
-title: "Top 10 Most Popular Open-Source Databases"
-description: "Explore the top 10 open-source databases and their impact."
+title: "Десять популярных баз данных с открытым исходным кодом"
+description: "Изучение 10 ведущих баз данных с открытыми исходными кодами и их влияния."
 image: "https://assets.bytebytego.com/diagrams/0282-top-10-most-popular-open-source-databases.png"
 createdAt: "2024-02-26"
 draft: false
@@ -13,17 +13,17 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0282-top-10-most-popular-open-source-databases.png)
 
-This list is based on factors like adoption, industry impact, and the general awareness of the database among the developer community.
+Этот перечень основан на таких факторах, как усыновление, влияние промышленности и общая осведомленность сообщества разработчиков о базе данных.
 
-## Top 10 Most Popular Open-Source Databases
+## Десять популярных баз данных с открытым исходным кодом
 
-*   MySQL
-*   PostgreSQL
-*   MariaDB
-*   Apache Cassandra
-*   Neo4j
+*   МЯСКЛ
+*   ПостгрессQL
+*   Мария-Бар
+*   Апач Кесандра
+*   Нео4j
 *   SQLite
-*   CockroachDB
+*   Кокарный банк
 *   Redis
-*   MongoDB
-*   Couchbase
+*   МонгоБР
+*   Коуч-база

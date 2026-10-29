@@ -1,6 +1,6 @@
 ---
-title: Reddit's Core Architecture
-description: Overview of Reddit's architecture for serving millions of users.
+title: "Основная архитектура Reddit"
+description: "Обзор архитектуры Реддита, обслуживающей миллионы пользователей."
 image: 'https://assets.bytebytego.com/diagrams/0356-the-core-reddit-architecture.png'
 createdAt: '2024-03-06'
 draft: false
@@ -12,19 +12,19 @@ tags:
 ---
 ![](https://assets.bytebytego.com/diagrams/0356-the-core-reddit-architecture.png)
 
-A quick look at Reddit’s Core Architecture that helps it serve over 1 billion users every month.
+Краткий обзор основной архитектуры Reddit, которая позволяет обслуживать более миллиарда пользователей ежемесячно.
 
-This information is based on research from many Reddit engineering blogs. But since architecture is ever-evolving, things might have changed in some aspects.
+Эта информация основана на исследованиях многих блогов Reddit. Но поскольку архитектура постоянно развивается, в некоторых аспектах все могло измениться.
 
-The main points of Reddit’s architecture are as follows:
+Основные точки архитектуры Reddit являются следующими:
 
-*   Reddit uses a Content Delivery Network (CDN) from Fastly as a front for the application.
-*   Reddit started using jQuery in early 2009. Later on, they started using Typescript and have now moved to modern Node.js frameworks. Over the years, Reddit has also built mobile apps for Android and iOS.
-*   Within the application stack, the load balancer sits in front and routes incoming requests to the appropriate services.
-*   Reddit started as a Python-based monolithic application but has since started moving to microservices built using Go.
-*   Reddit heavily uses GraphQL for its API layer. In early 2021, they started moving to GraphQL Federation, which is a way to combine multiple smaller GraphQL APIs known as Domain Graph Services (DGS). In 2022, the GraphQL team at Reddit added several new Go subgraphs for core Reddit entities thereby splitting the GraphQL monolith.
-*   From a data storage point of view, Reddit relies on Postgres for its core data model. To reduce the load on the database, they use memcached in front of Postgres. Also, they use Cassandra quite heavily for new features mainly because of its resiliency and availability properties.
-*   To support data replication and maintain cache consistency, Reddit uses Debezium to run a Change Data Capture process.
-*   Expensive operations such as a user voting or submitting a link are deferred to an async job queue via RabbitMQ and processed by job workers. For content safety checks and moderation, they use Kafka to transfer data in real-time to run rules over them.
-*   Reddit uses AWS and Kubernetes as the hosting platform for its various apps and internal services.
-*   For deployment and infrastructure, they use Spinnaker, Drone CI, and Terraform.
+*   Reddit использует сеть передачи контента (CDN) из Быстрой программы в качестве прикрытия для приложения.
+*   В начале 2009 года Reddit начал использовать JQuery. Позже они начали использовать Typecptrip и теперь перешли к современным основам Node.js. За годы Реддит также построил мобильные приложения для Android и iOS.
+*   В рамках прикладных систем балансиратор нагрузки сидит перед входом и направляет поступающие запросы соответствующим службам.
+*   Reddit начал работать как Python-монолитическое приложение, но с тех пор начал переходить к микроуслугам, построенным с помощью Go.
+*   В Reddit широко используется граффQL для своего слоя API. В начале 2021 года они начали переходить в федерацию ГрафQL, которая является способом объединения нескольких небольших GraphQL API, известных как Domain Graph Services (DGS). В 2022 году команда GraphQL в Reddit добавила несколько новых подграфов Go для ключевых Reddit организаций, тем самым разделив GraphQL монолит.
+*   С точки зрения хранения данных Reddit использует Postgres для своей модели ключевых данных. Чтобы уменьшить нагрузку на базу данных, они используют мемкость, застрявшую перед Постгресом. Кроме того, они используют C4ANDra достаточно широко для новых функций, главным образом из-за его стойкости и свойств доступности.
+*   Для поддержки воспроизведения данных и поддержания последовательности кэша Reddit использует Debezium для осуществления процесса изменения улавливания данных.
+*   Дорогие операции, такие как голосование пользователя или представление ссылки, откладываются до асинк-вариума через Кролик-МQ и обрабатываются рабочими. Для проверки и умеренности содержания они используют Kafka для передачи данных в реальном времени, чтобы ввести правила.
+*   Reddit использует AWS и Kubernetes в качестве платформы для размещения различных приложений и внутренних служб.
+*   Для развертывания и инфраструктуры они используют Spinnaaker, Drone CI и Terraform.

@@ -1,6 +1,6 @@
 ---
-title: What is a Load Balancer?
-description: Distributes network traffic across multiple servers to optimize resources.
+title: "Что такое балансировщик нагрузки?"
+description: "Для оптимизации ресурсов дистрибуция сетевых потоков через многочисленные серверы."
 image: 'https://assets.bytebytego.com/diagrams/0261-what-is-a-load-balancer.png'
 createdAt: '2024-02-28'
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0261-what-is-a-load-balancer.png)
 
-A load balancer is a device or software application that distributes network or application traffic across multiple servers.
+Балансировка нагрузки — это устройство или программное обеспечение, которое распределяет сеть или прикладные системы трафика через несколько серверов.
 
-*   **What Does a Load Balancer Do?**
+*   **Что делает грузоукладчик?**
 
-    *   Distributes Traffic
-    *   Ensures Availability and Reliability
-    *   Improves Performance
-    *   Scales Applications
+    *   Транспортировка
+    *   Обеспечение наличия и надежности
+    *   Повышение эффективности
+    *   Заявки на получение шкалы взносов
 
-*   **Types of Load Balancers**
+*   **Типы весовых коэффициентов нагрузки**
 
-    *   Hardware Load Balancers: These are physical devices designed to distribute traffic across servers.
-    *   Software Load Balancers: These are applications that can be installed on standard hardware or virtual machines.
-    *   Cloud-based Load Balancers: Provided by cloud service providers, these load balancers are integrated into the cloud infrastructure. Examples include AWS Elastic Load Balancer, Google Cloud Load Balancing, and Azure Load Balancer.
-    *   Layer 4 Load Balancers (Transport Layer): Operate at the transport layer (OSI Layer 4) and make forwarding decisions based on IP address and TCP/UDP ports.
-    *   Layer 7 Load Balancers (Application Layer): Operate at the application layer (OSI Layer 7).
-    *   Global Server Load Balancing (GSLB): Distributes traffic across multiple geographical locations to improve redundancy and performance on a global scale.
+    *   Аппаратное обеспечение " Балансы нагрузки " : Это физические устройства, предназначенные для распределения трафика через серверы.
+    *   Программное обеспечение " Балансы нагрузки " : Это приложения, которые могут устанавливаться на стандартных аппаратных средствах или виртуальных машинах.
+    *   Облачные балансы нагрузки: Обеспеченные поставщиками облачных услуг, эти балансирующие нагрузки интегрируются в инфраструктуру облаков. Примерами являются AWS Elastic Gload Balacing, Google Cloud Gload Balacing и Azure Gload Balacing.
+    *   Слой 4 - Балансы нагрузки (транспортный слой): Оперировать на транспортном уровне (ОСI-слой 4) и принимать решения о передаче информации на основе IP-адреса и портов TCP/UDP.
+    *   7. Слой 7: Балансы нагрузки (прикладный слой): функционирует на прикладном уровне (ОСI-уровень 7).
+    *   Глобальный сервер для расчета нагрузки (GSLB): Распределяет потоки по многим географическим районам в целях улучшения избыточности и эффективности в глобальном масштабе.

@@ -1,6 +1,6 @@
 ---
-title: "Why is Kafka Fast?"
-description: "Explore the key design choices behind Kafka's high performance."
+title: "Почему Kafka работает быстро?"
+description: "Основные проектные решения, обеспечивающие высокую производительность Kafka."
 image: "https://assets.bytebytego.com/diagrams/0424-why-is-kafka-fast.jpg"
 createdAt: "2024-02-05"
 draft: false
@@ -11,30 +11,30 @@ tags:
   - "Performance"
 ---
 
-![No alternative text description for this image](https://assets.bytebytego.com/diagrams/0424-why-is-kafka-fast.jpg)
+![Почему Kafka работает быстро?](https://assets.bytebytego.com/diagrams/0424-why-is-kafka-fast.jpg)
 
-There are many design decisions that contributed to Kafka’s performance. In this post, we’ll focus on two. We think these two carried the most weight.
+Высокая производительность Kafka обусловлена множеством проектных решений. Здесь рассмотрим два, которые, по нашему мнению, внесли наибольший вклад.
 
-## Sequential I/O
+## Последовательный ввод-вывод
 
-The first one is Kafka’s reliance on Sequential I/O.
+Первое решение — использование последовательного ввода-вывода.
 
-## Zero Copy
+## Передача без лишнего копирования — Zero Copy
 
-The second design choice that gives Kafka its performance advantage is its focus on efficiency: zero copy principle.
+Второе решение направлено на повышение эффективности: это принцип zero-copy.
 
-The diagram above illustrates how the data is transmitted between producer and consumer, and what zero-copy means.
+Схема выше показывает передачу данных от производителя к потребителю и объясняет, что означает zero-copy.
 
-*   Step 1.1 - 1.3: Producer writes data to the disk
-*   Step 2: Consumer reads data without zero-copy
-    *   2.1: The data is loaded from disk to OS cache
-    *   2.2 The data is copied from OS cache to Kafka application
-    *   2.3 Kafka application copies the data into the socket buffer
-    *   2.4 The data is copied from socket buffer to network card
-    *   2.5 The network card sends data out to the consumer
-*   Step 3: Consumer reads data with zero-copy
-    *   3.1: The data is loaded from disk to OS cache
-    *   3.2 OS cache directly copies the data to the network card via sendfile() command
-    *   3.3 The network card sends data out to the consumer
+* Шаги 1.1–1.3: производитель записывает данные на диск.
+* Шаг 2: потребитель читает данные без zero-copy.
+  * 2.1: данные загружаются с диска в кеш операционной системы.
+  * 2.2: данные копируются из кеша ОС в приложение Kafka.
+  * 2.3: приложение Kafka копирует данные в буфер сокета.
+  * 2.4: данные копируются из буфера сокета на сетевую карту.
+  * 2.5: сетевая карта отправляет данные потребителю.
+* Шаг 3: потребитель читает данные с использованием zero-copy.
+  * 3.1: данные загружаются с диска в кеш ОС.
+  * 3.2: с помощью команды sendfile() данные передаются из кеша ОС непосредственно сетевой карте.
+  * 3.3: сетевая карта отправляет данные потребителю.
 
-Zero copy is a shortcut to save multiple data copies between the application context and kernel context.
+Zero-copy позволяет избежать нескольких копирований данных между пространством приложения и пространством ядра.

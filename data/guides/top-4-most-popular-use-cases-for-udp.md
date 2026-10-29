@@ -1,6 +1,6 @@
 ---
-title: "Top 4 Most Popular Use Cases for UDP"
-description: "Explore the top 4 use cases for UDP: streaming, DNS, multicast, and IoT."
+title: "Четыре популярных сценария использования UDP"
+description: "Изучить 4 лучших варианта UDP: русское, DNS, мультикаст и IoT."
 image: "https://assets.bytebytego.com/diagrams/0044-top-4-udp-use-cases.png"
 createdAt: "2024-03-07"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0044-top-4-udp-use-cases.png)
 
-### UDP (User Datagram Protocol) is used in various software architectures for its simplicity, speed, and low overhead compared to other protocols like TCP.
+### UDP (пользующийся Datagram Protocol) используется в различных архитектурах программного обеспечения для его простоты, скорости и низких накладных расходов по сравнению с другими протоколами, такими как TCP.
 
-## Live Video Streaming
+## Видеопоток
 
-Many VoIP and video conferencing applications leverage UDP due to its lower overhead and ability to tolerate packet loss. Real-time communication benefits from UDP's reduced latency compared to TCP.
+Многие приложения VoIP и видеосвязи используют UDP в силу того, что они меньше накладок и способны терпеть потери пакетов. Коммуникация в реальном времени выгодна от снижения степени самостоятельности UDP по сравнению с TCP.
 
 ## DNS
 
-DNS (Domain Name Service) queries typically use UDP for their fast and lightweight nature. Although DNS can also use TCP for large responses or zone transfers, most queries are handled via UDP.
+DNS (Domain Name Service) запросы обычно используют UDP для быстрого и легкого веса. Хотя ДНС может также использовать ТКП для крупных ответов или зональных передач, большинство запросов обрабатывается через УПД.
 
-## Market Data Multicast
+## Многокадровые данные
 
-In low-latency trading, UDP is utilized for efficient market data delivery to multiple recipients simultaneously.
+В торговле с низким уровнем прибыли ППР используется для эффективного предоставления данных о рынках одновременно нескольким получателям.
 
-## IoT
+## ИОТ
 
-UDP is often used in IoT devices for communications, sending small packets of data between devices.
+UDP часто используется в IoT-приборах для связи, посылая небольшие пакеты данных между устройствами.

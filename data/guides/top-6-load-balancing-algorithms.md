@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Load Balancing Algorithms"
-description: "Explore the top 6 load balancing algorithms in detail."
+title: "Шесть алгоритмов балансировки нагрузки"
+description: "Подробно изучит алгоритмы балансировки нагрузки 6-го уровня."
 image: "https://assets.bytebytego.com/diagrams/0251-lb-algorithms.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0251-lb-algorithms.png)
 
-## Top 6 Load Balancing Algorithms
+## Шесть алгоритмов балансировки нагрузки
 
-*   **Static Algorithms**
+*   **Статические алгоритмы**
 
-    *   Round robin
+    *   Круглая полоса
 
-        The client requests are sent to different service instances in sequential order. The services are usually required to be stateless.
+        Запросы клиентов направляются в различные инстанции в последовательном порядке. Обычно сервисы не должны хранить состояние между запросами.
 
-    *   Sticky round-robin
+    *   Скользкий кругло-круглый роб
 
-        This is an improvement of the round-robin algorithm. If Alice’s first request goes to service A, the following requests go to service A as well.
+        Это усовершенствование алгоритма круглой полосы. Если Алиса, первая просьба попадает на обслуживание A, то и следующие запросы подаются на обслуживание A.
 
-    *   Weighted round-robin
+    *   Взвешенный круглое ствол
 
-        The admin can specify the weight for each service. The ones with a higher weight handle more requests than others.
+        Административный орган может указывать вес каждой услуги. Те, кто весит больше, выполняют больше просьб, чем другие.
 
-    *   Hash
+    *   Гаш
 
-        This algorithm applies a hash function on the incoming requests’ IP or URL. The requests are routed to relevant instances based on the hash function result.
+        Этот алгоритм применяет функцию хеширования при поступлении запросов, IP или URL. Запросы направляются в соответствующие инстанции на основе результатов выполнения функции хеширования.
 
-*   **Dynamic Algorithms**
+*   **Динамические алгоритмы**
 
-    *   Least connections
+    *   Наименее
 
-        A new request is sent to the service instance with the least concurrent connections.
+        В сервисный центр направляется новая просьба о предоставлении менее параллельных каналов связи.
 
-    *   Least response time
+    *   Наименьшее время срабатывания
 
-        A new request is sent to the service instance with the fastest response time.
+        Новый запрос направляется в сервисный центр с самым быстрым временем реагирования.

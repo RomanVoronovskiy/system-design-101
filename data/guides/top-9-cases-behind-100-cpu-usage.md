@@ -1,6 +1,6 @@
 ---
-title: "Top 9 Causes of 100% CPU Usage"
-description: "Explore the top causes behind 100% CPU usage and how to resolve them."
+title: "Девять причин загрузки процессора на 100%"
+description: "Изучить главные причины 100-процентного использования процессора и пути их устранения."
 image: "https://assets.bytebytego.com/diagrams/0386-top-9-cases-behind-100-cpu-usage.png"
 createdAt: "2024-03-03"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0386-top-9-cases-behind-100-cpu-usage.png)
 
-The diagram below shows common culprits that can lead to 100% CPU usage. Understanding these can help in diagnosing problems and improving system efficiency.
+На диаграмме ниже показаны общие виновники, которые могут привести к 100% использованию процессора. Понимание этих проблем может помочь диагностировать проблемы и повысить эффективность системы.
 
-## Top 9 Causes of 100% CPU Usage
+## Девять причин загрузки процессора на 100%
 
-*   Infinite Loops
-*   Background Processes
-*   High Traffic Volume
-*   Resource-Intensive Applications
-*   Insufficient Memory
-*   Concurrent Processes
-*   Busy Waiting
-*   Regular Expression Matching
-*   Malware and Viruses
+*   Бесконечные ручки
+*   Справочная информация
+*   Высокий объем движения
+*   Интенсивные прикладные программы
+*   Недостаточная память
+*   Совпадающие процессы
+*   Жду не дождусь.
+*   Регулярное сочетание выражений
+*   Недостатки и вирусы

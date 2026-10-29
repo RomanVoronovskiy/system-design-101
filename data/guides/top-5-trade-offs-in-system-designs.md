@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Trade-offs in System Designs"
-description: "Explore the top 5 trade-offs in system design for optimal solutions."
+title: "Пять компромиссов в системном проектировании"
+description: "Изучение пяти наиболее оптимальных вариантов в разработке системы для оптимальных решений."
 image: "https://assets.bytebytego.com/diagrams/0376-top-5-trade-offs-in-system-designs.png"
 createdAt: "2024-02-02"
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0376-top-5-trade-offs-in-system-designs.png)
 
-Everything is a trade-off. Everything is a compromise. There is no right or wrong design.
+Все это компромисс. Все это компромисс. Нет ни правильного, ни неправильного дизайна.
 
-The diagram below shows some of the most important trade-offs.
+На диаграмме ниже показаны некоторые из наиболее важных компромиссов.
 
-*   **Cost vs. Performance**
-*   **Reliability vs. Scalability**
-*   **Performance vs. Consistency**
-*   **Security vs. Flexibility**
-*   **Development Speed vs. Quality**
+*   **Стоимость ис. Производительность**
+*   **Надежность в сравнении с Скалабельность**
+*   **Эффективность по сравнению с Последовательность**
+*   **Охрана против. Гибкость**
+*   **Скорость развития по сравнению с Качество**

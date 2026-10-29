@@ -1,6 +1,6 @@
 ---
-title: "Is PostgreSQL Eating the Database World?"
-description: "Explore PostgreSQL's versatility and its impact on the database landscape."
+title: "Завоёвывает ли PostgreSQL мир баз данных?"
+description: "Изучите универсальность PostgreSQL и ее влияние на среду баз данных."
 image: "https://assets.bytebytego.com/diagrams/0237-is-postgresql-eating-the-database-world.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0237-is-postgresql-eating-the-database-world.png)
 
-It seems that no matter what the use case, PostgreSQL supports it. When in doubt, you can simply use PostgreSQL.
+Кажется, что независимо от того, какой случай использования, PostgreSQL поддерживает его. Если в сомнении, можно просто использовать PostgreSQL.
 
-## PostgreSQL Capabilities
+## ПостгреСКУЛ
 
-*   **TimeSeries**
+*   **Временные серии**
 
-    PostgreSQL embraces Timescale, a powerful time-series database extension for efficient handling of time-stamped data.
+    PostgreSQL использует Timescale, мощное расширение базы данных временных серий для эффективного обработки данных с временной печатью.
 
-*   **Machine Learning**
+*   **Машиновое обучение**
 
-    With pgVector and PostgresML, Postgres can support machine learning capabilities and vector similarity searches.
+    С помощью pgVector и PostgresML, Postgres может поддерживать возможности машинного обучения и поиски вектора сходства.
 
 *   **OLAP**
 
-    Postgres can support OLAP with tools such as Hydra, Citus, and pg\_analytics.
+    Postgres может поддерживать OLAP с помощью таких инструментов, как Hydra, Citus и pg\_analytics.
 
-*   **Derived**
+*   **Производные**
 
-    Even derived databases such as DuckDB, FerretDB, CockroachDB, AlloyDB, YugaByte DB, Supabase, etc provide PostgreSQL.
+    Даже полученные базы данных, такие как DuckDB, FerretDB, CockroachDB, AlloyDB, YugaByte DB, Supabase и т. Д., предоставляют PostgreSQL.
 
-*   **GeoSpatial**
+*   **Геопространственный**
 
-    PostGIS extends PostgreSQL with geospatial capabilities, enabling you to easily store, query, and analyze geographic data.
+    PostGIS расширяет PostgreSQL с геопространственными возможностями, позволяя легко хранить, запрашивать и анализировать географические данные.
 
-*   **Search**
+*   **Поиск**
 
-    Postgres extensions like pgroonga, ParadeDB, and ZomboDB provide full-text search, text indexing, and data parsing capabilities.
+    Расширения Postgres, такие как pgroonga, ParadeDB и ZomboDB, обеспечивают полнотекстовое поиск, индексацию текста и возможности анализа данных.
 
-*   **Federated**
+*   **Федерация**
 
-    Postgres seamlessly integrates with various data sources such as MongoDB, MySQL, Redis, Oracle, ParquetDB, SQLite, etc, enabling federated querying and data access.
+    Postgres бесперебойно интегрируется с различными источниками данных, такими как MongoDB, MySQL, Redis, Oracle, ParquetDB, SQLite и т. Д., что позволяет федеративное запрос и доступ к данным.
 
-*   **Graph**
+*   **График**
 
-    Apache AGE and EdgeDB are graph databases built on top of PostgreSQL. Also, pg\_graphql is an extension that provides GraphQL support for Postgres.
+    Apache AGE и EdgeDB - это графические базы данных, построенные на PostgreSQL. Кроме того, pg\_graphql является расширением, которое обеспечивает поддержку GraphQL для Postgres.

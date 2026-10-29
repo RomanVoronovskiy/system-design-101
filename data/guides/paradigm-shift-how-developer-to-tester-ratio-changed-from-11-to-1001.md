@@ -1,6 +1,6 @@
 ---
-title: "Paradigm Shift: Developer to Tester Ratio"
-description: "Explore the paradigm shift in developer to tester ratios over the years."
+title: "Смена подхода: соотношение разработчиков и тестировщиков"
+description: "Изучение вопроса о переходе с годами на парадигму в разработчиках на тесто."
 image: "https://assets.bytebytego.com/diagrams/0170-dev-tester-ratio.png"
 createdAt: "2024-02-21"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0170-dev-tester-ratio.png)
 
-This post is inspired by the article "The Paradigm Shifts with Different Dev:Test Ratios" by [Carlos Arguelles](https://www.linkedin.com/in/ACoAAABj60kByWwNDRyWLdeCCmaKZYUHd4LynqQ). I highly recommend that you read the original article [here](https://lnkd.in/ehbZzZck).
+В основе этого столбца лежит статья "Парадигм сдвигается с разной девкой: тестовые соотношения" [Карлос Аргуэльес](https://www.linkedin.com/in/ACoAAABj60kByWwNDRyWLdeCCmaKZYUHd4LynqQ). Я настоятельно рекомендую вам прочитать оригинальную статью. [Вот](https://lnkd.in/ehbZzZck).
 
-## 1:1 ratio (~1997)
+## 1:1 (~ 1997 год)
 
-Software used to be burned onto physical CDs and delivered to customers. The development process was waterfall-style, builds were certified, and versions were released roughly every three years.
+Программное обеспечение раньше сжигалось на компакт-дисках и доставлялось клиентам. Процесс разработки был по-настоящему похож на водопад, здания были сертифицированы, а версии выпускались примерно каждые три года.
 
-If you had a bug, that bug would live forever. It wasn’t until years later that companies added the ability for software to ping the internet for updates and automatically install them.
+Если бы у тебя был жучок, этот жучок жил бы вечно. До конца жизни компании добавили возможность программного обеспечения для пинг-портала для обновления и автоматической установки.
 
-## 10:1 ratio (~2009)
+## 10:1 соотношение (~2009)
 
-Around 2009, the release-to-production speed increased significantly. Patches could be installed within weeks, and the agile movement, along with iteration-driven development, changed the development process.
+Примерно 2009 человек, скорость выпуска в производство, значительно возросла. В течение недель можно было бы установить петли, и быстрота движения, наряду с развитием, ориентированным на итерацию, изменила процесс развития.
 
-For example, at Amazon, the web services are mainly developed and tested by the developers. They are also responsible for dealing with production issues, and testing resources are stretched thin (10:1 ratio).
+Например, в Амазонии вебуслуги разрабатываются и проверяются главным образом разработчиками. Они также отвечают за решение вопросов производства, а ресурсы, выделяемые на проведение испытаний, являются небольшими (10:1).
 
-## 100:1 ratio (~2020)
+## Соотношение 100:1 (~2020)
 
-Around 2015, big tech companies like Google and Microsoft removed SDET or SETI titles, and Amazon slowed down the hiring of SDETs.
+Примерно в 2015 году такие крупные технологические компании, как Google и Microsoft удалили титулы SDET или SETI, и Амазонка замедлила набор SDET.
 
-But how is this going to work for big tech in terms of testing?
+Но как это будет работать для больших технологий с точки зрения тестирования?
 
-Firstly, the testing aspect of the software has shifted towards highly scalable, standardized testing tools. These tools have been widely adopted by developers for building their own automated tests.
+Во-первых, в рамках программы были приняты меры по повышению эффективности использования стандартизированных инструментов. Эти инструменты широко используются разработчиками для создания собственных автоматизированных тестов.
 
-Secondly, testing knowledge is disseminated through education and consulting.
+Во-вторых, знания о тестировании распространяются посредством просвещения и консультаций.
 
-Together, these factors have facilitated a smooth transition to the 100:1 testing ratio we see today.
+В совокупности эти факторы способствовали плавному переходу к коэффициенту 100:1, который мы видим сегодня.

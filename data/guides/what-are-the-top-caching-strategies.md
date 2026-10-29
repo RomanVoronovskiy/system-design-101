@@ -1,6 +1,6 @@
 ---
-title: "Top Caching Strategies"
-description: "Explore the top caching strategies to optimize system performance."
+title: "Основные стратегии кеширования"
+description: "Изучение стратегий скачки верхних слоев для оптимизации функционирования системы."
 image: "https://assets.bytebytego.com/diagrams/0129-caching-strategy.jpg"
 createdAt: "2024-03-12"
 draft: false
@@ -11,21 +11,21 @@ tags:
   - "performance"
 ---
 
-![caching strategy](https://assets.bytebytego.com/diagrams/0129-caching-strategy.jpg)
+![Основные стратегии кеширования](https://assets.bytebytego.com/diagrams/0129-caching-strategy.jpg)
 
-Read data from the system:
+Читать данные из системы:
 
-*   **Cache aside**
-*   **Read through**
+*   **Кэш в сторону**
+*   **Прочитай**
 
-Write data to the system:
+Запишите данные в систему:
 
-*   **Write around**
-*   **Write back**
-*   **Write through**
+*   **Пишите вокруг**
+*   **Запишите ответ.**
+*   **Запишите**
 
-The diagram above illustrates how those 5 strategies work. Some of the caching strategies can be used together.
+На приведенной выше диаграмме показано, как эти пять стратегий работают. Некоторые из этих стратегий могут использоваться вместе.
 
-I left out a lot of details as that will make the post very long.
+Я забыл много деталей, так как это сделает пост очень долгим.
 
-Feel free to leave a comment so we can learn from each other.
+Не стесняйтесь оставить комментарий, чтобы мы могли учиться друг у друга.

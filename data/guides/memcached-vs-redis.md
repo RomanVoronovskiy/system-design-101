@@ -1,6 +1,6 @@
 ---
-title: "Memcached vs Redis"
-description: "Explore the key differences between Memcached and Redis for caching."
+title: "Memcached и Redis: сравнение"
+description: "Исследуйте ключевые различия между Memcached и Redis для кеширования."
 image: "https://assets.bytebytego.com/diagrams/0267-memcached-redis.jpg"
 createdAt: "2024-02-25"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0267-memcached-redis.jpg)
 
-Popular interview question - what are the differences between Redis and Memcached?
+Популярный вопрос интервью - в чем разница между Redis и Мемкачедом?
 
-The diagram above illustrates the key differences. The advantages of data structures make Redis a good choice for:
+Выше приведенная схема иллюстрирует ключевые различия. Преимущества структур данных делают Redis хорошим выбором для:
 
-*   Recording the number of clicks and comments for each post (hash)
+*   Запись количества кликов и комментариев для каждого сообщения (hash)
 
-*   Sorting the commented user list and deduping the users (zset)
+*   Оформление комментированного списка пользователей и вычисление пользователей (zset)
 
-*   Caching user behavior history and filtering malicious behaviors (zset, hash)
+*   Каширование истории поведения пользователей и фильтрация вредоносных поведений (zset, хэш)
 
-*   Storing boolean information of extremely large data into small space. For example, login status, membership status. (bitmap)
+*   Сохранение булевой информации чрезвычайно больших данных в небольшом пространстве. Например, статус входа, статус членства. (биткарта)

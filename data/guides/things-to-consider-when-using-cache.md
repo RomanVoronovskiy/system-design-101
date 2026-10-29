@@ -1,6 +1,6 @@
 ---
-title: "Things to Consider When Using Cache"
-description: "Top 5 things to consider when using cache to build fast online systems."
+title: "Что учитывать при использовании кеша"
+description: "Пять самых важных вещей, которые нужно учитывать при использовании кэша для создания быстрых онлайн-систем."
 image: "https://assets.bytebytego.com/diagrams/0362-things-to-consider-when-using-cache.png"
 createdAt: "2024-02-23"
 draft: false
@@ -13,58 +13,58 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0362-things-to-consider-when-using-cache.png)
 
-Caching is one of the 𝐦𝐨𝐬𝐭 𝐜𝐨𝐦𝐦𝐨𝐧𝐥𝐲 used techniques when building fast online systems. When using a cache, here are the top 5 things to consider:
+Кегинг — один из наиболее часто используемых методов создания быстродействующих онлайновых систем. При использовании кэша, вот пять главных моментов, которые следует учитывать:
 
-The first version of the cheatsheet was written by guest author [Love Sharma](https://twitter.com/Zonito87).
+Первая версия лотка была написана гостем-автором [Любовь Шарма](https://twitter.com/Zonito87).
 
-## Suitable Scenarios
+## Подходящие сценарии
 
-*   In-memory solution
+*   Непоминаемое решение
 
-*   Read heavy system
+*   Читать по тяжелой системе
 
-*   Data is not frequently updated
+*   Данные нечасто обновляются
 
-## Caching Techniques
+## Методы клешни
 
-*   Cache aside
+*   Кэш в сторону
 
-*   Write-through
+*   Запись
 
-*   Read-through
+*   Прочитать
 
-*   Write-around
+*   Писание
 
-*   Write-back
+*   Списание
 
-## Cache Eviction Algorithms
+## Вывоз кэша
 
-*   Least Recently Used (LRU)
+*   Наименее недавно использованные (ЛРУ)
 
-*   Least Frequently Used (LFU)
+*   Наименее часто используемые (LFU)
 
-*   First-in First-out (FIFO)
+*   Первый выход (ФИФО)
 
-*   Random Replacement (RR)
+*   Случайная замена (RR)
 
-## Key Metrics
+## Основные параметры
 
-*   Cache Hit Ratio
+*   Соотношение кэша и кита
 
-*   Latency
+*   Широкая
 
-*   Throughput
+*   Проход
 
-*   Invalidation Rate
+*   Коэффициент недействительности
 
-*   Memory Usage
+*   Использование памяти
 
-*   CPU usage
+*   Использование процессора
 
-*   Network usage
+*   Использование сети
 
-## Other Issues
+## Прочие вопросы
 
-*   Thunder herd on cold start
+*   Громкое стадо при холодном запуске
 
-*   Time-to-live (TTL)
+*   Время жизни (TTL)

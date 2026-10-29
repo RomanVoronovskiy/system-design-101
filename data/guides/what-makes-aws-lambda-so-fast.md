@@ -1,6 +1,6 @@
 ---
-title: "What makes AWS Lambda so fast?"
-description: "Explore the key factors behind AWS Lambda's impressive speed."
+title: "Почему AWS Lambda работает так быстро?"
+description: "Изучите ключевые факторы, лежащие в основе впечатляющей скорости AWS Lambda."
 image: "https://assets.bytebytego.com/diagrams/0417-what-makes-aws-lambda-so-fast.png"
 createdAt: "2024-02-06"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0417-what-makes-aws-lambda-so-fast.png)
 
-There are 4 main pillars:
+Существует четыре основных направления:
 
-## Function Invocation
+## Вызов функции
 
-AWS Lambda supports synchronous and asynchronous invocation.
+АВС Ламбда поддерживает синхронную и асинхронную мольбу.
 
-In synchronous invocation, the caller directly calls the Lambda function using AWS CLI, SDK, or other services.
+В синхронном обращении звонящий напрямую называет функцию Lambda с помощью AWS CLI, SDK или других услуг.
 
-In asynchronous invocation, the caller doesn’t wait for the function’s response. The request is authorized and an event is placed in an internal SQS queue. Pollers read messages from the queue and send them for processing.
+В асинхронной апелляции звонящий не ждёт функции, ответ. Запрос разрешен, и мероприятие помещается в внутреннюю очередь SQS. Проверяющие читают сообщения из очереди и отправляют их на обработку.
 
-## Assignment Service
+## Служба назначения
 
-The Assignment Service manages the execution environments.
+Служба назначения управляет условиями исполнения.
 
-The service is written in Rust for high performance and is divided into multiple partitions with a leader-follower approach for high availability.
+Эта служба написана на Rust для высоких показателей и разделена на несколько разделок с подходом, основанным на принципе "лидер-следитель" для обеспечения высокой доступности.
 
-The state of execution environments is written to an external journal log.
+Состояние среды исполнения записывается во внешний журнал журнала.
 
-## Firecracker MicroVM
+## Микромегаммозные устройства
 
-Firecracker is a lightweight virtual machine manager designed for running serverless workloads such as AWS Lambda and AWS Fargate.
+Firecracker — легковесный виртуальный менеджер, предназначенный для работы без серверов, таких как AWS Lambda и AWS Fargate.
 
-It uses Linux’s Kernel-based virtual machine to create and manage secure, fast-booting microVMs.
+Он использует виртуальную машину на базе Kernel для создания и управления безопасными, быстро заряжающимися микроВЧ.
 
-## Component Storage
+## Хранение компонентов
 
-AWS Lambda also has to manage the state consisting of input data and function code.
+AWS Lambda также должен управлять состоянием, состоящим из входных данных и кода функции.
 
-To make it efficient, it uses multiple techniques:
+Для обеспечения его эффективности в нем используются различные методы:
 
-*   Chunking to store the container images more efficiently.
-*   Using convergent encryption to secure the shared data. This involves appending additional data to the chunk to compute a more robust hash.
-*   SnapStart feature to reduce cold start latency by pre-initializing the execution environment
+*   Скапываясь, чтобы хранить снимки контейнеров более эффективно.
+*   Использование конвергентного шифрования для защиты совместно используемых данных. Это предполагает добавление дополнительных данных к куску, чтобы получить более прочную хешию.
+*   Функция SnapStart для уменьшения чувствительности к запуску холодного двигателя путем предварительной инициирования условий исполнения

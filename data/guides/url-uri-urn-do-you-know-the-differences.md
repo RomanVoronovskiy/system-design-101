@@ -1,6 +1,6 @@
 ---
-title: 'URL, URI, URN - Differences Explained'
-description: 'Understand the differences between URL, URI, and URN with clear examples.'
+title: "URL, URI и URN: в чём различия"
+description: "Поймите различия между URL, URI и URN с четкими примерами."
 image: 'https://assets.bytebytego.com/diagrams/0401-url-uri-urn.png'
 createdAt: '2024-02-21'
 draft: false
@@ -13,13 +13,13 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0401-url-uri-urn.png)
 
-The diagram above shows a comparison of URL, URI, and URN.
+На диаграмме выше показано сопоставление URL, URI и URN.
 
 *   **URI**
 
-    URI stands for Uniform Resource Identifier. It identifies a logical or physical resource on the web. URL and URN are subtypes of URI. URL locates a resource, while URN names a resource.
+    URI означает Единообразный идентификатор ресурсов. В ней указаны логические или физические ресурсы в Интернете. URL и URN являются подтипами URI. URL обнаруживает ресурс, а URN обозначает ресурс.
 
-A URI is composed of the following parts:
+МСИ состоит из следующих частей:
 
 ```
 scheme:[//authority]path[?query][#fragment]
@@ -27,7 +27,7 @@ scheme:[//authority]path[?query][#fragment]
 
 *   **URL**
 
-    URL stands for Uniform Resource Locator, the key concept of HTTP. It is the address of a unique resource on the web. It can be used with other protocols like FTP and JDBC.
+    URL означает Унифицированный поисковый ресурс, ключевую концепцию HTTP. Это адрес уникального ресурса в Интернете. Она может использоваться с другими протоколами, такими как FTP и JDBC.
 *   **URN**
 
-    URN stands for Uniform Resource Name. It uses the urn scheme. URNs cannot be used to locate a resource. A simple example given in the diagram is composed of a namespace and a namespace-specific string.
+    URN означает "Единообразные ресурсы". Он использует урну. ОРН не могут быть использованы для обнаружения ресурсов. Простой пример, приведенный на диаграмме, состоит из пространства для имени и строки для имени.

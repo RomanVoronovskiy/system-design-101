@@ -1,6 +1,6 @@
 ---
-title: "Payment System"
-description: "Explore the architecture and flow of a typical payment system."
+title: "Платёжная система"
+description: "Изучение архитектуры и потока типичной системы платежей."
 image: "https://assets.bytebytego.com/diagrams/0299-payment-system.jpeg"
 createdAt: "2024-03-07"
 draft: false
@@ -14,26 +14,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0299-payment-system.jpeg)
 
-Here is how money moves when you click the Buy button on Amazon or any of your favorite shopping websites.
+Вот как двигаются деньги, когда вы нажимаете кнопку "Бай" на Амазонке или на любой из ваших любимых торговых сайтов.
 
-## Payment Flow
+## Процесс обработки платежа
 
-*   When a user clicks the “Buy” button, a payment event is generated and sent to the payment service.
+*   Когда пользователь нажимает кнопку, Buy, то производится платеж и отправляется в платежную службу.
 
-*   The payment service stores the payment event in the database.
+*   Платежный сервис хранит платежное событие в базе данных.
 
-*   Sometimes a single payment event may contain several payment orders. For example, you may select products from multiple sellers in a single checkout process. The payment service will call the payment executor for each payment order.
+*   Иногда в одном платежном случае может содержаться несколько платежных поручений. Например, вы можете выбрать продукцию из нескольких продавцов в рамках одного процесса оформления. Платежные услуги будут вызывать исполнителя платежа по каждому платежному ордеру.
 
-*   The payment executor stores the payment order in the database.
+*   Платежный исполнитель хранит платежный ордер в базе данных.
 
-*   The payment executor calls an external PSP to finish the credit card payment.
+*   Платежный исполнитель вызывает внешних сотрудников, чтобы закончить платеж по кредитной карте.
 
-*   After the payment executor has successfully executed the payment, the payment service will update the wallet to record how much money a given seller has.
+*   После того как платежный исполнитель успешно выполнил платеж, платежная служба обновит бумажник, чтобы зафиксировать, сколько денег у данного продавца.
 
-*   The wallet server stores the updated balance information in the database.
+*   На бумажнике хранится обновленная информация о балансе в базе данных.
 
-*   After the wallet service has successfully updated the seller’s balance information, the payment service will call the ledger to update it.
+*   После того как служба бумажника успешно обновила информацию о продавце, о балансе, она вызовет в бухгалтерскую книгу для обновления.
 
-*   The ledger service appends the new ledger information to the database.
+*   Служба бухгалтерского учета приобщает к базе данных новую бухгалтерскую информацию.
 
-*   Every night the PSP or banks send settlement files to their clients. The settlement file contains the balance of the bank account, together with all the transactions that took place on this bank account during the day.
+*   Каждый вечер PSP или банки посылают файлы расчетов своим клиентам. В файле расчетов содержится остаток средств на банковском счете, а также все операции, которые были произведены на этом банковском счете в течение дня.

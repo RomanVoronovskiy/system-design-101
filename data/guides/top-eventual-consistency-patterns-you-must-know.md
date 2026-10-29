@@ -1,6 +1,6 @@
 ---
-title: "Top Eventual Consistency Patterns You Must Know"
-description: "Explore eventual consistency patterns for distributed database design."
+title: "Основные шаблоны согласованности в конечном счёте"
+description: "Изучение возможных моделей согласованности для распределенной структуры базы данных."
 image: "https://assets.bytebytego.com/diagrams/0100-eventual-consistency-patterns-you-must-know.png"
 createdAt: "2024-02-15"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0100-eventual-consistency-patterns-you-must-know.png)
 
-Eventual consistency is a data consistency model that ensures that updates to a distributed database are eventually reflected across all nodes. Techniques like async replication help achieve eventual consistency.
+В случае слаженности данных используется модель согласованности данных, которая обеспечивает, чтобы обновление распределенной базы данных в конечном итоге отражалось во всех узлах. Такие методы, как асинкальное воспроизведение, помогают достичь конечной последовательности.
 
-However, eventual consistency can also result in data inconsistency. Here are 4 patterns that can help you design applications.
+Однако в конечном счете согласованность может также привести к непоследовательности данных. Вот 4 схемы, которые могут помочь вам в проектировании приложений.
 
-## Event-based Eventual Consistency
+## Последовательность действий на основе конкретных событий
 
-Services emit events and other services listen to these events to update their database instances. This makes services loosely coupled but delays data consistency.
+Услуги излучают события, а другие службы слушают эти события, чтобы обновить их базы данных. Это делает услуги малоувязанными, но замедляет согласованность данных.
 
-## Background Sync Eventual Consistency
+## Согласованность в конечном счёте с фоновой синхронизацией
 
-In this pattern, a background job makes the data across databases consistent. It results in slower eventual consistency since the background job runs on a specific schedule.
+В этой связи работа по справочной информации позволяет обеспечить согласованность данных, получаемых в рамках баз данных. Это приводит к снижению степени согласованности, поскольку работа по исходному делу ведется по конкретному графику.
 
-## Saga-based Eventual Consistency
+## Последовательность на основе Saga
 
-Saga is a sequence of local transactions where each transaction updates data with a single service. It is used to manage long-lived transactions that are eventually consistent.
+Saga — это последовательность местных операций, в которых каждая операция обновляет данные с одной службой. Она используется для управления долгосрочными операциями, которые в конечном счете являются последовательными.
 
-## CQRS-based Eventual Consistency
+## :: Последовательность на основе CQRS
 
-Separate read and write operations into different databases that are eventually consistent. Read and write models can be optimized for specific requirements.
+Раздельно читать и писать операции в различных базах данных, которые в конечном счете являются последовательными. Модели чтения и записи могут быть оптимизированы для конкретных требований.

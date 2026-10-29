@@ -1,6 +1,6 @@
 ---
-title: 'McDonald’s Event-Driven Architecture'
-description: 'Explore McDonald’s event-driven architecture for scalability and efficiency.'
+title: "Событийная архитектура McDonald’s"
+description: "Исследуйте архитектуру McDonald's, основанную на событиях, для масштабируемости и эффективности."
 image: 'https://assets.bytebytego.com/diagrams/0266-mcdonald-s-event-driven-architecture.png'
 createdAt: '2024-02-18'
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0266-mcdonald-s-event-driven-architecture.png)
 
-Think you know everything about McDonald's? What about its event-driven architecture?
+Думаешь, ты знаешь все о Макдональдсе? А что насчет архитектуры, основанной на событиях?
 
-McDonald's standardizes events using the following components:
+McDonald's стандартизирует мероприятия с использованием следующих компонентов:
 
-*   **Event Registry:** An event registry to define a standardized schema.
-*   **Custom SDKs:** Custom software development kits (SDKs) to process events and handle errors.
-*   **Event Gateway:** An event gateway that performs identity authentication and authorization.
-*   **Utilities and Tools:** Utilities and tools to fix events, keep the cluster healthy, and perform administrative tasks.
+*   **Регистр событий:** Реестр событий для определения стандартизированной схемы.
+*   **Устройства SDK:** Настроенные комплекты разработки программного обеспечения (SDK) для обработки событий и обработки ошибок.
+*   **Входные ворота:** Входные системы для проведения событий, выполняющие аутентификацию личности и авторизацию.
+*   **Коммунальные средства и инструменты:** Утилиты и инструменты для исправления событий, сохранения здоровья кластера и выполнения административных задач.
 
-To scale event processing, McDonald uses a regional architecture that provides global availability based on AWS. Within a region, producers shard events by domains, and each domain is processed by an MSK cluster. The cluster auto-scales based on MSK metrics (e.g., CPU usage), and the auto-scale workflow is based on step-functions and re-assignment tasks.
+Для масштабирования процесса проведения событий Макдональдс использует региональную архитектуру, которая обеспечивает глобальную доступность на основе AWS. В рамках региона производители разделяют события по доменям, и каждый домен обрабатывается кластером MSK. Автоматурные масштабы кластера на основе метрики MSK (например, использование процессора), а рабочий поток автоматурного масштаба основывается на этаповых функциях и задачах переназначения.
 
-Reference: Behind the scenes: [McDonald’s event-driven architecture](https://medium.com/mcdonalds-technical-blog/behind-the-scenes-mcdonalds-event-driven-architecture-51a6542c0d86)
+Ссылка: За кулисами: [Архитектура McDonald's, основанная на мероприятиях](https://medium.com/mcdonalds-technical-blog/behind-the-scenes-mcdonalds-event-driven-architecture-51a6542c0d86)

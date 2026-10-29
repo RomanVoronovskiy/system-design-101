@@ -1,6 +1,6 @@
 ---
-title: "Low Latency Stock Exchange"
-description: "Explore the architecture of a low-latency stock exchange system."
+title: "Фондовая биржа с низкой задержкой"
+description: "Исследуйте архитектуру системы фондовой биржи с низким задержком."
 image: "https://assets.bytebytego.com/diagrams/0265-low-latency-stock-exchange.jpg"
 createdAt: "2024-02-26"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0265-low-latency-stock-exchange.jpg)
 
-How does a modern stock exchange achieve **microsecond latency**? The principal is:
+Как современная фондовая биржа достигает **латентность микросекунд**? Директор:
 
-**Do less on the critical path**
+**Не столько на критическом пути**
 
-*   Fewer tasks on the critical path
+*   Меньшие задачи на критическом пути
 
-*   Less time on each task
+*   Меньше времени на каждую задачу
 
-*   Fewer network hops
+*   Меньше сетевых скольз
 
-*   Less disk usage
+*   Меньшее использование диска
 
-For the stock exchange, the critical path is:
+Для фондовой биржи критический путь:
 
-*   **start**: an order comes into the order manager
+*   **начать**: заказ поступает в менеджера заказа
 
-*   mandatory risk checks
+*   обязательные проверки рисков
 
-*   the order gets matched and the execution is sent back
+*   Приказ соответствует и исполнение возвращается.
 
-*   **end**: the execution comes out of the order manager
+*   **конец**: исполнение выходит из менеджера заказа
 
-Other non-critical tasks should be removed from the critical path.
+Другие некритические задачи следует исключить из критического пути.
 
-We put together a design as shown in the diagram:
+Мы собрали дизайн, как показано на диаграмме:
 
-*   deploy all the components in a single giant server (no containers)
+*   развернуть все компоненты в одном гигантском сервере (без контейнеров)
 
-*   use shared memory as an event bus to communicate among the components, no hard disk
+*   использовать общую память в качестве маршрутизатора событий для общения между компонентами, нет жесткого диска
 
-*   key components like Order Manager and Matching Engine are single-threaded on the critical path, and each pinned to a CPU so that there is **no context switch** and **no locks**
+*   ключевые компоненты, такие как менеджер заказов и Matching Engine, находятся на критическом пути, и каждый из них закреплен на процессоре, чтобы **отсутствие переключателя контекста** и **без блокировок**
 
-*   the single-threaded application loop executes tasks one by one in sequence
+*   однопроводный цикл приложений выполняет задачи по порядку
 
-*   other components listen on the event bus and react accordingly
+*   другие компоненты слушают на автобусе событий и реагируют соответственно

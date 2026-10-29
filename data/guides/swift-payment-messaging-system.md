@@ -1,6 +1,6 @@
 ---
-title: "SWIFT Payment Messaging System"
-description: "Explore the SWIFT system, its role in secure, cross-border payments."
+title: "Система обмена платёжными сообщениями SWIFT"
+description: "Изучение системы СВИФТ, ее роли в обеспечении безопасности трансграничных платежей."
 image: "https://assets.bytebytego.com/diagrams/0348-swift-payment-messaging-system.png"
 createdAt: "2024-02-28"
 draft: false
@@ -13,42 +13,42 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0348-swift-payment-messaging-system.png)
 
-You probably heard about SWIFT. What is SWIFT? What role does it play in cross-border payments? You can find answers to those questions in this post.
+Вы, наверное, слышали о СВИФТ. Что такое SWIFT? Какую роль она играет в трансграничных платежах? Ответы на эти вопросы можно найти в этом посте.
 
-The Society for Worldwide Interbank Financial Telecommunication (SWIFT) is the main secure **messaging system** that links the world’s banks.
+Общество межбанковских финансовых телекоммуникаций (SWIFT) является основным надежным органом **система обмена сообщениями** , которая связывает банки по всему миру.
 
-The Belgium-based system is run by its member banks and handles millions of payment messages per day. The diagram above illustrates how payment messages are transmitted from Bank A (in New York) to Bank B (in London).
+Базирская система функционирует под руководством банков-членов и ежедневно обрабатывает миллионы платежных сообщений. На приведенной выше диаграмме показано, как платежные сообщения передаются Банком А (в Нью-Йорке) Банку В (в Лондоне).
 
-## SWIFT Message Flow
+## Путь сообщения в SWIFT
 
-Step 1: Bank A sends a message with transfer details to Regional Processor A in New York. The destination is Bank B.
+Шаг 1: Банк А направляет сообщение с деталями передачи Региональному процессору А в Нью-Йорке. Место назначения - Банк Б.
 
-Step 2: Regional processor validates the format and sends it to Slice Processor A. The Regional Processor is responsible for input message validation and output message queuing. The Slice Processor is responsible for storing and routing messages safely.
+Этап 2: Региональный процессор подтверждает формат и направляет его на процессор-сценарист А. Региональный процессор отвечает за проверку входных сообщений и ввод сообщений в исходное состояние. Процессор Слэйса отвечает за хранение и передачу сообщений в безопасных условиях.
 
-Step 3: Slice Processor A stores the message.
+Шаг 3: процессор среза A сохраняет сообщение.
 
-Step 4: Slice Processor A informs Regional Processor A the message is stored.
+Шаг 4: Слой процессор A информирует региональный процессор A о том, что сообщение хранится.
 
-Step 5: Regional Processor A sends ACK/NAK to Bank A. ACK means a message will be sent to Bank B. NAK means the message will NOT be sent to Bank B.
+Шаг 5: Региональный процессор А направляет АКК/НАК в банк А. ACK означает, что сообщение будет отправлено в Банк B. NAK означает, что сообщение не будет направлено Банку B.
 
-Step 6: Slice Processor A sends the message to Regional Processor B in London.
+Шаг 6: Процессор-а-скрип-а передает сообщение Региональному процессору В в Лондоне.
 
-Step 7: Regional Processor B stores the message temporarily.
+Шаг 7: Региональный процессор B хранит сообщение временно.
 
-Step 8: Regional Processor B assigns a unique ID MON (Message Output Number) to the message and sends it to Slice Processor B
+Шаг 8: Региональный процессор В присваивает сообщение уникальному IDMON (номер вывода) и направляет его в процессор-расшифровку B
 
-Step 9: Slice Processor B validates MON.
+Шаг 9: Процессор-разработчик B подтверждает Единство действий.
 
-Step 10: Slice Processor B authorizes Regional Processor B to send the message to Bank B.
+Шаг 10: Процессор B уполномочивает региональный процессор B направить сообщение в банк B.
 
-Step 11: Regional Processor B sends the message to Bank B.
+Шаг 11: Региональный процессор B направляет сообщение Банку B.
 
-Step 12: Bank B receives the message and stores it.
+Шаг 12: Банк B получает сообщение и хранит его.
 
-Step 13: Bank B sends UAK/UNK to Regional Processor B. UAK (user positive acknowledgment) means Bank B received the message without error; UNK (user negative acknowledgment) means Bank B received checksum failure.
+Шаг 13: Банк B направляет УАК/УК в региональный процессор В. UAK (позитивное признание пользователя) означает банк B, получивший сообщение без ошибки; UNK (отрицательное признание пользователя) означает банк B, получивший проверочную неисправность.
 
-Step 14: Regional Processor B creates a report based on Bank B’s response, and sends it to Slice Processor B.
+Шаг 14: Региональный процессор B создает доклад, основанный на Банке B, ответ, и направляет его в Slice Processor B.
 
-Step 15: Slice Processor B stores the report.
+Шаг 15: Сегментный процессор B хранит отчет.
 
-Step 16 - 17: Slice Processor B sends a copy of the report to Slice Processor A. Slice Processor A stores the report.
+Шаг 16 — 17: Процессор-разработчик B направляет копию отчета в процессор-Сектор А. Секс-процессор А хранит отчет.

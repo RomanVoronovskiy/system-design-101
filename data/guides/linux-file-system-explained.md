@@ -1,6 +1,6 @@
 ---
-title: "Linux File System Explained"
-description: "Understanding the Linux file system hierarchy and its importance."
+title: "Как устроена файловая система Linux"
+description: "Понимание иерархии файловой системы Linux и ее важности."
 image: "https://assets.bytebytego.com/diagrams/0258-linux-file-system-explained.jpg"
 createdAt: "2024-03-12"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0258-linux-file-system-explained.jpg)
 
-The Linux file system used to resemble an unorganized town where individuals constructed their houses wherever they pleased. However, in 1994, the Filesystem Hierarchy Standard (FHS) was introduced to bring order to the Linux file system.
+Файловая система Linux напоминала неорганизованный город, где люди строили свои дома, где захотели. Однако в 1994 году был введен стандарт файловой иерархии (FHS), чтобы обеспечить порядок в файловой системе Linux.
 
-By implementing a standard like the FHS, software can ensure a consistent layout across various Linux distributions. Nonetheless, not all Linux distributions strictly adhere to this standard. They often incorporate their own unique elements or cater to specific requirements.
+Соблюдение стандарта FHS позволяет одинаково организовать расположение файлов программ в разных дистрибутивах Linux. Тем не менее, не все дистрибутивы Linux строго соблюдают этот стандарт. Они часто включают в себя свои собственные уникальные элементы или удовлетворяют конкретным требованиям.
 
-To become proficient in this standard, you can begin by exploring. Utilize commands such as "cd" for navigation and "ls" for listing directory contents. Imagine the file system as a tree, starting from the root (/). With time, it will become second nature to you, transforming you into a skilled Linux administrator.
+Чтобы стать мастерским в этом стандарте, можно начать с исследования. Используйте такие команды, как "cd" для навигации и "ls" для перечня содержимого каталога. Представьте файловую систему как дерево, начиная с корня (/). Со временем это станет для вас второй природой, превратив вас в квалифицированного администратора Linux.

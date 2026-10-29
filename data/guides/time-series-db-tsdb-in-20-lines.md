@@ -1,6 +1,6 @@
 ---
-title: "Time Series DB (TSDB) in 20 Lines"
-description: "Learn about Time Series Databases (TSDB) and their applications."
+title: "Базы данных временных рядов: краткое введение"
+description: "Узнайте о базах данных временных рядов (TSDB) и их приложениях."
 image: "https://assets.bytebytego.com/diagrams/0364-time-series-db-tsdb-in-20-lines.jpeg"
 createdAt: "2024-02-07"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0364-time-series-db-tsdb-in-20-lines.jpeg)
 
-What is **Time-Series DB** (TSDB)? How is it different from Relational DB?
+Что это такое? **База данных временных рядов** (ТБР)? Чем это отличается от DB?
 
-The diagram above shows the **internal data model** of a typical Time-Series DB.
+На приведенной выше диаграмме показано следующее: **внутренняя модель данных** DB типичного DB-порядка времени.
 
-A TSDB is a database optimized for time series data.
+БДБДМ является базой данных, оптимизированной для данных временных рядов.
 
-*   From the users’ perspective, the data looks similar to the relational DB table. But behind the scenes, the weather table is stored in 4 TSMs (Time-Structured Merge Trees) in the format of \[Measurement, Tag, Field Name].
+*   С точки зрения пользователей, данные выглядят аналогично реляционной таблице DB. Но за кулисами, погодный стол хранится в 4 ТМЗ (Time-Structeded Squages) в формате \ [Измерение, метка, название поля].
 
-*   In this way, we can quickly aggregate and analyze data based on time and tags.
+*   Таким образом, мы можем быстро агрегировать и анализировать данные на основе времени и метки.
 
-*   Typical usage:
+*   Типичное использование:
 
-    *   Trades and market data updates in a market
-    *   Server metrics
-    *   Application performance monitoring
-    *   Network data
-    *   Sensor data
-    *   Events
-    *   Clicks streams
+    *   Обновление данных о торговле и рынках на рынке
+    *   Параметры сервера
+    *   Контроль за эффективностью применения
+    *   Данные сети
+    *   Данные датчиков
+    *   Мероприятия
+    *   Кликает по потокам

@@ -11,7 +11,7 @@ tags:
   - "Data Structures"
 ---
 
-![Java Collection Hierarchy](https://assets.bytebytego.com/diagrams/0240-java-collection.png)
+![Иерархия коллекций Java](https://assets.bytebytego.com/diagrams/0240-java-collection.png)
 
 Знакомы ли вы с Java Collection Framework?
 

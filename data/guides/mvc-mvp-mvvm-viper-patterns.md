@@ -1,6 +1,6 @@
 ---
-title: "MVC, MVP, MVVM, VIPER Patterns"
-description: "Comparing MVC, MVP, MVVM, and VIPER architectural patterns."
+title: "Шаблоны MVC, MVP, MVVM и VIPER"
+description: "Сравнивая структуру архитектуры MVC, MVP, MVVM и VIPER."
 image: "https://assets.bytebytego.com/diagrams/0143-client-arch-patterns.png"
 createdAt: "2024-03-12"
 draft: false
@@ -11,18 +11,18 @@ tags:
   - "software design"
 ---
 
-![MVC, MVP, MVVM, VIPER Patterns](https://assets.bytebytego.com/diagrams/0143-client-arch-patterns.png)
+![Шаблоны MVC, MVP, MVVM и VIPER](https://assets.bytebytego.com/diagrams/0143-client-arch-patterns.png)
 
-What distinguishes MVC, MVP, MVVM, MVVM-C, and VIPER architecture patterns from each other?
+Что отличает структуру архитектуры MVC, MVP, MVVM, MVVM-C и VIPER друг от друга?
 
-These architecture patterns are among the most commonly used in app development, whether on iOS or Android platforms. Developers have introduced them to overcome the limitations of earlier patterns. So, how do they differ?
+Эти архитектурные схемы относятся к числу наиболее часто используемых при разработке приложений, будь то на iOS или на платформах Android. Разработчики ввели их, чтобы преодолеть ограничения, присущие прежним моделям. Так в чем же они разногласят?
 
-*   MVC, the oldest pattern, dates back almost 50 years
+*   MVC, старейшая модель, датируется почти 50 лет
 
-*   Every pattern has a "view" (V) responsible for displaying content and receiving user input
+*   Каждая модель имеет "вид" (V), ответственный за отображение контента и получение данных пользователя
 
-*   Most patterns include a "model" (M) to manage business data
+*   Большинство моделей включают "модель" (М) для управления бизнес-данными
 
-*   "Controller," "presenter," and "view-model" are translators that mediate between the view and the model ("entity" in the VIPER pattern)
+*   «Контролер», «презентатор» и «модель просмотра» — это переводчики, которые выступают посредником между видом и моделью («формат» в модели VIPER)
 
-*   These translators can be quite complex to write, so various patterns have been proposed to make them more maintainable
+*   Эти переводчики могут быть довольно сложными для написания, поэтому были предложены различные схемы, чтобы сделать их более пригодными для обслуживания

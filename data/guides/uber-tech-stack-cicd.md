@@ -1,6 +1,6 @@
 ---
-title: Uber Tech Stack - CI/CD
-description: "Uber's CI/CD tech stack: Tools and platforms for efficient delivery."
+title: "Технологии Uber: CI/CD"
+description: "Стопка технологий Uber: Инструменты и платформы для эффективной доставки."
 image: 'https://assets.bytebytego.com/diagrams/0398-uber-tech-stack-ci-cd.png'
 createdAt: '2024-02-19'
 draft: false
@@ -11,28 +11,28 @@ tags:
   - Uber
 ---
 
-Uber is one of the most innovative companies in the engineering field. Let’s take a look at their CI/CD tech stacks.
+Uber — одна из самых инновационных компаний в инженерной области. Давайте посмотрим на их компьютерные стопки.
 
 ![](https://assets.bytebytego.com/diagrams/0398-uber-tech-stack-ci-cd.png)
 
-Note: This post is based on research on Uber engineering blogs. If you spot any inaccuracies, please let us know.
+Примечание: Эта статья основана на исследованиях, посвященных блогам Uber Engineering. Если вы заметите какие-нибудь неточности, пожалуйста, дайте нам знать.
 
-*   **Project planning:** JIRA
+*   **Планирование проектов:** JIRA
 
-*   **Backend services:** Spring Boot to develop their backend services. And to make things even faster, they've created a nifty configuration system called Flipr that allows for speedy configuration releases.
+*   **Резервные услуги:** Весенний Бут, чтобы развивать свои услуги. И чтобы сделать вещи еще быстрее, они создали нежную систему конфигурации, называемую Flipper, которая позволяет быстро выпускать конфигурацию.
 
-*   **Code issues:** They developed NullAway to tackle NullPointer problems and NEAL to lint the code. Plus, they built Piranha to clean out-dated feature flags.
+*   **Вопросы, касающиеся кода:** Они разработали NullAway для решения проблем NullPointer и NEAL для запятой кода. Плюс, они построили Пиранху, чтобы очистить устаревшие флаги.
 
-*   **Repository:** They believe in Monorepo. It uses Bazel on a large scale.
+*   **Репозиторий:** Они верят в Монорепо. Он использует Бэйзел в больших масштабах.
 
-*   **Testing:** They use SLATE to manage short-lived testing environments and rely on Shadower for load testing by replaying production traffic. They even developed Ballast to ensure a smooth user experience.
+*   **Тестирование:** Они используют SALTE для управления короткоживущими испытательными средами и используют Shadower для испытания нагрузки, переиграв производственный трафик. Они даже разработали Балласт для обеспечения беспрепятственного опыта пользователей.
 
-*   **Experiment platform:** it is based on deep learning and they've generously open-sourced parts of it, like Pyro.
+*   **Экспериментальная платформа:** Он основан на глубоком обучении и они щедро раскрыли его части, как Пиро.
 
-*   **Build:** Uber packages their services into containers using uBuild. It's their go-to tool, powered by Buildkite, for all the packaging tasks.
+*   **Сборка:** Uber помещает свои услуги в контейнеры с использованием UBAR. Это их инструмент, который работает на "Звёздном конюшне", для всех задач по упаковке.
 
-*   **Deploying applications:** Netflix Spinnaker. It's their trusted tool for getting things into production smoothly and efficiently.
+*   **Развертывание прикладных программ:** Нетфликс Спиннакер. Это их надежный инструмент для того, чтобы все было гладко и эффективно.
 
-*   **Monitoring:** Uber built their own monitoring systems. They use the uMetric platform, built on Cassandra, to keep things consistent.
+*   **Мониторинг:** Убер построил свои собственные системы мониторинга. Они используют эметрическую платформу, построенную на C4ANDra, чтобы поддерживать согласованность.
 
-*   **Special tooling:** Uber relies on Peloton for capacity planning, scheduling, and operations. Crane builds a multi-cloud infrastructure to optimize costs. And with uAct and the OnCall dashboard, they've got event tracing and on-call duty management covered.
+*   **Специальные средства:** Убер использует Пелтона для планирования, планирования и операций. Крейн создает многогроудинную инфраструктуру для оптимизации издержек. И с uAct и приборной панелью OnCall, они занимаются отслеживанием событий и управлением дежурными.

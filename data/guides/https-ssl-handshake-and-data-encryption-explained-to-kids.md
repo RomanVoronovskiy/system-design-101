@@ -11,7 +11,7 @@ tags:
   - "Encryption"
 ---
 
-![HTTPS, SSL Handshake, and Data Encryption Explained](https://assets.bytebytego.com/diagrams/0409-https-ssl-handshake-and-data-encryption-explained-to-kids.png)
+![Объяснение HTTPS, SSL-квитирования и шифрования данных](https://assets.bytebytego.com/diagrams/0409-https-ssl-handshake-and-data-encryption-explained-to-kids.png)
 
 HTTPS: защищает ваши данные от перехвата и взлома. Узнайте, как шифрование и цифровые сертификаты создают неприступный щит.
 

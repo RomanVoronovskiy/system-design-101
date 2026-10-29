@@ -11,7 +11,7 @@ tags:
   - "Authentication"
 ---
 
-![Authenticator](https://assets.bytebytego.com/diagrams/0079-authenticator.jpg)
+![Как работает Google Authenticator](https://assets.bytebytego.com/diagrams/0079-authenticator.jpg)
 
 Google Authenticator обычно используется для входа в наши учетные записи, когда включена двухфакторная аутентификация. Как это гарантирует безопасность?
 

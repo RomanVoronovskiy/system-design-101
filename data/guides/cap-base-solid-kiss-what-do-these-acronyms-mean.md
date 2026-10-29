@@ -12,7 +12,7 @@ tags:
 ---
 На диаграмме ниже поясняются распространенные сокращения в конструкциях систем.
 
-![diagram](https://assets.bytebytego.com/diagrams/0350-cap-base-solid-kiss.png)
+![CAP, BASE, SOLID, KISS. Что означают эти аббревиатуры?](https://assets.bytebytego.com/diagrams/0350-cap-base-solid-kiss.png)
 
 * **КЕПКА**
 

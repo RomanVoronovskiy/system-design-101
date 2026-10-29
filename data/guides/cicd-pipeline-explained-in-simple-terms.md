@@ -11,7 +11,7 @@ tags:
   - "DevOps"
 ---
 
-![diagram](https://assets.bytebytego.com/diagrams/0140-ci-cd-pipeline.png)
+![Конвейер CI/CD, объясненный простыми словами](https://assets.bytebytego.com/diagrams/0140-ci-cd-pipeline.png)
 
 ## SDLC с CI/CD
 

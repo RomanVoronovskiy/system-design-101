@@ -1,6 +1,6 @@
 ---
-title: 'Short/long polling, SSE, WebSocket'
-description: 'Explore real-time web updates: polling, SSE, and WebSockets.'
+title: "Короткий и длинный опрос, SSE и WebSocket"
+description: "Изучение информации в сети в реальном масштабе времени: опросы, SSE и веб-покеры."
 image: 'https://assets.bytebytego.com/diagrams/0337-short-long-polling-sse-websocket.jpeg'
 createdAt: '2024-01-25'
 draft: false
@@ -13,9 +13,9 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0337-short-long-polling-sse-websocket.jpeg)
 
-An HTTP server cannot automatically initiate a connection to a browser. As a result, the web browser is the initiator. What should we do next to get real-time updates from the HTTP server?
+Сервер HTTP не может автоматически запустить подключение к браузеру. В результате, веббраузер является инициатором. Что мы будем делать дальше, чтобы получить обновления в режиме реального времени с сервера HTTP?
 
-Both the web browser and the HTTP server could be responsible for this task.
+За выполнение этой задачи могут отвечать как веббраузер, так и сервер HTTP.
 
-*   **Web browsers do the heavy lifting**: short polling or long polling. With short polling, the browser will retry until it gets the latest data. With long polling, the HTTP server doesn’t return results until new data has arrived.
-*   **HTTP server and web browser cooperate**: WebSocket or SSE (server-sent event). In both cases, the HTTP server could directly send the latest data to the browser after the connection is established. The difference is that SSE is uni-directional, so the browser cannot send a new request to the server, while WebSocket is fully-duplex, so the browser can keep sending new requests.
+*   **Веб-браузеры выполняют тяжелую подъемку**:: непродолжительное или продолжительное голосование. С коротким голосованием браузер перепробует, пока не получит последние данные. С длительными опросами, сервер HTTP не возвращает результаты, пока не будут получены новые данные.
+*   **Сотрудничество сервера HTTP и веббраузера**:: WebSocket или SSE (событие, переданное сервером). В обоих случаях сервер HTTP может напрямую отправлять последние данные в браузер после установления подключения. Разница в том, что SSE однонаправленный, поэтому браузер не может отправить новый запрос на сервер, в то время как WebSocket полностью двуплексный, так что браузер может продолжать отправлять новые запросы.

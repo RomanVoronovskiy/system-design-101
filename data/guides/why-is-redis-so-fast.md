@@ -1,6 +1,6 @@
 ---
-title: "Why is Redis so Fast?"
-description: "Explore the key factors behind Redis's exceptional speed."
+title: "Почему Redis работает так быстро?"
+description: "Основные причины высокой скорости Redis."
 image: "https://assets.bytebytego.com/diagrams/0422-why-is-redis-so-fast.png"
 createdAt: '2024-03-07'
 draft: false
@@ -13,10 +13,10 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0422-why-is-redis-so-fast.png)
 
-There are 3 main reasons as shown in the diagram above.
+На схеме выше показаны три основные причины.
 
-*   Redis is a RAM-based database. RAM access is at least 1000 times faster than random disk access.
+* Redis хранит данные в оперативной памяти. Доступ к ней как минимум в 1000 раз быстрее случайного доступа к диску.
 
-*   Redis leverages IO multiplexing and single-threaded execution loop for execution efficiency.
+* Redis использует мультиплексирование ввода-вывода и однопоточный цикл выполнения, чтобы эффективно обрабатывать операции.
 
-*   Redis leverages several efficient lower-level data structures.
+* Redis использует несколько эффективных низкоуровневых структур данных.

@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Kafka Use Cases"
-description: "Explore the top 5 Kafka use cases for data streaming and processing."
+title: "Пять сценариев использования Kafka"
+description: "Изучение пяти крупнейших вариантов использования Kafka для ввода и обработки данных."
 image: "https://assets.bytebytego.com/diagrams/0368-top-5-kafka-use-cases.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0368-top-5-kafka-use-cases.png)
 
-Kafka was originally built for massive log processing. It retains messages until expiration and lets consumers pull messages at their own pace.
+Первоначально Kafka была построена для массовой обработки бревен. Он сохраняет сообщения до истечения срока действия и позволяет потребителям получать сообщения своими темпами.
 
-Let’s review the popular Kafka use cases.
+Давайте, давайте рассмотрим популярные дела Kafka.
 
-*   Log processing and analysis
+*   Обработка и анализ журнала
 
-*   Data streaming in recommendations
+*   Поток данных в рекомендациях
 
-*   System monitoring and alerting
+*   Мониторинг и предупреждение системы
 
-*   CDC (Change data capture)
+*   ЦКЗ (изменение регистрации данных)
 
-*   System migration
+*   Системаная миграция

@@ -1,6 +1,6 @@
 ---
-title: "What Happens When You Upload a File to Amazon S3?"
-description: "Explore the process of uploading a file to Amazon S3 in detail."
+title: "Что происходит при загрузке файла в Amazon S3?"
+description: "Изучение процесса загрузки файла на Amazon S3 в деталях."
 image: "https://assets.bytebytego.com/diagrams/0169-design-s3.jpg"
 createdAt: "2024-03-13"
 draft: false
@@ -13,31 +13,31 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0169-design-s3.jpg)
 
-Before we dive into the design, let’s define some terms.
+Прежде чем мы войдем в дизайн, давайте определим некоторые термины.
 
-**Bucket**. A logical container for objects. The bucket name is globally unique. To upload data to S3, we must first create a bucket.
+**Ведро**. Логичный контейнер для предметов. Название ведра является уникальным во всем мире. Чтобы загрузить данные в S3, мы должны сначала создать ведро.
 
-**Object**. An object is an individual piece of data we store in a bucket. It contains object data (also called payload) and metadata. Object data can be any sequence of bytes we want to store. The metadata is a set of name-value pairs that describe the object.
+**Объект**. Объект - это отдельный кусок данных, который мы храним в ведро. Он содержит данные об объектах (также называемые полезной нагрузкой) и метаданные. Объектные данные могут быть любой последовательностью байтов, которые мы хотим сохранить. Метаданные — это набор пар значений имени и имени, описывающих объект.
 
-An S3 object consists of (Figure 1):
+Объект S3 состоит из (рис. 1):
 
-*   Metadata. It is mutable and contains attributes such as ID, bucket name, object name, etc.
-*   Object data. It is immutable and contains the actual data.
+*   Метаданные. Он мутируется и содержит такие атрибуты, как ID, имя ведра, имя объекта и т.д.
+*   Объектные данные. Он неизменен и содержит фактические данные.
 
-In S3, an object resides in a bucket. The path looks like this: /bucket-to-share/script.txt. The bucket only has metadata. The object has metadata and the actual data.
+В S3 объект находится в ведро. Путь выглядит так: / bucket-to-share/prict.txt. Ведро содержит только метаданные. Объект имеет метаданные и фактические данные.
 
-The diagram below (Figure 2) illustrates how file uploading works. In this example, we first create a bucket named “bucket-to-share” and then upload a file named “script.txt” to the bucket.
+На диаграмме ниже (рис. 2) показано, как работает загрузка файла. В этом примере мы сначала создадим ведро с именем,,,,,, и затем загружаем файл,, sprip.txt, в ведро.
 
-1.  The client sends an HTTP PUT request to create a bucket named “bucket-to-share.” The request is forwarded to the API service.
+1.  Клиент отправляет запрос HTTP PUT, чтобы создать ведро по имени, bucket-to-shar. Запрос направляется в службу АПИ.
 
-2.  The API service calls Identity and Access Management (IAM) to ensure the user is authorized and has WRITE permission.
+2.  Служба API вызывает управление идентификационными данными и доступом (IAM) для обеспечения того, чтобы пользователь был уполномочен и имел разрешение WRITE.
 
-3.  The API service calls the metadata store to create an entry with the bucket info in the metadata database. Once the entry is created, a success message is returned to the client.
+3.  Служба API вызывает в магазин метаданных, чтобы создать в базе метаданных запись с ведром ХV. После создания входа клиенту возвращается сообщение об успехе.
 
-4.  After the bucket is created, the client sends an HTTP PUT request to create an object named “script.txt”.
+4.  После создания ведра клиент направляет запрос HTTP PUT, чтобы создать объект под названием, sprip.txt,
 
-5.  The API service verifies the user’s identity and ensures the user has WRITE permission on the bucket.
+5.  Служба API проверяет пользователя, его личность и обеспечивает, чтобы пользователь имел разрешение WRITE на ведро.
 
-6.  Once validation succeeds, the API service sends the object data in the HTTP PUT payload to the data store. The data store persists the payload as an object and returns the UUID of the object.
+6.  После успешного подтверждения данных служба API направляет данные об объекте в грузовой аппарат HTTP PUT в банк данных. В этом магазине данных сохраняется полезная нагрузка как объект и возвращается UUID объекта.
 
-7.  The API service calls the metadata store to create a new entry in the metadata database. It contains important metadata such as the object\_id (UUID), bucket\_id (which bucket the object belongs to), object\_name, etc.
+7.  Служба API вызывает в магазин метаданных для создания новой записи в базе метаданных. В ней содержатся такие важные метаданные, как объект /_id (UUID), ведро / id (который ведро принадлежит объекту), объект __имя и т.д.

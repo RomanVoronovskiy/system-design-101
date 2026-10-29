@@ -1,6 +1,6 @@
 ---
-title: "What is Web 3.0? Why doesn't it have ads?"
-description: "Explore Web 3.0: ownership, decentralization, and ad-free potential."
+title: "Что такое Web 3.0 и почему в нём нет рекламы?"
+description: "Изучение Web 3.0: собственность, децентрализация и свободный от использования потенциал."
 image: "https://assets.bytebytego.com/diagrams/0416-what-is-web-3.png"
 createdAt: "2024-02-27"
 draft: false
@@ -11,26 +11,26 @@ tags:
   - "Decentralization"
 ---
 
-The diagram above shows Web 1.0/Web 2.0/Web 3.0 from a bird's-eye view.
+На диаграмме выше показана веб-страница 1.0/Web 2.0/Web 3.0 с точки зрения птичьего глаза.
 
 ![](https://assets.bytebytego.com/diagrams/0416-what-is-web-3.png)
 
-*   Web 1.0 - Read Only
+*   Веб 1.0 - Только читать
 
-Between 1991 and 2004, the internet was like a **catalog of static pages**. We can browse the content by jumping from one hyperlink to another. It doesn’t provide any interactions with the content.
+В период 1991-2004 годов Интернет был похож на **каталог статических страниц**. Мы можем проверить содержание, перепрыгнув из одной гиперссылки в другую. Он не обеспечивает какого-либо взаимодействия с содержанием.
 
-*   Web 2.0 - Read Write
+*   Веб 2.0 - Читать
 
-From 2004 to now, the internet has evolved to have search engines, social media apps, and recommendation algorithms backed apps.
+С 2004 года по настоящее время интернет развивался, и в нем были поисковые системы, приложения для социальных сетей и алгоритмы рекомендаций, поддерживаемые приложениями.
 
-Because the apps digitalize human behaviors and persist user data when users interact with these apps, big companies leverage user data for advertisements, which becomes **one of the main business models** in Web 2.0.
+Поскольку приложения переводят поведение человека в цифровую форму и сохраняют пользовательские данные, когда пользователи взаимодействуют с этими приложениями, крупные компании используют данные пользователей для рекламы, которая становится **одна из основных бизнес-моделей** Веб 2.0.
 
-That’s why people say the apps know you better than your friends, family, or even yourself.
+Вот почему люди говорят, что приложения знают тебя лучше, чем твои друзья, семья или даже ты сам.
 
-*   Web 3.0 - Read Write Own
+*   Веб 3.0 - Читать самостоятельно
 
-The idea has been discussed a lot recently due to the development of blockchain and decentralized apps. The creators’ content is stored on IPFS (InterPlanetary File System) and **owned by the users**.
+Эта идея в последнее время широко обсуждалась благодаря разработке блоковых и децентрализованных приложений. Создатели, содержание хранятся в системе ПЗРК (Интерпланетные файлы) и **Владелец, принадлежащий пользователям**.
 
-If apps want to access the data, they need to get **authorization** from the users and **pay** for it.
+Если приложения хотят получить доступ к данным, им нужно получить **разрешение** от пользователей и **оплатить** Для этого.
 
-In Web 3.0, the ownership change may lead to some major innovations.
+В Web 3.0 изменение в собственности может привести к некоторым крупным нововведениям.

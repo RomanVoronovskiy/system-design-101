@@ -1,6 +1,6 @@
 ---
-title: What is GraphQL?
-description: "GraphQL explained: a query language for APIs."
+title: "Что такое GraphQL?"
+description: "На диаграмме QL поясняются: язык запроса для API."
 image: 'https://assets.bytebytego.com/diagrams/0055-what-is-graphql.png'
 createdAt: '2024-03-12'
 draft: false
@@ -13,25 +13,25 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0055-what-is-graphql.png)
 
-### Is it a replacement for the REST API?
+### Это замена REST API?
 
-GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. It was developed internally by Meta in 2012 before being publicly released in 2015.
+ГрафQL — язык запросов для API и время выполнения этих запросов с помощью типовой системы, которую вы определяете для своих данных. В 2012 году он был разработан компанией Meta, а в 2015 году был выпущен в свет.
 
-Unlike the more traditional REST API, GraphQL allows clients to request exactly the data they need, making it possible to fetch data from multiple sources with a single query. This efficiency in data retrieval can lead to improved performance for web and mobile applications.
+В отличие от более традиционных REST API, ГрафQL позволяет клиентам запрашивать точно необходимые им данные, что позволяет получать данные из нескольких источников с одним запросом. Такая эффективность в поиске данных может способствовать повышению эффективности веб- и мобильных приложений.
 
-GraphQL servers sit in between the client and the backend services. It can aggregate multiple REST requests into one query. GraphQL server organizes the resources in a graph.
+Серверы граффQL находятся между клиентом и сервисами резервного копирования. Он может объединить несколько запросов REST в один запрос. Сервер ГрафQL организует ресурсы в графике.
 
-GraphQL supports queries, mutations (applying data modifications to resources), and subscriptions (receiving notifications on schema modifications).
+Граф QL поддерживает запросы, 56ions (применяя изменения данных к ресурсам) и подписку (принимая уведомления об изменениях в сетке).
 
-**Benefits of GraphQL:**
+**Выгоды от графической таблицы:**
 
-*   GraphQL is more efficient in data fetching.
-*   GraphQL returns more accurate results.
-*   GraphQL has a strong type system to manage the structure of entities, reducing errors.
-*   GraphQL is suitable for managing complex microservices.
+*   ГрафQL более эффективен в сборе данных.
+*   На диаграмме QL приводятся более точные результаты.
+*   ГрафQL имеет надежную систему, которая управляет структурой структур, уменьшая ошибки.
+*   ГрафQL подходит для управления сложными микроуслугами.
 
-**Disadvantages of GraphQL**
+**Недостатки графы**
 
-*   Increased complexity.
-*   Over fetching by design
-*   Caching complexity
+*   Усложнение.
+*   Перестать приходить по дизайну
+*   Сложность клещей

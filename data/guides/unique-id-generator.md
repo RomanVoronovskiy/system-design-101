@@ -1,6 +1,6 @@
 ---
-title: "Unique ID Generator"
-description: "Explore unique ID generation for scalable backend systems."
+title: "Генератор уникальных идентификаторов"
+description: "Изучение уникального поколения ID для масштабируемых систем задней панели."
 image: "https://assets.bytebytego.com/diagrams/0105-id-generator.png"
 createdAt: "2024-02-16"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0105-id-generator.png)
 
-IDs are very important for the backend. Do you know how to generate globally unique IDs?
+Идентификационные документы очень важны для подсказки. Вы знаете, как создать глобальные уникальные удостоверения личности?
 
-In this post, we explore common requirements for IDs that are used in social media such as Facebook, Twitter, and LinkedIn.
+В этой статье мы исследуем общие требования к удостоверениям личности, которые используются в социальных сетях, таких как Facebook, Twitter и LinkedIn.
 
-## Requirements:
+## Требования:
 
-*   Globally unique
+*   Уникальный глобальный характер
 
-*   Roughly sorted by time
+*   Примерно по времени
 
-*   Numerical values only
+*   Только цифровые значения
 
-*   64 bits
+*   64 бита
 
-*   Highly scalable, low latency
+*   Высокоширомасштабный, низкий уровень лотности
 
-The implementation details of the algorithms can be found online so we will not go into detail here.
+Детали реализации алгоритмов можно найти в Интернете, поэтому мы не будем вдаваться в подробности здесь.

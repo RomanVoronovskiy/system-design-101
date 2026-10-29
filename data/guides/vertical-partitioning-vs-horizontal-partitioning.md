@@ -1,6 +1,6 @@
 ---
-title: "Vertical vs Horizontal Partitioning"
-description: "Explore vertical vs horizontal partitioning strategies in databases."
+title: "Вертикальное и горизонтальное секционирование"
+description: "Изучение вертикальных и горизонтальных стратегий разделения в базах данных."
 image: "https://assets.bytebytego.com/diagrams/0402-vertical-partitioning-vs-horizontal-partitioning.png"
 createdAt: "2024-01-30"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0402-vertical-partitioning-vs-horizontal-partitioning.png)
 
-In many large-scale applications, data is divided into partitions that can be accessed separately. There are two typical strategies for partitioning data.
+Во многих крупномасштабных прикладных программах данные делятся на раздельные участки, к которым можно иметь доступ отдельно. Существуют две типичные стратегии разделения данных.
 
-*   Vertical partitioning: it means some columns are moved to new tables. Each table contains the same number of rows but fewer columns (see diagram below).
+*   Вертикальное разделение: это означает, что некоторые колонки переносятся на новые таблицы. Каждая таблица содержит одинаковое число строк, но меньше колонок (см. диаграмму ниже).
 
-*   Horizontal partitioning (often called sharding): it divides a table into multiple smaller tables. Each table is a separate data store, and it contains the same number of columns, but fewer rows (see diagram below).
+*   Горизонтальное разделение (часто называемое осколками): оно разделяет таблицу на множество меньшем количестве таблиц. Каждая таблица представляет собой отдельный банк данных, и в ней содержится одинаковое количество колонок, но меньше строк (см. диаграмму ниже).
 
-Horizontal partitioning is widely used so let’s take a closer look.
+Широко используется горизонтальное разделение, так что давайте посмотрим поближе.
 
-## Routing algorithm
+## Алгоритм движения
 
-The routing algorithm decides which partition (shard) stores the data.
+Алгоритм маршрутизации решает, какой раздел (острое) хранит данные.
 
-*   Range-based sharding. This algorithm uses ordered columns, such as integers, longs, timestamps, to separate the rows. For example, the diagram below uses the User ID column for range partition: User IDs 1 and 2 are in shard 1, User IDs 3 and 4 are in shard 2.
+*   шарды на расстоянии. Этот алгоритм использует заказанные колонки, такие как целые, длинные, временные пометки, для разделения строк. Например, на приведенной ниже диаграмме используется колонка ID пользователя для раздела дальности: Ident ID 1 и 2 находятся в обнаженном 1, User ID 3 и 4 - в осколке 2.
 
-*   Hash-based sharding. This algorithm applies a hash function to one column or several columns to decide which row goes to which table. For example, the diagram below uses **User ID mod 2** as a hash function. User IDs 1 and 3 are in shard 1, User IDs 2 and 4 are in shard 2.
+*   шарды на основе гашеха. Этот алгоритм применяет функцию хеширования к одной или нескольким колонкам для определения того, какая строка идет к какой таблице. Например, на приводимой ниже диаграмме используются: **ID пользователя мод 2** как хэш-функция. Идентификационные номера 1 и 3 в кусочке 1, идентификаторы пользователей 2 и 4 в кусочке 2.
 
-## Benefits
+## Выгоды
 
-*   Facilitate horizontal scaling. Sharding facilitates the possibility of adding more machines to spread out the load.
+*   Облегчение горизонтального масштабирования. Опухоль облегчает возможность добавления дополнительных машин для распределения груза.
 
-*   Shorten response time. By sharding one table into multiple tables, queries go over fewer rows, and results are returned much more quickly.
+*   Время реагирования сокращено. Очертая одну таблицу в несколько таблиц, запросы проходят меньше строк, и результаты возвращаются гораздо быстрее.
 
-## Drawbacks
+## Недостатки
 
-*   The order by operation is more complicated. Usually, we need to fetch data from different shards and sort the data in the application's code.
+*   Порядок операции сложнее. Обычно нам нужно достать данные с разных шард и сортировать данные в коде приложения.
 
-*   Uneven distribution. Some shards may contain more data than others (this is also called the hotspot).
+*   Неравномерное распределение. Некоторые шарды могут содержать больше данных, чем другие (это также называется " горячим местом " ).

@@ -12,7 +12,7 @@ tags:
 ---
 Сбор мусора — это функция автоматического управления памятью, используемая в языках программирования для освобождения памяти, которая больше не используется программой.
 
-![No alternative text description for this image](https://assets.bytebytego.com/diagrams/0200-garbage-collection-101.png)
+![Как работает сбор мусора?](https://assets.bytebytego.com/diagrams/0200-garbage-collection-101.png)
 
 ## Ява
 

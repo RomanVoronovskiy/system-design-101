@@ -11,7 +11,7 @@ tags:
   - Tradeoffs
 ---
 
-![System Design Tradeoffs](https://assets.bytebytego.com/diagrams/0026-10-system-design-trade-offs-you-cannot-ignore.png)
+![10 компромиссов при проектировании системы, которые нельзя игнорировать](https://assets.bytebytego.com/diagrams/0026-10-system-design-trade-offs-you-cannot-ignore.png)
 
 Если вы не знаете компромиссов, вы НЕ ЗНАЕТЕ проектирование системы.
 

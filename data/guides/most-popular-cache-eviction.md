@@ -1,6 +1,6 @@
 ---
-title: "Cache Eviction Policies"
-description: "Explore popular cache eviction strategies and their impact on performance."
+title: "Политики вытеснения данных из кеша"
+description: "Изучение популярных стратегий вытеснения из кэша и их влияния на результаты работы."
 image: "https://assets.bytebytego.com/diagrams/0281-most-popular-cache-eviction.png"
 createdAt: "2024-02-24"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0281-most-popular-cache-eviction.png)
 
-What are the most popular Cache Eviction strategies? And how do they work?
+Какие самые популярные стратегии вытеснения кеша? И как они работают?
 
-Caching can provide a boost to your application’s performance by storing data in memory for faster access.
+Каширование может повысить производительность вашего приложения, сохраняя данные в памяти для более быстрым доступом.
 
-But when the cache gets full, you need to evict some data to make room for new stuff.
+Но когда кеш заполняется, нужно выселить некоторые данные, чтобы сделать место для новых вещей.
 
-This is where cache eviction strategies come into play.
+Именно здесь и вступают в игру стратегии вытеснения.
 
-The strategy you choose can have a significant impact on your system's performance, memory usage, and hit rates. Here are five popular strategies to consider:
+Выбранная вами стратегия может оказать значительное влияние на производительность вашей системы, использование памяти и скорость удара. Вот пять популярных стратегий, которые следует рассмотреть:
 
-## Time-to-Live (TTL)
+## Время для жизни (TTL)
 
-Items are evicted after a predetermined time period, regardless of access patterns. It’s simple to implement but can lead to premature eviction of frequently used data. TTL is suitable for data that is only valid for a certain period of time such as session information. It is also used as a default fallback strategy.
+Предметы выселяются после заранее установленного периода времени, независимо от моделей доступа. Это простое решение, но может привести к преждевременному выселению часто используемых данных. TTL подходит для данных, которые действительны только в течение определенного периода времени, например, для информации о сессии. Он также используется в качестве стратегии обратного воздействия по умолчанию.
 
-## Least-Recently Used (LRU)
+## Некоторые последние использования (LRU)
 
-Evicts the least recently accessed items first. This strategy works well when access patterns exhibit temporal locality, i.e., recently accessed items are likely to be accessed again soon.
+Сначала удаляет наименее недавно доступные предметы. Эта стратегия хорошо работает, когда шаблоны доступа показывают временную локальность, т.е. недавно доступные предметы, вероятно, вскоре будут снова доступны.
 
-## Least Frequently Used (LFU)
+## Наименее часто используемые (LFU)
 
-Evicts the least frequently accessed items first. Suitable when some items are accessed more often than others, and you want to keep only the most popular items in the cache. However, you also need a mechanism to maintain a count of the number of times an item is accessed.
+Сначала удаляет наименее часто посещаемые предметы. Подходит для тех случаев, когда некоторые элементы доступны чаще, чем другие, и вы хотите хранить только самые популярные элементы в кеше. Однако вам также нужен механизм, чтобы вести учет количества посещений объекта.
 
-## Most Recently Used (MRU)
+## Наиболее недавно используемые (MRU)
 
-Evicts the most recently accessed items first. Counterintuitive but useful in specific scenarios like operating system buffer caches, where recently evicted items are unlikely to be needed again soon. Also useful in streaming or batch-processing requirements.
+Сначала удаляет последние предметы. Это противоречит интуиции, но полезно в конкретных сценариях, таких как кеширование буферной системы операционной системы, где недавно выселенные предметы вряд ли будут нужны снова в ближайшее время. Также полезно в условиях потоковой или партийнойной обработки.
 
-## Segmented LRU (SLRU)
+## Сегментированные ЛРУ (SLRU)
 
-Divides the cache into probationary and protected segments, applying LRU separately to each. Newly added items go into the probationary segment, and frequently accessed items are promoted to the protected segment, shielding them from being evicted too soon.
+Разделяет кеширование на испытательные и защищенные сегменты, применяя LRU отдельно к каждому из них. Новые добавленные предметы входят в испытательный сегмент, и часто доступные предметы продвигаются в защищенный сегмент, защищая их от слишком скорого выселения.
 
-The best caching strategy depends on the context of your system requirements and constraints. But having a broad understanding of them can help make the right choice.
+Лучшая стратегия кеширования зависит от контекста ваших системных требований и ограничений. Но если мы хорошо их понимаем, мы сможем сделать правильный выбор.
 
-Over to you: have you used any other cache eviction strategy?
+Вы уже использовали какую-нибудь другую стратегию вытеснения?

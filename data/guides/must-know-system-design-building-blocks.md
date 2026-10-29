@@ -1,6 +1,6 @@
 ---
-title: "Must Know System Design Building Blocks"
-description: "Essential system design components for building scalable applications."
+title: "Основные строительные блоки системного проектирования"
+description: "Основные элементы конструкции системы для масштабируемых прикладных программ."
 image: "https://assets.bytebytego.com/diagrams/0285-must-know-system-design-building-blocks.png"
 createdAt: "2024-02-11"
 draft: false
@@ -13,46 +13,46 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0285-must-know-system-design-building-blocks.png)
 
-These are divided into 6 broad categories
+Они подразделяются на 6 широких категорий
 
-## Distributed Computing
+## Распределённые вычисления
 
-*   Distributed message queues facilitate async communication and decouple services
+*   Очертания в очереди сообщений облегчают асинковое общение и дешёвую связь
 
-*   Distributed caching improves performance by storing frequently accessed data in memory
+*   Распределенная клетка улучшает эффективность за счет хранения частодоступных данных в памяти
 
-*   A Distributed task scheduler manages and coordinates the execution of tasks
+*   A Распределяемый график выполнения задач обеспечивает управление и координацию выполнения задач.
 
-## Scalability and Performance
+## Масштабируемость и производительность
 
-*   Scaling services help adjust the capacity of services to handle changes in demand
+*   Услуги по расширению масштабов помощи помогают корректировать способность услуг реагировать на изменения спроса
 
-*   CDNs serve content from geographically closer locations to improve performance and reduce latency.
+*   ЦКЗ служат контентом из более близкого географического местоположения для улучшения показателей и снижения степени представленности.
 
-*   Consistent hashing minimizes the remapping of keys when nodes are added or removed
+*   Последовательное хеширование сводит к минимуму повторное прослушивание ключей при добавлении или удалении узлов
 
-## Service Management
+## Управление сервисами
 
-*   Service discovery enables services to find and communicate with each other without hard-coding network locations
+*   Обнаружение услуг позволяет службам находить и общаться друг с другом без жесткого кодирования местоположения сети
 
-## Networking and Communication
+## Сети и взаимодействие
 
-*   DNS translates human-readable domain names into IP addresses
+*   DNS переводит имена доменов, которые можно читать людям, на IP-адреса
 
-*   Load Balancer distributes incoming network traffic across multiple servers
+*   Загрузка Балансера распределяет входящий сетевой трафик через несколько серверов
 
-*   API Gateway acts as a single entry point for a group of microservices
+*   API Gateway выступает в качестве единого пункта входа для группы микроуслуг
 
-## Data Storage and Management
+## Хранение данных и управление ими
 
-*   Databases store and manage structured data
+*   Базы данных хранят структурированные данные и управляют ими
 
-*   Object storage helps store complex objects like images, videos, and documents
+*   Хранение объектов помогает хранить сложные объекты, такие как изображения, видео и документы
 
-*   Sharding helps horizontally partition data across multiple nodes
+*   Охлаждение помогает горизонтально разделять данные через несколько узлов
 
-*   Replication helps horizontally scale the database by copying data to multiple nodes
+*   Воспроизводство помогает горизонтальным образом масштабировать базу данных путем копирования данных в несколько узлов
 
-## Observability and Resiliency
+## Наблюдаемость и отказоустойчивость
 
-Gain insights into the system's internal state through metrics, logging, and tracing.
+Получите представление о внутреннем состоянии системы с помощью показателей, лесозаготовок и отслеживания.

@@ -1,6 +1,6 @@
 ---
-title: 'REST API Cheatsheet'
-description: 'A concise guide to REST API principles, components, and best practices.'
+title: "Шпаргалка по REST API"
+description: "Краткое руководство по принципам, компонентам и передовой практике РПЭТ."
 image: 'https://assets.bytebytego.com/diagrams/0040-rest-api-cheatsheet.png'
 createdAt: '2024-03-13'
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0040-rest-api-cheatsheet.png)
 
-This guide is designed to help you understand the world of RESTful APIs in a clear and engaging way.
+Этот справочник призван помочь вам понять мир РАСТФОЛЬНЫХ ИПЦ ясным и интересным образом.
 
-What's inside:
+Что внутри:
 
-*   An exploration of the six fundamental principles of REST API design.
-*   Insights into key components such as HTTP methods, protocols, versioning, and more.
-*   A special focus on practical aspects like pagination, filtering, and endpoint design.
+*   Изучение шести основополагающих принципов разработки РПСП.
+*   Понимание таких ключевых компонентов, как методы HTTP, протоколы, версии и т.д.
+*   Особое внимание уделяется практическим аспектам, таким как педикюрирование, фильтрация и конструирование конечных точек.
 
-Whether you're beginning your API journey or looking to refresh your knowledge, this blog and cheat sheet combo is the perfect toolkit for success.
+Начинаете ли вы свой путь API или хотите освежить свои знания, этот блог и обманутый лист комбо - идеальный инструмент для успеха.

@@ -1,6 +1,6 @@
 ---
-title: "OSI Model Explained"
-description: "Learn about the OSI model and how data is transmitted over a network."
+title: "Модель OSI: простое объяснение"
+description: "Узнать о модели ИНМ и о том, как данные передаются по сети."
 image: "https://assets.bytebytego.com/diagrams/0295-osi-model.jpeg"
 createdAt: "2024-03-13"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0295-osi-model.jpeg)
 
-How is data sent over the network? Why do we need so many layers in the OSI model?
+Как данные направляются по сети? Зачем нам столько слоев в модели ИНМ?
 
-The diagram below shows how data is encapsulated and de-encapsulated when transmitting over the network.
+На диаграмме ниже показано, каким образом данные исчерпываются и отключаются при передаче по сети.
 
-*   Step 1: When Device A sends data to Device B over the network via the HTTP protocol, it is first added an HTTP header at the application layer.
+*   Этап 1: Когда устройство А передает данные в Устройство В по сети через протокол HTTP, сначала добавляется заголовок HTTP на прикладном слое.
 
-*   Step 2: Then a TCP or a UDP header is added to the data. It is encapsulated into TCP segments at the transport layer. The header contains the source port, destination port, and sequence number.
+*   Этап 2: Затем к данным добавляется заголовок ТКП или UDP. Она встроена в сегменты ТКП на транспортном уровне. В заголовке указаны порт источника, порт назначения и номер последовательности.
 
-*   Step 3: The segments are then encapsulated with an IP header at the network layer. The IP header contains the source/destination IP addresses.
+*   Шаг 3: Затем сегменты инкупланируются с заголовком IP на слое сети. Заголовок IP содержит адреса IP-источника/определения.
 
-*   Step 4: The IP datagram is added a MAC header at the data link layer, with source/destination MAC addresses.
+*   Этап 4: В рамку данных IP добавлен заголовок MAC на уровне ссылки данных с адресами источников/определений MAC.
 
-*   Step 5: The encapsulated frames are sent to the physical layer and sent over the network in binary bits.
+*   Шаг 5: Капсулированные рамы направляются в физический слой и направляются по сети в двоичном виде.
 
-*   Steps 6-10: When Device B receives the bits from the network, it performs the de-encapsulation process, which is a reverse processing of the encapsulation process. The headers are removed layer by layer, and eventually, Device B can read the data.
+*   Шаги 6-10: Когда устройство В получает биты от сети, оно осуществляет процесс деинцепции, который представляет собой обратную обработку процесса инкапсуляции. Заголовки удаляются из слоя, и в конечном итоге устройство B может считывать данные.
 
-We need layers in the network model because each layer focuses on its own responsibilities. Each layer can rely on the headers for processing instructions and does not need to know the meaning of the data from the last layer.
+Нам нужны слои в сетевой модели, потому что каждый слой сосредоточен на своей собственной ответственности. Каждый слой может полагаться на заголовки для обработки инструкций и не нуждается в знании значения данных из последнего слоя.

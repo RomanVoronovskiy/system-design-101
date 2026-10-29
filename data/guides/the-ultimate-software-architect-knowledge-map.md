@@ -1,6 +1,6 @@
 ---
-title: "The Ultimate Software Architect Knowledge Map"
-description: "A guide to the essential knowledge for software architects."
+title: "Карта знаний архитектора программного обеспечения"
+description: "Руководство по основным знаниям для архитекторов программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0118-the-ultimate-software-architect-knowledge-map.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,40 +13,40 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0118-the-ultimate-software-architect-knowledge-map.png)
 
-Becoming a Software Architect is a journey where you are always learning. But there are some things you must definitely strive to know.
+Путь к профессии архитектора программного обеспечения предполагает непрерывное обучение. Но есть вещи, которые ты должен определенно попытаться узнать.
 
-## Essential Skills for Software Architects
+## Основные навыки для архитектуры программного обеспечения
 
-*   **Master a Programming Language**
+*   **Освоение языка программирования**
 
-    Look to master 1-2 programming languages such as Java, Python, Golang, JavaScript, etc.
+    Освойте один-два языка программирования, например Java, Python, Go или JavaScript.
 
-*   **Tools**
+*   **Инструменты**
 
-    Build proficiency with key tools such as GitHub, Jenkins, Jira, ELK, Sonar, etc.
+    Повысьте уровень квалификации с помощью таких ключевых инструментов, как GitHub, Jenkins, Jira, ELK, Sonar и т.д.
 
-*   **Design Principles**
+*   **Принципы проектирования**
 
-    Learn about important design principles such as OOPS, Clean Code, TDD, DDD, CAP Theorem, MVC Pattern, ACID, and GOF.
+    Изучите важные принципы и подходы к проектированию: ООП, чистый код, TDD, DDD, теорему CAP, шаблон MVC, ACID и шаблоны GoF.
 
-*   **Architectural Principles**
+*   **Архитектический принцип**
 
-    Become proficient in multiple architectural patterns such as Microservices, Publish-Subscribe, Layered, Event-Driven, Client-Server, Hexagonal, etc.
+    Становиться известными по многим архитектурным схемам, таким, как микросервисы, издательская деятельность, сложенная, Driven, клиент-сервер, гексагональная и т.д.
 
-*   **Platform Knowledge**
+*   **Знания платформы**
 
-    Get to know about several platforms such as containers, orchestration, cloud, serverless, CDN, API Gateways, Distributed Systems, and CI/CD
+    Узнайте о нескольких платформах, таких как контейнеры, оркестрация, облако, бессерверное, CDN, API Gateways, Distributed Systems и CI/CD
 
-*   **Data Analytics**
+*   **Анализ данных**
 
-    Build a solid knowledge of data and analytics components like SQL and NoSQL databases, data streaming solutions with Kafka, object storage, data migration, OLAP, and so on.
+    Построить прочные знания о таких компонентах данных и анализах, как базы данных SQL и NOSQL, решения, которые будут передаваться с помощью Kafka, хранение объектов, миграция данных, УПВ и т.д.
 
-*   **Networking and Security**
+*   **Создание сетей и безопасность**
 
-    Learn about networking and security concepts such as DNS, TCP, TLS, HTTPS, Encryption, JWT, OAuth, and Credential Management.
+    Узнайте о таких концепциях сетей и безопасности, как DNS, TCP, TLS, HTTPS, шифрование, JWT, OAut и Управление репутацией.
 
-*   **Supporting Skills**
+*   **Вспомогательные навыки**
 
-    Apart from technical, software architects also need several supporting skills such as decision-making, technology knowledge, stakeholder management, communication, estimation, leadership, etc.
+    Помимо технических, архитекторы программного обеспечения также нуждаются в нескольких вспомогательных навыках, таких, как принятие решений, технические знания, управление заинтересованными сторонами, связь, оценка, руководство и т.д.
 
-Over to you - What else would you add to the roadmap?
+- Что еще вы могли бы добавить к дорожной карте?

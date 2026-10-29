@@ -1,6 +1,6 @@
 ---
-title: "Database Locks Explained"
-description: "Explore the different types of database locks and their functionalities."
+title: "Как работают блокировки в базах данных"
+description: "Изучение различных типов блокировок баз данных и их функциональных возможностей."
 image: "https://assets.bytebytego.com/diagrams/0022-9-types-of-database-locks.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,44 +13,44 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0022-9-types-of-database-locks.png)
 
-In database management, locks are mechanisms that prevent concurrent access to data to ensure data integrity and consistency.
+В управлении базами данных блокировки являются механизмами, препятствующими одновременному доступу к данным для обеспечения целостности и согласованности данных.
 
-## Common Types of Locks
+## Общие типы блокировок
 
-Here are the common types of locks used in databases:
+Ниже приводятся общие типы блокировок, используемых в базах данных:
 
-*   **Shared Lock (S Lock)**
+*   **Совместный шлюз (блокировка S)**
 
-    It allows multiple transactions to read a resource simultaneously but not modify it. Other transactions can also acquire a shared lock on the same resource.
+    Она позволяет нескольким сделкам одновременно читать ресурс, но не изменять его. Другие операции могут также приобрести общий шлюз на том же ресурсе.
 
-*   **Exclusive Lock (X Lock)**
+*   **Исключительный шлюз (X Lock)**
 
-    It allows a transaction to both read and modify a resource. No other transaction can acquire any type of lock on the same resource while an exclusive lock is held.
+    Она позволяет операции как читать, так и модифицировать ресурс. Ни одна другая транзакция не может приобрести какой-либо вид шлюза на том же ресурсе, пока находится эксклюзивный шлюз.
 
-*   **Update Lock (U Lock)**
+*   **Обновить блокировка (U Lock)**
 
-    It is used to prevent a deadlock scenario when a transaction intends to update a resource.
+    Этот механизм используется для предотвращения взаимной блокировки, когда транзакция собирается обновить ресурс.
 
-*   **Schema Lock**
+*   **блокировка схемы**
 
-    It is used to protect the structure of database objects.
+    Он используется для защиты структуры объектов базы данных.
 
-*   **Bulk Update Lock (BU Lock)**
+*   **блокировка для обновления данных (блокировка BU)**
 
-    It is used during bulk insert operations to improve performance by reducing the number of locks required.
+    Он используется при оптовом включении операций для повышения эффективности за счет сокращения числа требуемых блокировок.
 
-*   **Key-Range Lock**
+*   **блокировка с ключом**
 
-    It is used in indexed data to prevent phantom reads (inserting new rows into a range that a transaction has already read).
+    Он используется в индексированных данных для предотвращения фантамирования (включение новых строк в диапазон, который уже читался в рамках операции).
 
-*   **Row-Level Lock**
+*   **блокировка уровня строки**
 
-    It locks a specific row in a table, allowing other rows to be accessed concurrently.
+    Он закрывает конкретную строчку в таблице, позволяя одновременно получить доступ к другим рядам.
 
-*   **Page-Level Lock**
+*   **блокировка уровня страницы**
 
-    It locks a specific page (a fixed-size block of data) in the database.
+    Он закрывает конкретную страницу (блок данных фиксированного размера) в базе данных.
 
-*   **Table-Level Lock**
+*   **блокировка уровня стола**
 
-    It locks an entire table. This is simple to implement but can reduce concurrency significantly.
+    Он запирает целый стол. Это просто осуществить, но может значительно сократить объем ссуд.

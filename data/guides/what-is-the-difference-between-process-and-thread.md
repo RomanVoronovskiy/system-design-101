@@ -1,6 +1,6 @@
 ---
-title: "Process vs Thread: Key Differences"
-description: "Understand the core differences between processes and threads."
+title: "Процесс и поток: основные различия"
+description: "Понять основные различия между процессами и нитками."
 image: "https://assets.bytebytego.com/diagrams/0304-program-process-thread.png"
 createdAt: "2024-03-12"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0304-program-process-thread.png)
 
-To better understand this question, let’s first take a look at what a Program is. A Program is an executable file containing a set of instructions and passively stored on disk. One program can have multiple processes. For example, the Chrome browser creates a different process for every single tab.
+Чтобы лучше понять этот вопрос, давайте сначала посмотрим, что такое программа. Программа является файлом, который может быть реализован и содержит набор инструкций и пассивно хранится на диске. Одна программа может иметь несколько процессов. Например, браузер Chrome создает другой процесс для каждой вкладки.
 
-A Process means a program is in execution. When a program is loaded into the memory and becomes active, the program becomes a process. The process requires some essential resources such as registers, program counter, and stack.
+Процесс означает, что программа уже выполнена. Когда программа загружается в память и становится активной, программа становится процессом. Для этого требуется ряд необходимых ресурсов, таких, как регистры, счетчик программ и сетка.
 
-A Thread is the smallest unit of execution within a process.
+"Страна" - это наименьшая единица казни в процессе.
 
-The following process explains the relationship between program, process, and thread.
+В нижеследующем процессе объясняется взаимосвязь между программой, процессом и нитью.
 
-1.  The program contains a set of instructions.
+1.  Программа содержит набор инструкций.
 
-2.  The program is loaded into memory. It becomes one or more running processes.
+2.  Программа загружена в память. Это один или несколько текущих процессов.
 
-3.  When a process starts, it is assigned memory and resources. A process can have one or more threads. For example, in the Microsoft Word app, a thread might be responsible for spelling checking and the other thread for inserting text into the doc.
+3.  Когда начинается процесс, ему отдают память и ресурсы. Процесс может иметь одну или несколько ниточек. Например, в приложении Microsoft Word на нитке может быть возложена ответственность за проверку написание, а на другой — за включение текста в док.
 
-## Main differences between process and thread:
+## Основные различия между процессом и нитью:
 
-*   Processes are usually independent, while threads exist as subsets of a process.
+*   Процессы обычно являются независимыми, а нити существуют как подмножество процесса.
 
-*   Each process has its own memory space. Threads that belong to the same process share the same memory.
+*   У каждого процесса есть свое собственное пространство памяти. Надписи, относящиеся к одному и тому же процессу, имеют одну и ту же память.
 
-*   A process is a heavyweight operation. It takes more time to create and terminate.
+*   Процесс - это операция с тяжелым весом. Для создания и прекращения этого процесса требуется больше времени.
 
-*   Context switching is more expensive between processes.
+*   Переключение контекста на другую сторону дороже между процессами.
 
-*   Inter-thread communication is faster for threads.
+*   Для ниточек межпосадочная связь быстрее.

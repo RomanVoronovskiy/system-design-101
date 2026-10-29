@@ -1,6 +1,6 @@
 ---
-title: "Logging, Tracing, and Metrics"
-description: "Understand logging, tracing, and metrics for system observability."
+title: "Логи, трассировка и метрики"
+description: "Понимать запись, отслеживание и метрику для наблюдения системы."
 image: "https://assets.bytebytego.com/diagrams/0264-logging-tracing-metrics.png"
 createdAt: "2024-03-11"
 draft: false
@@ -11,18 +11,18 @@ tags:
   - "monitoring"
 ---
 
-Logging, tracing, and metrics are 3 pillars of system observability. The diagram below shows their definitions and typical architectures.
+Логирование, трассировка и метрики — три основы наблюдаемости системы. Ниже приведенный диаграмм показывает их определения и типичные архитектуры.
 
 ![](https://assets.bytebytego.com/diagrams/0264-logging-tracing-metrics.png)
 
-## Logging
+## Лесопользование
 
-Logging records discrete events in the system. For example, we can record an incoming request or a visit to databases as events. It has the highest volume. ELK (Elastic-Logstash-Kibana) stack is often used to build a log analysis platform. We often define a standardized logging format for different teams to implement, so that we can leverage keywords when searching among massive amounts of logs.
+Запись записывает дискретные события в системе. Например, мы можем записывать входящее запрос или посещение баз данных в качестве событий. Он имеет самый высокий объем. Склад ELK (Elastic-Logstash-Kibana) часто используется для создания платформы анализа журналов. Мы часто определяем стандартный формат регистрации для разных команд, чтобы использовать ключевые слова при поиске огромного количества журналов.
 
-## Tracing
+## Отслеживание
 
-Tracing is usually request-scoped. For example, a user request goes through the API gateway, load balancer, service A, service B, and database, which can be visualized in the tracing systems. This is useful when we are trying to identify the bottlenecks in the system. We use OpenTelemetry to showcase the typical architecture, which unifies the 3 pillars in a single framework.
+Следование обычно осуществляется по запросу. Например, запрос пользователя проходит через API- шлюз, баланс нагрузки, сервис A, сервис B и базу данных, которые могут быть визуализированы в системах отслеживания. Это полезно, когда мы пытаемся выявить узлы в системе. На примере OpenTelemetry показана типовая архитектура, объединяющая все три направления в одной платформе.
 
-## Metrics
+## Счетные показатели
 
-Metrics are usually aggregatable information from the system. For example, service QPS, API responsiveness, service latency, etc. The raw data is recorded in time-series databases like InfluxDB. Prometheus pulls the data and transforms the data based on pre-defined alerting rules. Then the data is sent to Grafana for display or to the alert manager which then sends out email, SMS, or Slack notifications or alerts.
+Счетные данные обычно представляют собой информацию, которую можно составить в системе. Например, QPS сервиса, API-реактивность, латентность сервиса и т.д. Необработанные данные записываются в базах данных временных серий, таких как InfluxDB. Prometheus вытягивает данные и преобразует их на основе заранее определенных правил оповещения. Затем данные отправляются Grafana для отображения или менеджеру оповещений, который затем отправляет электронную почту, SMS или уведомления или оповещения Slack.

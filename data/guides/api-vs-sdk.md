@@ -11,7 +11,7 @@ tags:
   - SDK
 ---
 
-![API vs SDK](https://assets.bytebytego.com/diagrams/0071-api-vs-sdk.png)
+![API против SDK](https://assets.bytebytego.com/diagrams/0071-api-vs-sdk.png)
 
 API (интерфейс прикладного программирования) и SDK (комплект разработки программного обеспечения) являются важными инструментами в мире разработки программного обеспечения, но они служат разным целям:
 

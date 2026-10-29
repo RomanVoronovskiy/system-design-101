@@ -1,6 +1,6 @@
 ---
-title: "Pessimistic vs Optimistic Locking"
-description: "Explore pessimistic and optimistic locking strategies for data consistency."
+title: "Пессимистические и оптимистические блокировки"
+description: "Пессимистические и оптимистические блокировки для обеспечения согласованности данных."
 image: "https://assets.bytebytego.com/diagrams/0301-pessimistic-vs-optimistic-locking.png"
 createdAt: "2024-01-29"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0301-pessimistic-vs-optimistic-locking.png)
 
-Locks are essential to maintain data consistency and integrity in multi-user environments. They prevent simultaneous modifications that can lead to data inconsistencies.
+Блокировки необходимы для сохранения согласованности и целостности данных в многопользовательских системах. Они предотвращают одновременные изменения, которые могут привести к противоречиям в данных.
 
-Pessimistic locking assumes conflicts will occur and locks the data before any changes are made. It prevents other users from accessing and updating the data until the lock is released.
+Пессимистическая блокировка исходит из того, что конфликты будут возникать, поэтому данные блокируются до внесения изменений. Пока блокировка не снята, другие пользователи не могут получить доступ к этим данным и обновлять их.
 
-Optimistic locking assumes conflicts are rare. It allows multiple users to access data simultaneously and checks for conflicts when changes are committed. If a conflict is detected, the operation is rolled back.
+Оптимистическая блокировка предполагает, что конфликты редки. Несколько пользователей могут одновременно работать с данными, а проверка конфликтов выполняется при фиксации изменений. Если обнаружен конфликт, операция откатывается.
 
-## Best Practices
+## Рекомендуемые практики
 
-Here are some best practices to consider:
+Стоит учитывать следующие рекомендации:
 
-*   Hold locks for the minimum possible time to reduce contention.
-*   Apply locks at the most granular level such as rows rather than tables.
-*   Implement retry logic for transactions that fail due to conflicts.
-*   Pessimistic locking is better for data integrity but can impact performance.
-*   Optimistic locking is better for efficiency and performance.
+* Удерживайте блокировки как можно меньше времени, чтобы снизить конкуренцию за ресурсы.
+* Применяйте блокировки на как можно более детальном уровне: например, блокируйте строки вместо целых таблиц.
+* Реализуйте повторные попытки для транзакций, завершившихся неудачей из-за конфликтов.
+* Пессимистическая блокировка лучше защищает целостность данных, но может снижать производительность.
+* Оптимистическая блокировка позволяет эффективнее использовать ресурсы и повышать производительность.

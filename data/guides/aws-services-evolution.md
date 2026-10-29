@@ -11,7 +11,7 @@ tags:
   - "AWS"
 ---
 
-[![AWS Services Evolution](https://assets.bytebytego.com/diagrams/0081-aws-services-evolution.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb384f75-2fbb-4c5b-9d5e-b97557d02f33_1572x1894.png)
+[![Эволюция сервисов AWS](https://assets.bytebytego.com/diagrams/0081-aws-services-evolution.png)](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbb384f75-2fbb-4c5b-9d5e-b97557d02f33_1572x1894.png)
 
 Как AWS выросла с нескольких сервисов в 2006 году до более чем 200 полнофункциональных сервисов? Давайте посмотрим.
 

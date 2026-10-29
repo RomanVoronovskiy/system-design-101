@@ -1,6 +1,6 @@
 ---
-title: "Polling vs Webhooks"
-description: "Polling vs webhooks: a detailed comparison of two data retrieval methods."
+title: "Опрос сервера и вебхуки"
+description: "Проверка в отношении веб-хуков: подробное сопоставление двух методов поиска данных."
 image: 'https://assets.bytebytego.com/diagrams/0057-pooling-vs-webhook.png'
 createdAt: '2024-03-03'
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0057-pooling-vs-webhook.png)
 
-## Polling
+## Опрос сервера
 
-Polling involves repeatedly checking the external service or endpoint at fixed intervals to retrieve updated information.
+Проведение опроса предполагает проведение неоднократной проверки внешней службы или конечного пункта через постоянные промежутки времени для получения обновленной информации.
 
-It’s like constantly asking, “Do you have something new for me?” even where there might not be any update.
+Это, как постоянно спрашивать, у тебя есть что-то новое для меня? Даже там, где не было никаких новостей.
 
-This approach is resource-intensive and inefficient.
+Такой подход является ресурсоемким и неэффективным.
 
-Also, you get updates only when you ask for it, thereby missing any real-time information.
+Также вы получаете обновления только когда вы просите, тем самым упуская любую информацию в реальном времени.
 
-However, developers have more control over when and how the data is fetched.
+Однако разработчики имеют больший контроль над тем, когда и как поступают данные.
 
-## Webhooks
+## Вебхуки
 
-Webhooks are like having a built-in notification system.
+У Web-хуков как у встроенной системы уведомления.
 
-You don’t continuously ask for information.
+Ты не постоянно просишь информацию.
 
-Instead you create an endpoint in your application server and provide it as a callback to the external service (such as a payment processor or a shipping vendor)
+Вместо этого вы создаете конечный пункт на вашем сервере приложения и возвращаете его в качестве обратного звонка внешнему сервису (например, платежному оператору или поставщику)
 
-Every time something interesting happens, the external service calls the endpoint and provides the information.
+Каждый раз, когда происходит что-то интересное, внешняя служба вызывает конечный пункт и предоставляет информацию.
 
-This makes webhooks ideal for dealing with real-time updates because data is pushed to your application as soon as it’s available.
+Это делает веб-хуков идеальным для обработки обновленных данных в режиме реального времени, поскольку данные направляются в ваше приложение, как только оно будет доступно.
 
-So, when to use Polling or Webhook?
+Так когда использовать "Полинг" или "Уэбхук"?
 
-Polling is a solid option when there is some infrastructural limitation that prevents the use of webhooks. Also, with webhooks there is a risk of missed notifications due to network issues, hence proper retry mechanisms are needed.
+Переборы являются надежным вариантом, когда существует определенная инфраструктура, которая препятствует использованию веб-хуков. Кроме того, при наличии веб-хуков существует опасность того, что уведомления будут неуведомлены из-за проблем с сетью, в связи с чем необходимы надлежащие механизмы повторного рассмотрения.
 
-Webhooks are recommended for applications that need instant data delivery. Also, webhooks are efficient in terms of resource utilization especially in high throughput environments.
+Веб-хуки рекомендуются для приложений, требующих немедленного представления данных. Кроме того, веб-хуки являются эффективными с точки зрения использования ресурсов, особенно в условиях высокой производительности.

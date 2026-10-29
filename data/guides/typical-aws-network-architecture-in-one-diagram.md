@@ -1,6 +1,6 @@
 ---
-title: "Typical AWS Network Architecture"
-description: "Explore a typical AWS network architecture with key components."
+title: "Типовая сетевая архитектура AWS"
+description: "Изучение типичной архитектуры сети AWS с ключевыми компонентами."
 image: "https://assets.bytebytego.com/diagrams/0123-typical-aws-network-architecture.png"
 createdAt: "2024-02-15"
 draft: false
@@ -11,52 +11,52 @@ tags:
   - Cloud Architecture
 ---
 
-![No alternative text description for this image](https://assets.bytebytego.com/diagrams/0123-typical-aws-network-architecture.png)
+![Типовая сетевая архитектура AWS](https://assets.bytebytego.com/diagrams/0123-typical-aws-network-architecture.png)
 
-Amazon Web Services (AWS) offers a comprehensive suite of networking services designed to provide businesses with secure, scalable, and highly available network infrastructure. AWS's network architecture components enable seamless connectivity between the internet, remote workers, corporate data centers, and within the AWS ecosystem itself.
+Amazon Web Services (AWS) предлагает полный набор сетевых услуг, предназначенных для обеспечения предприятий безопасной, масштабируемой и высокодоступной сетевой инфраструктурой. Компоненты сетевой архитектуры AWS обеспечивают бесперебойную связь между Интернетом, удалёнными рабочими, корпоративными центрами данных и самой экосистемой AWS.
 
-## Key Components
+## Основные компоненты
 
-*   **VPC (Virtual Private Cloud)**
+*   **ВКН (частное окошко)**
 
-    At the heart of AWS's networking services is the Amazon VPC, which allows users to provision a logically isolated section of the AWS Cloud. Within this isolated environment, users can launch AWS resources in a virtual network that they define.
+    В центре сетевых услуг AWS находится Amazon VPC, который позволяет пользователям обеспечивать логически изолированный участок облака AWS. В этой изолированной среде пользователи могут запустить ресурсы AWS в виртуальной сети, которую они определяют.
 
-*   **AZ (Availability Zone)**
+*   **AZ (зона пригодности)**
 
-    An AZ in AWS refers to one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
+    AZ в AWS означает один или несколько дискретных центров данных с избыточными возможностями, сетями и связующим звеном в регионе AWS.
 
-Now let’s go through the network connectivity one by one:
+Теперь давайте пройдём через сетевое подключение один за другим:
 
-## Network Connectivity
+## Сеть связи
 
-### 1. Connect to the Internet - Internet Gateway (IGW)
+### 1. Подключение к Интернету - Интернет-портал (IGW)
 
-An IGW serves as the doorway between your AWS VPC and the internet, facilitating bidirectional communication.
+ИГВ служит в качестве дверного проема между вашим VPC AWS и Интернетом, облегчая двунаправленную связь.
 
-### 2. Remote Workers - Client VPN Endpoint
+### 2. Удаленные работники - клиент VPN
 
-AWS offers a Client VPN service that enables remote workers to access AWS resources or an on-premises network securely over the internet. It provides a secure and easy-to-manage VPN solution.
+AWS предлагает клиенту VPN-сервис, который позволяет удалённым рабочим получить доступ к ресурсам AWS или защищенной сети в Интернете. Она обеспечивает надежное и легкое для управления VPN решение.
 
-### 3. Corporate Data Center Connection - Virtual Gateway (VGW)
+### 3. Подключение корпоративного центра данных - виртуальный портал (ВЦЖ)
 
-A VGW is the VPN concentrator on the Amazon side of the Site-to-Site VPN connection between your network and your VPC.
+VGW - это VPN концентратор на Амазонии, соединяющий VPN с VPN между вашей сетью и вашим VPC.
 
-### 4. VPC Peering
+### 4. ВСМ Колумбирный контроль
 
-VPC Peering allows you to connect two VPCs, enabling you to route traffic between them using private IPv4 or IPv6 addresses.
+VPC Percing позволяет вам соединять два VPC, что позволяет вам управлять движением между ними по частным IPv4 или IPv6.
 
-### 5. Transit Gateway
+### 5. Транзитный портал
 
-AWS Transit Gateway acts as a network transit hub, enabling you to connect multiple VPCs, VPNs, and AWS accounts together.
+AWS Transit Gateway выступает в качестве сетевого транзитного узла, что позволяет вам соединять несколько VPC, VPN и AWS счетов вместе.
 
-### 6. VPC Endpoint (Gateway)
+### 6. Конец VPC (Гейтвей)
 
-A VPC Endpoint (Gateway type) allows you to privately connect your VPC to supported AWS services and VPC endpoint services powered by PrivateLink without requiring an internet gateway, VPN.
+VPC Endpoint (тип Gateway) позволяет вам подключать ваш VPC к поддержке AWS и VPC конечных точек, которые работают на Prict Link, не требуя интернет-порта VPN.
 
-### 7. VPC Endpoint (Interface)
+### 7. Конец VPC (интерфэйс)
 
-An Interface VPC Endpoint (powered by AWS PrivateLink) enables private connections between your VPC and supported AWS services, other VPCs, or AWS Marketplace services, without requiring an IGW, VGW, or NAT device.
+Интерфэйс VPC Endpoint (с помощью AWS CenterLink) позволяет поддерживать частные связи между вашим VPC и поддерживаемыми услугами AWS, другими VPC, или AWS Marketplace, без необходимости IGW, VGW или NAT-устройства.
 
-### 8. SaaS Private Link Connection
+### 8. Подключение к SaaS через частный канал связи
 
-AWS PrivateLink provides private connectivity between VPCs and services hosted on AWS or on-premises, ideal for accessing SaaS applications securely.
+AWS PrivateLink обеспечивает частную связь между VPC и услугами, размещенными на AWS или на сайте, что идеально подходит для надежного доступа к приложениям Saas.

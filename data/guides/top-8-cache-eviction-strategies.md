@@ -1,6 +1,6 @@
 ---
-title: "Top 8 Cache Eviction Strategies"
-description: "Explore 8 key cache eviction strategies to optimize performance."
+title: "Восемь стратегий вытеснения данных из кеша"
+description: "Изучение 8 ключевых стратегий вытеснения в целях оптимизации результатов."
 image: "https://assets.bytebytego.com/diagrams/0059-top-8-cache-eviction-strategies.png"
 createdAt: "2024-02-28"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0059-top-8-cache-eviction-strategies.png)
 
-## LRU (Least Recently Used)
+## LRU (наименее недавно использованное)
 
-LRU eviction strategy removes the least recently accessed items first. This approach is based on the principle that items accessed recently are more likely to be accessed again in the near future.
+Стратегия выселения ЛРУ предусматривает прежде всего исключение наименее доступных предметов. Этот подход основывается на том принципе, что доступ к товарам, которые были получены в последнее время, будет более вероятным в ближайшем будущем.
 
-## MRU (Most Recently Used)
+## MRU (самое большое количество недавно использованных средств)
 
-Contrary to LRU, the MRU algorithm removes the most recently used items first. This strategy can be useful in scenarios where the most recently accessed items are less likely to be accessed again soon.
+Вопреки LRU алгоритм MRU сначала удаляет самые недавно использованные предметы. Эта стратегия может быть полезной в тех сценариях, когда в ближайшее время будет менее вероятно, что к самым последним товарам будет вновь предоставлен доступ.
 
-## SLRU (Segmented LRU)
+## СЛРУ (Сегментированная ЛРУ)
 
-SLRU divides the cache into two segments: a probationary segment and a protected segment. New items are initially placed into the probationary segment. If an item in the probationary segment is accessed again, it is promoted to the protected segment.
+SLRU делит кэш на два сегмента: испытательный сегмент и защищенный сегмент. Первоначально новые позиции включаются в сегмент, посвященный испытательному сроку. Если вновь имеется доступ к предмету, находящемуся на испытательном этапе, то он подается в защищенный сегмент.
 
-## LFU (Least Frequently Used)
+## ЛФА (наименее часто используемый)
 
-LFU algorithm evicts the items with the lowest access frequency.
+Алгоритм LFU выселяет предметы с наименьшей частотой доступа.
 
-## FIFO (First In First Out)
+## FIFO (первая группа)
 
-FIFO is one of the simplest caching strategies, where the cache behaves in a queue-like manner, evicting the oldest items first, regardless of their access patterns or frequency.
+FIFO является одной из самых простых стратегий кэша, где кэш ведет себя в очереди, высечивая из них самые старые предметы, независимо от их схем доступа или частоты.
 
-## TTL (Time-to-Live)
+## TTL (от времени до времени)
 
-While not strictly an eviction algorithm, TTL is a strategy where each cache item is given a specific lifespan.
+Хотя TTL не является алгоритмом вытеснения, он является стратегией, в которой каждому из предметов, поставляемых в кэш, предоставляется определенный срок службы.
 
-## Two-Tiered Caching
+## Двухпожатая качающаяся
 
-In Two-Tiered Caching strategy, we use an in-memory cache for the first layer and a distributed cache for the second layer.
+В стратегии двухмерного качания мы используем кэш-сохранитель для первого слоя и распределенный кэш для второго слоя.
 
-## RR (Random Replacement)
+## RR (замена на случай случайных действий)
 
-Random Replacement algorithm randomly selects a cache item and evicts it to make space for new items. This method is also simple to implement and does not require tracking access patterns or frequencies.
+Случайный алгоритм замены произвольно выбирает кэш-продукт и выселяет его, чтобы сделать пространство для новых предметов. Этот метод также прост в применении и не требует отслеживания схем доступа или частот.

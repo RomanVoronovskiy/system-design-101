@@ -11,7 +11,7 @@ tags:
   - "Interview Preparation"
 ---
 
-![System Design Interviews](https://assets.bytebytego.com/diagrams/0104-how-to-ace-system-design-interviews-like-a-boss.png)
+![Как пройти собеседование по проектированию систем Ace](https://assets.bytebytego.com/diagrams/0104-how-to-ace-system-design-interviews-like-a-boss.png)
 
 Следуйте этому 7-шаговому процессу, чтобы преуспеть в раунде проектирования системы.
 

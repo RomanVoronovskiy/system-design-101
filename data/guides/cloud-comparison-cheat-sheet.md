@@ -11,7 +11,7 @@ tags:
   - Comparison
 ---
 
-![Cloud Comparison Cheat Sheet](https://assets.bytebytego.com/diagrams/0093-cloud-comparison-cheat-sheet.png)
+![Шпаргалка по сравнению облаков](https://assets.bytebytego.com/diagrams/0093-cloud-comparison-cheat-sheet.png)
 
 ## Шпаргалка по сравнению облаков
 

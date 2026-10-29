@@ -1,6 +1,6 @@
 ---
-title: "What is the Best Way to Learn SQL?"
-description: "A guide to efficiently learn SQL and its components for different roles."
+title: "Как лучше изучать SQL?"
+description: "Руководство по эффективному изучению СМК и его компонентов для различных ролей."
 image: "https://assets.bytebytego.com/diagrams/0031-how-to-learn-sql.png"
 createdAt: "2024-03-16"
 draft: false
@@ -11,22 +11,22 @@ tags:
   - "Databases"
 ---
 
-![SQL Learning Path](https://assets.bytebytego.com/diagrams/0031-how-to-learn-sql.png)
+![Как лучше изучать SQL?](https://assets.bytebytego.com/diagrams/0031-how-to-learn-sql.png)
 
-In 1986, SQL (Structured Query Language) became a standard. Over the next 40 years, it became the dominant language for relational database management systems. Reading the latest standard (ANSI SQL 2016) can be time-consuming. How can I learn it?
+В 1986 году SQL (Structed Cally Language) стал стандартом. В течение следующих 40 лет она стала доминирующей терминологией для систем управления реляционной базой данных. Чтение последнего стандарта (ANSI SQL 2016) может занять много времени. Как я могу это выучить?
 
-## SQL Components
+## Компоненты SQL
 
-There are 5 components of the SQL language:
+В языке SQL имеется пять компонентов:
 
-*   **DDL**: data definition language, such as CREATE, ALTER, DROP
+*   **DDL**:: язык определения данных, такой, как CREATE, ALTER, DROP
 
-*   **DQL**: data query language, such as SELECT
+*   **DQL**:: язык запроса данных, например SELECT
 
-*   **DML**: data manipulation language, such as INSERT, UPDATE, DELETE
+*   **DML**:: язык манипулирования данными, такой, как ИНСЕРТ, UPDATE, ДЕЛЕТЕ
 
-*   **DCL**: data control language, such as GRANT, REVOKE
+*   **DCL**:: язык контроля данных, например, язык " GRANT ", REVOKE
 
-*   **TCL**: transaction control language, such as COMMIT, ROLLBACK
+*   **TCL**:: язык контроля за операциями, такой, как OAH, ROLLBACK
 
-For a backend engineer, you may need to know most of it. As a data analyst, you may need to have a good understanding of DQL. Select the topics that are most relevant to you.
+Для инженера-подсобника, вам, возможно, нужно знать большую часть. Как аналитику данных, вам, возможно, понадобится хорошее понимание DQL. Выберите темы, которые имеют для вас самое важное значение.

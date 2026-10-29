@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Cloud Messaging Patterns"
-description: "Explore 6 key cloud messaging patterns for distributed systems."
+title: "Шесть шаблонов обмена сообщениями в облаке"
+description: "Изучение 6 ключевых схем обмена облачными сообщениями для распределенных систем."
 image: "https://assets.bytebytego.com/diagrams/0378-top-6-cloud-messaging-patterns.png"
 createdAt: "2024-02-26"
 draft: false
@@ -11,34 +11,34 @@ tags:
   - "Design Patterns"
 ---
 
-How do services communicate with each other? The diagram below shows 6 cloud messaging patterns.
+Как службы общаются друг с другом? На диаграмме ниже показано шесть схем обмена облаками.
 
 ![](https://assets.bytebytego.com/diagrams/0378-top-6-cloud-messaging-patterns.png)
 
-## Asynchronous Request-Reply
+## Асинхронный запрос-обвинение
 
-This pattern aims at providing determinism for long-running backend tasks. It decouples backend processing from frontend clients.
+Эта схема направлена на обеспечение детерминизма при выполнении долгосрочных задач, связанных с выполнением бронеобменников. Это отделяет от обработки данных прифронтовыми клиентами.
 
-In the diagram below, the client makes a synchronous call to the API, triggering a long-running operation on the backend. The API returns an HTTP 202 (Accepted) status code, acknowledging that the request has been received for processing.
+На диаграмме ниже клиент делает синхронный звонок в API, инициируя долгосрочную операцию на заднем плане. API возвращает HTTP 202 (принятый) код состояния, признавая, что запрос был получен для обработки.
 
-## Publisher-Subscriber
+## Издатель-подписчик
 
-This pattern targets decoupling senders from consumers, and avoiding blocking the sender to wait for a response.
+Этот шаблон направлен на то, чтобы отделить от потребителей отправителей и избежать блокирования отправителя, чтобы дождаться ответа.
 
-## Claim Check
+## Проверка претензий
 
-This pattern solves the transmision of large messages. It stores the whole message payload into a database and transmits only the reference to the message, which will be used later to retrieve the payload from the database.
+Этот шаблон решает проблему трансмиссии больших сообщений. Он хранит всю полезную нагрузку для сообщений в базе данных и передает только ссылку на сообщение, которое будет использоваться позднее для извлечения полезной нагрузки из базы данных.
 
-## Priority Queue
+## Приоритет
 
-This pattern prioritizes requests sent to services so that requests with a higher priority are received and processed more quickly than those with a lower priority.
+В соответствии с этой схемой первоочередное внимание уделяется просьбам, направляемым в службы, с тем чтобы просьбы, имеющие более высокий приоритет, поступали и обрабатывались быстрее, чем просьбы, имеющие более низкий приоритет.
 
-## Saga
+## Сага
 
-Saga is used to manage data consistency across multiple services in distributed systems, especially in microservices architectures where each service manages its own database.
+Saga используется для обеспечения согласованности данных по многим видам услуг в распределенных системах, особенно в архитектурах микроуслуг, в которых каждая служба управляет своей собственной базой данных.
 
-The saga pattern addresses the challenge of maintaining data consistency without relying on distributed transactions, which are difficult to scale and can negatively impact system performance.
+Схемы сага позволяют решить задачу обеспечения согласованности данных без использования распределенных операций, которые трудно масштабировать и могут негативно сказаться на функционировании системы.
 
-## Competing Consumers
+## Конкурирующие потребители
 
-This pattern enables multiple concurrent consumers to process messages received on the same messaging channel. There is no need to configure complex coordination between the consumers. However, this pattern cannot guarantee message ordering.
+Такая схема позволяет нескольким одновременно потребителям обрабатывать сообщения, полученные на одном и том же канале обмена сообщениями. Нет необходимости в том, чтобы настраивать сложную координацию между потребителями. Однако эта схема не может гарантировать заказ сообщений.

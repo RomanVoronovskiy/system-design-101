@@ -1,6 +1,6 @@
 ---
-title: "Understanding Database Types"
-description: "Explore different database types and their use cases."
+title: "Разбираемся в типах баз данных"
+description: "Изучение различных типов баз данных и случаев их использования."
 image: "https://assets.bytebytego.com/diagrams/0394-understanding-database-types.png"
 createdAt: "2024-02-20"
 draft: false
@@ -13,4 +13,4 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0394-understanding-database-types.png)
 
-To make the best decision for our projects, it is essential to understand the various types of databases available in the market. We need to consider key characteristics of different database types, including popular options for each, and compare their use cases.
+Для принятия наилучшего решения по нашим проектам необходимо понять различные типы баз данных, имеющихся на рынке. Нам необходимо рассмотреть ключевые характеристики различных типов баз данных, включая популярные варианты для каждого из них, и сравнить их случаи использования.

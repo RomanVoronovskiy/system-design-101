@@ -1,6 +1,6 @@
 ---
-title: "What is ELK Stack and Why is it Popular?"
-description: "Learn about the ELK Stack: Elasticsearch, Logstash, and Kibana."
+title: "Что такое стек ELK и почему он популярен?"
+description: "Узнайте об ЭЛК Стэк: \"Электические поиски, Логсташ и Кибана\"."
 image: "https://assets.bytebytego.com/diagrams/0183-elk.jpg"
 createdAt: "2024-02-15"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0183-elk.jpg)
 
-The ELK Stack is composed of three open-source products. ELK stands for Elasticsearch, Logstash, and Kibana.
+В состав ЭЛК входят три открытых продукта. ЭЛК означает "Эластичные поиски", "Лонгсташ" и "Кибана".
 
-*   Elasticsearch is a full-text search and analysis engine, leveraging Apache Lucene search engine as its core component.
+*   Elastic Search — это полнотекстовый поисково-аналитический механизм, использующий поисковую систему Apache Lucen в качестве основного компонента.
 
-*   Logstash collects data from all kinds of edge collectors, then transforms that data and sends it to various destinations for further processing or visualization.
+*   Логшташ собирает данные от всех видов коллекционеров, затем преобразует эти данные и направляет их в различные пункты назначения для дальнейшей обработки или визуализации.
 
-In order to scale the edge data ingestion, a new product Beats is later developed as lightweight agents installed on edge hosts to collect and ship logs to Logstash.
+Для того чтобы расширить диапазон поглощения данных о краях, позднее в качестве легкого агента, установленного на кромках, для сбора и отправки бревен в Логшташ, разрабатывается новый продукт Beats.
 
-*   Kibana is a visualization layer with which users analyze and visualize the data.
+*   Кибана — это слой визуализации, с помощью которого пользователи анализируют и визуализируют данные.
 
-The diagram above shows how ELK Stack works:
+На приведенной выше диаграмме показано, как работает ЭЛК Стак:
 
-## ELK Stack Workflow
+## ELK Рабочий поток забора
 
-Step 1 - Beats collects data from various data sources. For example, Filebeat and Winlogbeat work with logs, and Packetbeat works with network traffic.
+Этап 1 - Сбор данных из различных источников данных. Например, Filebeat и Winlogbeat работают с журналами, а Packetbeat работает с сетевым движением.
 
-Step 2 - Beats sends data to Logstash for aggregation and transformation. If we work with massive data, we can add a message queue (Kafka) to decouple the data producers and consumers.
+Этап 2 - " Битс " направляет данные в " Логсташ " для агрегирования и преобразования. Если мы будем работать с массивными данными, мы можем добавить очередь сообщений (Kafka) для расчленения производителей и потребителей данных.
 
-Step 3 - Logstash writes data into Elasticsearch for data indexing and storage.
+Шаг 3 - Логшташ пишет данные в Elastic Exploration для индексации и хранения данных.
 
-Step 4 - Kibana builds on top of Elasticsearch and provides users with various search tools and dashboards with which to visualize the data.
+Этап 4 - Кибана опирается на результаты исследования Эластика и предоставляет пользователям различные поисковые инструменты и панели, позволяющие представить данные.
 
-ELK Stack is pretty convenient for troubleshooting and monitoring. It became popular by providing a simple and robust suite in the log analytics space, for a reasonable price.
+Элек Стэк довольно удобен для выявления проблем и мониторинга. Он стал популярным, предоставив простой и надежный номер в помещении для анализа журнала по разумной цене.

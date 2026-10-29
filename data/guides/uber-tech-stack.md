@@ -1,6 +1,6 @@
 ---
-title: Uber Tech Stack
-description: Explore the tech stack that powers Uber's real-time transportation network.
+title: "Технологический стек Uber"
+description: "Изучите технарь, который работает на транспортной сети Uber в реальном времени."
 image: 'https://assets.bytebytego.com/diagrams/0124-uber-tech-stack-overall.png'
 createdAt: '2024-03-10'
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0124-uber-tech-stack-overall.png)
 
-This post is based on research from many Uber engineering blogs and open-source projects. If you come across any inaccuracies, please feel free to inform us. The corresponding links are added in the comment section.
+Эта статья основана на исследованиях многих Uber technological блогов и открытых проектов. Если вы найдёте какие-либо неточности, пожалуйста, не стесняйтесь сообщить нам. Соответствующие ссылки добавлены в раздел комментариев.
 
-**Web frontend:** Uber builds Fusion.js as a modern React framework to create robust web applications. They also develop visualization.js for geospatial visualization scenarios.
+**Веб-фронт:** Uber создает Fusion.js как современную систему React для создания надежных веб-приложений. Они также разрабатывают визуализацию.j для сценариев геопространственной визуализации.
 
-**Mobile side:** Uber builds the RIB cross-platform with the VIPER architecture instead of MVC. This architecture can work with different languages: Swift for iOS, and Java for Android.
+**Мобильная сторона:** Uber создает RIB кросс-платформу с архитектурой VIPER вместо MVC. Эта архитектура может работать с различными языками: Swift for iOS, и Java for Android.
 
-**Service mesh:** Uber built Uber Gateway as a dynamic configuration on top of NGINX. The service uses gRPC and QUIC for client-server communication, and Apache Thrift for API definition.
+**Сервисный сет:** Uber построил Uber Gateway как динамическую конфигурацию на вершине NGINX. Для связи с клиентом-сервером в сервисе используются GRPC и QICU, а для определения API Apache Thrrift.
 
-**Service side:** Uber built a unified configuration store named Flipr (later changed to UCDP), H3 as a location-index store library. They use Spring Boot for Java-based services, uAct for event-driven architecture, and Cadence for async workflow orchestration.
+**Сервисная сторона:** Uber построил унифицированный магазин конфигурации Flipper (позднее сменился UCDP), H3 как библиотека локации-индекс. Они используют Spring Boot для Java-сервисов, uAct для архитектуры, ориентированной на события, и Cadence для асинк-оркетинга рабочих процессов.
 
-**Database end:** the OLTP mainly uses the strongly-consistent DocStore, which employs MySQL and PostgreSQL, along with the RocksDB database engine.
+**Завершение базы данных:** ОЛТП использует в основном твердо последовательный DocStore, который использует MySQL и PostgreSQL, а также двигатель базы данных RocksDB.
 
-**Big data:** managed through the Hadoop family. Hudi and Parquet are used as file formats, and Alluxio serves as cache. Time-series data is stored in Pinot and AresDB.
+**Большие данные:** Управляется через семью Хадуп. Hudi and Parquet используются в качестве файловых форматов, а Alluxio — в качестве кэша. Данные временных рядов хранятся в Пино и АресБР.
 
-**Data processing:** Hive, Spark, and the open-source data ingestion framework Marmaray. Messaging and streaming middleware include Apache Kafka and Apache Flink.
+**Обработка данных:** Улей, Спарк и открытая система приема данных, поглощающая данные, Мармарай. Помещение и пересылание среднего программного обеспечения включают Apache Kafka и Apache Flink.
 
-**DevOps side:** Uber utilizes a Monorepo, with a simplified development environment called devpod. Continuous delivery is managed through Netflix Spinnaker, metrics are emitted to uMetric, alarms on uMonitor, and a consistent observability database M3.
+**Сбоку от "DevOps":** Uber использует Monorepo, с упрощенной средой развития, называемой devpod. Непрерывная доставка осуществляется через Netflix Spinnaaker, метрики выбрасываются в uMetric, напоминают на uMonitor и постоянно поддерживают базу данных M3.

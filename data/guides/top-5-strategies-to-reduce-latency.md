@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Strategies to Reduce Latency"
-description: "Explore top strategies to minimize latency in high-scale systems."
+title: "Пять способов уменьшить задержку"
+description: "Изучение стратегий, направленных на сведение к минимуму степени представленности в крупных системах."
 image: "https://assets.bytebytego.com/diagrams/0375-top-5-strategies-to-reduce-latency.png"
 createdAt: "2024-02-21"
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0375-top-5-strategies-to-reduce-latency.png)
 
-10 years ago, Amazon found that every 100ms of latency cost them 1% in sales. That’s a staggering $5.7 billion in today’s terms.
+10 лет назад Амазонка обнаружила, что каждый 10000 латини в продаже стоит 1%. Это ошеломляющая сумма в 5,7 млрд. долл. США в наши дни.
 
-For high-scale user-facing systems, high latency is a big loss of revenue.
+Для систем, предназначенных для пользователей большого размера, высокая степень няни является большой потерей доходов.
 
-Here are the top strategies to reduce latency:
+Вот основные стратегии по сокращению степени белья:
 
-*   **Database Indexing**
-*   **Caching**
-*   **Load Balancing**
-*   **Content Delivery Network**
-*   **Async Processing**
-*   **Data Compression**
+*   **Индексация базы данных**
+*   **Зажим**
+*   **Балансировка нагрузки**
+*   **Сеть доставки контента**
+*   **Обработка асинков**
+*   **Компрессия данных**

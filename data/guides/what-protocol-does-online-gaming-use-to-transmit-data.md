@@ -1,6 +1,6 @@
 ---
-title: "TCP vs UDP for Online Gaming"
-description: "Explore TCP and UDP protocols in online gaming for data transmission."
+title: "TCP и UDP в онлайн-играх"
+description: "Изучение протоколов TCP и UDP в режиме онлайн для передачи данных."
 image: "https://assets.bytebytego.com/diagrams/0315-reliable-udp.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0315-reliable-udp.png)
 
-A common practice is to use RUDP (Reliable UDP). It adds a **reliable** mechanism on top of UDP to provide **much lower latency** than TCP and guarantee accuracy.
+Обычно используется RUDP (надежный UDP). Он добавляет: **надежность** :: механизм на уровне UDP для обеспечения **гораздо меньшее крыло** выше ТКП и точности гарантии.
 
-The diagram below shows how reliable data delivery is implemented in online gaming to get eventually-synchronized states.
+На диаграмме ниже показано, как надежное предоставление данных осуществляется в режиме онлайн для получения в конечном итоге синхронизированных состояний.
 
-Suppose there is a big fight in a simulation shooter game. Characters A, B, and C open fires in sequence. How does the game server transmit the states from the game server to the game client?
+Предположим, что в игре симулятора будет большая драка. Символы А, В и С открывают огонь последовательно. Как сервер игры передает штаты с сервера игры клиенту игры?
 
-*   **Steps 1 and 2** - Character A opens fires. The packet (packet 0) is sent to the client. The client acknowledges the server.
+*   **Шаги 1 и 2** - Вид А открывает огонь. Пакет (пакет 0) отправляется клиенту. Клиент признает сервер.
 
-*   **Step 3** - Character B opens fire. The packet is lost during transmission.
+*   **Третий шаг** - Символ B открывает огонь. Пакет потерян во время передачи.
 
-*   **Steps 4 and 5** - Character C opens fire. The packet (packet 2) is sent to the client. Since the last successfully delivered packet is packet 0, the client knows that packet 1 is lost, so packet 2 is **buffered** on the client side. The client acknowledges the server for the reception of packet 2.
+*   **Шаги 4 и 5** - Символ С открывает огонь. Пакет (упаковка 2) направляется клиенту. Поскольку последний успешно доставленный пакет - пакет 0, клиент знает, что пакет 1 потерян, так что пакет 2 **Защитный** Клиенты. Клиент признает сервер для получения пакета 2.
 
-*   **Steps 6 and 7** - The server doesn’t receive the ack for packet 1 for a while, so it resends packet 1. When the client receives packet 1, all the subsequent packets become effective, so packets 1 and 2 become “**delivered**”. The client then acknowledges the server for the reception of packet 1. No packets are buffered at this point.
+*   **Шаги 6 и 7** - Сервер не получает аккурат за пакет 1 какое-то время, так что он пересылает пакет 1. Когда клиент получает пакет 1, все последующие пакеты становятся эффективными, так что пакеты 1 и 2 становятся,**Выполнено**”. Затем клиент принимает сервер для получения пакета 1. В данный момент никаких пакетов не сбрасывают.

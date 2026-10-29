@@ -1,6 +1,6 @@
 ---
-title: "Cookies vs Sessions"
-description: "Explore the key differences between cookies and sessions in web development."
+title: "Cookie и сессии: сравнение"
+description: "Изучение основных различий между печеньем и занятиями в развитии веб-сайта."
 image: "https://assets.bytebytego.com/diagrams/0154-cookies-vs-session.png"
 createdAt: "2024-02-17"
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0154-cookies-vs-session.png)
 
-Cookies and sessions are both used to carry user information over HTTP requests, including user login status, user permissions, etc.
+Печенье и сеансы используются для передачи информации об использовании в запросах HTTP, включая статус пользователя, права пользователей и т.д.
 
-## Cookies
+## Печенье
 
-Cookies typically have size limits (4KB). They carry small pieces of information and are stored on the users’ devices. Cookies are sent with each subsequent user request. Users can choose to ban cookies in their browsers.
+Обычно печенье имеет предельные размеры (4KB). Они содержат небольшие части информации и хранятся на пользователях, устройствах. Печенье отправляется с каждым последующим запросом пользователя. Пользователи могут выбирать, что запретить печенье в своих браузерах.
 
-## Sessions
+## Сессии
 
-Unlike cookies, sessions are created and stored on the server side. There is usually a unique session ID generated on the server, which is attached to a specific user session. This session ID is returned to the client side in a cookie. Sessions can hold larger amounts of data. Since the session data is not directly accessed by the client, the session offers more security.
+В отличие от печенья, сеансы создаются и хранятся на сервере. Обычно на сервере создается уникальный идентификатор сеанса, который прилагается к конкретному сеансу пользователя. Этот сеанс ID возвращается клиенту в печенье. В ходе сессий можно хранить больше данных. Поскольку клиент не имеет прямого доступа к данным о сессии, эта сессия обеспечивает большую безопасность.

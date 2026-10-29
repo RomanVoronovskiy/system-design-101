@@ -1,6 +1,6 @@
 ---
-title: 'Unicast vs Broadcast vs Multicast vs Anycast'
-description: 'Understand the differences between unicast, broadcast, multicast, and anycast.'
+title: "Одноадресная, широковещательная, многоадресная и anycast-передача"
+description: "Поймите разницу между unicast, translation, multicast и никчемным."
 image: 'https://assets.bytebytego.com/diagrams/0125-unicast-vs-broadcast-vs-multicast-vs-anycast.png'
 createdAt: '2024-02-19'
 draft: false
@@ -11,38 +11,38 @@ tags:
   - Protocols
 ---
 
-![Unicast vs Broadcast vs Multicast vs Anycast](https://assets.bytebytego.com/diagrams/0125-unicast-vs-broadcast-vs-multicast-vs-anycast.png)
+![Одноадресная, широковещательная, многоадресная и anycast-передача](https://assets.bytebytego.com/diagrams/0125-unicast-vs-broadcast-vs-multicast-vs-anycast.png)
 
-These are 4 network communication methods you must know.
+Это 4 сетевых коммуникационных метода, которые вы должны знать.
 
-*   **Unicast**
+*   **Одноадресная передача (Unicast)**
 
-    Unique sender and a single receiver.
+    Единственный отправитель и один приемник.
 
-    For example, communication between two people in a party.
+    Например, общение между двумя людьми на вечеринке.
 
-    Used in protocols such as HTTP, FTP, and SMTP.
+    Используется в таких протоколах, как HTTP, FTP и SMTP.
 
-*   **Broadcast**
+*   **Вещание**
 
-    Single sender and multiple receivers.
+    Один отправитель и несколько приемников.
 
-    For example, a person at a party stands up on a podium and shouts a message to everyone. However, it doesn’t mean that every receiver gets the message.
+    Например, человек на вечеринке стоит на трибуне и кричит всем. Однако это не значит, что каждый приемник получает сообщение.
 
-    Used in Address Resolution Protocol, DHCP, and NTP
+    Используется в Протоколе по урегулированию адресов, DHCP и NTP
 
-*   **Multicast**
+*   **Многокадровые**
 
-    Sender to a specific group of devices in a network. This is a specialized case of broadcast routing.
+    Подать конкретную группу устройств в сети. Это специальный случай телевещания.
 
-    For example, a member of the group talks and listens to other members of the group within a party.
+    Например, один из членов группы беседует и слушает других членов группы в рамках одной из партий.
 
-    Used in IPTV and video conference applications.
+    Используется в IPTV и видеоприложениях для конференций.
 
-*   **Anycast**
+*   **Все**
 
-    Sender to a single device or a specific group of devices.
+    Отдавать на одно устройство или на конкретную группу устройств.
 
-    For example, saying thank you to one host out of a group of hosts organizing a party. All other hosts also expected to receive the thank you note.
+    Например, спасибо одному из группы организаторов вечеринки. Все остальные носители также ожидали получить благодарность.
 
-    Used in DNS querying and CDNs.
+    Используется в DNS запросе и CDN.

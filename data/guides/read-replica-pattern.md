@@ -1,6 +1,6 @@
 ---
-title: "Read Replica Pattern"
-description: "Explore the read replica pattern for database design and optimization."
+title: "Шаблон реплики для чтения"
+description: "Изучить модель считывания для проектирования и оптимизации базы данных."
 image: "https://assets.bytebytego.com/diagrams/0312-read-replica-pattern.png"
 createdAt: "2024-01-28"
 draft: false
@@ -13,25 +13,25 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0312-read-replica-pattern.png)
 
-In this post, we talk about a simple yet commonly used database design pattern (setup): **Read replica pattern**.
+В этой статье мы говорим о простой, но широко используемой структуре структуры базы данных (настройка): **Шаблон реплики для чтения**.
 
-In this setup, all data-modifying commands like insert, delete, or update are sent to the primary DB and reads are sent to read replicas.
+В этом замыкании все команды, модифицирующие данные, такие как вставить, удалить или обновить, направляются в первичный DB и в текст, который следует читать:
 
-The diagram above illustrates the setup:
+Схема выше иллюстрирует настройку:
 
-1.  When Alice places an order on amazon.com, the request is sent to Order Service.
-2.  Order Service creates a record about the order in the primary DB (write). Data is replicated to two replicas.
-3.  Alice views the order details. Data is served from a replica (read).
-4.  Alice views the recent order history. Data is served from a replica (read).
+1.  Когда Алиса подает приказ на Amazon.com, запрос направляется в Службу по вопросам порядка.
+2.  Служба заказа создает запись о порядке в первичном DB (письменное издание). Данные копируются на две реплики.
+3.  Элис видит детали заказа. Данные читаются с реплики.
+4.  Элис смотрит на недавнюю историю порядка. Данные читаются с реплики.
 
-There is one major problem in this setup: **replication lag**.
+В этой связи возникает одна серьезная проблема: **отставание репликации**.
 
-Under certain circumstances (network delay, server overload, etc.), data in replicas might be seconds or even minutes behind. In this case, if Alice immediately checks the order status (query is served by the replica) after the order is placed, she might not see the order at all. This leaves Alice confused. In this case, we need “read-after-write” consistency.
+При определенных обстоятельствах (задержка работы сети, перегрузка сервера и т.д.) данные в копиях могут отставать на секунды или даже на минуты. В этом случае, если Алиса немедленно проверяет статус заказа (кореш подается копией) после размещения заказа, она может вообще не увидеть заказа. Это запутает Элис. В этом случае нам нужно читать после записи, последовательность.
 
-## Possible solutions to mitigate this problem:
+## Возможные способы уменьшить влияние этой проблемы:
 
-*   Latency sensitive reads are sent to the primary database.
+*   Считываемые с чувствительностью к лакму в основном направляются в базу данных.
 
-*   Reads that immediately follow writes are routed to the primary database.
+*   Читать, которые сразу после этого пишут, можно по направлению в первичную базу данных.
 
-*   A relational DB generally provides a way to check if a replica is caught up with the primary. If data is up to date, query the replica. Otherwise fail the read request or read from the primary.
+*   Реляционный DB обычно дает возможность проверить, догнала ли модель первичную. Если данные актуальны, отправьте запрос на реплику. В противном случае просьба о зачитывании не принимается или зачитывается из начальной школы.

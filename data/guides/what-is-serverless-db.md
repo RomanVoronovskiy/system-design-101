@@ -1,6 +1,6 @@
 ---
-title: "What is Serverless DB?"
-description: "Explore serverless databases, their benefits, and how they differ."
+title: "Что такое бессерверная база данных?"
+description: "Изучить бессерверные базы данных, их преимущества и различия."
 image: "https://assets.bytebytego.com/diagrams/0329-serverlessdb.jpeg"
 createdAt: "2024-02-24"
 draft: false
@@ -13,12 +13,12 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0329-serverlessdb.jpeg)
 
-Are serverless databases the future? How do serverless databases differ from traditional cloud databases?
+Разве бессербные базы данных — это будущее? Чем бессербные базы данных отличаются от традиционных баз данных об облаках?
 
-Amazon Aurora Serverless, depicted in the diagram above, is a configuration that is auto-scaling and available on-demand for Amazon Aurora.
+Amazon Aurora Urora Urversonse, показанная на диаграмме выше, является конфигурацией, которая является автокасслированной и доступной по запросу для Amazon Aurora.
 
-## Key Features of Aurora Serverless
+## Основные характеристики беспроводной серверной системы Aurora
 
-*   Aurora Serverless has the ability to scale capacity automatically up or down as per business requirements. For example, an eCommerce website preparing for a major promotion can scale the load to multiple databases within a few milliseconds. In comparison to regular cloud databases, which necessitate the provision and administration of database instances, Aurora Serverless can automatically start up and shut down.
+*   Aurora Serverless способна автоматически увеличивать или уменьшать пропускную способность в соответствии с требованиями ведения деловых операций. Например, веб-сайт электронной торговли, который готовится к крупной рекламе, может увеличить нагрузку на несколько баз данных в течение нескольких миллисекунд. По сравнению с обычными базами данных об облачных условиях, которые требуют предоставления и управления соответствующими базами данных, Aurora Serverless может автоматически запустить и закрыться.
 
-*   By decoupling the compute layer from the data storage layer, Aurora Serverless is able to charge fees in a more precise manner. Additionally, Aurora Serverless can be a combination of provisioned and serverless instances, enabling existing provisioned databases to become a part of the serverless pool.
+*   Отделяя слой компот от слоя хранения данных, Aurora Serverless может взимать плату более точным образом. Кроме того, система "Aurora Serverles" может быть сочетанием обеспеченных и бессербных схем, что позволит использовать существующие обеспеченных базами данных в качестве части бес серверного пула.

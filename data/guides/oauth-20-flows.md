@@ -1,6 +1,6 @@
 ---
-title: "OAuth 2.0 Flows"
-description: "Explore OAuth 2.0 flows: Authorization Code, Client Credentials, and more."
+title: "Сценарии авторизации OAuth 2.0"
+description: "Изучение потоков OAute 2.0: код разрешения, полномочия клиента и т.д."
 image: "https://assets.bytebytego.com/diagrams/0112-oauth-flows.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0112-oauth-flows.png)
 
-## Authorization Code Flow
+## Поток с кодом авторизации (Authorization Code Flow)
 
-The most common OAuth flow. After user authentication, the client receives an authorization code and exchanges it for an access token and refresh token.
+Самый распространенный поток Оут. После удостоверения подлинности пользователя клиент получает код разрешения и обменивается им на символ доступа и обновляет его.
 
-## Client Credentials Flow
+## Поток с учётными данными клиента (Client Credentials Flow)
 
-Designed for single-page applications. The access token is returned directly to the client without an intermediate authorization code.
+Разработан для одностраничных приложений. Символ доступа возвращается клиенту непосредственно без промежуточного кода разрешения.
 
-## Implicit Code Flow
+## Неявный поток авторизации (Implicit Flow)
 
-Designed for single-page applications. The access token is returned directly to the client without an intermediate authorization code.
+Разработан для одностраничных приложений. Символ доступа возвращается клиенту непосредственно без промежуточного кода разрешения.
 
-## Resource Owner Password Grant Flow
+## Поток с паролем владельца ресурса (Resource Owner Password Grant)
 
-Allows users to provide their username and password directly to the client, which then exchanges them for an access token.
+Пользователи могут предоставлять свое имя и пароль непосредственно клиенту, который затем обменивается ими на символ доступа.

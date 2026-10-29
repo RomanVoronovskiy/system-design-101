@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Multithreading Design Patterns You Must Know"
-description: "Explore essential multithreading design patterns for concurrent programming."
+title: "Шесть шаблонов многопоточного программирования"
+description: "Изучение основных моделей мультифлирования для одновременного программирования."
 image: "https://assets.bytebytego.com/diagrams/0381-top-6-multithreading-design-patterns-you-must-know.png"
 createdAt: "2024-02-23"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0381-top-6-multithreading-design-patterns-you-must-know.png)
 
-Multithreading enables a single program or process to execute multiple tasks concurrently. Each task is a thread. Think of threads as lightweight units of execution that share the resources of the process such as memory space.
+Мультифренд позволяет одной программе или процессу одновременно выполнять несколько задач. Каждая задача - это поток. Представьте, что нити - это легкие единицы исполнения, которые делят ресурсы процесса, такие как пространство памяти.
 
-However, multithreading also introduces complexities like synchronization, communication, and potential race conditions. This is where patterns help.
+Однако мультифлексирование также создает такие сложности, как синхронизация, общение и потенциальные условия расы. Здесь модели помогают.
 
-## Producer-Consumer Pattern
+## Схема производства/конструктора
 
-This pattern involves two types of threads: producers generating data and consumers processing that data. A blocking queue acts as a buffer between the two.
+Эта структура включает два типа " ниточек " : производителей, генерирующих данные, и потребителей, обрабатывающих эти данные. Остановка очереди действует как буфер между ними.
 
-## Thread Pool Pattern
+## Просмотр
 
-In this pattern, there is a pool of worker threads that can be reused for executing tasks. Using a pool removes the overhead of creating and destroying threads. Great for executing a large number of short-lived tasks.
+В этой модели имеется набор рабочих ниточек, которые могут использоваться для выполнения задач. Использование бассейна устраняет накладные расходы, связанные с созданием и уничтожением ниточек. Отлично, что ты выполнил большое количество краткосрочных задач.
 
-## Futures and Promises Pattern
+## План будущего и обещаний
 
-In this pattern, the promise is an object that holds the eventual results and the future provides a way to access the result. This is great for executing long-running operations concurrently without blocking the main thread.
+В этом плане обещание является объектом, который удерживает конечные результаты, и будущее обеспечивает доступ к результату. Это хорошо для того, чтобы одновременно проводить долгосрочные операции без блокирования основной нити.
 
-## Monitor Object Pattern
+## Контролировать объект
 
-Ensures that only one thread can access or modify a shared resource within an object at a time. This helps prevent race conditions. The pattern is required when you need to protect shared data or resources from concurrent access.
+Обеспечивает, чтобы только одна поток могла одновременно получать доступ к совместному ресурсу или изменять его. Это помогает предотвратить расовые условия. Эта схема необходима, когда вам необходимо защитить общие данные или ресурсы от одновременного доступа.
 
-## Barrier Pattern
+## Заградительный шаблон
 
-Synchronizes a group of threads. Each thread executes until it reaches a barrier point in the code and blocks until all threads have reached the same barrier. Ideal for parallel tasks that need to reach a specific stage before starting the next stage.
+Синхронизирует группу ниточек. Каждая поток выполняет до тех пор, пока она не достигнет точки барьера в коде и блоках до тех пор, пока все нити не достигнут одного барьера. Идеал для параллельных задач, которые должны быть достигнуты на конкретном этапе, прежде чем начинать следующий этап.
 
-## Read-Write Lock Pattern
+## Просмотр блокировки
 
-It allows multiple threads to read from a shared resource but only allows one thread to write to it at a time. Ideal for managing shared resources where reads are more frequent than writes.
+Он позволяет нескольким ниткам читать из общего ресурса, но только одной нитью писать ему одновременно. Идеалы управления общими ресурсами, где чтение читается чаще, чем пишется.

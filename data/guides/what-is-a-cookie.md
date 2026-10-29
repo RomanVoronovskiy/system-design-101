@@ -1,6 +1,6 @@
 ---
-title: "What is a Cookie?"
-description: "Learn about cookies, how they work, and their role in web browsing."
+title: "Что такое cookie?"
+description: "Узнайте о печеньях, о том, как они работают, и их роли в просмотре веб-сайтов."
 image: "https://assets.bytebytego.com/diagrams/0043-what-is-a-cookie.png"
 createdAt: "2024-03-09"
 draft: false
@@ -11,10 +11,10 @@ tags:
   - "Cookies"
 ---
 
-![cookie](https://assets.bytebytego.com/diagrams/0043-what-is-a-cookie.png)
+![Что такое cookie?](https://assets.bytebytego.com/diagrams/0043-what-is-a-cookie.png)
 
-Imagine Bob goes to a coffee shop for the first time, orders a medium-sized espresso with two sugars. The cashier records Bob’s identity and preferences on a card and hands it over to Bob with a cup of coffee.
+Представьте, что Боб впервые пошёл в кофейню, заказал средний эспрессо с двумя сахарами. Кассир записывает Боба, его личность и предпочтения на карте и передает их Бобу с чашкой кофе.
 
-The next time Bob goes to the cafe, he shows the cashier the preference card. The cashier immediately knows who the customer is and what kind of coffee he likes.
+В следующий раз, когда Боб пойдёт в кафе, он покажет кассиру карту с преференциями. Кассир немедленно знает, кто клиент и какой кофе он любит.
 
-A cookie acts as the preference card. When we log in to a website, the server issues a cookie to us with a small amount of data. The cookie is stored on the client side, so the next time we send a request to the server with the cookie, the server knows our identity and preferences immediately without looking into the database.
+Печенье действует как предпочтение. Когда мы заходим на сайт, сервер выдает нам печенье с небольшим количеством данных. Печенье хранится на стороне клиента, поэтому в следующий раз, когда мы отправим запрос на сервер с печеньем, сервер сразу узнает нашу личность и предпочтения, не заглянув в базу данных.

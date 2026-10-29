@@ -1,6 +1,6 @@
 ---
-title: "What is DevSecOps?"
-description: "Explore DevSecOps: integrating security into the DevOps lifecycle."
+title: "Что такое DevSecOps?"
+description: "Изучение DevSecOps: интеграция безопасности в жизненный цикл DevOps."
 image: "https://assets.bytebytego.com/diagrams/0060-what-is-devsecops.png"
 createdAt: "2024-02-10"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0060-what-is-devsecops.png)
 
-DevSecOps emerged as a natural evolution of DevOps practices with a focus on integrating security into the software development and deployment process. The term "DevSecOps" represents the convergence of Development (Dev), Security (Sec), and Operations (Ops) practices, emphasizing the importance of security throughout the software development lifecycle.
+DevSecOps стала естественной эволюцией практики DevOps с упором на интеграцию безопасности в процесс разработки и внедрения программного обеспечения. Термин "DevSecOps" представляет собой конвергенцию практики развития (Dev), безопасности (Sec) и операций (Ops), подчеркивая важность безопасности на протяжении всего жизненного цикла разработки программного обеспечения.
 
-The diagram below shows the important concepts in DevSecOps.
+На диаграмме ниже показаны важные концепции в DevSecOps.
 
-## Key Concepts in DevSecOps
+## Основные концепции в DevSecOps
 
-*   Automated Security Checks
+*   Автоматизированные проверки безопасности
 
-*   Continuous Monitoring
+*   Постоянный контроль
 
-*   CI/CD Automation
+*   CI/CD Автоматизация
 
-*   Infrastructure as Code (IaC)
+*   Инфраструктура как код (IaC)
 
-*   Container Security
+*   Безопасность контейнеров
 
-*   Secret Management
+*   Секретное управление
 
-*   Threat Modeling
+*   Угроза моделирования
 
-*   Quality Assurance (QA) Integration
+*   Интеграция в обеспечение качества (ОК)
 
-*   Collaboration and Communication
+*   Сотрудничество и коммуникация
 
-*   Vulnerability Management
+*   Уязвимость

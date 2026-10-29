@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes Deployment Strategies"
-description: "Explore Kubernetes deployment strategies for seamless application updates."
+title: "Стратегии развёртывания в Kubernetes"
+description: "Стратегии развёртывания в Kubernetes для обновления приложений без сбоев."
 image: "https://assets.bytebytego.com/diagrams/0247-kubernates-deployment-strategy.jpeg"
 createdAt: "2024-03-07"
 draft: false
@@ -11,51 +11,51 @@ tags:
   - "Deployment"
 ---
 
-![Kubernetes Deployment Strategies](https://assets.bytebytego.com/diagrams/0247-kubernates-deployment-strategy.jpeg)
+![Стратегии развёртывания в Kubernetes](https://assets.bytebytego.com/diagrams/0247-kubernates-deployment-strategy.jpeg)
 
-Each strategy offers a unique approach to manage updates.
+Каждая стратегия предлагает свой подход к управлению обновлениями.
 
-## Recreate
+## Повторное создание (Recreate)
 
-All existing instances are terminated at once, and new instances with the updated version are created.
+Все существующие экземпляры приложения останавливаются одновременно. Затем создаются новые экземпляры с обновлённой версией.
 
-*   Downtime: Yes
-*   Use case: Non-critical applications or during initial development stages
+* Простой: есть.
+* Применение: некритичные приложения или начальные этапы разработки.
 
-## Rolling Update
+## Постепенное обновление (Rolling Update)
 
-Application instances are updated one by one, ensuring high availability during the process.
+Экземпляры приложения обновляются по одному. Это позволяет сохранять высокую доступность во время обновления.
 
-*   Downtime: No
-*   Use case: Periodic releases
+* Простой: отсутствует.
+* Применение: регулярные выпуски новых версий.
 
-## Shadow
+## Теневое развёртывание (Shadow)
 
-A copy of the live traffic is redirected to the new version for testing without affecting production users.
+Копия реального трафика перенаправляется в новую версию для тестирования. Это не влияет на пользователей рабочей системы.
 
-This is the most complex deployment strategy and involves establishing mock services to interact with the new version of the deployment.
+Это наиболее сложная стратегия развёртывания. Она предполагает создание имитаций сервисов, с которыми взаимодействует новая версия приложения.
 
-*   Downtime: No
-*   Use case: Validating new version performance and behavior in a real environment
+* Простой: отсутствует.
+* Применение: проверка производительности и поведения новой версии в реальной среде.
 
-## Canary
+## Канареечное развёртывание (Canary)
 
-The new version is released to a subset of users or servers for testing before broader deployment.
+Новая версия сначала выпускается для небольшой части пользователей или серверов. После проверки её можно развернуть для остальных.
 
-*   Downtime: No
-*   Use case: Impact validation on a subset of users
+* Простой: отсутствует.
+* Применение: оценка влияния изменений на ограниченной группе пользователей.
 
-## Blue-Green
+## Сине-зелёное развёртывание (Blue-Green)
 
-*   Two identical environments are maintained: one with the current version (blue) and the other with the updated version (green).
-*   Traffic starts with blue, then switches to the prepared green environment for the updated version.
+* Поддерживаются две одинаковые среды: одна с текущей версией приложения — синяя, другая с обновлённой — зелёная.
+* Сначала трафик поступает в синюю среду. После подготовки новой версии его переключают на зелёную.
 
-*   Downtime: No
-*   Use case: High-stake updates
+* Простой: отсутствует.
+* Применение: обновления, при которых особенно важно снизить риск.
 
-## A/B Testing
+## A/B-тестирование
 
-Multiple versions are concurrently tested on different users to compare performance or user experience.
+Несколько версий одновременно предоставляются разным группам пользователей для сравнения производительности или пользовательского опыта.
 
-*   Downtime: Not directly applicable
-*   Use case: Optimizing user experience
+* Простой: непосредственно к этому подходу не относится.
+* Применение: улучшение пользовательского опыта.

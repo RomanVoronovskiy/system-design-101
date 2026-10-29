@@ -1,6 +1,6 @@
 ---
-title: 'Reverse Proxy vs. API Gateway vs. Load Balancer'
-description: 'Understand the differences between reverse proxy, API gateway, and load balancer.'
+title: "Обратный прокси, API-шлюз и балансировщик нагрузки"
+description: "Поймите разницу между обратным прокси, порталом API и балансировкой нагрузки."
 image: 'https://assets.bytebytego.com/diagrams/0320-reverse-gateway-lb.png'
 createdAt: '2024-02-09'
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0320-reverse-gateway-lb.png)
 
-As modern websites and applications are like busy beehives, we use a variety of tools to manage the buzz. Here we'll explore three superheroes: Reverse Proxy, API Gateway, and Load Balancer.
+Поскольку современные веб-сайты и приложения похожи на занятые улей, мы используем различные инструменты для управления кабельным. Здесь мы рассмотрим три супергероя: обратный прукси, API Gateway и Graft Balanceer.
 
-*   **Reverse Proxy:** change identity
-    *   Fetching data secretly, keeping servers hidden.
-    *   Perfect for shielding sensitive websites from cyber-attacks and prying eyes.
-*   **API Gateway:** postman
-    *   Delivers requests to the right services.
-    *   Ideal for bustling applications with numerous intercommunicating services.
-*   **Load Balancer:** traffic cop
-    *   Directs traffic evenly across servers, preventing bottlenecks
-    *   Essential for popular websites with heavy traffic and high demand.
+*   **Обратный прокси:** изменить личность
+    *   Тайная доставка данных, хранение серверов.
+    *   Идеально для защиты чувствительных сайтов от кибер-атак и любопытных глаз.
+*   **API-шлюз:** почтальон
+    *   Подает запросы на оказание необходимых услуг.
+    *   Идеал для подачи заявлений с многочисленными службами по обмену информацией.
+*   **Балансировщик нагрузки:** Дорожный коп
+    *   Рациональный трафик через серверы, предотвращающий узкие места
+    *   Существенно важно для популярных вебсайтов с интенсивным движением и высоким спросом.
 
-In a nutshell, choose a Reverse Proxy for stealth, an API Gateway for organized communications, and a Load Balancer for traffic control. Sometimes, it's wise to have all three - they make a super team that keeps your digital kingdom safe and efficient.
+Вкратце, выбери обратное прукси для скрытности, API Groupway для организованной связи и Graft Balanceer для управления движением. Иногда разумно иметь всех трех - они создают супер команду, которая обеспечивает безопасность и эффективность вашего цифрового королевства.

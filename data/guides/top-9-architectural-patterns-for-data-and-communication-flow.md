@@ -1,6 +1,6 @@
 ---
-title: "Top 9 Architectural Patterns for Data and Communication Flow"
-description: "Explore 9 key architectural patterns for efficient data and communication."
+title: "Девять архитектурных шаблонов передачи данных и взаимодействия"
+description: "Изучение 9 ключевых архитектурных структур для обеспечения эффективности данных и связи."
 image: "https://assets.bytebytego.com/diagrams/0387-top-9-system-integrations.png"
 createdAt: "2024-01-31"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0387-top-9-system-integrations.png)
 
-*   **Peer-to-Peer**
+*   **Сверху**
 
-    The Peer-to-Peer pattern involves direct communication between two components without the need for a central coordinator.
+    Система " per-per-peer " предполагает прямую связь между двумя компонентами без необходимости в центральном координаторе.
 
-*   **API Gateway**
+*   **API-шлюз**
 
-    An API Gateway acts as a single entry point for all client requests to the backend services of an application.
+    API Gateway является единым пунктом входа для всех запросов клиентов на обслуживание в резервном режиме приложения.
 
-*   **Pub-Sub**
+*   **Пуб-Sub**
 
-    The Pub-Sub pattern decouples the producers of messages (publishers) from the consumers of messages (subscribers) through a message broker.
+    Схема Pub-Sub позволяет отделять от потребителей сообщений (подписчиков) разработчиков сообщений (издателей) через брокера сообщений.
 
-*   **Request-Response**
+*   **Ответ на запрос**
 
-    This is one of the most fundamental integration patterns, where a client sends a request to a server and waits for a response.
+    Это одна из самых фундаментальных интеграционных схем, когда клиент направляет запрос на сервер и ждет ответа.
 
-*   **Event Sourcing**
+*   **Пролив события**
 
-    Event Sourcing involves storing the state changes of an application as a sequence of events.
+    Проверка события предполагает хранение изменений в состоянии приложения в качестве последовательности событий.
 
 *   **ETL**
 
-    ETL is a data integration pattern used to gather data from multiple sources, transform it into a structured format, and load it into a destination database.
+    ETL представляет собой модель интеграции данных, используемую для сбора данных из многочисленных источников, преобразования их в структурированный формат и загрузки в базу данных назначения.
 
-*   **Batching**
+*   **Упаковка**
 
-    Batching involves accumulating data over a period or until a certain threshold is met before processing it as a single group.
+    Бумага предполагает накопление данных в течение определенного периода времени или до тех пор, пока не будет достигнут определенный пороговый уровень, прежде чем она будет обработана в качестве единой группы.
 
-*   **Streaming Processing**
+*   **Обработка рядов**
 
-    Streaming Processing allows for the continuous ingestion, processing, and analysis of data streams in real-time.
+    Обработка рядов данных позволяет непрерывно принимать, обрабатывать и анализировать потоки данных в режиме реального времени.
 
-*   **Orchestration**
+*   **Орхидеи**
 
-    Orchestration involves a central coordinator (an orchestrator) managing the interactions between distributed components or services to achieve a workflow or business process.
+    Оркестр предусматривает централизованного координатора (организатора), который управляет взаимодействием между распределенными компонентами или службами для обеспечения рабочих процессов или рабочих процессов.

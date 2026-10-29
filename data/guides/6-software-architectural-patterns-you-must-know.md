@@ -11,7 +11,7 @@ tags:
   - "Design Patterns"
 ---
 
-![Software Architectural Patterns](https://assets.bytebytego.com/diagrams/0008-6-software-architectural-patterns-you-must-know.png)
+![6 архитектурных шаблонов программного обеспечения, которые вы должны знать](https://assets.bytebytego.com/diagrams/0008-6-software-architectural-patterns-you-must-know.png)
 
 Выбор правильного шаблона архитектуры программного обеспечения имеет важное значение для эффективного решения проблем.
 

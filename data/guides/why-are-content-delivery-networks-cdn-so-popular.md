@@ -1,6 +1,6 @@
 ---
-title: "Why are Content Delivery Networks (CDN) so Popular?"
-description: "Explore the popularity of CDNs and their impact on performance."
+title: "Почему сети доставки контента — CDN — так популярны?"
+description: "Изучение популярности CDN и их влияния на результативность."
 image: "https://assets.bytebytego.com/diagrams/0420-why-cdns-are-so-popular.png"
 createdAt: "2024-02-16"
 draft: false
@@ -13,42 +13,42 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0420-why-cdns-are-so-popular.png)
 
-The CDN market is expected to reach nearly $38 billion by 2028. Companies like Akamai, Cloudflare, and Amazon CloudFront are investing heavily in this area.
+Ожидается, что к 2028 году рынок КН-де-Ки-Эр-Эйр достигнет почти 38 млрд. долл. США. Такие компании, как Akamai, Cloudflare и Amazon Cloud Front, инвестируют в эту область большие средства.
 
-## The Impact of CDN
+## Воздействие CDN
 
-CDNs improve performance, increase availability, and enhance bandwidth costs. With the use of CDN, there is a significant reduction in latency.
+ЦКЗ повышают эффективность работы, расширяют доступность и повышают стоимость пропускной способности. С использованием КДН наблюдается значительное сокращение степени представленности.
 
-## CDN Request Flow
+## CN запрос поток
 
-After DNS resolution, the user’s device sends the content request to the CDN edge server.
+После разрешения DNS пользователь, устройство отправляет запрос на контент на сервер границ CDN.
 
-*   The edge server checks its local cache for the content. If found, the edge server serves the content to the user.
+*   Реберный сервер проверяет содержание своего местного кэша. Если он найден, то сервер края обслуживает контент пользователя.
 
-*   If not found, the edge server forwards the request to the origin server.
+*   Если не найден, то сервер края пересылает запрос на сервер происхождения.
 
-*   After receiving the content from the origin server, the edge server stores a copy in its cache and delivers it to the user.
+*   После получения контента с сервера происхождения, сервер кромки хранит копию в своем кэше и доставляет ее пользователю.
 
-## The Architecture of CDN
+## Архитектура ЦКЗ
 
-There are multiple components in a CDN’s architecture:
+В CDN архитектуре есть несколько компонентов:
 
-*   **Origin Server:** This is the primary source of content.
+*   **Сервер происхождения:** Это главный источник содержания.
 
-*   **Edge Servers:** They cache and server content to the users and are distributed across the world.
+*   **Эдж серверы:** Они сдают в кэш и серверы пользователям и распространяются по всему миру.
 
-*   **DNS:** The DNS resolves the domain name to the IP address of the nearest edge server
+*   **ДНС:** DNS решает имя домена IP-адреса ближайшего кромочного сервера
 
-*   **Control Plane:** Responsible for configuring and managing the edge servers.
+*   **управляющую плоскость:** Отвечает за поиск и управление серверами.
 
-## CDN Request Routing
+## CN запрос на рейтинг
 
-*   **GSLB:** Routes user requests to the server based on factors like geographic proximity, server load, network conditions
+*   **- Я не могу.** Запросы пользователей на сервер, основанные на таких факторах, как географическая близость, загрузка сервера, состояние сети
 
-*   **Anycast DNS:** Allows multiple servers to share the same IP address. It helps route incoming traffic to the nearest data center.
+*   **ОНВ:** Позволяет нескольким серверам иметь один и тот же IP-адрес. Это помогает направить входящий поток в ближайший центр данных.
 
-*   **Internet Exchange Points:** CDN providers establish a presence at major IXPs, allowing them to exchange traffic directly with ISPs and other networks.
+*   **Центры обмена информацией в Интернете:** Поставщики СНК обеспечивают присутствие на крупных IXP, что позволяет им обмениваться трафиком непосредственно с ПУИ и другими сетями.
 
-## Best Practices
+## Рекомендуемые практики
 
-Some key best practices to optimize CDN performance are related to security aspects, caching optimizations, and content optimizations.
+Некоторые ключевые виды передовой практики оптимизации функционирования КНС связаны с аспектами безопасности, оптимизацией скобки и оптимизацией содержания.

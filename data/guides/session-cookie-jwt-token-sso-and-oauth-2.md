@@ -1,6 +1,6 @@
 ---
-title: "Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained"
-description: "Understanding sessions, cookies, JWT, SSO, and OAuth 2.0 in one diagram."
+title: "Сессии, cookie, JWT, токены, SSO и OAuth 2.0"
+description: "Понимание, печенье, JWT, SSO и OAute 2.0 на одной диаграмме."
 image: "https://assets.bytebytego.com/diagrams/0152-cookies-session-jwt.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0152-cookies-session-jwt.png)
 
-When you login to a website, your identity needs to be managed. Here is how different solutions work:
+Когда вы на сайте, вам нужно управлять своей личностью. Вот как работают разные решения:
 
-*   **Session** - The server stores your identity and gives the browser a session ID cookie. This allows the server to track login state. But cookies don't work well across devices.
+*   **Сессия** - Сервер хранит вашу личность и дает браузеру печенье с браузеном. Это позволяет серверу отслеживать состояние входа. Но печенье не работает на всех устройствах.
 
-*   **Token** - Your identity is encoded into a token sent to the browser. The browser sends this token on future requests for authentication. No server session storage is required. But tokens need encryption/decryption.
+*   **Токен** - Твоя личность закодирована в знак, отправленный в браузер. Бросайкер отправляет этот символ в будущих запросах на удостоверение подлинности. Не требуется хранения сервера. Но символы нуждаются в шифровании/ расшифровке.
 
-*   **JWT** - JSON Web Tokens standardize identity tokens using digital signatures for trust. The signature is contained in the token so no server session is needed.
+*   **JWT** - Веб-группа JSON стандартизует символы личности, используя цифровые подписи для доверия. Подпись содержится в символе, поэтому сеанс сервера не требуется.
 
-*   **SSO** - Single Sign On uses a central authentication service. This allows a single login to work across multiple sites.
+*   **SSO** - Один знак Включает централизованную службу удостоверения подлинности. Это позволяет одному входу работать на нескольких сайтах.
 
-*   **OAuth2** - Allows limited access to your data on one site by another site, without giving away passwords.
+*   **OAute2** - Позволяет ограниченный доступ к вашим данным на одном сайте на другом сайте, не раздавая паролей.
 
-*   **QR Code** - Encodes a random token into a QR code for mobile login. Scanning the code logs you in without typing a password.
+*   **QR-код** - Зашифровать случайный символ в QR код для мобильного входа. Сканирование кода записано без пароля.

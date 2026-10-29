@@ -1,6 +1,6 @@
 ---
-title: 'The Open Source AI Stack'
-description: 'Explore the open-source AI stack: tools and frameworks for AI development.'
+title: "Открытый технологический стек для ИИ"
+description: "Открытый технологический стек для разработки ИИ-приложений: инструменты и платформы."
 image: 'https://assets.bytebytego.com/diagrams/0359-the-open-source-ai-stack.png'
 createdAt: '2024-03-12'
 draft: false
@@ -13,27 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0359-the-open-source-ai-stack.png)
 
-You don’t need to spend a fortune to build an AI application. The best AI developer tools are open-source, and an excellent ecosystem is evolving that can make AI accessible to everyone.
+Чтобы создать ИИ-приложение, не обязательно тратить целое состояние. Многие полезные инструменты разработчика ИИ имеют открытый исходный код. Вокруг них развивается экосистема, делающая искусственный интеллект доступнее.
 
-The key components of this open-source AI stack are as follows:
+Вот основные компоненты этого открытого технологического стека.
 
-## Frontend
+## Фронтенд
 
-To build beautiful AI UIs, frameworks like NextJS and Streamlit are extremely useful. Also, Vercel can help with deployment.
+Для создания удобных интерфейсов ИИ-приложений полезны NextJS и Streamlit. С развёртыванием может помочь Vercel.
 
-## Embeddings and RAG libraries
+## Эмбеддинги и библиотеки RAG
 
-Embedding models and RAG libraries like Nomic, JinaAI, Cognito, and LLMAware help developers build accurate search and RAG features.
+Модели эмбеддингов и библиотеки RAG, например Nomic, JinaAI, Cognito и LLMAware, помогают реализовать точный поиск и генерацию с использованием найденных данных.
 
-## Backend and Model Access
+## Бэкенд и доступ к моделям
 
-For backend development, developers can rely on frameworks like FastAPI, Langchain, and Netflix Metaflow. Options like Ollama and Huggingface are available 
-for model access.
-## Data and Retrieval
+Для разработки бэкенда можно использовать FastAPI, Langchain и Netflix Metaflow. Доступ к моделям предоставляют, например, Ollama и Huggingface.
 
-For data storage and retrieval, several options like Postgres, Milvus, Weaviate, PGVector, and FAISS are available.
+## Хранение и поиск данных
 
-## Large-Language Models
+Для хранения и поиска данных доступны Postgres, Milvus, Weaviate, PGVector и FAISS.
 
-Based on performance benchmarks, open-source models like Llama, Mistral, Qwen, Phi, and Gemma are great alternatives to proprietary LLMs like GPT and Claude.
+## Большие языковые модели
 
+По результатам тестов производительности открытые модели Llama, Mistral, Qwen, Phi и Gemma могут быть хорошей альтернативой закрытым моделям, таким как GPT и Claude.

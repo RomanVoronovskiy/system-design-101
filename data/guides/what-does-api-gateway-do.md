@@ -1,6 +1,6 @@
 ---
-title: 'What Does an API Gateway Do?'
-description: 'Explore the functions and benefits of using an API gateway in microservices.'
+title: "Что делает API-шлюз?"
+description: "Изучение функций и преимуществ использования портала API в микроуслугах."
 image: 'https://assets.bytebytego.com/diagrams/0072-what-does-api-gateway-do.png'
 createdAt: '2024-03-07'
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0072-what-does-api-gateway-do.png)
 
-The diagram above shows the details.
+На диаграмме выше приводятся подробные сведения.
 
-**Step 1** - The client sends an HTTP request to the API gateway.
+**Шаг 1** - Клиент отправляет запрос на HTTP на вход API.
 
-**Step 2** - The API gateway parses and validates the attributes in the HTTP request.
+**Шаг 2** - Вход API анализирует и подтверждает атрибуты в запросе HTTP.
 
-**Step 3** - The API gateway performs allow-list/deny-list checks.
+**Третий шаг** - Вход API проводит проверки списка допуска/отказа.
 
-**Step 4** - The API gateway talks to an identity provider for authentication and authorization.
+**Шаг 4** - Входной портал АПИ проводит переговоры с поставщиком удостоверений личности для целей удостоверения подлинности и выдачи разрешения.
 
-**Step 5** - The rate limiting rules are applied to the request. If it is over the limit, the request is rejected.
+**Шаг 5** - Применительно к просьбе применяются правила, ограничивающие ставки. Если эта просьба превышает установленный предел, то она отклоняется.
 
-**Steps 6 and 7** - Now that the request has passed basic checks, the API gateway finds the relevant service to route to by path matching.
+**Шаги 6 и 7** - Теперь, когда запрос прошел базовые проверки, портал API находит соответствующую службу, чтобы пройти по соответствующей траектории.
 
-**Step 8** - The API gateway transforms the request into the appropriate protocol and sends it to backend microservices.
+**Шаг 8** - Вход API преобразует запрос в соответствующий протокол и направляет его на микросервисы.
 
-**Steps 9-12** - The API gateway can handle errors properly and deals with faults if the error takes a longer time to recover (circuit break). It can also leverage ELK (Elastic-Logstash-Kibana) stack for logging and monitoring. We sometimes cache data in the API gateway.
+**Шаги 9-12** - Вход API может правильно справляться с ошибками и устранять ошибки, если для их устранения требуется больше времени (разрыв системы). Она также может использовать электрический сток ЭЛК (Elastic-Logstash-Kibana) для лесозаготовок и мониторинга. Иногда мы кладем данные в портале API.

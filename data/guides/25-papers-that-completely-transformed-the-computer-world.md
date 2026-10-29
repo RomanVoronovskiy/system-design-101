@@ -11,7 +11,7 @@ tags:
   - "Computer Science"
 ---
 
-![25 Papers That Completely Transformed the Computer World](https://assets.bytebytego.com/diagrams/0419-25-papers-that-completely-transformed-the-computer-world.png)
+![25 статей, которые полностью изменили компьютерный мир](https://assets.bytebytego.com/diagrams/0419-25-papers-that-completely-transformed-the-computer-world.png)
 
 Вот 25 статей, которые существенно повлияли на область информатики:
 

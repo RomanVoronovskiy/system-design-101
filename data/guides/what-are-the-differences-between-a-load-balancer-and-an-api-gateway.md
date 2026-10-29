@@ -1,6 +1,6 @@
 ---
-title: 'Load Balancer vs. API Gateway'
-description: 'Explore the key differences between load balancers and API gateways.'
+title: "Балансировщик нагрузки и API-шлюз: сравнение"
+description: "Изучение ключевых различий между балансирующими нагрузками и шлюзами API."
 image: 'https://assets.bytebytego.com/diagrams/0252-lb-api-gateway.png'
 createdAt: '2024-02-11'
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0252-lb-api-gateway.png)
 
-First, let's clarify some concepts before discussing the differences.
+Сначала давайте проясним некоторые концепции, прежде чем обсуждать различия.
 
-*   NLB (Network Load Balancer) is usually deployed before the API gateway, handling traffic routing based on IP. It does not parse the HTTP requests.
-*   ALB (Application Load Balancer) routes requests based on HTTP header or URL and thus can provide richer routing rules. We can choose the load balancer based on routing requirements. For simple services with a smaller scale, one load balancer is enough.
-*   The API gateway performs tasks more on the application level. So it has different responsibilities from the load balancer.
+*   NLB (Сетевой баланс нагрузки) обычно используется перед шлюзом API, обрабатывая трафик движения на основе IP. Он не рассматривает запросы HTTP.
+*   ALB (Application Displayer) маршрутизирует запросы на основе заголовка HTTP или URL и, таким образом, может содержать более подробные правила маршрутизации. Мы можем выбрать балансировать нагрузку на основе требований к маршрутизации. Для простых услуг с меньшими масштабами достаточно одного балансера нагрузки.
+*   Портал API выполняет больше задач на уровне приложения. Таким образом, он имеет иные обязанности, чем балансер нагрузки.
 
-The diagram above shows the detail. Often, they are used in combination to provide a scalable and secure architecture for modern web apps.
+На приведенной выше диаграмме показана подробная информация. Часто они используются в сочетании для создания масштабной и надежной архитектуры современных веб-приложений.
 
-Option a: ALB is used to distribute requests among different services. Due to the fact that the services implement their own rating limitation, authentication, etc., this approach is more flexible but requires more work at the service level.
+Вариант а: АЗБ используется для распределения запросов между различными службами. Ввиду того, что услуги применяют свои собственные ограничения в отношении рейтинга, аутентификации и т.д., этот подход является более гибким, но требует дополнительной работы на уровне обслуживания.
 
-Option b: An API gateway takes care of authentication, rate limiting, caching, etc., so there is less work at the service level. However, this option is less flexible compared with the ALB approach.
+Вариант b: Вход API обеспечивает удостоверение подлинности, ограничение ставок, скобку и т.д., в связи с чем на уровне обслуживания меньше работы. Однако этот вариант является менее гибким по сравнению с подходом, основанным на АЛБ.

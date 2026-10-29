@@ -1,6 +1,6 @@
 ---
-title: "Symmetric vs Asymmetric Encryption"
-description: "Explore symmetric vs asymmetric encryption: methods, security, and use cases."
+title: "Симметричное и асимметричное шифрование"
+description: "Изучение симметричного в асимметричном шифровании: методы, безопасность и случаи использования."
 image: "https://assets.bytebytego.com/diagrams/0349-symmetric-encryption-vs-asymmetric-encryption.png"
 createdAt: "2024-02-27"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0349-symmetric-encryption-vs-asymmetric-encryption.png)
 
-Symmetric encryption and asymmetric encryption are two types of cryptographic techniques used to secure data and communications, but they differ in their methods of encryption and decryption.
+Симметрическое шифрование и асимметричное шифрование - два вида криптографических методов, используемых для обеспечения сохранности данных и связи, но они различаются в методах шифрования и расшифровки.
 
-*   In symmetric encryption, a single key is used for both encryption and decryption of data. It is faster and can be applied to bulk data encryption/decryption. For example, we can use it to encrypt massive amounts of PII (Personally Identifiable Information) data. It poses challenges in key management because the sender and receiver share the same key.
+*   В симметричном шифровании для шифрования и расшифровки данных используется единый ключ. Он быстрее и может применяться к шифрованию/дешифрованию данных навалом. Например, мы можем использовать его для шифрования массивных количеств данных PII (индивидуальная информация). Это создает проблемы в области управления ключевыми ресурсами, поскольку отправитель и получатель имеют один и тот же ключ.
 
-*   Asymmetric encryption uses a pair of keys: a public key and a private key. The public key is freely distributed and used to encrypt data, while the private key is kept secret and used to decrypt the data. It is more secure than symmetric encryption because the private key is never shared. However, asymmetric encryption is slower because of the complexity of key generation and maths computations. For example, HTTPS uses asymmetric encryption to exchange session keys during TLS handshake, and after that, HTTPS uses symmetric encryption for subsequent communications.
+*   Асимметричное шифрование имеет пару ключей: публичный и частный ключ. Открытый ключ свободно распространяется и используется для шифрования данных, а частный ключ хранится в тайне и используется для расшифровки данных. Это более надежно, чем симметричное шифрование, потому что частный ключ никогда не делится. Однако асимметричное шифрование происходит медленнее из-за сложности генерации ключей и вычислений математики. Например, HTTPS использует асимметричные шифрования для обмена ключами сеанса во время рукопожатия TLS, а после этого HTTPS использует симметричные шифрования для последующих сообщений.

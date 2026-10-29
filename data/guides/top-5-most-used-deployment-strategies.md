@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Most-Used Deployment Strategies"
-description: "Explore the top 5 deployment strategies for efficient software releases."
+title: "Пять распространённых стратегий развёртывания"
+description: "Изучение пяти основных стратегий внедрения для эффективного выпуска программного обеспечения."
 image: "https://assets.bytebytego.com/diagrams/0358-the-most-popular-deployment-strategies.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0358-the-most-popular-deployment-strategies.png)
 
-Here are the top 5 most-used deployment strategies:
+Вот пять наиболее используемых стратегий развертывания:
 
-*   **Big Bang Deployment**
+*   **Развертывание**
 
-*   **Rolling Deployment**
+*   **Подвижное развертывание**
 
-*   **Blue-Green Deployment**
+*   **&lt; &lt; Голубой-зеленый &gt; &gt;**
 
-*   **Canary Deployment**
+*   **Канарейное развертывание**
 
-*   **Feature Toggle**
+*   **Переключатель функциональности (Feature Toggle)**

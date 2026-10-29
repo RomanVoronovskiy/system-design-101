@@ -1,6 +1,6 @@
 ---
-title: "Resiliency Patterns"
-description: "Explore cloud design patterns for building resilient systems."
+title: "Шаблоны отказоустойчивости"
+description: "Изучение моделей облаков для создания устойчивых систем."
 image: "https://assets.bytebytego.com/diagrams/0316-reliciency-patterns.jpg"
 createdAt: "2024-02-08"
 draft: false
@@ -11,21 +11,21 @@ tags:
   - "Design Patterns"
 ---
 
-Have you noticed that the largest incidents are usually caused by something very small?
+Вы заметили, что самые крупные инциденты обычно вызваны чем-то очень маленьким?
 
 ![](https://assets.bytebytego.com/diagrams/0316-reliciency-patterns.jpg)
 
-A minor error starts the snowball effect that keeps building up. Suddenly, everything is down.
+Небольшая ошибка начинает эффект снежного шара, который продолжает расти. Вдруг все закончилось.
 
-Here are 8 cloud design patterns to reduce the damage done by failures.
+Вот 8 моделей облаков, чтобы уменьшить ущерб, причиненный неудачами.
 
-*   Timeout
-*   Retry
-*   Circuit breaker
-*   Rate limiting
-*   Load shedding
-*   Bulkhead
-*   Back pressure
-*   Let it crash
+*   Тайм-аут
+*   Повторная попытка
+*   Предохранитель (Circuit Breaker)
+*   Ограничение частоты запросов
+*   Сброс нагрузки
+*   Изоляция ресурсов (Bulkhead)
+*   Обратное давление (Backpressure)
+*   Допустить сбой и восстановить компонент (Let It Crash)
 
-These patterns are usually not used alone. To apply them effectively, we need to understand why we need them, how they work, and their limitations.
+Эти шаблоны обычно применяются в сочетании друг с другом. Чтобы эффективно применять их, нам нужно понять, почему они нам нужны, как они работают и их ограничения.

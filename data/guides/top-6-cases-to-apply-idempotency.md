@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Cases to Apply Idempotency"
-description: "Explore 6 key use cases where idempotency is crucial for reliable systems."
+title: "Шесть сценариев применения идемпотентности"
+description: "Шесть сценариев, в которых идемпотентность необходима для надёжной работы системы."
 image: "https://assets.bytebytego.com/diagrams/0377-top-6-cases-of-leveraging-idempotency.png"
 createdAt: "2024-02-01"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0377-top-6-cases-of-leveraging-idempotency.png)
 
-Idempotency is essential in various scenarios, particularly where operations might be retried or executed multiple times. Here are the top 6 use cases where idempotency is crucial:
+Идемпотентность важна во многих сценариях, особенно когда операция может быть повторена или выполнена несколько раз. Вот шесть сценариев, в которых идемпотентность особенно важна:
 
-## 1. RESTful API Requests
+## 1. Запрашиваемые ИПЦ
 
-We need to ensure that retrying an API request does not lead to multiple executions of the same operation. Implement idempotent methods (like PUT and DELETE) to maintain consistent resource states.
+Мы должны обеспечить, чтобы повторное рассмотрение просьбы о проведении АПИ не приводило к многочисленным казням одной и той же операции. Используйте идемпотентные методы, например PUT и DELETE, чтобы сохранять согласованное состояние ресурсов.
 
-## 2. Payment Processing
+## 2. Обработка платежей
 
-We need to ensure that customers are not charged multiple times due to retries or network issues. Payment gateways often need to retry transactions; idempotency ensures only one charge is made.
+Нам нужно обеспечить, чтобы клиенты не получали многократную плату из-за ретрисов или проблем с сетью. Платёжным шлюзам часто приходится повторять транзакции. Идемпотентность гарантирует, что деньги будут списаны только один раз.
 
-## 3. Order Management Systems
+## 3. Системы управления заказами
 
-We need to ensure that submitting an order multiple times results in only one order being placed. We design a safe mechanism to prevent duplicate inventory deductions or updates.
+Нам нужно обеспечить, чтобы представление заказа неоднократно приводило к тому, что был размещен только один заказ. Мы разрабатываем безопасный механизм, предотвращающий дублирование вычетов или обновления инвентарных запасов.
 
-## 4. Database Operations
+## 4. Эксплуатация базы данных
 
-We need to ensure that reapplying a transaction does not change the database state beyond the initial application.
+Нам нужно обеспечить, чтобы повторное применение операции не изменило состояние базы данных за пределами первоначальной заявки.
 
-## 5. User Account Management
+## 5. Управление счетами пользователей
 
-We need to ensure that retrying a registration request does not create multiple user accounts. Also, we need to ensure that multiple password reset requests result in a single reset action.
+Нам необходимо обеспечить, чтобы повторное рассмотрение заявки на регистрацию не создавало многочисленную пользовательскую отчетность. Кроме того, нам нужно обеспечить, чтобы несколько запросов на повторное ввод паролей привели к одноразовому перезагрузке.
 
-## 6. Distributed Systems and Messaging
+## 6. Распределенные системы и сообщения
 
-We need to ensure that reprocessing messages from a queue does not result in duplicate processing. We Implement handlers that can process the same message multiple times without side effects.
+Нам нужно обеспечить, чтобы переработка сообщений из очереди не приводила к дублированию обработки. Мы внедряем процессоров, которые могут обрабатывать одно и то же сообщение несколько раз без побочных эффектов.

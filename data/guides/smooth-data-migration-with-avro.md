@@ -1,6 +1,6 @@
 ---
-title: "Smooth Data Migration with Avro"
-description: "Learn how Apache Avro facilitates smooth data migration with schema evolution."
+title: "Миграция данных без сбоев с помощью Avro"
+description: "Узнайте, как Apache Avro облегчает плавную миграцию данных с эволюцией скем."
 image: "https://assets.bytebytego.com/diagrams/0080-avro.png"
 createdAt: "2024-02-01"
 draft: false
@@ -13,13 +13,13 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0080-avro.png)
 
-How do we ensure when performing data migration? The diagram above shows how Apache Avro manages the schema evolution during data migration.
+Как мы можем обеспечить при осуществлении миграции данных? На диаграмме выше показано, как Apache Avro управляет эволюцией семы в процессе миграции данных.
 
-Avro was started in 2009, initially as a subproject of Apache Hadoop to address Thrift’s limitation in Hadoop use cases. Avro is mainly used for two things: Data serialization and RPC.
+Avro был запущен в 2009, первоначально как субпроект Apache Hadoop, чтобы решить проблему Thrrift, s ограничения в случаях использования Hadoop. Avro используется главным образом для двух вещей: серийизации данных и RPC.
 
-Key points in the diagram:
+Основные моменты на схеме:
 
-*   We can export the data to **object container files**, where schema sits together with the data blocks. Avro **dynamically** generates the schemas based on the columns, so if the schema is changed, a new schema is generated and stored with new data.
+*   Мы можем экспортировать данные на **контейнерные файлы объектов**, где шема сидит вместе с блоками данных. Автомобиль **динамически** Создаёт схемы на основе колонок, так что если снимок изменяется, то создается новая схема, которая хранится с новыми данными.
 
-*   When the exported files are loaded into another data storage (for example, teradata), anyone can read the schema and know how to read the data. The old data and new data can be successfully migrated to the new database.
-    Unlike gRPC or Thrift, which statically generate schemas, Avro makes the data migration process easier.
+*   Когда экспортированные файлы загружаются в другое хранение данных (например, тератеданные), любой может прочитать сему и знать, как прочитать данные. Старые и новые данные могут быть успешно перенесены в новую базу данных.
+    В отличие от GRPC или Thrrift, которые статично создают схемы, Avro упрощает процесс миграции данных.

@@ -1,6 +1,6 @@
 ---
-title: What is gRPC?
-description: Learn about gRPC, a high-performance RPC framework by Google.
+title: "Что такое gRPC?"
+description: "Узнайте о GRPC, высокоэффективной системе RPC Google."
 image: 'https://assets.bytebytego.com/diagrams/0054-what-is-grpc.png'
 createdAt: '2024-03-08'
 draft: false
@@ -13,13 +13,13 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0054-what-is-grpc.png)
 
-gRPC is a high-performance, open-source universal RPC (Remote Procedure Call) framework initially developed by Google. It leverages HTTP/2 for transport, Protocol Buffers as the interface description language, and provides features such as authentication, load balancing, and more.
+gRPC — система, разработанная Google, с высокой эффективностью, с открытыми исходными кодами, которая является универсальной RPC (Remote Process Call). Он использует HTTP/2 для перевозки, протокольные Buffers как язык описания интерфейса и обеспечивает такие характеристики, как аутентификация, балансировка нагрузки и т.д.
 
-gRPC is designed to enable efficient and robust communication between services in a microservices architecture, making it a popular choice for building distributed systems and APIs.
+GRPC предназначена для обеспечения эффективной и надежной связи между услугами в рамках микросервисной архитектуры, что делает ее популярным выбором для построения распределенных систем и АПИ.
 
-**Key Features of gRPC:**
+**Основные характеристики ГРПК:**
 
-*   **Protocol Buffers:** By default, gRPC uses Protocol Buffers (proto files) as its interface definition language (IDL). This makes gRPC messages smaller and faster compared to JSON or XML.
-*   **HTTP/2 Based Transport:** gRPC uses HTTP/2 for transport, which allows for many improvements over HTTP/1.x.
-*   **Multiple Language Support:** gRPC supports a wide range of programming languages.
-*   **Bi-Directional Streaming:** gRPC supports streaming requests and responses, allowing for the development of sophisticated real-time applications with bidirectional communication like chat services.
+*   **Протокольные буфферы:** По умолчанию, GRPC использует Протокол Бафферс (протофайлы) в качестве языка определения интерфейса (IDL). Это делает сообщения GRPC меньше и быстрее по сравнению с JSON или XML.
+*   **HTTP/2 Транспорт на основе:** gRPC использует HTTP/2 для перевозки, что позволяет много усовершенствований по сравнению с HTTP/1.x.
+*   **Поддержка на нескольких языках:** GRPC поддерживает широкий круг языков программирования.
+*   **Двухдирекционные стрелки:** gRPC поддерживает ручные запросы и ответы, что позволяет разрабатывать сложные приложения в режиме реального времени с двунаправленными сообщениями, такими как чат-услуги.

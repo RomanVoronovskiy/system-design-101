@@ -11,7 +11,7 @@ tags:
   - Scalability
 ---
 
-![System Design](https://assets.bytebytego.com/diagrams/0010-common-system-design-problems-and-solutions.png)
+![8 распространенных проблем проектирования систем и их решения](https://assets.bytebytego.com/diagrams/0010-common-system-design-problems-and-solutions.png)
 
 Знаете ли вы эти 8 распространенных проблем в крупномасштабных производственных системах и их решения? Время проверить свои навыки!
 

@@ -11,7 +11,7 @@ tags:
   - Architecture
 ---
 
-![Redis Architecture Evolution](https://assets.bytebytego.com/diagrams/0223-how-redis-architecture-evolve.png)
+![Как развивалась архитектура Redis](https://assets.bytebytego.com/diagrams/0223-how-redis-architecture-evolve.png)
 
 Redis — популярный кэш в памяти. Как он превратился в архитектуру, которой является сегодня?
 

@@ -1,6 +1,6 @@
 ---
-title: "Visualizing a SQL Query"
-description: "Understand the logical order of operations in a SQL query."
+title: "Визуализация SQL-запроса"
+description: "Понять логический порядок операций в запросе SQL."
 image: "https://assets.bytebytego.com/diagrams/0114-sql-query-logical-order.png"
 createdAt: "2024-03-14"
 draft: false
@@ -11,14 +11,14 @@ tags:
   - "Databases"
 ---
 
-![Visualizing a SQL Query](https://assets.bytebytego.com/diagrams/0114-sql-query-logical-order.png)
+![Визуализация SQL-запроса](https://assets.bytebytego.com/diagrams/0114-sql-query-logical-order.png)
 
-SQL statements are executed by the database system in several steps, including:
+СВЛ-отчеты осуществляются системой баз данных в несколько этапов, включая:
 
-*   Parsing the SQL statement and checking its validity
+*   Обработка заявления SQL и проверка его достоверности
 
-*   Transforming the SQL into an internal representation, such as relational algebra
+*   Преобразование SQL во внутреннее представление, например реляционной алгебры
 
-*   Optimizing the internal representation and creating an execution plan that utilizes index information
+*   Оптимизация внутреннего представительства и разработка плана исполнения, в котором используется индексная информация
 
-*   Executing the plan and returning the results
+*   Осуществление плана и возвращение результатов

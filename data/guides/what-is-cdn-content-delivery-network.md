@@ -1,6 +1,6 @@
 ---
-title: "What is CDN (Content Delivery Network)?"
-description: "Learn how CDNs accelerate content delivery and improve website security."
+title: "Что такое сеть доставки контента — CDN?"
+description: "Узнайте, как CDN ускоряет передачу контента и улучшает безопасность сайта."
 image: "https://assets.bytebytego.com/diagrams/0132-cdn.png"
 createdAt: "2024-03-09"
 draft: false
@@ -11,20 +11,20 @@ tags:
   - "Content Delivery"
 ---
 
-How does CDN make content delivery faster? The diagram above shows why.
+Как CDN делает передачу контента быстрее? На диаграмме выше показано, почему.
 
 ![](https://assets.bytebytego.com/diagrams/0132-cdn.png)
 
-A CDN refers to geographically distributed servers (also called edge servers) that provide fast delivery of **static and dynamic content**.
+CDN означает географически распределенные серверы (также называемые кромки серверов), которые обеспечивают быструю доставку **статическое и динамическое содержание**.
 
-With CDN, users don’t need to retrieve content (music, video, files, pictures, etc.) from the origin server. Instead, the content is cached at CDN nodes around the globe, and users can retrieve the content from nearby CDN nodes.
+С CDN пользователи не нуждаются в получении контента (музыка, видео, файлы, фотографии и т.д.) с сервера происхождения. Вместо этого, содержание скапливается в узлах CDN по всему миру, и пользователи могут получить контент с близлежащих узлов CDN.
 
-## The benefits of CDN are:
+## ЦКЗ приносит следующие выгоды:
 
-*   Reducing latency
+*   Сокращение уровня власти
 
-*   Reducing bandwidth
+*   Сокращение пропускной способности
 
-*   Improving website security, especially protecting against DDoS (Distributed Denial-of-Service) attack
+*   Повышение безопасности веб-сайта, особенно защиты от нападения DDoS (распространение отказа в обслуживании)
 
-*   Increasing content availability
+*   Расширение доступности материалов

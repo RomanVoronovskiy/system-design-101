@@ -1,6 +1,6 @@
 ---
-title: 'Netflix Tech Stack - CI/CD Pipeline'
-description: "Netflix's CI/CD pipeline: from planning to incident reporting."
+title: "Технологии Netflix: конвейер CI/CD"
+description: "Netflix conclusion/CD-провод: от планирования до сообщения о происшествиях."
 image: 'https://assets.bytebytego.com/diagrams/0287-netflix-ci-cd.png'
 createdAt: '2024-03-02'
 draft: false
@@ -14,18 +14,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0287-netflix-ci-cd.png)
 
-*   **Planning:** Netflix Engineering uses JIRA for planning and Confluence for documentation.
+*   **Планирование:** Компания " Нетфликс инжиниринг " использует СОИА для планирования и обработки документации.
 
-*   **Coding:** Java is the primary programming language for the backend service, while other languages are used for different use cases.
+*   **Написание кода:** Java является основным языком программирования для службы резервного копирования, в то время как другие языки используются для различных случаев использования.
 
-*   **Build:** Gradle is mainly used for building, and Gradle plugins are built to support various use cases.
+*   **Сборка:** Градл используется главным образом для строительства, а грэдл-бабины построены для поддержки различных вариантов использования.
 
-*   **Packaging:** Package and dependencies are packed into an Amazon Machine Image (AMI) for release.
+*   **Упаковка:** Пакет и зависимые от него территории упаковывают в Amazon Machine Image (AMI) для выпуска.
 
-*   **Testing:** Testing emphasizes the production culture's focus on building chaos tools.
+*   **Тестирование:** Тестирование подчеркивает, что культура производства уделяет особое внимание созданию инструментов хаоса.
 
-*   **Deployment:** Netflix uses its self-built Spinnaker for canary rollout deployment.
+*   **Развёртывание:** Нетфликс использует свой самодельный Spinnaaker для канарного запуска.
 
-*   **Monitoring:** The monitoring metrics are centralized in Atlas, and Kayenta is used to detect anomalies.
+*   **Мониторинг:** Показатели мониторинга централизованы в системе &lt; &lt; Атлас &gt; &gt;, а Kayenta используется для выявления аномалий.
 
-*   **Incident report:** Incidents are dispatched according to priority, and PagerDuty is used for incident handling.
+*   **Отчёт об инциденте:** Инциденты направляются в приоритетном порядке, а ПэджрДути используется для обработки инцидентов.

@@ -1,6 +1,6 @@
 ---
-title: "System Design Cheat Sheet"
-description: "A system design cheat sheet with common solutions for system architects."
+title: "Шпаргалка по системному проектированию"
+description: "Список измен системного дизайна с общими решениями для системных архитекторов."
 image: "https://assets.bytebytego.com/diagrams/0351-system-design-cheat-sheet.png"
 createdAt: "2024-01-28"
 draft: false
@@ -13,27 +13,27 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0351-system-design-cheat-sheet.png)
 
-We are often asked to design for high availability, high scalability, and high throughput. What do they mean exactly?
+Нам часто предлагают проектировать, чтобы мы могли иметь высокую доступность, высокую масштабируемость и высокую пропускную способность. Что они означают?
 
-The diagram below is a system design cheat sheet with common solutions.
+Ниже приводится схема с использованием листа изменчивости системы с общими решениями.
 
-## High Availability
+## Высокая доступность
 
-This means we need to ensure a high agreed level of uptime. We often describe the design target as “3 nines” or “4 nines”. “4 nines”, 99.99% uptime, means the service can only be down 8.64 seconds per day.
+Это означает, что нам необходимо обеспечить высокий согласованный уровень рабочего времени. Мы часто описываем цель дизайна как,3 9, или,4 9,, 4 9, 99,99%, что означает, что сервис может быть ниже только 8,64 секунды в день.
 
-To achieve high availability, we need to design redundancy in the system. There are several ways to do this:
+Для обеспечения высокой доступности нам нужно разработать резервные системы. Для этого есть несколько способов:
 
-*   Hot-hot: two instances receive the same input and send the output to the downstream service. In case one side is down, the other side can immediately take over. Since both sides send output to the downstream, the downstream system needs to dedupe.
-*   Hot-warm: two instances receive the same input and only the hot side sends the output to the downstream service. In case the hot side is down, the warm side takes over and starts to send output to the downstream service.
-*   Single-leader cluster: one leader instance receives data from the upstream system and replicates to other replicas.
-*   Leaderless cluster: there is no leader in this type of cluster. Any write will get replicated to other instances. As long as the number of write instances plus the number of read instances are larger than the total number of instances, we should get valid data.
+*   Горячий: два случая получают одинаковые данные и направляют выходную информацию в систему вниз по течению. Если одна сторона вниз, другая может немедленно взять на себя ответственность. Поскольку обе стороны направляют выходную мощность вниз по течению, система вниз по течению должна быть децентрализована.
+*   Горячее тепло: два случая получают одинаковые входные данные и только горячая сторона направляет выходную информацию в систему вниз по течению. В случае падения горячей стороны теплой стороны начинает перемещаться и выводить выход на последующий режим.
+*   Группа с одним лидером: одна из ведущих инстанций получает данные из системы наверху и реплицирует их в другие копии.
+*   Без руководства: в этом типе кластера нет лидера. Любая запись будет воспроизведена в других случаях. Если число случаев записи и количество случаев чтения превышают общее число случаев, мы должны получить достоверные данные.
 
-## High Throughput
+## Высокая пропускная способность
 
-This means the service needs to handle a high number of requests given a period of time. Commonly used metrics are QPS (query per second) or TPS (transaction per second).
+Это означает, что услуги должны удовлетворять большое число запросов, поданных в течение определенного периода времени. Обычно используются показатели QPS (квартира в секунду) или TPS (транзакция в секунду).
 
-To achieve high throughput, we often add caches to the architecture so that the request can return without hitting slower I/O devices like databases or disks. We can also increase the number of threads for computation-intensive tasks. However, adding too many threads can deteriorate the performance. We then need to identify the bottlenecks in the system and increase its throughput. Using asynchronous processing can often effectively isolate heavy-lifting components.
+Для достижения высокой пропускной способности мы часто добавляем склады в архитектуру, с тем чтобы запрос мог вернуться, не попав в более медленные I/O устройства, такие как базы данных или диски. Мы можем также увеличить число направлений для выполнения задач, требующих больших затрат. Однако добавление слишком большого количества ниточек может ухудшить работу. Затем нам необходимо выявить узкие места в системе и увеличить ее пропускную способность. Использование асинхронной обработки часто может эффективно изолировать компоненты тяжелой тяжёлой тяжёлой обработки.
 
-## High Scalability
+## Высокая масштабируемость
 
-This means a system can quickly and easily extend to accommodate more volume (horizontal scalability) or more functionalities (vertical scalability). Normally we watch the response time to decide if we need to scale the system.
+Это означает, что система может быстро и легко расширяться, чтобы обеспечить более широкий объем (горизонтальная масштабируемость) или более функциональные возможности (вертикальная масштабируемость). Обычно мы смотрим время реагирования, чтобы решить, нужно ли нам масштабировать систему.

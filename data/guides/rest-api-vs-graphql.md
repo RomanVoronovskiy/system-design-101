@@ -1,6 +1,6 @@
 ---
-title: 'REST API vs. GraphQL'
-description: 'Explore the differences between REST API and GraphQL for API design.'
+title: "REST API и GraphQL: сравнение"
+description: "Изучение различий между REST API и графической калькуляцией для разработки API."
 image: 'https://assets.bytebytego.com/diagrams/0036-rest-vs-graphql.png'
 createdAt: '2024-03-11'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0036-rest-vs-graphql.png)
 
-When it comes to API design, REST and GraphQL each have their own strengths and weaknesses.
+Когда речь идет о дизайне API, REST и GraphQL имеют свои собственные сильные и слабые стороны.
 
 **REST**
 
-*   Uses standard HTTP methods like GET, POST, PUT, DELETE for CRUD operations.
-*   Works well when you need simple, uniform interfaces between separate services/applications.
-*   Caching strategies are straightforward to implement.
-*   The downside is it may require multiple roundtrips to assemble related data from separate endpoints.
+*   Использует стандартные методы HTTP, такие как GET, POST, PUT, DELETE для операций CRUD.
+*   Работает хорошо, когда вам нужны простые, единообразные интерфейсы между отдельными услугами/приложениями.
+*   Стратегии борьбы с ВИЧ-инфекцией легко реализовать.
+*   В противном случае для сбора соответствующих данных из отдельных конечных точек может потребоваться несколько круговых потоков.
 
-**GraphQL**
+**График**
 
-*   Provides a single endpoint for clients to query for precisely the data they need.
-*   Clients specify the exact fields required in nested queries, and the server returns optimized payloads containing just those fields.
-*   Supports Mutations for modifying data and Subscriptions for real-time notifications.
-*   Great for aggregating data from multiple sources and works well with rapidly evolving frontend requirements.
-*   However, it shifts complexity to the client side and can allow abusive queries if not properly safeguarded.
-*   Caching strategies can be more complicated than REST.
+*   Обеспечивает клиентам единый конечный пункт для запроса точных данных, которые им необходимы.
+*   Клиенты указывают точные поля, требуемые в гнездах запросов, и сервер возвращает оптимизированные полезные нагрузки, содержащие только эти поля.
+*   Поддерживает мутации для изменения данных и подписки на уведомления в режиме реального времени.
+*   Отлично для обобщения данных из различных источников и хорошо работает с быстро меняющимися требованиями переднего края.
+*   Однако она перенаправляет сложный подход на сторону клиента и может допускать злоупотребления при отсутствии надлежащей защиты.
+*   Стратегии посадки могут быть более сложными, чем REST.
 
-The best choice between REST and GraphQL depends on the specific requirements of the application and development team. GraphQL is a good fit for complex or frequently changing frontend needs, while REST suits applications where simple and consistent contracts are preferred.
+Наилучший выбор между REST и GraphQL зависит от конкретных требований группы по разработке и применению. ГрафQL хорошо подходит для сложных или часто изменяющихся потребностей, в то время как REST испробует прикладные программы, где предпочтение отдается простым и последовательным контрактам.

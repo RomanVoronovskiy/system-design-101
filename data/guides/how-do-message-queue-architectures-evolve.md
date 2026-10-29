@@ -11,7 +11,7 @@ tags:
   - "System Design"
 ---
 
-![Message Queue Evolution](https://assets.bytebytego.com/diagrams/0271-message-queue-evolve.png)
+![IBM MQ -> RabbitMQ -> Kafka -> Pulsar: эволюция очереди сообщений](https://assets.bytebytego.com/diagrams/0271-message-queue-evolve.png)
 
 * IBM МК
 

@@ -1,6 +1,6 @@
 ---
-title: "The 9 Algorithms That Dominate Our World"
-description: "Explore the 9 algorithms that power our daily digital experiences."
+title: "Девять алгоритмов, которые определяют наш мир"
+description: "Изучайте 9 алгоритмов, которые могут помочь нам ежедневно перенимать цифровые опыты."
 image: "https://assets.bytebytego.com/diagrams/0018-9-algorithms-that-dominate-our-world.png"
 createdAt: "2024-03-10"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0018-9-algorithms-that-dominate-our-world.png)
 
-The diagram below shows the most commonly used algorithms in our daily lives. They are used in internet search engines, social networks, WiFi, cell phones, and even satellites.
+На диаграмме ниже показаны наиболее часто используемые алгоритмы в нашей повседневной жизни. Они используются в поисковых системах Интернета, социальных сетях, WiFi, мобильных телефонах и даже спутниках.
 
-## 1. Sorting
+## 1. Сортировка
 
-## 2. Dijkstra’s Algorithm
+## 2. Алгоритм Дейкстры
 
-## 3. Transformers
+## 3. Трансформеры
 
-## 4. Link Analysis
+## 4. Анализ ссылок
 
-## 5. RSA Algorithm
+## 5. Алгоритм RSA
 
-## 6. Integer Factorization
+## 6. Разложение целого числа на множители
 
-## 7. Convolutional Neural Networks
+## 7. Свёрточные нейронные сети
 
-## 8. Huffman Coding
+## 8. Кодирование Хаффмана
 
-## 9. Secure Hash Algorithm
+## 9. Алгоритм безопасного хеширования

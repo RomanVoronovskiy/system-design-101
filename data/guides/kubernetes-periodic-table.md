@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes Periodic Table"
-description: "A visual guide to Kubernetes key components and their relationships."
+title: "Периодическая таблица Kubernetes"
+description: "Визуальный справочник ключевых компонентов Кубернета и их взаимоотношений."
 image: "https://assets.bytebytego.com/diagrams/0108-kubernetes-periodic-table.png"
 createdAt: "2024-03-01"
 draft: false
@@ -13,8 +13,8 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0108-kubernetes-periodic-table.png)
 
-A comprehensive visual guide that demystifies the key building blocks of this powerful container orchestration platform.
+Комплексный визуальный справочник, который размывает ключевые строительные блоки этой мощной платформы для оркестрации контейнеров.
 
-This Kubernetes Periodic Table sheds light on the 120 crucial components that make up the Kubernetes ecosystem.
+Эта периодическая таблица Kubernetes проливает свет на 120 важнейших компонентов, составляющих экосистему Kubernetes.
 
-Whether you're a developer, system administrator, or cloud enthusiast, this handy resource will help you navigate the complex Kubernetes landscape.
+Будь вы разработчик, системный администратор или облачный энтузиаст, этот удобный ресурс поможет вам ориентироваться в сложном ландшафте Kubernetes.

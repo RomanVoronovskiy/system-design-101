@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Tools to Turn Code into Beautiful Diagrams"
-description: "Explore the best tools for transforming code into stunning diagrams."
+title: "Шесть инструментов для создания диаграмм из кода"
+description: "Изучить наилучшие инструменты преобразования кода в потрясающие диаграммы."
 image: "https://assets.bytebytego.com/diagrams/0382-top-6-tools-to-turn-code-into-beautiful-diagrams.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,11 +13,11 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0382-top-6-tools-to-turn-code-into-beautiful-diagrams.png)
 
-Here are the top tools to turn code into diagrams:
+Вот главные инструменты, чтобы превратить код в диаграммы:
 
-*   Diagrams
-*   Go Diagrams
-*   Mermaid
-*   PlantUML
-*   ASCII diagrams
-*   Markmap
+*   Диаграммы
+*   Запустить схемы
+*   Русалочка
+*   Плоскость
+*   Диаграммы ASCII
+*   Маркировка

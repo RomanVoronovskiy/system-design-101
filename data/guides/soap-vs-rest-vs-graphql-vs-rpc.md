@@ -1,6 +1,6 @@
 ---
-title: 'SOAP vs REST vs GraphQL vs RPC'
-description: 'A comparison of API styles: SOAP, REST, GraphQL, and RPC.'
+title: "SOAP, REST, GraphQL и RPC: сравнение"
+description: "Сопоставление стилей API: SOAP, REST, ГрафQL и RPC."
 image: 'https://assets.bytebytego.com/diagrams/0126-api-style-compare.jpg'
 createdAt: '2024-02-25'
 draft: false
@@ -11,10 +11,10 @@ tags:
   - Architecture
 ---
 
-The diagram above illustrates the API timeline and API styles comparison.
+На приведенной выше диаграмме иллюстрируется сопоставление временных рамок и стилей API.
 
 ![](https://assets.bytebytego.com/diagrams/0126-api-style-compare.jpg)
 
-Over time, different API architectural styles are released. Each of them has its own patterns of standardizing data exchange.
+Со временем выпускаются различные архитектурные стиля API. Каждая из них имеет свои собственные модели стандартизации обмена данными.
 
-You can check out the use cases of each style in the diagram.
+Вы можете проверить примеры использования каждого стиля на диаграмме.

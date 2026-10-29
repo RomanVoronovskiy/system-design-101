@@ -1,6 +1,6 @@
 ---
-title: Netflix Tech Stack - Databases
-description: Netflix uses a variety of databases to power streaming at scale.
+title: "Технологии Netflix: базы данных"
+description: "Нетфликс использует различные базы данных для питания потока в масштабе."
 image: 'https://assets.bytebytego.com/diagrams/0098-databases-used-in-netflix.jpg'
 createdAt: '2024-02-26'
 draft: false
@@ -11,20 +11,20 @@ tags:
   - Tech Stack
 ---
 
-![diagram](https://assets.bytebytego.com/diagrams/0098-databases-used-in-netflix.jpg)
+![Технологии Netflix: базы данных](https://assets.bytebytego.com/diagrams/0098-databases-used-in-netflix.jpg)
 
-The Netflix Engineering team selects a variety of databases to empower streaming at scale.
+Команда Netflix инжиниринг выбирает различные базы данных, чтобы расширить возможности для потока в масштабе.
 
-*   **Relational databases:** Netflix chooses MySql for billing transactions, subscriptions, taxes, and revenue. They also use CockroachDB to support a multi-region active-active architecture, global transactions, and data pipeline workflows.
+*   **Реляционные базы данных:** Нетфликс выбирает MySql для выставления счетов, подписки, налогов и доходов. Они также используют КокраачБР для поддержки многорегиональной активной архитектуры, глобальных операций и рабочих процессов по трубопроводам данных.
 
-*   **Columnar databases:** Netflix primarily uses them for analytics purposes. They utilize Redshift and Druid for structured data storage, Spark and data pipeline processing, and Tableau for data visualization.
+*   **Колоночные базы данных:** Нетфликс использует их главным образом для целей анализа. Они используют Redvel и Druid для структурированного хранения данных, обработки Spark и данных по трубопроводам и Tableau для визуализации данных.
 
-*   **Key-value databases:** Netflix mainly uses EVCache built on top of Memcached. EVCache has been with Netflix for over 10 years and is used for most services, caching various data such as the Netflix Homepage and Personal Recommendations.
+*   **Базы данных «ключ — значение»:** В Netflix используется главным образом EVCache, построенный на вершине Memcaded. EVCache работает с Netflix уже более 10 лет и используется для большинства услуг, скрепляя различные данные, такие как Netflix Homepage и Personal Recommendations.
 
-*   **Wide-column databases:** Cassandra is usually the default choice at Netflix. They use it for almost everything, including Video/Actor information, User Data, Device information, and Viewing History.
+*   **Базы данных с широкими столбцами:** C4ANDra обычно является выбором по умолчанию в Netflix. Они используют его почти для всего, включая видео-/актёрскую информацию, данные пользователей, информацию о устройствах и историю просмотра.
 
-*   **Time-series databases:** Netflix built an open-source in-memory database called Atlas for metrics storage and aggregation.
+*   **Базы данных временных рядов:** Netflix создала базу данных с открытым исходным кодом, называемую Атласом, для хранения и агрегирования метрических данных.
 
-*   **Unstructured data:** S3 is the default choice and stores almost everything related to Image/Video/Metrics/Log files. Apache Iceberg is also used with S3 for big data storage.
+*   **Неструктурированные данные:** S3 — это выбор по умолчанию и хранит почти все, что связано с файлами Image/Video/Metrics/Log. Apache Iceberg также используется для хранения больших данных с S3.
 
-If you work for a large company and wish to discuss your company's technology stack, feel free to get in touch with me. By default, all communications will be treated as anonymous.
+Если ты работаешь на большую компанию и хочешь обсудить технологический блок своей компании, можешь связаться со мной. По умолчанию все сообщения будут рассматриваться как анонимные.

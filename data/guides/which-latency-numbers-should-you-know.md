@@ -1,6 +1,6 @@
 ---
-title: "Which Latency Numbers Should You Know?"
-description: "Essential latency benchmarks for developers and system designers."
+title: "Какие значения задержек стоит знать?"
+description: "Основные контрольные показатели для разработчиков и разработчиков систем."
 image: "https://assets.bytebytego.com/diagrams/0250-latency-numbers.jpg"
 createdAt: "2024-03-11"
 draft: false
@@ -11,40 +11,40 @@ tags:
   - "performance"
 ---
 
-Please note those are not accurate numbers. They are based on some online benchmarks (Jeff Dean’s latency numbers + some other sources).
+Просьба учесть, что эти цифры не являются точными. Они основаны на некоторых онлайновых контрольных показателях (Jeff Dine, s latenty numbers + некоторые другие источники).
 
 ![](https://assets.bytebytego.com/diagrams/0250-latency-numbers.jpg)
 
-*   **L1 and L2 caches: 1 ns, 10 ns**
+*   **Склады L1 и L2: 1 нс, 10 нс**
 
-    E.g.: They are usually built onto the microprocessor chip. Unless you work with hardware directly, you probably don’t need to worry about them.
+    Например, они обычно встроены в микропроцессорный чип. Если ты не работаешь с аппаратурой напрямую, то, вероятно, не стоит беспокоиться о них.
 
-*   **RAM access: 100 ns**
+*   **Доступ к RAM: 100 нс**
 
-    E.g.: It takes around 100 ns to read data from memory. Redis is an in-memory data store, so it takes about 100 ns to read data from Redis.
+    Например, для чтения данных из памяти требуется около 100 нс. Redis — это магазин данных в памяти, поэтому для чтения данных Redis требуется около 100 нс.
 
-*   **Send 1K bytes over 1 Gbps network: 10 us**
+*   **Отправить 1K байтов на сеть 1 Gbps: 10 мы**
 
-    E.g.: It takes around 10 us to send 1KB of data from Memcached through the network.
+    Например, для отправки 1KB данных из Мемкадской сети требуется около 10 человек.
 
-*   **Read from SSD: 100 us**
+*   **Читайте из SSD: 100**
 
-    E.g.: RocksDB is a disk-based K/V store, so the read latency is around 100 us on SSD.
+    РоксБР — это магазин K/V на диске, поэтому читательская латентность составляет около 100 на SSD.
 
-*   **Database insert operation: 1 ms**
+*   **Вставить базу данных: 1 мс**
 
-    E.g.: Postgresql commit might take 1ms. The database needs to store the data, create the index, and flush logs. All these actions take time.
+    Например, постгрескл может занять 1,40. База данных должна хранить данные, создавать индекс и стирать журналы. Все эти действия требуют времени.
 
-*   **Send packet CA->Netherlands->CA: 100 ms**
+*   **Отправить пакет CA->News->CA: 100 мс**
 
-    E.g.: If we have a long-distance Zoom call, the latency might be around 100 ms.
+    Если у нас будет дальний звонок Зума, то власть может быть около 100 метров.
 
-*   **Retry/refresh internal: 1-10s**
+*   **Повторное/новое внутреннее: 1-10s**
 
-    E.g: In a monitoring system, the refresh interval is usually set to 5~10 seconds (default value on Grafana).
+    В системе мониторинга интервал обновления обычно устанавливается на уровне 5 - 10 секунд (по умолчанию на Графане).
 
-## Notes
+## Примечания
 
-1 ns = 10^-9 seconds
-1 us = 10^-6 seconds = 1,000 ns
-1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
+1 нс = 10 09 с
+1 мы = 10 Кот-д ' Ивуар = 1 000 нс
+1 мс = 10 ≥-3 секунды = 1 000 нас = 1 000 000 нс

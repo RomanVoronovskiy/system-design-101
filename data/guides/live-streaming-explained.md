@@ -1,6 +1,6 @@
 ---
-title: "Live Streaming Explained"
-description: "Learn how live streaming works on platforms like YouTube and Twitch."
+title: "Как работают прямые видеотрансляции"
+description: "Узнайте, как работает потоковый трансляция на таких платформах, как YouTube и Twitch."
 image: "https://assets.bytebytego.com/diagrams/0260-live-streaming-updated.png"
 createdAt: "2024-03-05"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0260-live-streaming-updated.png)
 
-How do video live streamings work on YouTube, TikTok live, or Twitch? The technique is called live streaming.
+Как видео-трансляции на YouTube, TikTok или Twitch работают? Эта техника называется "живой трансляцией".
 
-Livestreaming differs from regular streaming because the video content is sent via the internet in real-time, usually with a latency of just a few seconds.
+Лив-стриминг отличается от обычного потокового потока, потому что видеоконтент отправляется через интернет в режиме реального времени, обычно с задержкой всего нескольких секунд.
 
-The diagram below explains what happens behind the scenes to make this possible.
+Ниже приведенная схема объясняет, что происходит за кулисами, чтобы сделать это возможным.
 
-## Live Streaming Steps
+## Шаги для прямого потока
 
-**Step 1**: The raw video data is captured by a microphone and camera. The data is sent to the server side.
+**Шаг 1**: Необработанные видеоданные записываются микрофоном и камерой. Данные отправляются на сторону сервера.
 
-**Step 2**: The video data is compressed and encoded. For example, the compressing algorithm separates the background and other video elements. After compression, the video is encoded to standards such as H.264. The size of the video data is much smaller after this step.
+**Шаг 2**: Видеоданные сжаты и кодируются. Например, алгоритм сжатия отделяет фоновые и другие элементы видео. После сжатия видео кодируется на такие стандарты, как H.264. Размер видеоданных значительно меньше после этого шага.
 
-**Step 3**: The encoded data is divided into smaller segments, usually seconds in length, so it takes much less time to download or stream.
+**Третий шаг**: Кодируемые данные разделены на более мелкие сегменты, обычно в секунды длиной, поэтому загрузка или потоковый процесс занимают гораздо меньше времени.
 
-**Step 4**: The segmented data is sent to the streaming server. The streaming server needs to support different devices and network conditions. This is called ‘Adaptive Bitrate Streaming.’ This means we need to produce multiple files at different bitrates in steps 2 and 3.
+**Шаг 4**: Сегментированные данные отправляются на сервер потокового потока. Стерлинг-сервер должен поддерживать различные устройства и условия сети. Это называется адаптивным потоковым потоком. Это означает, что нам нужно создавать несколько файлов на разных битретах в этапах 2 и 3.
 
-**Step 5**: The live streaming data is pushed to edge servers supported by CDN (Content Delivery Network.) Millions of viewers can watch the video from an edge server nearby. CDN significantly lowers data transmission latency.
+**Шаг 5**: Живые потоковые данные перемещаются на серверы Edge, поддерживаемые CDN (Content Delivery Network). Миллионы зрителей могут посмотреть видео с близлежащего сервера. CDN значительно снижает задержку передачи данных.
 
-**Step 6**: The viewers’ devices decode and decompress the video data and play the video in a video player.
+**Шаг 6**: Зрители устройства декодируют и декомпрессируют видеоданные и воспроизводят видео в видеоплеере.
 
-**Steps 7 and 8**: If the video needs to be stored for replay, the encoded data is sent to a storage server, and viewers can request a replay from it later.
+**Шаги 7 и 8**: Если видео необходимо хранить для воспроизведения, кодированные данные отправляются на сервер хранения, и зрители могут запросить воспроизведение из него позже.
 
-## Standard Protocols for Live Streaming
+## Стандартные протоколы для прямого трансляции
 
-Standard protocols for live streaming include:
+Стандартные протоколы для прямого потока включают:
 
-*   **RTMP (Real-Time Messaging Protocol)**: This was originally developed by Macromedia to transmit data between a Flash player and a server. Now it is used for streaming video data over the internet. Note that video conferencing applications like Skype use RTC (Real-Time Communication) protocol for lower latency.
-*   **HLS (HTTP Live Streaming)**: It requires the H.264 or H.265 encoding. Apple devices accept only HLS format.
-*   **DASH (Dynamic Adaptive Streaming over HTTP)**: DASH does not support Apple devices.
+*   **RTMP (Протокол сообщений в режиме реального времени)**Первоначально это было разработано Macromedia для передачи данных между Flash-плеером и сервером. Теперь он используется для потоковой передачи видео данных через интернет. Обратите внимание, что приложения для видеоконференций, такие как Skype, используют протокол RTC (Real-Time Communication) для более низкой задержки.
+*   **HLS (HTTP Live Streaming)**: Он требует кодирования H.264 или H.265. Устройства Apple принимают только формат HLS.
+*   **DASH (Динамический адаптивный потоковый поток через HTTP)**: DASH не поддерживает устройства Apple.
 
-Both HLS and DASH support adaptive bitrate streaming.
+Как HLS, так и DASH поддерживают адаптивный бит-скоростной потоковой процесс.

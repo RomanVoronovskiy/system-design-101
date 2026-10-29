@@ -1,6 +1,6 @@
 ---
-title: 'Twitter Architecture 2022 vs. 2012'
-description: "A look at how Twitter's architecture evolved over the past decade."
+title: "Архитектура Twitter: 2022 год в сравнении с 2012-м"
+description: "Посмотрите, как развивалась архитектура Twitter за последнее десятилетие."
 image: 'https://assets.bytebytego.com/diagrams/0392-twitter-architecture-2022-vs-2012.jpeg'
 createdAt: '2024-03-13'
 draft: false
@@ -13,4 +13,4 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0392-twitter-architecture-2022-vs-2012.jpeg)
 
-What’s changed over the past 10 years?!
+Что, изменилось за последние 10 лет?!

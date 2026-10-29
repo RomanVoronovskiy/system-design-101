@@ -1,6 +1,6 @@
 ---
-title: "Recommended Materials for Technical Interviews"
-description: "Ace your technical interviews with these recommended resources."
+title: "Материалы для подготовки к техническим собеседованиям"
+description: "Приведите свои технические интервью с рекомендованными ресурсами."
 image: "https://assets.bytebytego.com/diagrams/0353-my-recommended-materials-for-cracking-your-next-technical-interview.png"
 createdAt: "2024-03-15"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0353-my-recommended-materials-for-cracking-your-next-technical-interview.png)
 
-## Coding
+## Программирование
 
-*   Leetcode
-*   Cracking the coding interview book
-*   Neetcode
+*   Литкод
+*   Разрыв книги интервью для кодирования
+*   Нитко-код
 
-## System Design Interview
+## Собеседование по системному проектированию
 
-*   System Design Interview Book 1, 2 by Alex Xu, Sahn Lam
-*   Grokking the system design by Design Guru
-*   Design Data-intensive Application book
+*   Книга для интервью с системой 1, 2 Алекс Сюй, Сан Лам
+*   Прокрутить дизайн системы дизайном Guru
+*   Дизайн Инструменты, требующие больших затрат данных
 
-## Behavioral interview
+## Поведенческое собеседование
 
-*   Tech Interview Handbook (Github repo)
-*   A Life Engineered (YT)
-*   STAR method (general method)
+*   Руководство по проведению собеседований с техническими специалистами (Github repo)
+*   A Инженерная программа (МС)
+*   Метод STAR (общий метод)
 
-## OOD Interview
+## Собеседование по объектно-ориентированному проектированию
 
-*   Interviewready
-*   OOD by educative
-*   Head First Design Patterns Book
+*   Готовы к собеседованию
+*   ПРОДОВОЛЬСТВЕННОЕ ПРОДУКЦИОННОЕ
+*   Первый дизайн
 
-## Mock interviews
+## Пробные собеседования
 
-*   Interviewingio
-*   Pramp
-*   Meetapro
+*   Интервью
+*   Прамп
+*   Метеапро
 
-## Apply for Jobs
+## Откликайтесь на вакансии
 
-*   Linkedin
-*   Monster
-*   Indeed
+*   Связи
+*   Монстр
+*   Действительно

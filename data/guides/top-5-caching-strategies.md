@@ -1,6 +1,6 @@
 ---
-title: "Top 5 Caching Strategies"
-description: "Explore the top 5 caching strategies to optimize data synchronization."
+title: "Пять стратегий кеширования"
+description: "Изучение стратегий по оптимизации синхронизации данных, разработанных в рамках пяти основных направлений."
 image: "https://assets.bytebytego.com/diagrams/0374-top-5-caching-strategies.png"
 createdAt: "2024-02-22"
 draft: false
@@ -13,19 +13,19 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0374-top-5-caching-strategies.png)
 
-When we introduce a cache into the architecture, synchronization between the cache and the database becomes inevitable.
+Когда мы введем кэш в архитектуру, синхронизация между кэшом и базой данных становится неизбежной.
 
-Let’s look at 5 common strategies for how we keep the data in sync.
+Давайте посмотрим на 5 общих стратегий, как мы держим данные в одном месте.
 
-## Read Strategies
+## Прочитать стратегии
 
-*   Cache aside
-*   Read through
+*   Кэш в сторону
+*   Прочитай
 
-## Write Strategies
+## Написание стратегий
 
-*   Write around
-*   Write back
-*   Write through
+*   Пишите вокруг
+*   Запишите ответ.
+*   Запишите
 
-The caching strategies are often used in combination. For example, write-around is often used together with cache-aside to make sure the cache is up-to-date.
+Стратегии скобирования часто используются в сочетании. Например, для обеспечения того, чтобы кэш был обновлен, часто используется в виде кэш-аутов.

@@ -1,6 +1,6 @@
 ---
-title: "Log Parsing Cheat Sheet"
-description: "A handy guide to log parsing commands for efficient log analysis."
+title: "Шпаргалка по разбору логов"
+description: "Удобный справочник для лог-паразирования команд для эффективного анализа лога."
 image: "https://assets.bytebytego.com/diagrams/0263-log-parsing.png"
 createdAt: "2024-03-12"
 draft: false
@@ -13,35 +13,35 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0263-log-parsing.png)
 
-The diagram below lists the top 6 log parsing commands.
+Ниже приведен список из 6 главных команд по анализу журналов.
 
-## Log Parsing Commands
+## Команды для разбора логов
 
 *   **GREP**
 
-    GREP searches any given input files, selecting lines that match one or more patterns.
+    GREP ищет любые данные входные файлы, выбирая строки, которые соответствуют одному или нескольким шаблонам.
 
 *   **CUT**
 
-    CUT cuts out selected portions of each line from each file and writes them to the standard output.
+    CUT вырезает выбранные части каждой строки из каждого файла и записывает их в стандартный выход.
 
 *   **SED**
 
-    SED reads the specified files, modifying the input as specified by a list of commands.
+    SED читает указанные файлы, изменяя вход, как указано в списке команд.
 
 *   **AWK**
 
-    AWK scans each input file for lines that match any of a set of patterns.
+    AWK сканирует каждый входный файл на линию, которая соответствует любому из наборов шаблонов.
 
 *   **SORT**
 
-    SORT sorts text and binary files by lines.
+    SORT сортирует текстовые и бинарные файлы по строкам.
 
 *   **UNIQ**
 
-    UNIQ reads the specified input file comparing adjacent lines and writes a copy of each unique input line to the output file.
+    UNIQ читает указанный входный файл, сравнивая соседние строки и пишет копию каждой уникальной входной строки в выходной файл.
 
-These commands are often used in combination to quickly find useful information from the log files. For example, the below commands list the timestamps (column 2) when there is an exception happening for xxService.
+Эти команды часто используются в сочетании, чтобы быстро найти полезную информацию из журнальных файлов. Например, ниже приведенные команды перечисляют временные знаки (столка 2) при наличии исключения для xxService.
 
 ```bash
 grep “xxService” service.log | grep “Exception” | cut -d” “ -f 2

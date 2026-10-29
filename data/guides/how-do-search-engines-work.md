@@ -11,7 +11,7 @@ tags:
   - "Algorithms"
 ---
 
-![How Do Search Engines Work?](https://assets.bytebytego.com/diagrams/0103-how-do-search-engines-work.png)
+![Как работают поисковые системы?](https://assets.bytebytego.com/diagrams/0103-how-do-search-engines-work.png)
 
 Поисковые системы работают посредством комбинации трех основных процессов:
 

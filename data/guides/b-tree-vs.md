@@ -11,7 +11,7 @@ tags:
   - "Databases"
 ---
 
-![a close up of a chart](https://assets.bytebytego.com/diagrams/0091-btree-lsm.png)
+![B-дерево против LSM-дерева](https://assets.bytebytego.com/diagrams/0091-btree-lsm.png)
 
 ## B-дерево
 

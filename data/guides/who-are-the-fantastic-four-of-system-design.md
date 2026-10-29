@@ -1,6 +1,6 @@
 ---
-title: "The Fantastic Four of System Design"
-description: "Explore the core principles of system design: scalability, availability..."
+title: "Четыре ключевых компонента системного проектирования"
+description: "Изучение основных принципов проектирования системы: масштабируемость, доступность..."
 image: 'https://assets.bytebytego.com/diagrams/0357-who-are-the-fantastic-four-of-system-design.png'
 createdAt: '2024-02-05'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0357-who-are-the-fantastic-four-of-system-design.png)
 
-Scalability, Availability, Reliability, and Performance. They are the most critical components to crafting successful software systems.
+b) масштабность, доступность, надежность и эффективность. Они являются наиболее важными компонентами для создания успешных систем программного обеспечения.
 
-Let’s look at each of them with implementation techniques:
+Давайте посмотрим на каждую из них с помощью методов осуществления:
 
-*   **Scalability**
+*   **Скалабельность**
 
-    Scalability ensures that your application can handle more load without compromising performance.
+    Производимость обеспечивает возможность обработки большего объема нагрузки без ущерба для эффективности.
 
-*   **Availability**
+*   **Доступность**
 
-    Availability makes sure that your application is always ready to serve the users and downtime is minimal.
+    Доступность обеспечивает, чтобы ваше приложение всегда было готово обслуживать пользователей, а время простоя минимально.
 
-*   **Reliability**
+*   **Надёжность**
 
-    Reliability is about building software that consistently delivers correct results.
+    Надежность заключается в создании программного обеспечения, которое последовательно дает правильные результаты.
 
-*   **Performance**
+*   **Производительность**
 
-    Performance is the ability of a system to carry out its tasks at an expected rate under peak load using available resources.
+    Эффективность представляет собой способность системы выполнять свои задачи при ожидаемом уровне максимальной нагрузки с использованием имеющихся ресурсов.

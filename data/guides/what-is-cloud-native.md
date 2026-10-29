@@ -1,6 +1,6 @@
 ---
-title: "What is Cloud Native?"
-description: "Explore cloud native technologies and their impact on application architecture."
+title: "Что означает Cloud Native?"
+description: "Изучение местных технологий облаков и их влияния на архитектуру приложений."
 image: "https://assets.bytebytego.com/diagrams/0413-what-is-cloud-native.png"
 createdAt: "2024-03-12"
 draft: false
@@ -11,28 +11,28 @@ tags:
   - Microservices
 ---
 
-Below is a diagram showing the evolution of architecture and processes since the 1980s.
+Ниже приводится диаграмма, показывающая эволюцию архитектуры и процессов с 80-х годов.
 
-![Cloud Native](https://assets.bytebytego.com/diagrams/0413-what-is-cloud-native.png)
+![Что означает Cloud Native?](https://assets.bytebytego.com/diagrams/0413-what-is-cloud-native.png)
 
-Organizations can build and run scalable applications on public, private, and hybrid clouds using cloud native technologies.
+Организации могут создавать и использовать масштабируемое применение на государственных, частных и гибридных облаках с использованием местных облачных технологий.
 
-This means the applications are designed to leverage cloud features, so they are resilient to load and easy to scale.
+Это означает, что приложения предназначены для использования облачных характеристик, поэтому они стойки к нагрузке и легко поддаются масштабированию.
 
-Cloud native includes 4 aspects:
+Облачный туман включает 4 аспекта:
 
-*   **Development process**
+*   **Процесс развития**
 
-    This has progressed from waterfall to agile to DevOps.
+    Это происходит от водопада до аккуратного к девопам.
 
-*   **Application Architecture**
+*   **Архитектура приложения**
 
-    The architecture has gone from monolithic to microservices. Each service is designed to be small, and adaptive to the limited resources in cloud containers.
+    Архитектура перешла от монолитных к микроуслугам. Каждая служба предназначена для того, чтобы быть небольшой и адаптироваться к ограниченным ресурсам в облачных контейнерах.
 
-*   **Deployment & packaging**
+*   **Развертывание & упаковка**
 
-    The applications used to be deployed on physical servers. Then around 2000, the applications that were not sensitive to latency were usually deployed on virtual servers. With cloud native applications, they are packaged into docker images and deployed in containers.
+    Приложения, которые раньше использовались на физических серверах. Затем примерно в 2000 году приложения, которые не были чувствительны к латиентизму, обычно размещались на виртуальных серверах. С помощью тучных прикладных программ они упаковываются в Dockerовые изображения и размещаются в контейнерах.
 
-*   **Application infrastructure**
+*   **Инфраструктура приложений**
 
-    The applications are massively deployed on cloud infrastructure instead of self-hosted servers.
+    Прикладные программы широко используются на облачной инфраструктуре, а не на самозастроенных серверах.

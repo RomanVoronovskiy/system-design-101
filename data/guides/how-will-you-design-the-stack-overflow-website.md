@@ -11,7 +11,7 @@ tags:
   - Architecture
 ---
 
-![Image](https://assets.bytebytego.com/diagrams/0343-stack-overflow-architecture.png)
+![Как спроектировать переполнение стека](https://assets.bytebytego.com/diagrams/0343-stack-overflow-architecture.png)
 
 Если ваш ответ — локальные серверы и монолит, вы, скорее всего, провалите собеседование, но именно так оно и устроено на самом деле!
 

@@ -1,6 +1,6 @@
 ---
-title: "Top 4 Kubernetes Service Types"
-description: "Explore the top 4 Kubernetes service types with a helpful diagram."
+title: "Четыре типа сервисов Kubernetes"
+description: "Изучить 4 лучших типа сервисов Kubernetes с полезной диаграммами."
 image: "https://assets.bytebytego.com/diagrams/0005-4-k8s-service-types.png"
 createdAt: "2024-02-24"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0005-4-k8s-service-types.png)
 
-The diagram below shows 4 ways to expose a Service.
+На схеме ниже показаны четыре способа предоставить доступ к сервису.
 
-In Kubernetes, a Service is a method for exposing a network application in the cluster. We use a Service to make that set of Pods available on the network so that users can interact with it.
+В Кубернете сервис является методом обнаружения сетевого приложения в кластере. Мы используем сервис, чтобы сделать этот набор подов доступным в сети, чтобы пользователи могли с ним взаимодействовать.
 
-There are 4 types of Kubernetes services: ClusterIP, NodePort, LoadBalancer and ExternalName. The “type” property in the Service's specification determines how the service is exposed to the network.
+В Kubernetes есть четыре типа сервисов: ClusterIP, NodePort, LoadBalancer и ExternalName. Характер, имущество, указанное в спецификации Службы, определяет, каким образом эта услуга подвергается воздействию сети.
 
-## Kubernetes Service Types
+## Типы услуг
 
 *   **ClusterIP**
 
-    ClusterIP is the default and most common service type. Kubernetes will assign a cluster-internal IP address to ClusterIP service. This makes the service only reachable within the cluster.
+    ClusterIP — тип сервиса по умолчанию и наиболее распространённый вариант. Kubernetes назначает сервису ClusterIP внутренний IP-адрес кластера. Это делает услуги доступными только в рамках кластера.
 
 *   **NodePort**
 
-    This exposes the service outside of the cluster by adding a cluster-wide port on top of ClusterIP. We can request the service by NodeIP:NodePort.
+    Сервис становится доступен извне кластера: поверх ClusterIP добавляется порт на узлах кластера. К сервису можно обратиться по адресу NodeIP:NodePort.
 
 *   **LoadBalancer**
 
-    This exposes the Service externally using a cloud provider’s load balancer.
+    Это позволяет раскрыть Службу с помощью облачного поставщика, S-с балансера.
 
 *   **ExternalName**
 
-    This maps a Service to a domain name. This is commonly used to create a service within Kubernetes to represent an external database.
+    На этой странице карта сервиса домена. Это обычно используется для создания в Кубернете услуг, которые представляют внешнюю базу данных.

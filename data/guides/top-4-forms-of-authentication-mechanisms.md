@@ -1,6 +1,6 @@
 ---
-title: "Top 4 Authentication Mechanisms"
-description: "Explore the top 4 authentication mechanisms for secure access."
+title: "Четыре механизма аутентификации"
+description: "Изучение механизмов идентификации 4 лучших для безопасного доступа."
 image: "https://assets.bytebytego.com/diagrams/0078-authentication-mechanisms.png"
 createdAt: "2024-02-23"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0078-authentication-mechanisms.png)
 
-## 1. SSH Keys
+## 1. SSH Ключи
 
-Cryptographic keys are used to access remote systems and servers securely.
+Криптографические ключи используются для надежного доступа к удаленным системам и серверам.
 
-## 2. OAuth Tokens
+## 2. Оут Токенс
 
-Tokens that provide limited access to user data on third-party applications.
+- Токены, обеспечивающие ограниченный доступ к данным пользователей по заявкам третьих сторон.
 
-## 3. SSL Certificates
+## 3. Сертификаты SSL
 
-Digital certificates ensure secure and encrypted communication between servers and clients.
+Цифровые сертификаты обеспечивают надежную и зашифрованную связь между серверами и клиентами.
 
-## 4. Credentials
+## 4. Полномочия
 
-User authentication information is used to verify and grant access to various systems and services.
+Для проверки и предоставления доступа к различным системам и услугам используется информация, подтверждающая личность пользователей.
 
-Over to you: How do you manage those security keys? Is it a good idea to put them in a GitHub repository?
+Как вы справляетесь с этими ключами безопасности? Это хорошая идея поместить их в хранилище Гитхуб?
 
-Guest post by [Govardhana Miriyala Kannaiah](https://www.linkedin.com/in/govardhana-miriyala-kannaiah/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B453ttTK1RbaZ6dUsydRz9Q%3D%3D).
+Гостевое сообщение [Говардхана Мирияла Каннайя](https://www.linkedin.com/in/govardhana-miriyala-kannaiah/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B453ttTK1RbaZ6dUsydRz9Q%3D%3D).

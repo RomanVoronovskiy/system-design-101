@@ -1,6 +1,6 @@
 ---
-title: 'What is an AI Agent?'
-description: 'Explore the concept of AI agents, their characteristics, and applications.'
+title: "Что такое ИИ-агент?"
+description: "Изучение концепции агентов ИИ, их характеристик и видов применения."
 image: 'https://assets.bytebytego.com/diagrams/0412-what-is-an-ai-agent.png'
 createdAt: '2024-03-13'
 draft: false
@@ -11,22 +11,22 @@ tags:
   - Machine Learning
 ---
 
-[![What is an AI Agent?](https://assets.bytebytego.com/diagrams/0412-what-is-an-ai-agent.png)]()
+[![Что такое ИИ-агент?](https://assets.bytebytego.com/diagrams/0412-what-is-an-ai-agent.png)]()
 
-An AI agent is a software program that can interact with its environment, gather data, and use that data to achieve predetermined goals. AI agents can choose the best actions to perform to meet those goals.
+агент АИ - это программа, которая может взаимодействовать с окружающей средой, собирать данные и использовать эти данные для достижения заранее определенных целей. Агенты МА могут выбрать наилучшие меры для достижения этих целей.
 
-Key characteristics of AI agents are as follows:
+Основные характеристики агентов АИ заключаются в следующем:
 
-*   An agent can perform autonomous actions without constant human intervention. Also, they can have a human in the loop to maintain control.
-*   Agents have a memory to store individual preferences and allow for personalization. It can also store knowledge. An LLM can undertake information processing and decision-making functions.
-*   Agents must be able to perceive and process the information available from their environment.
-*   Agents can also use tools such as accessing the internet, using code interpreters and making API calls.
-*   Agents can also collaborate with other agents or humans.
+*   Агент может осуществлять автономные действия без постоянного вмешательства человека. Кроме того, у них может быть человек, который будет поддерживать контроль.
+*   Агенты имеют память, чтобы хранить индивидуальные предпочтения и позволять индивидуализироваться. Он также может хранить знания. ЛУЗМ может выполнять функции обработки информации и принятия решений.
+*   Агенты должны иметь возможность воспринимать и обрабатывать информацию, имеющуюся в их среде.
+*   Агенты могут также использовать такие инструменты, как доступ к Интернету, использование переводчиков кодов и звонки API.
+*   Агенты могут также сотрудничать с другими агентами или людьми.
 
-Multiple types of AI agents are available such as learning agents, simple reflex agents, model-based reflex agents, goal-based agents, and utility-based agents.
+Существуют различные типы агентов АИ, такие как обучающиеся агенты, простые рефлекс-агенты, рефлекс-агенты на основе моделей, агенты на базе целей и агенты на основе полезных ископаемых.
 
-A system with AI agents can be built with different architectural approaches.
+Система с агентами АИ может быть построена с различными архитектурными подходами.
 
-1.  **Single Agent**: Agents can serve as personal assistants.
-2.  **Multi-Agent**: Agents can interact with each other in collaborative or competitive ways.
-3.  **Human Machine**: Agents can interact with humans to execute tasks more efficiently.
+1.  **Единовременный агент**:: Агенты могут выполнять функции личных помощников.
+2.  **Многоагент**:: агенты могут взаимодействовать друг с другом на основе сотрудничества или конкуренции.
+3.  **Человеческая машина**: Агенты могут взаимодействовать с людьми для более эффективного выполнения задач.

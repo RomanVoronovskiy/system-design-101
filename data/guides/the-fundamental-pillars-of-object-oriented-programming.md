@@ -1,6 +1,6 @@
 ---
-title: "The Fundamental Pillars of Object-Oriented Programming"
-description: "Explore the core principles of object-oriented programming (OOP)."
+title: "Основные принципы объектно-ориентированного программирования"
+description: "Изучение основных принципов программ, ориентированных на объект (ООП)."
 image: "https://assets.bytebytego.com/diagrams/0197-4-fundamental-pillars-of-object-oriented-programming.png"
 createdAt: "2024-03-06"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0197-4-fundamental-pillars-of-object-oriented-programming.png)
 
-Abstraction, Encapsulation, Inheritance, and Polymorphism are the four pillars of object-oriented programming. What do they mean?
+Четыре основы программ, ориентированных на объект, — реферация, эпсуляция, наследование и полиморфизм. Что они означают?
 
-## Abstraction
+## Абстракция
 
-This is the process of hiding implementation details and showing only the essential features of an object. For example, a Vehicle class with an abstract stop method.
+Это процесс сокрытия деталей осуществления и демонстрации лишь основных особенностей объекта. Например, класс транспортного средства с абстрактным методом остановки.
 
-## Encapsulation
+## Инкапсуляция
 
-It involves wrapping data (fields) and methods in a single unit (class) and restricting direct access using access modifiers. For example, private fields with public getters and setters.
+Она предусматривает упаковку данных (поле) и методов в рамках единого блока (класса) и ограничение прямого доступа с использованием изменяющих устройств доступа. Например, частные поля с общественными хватками и хитростью.
 
-## Inheritance
+## Наследование
 
-The process of creating a new class (child) that inherits attributes and methods from an existing class (parent), thereby promoting code reuse. For example, a Car class inherits from a Vehicle class.
+Процесс создания нового класса (ребенка), который наследует атрибуты и методы из существующего класса (родителя), тем самым поощряя повторное использование кода. Например, класс автомобиля наследуется от класса транспортного средства.
 
-## Polymorphism
+## Полиморфизм
 
-It allows methods to perform differently based on the object they are invoked on. When two types share an inheritance chain, they can be used interchangeably with no errors.
+Он позволяет применять методы по-разному, исходя из объекта, на который они ссылаются. Если два типа имеют общую цепь наследования, то они могут использоваться взаимозаменяемым образом без ошибок.

@@ -1,6 +1,6 @@
 ---
-title: "What Are the Greenest Programming Languages?"
-description: "Explore energy efficiency in programming languages and their impact."
+title: "Какие языки программирования потребляют меньше энергии?"
+description: "Изучение энергоэффективности языков программирования и их воздействия."
 image: "https://assets.bytebytego.com/diagrams/0186-energy-efficient-language.jpg"
 createdAt: "2024-02-19"
 draft: false
@@ -11,8 +11,8 @@ tags:
   - "Energy Efficiency"
 ---
 
-![a close up of a text](https://assets.bytebytego.com/diagrams/0186-energy-efficient-language.jpg)
+![Какие языки программирования потребляют меньше энергии?](https://assets.bytebytego.com/diagrams/0186-energy-efficient-language.jpg)
 
-The study below runs 10 benchmark problems in 28 languages. It measures the runtime, memory usage, and energy consumption of each language. This take might be controversial.
+В исследовании, приводимом ниже, рассматриваются 10 базовых проблем на 28 языках. Он измеряет время работы, использование памяти и потребление энергии на каждом языке. Этот подход может быть спорным.
 
-“This paper presents a study of the runtime, memory usage, and energy consumption of twenty-seven well-known software languages. We monitor the performance of such languages using ten different programming problems, expressed in each of the languages. Our results show interesting findings, such as slower/faster languages consuming less/more energy, and how memory usage influences energy consumption. We show how to use our results to provide software engineers support to decide which language to use when energy efficiency is a concern”.
+В этом документе представлены результаты исследования, касающиеся времени работы, использования памяти и потребления энергии на 27 хорошо известных языках программного обеспечения. Мы отслеживаем работу таких языков с использованием десяти различных проблем программирования, выраженных на каждом из языков. Наши результаты свидетельствуют о таких интересных выводах, как более медленные/быстрые языки, потребляющие меньше/больше энергии, и о том, как использование памяти влияет на потребление энергии. Мы показываем, как использовать наши результаты для оказания инженерам-программам поддержки в решении вопроса о том, какой язык следует использовать, когда речь идет об энергоэффективности.

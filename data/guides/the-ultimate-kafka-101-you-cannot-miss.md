@@ -1,6 +1,6 @@
 ---
-title: "The Ultimate Kafka 101 You Cannot Miss"
-description: "Learn the fundamentals of Kafka in 8 simple steps."
+title: "Основы Kafka: подробное руководство"
+description: "Основы Kafka за восемь простых шагов."
 image: "https://assets.bytebytego.com/diagrams/0246-kafka-101-8-steps-to-learn-the-fundamentals-of-kafka.png"
 createdAt: "2024-02-02"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0246-kafka-101-8-steps-to-learn-the-fundamentals-of-kafka.png)
 
-Kafka is super-popular but can be overwhelming in the beginning.
+Kafka очень популярна, но поначалу может показаться сложной.
 
-Here are 8 simple steps that can help you understand the fundamentals of Kafka.
+Эти восемь простых шагов помогут разобраться в её основах.
 
-## What is Kafka?
+## Что такое Kafka?
 
-Kafka is a distributed event store and a streaming platform. It began as an internal project at LinkedIn and now powers some of the largest data pipelines in the world in orgs like Netflix, Uber, etc.
+Kafka — распределённое хранилище событий и платформа потоковой обработки данных. Она появилась как внутренний проект LinkedIn, а сегодня используется в крупнейших конвейерах данных таких компаний, как Netflix и Uber.
 
-## Kafka Messages
+## Сообщения Kafka
 
-Message is the basic unit of data in Kafka. It’s like a record in a table consisting of headers, key, and value.
+Сообщение — основная единица данных в Kafka. Его можно сравнить с записью в таблице: оно содержит заголовки, ключ и значение.
 
-## Kafka Topics and Partitions
+## Топики и разделы Kafka
 
-Every message goes to a particular Topic. Think of the topic as a folder on your computer. Topics also have multiple partitions.
+Каждое сообщение направляется в определённый топик (Topic). Топик можно представить как папку на компьютере. Каждый топик, в свою очередь, может состоять из нескольких разделов (partitions).
 
-## Advantages of Kafka
+## Преимущества Kafka
 
-Kafka can handle multiple producers and consumers, while providing disk-based data retention and high scalability.
+Kafka поддерживает множество производителей и потребителей сообщений, хранит данные на диске и хорошо масштабируется.
 
-## Kafka Producer
+## Производители сообщений Kafka
 
-Producers in Kafka create new messages, batch them, and send them to a Kafka topic. They also take care of balancing messages across different partitions.
+Производители создают новые сообщения, объединяют их в пакеты и отправляют в топик Kafka. Они также распределяют сообщения между разделами.
 
-## Kafka Consumer
+## Потребители сообщений Kafka
 
-Kafka consumers work together as a consumer group to read messages from the broker.
+Потребители Kafka объединяются в группы потребителей (consumer groups) и совместно читают сообщения у брокера.
 
-## Kafka Cluster
+## Кластер Kafka
 
-A Kafka cluster consists of several brokers where each partition is replicated across multiple brokers to ensure high availability and redundancy.
+Кластер Kafka состоит из нескольких брокеров. Каждый раздел реплицируется на несколько брокеров для обеспечения высокой доступности и избыточности.
 
-## Use Cases of Kafka
+## Сценарии использования Kafka
 
-Kafka can be used for log analysis, data streaming, change data capture, and system monitoring.
+Kafka подходит для анализа логов, потоковой передачи данных, отслеживания изменений данных (CDC) и мониторинга систем.

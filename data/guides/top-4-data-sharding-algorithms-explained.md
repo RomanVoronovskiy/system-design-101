@@ -1,6 +1,6 @@
 ---
-title: "Top 4 Data Sharding Algorithms Explained"
-description: "Explore the top data sharding algorithms for efficient data management."
+title: "Четыре алгоритма шардинга данных"
+description: "Изучение алгоритмов шардов данных для эффективного управления данными."
 image: "https://assets.bytebytego.com/diagrams/0373-top-4-data-sharding-algorithms-explained.png"
 createdAt: "2024-02-21"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0373-top-4-data-sharding-algorithms-explained.png)
 
-We are dealing with massive amounts of data. Often we need to split data into smaller, more manageable pieces, or “shards”. Here are some of the top data sharding algorithms commonly used:
+Мы имеем дело с огромным количеством данных. Часто нам нужно разделить данные на более мелкие, более управляемые части, или,, осложнения, Вот некоторые из алгоритмов шардов данных, обычно используемых:
 
-## Range-Based Sharding
+## Шардинг по диапазонам
 
-This involves partitioning data based on a range of values. For example, customer data can be sharded based on alphabetical order of last names, or transaction data can be sharded based on date ranges.
+Это предполагает разделение данных на основе целого ряда значений. Например, данные о клиентах могут быть осколками на основе алфавитного порядка фамилий или данные о сделках могут осколками на основе диапазонов дат.
 
-## Hash-Based Sharding
+## Охлаждение на основе гаширования
 
-In this method, a hash function is applied to a shard key chosen from the data (like a customer ID or transaction ID).
+При этом методе функция хеширования применяется к осколочному ключу, выбранному из данных (как идентификатор клиента или идентификатор операции).
 
-This tends to distribute data more evenly across shards compared to range-based sharding. However, we need to choose a proper hash function to avoid hash collisions.
+Это позволяет более равномерно распределять данные по осколам по сравнению с осколками на основе дальности. Однако нам нужно выбрать правильную функцию хеширования, чтобы избежать столкновений.
 
-## Consistent Hashing
+## Последовательное хватание
 
-This is an extension of hash-based sharding that reduces the impact of adding or removing shards. It distributes data more evenly and minimizes the amount of data that needs to be relocated when shards are added or removed.
+Это расширение шардов на основе хеширования, которое снижает эффект добавления или удаления шардов. Он распределяет данные более равномерно и сводится к минимуму количество данных, которые необходимо переместить, когда шарды добавляются или удаляются.
 
-## Virtual Bucket Sharding
+## Охлаждение виртуальной сукиной кости
 
-Data is mapped into virtual buckets, and these buckets are then mapped to physical shards. This two-level mapping allows for more flexible shard management and rebalancing without significant data movement.
+Данные картируются в виртуальных ведрах, а эти ведра затем картируются на физические шарды. Такое двухуровневое картирование позволяет более гибко регулировать обломки и восстанавливать баланс без значительного перемещения данных.

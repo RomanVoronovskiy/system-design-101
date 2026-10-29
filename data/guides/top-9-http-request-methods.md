@@ -1,6 +1,6 @@
 ---
-title: 'Top 9 HTTP Request Methods'
-description: 'Explore the top 9 HTTP request methods with clear explanations.'
+title: "Девять методов HTTP-запросов"
+description: "Изучить методы, используемые в рамках 9 самых высоких ТПЛТ, с четкими разъяснениями."
 image: 'https://assets.bytebytego.com/diagrams/0371-top-9-http-request-methods.png'
 createdAt: '2024-02-27'
 draft: false
@@ -13,32 +13,32 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0371-top-9-http-request-methods.png)
 
-GET, POST, PUT... Common HTTP “verbs” in one figure.
+Пошли, постой, попробуй... Обычные HTTP, верб, в одной фигуре.
 
 *   **HTTP GET**
 
-    This retrieves a resource from the server. It is idempotent. Multiple identical requests return the same result.
+    Это позволяет получить ресурс с сервера. Этот метод идемпотентен. Несколько идентичных запросов возвращают один и тот же результат.
 *   **HTTP PUT**
 
-    This updates or Creates a resource. It is idempotent. Multiple identical requests will update the same resource.
+    Это обновляет или создает ресурс. Этот метод идемпотентен. В нескольких идентичных запросах будет обновлен один и тот же ресурс.
 *   **HTTP POST**
 
-    This is used to create new resources. It is not idempotent, making two identical POST will duplicate the resource creation.
+    Это используется для создания новых ресурсов. Этот метод не идемпотентен: два одинаковых POST-запроса приведут к повторному созданию ресурса.
 *   **HTTP DELETE**
 
-    This is used to delete a resource. It is idempotent. Multiple identical requests will delete the same resource.
+    Это используется для удаления ресурса. Этот метод идемпотентен. В нескольких идентичных запросах будет удален один и тот же ресурс.
 *   **HTTP PATCH**
 
-    The PATCH method applies partial modifications to a resource.
+    Метод PATCH предусматривает частичные изменения ресурса.
 *   **HTTP HEAD**
 
-    The HEAD method asks for a response identical to a GET request but without the response body.
+    Метод ГОДА требует ответа, идентичного запросу ГЕТ, но без органа, отвечающего на ответ.
 *   **HTTP CONNECT**
 
-    The CONNECT method establishes a tunnel to the server identified by the target resource.
+    Метод КОННЕCT устанавливает туннель к серверу, идентифицированному целевым ресурсом.
 *   **HTTP OPTIONS**
 
-    This describes the communication options for the target resource.
+    В нем описываются варианты коммуникации для целевого ресурса.
 *   **HTTP TRACE**
 
-    This performs a message loop-back test along the path to the target resource.
+    Это позволяет проводить проверку обратной связи сообщений по пути к целевому ресурсу.

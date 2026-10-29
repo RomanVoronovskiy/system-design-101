@@ -11,7 +11,7 @@ tags:
   - "data storage"
 ---
 
-![How to Choose the Right Database](https://assets.bytebytego.com/diagrams/0227-how-to-choose-the-right-database.png)
+![Как выбрать правильную базу данных](https://assets.bytebytego.com/diagrams/0227-how-to-choose-the-right-database.png)
 
 * OLTP: для транзакционных систем, требующих строгой согласованности.
 

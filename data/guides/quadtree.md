@@ -1,6 +1,6 @@
 ---
-title: "Quadtree"
-description: "Explore the quadtree data structure for spatial data partitioning."
+title: "Дерево квадрантов"
+description: "Изучение структуры данных по квадратам для разделения пространственных данных."
 image: "https://assets.bytebytego.com/diagrams/0311-quadtree.jpg"
 createdAt: "2024-03-03"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0311-quadtree.jpg)
 
-Let's explore another data structure to find nearby restaurants on Yelp or Google Maps.
+Давайте изучим другую структуру данных, чтобы найти поблизости рестораны на Yelp или Google Maps.
 
-A quadtree is a data structure that is commonly used to partition a two-dimensional space by recursively subdividing it into four quadrants (grids) until the contents of the grids meet certain criteria.
+Квадри представляет собой структуру данных, которая обычно используется для разделения двухмерного пространства путем рекурсивно подвода его на четыре квадранта (сети) до тех пор, пока содержимое сетки не будет отвечать определенным критериям.
 
-A quadtree is an **in-memory data structure** and it is not a database solution. It runs on each LBS (Location-Based Service, see last week’s post) server, and the data structure is built at server start-up time.
+Дерево квадрантов — это **структура данных в оперативной памяти** , а не база данных. Она работает на каждом сервере LBS (на основе Location-Service, см. на прошлой неделе, s post), и структура данных построена в время запуска сервера.
 
-The second diagram explains the quadtree building process in more detail. The root node represents the whole world map. The root node is recursively broken down into 4 quadrants until no nodes are left with more than 100 businesses.
+На второй диаграмме более подробно объясняется процесс строительства квадри. Корень узел представляет собой карту мира. Корень узел рекурсивно разбит на 4 квадранта, пока не останется узла с более чем 100 предприятиями.
 
-## How to get nearby businesses with quadtree?
+## Как найти организации поблизости с помощью дерева квадрантов?
 
-*   Build the quadtree in memory.
+*   Постройте дерево квадрантов в оперативной памяти.
 
-*   After the quadtree is built, start searching from the root and traverse the tree, until we find the leaf node where the search origin is.
+*   После того, как будет построен квадрий, начни поиск с корня и пересечь дерево, пока мы не найдем узел листа, где находится источник поиска.
 
-*   If that leaf node has 100 businesses, return the node. Otherwise, add businesses from its neighbors until enough businesses are returned.
+*   Если этот узел листа имеет 100 бизнесов, возвращайте узел. В противном случае добавьте к ним свои соседи, пока не будет восстановлено достаточное количество предприятий.
 
-## Update LBS server and rebuild quadtree
+## Обновить сервер LBS и восстановить квадрит
 
-*   It may take a few minutes to build a quadtree in memory with 200 million businesses at the server start-up time.
+*   Для создания квадри в память может потребоваться несколько минут, и на запуск сервера потребуется 200 миллионов бизнесов.
 
-*   While the quadtree is being built, the server cannot serve traffic.
+*   Пока квадрий строится, сервер не может обслуживать движение.
 
-*   Therefore, we should roll out a new release of the server incrementally to a small subset of servers at a time. This avoids taking a large swathe of the server cluster offline and causes service brownout.
+*   Поэтому мы должны постепенно выпускать новый сервер на небольшой подмножество серверов. Это позволяет избежать отключения большого числа серверов и вызывает отключение сервиса.

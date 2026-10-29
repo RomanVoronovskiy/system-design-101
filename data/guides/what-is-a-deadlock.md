@@ -1,6 +1,6 @@
 ---
-title: "What is a Deadlock?"
-description: "Explore deadlocks: conditions, prevention, and recovery strategies."
+title: "Что такое взаимная блокировка — deadlock?"
+description: "Условия возникновения взаимных блокировок, способы их предотвращения и восстановления после них."
 image: "https://assets.bytebytego.com/diagrams/0411-what-is-a-deadlock.png"
 createdAt: "2024-03-11"
 draft: false
@@ -11,29 +11,29 @@ tags:
   - "Databases"
 ---
 
-A deadlock occurs when two or more transactions are waiting for each other to release locks on resources they need to continue processing. This results in a situation where neither transaction can proceed, and they end up waiting indefinitely.
+Взаимная блокировка возникает, когда две или более транзакции ожидают, что другие освободят блокировки ресурсов, необходимые для продолжения работы. Это приводит к ситуации, когда ни одна из транзакций не может продолжаться, и в конечном итоге они ожидают бесконечного срока.
 
 ![](https://assets.bytebytego.com/diagrams/0411-what-is-a-deadlock.png)
 
-## Coffman Conditions
+## Условия работы кофе
 
-The Coffman conditions, named after Edward G. Coffman, Jr., who first outlined them in 1971, describe four necessary conditions that must be present simultaneously for a deadlock to occur:
+Условия Кофмана, названные в честь Эдварда Г. Коффманом-младшим в 1971 году, описывают четыре необходимых условия, которые должны одновременно выполняться для возникновения взаимной блокировки:
 
-*   Mutual Exclusion
-*   Hold and Wait
-*   No Preemption
-*   Circular Wait
+*   Взаимное исключение
+*   Подожди и подожди.
+*   Без предубеждений
+*   Циркуляр
 
-## Deadlock Prevention
+## Предотвращение взаимных блокировок
 
-*   Resource ordering: impose a total ordering of all resource types, and require that each process requests resources in a strictly increasing order.
+*   Запрашивание ресурсов: установление полного порядка распределения всех видов ресурсов и требование о том, чтобы каждый процесс испрашивал ресурсы в строго растущем порядке.
 
-*   Timeouts: A process that holds resources for too long can be rolled back.
+*   Временные периоды: Процесс, который слишком долго держит ресурсы, может быть свернут.
 
-*   Banker’s Algorithm: A deadlock avoidance algorithm that simulates the allocation of resources to processes and helps in deciding whether it is safe to grant a resource request based on the future availability of resources, thus avoiding unsafe states.
+*   Алгоритм банкира: алгоритм избегания взаимных блокировок, моделирующий распределение ресурсов между процессами. Он помогает определить, безопасно ли удовлетворить запрос с учётом будущей доступности ресурсов, и не допускает перехода в небезопасное состояние.
 
-## Deadlock Recovery
+## Восстановление после взаимной блокировки
 
-*   Selecting a victim: Most modern Database Management Systems (DBMS) and Operating Systems implement sophisticated algorithms for detecting deadlocks and selecting victims, often allowing customization of the victim selection criteria via configuration settings. The selection can be based on resource utilization, transaction priority, cost of rollback etc.
+*   Выбор транзакции для прерывания: современные СУБД и операционные системы используют алгоритмы обнаружения взаимных блокировок и выбора участника, которого следует прервать. Критерии выбора часто можно настроить. Выбор может основываться на использовании ресурсов, приоритетах операций, стоимости возврата и т.д.
 
-*   Rollback: The database may roll back the entire transaction or just enough of it to break the deadlock. Rolled-back transactions can be restarted automatically by the database management system.
+*   Откат: база данных может откатить транзакцию полностью или частично — в объёме, достаточном для устранения взаимной блокировки. Переворачивающиеся операции могут быть возобновлены автоматически системой управления базой данных.

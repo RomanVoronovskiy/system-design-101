@@ -1,6 +1,6 @@
 ---
-title: What makes HTTP2 faster than HTTP1?
-description: Discover the key features that make HTTP2 faster than HTTP1.
+title: "Почему HTTP/2 быстрее HTTP/1?"
+description: "Откройте ключевые параметры, которые делают HTTP2 быстрее HTTP1."
 image: 'https://assets.bytebytego.com/diagrams/0421-why-http2-is-faster-than-http1.png'
 createdAt: '2024-02-02'
 draft: false
@@ -13,19 +13,19 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0421-why-http2-is-faster-than-http1.png)
 
-The key features of HTTP2 play a big role in this. Let’s look at them:
+В этом отношении важную роль играют ключевые особенности HTTP2. Давайте посмотрим на них:
 
-*   **Binary Framing Layer**
-    HTTP2 encodes the messages into binary format.
-    This allows the messages into smaller units called frames, which are then sent over the TCP connection, resulting in more efficient processing.
-*   **Multiplexing**
-    The Binary Framing allows full request and response multiplexing.
-    Clients and servers can interleave frames during transmissions and reassemble them on the other side.
-*   **Stream Prioritization**
-    With stream prioritization, developers can customize the relative weight of requests or streams to make the server send more frames for higher-priority requests.
-*   **Server Push**
-    Since HTTP2 allows multiple concurrent responses to a client’s request, a server can send additional resources along with the requested page to the client.
-*   **HPACK Header Compression**
-    HTTP2 uses a special compression algorithm called HPACK to make the headers smaller for multiple requests, thereby saving bandwidth.
+*   **Двоичный фрамирующий слой**
+    HTTP2 кодирует сообщения в двоичный формат.
+    Это позволяет направлять сообщения в более мелкие единицы под названием рам, которые затем направляются через патрубок ТКП, что позволяет более эффективно обрабатывать.
+*   **Множители**
+    Binary Framing позволяет полностью умножить запрос и ответ.
+    Клиенты и серверы могут в процессе передачи перепроверять и перегруппировать их на другой стороне.
+*   **Приоритетность потока**
+    При установлении приоритетности потоков разработчики могут адаптировать относительный вес запросов или потоков, чтобы сервер прислал больше систем для запросов более высокой степени приоритетности.
+*   **Выжимать сервер**
+    Поскольку HTTP2 позволяет одновременно реагировать на запросы клиентов, сервер может направлять дополнительные ресурсы вместе с запрашиваемой страницей клиенту.
+*   **Заголовок HPACK**
+    HTTP2 использует специальный алгоритм сжатия HPACK, чтобы уменьшить заголовки для нескольких запросов, тем самым сберегая пропускную способность.
 
-Of course, despite these features, HTTP2 can also be slow depending on the exact technical scenario. Therefore, developers need to test and optimize things to maximize the benefits of HTTP2.
+Конечно, несмотря на эти особенности, HTTP2 может быть также медленным в зависимости от точного технического сценария. Поэтому разработчикам необходимо проверить и оптимизировать вещи, чтобы максимально увеличить выгоды от HTTP2.

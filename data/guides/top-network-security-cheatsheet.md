@@ -1,6 +1,6 @@
 ---
-title: "Top Network Security Cheatsheet"
-description: "A concise guide to network security threats across OSI layers."
+title: "Шпаргалка по сетевой безопасности"
+description: "Краткое руководство по угрозам безопасности сети по всему спектру ИНМ."
 image: "https://assets.bytebytego.com/diagrams/0049-top-network-security-cheatsheet.png"
 createdAt: "2024-03-11"
 draft: false
@@ -11,47 +11,47 @@ tags:
   - "Cybersecurity"
 ---
 
-The diagram below shows some possible network attacks in 7 OSI model layers.
+На диаграмме ниже показаны некоторые возможные сетевые атаки в 7 слоях модели OSI.
 
 ![](https://assets.bytebytego.com/diagrams/0049-top-network-security-cheatsheet.png)
 
-## Application Layer
+## Применение
 
-*   Pushing
-*   Malware injection
-*   DDoS attacks
+*   Толкается
+*   Неисправность
+*   Атаки DDOS
 
-## Presentation Layer
+## Слой представления
 
-*   Encoding/decoding vulnerabilities
-*   Format string attacks
-*   Malicious code injection
+*   Уязвимость кодирования/декодирования
+*   Форматные струны
+*   Злоумышленный впрыск кода
 
-## Session Layer
+## Сеансовый слой
 
-*   Session hijacking
-*   Session fixation attacks
-*   Brute force attacks
+*   Угон помещений
+*   Нападение на сеансы
+*   Нападения с применением силы
 
-## Transport Layer
+## Транспортный слой
 
-*   Man-in-the-middle attacks
-*   SYN/ACK flood
+*   Нападение на человека в центре
+*   Наводнение СИН/АКК
 
-## Network Layer
+## Сетевой слой
 
-*   IP spoofing
-*   Route table manipulation
-*   DDoS attacks
+*   IP спуфинг
+*   Маневрирование столиков
+*   Атаки DDOS
 
-## Data Link Layer
+## Слой связи данных
 
-*   MAC address spoofing
-*   ARP spoofing
-*   VLAN hopping
+*   Адрес MAC
+*   Спуфинг АРП
+*   ВЛАН ОН ХОРОШИТ
 
-## Physical Layer
+## Физический слой
 
-*   Wiretapping
-*   Physical tampering
-*   Electromagnetic interference
+*   Прослушивание прослушки
+*   Физическое вмешательство
+*   Электромагнитные помехи

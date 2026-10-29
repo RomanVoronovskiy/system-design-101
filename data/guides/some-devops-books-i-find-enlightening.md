@@ -1,6 +1,6 @@
 ---
-title: "Some DevOps Books I Find Enlightening"
-description: "A list of enlightening DevOps books covering SRE, delivery, and more."
+title: "Полезные книги по DevOps"
+description: "Список просветительных книг DevOps, охватывающих СРЕ, доставку и многое другое."
 image: "https://assets.bytebytego.com/diagrams/0171-dev-ops-books.jpg"
 createdAt: "2024-02-20"
 draft: false
@@ -13,16 +13,16 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0171-dev-ops-books.jpg)
 
-## DevOps Books
+## Книги по DevOps
 
-*   **Accelerate** - presents both the findings and the science behind measuring software delivery performance.
+*   **Ускорить** - представляет как результаты, так и научные данные, лежащие в основе оценки эффективности работы по предоставлению программного обеспечения.
 
-*   **Continuous Delivery** - introduces automated architecture management and data migration. It also pointed out key problems and optimal solutions in each area.
+*   **Непрерывная реализация** - внедрение автоматизированного управления архитектурой и миграция данных. В нем также были отмечены ключевые проблемы и оптимальные решения в каждой области.
 
-*   **Site Reliability Engineering** - famous Google SRE book. It explains the whole life cycle of Google’s development, deployment, and monitoring, and how to manage the world’s biggest software systems.
+*   **Инженерно-техническое обеспечение объекта** - знаменитая книга Google SRE. Он объясняет весь жизненный цикл Google, разработки, развертывания и мониторинга, а также как управлять миром, это крупнейшие системы программного обеспечения.
 
-*   **Effective DevOps** - provides effective ways to improve team coordination.
+*   **Эффективные девобои** - обеспечивает эффективные пути улучшения координации деятельности групп.
 
-*   **The Phoenix Project** - a classic novel about effectiveness and communications. IT work is like manufacturing plant work, and a system must be established to streamline the workflow. Very interesting read!
+*   **Проект Феникса** - классический роман об эффективности и коммуникации. Работа в области ИТ аналогична работе на заводе по производству, и необходимо создать систему для рационализации рабочих процессов. Очень интересно читать!
 
-*   **The DevOps Handbook** - introduces product development, quality assurance, IT operations, and information security.
+*   **Руководство DevOps** - внедрение методов разработки продукции, обеспечения качества, ИТ-операции и информационной безопасности.

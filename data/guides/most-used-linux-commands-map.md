@@ -1,6 +1,6 @@
 ---
-title: "Most Used Linux Commands Map"
-description: "A concise guide to the most used Linux commands."
+title: "Карта часто используемых команд Linux"
+description: "Краткое руководство по наиболее используемым командам Linux."
 image: "https://assets.bytebytego.com/diagrams/0283-most-used-linux.png"
 createdAt: "2024-03-07"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0283-most-used-linux.png)
 
-This map provides a concise overview of the most commonly used Linux commands, categorized by their primary function.
+Эта карта содержит краткий обзор наиболее часто используемых команд Linux, классифицированных по их основной функции.
 
-## File and Directory Management
+## Управление файлами и каталогами
 
-## File Viewing and Editing
+## Просмотр и редактирование файлов
 
-## Process Management
+## Управление процессами
 
-## System Information
+## Информация о системе
 
-## User and Group Management
+## Управление пользователями и группами
 
-## Network Configuration and Monitoring
+## Настройка и мониторинг сети
 
-## Package Management
+## Управление пакетами

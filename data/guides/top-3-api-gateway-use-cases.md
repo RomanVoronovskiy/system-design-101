@@ -1,6 +1,6 @@
 ---
-title: 'Top 3 API Gateway Use Cases'
-description: 'Explore the top 3 use cases for API gateways in modern architectures.'
+title: "Три сценария использования API-шлюза"
+description: "Изучайте три главных варианта использования порталов API в современной архитектуре."
 image: 'https://assets.bytebytego.com/diagrams/0073-top-3-api-gateway-use-cases.png'
 createdAt: '2024-02-16'
 draft: false
@@ -11,13 +11,13 @@ tags:
   - Microservices
 ---
 
-![Top 3 API Gateway Use Cases](https://assets.bytebytego.com/diagrams/0073-top-3-api-gateway-use-cases.png)
+![Три сценария использования API-шлюза](https://assets.bytebytego.com/diagrams/0073-top-3-api-gateway-use-cases.png)
 
-API gateway sits between the clients and services, providing API communications between them.
+Вход в API расположен между клиентами и службами, обеспечивая связь между ними.
 
-*   **API gateway helps build an ecosystem.**
-    The users can leverage an API gateway to access a wider set of tools. The partners in the ecosystem collaborate with each other to provide better integrations for the users.
-*   **API gateway builds API marketplace**
-    The API marketplace hosts fundamental functionalities for everyone. The developers and businesses can easily develop or innovate in this ecosystem and sell APIs on the marketplace.
-*   **API gateway provides compatibility with multiple platforms**
-    When dealing with multiple platforms, an API gateway can help work across multiple complex architectures.
+*   **Портал API помогает создать экосистему.**
+    Пользователи могут использовать портал API для доступа к более широкому набору инструментов. Партнеры в экосистеме сотрудничают друг с другом в целях обеспечения более эффективной интеграции пользователей.
+*   **Вход API создает рынок API**
+    Рынок АПИ является основным источником основных функций для всех. Разработчики и предприятия могут легко развивать или внедрять инновации в этой экосистеме и продавать АПИ на рынке.
+*   **Вход API обеспечивает совместимость с несколькими платформами**
+    При работе с несколькими платформами портал API может помочь работать с несколькими сложными архитектурами.

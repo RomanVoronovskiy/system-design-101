@@ -1,6 +1,6 @@
 ---
-title: "Linux File Permissions Illustrated"
-description: "Understand Linux file permissions: owner, group, and others."
+title: "Права доступа к файлам в Linux: наглядное объяснение"
+description: "Понимать разрешения на файлы Linux: владелец, группа и другие."
 image: "https://assets.bytebytego.com/diagrams/0259-linux-permissions-copy.png"
 createdAt: "2024-03-08"
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0259-linux-permissions-copy.png)
 
-## Ownership
+## Собственность
 
-Every file or directory is assigned 3 types of owner:
+Каждому файлу или каталогу присваивается 3 типа владельцев:
 
-*   **Owner**: the owner is the user who created the file or directory.
+*   **Владелец**: владелец - пользователь, создавший файл или каталог.
 
-*   **Group**: a group can have multiple users. All users in the group have the same permissions to access the file or directory.
+*   **Группа**В группе могут быть несколько пользователей. Все пользователи в группе имеют одинаковые разрешения на доступ к файлу или каталогу.
 
-*   **Other**: other means those users who are not owners or members of the group.
+*   **Другие**: другие - пользователи, не являющиеся владельцами или членами группы.
 
-## Permission
+## Разрешение
 
-There are only three types of permissions for a file or directory.
+Есть только три типа разрешений на файл или каталог.
 
-*   **Read (r)**: the read permission allows the user to read a file.
+*   **Читать (r)**: разрешение на чтение позволяет пользователю читать файл.
 
-*   **Write (w)**: the write permission allows the user to change the content of the file.
+*   **Напишите (w)**: разрешение на запись позволяет пользователю изменять содержание файла.
 
-*   **Execute (x)**: the execute permission allows a file to be executed.
+*   **Исполнение (x)**: разрешение исполнения позволяет выполнять файл.

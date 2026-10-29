@@ -1,6 +1,6 @@
 ---
-title: "Top 10 Kubernetes Design Patterns"
-description: "Explore the top 10 Kubernetes design patterns with detailed explanations."
+title: "Десять шаблонов проектирования в Kubernetes"
+description: "Изучить 10 образцов конструкции Kubernetes с подробными объяснениями."
 image: "https://assets.bytebytego.com/diagrams/0372-top-10-k8s-design-patterns.png"
 createdAt: "2024-02-19"
 draft: false
@@ -13,58 +13,58 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0372-top-10-k8s-design-patterns.png)
 
-## Foundational Patterns
+## Основные схемы
 
-These patterns are the fundamental principles for applications to be automated on k8s, regardless of the application's nature.
+Эти модели являются основополагающими принципами автоматизации приложений на k8 независимо от характера приложения.
 
-*   **Health Probe Pattern**
+*   **Схема медицинского обследования**
 
-    This pattern requires that every container must implement observable APIs for the platform to manage the application.
+    Для этого требуется, чтобы каждый контейнер внедрил наблюдаемые АПИ для платформы, которая будет управлять приложением.
 
-*   **Predictable Demands Pattern**
+*   **Предсказуемый график требований**
 
-    This pattern requires that we should declare application requirements and runtime dependencies. Every container should declare its resource profile.
+    Такая схема требует, чтобы мы сообщали о требованиях к подаче заявлений и зависимости от времени работы. Каждый контейнер должен декларировать свой ресурсный профиль.
 
-*   **Automated Placement Pattern**
+*   **Автоматизированный формат размещения**
 
-    This pattern describes the principles of Kubernetes’ scheduling algorithm.
+    Этот шаблон описывает принципы Kubernetes, алгоритм планирования.
 
-## Structural Patterns
+## Структурные структуры
 
-These patterns focus on structuring and organizing containers in a Pod.
+Эти модели ориентированы на структурирование и организацию контейнеров в подушке.
 
-*   **Init Container Pattern**
+*   **Контейнерный шаблон**
 
-    This pattern has a separate life cycle for initialization-releated tasks.
+    Эта модель имеет отдельный жизненный цикл для выполнения задач, связанных с перестановкой.
 
-*   **Sidecar Pattern**
+*   **Схема коляски**
 
-    This pattern extends a container’s functionalities without changing it.
+    Этот шаблон расширяет контейнер, функции, не меняя его.
 
-## Behavioral Patterns
+## Поведенческие модели
 
-These patterns describe the life cycle management of a Pod. Depending on the type of the workload, it can run as a service or a batch job.
+Эти модели характеризуют управление жизненным циклом в рамках конкретного вида деятельности. В зависимости от вида работы он может работать в качестве сервиса или набора работ.
 
-*   **Batch Job Pattern**
+*   **Схема работы**
 
-    This pattern is used to manage isolated atomic units of work.
+    Эта модель используется для управления изолированными атомными единицами.
 
-*   **Stateful Service Pattern**
+*   **Государственная модель обслуживания**
 
-    This pattern creates distributed stateful applications.
+    Эта модель создает распределенные государственные приложения.
 
-*   **Service Discovery Pattern**
+*   **Схема открытия службы**
 
-    This pattern describes how clients discover the services.
+    Эта схема описывает, как клиенты находят услуги.
 
-## Higher-Level Patterns
+## Структура высшего уровня
 
-These patterns focus on higher-level application management.
+Эти модели ориентированы на управление прикладными программами более высокого уровня.
 
-*   **Controller Pattern**
+*   **Регулятор**
 
-    This pattern monitors the current state and reconciles with the declared target state.
+    Эта схема отслеживает текущее состояние и примиряется с заявленным целевым состоянием.
 
-*   **Operator Pattern**
+*   **Схема оператора**
 
-    This pattern defines operational knowledge in an algorithmic and automated form.
+    Эта схема определяет оперативные знания в алгоритмической и автоматизированной форме.

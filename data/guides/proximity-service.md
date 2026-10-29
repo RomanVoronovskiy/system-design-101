@@ -1,6 +1,6 @@
 ---
-title: "Proximity Service"
-description: "Explore the design of proximity services for finding nearby locations."
+title: "Сервис поиска объектов поблизости"
+description: "Изучение проектных решений о создании служб, расположенных вблизи от нас, для поиска близлежащих мест."
 image: "https://assets.bytebytego.com/diagrams/0306-proximity-service-design.jpg"
 createdAt: "2024-03-14"
 draft: false
@@ -13,36 +13,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0306-proximity-service-design.jpg)
 
-How do we find nearby restaurants on Yelp or Google Maps? Here are some design details behind the scenes.
+Как найти поблизости рестораны на Yelp или Google Maps? Вот некоторые детали дизайна за кулисами.
 
-There are two key services (see the diagram below):
+Существуют два ключевых вида услуг (см. диаграмму ниже):
 
-## Business Service
+## Сервис организаций
 
-*   Add/delete/update restaurant information
-*   Customers view restaurant details
+*   Добавление, удаление и обновление информации о ресторане
+*   Посетители просматривают сведения о ресторане
 
-## Location-based Service
+## Сервис геолокации
 
-*   Given a radius and location, return a list of nearby restaurants
+*   При условии радиуса и местоположения, возвращайте список ближайших ресторанов
 
-How are the restaurant locations stored in the database so that LBS can return nearby restaurants efficiently?
+Как в базе данных хранятся рестораны, чтобы LBS могла эффективно возвращаться в соседние рестораны?
 
-Store the latitude and longitude of restaurants in the database? The query will be very inefficient when you need to calculate the distance between you and every restaurant.
+Сохранить широту и долготу ресторанов в базе данных? Запрос будет очень неэффективным, когда вам нужно будет рассчитать расстояние между вами и каждым рестораном.
 
-One way to speed up the search is using the geohash algorithm.
+Один из способов ускорить поиск - использовать алгоритм геохаш.
 
-First, divide the planet into four quadrants along with the prime meridian and equator：
+Во-первых, разделите планету на четыре квадранта вместе с прайм-меридианским и экватором:
 
-*   Latitude range \[-90, 0] is represented by 0
-*   Latitude range \[0, 90] is represented by 1
-*   Longitude range \[-180, 0] is represented by 0
-*   Longitude range \[0, 180] is represented by 1
+*   Диапазон широты \[90, 0] представлен 0
+*   Диапазон широты \[0, 90] представлен 1
+*   Диапазон долготы \[180, 0] представлен 0
+*   Диапазон долготы \[0, 180] представлен 1
 
-Second, divide each grid into four smaller grids. Each grid can be represented by alternating between longitude bit and latitude bit.
+Во-вторых, разделить каждую сетку на четыре более мелкие сетки. Каждая сетка может быть представлена путем чередования между битом долготы и битом широты.
 
-So when you want to search for the nearby restaurants in the red-highlighted grid, you can write SQL like:
+Когда вы хотите найти близлежащие рестораны в красной сети, вы можете написать SQL как:
 
-SELECT \* FROM geohash\_index WHERE geohash LIKE \`01%\`
+СЛЕКТРИЯ * Из геохаш_ index Где геохаш похож на ~01%'
 
-Geohash has some limitations. There can be a lot of restaurants in one grid (downtown New York), but none in another grid (ocean). So there are other more complicated algorithms to optimize the process. Let me know if you are interested in the details.
+У Геохаш есть некоторые ограничения. В одной сети (в центре Нью-Йорка) может быть много ресторанов, но ни одной в другой (океанской). Есть и другие более сложные алгоритмы, чтобы оптимизировать процесс. Дай мне знать, если тебе интересно подробности.

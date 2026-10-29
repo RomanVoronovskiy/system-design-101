@@ -1,6 +1,6 @@
 ---
-title: "Why PostgreSQL is the Most Loved Database"
-description: "Explore why PostgreSQL was voted the most loved database in the 2022 survey."
+title: "Почему разработчики так любят PostgreSQL"
+description: "Изучайте, почему PostgreSQL был признан наиболее любимой базой данных в опросе 2022 года."
 image: "https://assets.bytebytego.com/diagrams/0303-postgres.png"
 createdAt: "2024-02-25"
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0303-postgres.png)
 
-The diagram shows the many use cases of PostgreSQL - one database that includes almost **all the use cases** developers need.
+На диаграмме показано множество случаев использования PostgreSQL - одна база данных, которая включает почти все случаи использования **все варианты использования** Разработчикам нужен.
 
-## Use Cases of PostgreSQL
+## Использование PostgreSQL
 
-*   **OLTP (Online Transaction Processing)**
+*   **ОЛТП (обработка онлайновых операций)**
 
-    We can use PostgreSQL for CRUD (Create-Read-Update-Delete) operations.
+    Мы можем использовать PostgreSQL для операций CRUD (Create-Read-Read-Delete-Delete).
 
-*   **OLAP (Online Analytical Processing)**
+*   **УППВ (Онлайновая аналитическая обработка)**
 
-    We can use PostgreSQL for analytical processing. PostgreSQL is based on **HTAP**(Hybrid transactional/analytical processing) architecture, so it can handle both OLTP and OLAP well.
+    Мы можем использовать PostgresQL для аналитической обработки. ПостгресQL основан на **HTAP**(Гибридская операционная/аналитическая обработка) архитектура, так что она может хорошо справляться как с ОЛТП, так и с УЗП.
 
-*   **FDW (Foreign Data Wrapper)**
+*   **БДВ (обобобщение иностранных данных)**
 
-    A FDW is an extension available in PostgreSQL that allows us to access a table or schema in one database from another.
+    FDW — это расширение, доступное в PostgreSQL, которое позволяет нам получить доступ к таблице или скеме в одной базе данных из другой.
 
-*   **Streaming**
+*   **Поток**
 
-    PipelineDB is a PostgreSQL extension for high-performance time-series aggregation, designed to power real-time reporting and analytics applications.
+    TrainDB - это расширение PostgreSQL для высокоэффективных временных рядов, предназначенных для ввода в эксплуатацию прикладных программ в режиме реального времени для представления данных и анализа.
 
-*   **Geospatial**
+*   **геопространственные данные**
 
-    PostGIS is a spatial database extender for PostgreSQL object-relational database. It adds support for geographic objects, allowing location queries to be run in SQL.
+    PostGIS — это пространственное расширение базы данных для базы данных, связанных с объектами. Он дополняет поддержку географических объектов, позволяя направлять запросы о местоположении в SQL.
 
-*   **Time Series**
+*   **Временные ряды**
 
-    Timescale extends PostgreSQL for time series and analytics. For example, developers can combine relentless streams of financial and tick data with other business data to build new apps and uncover unique insights.
+    Временная шкала продлевает PostgreSQL для временных рядов и анализа. Например, разработчики могут комбинировать неуклонные потоки финансовых данных и данных о галочках с другими бизнес-данными для создания новых приложений и открытия уникальных очерков.
 
-*   **Distributed Tables**
+*   **Распространенные таблицы**
 
-    CitusData scales Postgres by distributing data & queries.
+    CitusData масштабирует Postgres путем распространения данных и запросов.

@@ -1,6 +1,6 @@
 ---
-title: "The 12-Factor App"
-description: "Best practices for building modern, scalable, and reliable applications."
+title: "Двенадцать факторов приложения"
+description: "Передовая практика в области создания современных, расширяемых и надежных прикладных программ."
 image: "https://assets.bytebytego.com/diagrams/0028-12-factor-app.png"
 createdAt: "2024-02-21"
 draft: false
@@ -13,54 +13,54 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0028-12-factor-app.png)
 
-The "12 Factor App" offers a set of best practices for building modern software applications. Following these 12 principles can help developers and teams in building reliable, scalable, and manageable applications.
+В "12-факторном приложении" предлагается набор передовых методов для создания современных прикладных программ. Следуя этим 12 принципам, разработчики и команды могут помочь в создании надежных, масштабируемых и управляемых приложений.
 
-Here's a brief overview of each principle:
+Вот краткий обзор каждого принципа:
 
-## I. Codebase
+## I. Кодовая база
 
-Have one place to keep all your code, and manage it using version control like Git.
+У нас есть одно место, где можно сохранить весь код, и управлять им с помощью контроля версий, как Гит.
 
-## II. Dependencies
+## II. Зависимости
 
-List all the things your app needs to work properly, and make sure they're easy to install.
+Перечислите все, что нужно ваше приложение, чтобы работать правильно, и убедитесь, что его легко установить.
 
-## III. Config
+## III. Конфигурация
 
-Keep important settings like database credentials separate from your code, so you can change them without rewriting code.
+Держите важные настройки, такие как базы данных, отдельно от кода, чтобы вы могли изменить их без переписки кода.
 
-## IV. Backing Services
+## IV. Вспомогательные сервисы
 
-Use other services (like databases or payment processors) as separate components that your app connects to.
+Использовать другие услуги (например, базы данных или платежные процессоры) в качестве отдельных компонентов, к которым подключается ваше приложение.
 
-## V. Build, Release, Run
+## V. Сборка, выпуск и запуск
 
-Make a clear distinction between preparing your app, releasing it, and running it in production.
+Проясните, что вы делаете, чтобы подготовить приложение, выпустить его и пропустить его в производство.
 
-## VI. Processes
+## VI. Процессы
 
-Design your app so that each part doesn't rely on a specific computer or memory. It's like making LEGO blocks that fit together.
+Создайте приложение так, чтобы каждая часть не полагались на конкретный компьютер или память. Это как делать блоки LEGO, которые подходят друг другу.
 
-## VII. Port Binding
+## VII. Привязка к порту
 
-Let your app be accessible through a network port, and make sure it doesn't store critical information on a single computer.
+Пусть ваше приложение будет доступно через сетевой порт, и убедитесь, что оно не хранит критическую информацию на одном компьютере.
 
-## VIII. Concurrency
+## VIII. Параллелизм
 
-Make your app able to handle more work by adding more copies of the same thing, like hiring more workers for a busy restaurant.
+Сделай приложение более эффективным, добавляя больше копий того же, например, наймите больше рабочих для занятого ресторана.
 
-## IX. Disposability
+## IX. Быстрый запуск и корректное завершение
 
-Your app should start quickly and shut down gracefully, like turning off a light switch instead of yanking out the power cord.
+Ваше приложение должно начинаться быстро и отключаться грациозно, как выключатель, вместо того чтобы вытаскивать электрический шнур.
 
-## X. Dev/Prod Parity
+## X. Сходство среды разработки и рабочей среды
 
-Ensure that what you use for developing your app is very similar to what you use in production, to avoid surprises.
+Чтобы избежать сюрпризов, нужно, чтобы то, что вы используете для разработки приложения, было очень похоже на то, что вы используете в производстве.
 
-## XI. Logs
+## XI. Логи
 
-Keep a record of what happens in your app so you can understand and fix issues, like a diary for your software.
+Ведите запись о том, что происходит в вашем приложении, чтобы вы могли понять и исправить проблемы, как дневник для вашего программного обеспечения.
 
-## XII. Admin Processes
+## XII. Административные процессы
 
-Run special tasks separately from your app, like doing maintenance work in a workshop instead of on the factory floor.
+Занимайтесь специальными заданиями отдельно от приложения, например, ремонтно-эксплуатационными работами в мастерской, а не на заводском полу.

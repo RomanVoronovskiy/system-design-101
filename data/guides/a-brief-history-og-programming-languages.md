@@ -12,7 +12,7 @@ tags:
 ---
 C, C++, Java, Javascript, Typescript, Golang, Rust — как развивались языки программирования за последние 70 лет?
 
-<img src="https://assets.bytebytego.com/diagrams/0305-programming-languages.png" alt="Programming Languages History">
+<img src="https://assets.bytebytego.com/diagrams/0305-programming-languages.png" alt="Краткая история языков программирования">
 
 * Перфорированные карты были первым поколением языков программирования. Языки ассемблера, машинно-ориентированные, представляют собой второе поколение языков программирования. Языки третьего поколения, ориентированные на человека, существуют с 1957 года.
 

@@ -1,6 +1,6 @@
 ---
-title: "OAuth 2.0 Explained With Simple Terms"
-description: "Learn about OAuth 2.0, a secure framework for app interactions."
+title: "OAuth 2.0 простыми словами"
+description: "Узнайте об OAute 2.0, защищенной системе взаимодействия приложений."
 image: "https://assets.bytebytego.com/diagrams/0111-what-is-oauth.png"
 createdAt: "2024-03-16"
 draft: false
@@ -13,18 +13,18 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0111-what-is-oauth.png)
 
-OAuth 2.0 is a powerful and secure framework that allows different applications to securely interact with each other on behalf of users without sharing sensitive credentials.
+OAute 2.0 является мощным и надежным механизмом, позволяющим различным приложениям надежно взаимодействовать друг с другом от имени пользователей без обмена секретными данными.
 
-The entities involved in OAuth are the User, the Server, and the Identity Provider (IDP).
+В ОАуте участвуют пользователи, сервер и поставщик личных данных (ИДП).
 
-## What Can an OAuth Token Do?
+## Что позволяет делать токен OAuth?
 
-When you use OAuth, you get an OAuth token that represents your identity and permissions. This token can do a few important things:
+Когда вы используете OAut, вы получаете символ Outh, который отражает вашу личность и разрешение. Этот символ может сделать несколько важных вещей:
 
-*   Single Sign-On (SSO): With an OAuth token, you can log into multiple services or apps using just one login, making life easier and safer.
+*   Единозначный знак (SSO): С помощью символа Outh вы можете зарегистрироваться в нескольких сервисах или приложениях с использованием одного входа, что облегчит и безопаснее жизнь.
 
-*   Authorization Across Systems: The OAuth token allows you to share your authorization or access rights across various systems, so you don't have to log in separately everywhere.
+*   Разрешение через системы: Символ Out позволяет вам делиться своими правами на разрешение или доступ к различным системам, так что вам не нужно заноситься в раздельную систему везде.
 
-*   Accessing User Profile: Apps with an OAuth token can access certain parts of your user profile that you allow, but they won't see everything.
+*   Доступ к профилям пользователей: приложения с символом OAut могут получить доступ к определенным частям профиля пользователя, которые вы допускаете, но они не видят всего.
 
-Remember, OAuth 2.0 is all about keeping you and your data safe while making your online experiences seamless and hassle-free across different applications and services.
+Помните, OAute 2.0 - это о том, чтобы сохранить вашу и вашу информацию, делая ваш онлайн-опыт плавным и свободным от проблем в различных приложениях и услугах.

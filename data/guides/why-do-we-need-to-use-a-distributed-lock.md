@@ -1,6 +1,6 @@
 ---
-title: "Why Use a Distributed Lock?"
-description: "Explore the top use cases for distributed locks in distributed systems."
+title: "Зачем нужна распределённая блокировка?"
+description: "Изучение наиболее эффективных вариантов использования распределенных блокировок в распределенных системах."
 image: "https://assets.bytebytego.com/diagrams/0383-top-6-use-cases-of-distributed-lock.png"
 createdAt: "2024-02-25"
 draft: false
@@ -13,30 +13,30 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0383-top-6-use-cases-of-distributed-lock.png)
 
-A distributed lock is a mechanism that ensures mutual exclusion across a distributed system.
+Распределенный шлюз является механизмом, обеспечивающим взаимное исключение в рамках распределенной системы.
 
-## Top 6 Use Cases for Distributed Locks
+## 6. Варианты использования дистрибутивных блокировок
 
-*   **Leader Election**
+*   **Выборы руководителя**
 
-    Distributed locks can be used to ensure that only one node becomes the leader at any given time.
+    Распределенные блокировки могут использоваться для обеспечения того, чтобы лидером в любой данный момент времени стал только один узел.
 
-*   **Task Scheduling**
+*   **График задания**
 
-    In a distributed task scheduler, distributed locks ensure that a scheduled task is executed by only one worker node, preventing duplicate execution.
+    В распределенном рабочем графике распределенные блокировки обеспечивают выполнение запланированной задачи только одним рабочим узлом, что предотвращает дублирование.
 
-*   **Resource Allocation**
+*   **Выделение ресурсов**
 
-    When managing shared resources like file systems, network sockets, or hardware devices, distributed locks ensure that only one process can access the resource at a time.
+    При управлении общими ресурсами, такими как файловые системы, сетевые розетки или аппаратные устройства, распределенные блокировки обеспечивают, чтобы только один процесс мог получить доступ к ресурсам одновременно.
 
-*   **Microservices Coordination**
+*   **Координация деятельности в области микроуслуг**
 
-    When multiple microservices need to perform coordinated operations, such as updating related data in different databases, distributed locks ensure that these operations are performed in a controlled and orderly manner.
+    Когда для осуществления скоординированных операций требуется несколько микросервисов, таких, как обновление соответствующих данных в различных базах данных, распределенные блокировки обеспечивают, чтобы эти операции осуществлялись контролируемым и упорядоченным образом.
 
-*   **Inventory Management**
+*   **Управление товарно-материальными запасами**
 
-    In e-commerce platforms, distributed locks can manage inventory updates to ensure that stock levels are accurately maintained when multiple users attempt to purchase the same item simultaneously.
+    На платформах электронной торговли распределенные блокировки могут управлять обновлением инвентарных запасов для обеспечения точного поддержания уровня запасов, когда несколько пользователей пытаются одновременно закупать один и тот же товар.
 
-*   **Session Management**
+*   **Управление сессиями**
 
-    When handling user sessions in a distributed environment, distributed locks can ensure that a user session is only modified by one server at a time, preventing inconsistencies.
+    При работе с сеансами пользователя в распределенной среде распределенные блокировки могут обеспечивать, чтобы сеанс пользователя модифицировался только одним сервером за раз, что позволяет избежать несоответствий.

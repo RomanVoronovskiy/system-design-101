@@ -1,6 +1,6 @@
 ---
-title: "Money Movement"
-description: "Understanding the flow of money during online transactions."
+title: "Как перемещаются деньги"
+description: "Понимание потока денег во время онлайн-транзакций."
 image: "https://assets.bytebytego.com/diagrams/0127-buy-something-money-movement.jpg"
 createdAt: "2024-03-06"
 draft: false
@@ -11,48 +11,48 @@ tags:
   - "Fintech"
 ---
 
-One picture is worth more than a thousand words. This is what happens when you buy a product using Paypal/bank card under the hood.
+Одна картина стоит больше, чем тысяча слов. Вот что происходит, когда вы покупаете продукт с помощью карты Paypal/банковской карты под капотом.
 
 ![](https://assets.bytebytego.com/diagrams/0127-buy-something-money-movement.jpg)
 
-To understand this, we need to digest two concepts: **clearing & settlement**. Clearing is a process that calculates who should pay whom with how much money; while settlement is a process where real money moves between reserves in the settlement bank.
+Чтобы понять это, нам нужно усвоить два понятия: **расчет и расчет**. Клеринг - это процесс, который рассчитывает, кто должен кому платить, сколько денег; в то время как расчет - это процесс, когда реальные деньги перемещаются между резервами в расчетном банке.
 
-Let’s say Bob wants to buy an SDI book from Claire’s shop on Amazon.
+Скажем, Боб хочет купить книгу СДИ в магазине Клэр в Amazon.
 
-### Pay-in flow (Bob pays Amazon money):
+### Поток платежей (Боб платит деньги Amazon):
 
-*   Bob buys a book on Amazon using Paypal.
+*   Боб покупает книгу на Amazon с помощью Paypal.
 
-*   Amazon issues a money transfer request to Paypal.
+*   Amazon выпускает запрос на перевод денег в Paypal.
 
-*   Since the payment token of Bob’s debit card is stored in Paypal, Paypal can transfer money, on Bob’s behalf, to Amazon’s bank account in Bank A.
+*   Поскольку платежный токен дебетовой карты Bob хранится в Paypal, Paypal может переводить деньги от имени Bob на банковский счет Amazon в банке A.
 
-*   Both Bank A and Bank B send transaction statements to the clearing institution. It reduces the transactions that need to be settled. Let’s assume Bank A owes Bank B $100 and Bank B owes bank A $500 at the end of the day. When they settle, the net position is that Bank B pays Bank A $400.
+*   Как Банк А, так и Банк Б направляют транзакционные отчеты к клиринговому учреждению. Это уменьшает транзакции, которые должны быть расчеты. Предположим, что Банк А должен Банку В 100 долларов, а Банк Б должен Банку А 500 долларов в конце дня. Когда они расплачиваются, чистая позиция заключается в том, что Банк Б выплачивает Банку А $400.
 
-*   1.  5 & 1.6 The clearing institution sends clearing and settlement information to the settlement bank. Both Bank A and Bank B have pre-deposited funds in the settlement bank as money reserves, so actual money movement happens between two reserve accounts in the settlement bank.
+*   1.  5 & 1.6 Клиринговая организация направляет информацию о клиринге и расчетах в банк расчетов. Как в банке А, так и в банке Б в качестве денежных резервов в расчетном банке вначально вносились средства, поэтому фактическое перемещение денег происходит между двумя резервными счетами в расчетном банке.
 
-### Pay-out flow (Amazon pays the money to the seller: Claire):
+### Поток выплат (Amazon выплачивает деньги продавцу: Claire):
 
-*   Amazon informs the seller (Claire) that she will get paid soon.
+*   Amazon сообщает продавцу (Клере), что она скоро получит оплату.
 
-*   Amazon issues a money transfer request from its owe bank (Bank A) to the seller bank (bank C). Here both banks record the transactions, but no real money is moved.
+*   Amazon выпускает запрос на перевод денег от своего долгового банка (банк А) к банку продавца (банк С). Здесь оба банка записывают транзакции, но никаких реальных денег не перемещают.
 
-*   Both Bank A and Bank C send transaction statements to the clearing institution.
+*   Как Банк А, так и Банк С направляют транзакционные отчеты к клиринговому учреждению.
 
-*   2.  4 & 2.5 The clearing institution sends clearing and settlement information to the settlement bank. Money is transferred from Bank A’s reserve to Bank C’s reserve.
+*   2.  4 & 2.5 Клиринговая организация направляет информацию о клиринге и расчетах в банк расчетов. Деньги переводятся из резерва банка A в резерв банка C.
 
-Notice that we have three layers:
+Заметьте, что у нас есть три слоя:
 
-*   Transaction layer: where the online purchases happen
+*   Склад транзакций: где совершаются онлайн-покупки
 
-*   Payment and clearing layer: where the payment instructions and transaction netting happen
+*   Платежный и клиринговый слой: где происходят платежные инструкции и сетевое оформление транзакций
 
-*   Settlement layer: where the actual money movement happen
+*   Степень расчетов: где происходит фактическое движение денег
 
-The first two layers are called information flow, and the settlement layer is called fund flow.
+Первые два слоя называются информационным потоком, а пласт расчетов - фондовым потоком.
 
-You can see the **information flow and fund flow are separated**. In the info flow, the money seems to be deducted from one bank account and added to another bank account, but the actual money movement happens in the settlement bank at the end of the day.
+Вы можете видеть **информационный поток и поток средств разделяются**. В информационном потоке деньги, кажется, вычитаются из одного банковского счета и добавляются на другой банковский счет, но фактическое движение денег происходит в расчетной банке в конце дня.
 
-Because of the asynchronous nature of the info flow and the fund flow, reconciliation is very important for data consistency in the systems along with the flow.
+Из-за асинхронного характера информационного потока и потока средств, сочетание очень важно для согласования данных в системах вместе с потоком.
 
-It makes things even more interesting when Bob wants to buy a book in the Indian market, where Bob pays USD but the seller can only receive INR.
+Это делает вещи еще более интересными, когда Боб хочет купить книгу на индийском рынке, где Боб платит доллары, но продавец может получить только INR.

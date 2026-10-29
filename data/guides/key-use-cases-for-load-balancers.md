@@ -1,6 +1,6 @@
 ---
-title: 'Key Use Cases for Load Balancers'
-description: 'Explore key use cases for load balancers in modern architectures.'
+title: "Основные сценарии использования балансировщиков нагрузки"
+description: "Исследуйте ключевые случаи использования балансировщиков нагрузки в современных архитектурах."
 image: 'https://assets.bytebytego.com/diagrams/0046-top-6-load-balancer-use-cases.png'
 createdAt: '2024-02-04'
 draft: false
@@ -13,22 +13,22 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0046-top-6-load-balancer-use-cases.png)
 
-The diagram above shows the top 6 use cases where we use a load balancer.
+На приведенной выше схеме показаны 6 наиболее важных случаев использования, когда мы используем балансирующий нагрузку.
 
-*   **Traffic Distribution**
-    Load balancers evenly distribute incoming traffic among multiple servers, preventing any single server from becoming overwhelmed. This helps maintain optimal performance, scalability, and reliability of applications or websites.
+*   **Распределение трафика**
+    Балансеры нагрузки равномерно распределяют поступающий трафик между несколькими серверами, предотвращая перегрузку любого одного сервера. Это помогает поддерживать оптимальную производительность, масштабируемость и надежность приложений или веб-сайтов.
 
-*   **High Availability**
-    Load balancers enhance system availability by rerouting traffic away from failed or unhealthy servers to healthy ones. This ensures uninterrupted service even if certain servers experience issues.
+*   **Высокая доступность**
+    Балансеры нагрузки улучшают доступность системы путем перенаправления трафика от неудачных или нездоровых серверов к здоровым. Это обеспечивает бесперебойную работу даже в случае, если некоторые серверы испытывают проблемы.
 
-*   **SSL Termination**
-    Load balancers can offload SSL/TLS encryption and decryption tasks from backend servers, reducing their workload and improving overall performance.
+*   **Прекращение SSL**
+    Балансеры нагрузки могут отгружать задачи шифрования и дешифровки SSL/TLS с бэкэнд-серверов, уменьшая их рабочую нагрузку и улучшая общую производительность.
 
-*   **Session Persistence**
-    For applications that require maintaining a user's session on a specific server, load balancers can ensure that subsequent requests from a user are sent to the same server.
+*   **Продолжительность сеанса**
+    Для приложений, требующих поддержания сессии пользователя на конкретном сервере, балансщики нагрузки могут обеспечить отправку последующих запросов пользователя на тот же сервер.
 
-*   **Scalability**
-    Load balancers facilitate horizontal scaling by effectively managing increased traffic. Additional servers can be easily added to the pool, and the load balancer will distribute traffic across all servers.
+*   **Скалабельность**
+    Балансировки нагрузки облегчают горизонтальное масштабирование путем эффективного управления увеличенным трафиком. Дополнительные серверы могут быть легко добавлены в бассейн, и баланс нагрузки распределяет трафик на всех серверах.
 
-*   **Health Monitoring**
-    Load balancers continuously monitor the health and performance of servers, removing failed or unhealthy servers from the pool to maintain optimal performance.
+*   **Контроль за здоровьем**
+    Балансеры нагрузки постоянно контролируют состояние и производительность серверов, удаляя неудачные или нездоровые серверы из бассейна для поддержания оптимальной производительности.

@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Most Commonly Used Server Types"
-description: "Explore the top 6 most commonly used server types in modern infrastructure."
+title: "Шесть распространённых типов серверов"
+description: "Изучить шесть самых часто используемых типов серверов в современной инфраструктуре."
 image: "https://assets.bytebytego.com/diagrams/0327-server-types.png"
 createdAt: "2024-02-16"
 draft: false
@@ -11,28 +11,28 @@ tags:
   - "networking"
 ---
 
-![server types](https://assets.bytebytego.com/diagrams/0327-server-types.png)
+![Шесть распространённых типов серверов](https://assets.bytebytego.com/diagrams/0327-server-types.png)
 
-## 1. Web Server
+## 1. Сервер веб-сайта
 
-Hosts websites and delivers web content to clients over the internet.
+Ведет веб-сайты и распространяет веб-сайт среди клиентов через Интернет.
 
-## 2. Mail Server
+## 2. Сервер почты
 
-Handles the sending, receiving, and routing of emails across networks.
+Размещает рассылку, получение и маршрутизацию писем через сети.
 
-## 3. DNS Server
+## 3. DNS Сервер
 
-Translates domain names (like bytebytego.com) into IP addresses, enabling users to access websites by their human-readable names.
+Переводит доменные имена (как байтбайтего.com) в IP-адреса, что позволяет пользователям получить доступ к вебсайтам по их считываемым имёнам.
 
-## 4. Proxy Server
+## 4. Прокси сервер
 
-An intermediary server that acts as a gateway between clients and other servers, providing additional security, performance optimization, and anonymity.
+Промежуточный сервер, который служит каналом связи между клиентами и другими серверами, обеспечивает дополнительную безопасность, оптимизацию эффективности и анонимность.
 
-## 5. FTP Server
+## 5. сервер FTP
 
-Facilitates the transfer of files between clients and servers over a network.
+Облегчает передачу файлов между клиентами и серверами по сети.
 
-## 6. Origin Server
+## 6. Сервер происхождения
 
-Hosts central source of content that is cached and distributed to edge servers for faster delivery to end users.
+Центральный источник контента, который скачан и распространяется среди кромочных серверов для более быстрой доставки конечным пользователям.

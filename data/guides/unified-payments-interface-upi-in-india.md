@@ -1,6 +1,6 @@
 ---
-title: "Unified Payments Interface (UPI)"
-description: "Explore the architecture and workings of India's UPI payment system."
+title: "Единый платёжный интерфейс UPI"
+description: "Изучить структуру и функционирование индийской системы платежей за НПИ."
 image: "https://assets.bytebytego.com/diagrams/0400-upi-2.png"
 createdAt: "2024-03-04"
 draft: false
@@ -13,50 +13,50 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0400-upi-2.png)
 
-The Unified Payments Interface (UPI) for real-time transactions in India is a good case study for other nations in the payment space.
+Унифицированный платежный интерфейс (УПИ) для операций в реальном масштабе времени в Индии является хорошим примером для других стран, находящихся в зоне платежей.
 
-## What’s UPI?
+## Что, UPI?
 
-UPI is an instant real-time payment system developed by the National Payments Corporation of India.
+UPI — система оплаты в режиме реального времени, разработанная Индийской национальной корпорацией платежей.
 
-It accounts for 60% of digital retail transactions in India today and is still growing.
+На долю этой отрасли приходится 60% розничных операций в Индии, которые в настоящее время продолжают расти.
 
-UPI = payment markup language + standard for interoperable payments
+UPI = язык разметки платежей + стандарт для взаимозаменяемых платежей
 
-Let's take a look at how it works.
+Давайте посмотрим, как это работает.
 
-## Registration
+## Регистрация
 
-*   Bob wants to open an account and provides his phone number +91 12345678
+*   Боб хочет открыть счёт и предоставить свой номер телефона +91 12345678
 
-*   Bob performs OTP (One-Time Password) phone verification
+*   Боб выполняет проверку телефона КО (одноразовый пароль)
 
-*   Bob sets up VPA (Virtual Payment Address) bobaxis
+*   Боб устанавливает VPA (Virtual Danagement Affair)
 
-*   Bob’s payment app creates VPA with the acquiring bank
+*   Боб, это приложение для оплаты создает VPA с приобретаемым банком
 
-*   The acquiring bank returns with VPA
+*   Приобретающая банковская прибыль с VPA
 
-*   The payment app returns VPA to Bob
+*   Приложение платежей возвращает VPA Бобу
 
-## Link to Bank Account
+## Ссылка на банковский счет
 
-*   Bob wants to link his SBI bank account with VPA bob at the axis. The request is forwarded to NPCI (National Payments Corporation of India).
+*   Боб хочет увязать свой банковский счет с VPA Bob на оси. Эта просьба направляется НКПСИ (Национальная корпорация по платежам Индии).
 
-*   NPCI acts as a switch between acquiring banks and issuing banks. It resolves the account detail from VPA with different issuing banks.
+*   НПСИ выступает в качестве связующего звена между банками-покупателями и банками-эмитентами. Он решает вопросы, касающиеся информации о счетах, от ВПА с различными банками-эмитентами.
 
-*   Bob authenticates with account details and sets the PIN, which is used for 2FA. This goes all the way to the issuing bank.
+*   Боб аутентизирует с данными счета и устанавливает PIN, который используется для 2FA. Это доходит до банка-эмитента.
 
-## Direct payment
+## Прямой платеж
 
-1.  Alice enters Bob’s UPI ID bob and the amount INR 100
+1.  Элис входит в Боб, UPI IDB и сумму INR 100
 
-2.  PhonePe verifies and forwards the request to NPCI via ICICI bank
+2.  PhonePe проверяет и направляет запрос в НПСИ через банк ICICI
 
-3.  NPCI requests Axis Bank to resolve detail for bob at axis
+3.  НПСИ просит банк оси решить детали для Боб по оси
 
-4.  NPCI deducts Alice’s HDFC bank account by INR 100
+4.  НКПВ вычитает из счета компании "Элис", s HDFC на 100 НПР
 
-5.  NPCI sends an instruction to SBI bank and add INR 100 to Bob’s account in SBI bank.
+5.  НПСИ направляет инструкции в банк ВОО и добавляет 100 НРГ к счету Боб, в банке ВОО.
 
-6.  Upon success, NPCI notifies the payment apps via acquiring banks.
+6.  После успеха НКПСИ уведомляет о платежах через банки.

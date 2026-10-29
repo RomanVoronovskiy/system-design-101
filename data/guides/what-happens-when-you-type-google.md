@@ -1,6 +1,6 @@
 ---
-title: "What Happens When You Type google.com Into a Browser?"
-description: "Explore the journey of typing google.com into a browser."
+title: "Что происходит, когда вы вводите google.com в браузере?"
+description: "Изучайте путь ввода гугле.com в браузер."
 image: "https://assets.bytebytego.com/diagrams/0410-what-happens-when-you-type-google-in-your-browser.png"
 createdAt: "2024-03-12"
 draft: false
@@ -11,20 +11,20 @@ tags:
   - "Web Browsers"
 ---
 
-![What Happens When You Type google.com Into a Browser?](https://assets.bytebytego.com/diagrams/0410-what-happens-when-you-type-google-in-your-browser.png)
+![Что происходит, когда вы вводите google.com в браузере?](https://assets.bytebytego.com/diagrams/0410-what-happens-when-you-type-google-in-your-browser.png)
 
-1.  First up, you type the website address in the browser’s address bar.
+1.  Сначала набираешь адрес сайта в браузере, адресный бар.
 
-2.  The browser checks its cache first. If there’s a cache miss, it must find the IP address.
+2.  Брошюра сначала проверяет свой кэш. Если там, промахнутся кэши, он должен найти IP-адрес.
 
-3.  DNS lookup begins (think of it as looking up a phone number). The request goes through different DNS servers (root, TLD, and authoritative). Finally, the IP address is retrieved.
+3.  DNS Поиск начинается (думайте, что это поиск номера телефона). Запрос проходит через различные серверы DNS (отправитель, TLD и авторитет). Наконец, IP-адрес извлечен.
 
-4.  Next, your browser initiates a TCP connection like a handshake. For example, in the case of HTTP 1.1, the client and server perform a TCP three-way handshake with SYN, SYN-ACK, and ACK messages.
+4.  Далее, ваш браузер начинает связь с ТКП как рукопожатие. Например, в случае HTTP 1.1 клиент и сервер проводят трехстороннее рукопожатие TCP с сообщениями SYN, SYN-ACK и AKK.
 
-5.  Once the handshake is successful, the browser makes an HTTP request to the server and the server responds with HTML, CSS, and JS files.
+5.  После успешного рукопожатия браузер делает запрос HTTP на сервер, и сервер отвечает на HTML, CSS и файлы СП.
 
-6.  Finally, the browser processes everything. It parses the HTML document and creates DOM and CSSOM trees.
+6.  Наконец, браузер обрабатывает все. Он обрабатывает документ HTML и создает DOM и CSSOM деревья.
 
-7.  The browser executes the JavaScript and renders the page through various steps (tokenizer, parser, render tree, layout, and painting).
+7.  Брошюра выполняет JavaScript и переводит страницу через различные этапы (токенер, петарда, дерево, планировка и живопись).
 
-8.  Finally, the webpage appears on your screen.
+8.  Наконец, на экране появляется веб-страница.

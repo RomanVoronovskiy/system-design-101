@@ -1,6 +1,6 @@
 ---
-title: "Top 9 Website Performance Metrics You Cannot Ignore"
-description: "Explore the top website performance metrics for optimal user experience."
+title: "Девять важных метрик производительности сайта"
+description: "Изучение высших показателей функционирования вебсайта для оптимального опыта пользователей."
 image: "https://assets.bytebytego.com/diagrams/0021-must-know-website-performance-metrics.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,38 +13,38 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0021-must-know-website-performance-metrics.png)
 
-## Load Time
+## Время загрузки
 
-This is the time taken by the web browser to download and display the webpage. It’s measured in milliseconds.
+Это время, которое занимает веббраузер для загрузки и отображения веб-страницы. Он измеряется в миллисекундах.
 
-## Time to First Byte (TTFB)
+## Время до первого байта (ТЦФБ)
 
-It’s the time taken by the browser to receive the first byte of data from the web server. TTFB is crucial because it indicates the general ability of the server to handle traffic.
+Это время, которое занимает браузер для получения первого байта данных с веб-сервера. ТТФБ имеет решающее значение, поскольку он указывает на общую способность сервера управлять движением.
 
-## Request Count
+## Запрос
 
-The number of HTTP requests a browser has to make to fully load the page. The lower this count, the faster a website will feel to the user.
+Количество HTTP требует, чтобы браузер полностью загрузил страницу. Чем меньше этот счет, тем быстрее сайт будет ощущать пользователя.
 
-## DOMContentLoaded (DCL)
+## ДОМ Концентрированная (ДЦЛ)
 
-This is the time it takes for the full HTML code of a webpage to be loaded. The faster this happens, the faster users can see useful functionality. This time doesn’t include loading CSS and other assets
+Это время занимает полный код HTML вебстраницы, который должен быть загружен. Чем быстрее это происходит, тем быстрее пользователи видят полезные функциональные возможности. На этот раз не включает в себя погрузку CSS и других активов
 
-## Time to Above-the-Fold Load
+## Время на сверху
 
-“Above the fold” is the area of a webpage that fits in a browser window without a user having to scroll down. This is the content that is first seen by the user and often dictates whether they’ll continue reading the webpage.
+, Above the growth, это область вебстраницы, которая вписывается в окно браузера без необходимости скручивать вниз. Это содержание, которое впервые просматривается пользователем и часто диктует, будут ли они продолжать читать веб-страницу.
 
-## First Contentful Paint (FCP)
+## Первая конструктивная краска (ПХФ)
 
-This is the time at which content first begins to be “painted” by the browser. It can be a text, image, or even background color.
+Это время, когда контент начинает, рисовать, браузёр. Это может быть текст, изображение или даже цвет фона.
 
-## Page Size
+## Размер страницы
 
-This is the total file size of all content and assets that appear on the page. Over the last several years, the page size of websites has been growing constantly. The bigger the size of a webpage, the longer it will take to load
+Это общий размер файла всех контента и активов, которые фигурируют на странице. В последние несколько лет объем страниц веб-сайтов постоянно растет. Чем больше размер веб-страницы, тем дольше она будет загружаться.
 
-## Round Trip Time (RTT)
+## Время круглых поездок (РТС)
 
-This is the amount of time a round trip takes. A round trip constitutes a request traveling from the browser to the origin server and the response from the server going to the browser. Reducing RTT is one of the key approaches to improving a website’s performance.
+Это время, которое занимает поездка в оба конца. Путешествие в оба конца представляет собой запрос, который направляется от браузера к серверу происхождения, и ответ сервера направляется к браузеру. Сокращение РТТ является одним из ключевых подходов к совершенствованию вебсайта, эффективности.
 
-## Render Blocking Resources
+## Блокирование ресурсов
 
-Some resources block other parts of the page from being loaded. It’s important to track the number of such resources. The more render-blocking resources a webpage has, the greater the delay for the browser to load the page.
+Некоторые ресурсы блокируют другие части страницы от загрузки. Важно отслеживать количество таких ресурсов. Чем больше ресурсов, которые можно заблокировать на веб-странице, тем больше задержки с загрузкой браузера.

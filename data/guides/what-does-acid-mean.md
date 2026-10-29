@@ -1,6 +1,6 @@
 ---
-title: "What does ACID mean?"
-description: "Understand the ACID properties of database transactions."
+title: "Что означает ACID?"
+description: "Разберитесь в свойствах ACID для транзакций базы данных."
 image: "https://assets.bytebytego.com/diagrams/0407-what-does-acid-mean.png"
 createdAt: "2024-03-12"
 draft: false
@@ -11,24 +11,24 @@ tags:
   - "ACID"
 ---
 
-The diagram above explains what ACID means in the context of a database transaction.
+Схема выше объясняет, что означает ACID применительно к транзакции базы данных.
 
 ![](https://assets.bytebytego.com/diagrams/0407-what-does-acid-mean.png)
 
-## Atomicity
+## Атомность
 
-The writes in a transaction are executed all at once and cannot be broken into smaller parts. If there are faults when executing the transaction, the writes in the transaction are rolled back.
+Писатели в сделке исполняются одновременно и не могут быть разбиты на мелкие части. Если при осуществлении операции возникают недостатки, то записи в сделке отменяются.
 
-So atomicity means “all or nothing”.
+Значит, атомность означает, все или ничего.
 
-## Consistency
+## Последовательность
 
-Unlike “consistency” in CAP theorem, which means every read receives the most recent write or an error, here consistency means preserving database invariants. Any data written by a transaction must be valid according to all defined rules and maintain the database in a good state.
+В отличие от, единодушия, в теории CAP, что означает, что каждый читатель получает самую последнюю запись или ошибку, здесь последовательность означает сохранение инвариантов базы данных. Любые данные, написанные в результате операции, должны быть действительными в соответствии со всеми установленными правилами и вести базу данных в хорошем состоянии.
 
-## Isolation
+## Изоляция
 
-When there are concurrent writes from two different transactions, the two transactions are isolated from each other. The most strict isolation is “serializability”, where each transaction acts like it is the only transaction running in the database. However, this is hard to implement in reality, so we often adopt loser isolation level.
+Когда одновременно пишутся две разные операции, эти две операции изолированы друг от друга. Наиболее строгой изолированностью является возможность осуществления операций, когда каждая операция действует так, как будто она является единственной операцией, осуществляемой в базе данных. Однако на практике это трудно осуществить, поэтому мы часто используем уровень изоляции неудачников.
 
-## Durability
+## Износоустойчивость
 
-Data is persisted after a transaction is committed even in a system failure. In a distributed system, this means the data is replicated to some other nodes.
+Данные сохраняются после совершения операции даже при неисправности системы. В распределенной системе это означает, что данные репродукцируются в некоторые другие узлы.

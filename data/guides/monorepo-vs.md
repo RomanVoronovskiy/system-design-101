@@ -1,6 +1,6 @@
 ---
-title: "Monorepo vs. Microrepo: Which is Best?"
-description: "Explore the monorepo vs. microrepo approach to code management."
+title: "Монорепозиторий или отдельные репозитории: что выбрать?"
+description: "Исследуйте подход к управлению кодом в сопоставлении с монорепоми."
 image: "https://assets.bytebytego.com/diagrams/0279-monorepo-microrepo.png"
 createdAt: "2024-02-12"
 draft: false
@@ -13,28 +13,28 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0279-monorepo-microrepo.png)
 
-Why do different companies choose different options?
+Почему разные компании выбирают разные варианты?
 
-## Do you believe that Google, Meta, Uber, and Airbnb put almost all of their code in one repository?
+## Вы считаете, что Google, Meta, Uber и Airbnb почти все свои коды помещают в один хранилище?
 
-This practice is called a monorepo. Guest post by [Xiong Wang](https://www.linkedin.com/in/wangxiong/).
+Эта практика называется монорепо. Гостевое сообщение [Сион Ван](https://www.linkedin.com/in/wangxiong/).
 
-Monorepo isn't new; Linux and Windows were both created using Monorepo. To improve scalability and build speed, Google developed its internal dedicated toolchain to scale it faster and strict coding quality standards to keep it consistent.
+Монорепо не новое; Linux и Windows были созданы с использованием Монорепо. Чтобы улучшить масштабируемость и скорость создания, Google разработала свою внутреннюю цепочку инструментов для более быстрой масштабирования и строгих стандартов качества кодирования для обеспечения ее последовательности.
 
-Amazon and Netflix are major ambassadors of the Microservice philosophy. This approach naturally separates the service code into separate repositories. It scales faster but can lead to governance pain points later on.
+Amazon и Netflix являются основными посломи философии микросервисов. Этот подход естественно разделяет код сервиса на отдельные хранилища. Она увеличивается быстрее, но может привести к болевым точкам управления позже.
 
-Within Monorepo, each service is a folder, and every folder has a BUILD config and OWNERS permission control. Every service member is responsible for their own folder.
+В рамках Monorepo каждая служба является папкой, и каждая папка имеет конфигурацию BUILD и управление разрешениями владельцев. Каждый член службы несет ответственность за свою собственную папку.
 
-On the other hand, in Microrepo, each service is responsible for its repository, with the build config and permissions typically set for the entire repository.
+С другой стороны, в Microrepo каждая служба отвечает за свой репозиторий, а конфигурация строения и разрешения обычно устанавливаются для всего репозитория.
 
-In Monorepo, dependencies are shared across the entire codebase regardless of your business, so when there's a version upgrade, every codebase upgrades their version.
+В Монорепо зависимости разделяются на всю базу кодов независимо от вашего бизнеса, поэтому, когда происходит обновление версии, каждая кодовая база обновляет свою версию.
 
-In Microrepo, dependencies are controlled within each repository. Businesses choose when to upgrade their versions based on their own schedules.
+В Микрорепо зависимости контролируются в каждом хранилище. Предприятия выбирают время обновления своих версий на основе собственных графиков.
 
-Monorepo has a standard for check-ins. Google's code review process is famously known for setting a high bar, ensuring a coherent quality standard for Monorepo, regardless of the business.
+У Монорепо есть стандарт для регистрации. Процесс пересмотра кода Google известен тем, что устанавливает высокий план, обеспечивая согласованный стандарт качества для Monorepo, независимо от бизнеса.
 
-Microrepo can either set their own standard or adopt a shared standard by incorporating best practices. It can scale faster for business, but the code quality might be a bit different.
+Микрорепо может либо устанавливать собственный стандарт, либо принимать общий стандарт, включая лучшие практики. Он может масштабироваться быстрее для бизнеса, но качество кода может быть немного отличается.
 
-Google engineers built Bazel, and Meta built Buck. There are other open-source tools available, including Nix, Lerna, and others.
+Инженеры Google построили Базель, а Мета построила Бак. Есть и другие инструменты с открытым исходным кодом, включая Nix, Lerna и другие.
 
-Over the years, Microrepo has had more supported tools, including Maven and Gradle for Java, NPM for NodeJS, and CMake for C/C++, among others.
+За эти годы у Microrepo было больше поддерживаемых инструментов, включая Maven и Gradle для Java, NPM для NodeJS и CMake для C / C ++, среди других.

@@ -11,7 +11,7 @@ tags:
   - "cap theorem"
 ---
 
-![a close up of text and logo over a white background](https://assets.bytebytego.com/diagrams/0131-cap-theorem.jpeg)
+![Теорема CAP: один из наиболее неправильно понимаемых терминов](https://assets.bytebytego.com/diagrams/0131-cap-theorem.jpeg)
 
 Теорема CAP — один из самых известных терминов в информатике, но я готов поспорить, что разные разработчики понимают ее по-разному. Давайте разберемся, что это такое и почему это может сбивать с толку.
 

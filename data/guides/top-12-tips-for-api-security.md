@@ -1,6 +1,6 @@
 ---
-title: 'Top 12 Tips for API Security'
-description: 'Enhance API security with these top 12 essential tips.'
+title: "Двенадцать советов по безопасности API"
+description: "Укреплять безопасность API с помощью этих 12 главных советов."
 image: 'https://assets.bytebytego.com/diagrams/0027-12-tips-for-api-security.png'
 createdAt: '2024-03-09'
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0027-12-tips-for-api-security.png)
 
-*   Use HTTPS
-*   Use OAuth2
-*   Use WebAuthn
-*   Use Leveled API Keys
-*   Authorization
-*   Rate Limiting
-*   API Versioning
-*   Whitelisting
-*   Check OWASP API Security Risks
-*   Use API Gateway
-*   Error Handling
-*   Input Validation
+*   Использовать HTTPS
+*   Использовать OAut2
+*   Использовать веб-аутн
+*   Использовать стандартные ключи API
+*   Разрешение
+*   Коэффициент ограничения
+*   Версия API
+*   Список
+*   Проверьте риски безопасности WOASP API
+*   Использовать портал API
+*   Обработка ошибок
+*   Проверка ввода

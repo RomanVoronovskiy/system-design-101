@@ -1,6 +1,6 @@
 ---
-title: "Typical Microservice Architecture"
-description: "Explore a typical microservice architecture with key components."
+title: "Типовая микросервисная архитектура"
+description: "Изучить типичную архитектуру микроуслуг с ключевыми компонентами."
 image: "https://assets.bytebytego.com/diagrams/0396-typical-microservice-architecture.png"
 createdAt: "2024-03-14"
 draft: false
@@ -13,20 +13,20 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0396-typical-microservice-architecture.png)
 
-The diagram above shows a typical microservice architecture.
+На приведенной выше диаграмме показана типичная архитектура микроуслуг.
 
-## Key Components
+## Основные компоненты
 
-*   **Load Balancer:** This distributes incoming traffic across multiple backend services.
+*   **Балансировщик нагрузки:** Это распределяет появляющиеся потоки по нескольким задним линиям.
 
-*   **CDN (Content Delivery Network):** CDN is a group of geographically distributed servers that hold static content for faster delivery. The clients look for content in CDN first, then progress to backend services.
+*   **КНС (Сеть постоянной доставки):** CN — группа географически распределенных серверов, которые содержат статическое содержание для более быстрой доставки. Сначала клиенты ищут контент в CCN, затем переходят к обратному обслуживанию.
 
-*   **API Gateway:** This handles incoming requests and routes them to the relevant services. It talks to the identity provider and service discovery.
+*   **API-шлюз:** Он обрабатывает поступающие запросы и направляет их соответствующим службам. Он говорит с поставщиком удостоверений личности и об открытии сервиса.
 
-*   **Identity Provider:** This handles authentication and authorization for users.
+*   **Поставщик документов:** Он занимается удостоверением подлинности и выдачей разрешений пользователям.
 
-*   **Service Registry & Discovery:** Microservice registration and discovery happen in this component, and the API gateway looks for relevant services in this component to talk to.
+*   **& Открытие сервисного регистра:** В этом компоненте происходит регистрация и открытие микросервисов, и портал API ищет соответствующие услуги для обсуждения в этом компоненте.
 
-*   **Management:** This component is responsible for monitoring the services.
+*   **Управление:** Этот компонент отвечает за контроль за деятельностью служб.
 
-*   **Microservices:** Microservices are designed and deployed in different domains. Each domain has its database.
+*   **Микросервисы:** Микросервисы разрабатываются и используются в различных областях. В каждом домене имеется база данных.

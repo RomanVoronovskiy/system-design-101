@@ -1,6 +1,6 @@
 ---
-title: "Why is Nginx so Popular?"
-description: "Explore the reasons behind Nginx's widespread popularity and usage."
+title: "Почему Nginx так популярен?"
+description: "Изучит причины, по которым Нгинкс широко известен и используется."
 image: "https://assets.bytebytego.com/diagrams/0423-why-is-nginx-so-popular.png"
 createdAt: "2024-03-13"
 draft: false
@@ -13,15 +13,15 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0423-why-is-nginx-so-popular.png)
 
-Nginx is a high-performance web server and reverse proxy.
+Nginx — высокоэффективный вебсервер и обратный прокси.
 
-It follows a master-worker process model that contributes to its stability, scalability, and efficient resource utilization.
+Он построен на модели процесса, основанной на принципах мастера, которая способствует его стабильности, масштабируемости и эффективному использованию ресурсов.
 
-The master process is responsible for reading the configuration and managing worker processes. Worker processes handle incoming connections using an event-driven non-blocking I/O model.
+Главный процесс отвечает за чтение конфигурации и управление рабочими процессами. Рабочие процессы работают с входящей связью с использованием модели, не блокирующей процесс регистрации/заблокировки событий.
 
-Due to its architecture, Nginx excels in supporting multiple features such as:
+Благодаря своей архитектуре, Нгинкс преуспевает в поддержке множества функций, таких как:
 
-*   **High-Performance Web Server**
-*   **Reverse Proxy and Load Balancing**
-*   **Content Cache**
-*   **SSL Termination**
+*   **Высокоэффективный вебсервер**
+*   **Обратная прукси и грузоподъемность**
+*   **Содержание**
+*   **Прекращение SSL**

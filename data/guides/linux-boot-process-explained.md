@@ -1,6 +1,6 @@
 ---
-title: "Linux Boot Process Explained"
-description: "Explore the Linux boot process, from BIOS/UEFI to user login."
+title: "Как загружается Linux"
+description: "Проверьте процесс запуска Linux, от BIOS/UEFI до входа пользователя."
 image: "https://assets.bytebytego.com/diagrams/0213-linux-boot-process-explained.png"
 createdAt: "2024-03-11"
 draft: false
@@ -14,36 +14,36 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0213-linux-boot-process-explained.png)
 
-Almost every software engineer has used Linux before, but only a handful know how its Boot Process works. Let's dive in.
+Почти каждый инженер-программист раньше использовал Linux, но лишь немногие знают, как работает процесс загрузки. Давай погрузимся.
 
-## Step 1
+## Шаг 1
 
-When we turn on the power, BIOS (Basic Input/Output System) or UEFI (Unified Extensible Firmware Interface) firmware is loaded from non-volatile memory and executes POST (Power On Self Test).
+Когда мы включаем питание, прошивка BIOS (Basic Input/Output System) или UEFI (Unified Extensible Firmware Interface) загружается из неволатильной памяти и выполняет POST (Power On Self Test).
 
-## Step 2
+## Шаг 2
 
-BIOS/UEFI detects the devices connected to the system, including CPU, RAM, and storage.
+BIOS/UEFI обнаруживает устройства, подключенные к системе, включая процессор, оперативную память и хранилище.
 
-## Step 3
+## Третий шаг
 
-Choose a booting device to boot the OS from. This can be the hard drive, the network server, or CD ROM.
+Выберите устройство загрузки для загрузки ОС. Это может быть жесткий диск, сетевой сервер или CD ROM.
 
-## Step 4
+## Шаг 4
 
-BIOS/UEFI runs the boot loader (GRUB), which provides a menu to choose the OS or the kernel functions.
+BIOS/UEFI запускает загрузчик загрузки (GRUB), который предоставляет меню для выбора операционной системы или функций ядра.
 
-## Step 5
+## Шаг 5
 
-After the kernel is ready, we now switch to the user space. The kernel starts up systemd as the first user-space process, which manages the processes and services, probes all remaining hardware, mounts filesystems, and runs a desktop environment.
+После того, как ядра готова, мы переходим к пространству пользователя. Ядро запускается в системе D как первый процесс пользовательского пространства, который управляет процессами и услугами, исследует все оставшиеся аппаратные средства, устанавливает файловые системы и управляет рабочей средой.
 
-## Step 6
+## Шаг 6
 
-systemd activates the default. target unit by default when the system boots. Other analysis units are executed as well.
+Systemd активирует задаваемый объект по умолчанию при загрузке системы. Также выполняются другие подразделения анализа.
 
-## Step 7
+## Шаг 7
 
-The system runs a set of startup scripts and configure the environment.
+Система запускает набор стартовых скриптов и настраивает окружающую среду.
 
-## Step 8
+## Шаг 8
 
-The users are presented with a login window. The system is now ready.
+Пользователям предоставляется окно входа. Система готова.

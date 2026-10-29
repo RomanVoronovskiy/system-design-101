@@ -1,6 +1,6 @@
 ---
-title: "Running C, C++, or Rust in a Web Browser"
-description: "Explore running C, C++, and Rust code in web browsers using WASM."
+title: "Запуск C, C++ и Rust в браузере"
+description: "Узнайте, как запускать код C, C++ и Rust в веб-браузерах с помощью WASM."
 image: "https://assets.bytebytego.com/diagrams/0406-how-wasm-work.jpeg"
 createdAt: "2024-02-21"
 draft: false
@@ -13,14 +13,14 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0406-how-wasm-work.jpeg)
 
-What is **web assembly** (WASM)? Why does it attract so much attention?
+Что это такое? **WebAssembly** (ВАСМ)? Почему это привлекает такое внимание?
 
-The diagram shows how we can run native C/C++/Rust code inside a web browser with WASM.
+На диаграмме показано, как мы можем запускать собственный код C/C++/Rust в веб-браузере с помощью WASM.
 
-Traditionally, we can only work with Javascript in the web browser, and the performance cannot compare with native code like C/C++ because it is interpreted.
+Традиционно мы можем работать только с Javascript в веб-браузере, и производительность не может сравниться с собственным кодом, таким как C/C++, поскольку он интерпретируется.
 
-However, with WASM, we can **reuse** existing native code libraries developed in C/C++/Rust, etc to run in the web browser. These web applications have near-native performance.
+Однако с помощью WASM мы можем **повторное использование** существующие библиотеки кодов, разработанные на C/C++/Rust и т.д., для работы в веб-браузере. Эти веб-приложения имеют почти нативную производительность.
 
-For example, we can run the **video encoding/decoding** library (written in C++) in the web browser.
+Например, мы можем запустить **видеокодирование/декодирование** библиотека (написанная на C++) в веб-браузере.
 
-This opens a lot of possibilities for cloud computing and **edge computing**. We can run serverless applications with fewer resources and instant startup time.
+Это открывает много возможностей для облачных вычислений и **вычисления на краю**. Мы можем запускать безсерверные приложения с меньшим количеством ресурсов и мгновенным временем запуска.

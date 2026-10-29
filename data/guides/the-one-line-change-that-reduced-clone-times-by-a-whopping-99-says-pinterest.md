@@ -1,6 +1,6 @@
 ---
-title: 'The one-line change that reduced clone times by 99% at Pinterest'
-description: 'A one-line change reduced clone times by 99% at Pinterest.'
+title: "Как изменение одной строки сократило время клонирования в Pinterest на 99%"
+description: "Однолинейное изменение сократило время клонов на 99% в Pinterest."
 image: 'https://assets.bytebytego.com/diagrams/0302-pinterest-one-line-change.png'
 createdAt: '2024-02-14'
 draft: false
@@ -13,34 +13,34 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0302-pinterest-one-line-change.png)
 
-While it may sound cliché, small changes can definitely create a big impact.
+Хотя это может звучать клише, небольшие изменения могут определенно вызвать большое влияние.
 
-The Engineering Productivity team at Pinterest witnessed this first-hand.
+Это было свидетелем из первых рук команды по производительности инженеров в Пинтере.
 
-They made a small change in the Jenkins build pipeline of their monorepo codebase called Pinboard.
+Они внесли небольшие изменения в трубопровод Дженкинса, построенный на их монорепой базе кодов, которая называется Пинборд.
 
-And it brought down clone times from 40 minutes to a staggering 30 seconds.
+И это привело к снижению времени клонов с 40 минут до 30 секунд.
 
-For reference, Pinboard is the oldest and largest monorepo at Pinterest. Some facts about it:
+Для справки, Пинборд является старейшим и самым крупным монорепом в Pinboard. Некоторые факты об этом:
 
-*   **350K commits**
-*   **20 GB in size when cloned fully**
-*   **60K git pulls on every business day**
+*   **350 тысяч коммитов**
+*   **20 GB по размеру при полной клонизации**
+*   **60 тысяч кисок притягивает каждый день**
 
-Cloning monorepos having a lot of code and history is time consuming. This was exactly what was happening with Pinboard.
+Клонирование монорепом, обладающее большим количеством кодов и истории, занимает много времени. Это именно то, что происходило с Пинбордом.
 
-The build pipeline (written in Groovy) started with a “Checkout” stage where the repository was cloned for the build and test steps.
+Построенный трубопровод (написан на Грови) начинался с,Checkout, стадии, где хранилище было клонировано для этапов построения и испытания.
 
-The clone options were set to shallow clone, no fetching of tags and only fetching the last 50 commits.
+Варианты клонов были установлены на мелководье, без приводов и только для последних 50 обязательств.
 
-But it missed a vital piece of optimization.
+Но он пропустил важный элемент оптимизации.
 
-The Checkout step didn’t use the Git refspec option.
+Шаг проверки не использовал вариант Git refspec.
 
-This meant that Git was effectively fetching all refspecs for every build. For the Pinboard monorepo, it meant fetching more than 2500 branches.
+Это означало, что Гит эффективно получал все рефспекты для каждого здания. Для Pinboard монорепо это означало получение более 2500 ветвей.
 
 𝐒𝐨 - 𝐰𝐡𝐚𝐭 𝐰𝐚𝐬 𝐭𝐡𝐞 𝐟𝐢𝐱?
 
-The team simply added the refspec option and specified which ref they cared about. It was the “master” branch in this case.
+Команда просто добавила вариант рефспек и уточнила, о каком рефере они заботятся. Это был мастер, филиал в этом случае.
 
-This single change allowed Git clone to deal with only one branch and significantly reduced the overall build time of the monorepo.
+Это единственное изменение позволило Гиту клону иметь дело только с одной веткой и значительно сократило общее время построения монорепо.

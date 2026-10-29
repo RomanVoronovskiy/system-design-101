@@ -1,6 +1,6 @@
 ---
-title: "Top 8 Standards Every Developer Should Know"
-description: "Explore the top 8 essential standards every developer should know."
+title: "Восемь стандартов, которые стоит знать разработчику"
+description: "Изучить восемь основных стандартов, которые каждый разработчик должен знать."
 image: "https://assets.bytebytego.com/diagrams/0015-8-standards-developers-should-know.png"
 createdAt: "2024-03-01"
 draft: false
@@ -15,34 +15,34 @@ tags:
 
 ## TCP/IP
 
-Developed by the IETF organization, the TCP/IP protocol is the foundation of the Internet and one of the best-known networking standards.
+Протокол ТКП/МП, разработанный организацией МЦГ, является основой Интернета и одним из наиболее известных стандартов сетевого взаимодействия.
 
 ## HTTP
 
-The IETF has also developed the HTTP protocol, which is essential for all web developers.
+МЦГТ также разработала протокол HTTP, который имеет важное значение для всех разработчиков веб-сайтов.
 
 ## SQL
 
-Structured Query Language (SQL) is a domain-specific language used to manage data.
+Структурированный язык запроса (SQL) — язык, используемый для управления данными.
 
-## OAuth
+## Оут
 
-OAuth (Open Authorization) is an open standard for access delegation commonly used to grant websites or applications limited access to user information without exposing their passwords.
+OAuth (Открытое разрешение) является открытым стандартом для делегаций доступа, обычно используемым для предоставления веб-сайтов или приложений ограниченного доступа к информации пользователей без разоблачения их паролей.
 
 ## HTML/CSS
 
-With HTML, web pages are rendered uniformly across browsers, which reduces development effort spent on compatibility issues.HTML tags.
+С HTML веб-страницы раздаются равномерно по браузерам, что снижает затраты на разработку вопросов совместимости.
 
-CSS standards are often used in conjunction with HTML.
+Стандарты CSS часто используются в сочетании с HTML.
 
 ## ECMAScript
 
-ECMAScript is a standardized scripting language specification that serves as the foundation for several programming languages, the most well-known being JavaScript.
+ECMAScript — стандартная спецификация языка скрипта, которая служит основой для нескольких языков программирования, наиболее хорошо известной из которых является JavaScript.
 
-## ISO Date
+## Дата
 
-It is common for developers to have problems with inconsistent time formats on a daily basis. ISO 8601 is a date and time format standard developed by the ISO (International Organization for Standardization) to provide a common format for exchanging date and time data across borders, cultures, and industries.
+У разработчиков обычно возникают проблемы с непоследовательными временными форматами на ежедневной основе. ISO 8601 представляет собой стандарт на дату и время, разработанный ИСО (Международная организация по стандартизации), который обеспечивает общий формат для обмена данными о сроках и времени между странами, культурами и отраслями.
 
 ## OpenAPI
 
-OpenAPI, also known as the OpenAPI Specification (OAS), is a standardized format for describing and documenting RESTful APIs.
+OpenAPI, также известная как OpenAPI Specification (OFA), представляет собой стандартный формат для описания и документирования RESTFull API.

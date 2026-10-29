@@ -1,6 +1,6 @@
 ---
-title: "Top 6 Firewall Use Cases"
-description: "Explore the top 6 firewall use cases for enhanced network security."
+title: "Шесть сценариев использования межсетевого экрана"
+description: "Изучение 6 лучших брандмауэров для повышения безопасности сети."
 image: "https://assets.bytebytego.com/diagrams/0047-top-6-firewall-use-cases.png"
 createdAt: "2024-02-22"
 draft: false
@@ -13,26 +13,26 @@ tags:
 
 ![](https://assets.bytebytego.com/diagrams/0047-top-6-firewall-use-cases.png)
 
-## Port-Based Rules
+## Портовые правила
 
-Firewall rules can be set to allow or block traffic based on specific ports. For example, allowing only traffic on ports 80 (HTTP) and 443 (HTTPS) for web browsing.
+Могут быть установлены правила защиты, позволяющие или блокирующие движение на основе конкретных портов. Например, для просмотра веб-страниц разрешается только движение по портам 80 (ПЗТТ) и 443 (ПЗТБ).
 
-## IP Address Filtering
+## IP-адрес Фильтрация
 
-Rules can be configured to allow or deny traffic based on source or destination IP addresses. This can include whitelisting trusted IP addresses or blacklisting known malicious ones.
+Правила могут быть разработаны таким образом, чтобы допускать или отклонять движение по IP-адресам источника или назначения. Это может включать в себя доверенные IP адреса, включенные в список, или «черный список» известных злоумышленников.
 
-## Protocol-Based Rules
+## Правила, основанные на протоколах
 
-Firewalls can be configured to allow or block traffic based on specific network protocols such as TCP, UDP, ICMP, etc. For instance, allowing only TCP traffic on port 22 (SSH).
+Проволоки могут быть сконструированы таким образом, чтобы допускать или блокировать движение на основе таких конкретных сетевых протоколов, как ТКП, СДП, КС/СС и т.д. Например, допускается только движение ТКП по порту 22 (ШГ).
 
-## Time-Based Rules
+## Правила, основанные на временных параметрах
 
-Firewalls can be configured to enforce rules based on specific times or schedules. This can be useful for setting different access rules during business hours versus after-hours.
+Проволоки могут быть сконструированы таким образом, чтобы обеспечивать соблюдение правил, основанных на конкретных сроках или графиках. Это может быть полезным для установления различных правил доступа в рабочее время по сравнению с последующий период.
 
-## Stateful Inspection
+## Государственная инспекция
 
-**Stateful Inspection:** Stateful firewalls monitor the state of active connections and allow traffic only if it matches an established connection, preventing unauthorized access from the outside.
+**Государственная инспекция:** Государственные брандмауэры следят за состоянием активных соединений и допускают движение только в том случае, если оно соответствует установленной линии связи, что препятствует несанкционированному доступу извне.
 
-## Application-Based Rules
+## Правила, основанные на применении
 
-Some firewalls offer application-level control by allowing or blocking traffic based on specific applications or services. For instance, allowing or restricting access to certain applications like Skype, BitTorrent, etc.
+Некоторые брандмауэры обеспечивают контроль на уровне приложений, позволяя или блокируя движение на основе конкретных приложений или услуг. Например, разрешить или ограничить доступ к некоторым видам применения, таким, как Skype, BitTorrent и т.д.
