@@ -24,8 +24,6 @@
 
 # Оглавление
 
-> Переведены тексты всех 400 статей и 15 категорий. Дополнительно с английским оригиналом сверены и при необходимости отредактированы 187 статей и все категории. Остальные статьи пока остаются машинным переводом без полной вычитки. Надписи внутри иллюстраций сохранены на английском.
-
 <!-- TOC -->
 
 * [API и веб-разработка](data/categories/api-web-development.md)
@@ -448,13 +446,11 @@
   * [Объяснение 8 популярных сетевых протоколов в 1 диаграмме](data/guides/explaining-8-popular-network-protocols-in-1-diagram.md)
   * [Как лучше изучать SQL?](data/guides/what-is-the-best-way-to-learn-sql.md)
 
-
 <!-- /TOC -->
 
 ## Лицензия
 
 <p xmlns:cc="http://creativecommons.org/ns#" >Оригинальные материалы распространяются по лицензии <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
-
 
 ## Авторство
 
@@ -463,6 +459,3 @@
 - Оригинальный репозиторий: https://github.com/ByteByteGoHq/system-design-101
 - Сайт авторов: https://bytebytego.com
 - Исходная лицензия: [CC BY-NC-ND 4.0](LICENSE.md).
-- Русская версия подготовлена по инициативе владельца этого репозитория с помощью инструментов машинного перевода. Она не является официальным переводом ByteByteGo.
-
-Владелец русской версии сообщил о получении отдельного разрешения правообладателя на перевод и публикацию. Это разрешение не означает изменения исходной лицензии и не предоставляет автоматически дополнительных прав третьим лицам.
